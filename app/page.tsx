@@ -7,6 +7,7 @@ type Case = {
   diagnosis: string;
   aliases: string[];
   clues: string[];
+  teachingPoints: string[];
 };
 
 function parseCases(text: string): Case[] {
@@ -17,6 +18,7 @@ function parseCases(text: string): Case[] {
     const diagMatch = block.match(/DIAGNOSIS:\s*\n([^\n]+)/);
     const aliasMatch = block.match(/ALIASES:\s*\n([\s\S]*?)(?=\nVIGNETTE_LINES:)/);
     const clueMatch = block.match(/VIGNETTE_LINES:\s*\n([\s\S]*?)(?=\nTEACHING_POINTS:|\nCASE_ID:|$)/);
+    const teachMatch = block.match(/TEACHING_POINTS:\s*\n([\s\S]*?)(?=\n={10,}|\nCASE_ID:|$)/);
     if (!diagMatch || !clueMatch) continue;
     const diagnosis = diagMatch[1].trim();
     const aliases = aliasMatch
@@ -26,7 +28,10 @@ function parseCases(text: string): Case[] {
       .split("\n")
       .map(l => l.replace(/^\d+\.\s*/, "").trim())
       .filter(Boolean);
-    cases.push({ id: idMatch?.[1] || "0", diagnosis, aliases, clues });
+    const teachingPoints = teachMatch
+      ? teachMatch[1].split("\n").map(t => t.replace(/^[-\s]+/, "").trim()).filter(Boolean)
+      : [];
+    cases.push({ id: idMatch?.[1] || "0", diagnosis, aliases, clues, teachingPoints });
   }
   return cases;
 }
@@ -83,101 +88,48 @@ function ECGCanvas({ points, color, xSpeed, flatlined }: {
       ctx.strokeStyle = "#0d1f2d";
       ctx.lineWidth = 0.5;
       [25, 50, 75].forEach(y => {
-        ctx.beginPath();
-        ctx.moveTo(0, y * scaleY);
-        ctx.lineTo(W, y * scaleY);
-        ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(0, y * scaleY); ctx.lineTo(W, y * scaleY); ctx.stroke();
       });
       [60, 120, 180, 240].forEach(x => {
-        ctx.beginPath();
-        ctx.moveTo(x * scaleX, 0);
-        ctx.lineTo(x * scaleX, H);
-        ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(x * scaleX, 0); ctx.lineTo(x * scaleX, H); ctx.stroke();
       });
-      ctx.beginPath();
-      ctx.strokeStyle = color;
-      ctx.lineWidth = 2.2;
-      ctx.lineJoin = "round";
-      ctx.lineCap = "round";
-      if (flatlined) {
-        ctx.moveTo(0, 50 * scaleY);
-        ctx.lineTo(W, 50 * scaleY);
-      } else {
-        points.forEach(([x, y], i) => {
-          if (i === 0) ctx.moveTo(x * scaleX, y * scaleY);
-          else ctx.lineTo(x * scaleX, y * scaleY);
-        });
-      }
-      ctx.stroke();
-      ctx.beginPath();
-      ctx.strokeStyle = color;
-      ctx.lineWidth = 6;
-      ctx.globalAlpha = 0.12;
-      if (flatlined) {
-        ctx.moveTo(0, 50 * scaleY);
-        ctx.lineTo(W, 50 * scaleY);
-      } else {
-        points.forEach(([x, y], i) => {
-          if (i === 0) ctx.moveTo(x * scaleX, y * scaleY);
-          else ctx.lineTo(x * scaleX, y * scaleY);
-        });
-      }
-      ctx.stroke();
-      ctx.globalAlpha = 1;
+      const drawPath = () => {
+        if (flatlined) { ctx.moveTo(0, 50 * scaleY); ctx.lineTo(W, 50 * scaleY); }
+        else { points.forEach(([x, y], i) => { if (i === 0) ctx.moveTo(x * scaleX, y * scaleY); else ctx.lineTo(x * scaleX, y * scaleY); }); }
+      };
+      ctx.beginPath(); ctx.strokeStyle = color; ctx.lineWidth = 2.2; ctx.lineJoin = "round"; ctx.lineCap = "round";
+      drawPath(); ctx.stroke();
+      ctx.beginPath(); ctx.strokeStyle = color; ctx.lineWidth = 6; ctx.globalAlpha = 0.12;
+      drawPath(); ctx.stroke(); ctx.globalAlpha = 1;
       if (!flatlined) {
         dotXRef.current = (dotXRef.current + xSpeed) % 300;
-        const dotX = dotXRef.current;
-        const dotY = getYatX(points, dotX);
-        ctx.beginPath();
-        ctx.arc(dotX * scaleX, dotY * scaleY, 4, 0, Math.PI * 2);
-        ctx.fillStyle = color;
-        ctx.globalAlpha = 0.95;
-        ctx.fill();
-        ctx.globalAlpha = 1;
+        const dotY = getYatX(points, dotXRef.current);
+        ctx.beginPath(); ctx.arc(dotXRef.current * scaleX, dotY * scaleY, 4, 0, Math.PI * 2);
+        ctx.fillStyle = color; ctx.globalAlpha = 0.95; ctx.fill(); ctx.globalAlpha = 1;
       }
       animRef.current = requestAnimationFrame(drawFrame);
     };
-
     animRef.current = requestAnimationFrame(drawFrame);
     return () => cancelAnimationFrame(animRef.current);
   }, [points, color, xSpeed, flatlined]);
 
-  return (
-    <canvas
-      ref={canvasRef}
-      width={600}
-      height={120}
-      className="w-full rounded-xl"
-      style={{ background: "#050a0e", display: "block" }}
-    />
-  );
+  return <canvas ref={canvasRef} width={600} height={120} className="w-full rounded-xl" style={{ background: "#050a0e", display: "block" }} />;
 }
 
 function ECGMonitor({ badGuesses, gameOver, won, guessesLeft }: {
-  badGuesses: number;
-  gameOver: boolean;
-  won: boolean;
-  guessesLeft: number;
+  badGuesses: number; gameOver: boolean; won: boolean; guessesLeft: number;
 }) {
   const idx = won ? 0 : Math.min(badGuesses, ECG_POINTS.length - 1);
   const flatlined = gameOver && !won;
   const color = won ? "#22c55e" : flatlined ? "#dc2626" : ECG_COLORS[idx];
   const label = won ? "Patient Saved ✓" : flatlined ? "FLATLINE" : ECG_LABELS[idx];
-  const xSpeed = ECG_X_SPEEDS[idx];
-
   return (
     <div className="w-full mb-4 rounded-2xl p-3 border" style={{ background: "#011a1f", borderColor: "#0e3d4a" }}>
       <div className="flex items-center justify-between mb-2 px-1">
-        <span className="text-xs font-mono tracking-widest" style={{ color }}>
-          ● {label}
-        </span>
-        {!gameOver && (
-          <span className="text-xs font-mono" style={{ color: "#6b7280" }}>
-            {guessesLeft} guess{guessesLeft !== 1 ? "es" : ""} left
-          </span>
-        )}
+        <span className="text-xs font-mono tracking-widest" style={{ color }}>● {label}</span>
+        {!gameOver && <span className="text-xs font-mono" style={{ color: "#6b7280" }}>{guessesLeft} guess{guessesLeft !== 1 ? "es" : ""} left</span>}
       </div>
-      <ECGCanvas points={ECG_POINTS[idx]} color={color} xSpeed={xSpeed} flatlined={flatlined} />
+      <ECGCanvas points={ECG_POINTS[idx]} color={color} xSpeed={ECG_X_SPEEDS[idx]} flatlined={flatlined} />
     </div>
   );
 }
@@ -193,27 +145,18 @@ function Confetti() {
     canvas.height = window.innerHeight;
     const colors = ["#14b8a6", "#22c55e", "#86efac", "#facc15", "#f97316", "#ffffff", "#a78bfa"];
     const pieces = Array.from({ length: 200 }, () => ({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height - canvas.height,
-      r: Math.random() * 7 + 3,
-      color: colors[Math.floor(Math.random() * colors.length)],
-      tiltAngle: Math.random() * Math.PI * 2,
-      tiltSpeed: Math.random() * 0.07 + 0.03,
-      speed: Math.random() * 2.5 + 1.5,
+      x: Math.random() * canvas.width, y: Math.random() * canvas.height - canvas.height,
+      r: Math.random() * 7 + 3, color: colors[Math.floor(Math.random() * colors.length)],
+      tiltAngle: Math.random() * Math.PI * 2, tiltSpeed: Math.random() * 0.07 + 0.03, speed: Math.random() * 2.5 + 1.5,
     }));
     let animId: number;
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       pieces.forEach(p => {
-        p.tiltAngle += p.tiltSpeed;
-        p.y += p.speed;
+        p.tiltAngle += p.tiltSpeed; p.y += p.speed;
         const tilt = Math.sin(p.tiltAngle) * 14;
-        ctx.beginPath();
-        ctx.lineWidth = p.r;
-        ctx.strokeStyle = p.color;
-        ctx.moveTo(p.x + tilt + p.r / 2, p.y);
-        ctx.lineTo(p.x + tilt, p.y + tilt + p.r / 2);
-        ctx.stroke();
+        ctx.beginPath(); ctx.lineWidth = p.r; ctx.strokeStyle = p.color;
+        ctx.moveTo(p.x + tilt + p.r / 2, p.y); ctx.lineTo(p.x + tilt, p.y + tilt + p.r / 2); ctx.stroke();
         if (p.y > canvas.height) p.y = -10;
       });
       animId = requestAnimationFrame(draw);
@@ -223,6 +166,72 @@ function Confetti() {
     return () => { cancelAnimationFrame(animId); clearTimeout(stop); };
   }, []);
   return <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none z-50" />;
+}
+
+function ResultModal({ won, current, guesses, onNext }: {
+  won: boolean;
+  current: Case;
+  guesses: { text: string; correct: boolean; skipped: boolean }[];
+  onNext: () => void;
+}) {
+  const [showTeaching, setShowTeaching] = useState(false);
+
+  return (
+    <div className="fixed inset-0 z-40 flex items-center justify-center p-4" style={{ background: "rgba(0,0,0,0.75)" }}>
+      <div
+        className="w-full max-w-lg rounded-2xl p-7 text-center shadow-2xl"
+        style={{ background: won ? "#0a3320" : "#2d0a0a", border: `1px solid ${won ? "#22c55e" : "#dc2626"}` }}
+      >
+        {won ? (
+          <>
+            <p className="text-5xl mb-3">🎉</p>
+            <p className="text-3xl font-bold mb-1" style={{ color: "#86efac" }}>Patient Saved!</p>
+            <p className="text-white text-xl font-semibold mb-1">{current.diagnosis}</p>
+            <p className="text-sm mb-4" style={{ color: "#bbf7d0" }}>
+              Diagnosed in {guesses.length} guess{guesses.length !== 1 ? "es" : ""}. Outstanding clinical reasoning!
+            </p>
+          </>
+        ) : (
+          <>
+            <p className="text-5xl mb-3">💀</p>
+            <p className="text-3xl font-bold mb-1" style={{ color: "#fca5a5" }}>Patient Lost</p>
+            <p className="text-white text-sm mb-1">The diagnosis was:</p>
+            <p className="text-white text-2xl font-bold mb-4">{current.diagnosis}</p>
+          </>
+        )}
+
+        {/* Teaching points toggle */}
+        {current.teachingPoints.length > 0 && (
+          <div className="mb-4">
+            <button
+              onClick={() => setShowTeaching(s => !s)}
+              className="text-sm font-semibold px-4 py-2 rounded-xl transition-all"
+              style={{ background: "#0e3d4a", color: "#14b8a6", border: "1px solid #14b8a6" }}
+            >
+              {showTeaching ? "Hide" : "📚 Show"} Teaching Points
+            </button>
+            {showTeaching && (
+              <div className="mt-3 rounded-xl p-4 text-left space-y-2" style={{ background: "#011a1f" }}>
+                {current.teachingPoints.map((pt, i) => (
+                  <p key={i} className="text-sm" style={{ color: "#94a3b8" }}>
+                    <span style={{ color: "#14b8a6" }}>•</span> {pt}
+                  </p>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        <button
+          onClick={onNext}
+          className="text-white px-10 py-3 rounded-xl font-bold text-lg w-full"
+          style={{ background: "#14b8a6" }}
+        >
+          Next Case →
+        </button>
+      </div>
+    </div>
+  );
 }
 
 export default function Home() {
@@ -235,7 +244,6 @@ export default function Home() {
   const [gameOver, setGameOver] = useState(false);
   const [won, setWon] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
-  const [gamesPlayed, setGamesPlayed] = useState(0);
   const [showConfetti, setShowConfetti] = useState(false);
 
   const pickNewCase = useCallback((allCases: Case[], seen: Set<string>) => {
@@ -269,7 +277,6 @@ export default function Home() {
     setWon(false);
     setShowDropdown(false);
     setShowConfetti(false);
-    setGamesPlayed(g => g + 1);
   };
 
   const allDiagnoses = cases.flatMap(c => [c.diagnosis, ...c.aliases]);
@@ -292,12 +299,7 @@ export default function Home() {
     setGuesses(newGuesses);
     setGuess("");
     setShowDropdown(false);
-    if (correct) {
-      setWon(true);
-      setGameOver(true);
-      setShowConfetti(true);
-      return;
-    }
+    if (correct) { setWon(true); setGameOver(true); setShowConfetti(true); return; }
     setRevealed(prev => Math.min(prev + 1, current.clues.length));
     if (newGuesses.length >= MAX_GUESSES) setGameOver(true);
   };
@@ -313,6 +315,11 @@ export default function Home() {
       {showConfetti && <Confetti />}
       <Analytics />
 
+      {/* Result popup */}
+      {gameOver && current && (
+        <ResultModal won={won} current={current} guesses={guesses} onNext={startNextCase} />
+      )}
+
       <img src="/logo.png" alt="Medicle" className="mt-8 mb-5" style={{ height: "80px" }} />
 
       <div className="w-full max-w-3xl">
@@ -322,61 +329,22 @@ export default function Home() {
       <div className="flex items-center gap-2 mb-3 text-sm w-full max-w-3xl" style={{ color: "#6b7280" }}>
         <span className="whitespace-nowrap">Clue {revealed}/{current.clues.length}</span>
         <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ background: "#0e3d4a" }}>
-          <div
-            className="h-full rounded-full transition-all duration-500"
-            style={{ width: `${(revealed / current.clues.length) * 100}%`, background: "#14b8a6" }}
-          />
+          <div className="h-full rounded-full transition-all duration-500"
+            style={{ width: `${(revealed / current.clues.length) * 100}%`, background: "#14b8a6" }} />
         </div>
       </div>
 
       <div className="w-full max-w-3xl space-y-2 mb-4">
         {current.clues.slice(0, revealed).map((clue, i) => (
-          <div
-            key={i}
-            className="rounded-xl px-4 py-3 text-sm border-l-4 transition-all duration-300"
-            style={{
-              background: "#0a2f38",
-              borderColor: i === revealed - 1 ? "#14b8a6" : "#0e3d4a",
-              color: "#e2e8f0"
-            }}
-          >
+          <div key={i} className="rounded-xl px-4 py-3 text-sm border-l-4 transition-all duration-300"
+            style={{ background: "#0a2f38", borderColor: i === revealed - 1 ? "#14b8a6" : "#0e3d4a", color: "#e2e8f0" }}>
             <span className="text-xs font-mono mr-2" style={{ color: "#2d7a8a" }}>#{i + 1}</span>
             {clue}
           </div>
         ))}
       </div>
 
-      {gameOver ? (
-        <div
-          className="w-full max-w-3xl rounded-2xl p-8 text-center mt-2"
-          style={{ background: won ? "#0a3320" : "#3d0f0f" }}
-        >
-          {won ? (
-            <>
-              <p className="text-5xl mb-3">🎉</p>
-              <p className="text-3xl font-bold mb-2" style={{ color: "#86efac" }}>Patient Saved!</p>
-              <p className="text-white text-xl font-semibold mb-1">{current.diagnosis}</p>
-              <p className="text-sm mb-6" style={{ color: "#bbf7d0" }}>
-                Diagnosed in {guesses.length} guess{guesses.length !== 1 ? "es" : ""}. Outstanding clinical reasoning!
-              </p>
-            </>
-          ) : (
-            <>
-              <p className="text-5xl mb-3">💀</p>
-              <p className="text-3xl font-bold mb-2" style={{ color: "#fca5a5" }}>Patient Lost</p>
-              <p className="text-white text-sm mb-1">The diagnosis was:</p>
-              <p className="text-white text-2xl font-bold mb-6">{current.diagnosis}</p>
-            </>
-          )}
-          <button
-            onClick={startNextCase}
-            className="text-white px-10 py-3 rounded-xl font-bold text-lg"
-            style={{ background: "#14b8a6" }}
-          >
-            Next Case →
-          </button>
-        </div>
-      ) : (
+      {!gameOver && (
         <div className="relative w-full max-w-3xl mb-2">
           <div className="flex gap-2">
             <input
@@ -388,35 +356,26 @@ export default function Home() {
               onKeyDown={e => e.key === "Enter" && submitGuess(guess)}
               onFocus={() => setShowDropdown(true)}
             />
-            <button
-              onClick={() => submitGuess(guess)}
+            <button onClick={() => submitGuess(guess)}
               className="text-white py-2 rounded-xl font-bold text-sm shrink-0"
-              style={{ background: "#14b8a6", minWidth: "64px" }}
-            >
+              style={{ background: "#14b8a6", minWidth: "64px" }}>
               Guess
             </button>
-            <button
-              onClick={() => submitGuess("", true)}
+            <button onClick={() => submitGuess("", true)}
               className="text-white py-2 rounded-xl font-bold text-sm shrink-0"
-              style={{ background: "#0e3d4a", minWidth: "52px" }}
-            >
+              style={{ background: "#0e3d4a", minWidth: "52px" }}>
               Skip
             </button>
           </div>
           {showDropdown && filtered.length > 0 && (
-            <div
-              className="absolute z-10 w-full rounded-xl mt-1 overflow-hidden shadow-lg"
-              style={{ background: "#0a2f38", border: "1px solid #0e3d4a" }}
-            >
+            <div className="absolute z-10 w-full rounded-xl mt-1 overflow-hidden shadow-lg"
+              style={{ background: "#0a2f38", border: "1px solid #0e3d4a" }}>
               {filtered.map((d, i) => (
-                <div
-                  key={i}
-                  className="px-4 py-2 text-white cursor-pointer text-sm"
+                <div key={i} className="px-4 py-2 text-white cursor-pointer text-sm"
                   style={{ borderBottom: "1px solid #0e3d4a" }}
                   onMouseDown={() => submitGuess(d)}
                   onMouseOver={e => (e.currentTarget.style.background = "#14b8a6")}
-                  onMouseOut={e => (e.currentTarget.style.background = "transparent")}
-                >
+                  onMouseOut={e => (e.currentTarget.style.background = "transparent")}>
                   {d}
                 </div>
               ))}
@@ -431,9 +390,7 @@ export default function Home() {
             <span style={{ color: g.skipped ? "#6b7280" : g.correct ? "#4ade80" : "#f87171" }}>
               {g.skipped ? "—" : g.correct ? "✓" : "✗"}
             </span>
-            <span style={{ color: g.skipped ? "#6b7280" : g.correct ? "#4ade80" : "#f87171" }}>
-              {g.text}
-            </span>
+            <span style={{ color: g.skipped ? "#6b7280" : g.correct ? "#4ade80" : "#f87171" }}>{g.text}</span>
           </div>
         ))}
       </div>
@@ -444,16 +401,12 @@ export default function Home() {
         </p>
         <p className="text-xs" style={{ color: "#1d5a66" }}>
           Medicle is an independent, fan-made endless diagnosis game inspired by{" "}
-          <a href="https://doctordle.org" target="_blank" rel="noopener noreferrer" style={{ color: "#14b8a6" }}>
-            Doctordle
-          </a>
+          <a href="https://doctordle.org" target="_blank" rel="noopener noreferrer" style={{ color: "#14b8a6" }}>Doctordle</a>
           . We love what they built and created this as a complement — not a competitor — so medical students can practice endlessly. All credit to the Doctordle team for the original concept.
         </p>
         <p className="text-xs" style={{ color: "#2d7a8a" }}>
           Questions or feedback?{" "}
-          <a href="mailto:medicle.game@gmail.com" style={{ color: "#14b8a6" }}>
-            medicle.game@gmail.com
-          </a>
+          <a href="mailto:medicle.game@gmail.com" style={{ color: "#14b8a6" }}>medicle.game@gmail.com</a>
         </p>
       </div>
     </main>
