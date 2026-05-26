@@ -1,5 +1,6 @@
 "use client";
-import { useState, useEffect, useCallback, useRef } from "react";
+
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Analytics } from "@vercel/analytics/next";
 
 type Case = {
@@ -8,35 +9,18 @@ type Case = {
   aliases: string[];
   clues: string[];
   teachingPoints: string[];
+  difficulty?: string;
+  system?: string;
 };
 
-function parseCases(text: string): Case[] {
-  const cases: Case[] = [];
-  const blocks = text.split(/\nCASE_ID:/).filter(Boolean);
-  for (const block of blocks) {
-    const idMatch = block.match(/^[\s\S]*?(\d+)/);
-    const diagMatch = block.match(/DIAGNOSIS:\s*\n([^\n]+)/);
-    const aliasMatch = block.match(/ALIASES:\s*\n([\s\S]*?)(?=\nVIGNETTE_LINES:)/);
-    const clueMatch = block.match(/VIGNETTE_LINES:\s*\n([\s\S]*?)(?=\nTEACHING_POINTS:|\nCASE_ID:|$)/);
-    const teachMatch = block.match(/TEACHING_POINTS:\s*\n([\s\S]*?)(?=\n={10,}|\nCASE_ID:|$)/);
-    if (!diagMatch || !clueMatch) continue;
-    const diagnosis = diagMatch[1].trim();
-    const aliases = aliasMatch
-      ? aliasMatch[1].split("\n").map(a => a.replace(/^[-\s]+/, "").trim()).filter(Boolean)
-      : [];
-    const clues = clueMatch[1]
-      .split("\n")
-      .map(l => l.replace(/^\d+\.\s*/, "").trim())
-      .filter(Boolean);
-    const teachingPoints = teachMatch
-      ? teachMatch[1].split("\n").map(t => t.replace(/^[-\s]+/, "").trim()).filter(Boolean)
-      : [];
-    cases.push({ id: idMatch?.[1] || "0", diagnosis, aliases, clues, teachingPoints });
-  }
-  return cases;
-}
+type Guess = {
+  text: string;
+  correct: boolean;
+  skipped: boolean;
+};
 
 const MAX_GUESSES = 6;
+const CASES_PATH = "/cases_master_250.txt";
 
 const ECG_POINTS: [number, number][][] = [
   [[0,50],[20,50],[22,46],[24,54],[26,10],[28,90],[30,44],[32,50],[60,50],[62,46],[64,54],[66,10],[68,90],[70,44],[72,50],[100,50],[102,46],[104,54],[106,10],[108,90],[110,44],[112,50],[140,50],[142,46],[144,54],[146,10],[148,90],[150,44],[152,50],[180,50],[182,46],[184,54],[186,10],[188,90],[190,44],[192,50],[220,50],[222,46],[224,54],[226,10],[228,90],[230,44],[232,50],[260,50],[262,46],[264,54],[266,10],[268,90],[270,44],[272,50],[300,50]],
@@ -51,6 +35,61 @@ const ECG_COLORS = ["#22c55e", "#84cc16", "#facc15", "#f97316", "#ef4444", "#dc2
 const ECG_X_SPEEDS = [0.8, 1.1, 1.4, 1.0, 2.0, 2.8];
 const ECG_LABELS = ["Stable", "Ill-Appearing", "Distressed", "Obtunded", "Critical", "Peri-Arrest"];
 
+function normalizeAnswer(text: string) {
+  return text.toLowerCase().replace(/[^a-z0-9]+/g, "");
+}
+
+function parseCases(text: string): Case[] {
+  const blocks = text
+    .split(/\n={10,}\n/)
+    .map((block) => block.trim())
+    .filter(Boolean);
+
+  const cases: Case[] = [];
+
+  for (const block of blocks) {
+    const idMatch = block.match(/CASE_ID:\s*(\d+)/);
+    const diagMatch = block.match(/DIAGNOSIS:\s*\n([^\n]+)/);
+    const aliasMatch = block.match(/ALIASES:\s*\n([\s\S]*?)(?=\nVIGNETTE_LINES:)/);
+    const clueMatch = block.match(/VIGNETTE_LINES:\s*\n([\s\S]*?)(?=\nTEACHING_POINTS:|\nCASE_ID:|$)/);
+    const teachMatch = block.match(/TEACHING_POINTS:\s*\n([\s\S]*?)(?=\n={10,}|\nCASE_ID:|$)/);
+    const difficultyMatch = block.match(/DIFFICULTY:\s*\n?([^\n]+)/);
+    const systemMatch = block.match(/SYSTEM:\s*\n?([^\n]+)/);
+
+    if (!idMatch || !diagMatch || !clueMatch) continue;
+
+    const diagnosis = diagMatch[1].trim();
+    const aliases = aliasMatch
+      ? aliasMatch[1]
+          .split("\n")
+          .map((a) => a.replace(/^[-\s]+/, "").trim())
+          .filter(Boolean)
+      : [];
+    const clues = clueMatch[1]
+      .split("\n")
+      .map((line) => line.replace(/^\d+\.\s*/, "").trim())
+      .filter(Boolean);
+    const teachingPoints = teachMatch
+      ? teachMatch[1]
+          .split("\n")
+          .map((line) => line.replace(/^[-\s]+/, "").trim())
+          .filter(Boolean)
+      : [];
+
+    cases.push({
+      id: idMatch[1],
+      diagnosis,
+      aliases,
+      clues,
+      teachingPoints,
+      difficulty: difficultyMatch?.[1].trim(),
+      system: systemMatch?.[1].trim(),
+    });
+  }
+
+  return cases.sort((a, b) => Number(a.id) - Number(b.id));
+}
+
 function getYatX(points: [number, number][], x: number): number {
   for (let i = 0; i < points.length - 1; i++) {
     const [x1, y1] = points[i];
@@ -63,7 +102,12 @@ function getYatX(points: [number, number][], x: number): number {
   return 50;
 }
 
-function ECGCanvas({ points, color, xSpeed, flatlined }: {
+function ECGCanvas({
+  points,
+  color,
+  xSpeed,
+  flatlined,
+}: {
   points: [number, number][];
   color: string;
   xSpeed: number;
@@ -76,59 +120,113 @@ function ECGCanvas({ points, color, xSpeed, flatlined }: {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
+
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
+
     const W = canvas.width;
     const H = canvas.height;
     const scaleX = W / 300;
     const scaleY = H / 100;
+
+    const drawPath = () => {
+      if (flatlined) {
+        ctx.moveTo(0, 50 * scaleY);
+        ctx.lineTo(W, 50 * scaleY);
+        return;
+      }
+
+      points.forEach(([x, y], i) => {
+        if (i === 0) ctx.moveTo(x * scaleX, y * scaleY);
+        else ctx.lineTo(x * scaleX, y * scaleY);
+      });
+    };
+
     const drawFrame = () => {
       ctx.clearRect(0, 0, W, H);
+
       ctx.strokeStyle = "#0d1f2d";
       ctx.lineWidth = 0.5;
-      [25, 50, 75].forEach(y => {
-        ctx.beginPath(); ctx.moveTo(0, y * scaleY); ctx.lineTo(W, y * scaleY); ctx.stroke();
+      [25, 50, 75].forEach((y) => {
+        ctx.beginPath();
+        ctx.moveTo(0, y * scaleY);
+        ctx.lineTo(W, y * scaleY);
+        ctx.stroke();
       });
-      [60, 120, 180, 240].forEach(x => {
-        ctx.beginPath(); ctx.moveTo(x * scaleX, 0); ctx.lineTo(x * scaleX, H); ctx.stroke();
+      [60, 120, 180, 240].forEach((x) => {
+        ctx.beginPath();
+        ctx.moveTo(x * scaleX, 0);
+        ctx.lineTo(x * scaleX, H);
+        ctx.stroke();
       });
-      const drawPath = () => {
-        if (flatlined) { ctx.moveTo(0, 50 * scaleY); ctx.lineTo(W, 50 * scaleY); }
-        else { points.forEach(([x, y], i) => { if (i === 0) ctx.moveTo(x * scaleX, y * scaleY); else ctx.lineTo(x * scaleX, y * scaleY); }); }
-      };
-      ctx.beginPath(); ctx.strokeStyle = color; ctx.lineWidth = 2.2; ctx.lineJoin = "round"; ctx.lineCap = "round";
-      drawPath(); ctx.stroke();
-      ctx.beginPath(); ctx.strokeStyle = color; ctx.lineWidth = 6; ctx.globalAlpha = 0.12;
-      drawPath(); ctx.stroke(); ctx.globalAlpha = 1;
+
+      ctx.beginPath();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 2.2;
+      ctx.lineJoin = "round";
+      ctx.lineCap = "round";
+      drawPath();
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 6;
+      ctx.globalAlpha = 0.12;
+      drawPath();
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+
       if (!flatlined) {
         dotXRef.current = (dotXRef.current + xSpeed) % 300;
         const dotY = getYatX(points, dotXRef.current);
-        ctx.beginPath(); ctx.arc(dotXRef.current * scaleX, dotY * scaleY, 4, 0, Math.PI * 2);
-        ctx.fillStyle = color; ctx.globalAlpha = 0.95; ctx.fill(); ctx.globalAlpha = 1;
+        ctx.beginPath();
+        ctx.arc(dotXRef.current * scaleX, dotY * scaleY, 4, 0, Math.PI * 2);
+        ctx.fillStyle = color;
+        ctx.globalAlpha = 0.95;
+        ctx.fill();
+        ctx.globalAlpha = 1;
       }
+
       animRef.current = requestAnimationFrame(drawFrame);
     };
+
     animRef.current = requestAnimationFrame(drawFrame);
     return () => cancelAnimationFrame(animRef.current);
   }, [points, color, xSpeed, flatlined]);
 
   return (
-    <canvas ref={canvasRef} width={600} height={80} className="w-full rounded-xl"
-      style={{ background: "#050a0e", display: "block" }} />
+    <canvas
+      ref={canvasRef}
+      width={600}
+      height={80}
+      className="w-full rounded-xl"
+      style={{ background: "#050a0e", display: "block" }}
+    />
   );
 }
 
-function ECGMonitor({ badGuesses, gameOver, won, guessesLeft }: {
-  badGuesses: number; gameOver: boolean; won: boolean; guessesLeft: number;
+function ECGMonitor({
+  badGuesses,
+  gameOver,
+  won,
+  guessesLeft,
+}: {
+  badGuesses: number;
+  gameOver: boolean;
+  won: boolean;
+  guessesLeft: number;
 }) {
   const idx = won ? 0 : Math.min(badGuesses, ECG_POINTS.length - 1);
   const flatlined = gameOver && !won;
   const color = won ? "#22c55e" : flatlined ? "#dc2626" : ECG_COLORS[idx];
   const label = won ? "Patient Saved ✓" : flatlined ? "FLATLINE" : ECG_LABELS[idx];
+
   return (
     <div className="w-full rounded-2xl p-3 border" style={{ background: "#011a1f", borderColor: "#0e3d4a" }}>
       <div className="flex items-center justify-between mb-2 px-1">
-        <span className="text-xs font-mono tracking-widest" style={{ color }}>● {label}</span>
+        <span className="text-xs font-mono tracking-widest" style={{ color }}>
+          ● {label}
+        </span>
         {!gameOver && (
           <span className="text-xs font-mono" style={{ color: "#6b7280" }}>
             {guessesLeft} guess{guessesLeft !== 1 ? "es" : ""} left
@@ -142,71 +240,155 @@ function ECGMonitor({ badGuesses, gameOver, won, guessesLeft }: {
 
 function Confetti() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
+
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
+
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+
     const colors = ["#14b8a6", "#22c55e", "#86efac", "#facc15", "#f97316", "#ffffff", "#a78bfa"];
     const pieces = Array.from({ length: 200 }, () => ({
-      x: Math.random() * canvas.width, y: Math.random() * canvas.height - canvas.height,
-      r: Math.random() * 7 + 3, color: colors[Math.floor(Math.random() * colors.length)],
-      tiltAngle: Math.random() * Math.PI * 2, tiltSpeed: Math.random() * 0.07 + 0.03,
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height - canvas.height,
+      r: Math.random() * 7 + 3,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      tiltAngle: Math.random() * Math.PI * 2,
+      tiltSpeed: Math.random() * 0.07 + 0.03,
       speed: Math.random() * 2.5 + 1.5,
     }));
+
     let animId: number;
+
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      pieces.forEach(p => {
-        p.tiltAngle += p.tiltSpeed; p.y += p.speed;
+      pieces.forEach((p) => {
+        p.tiltAngle += p.tiltSpeed;
+        p.y += p.speed;
         const tilt = Math.sin(p.tiltAngle) * 14;
-        ctx.beginPath(); ctx.lineWidth = p.r; ctx.strokeStyle = p.color;
-        ctx.moveTo(p.x + tilt + p.r / 2, p.y); ctx.lineTo(p.x + tilt, p.y + tilt + p.r / 2); ctx.stroke();
+        ctx.beginPath();
+        ctx.lineWidth = p.r;
+        ctx.strokeStyle = p.color;
+        ctx.moveTo(p.x + tilt + p.r / 2, p.y);
+        ctx.lineTo(p.x + tilt, p.y + tilt + p.r / 2);
+        ctx.stroke();
         if (p.y > canvas.height) p.y = -10;
       });
       animId = requestAnimationFrame(draw);
     };
+
     draw();
     const stop = setTimeout(() => cancelAnimationFrame(animId), 5000);
-    return () => { cancelAnimationFrame(animId); clearTimeout(stop); };
+
+    return () => {
+      cancelAnimationFrame(animId);
+      clearTimeout(stop);
+    };
   }, []);
+
   return <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none z-50" />;
 }
 
-function ResultModal({ won, current, guesses, onNext }: {
-  won: boolean; current: Case;
-  guesses: { text: string; correct: boolean; skipped: boolean }[];
+function ShareCard({
+  shareText,
+}: {
+  shareText: string;
+}) {
+  const [copied, setCopied] = useState(false);
+
+  const copyShareText = async () => {
+    try {
+      await navigator.clipboard.writeText(shareText);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1500);
+    } catch {
+      // no-op
+    }
+  };
+
+  return (
+    <div className="mt-4 rounded-2xl p-4 text-left" style={{ background: "#071f26", border: "1px solid #0e3d4a" }}>
+      <div className="flex items-center justify-between gap-3 mb-3">
+        <p className="text-xs font-mono uppercase tracking-[0.2em]" style={{ color: "#94a3b8" }}>
+          Share result
+        </p>
+        <button
+          onClick={copyShareText}
+          className="text-xs font-bold px-3 py-1.5 rounded-lg"
+          style={{ background: "#14b8a6", color: "#042b33" }}
+        >
+          {copied ? "Copied" : "Copy"}
+        </button>
+      </div>
+      <pre className="whitespace-pre-wrap text-sm leading-6 font-mono" style={{ color: "#e2e8f0" }}>
+        {shareText}
+      </pre>
+    </div>
+  );
+}
+
+function ResultModal({
+  won,
+  current,
+  guesses,
+  solvedAtClueCount,
+  onNext,
+}: {
+  won: boolean;
+  current: Case;
+  guesses: Guess[];
+  solvedAtClueCount: number;
   onNext: () => void;
 }) {
   const [showTeaching, setShowTeaching] = useState(false);
+
+  const shareText = useMemo(() => {
+    if (!won) return "";
+    const green = Math.max(1, Math.min(solvedAtClueCount, MAX_GUESSES));
+    const white = Math.max(0, MAX_GUESSES - green);
+    return `MEDICLE\nSolved in ${green} clue${green === 1 ? "" : "s"}\n${"🟩".repeat(green)}${"⬜".repeat(white)}`;
+  }, [won, solvedAtClueCount]);
+
   return (
-    <div className="fixed inset-0 z-40 flex items-center justify-center p-4"
-      style={{ background: "rgba(0,0,0,0.75)" }}>
-      <div className="w-full max-w-lg rounded-2xl p-7 text-center shadow-2xl"
-        style={{ background: won ? "#0a3320" : "#2d0a0a", border: `1px solid ${won ? "#22c55e" : "#dc2626"}` }}>
+    <div className="fixed inset-0 z-40 flex items-center justify-center p-4" style={{ background: "rgba(0,0,0,0.75)" }}>
+      <div
+        className="w-full max-w-lg rounded-2xl p-7 text-center shadow-2xl max-h-[90vh] overflow-y-auto"
+        style={{ background: won ? "#0a3320" : "#2d0a0a", border: `1px solid ${won ? "#22c55e" : "#dc2626"}` }}
+      >
         {won ? (
           <>
             <p className="text-5xl mb-3">🎉</p>
-            <p className="text-3xl font-bold mb-1" style={{ color: "#86efac" }}>Patient Saved!</p>
-            <p className="text-white text-xl font-semibold mb-1">{current.diagnosis}</p>
-            <p className="text-sm mb-4" style={{ color: "#bbf7d0" }}>
-              Diagnosed in {guesses.length} guess{guesses.length !== 1 ? "es" : ""}. Outstanding clinical reasoning!
+            <p className="text-3xl font-bold mb-1" style={{ color: "#86efac" }}>
+              Patient Saved!
             </p>
+            <p className="text-white text-xl font-semibold mb-1">{current.diagnosis}</p>
+            <p className="text-sm mb-1" style={{ color: "#bbf7d0" }}>
+              Diagnosed in {guesses.length} guess{guesses.length !== 1 ? "es" : ""}.
+            </p>
+            <p className="text-sm mb-4" style={{ color: "#bbf7d0" }}>
+              Solved at clue {solvedAtClueCount}.
+            </p>
+            <ShareCard shareText={shareText} />
           </>
         ) : (
           <>
             <p className="text-5xl mb-3">💀</p>
-            <p className="text-3xl font-bold mb-1" style={{ color: "#fca5a5" }}>Patient Lost</p>
+            <p className="text-3xl font-bold mb-1" style={{ color: "#fca5a5" }}>
+              Patient Lost
+            </p>
             <p className="text-white text-sm mb-1">The diagnosis was:</p>
             <p className="text-white text-2xl font-bold mb-4">{current.diagnosis}</p>
           </>
         )}
+
         {current.teachingPoints.length > 0 && (
           <div className="mb-4">
             <button
-              onClick={() => setShowTeaching(s => !s)}
+              onClick={() => setShowTeaching((s) => !s)}
               className="text-sm font-semibold px-4 py-2 rounded-xl"
               style={{ background: "#0e3d4a", color: "#14b8a6", border: "1px solid #14b8a6" }}
             >
@@ -223,8 +405,12 @@ function ResultModal({ won, current, guesses, onNext }: {
             )}
           </div>
         )}
-        <button onClick={onNext} className="text-white px-10 py-3 rounded-xl font-bold text-lg w-full"
-          style={{ background: "#14b8a6" }}>
+
+        <button
+          onClick={onNext}
+          className="text-white px-10 py-3 rounded-xl font-bold text-lg w-full"
+          style={{ background: "#14b8a6" }}
+        >
           Next Case →
         </button>
       </div>
@@ -235,40 +421,28 @@ function ResultModal({ won, current, guesses, onNext }: {
 export default function Home() {
   const [cases, setCases] = useState<Case[]>([]);
   const [current, setCurrent] = useState<Case | null>(null);
+  const [selectedCaseId, setSelectedCaseId] = useState<string>("");
   const [seenIds, setSeenIds] = useState<Set<string>>(new Set());
   const [revealed, setRevealed] = useState(1);
   const [guess, setGuess] = useState("");
-  const [guesses, setGuesses] = useState<{ text: string; correct: boolean; skipped: boolean }[]>([]);
+  const [guesses, setGuesses] = useState<Guess[]>([]);
   const [gameOver, setGameOver] = useState(false);
   const [won, setWon] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const [showECG, setShowECG] = useState(false);
+  const [solvedAtClueCount, setSolvedAtClueCount] = useState(1);
+  const [loadError, setLoadError] = useState("");
 
   const pickNewCase = useCallback((allCases: Case[], seen: Set<string>) => {
-    const unseen = allCases.filter(c => !seen.has(c.id));
+    const unseen = allCases.filter((c) => !seen.has(c.id));
     const pool = unseen.length > 0 ? unseen : allCases;
     return pool[Math.floor(Math.random() * pool.length)];
   }, []);
 
-  useEffect(() => {
-    fetch("/cases.txt")
-      .then(r => r.text())
-      .then(text => {
-        const parsed = parseCases(text);
-        setCases(parsed);
-        const first = parsed[Math.floor(Math.random() * parsed.length)];
-        setCurrent(first);
-        setSeenIds(new Set([first.id]));
-      });
-  }, []);
-
-  const startNextCase = () => {
-    const newSeen = new Set(seenIds);
-    if (current) newSeen.add(current.id);
-    const next = pickNewCase(cases, newSeen);
-    setSeenIds(new Set([...newSeen, next.id]));
-    setCurrent(next);
+  const resetRound = useCallback((nextCase: Case) => {
+    setCurrent(nextCase);
+    setSelectedCaseId(nextCase.id);
     setRevealed(1);
     setGuess("");
     setGuesses([]);
@@ -276,38 +450,141 @@ export default function Home() {
     setWon(false);
     setShowDropdown(false);
     setShowConfetti(false);
-  };
+    setShowECG(false);
+    setSolvedAtClueCount(1);
+  }, []);
 
-  const allDiagnoses = cases.flatMap(c => [c.diagnosis, ...c.aliases]);
-  const filtered = guess.trim().length > 0
-    ? allDiagnoses.filter(d => d.toLowerCase().includes(guess.toLowerCase().trim())).slice(0, 6)
-    : [];
+  useEffect(() => {
+    let active = true;
 
-  const badGuesses = guesses.filter(g => !g.correct).length;
+    async function loadCases() {
+      try {
+        const response = await fetch(CASES_PATH);
+        if (!response.ok) throw new Error(`Failed to load cases from ${CASES_PATH}`);
+        const text = await response.text();
+        const parsed = parseCases(text);
+
+        if (!active) return;
+
+        setCases(parsed);
+
+        if (parsed.length === 0) {
+          setLoadError("No cases were parsed from the file.");
+          return;
+        }
+
+        const first = parsed[Math.floor(Math.random() * parsed.length)];
+        setCurrent(first);
+        setSelectedCaseId(first.id);
+        setSeenIds(new Set([first.id]));
+      } catch (error) {
+        if (!active) return;
+        setLoadError(error instanceof Error ? error.message : "Failed to load cases.");
+      }
+    }
+
+    loadCases();
+
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  const loadCaseById = useCallback(
+    (caseId: string) => {
+      if (!cases.length) return;
+      const nextCase = cases.find((c) => c.id === caseId);
+      if (!nextCase) return;
+
+      setSeenIds(new Set([nextCase.id]));
+      resetRound(nextCase);
+    },
+    [cases, resetRound]
+  );
+
+  const startNextCase = useCallback(() => {
+    if (!cases.length || !current) return;
+
+    const newSeen = new Set(seenIds);
+    newSeen.add(current.id);
+
+    const next = pickNewCase(cases, newSeen);
+    setSeenIds(new Set([...newSeen, next.id]));
+    resetRound(next);
+  }, [cases, current, pickNewCase, resetRound, seenIds]);
+
+  const allDiagnoses = useMemo(
+    () => cases.flatMap((c) => [c.diagnosis, ...c.aliases]),
+    [cases]
+  );
+
+  const caseOptions = useMemo(
+    () => cases.map((c) => ({ id: c.id, label: `Case ${c.id}${c.system ? ` • ${c.system}` : ""}` })),
+    [cases]
+  );
+
+  const filtered = useMemo(() => {
+    const q = guess.trim().toLowerCase();
+    if (!q) return [];
+    return allDiagnoses.filter((d) => d.toLowerCase().includes(q)).slice(0, 6);
+  }, [allDiagnoses, guess]);
+
+  const badGuesses = guesses.filter((g) => !g.correct).length;
   const guessesLeft = MAX_GUESSES - guesses.length;
 
-  const submitGuess = (text: string, skipped = false) => {
-    if (!current || gameOver) return;
-    const g = text.trim();
-    if (!g && !skipped) return;
-    const correct = !skipped && (
-      g.toLowerCase() === current.diagnosis.toLowerCase() ||
-      current.aliases.some(a => a.toLowerCase() === g.toLowerCase())
-    );
-    const newGuesses = [...guesses, { text: skipped ? "Skipped" : g, correct, skipped }];
-    setGuesses(newGuesses);
-    setGuess("");
-    setShowDropdown(false);
-    if (correct) { setWon(true); setGameOver(true); setShowConfetti(true); return; }
-    setRevealed(prev => Math.min(prev + 1, current.clues.length));
-    if (newGuesses.length >= MAX_GUESSES) setGameOver(true);
-  };
+  const submitGuess = useCallback(
+    (text: string, skipped = false) => {
+      if (!current || gameOver) return;
 
-  if (!current) return (
-    <main className="min-h-screen flex items-center justify-center" style={{ background: "#022129" }}>
-      <p className="text-white text-xl">Loading...</p>
-    </main>
+      const g = text.trim();
+      if (!g && !skipped) return;
+
+      const correct =
+        !skipped &&
+        [current.diagnosis, ...current.aliases].some((answer) => normalizeAnswer(answer) === normalizeAnswer(g));
+
+      const newGuesses = [...guesses, { text: skipped ? "Skipped" : g, correct, skipped }];
+      setGuesses(newGuesses);
+      setGuess("");
+      setShowDropdown(false);
+
+      if (correct) {
+        setWon(true);
+        setGameOver(true);
+        setShowConfetti(true);
+        setSolvedAtClueCount(revealed);
+        return;
+      }
+
+      setRevealed((prev) => Math.min(prev + 1, current.clues.length));
+      if (newGuesses.length >= MAX_GUESSES) setGameOver(true);
+    },
+    [current, gameOver, guesses, revealed]
   );
+
+  if (loadError) {
+    return (
+      <main className="min-h-screen flex items-center justify-center px-4" style={{ background: "#022129" }}>
+        <div className="max-w-xl rounded-2xl p-6 border" style={{ background: "#0a2f38", borderColor: "#0e3d4a" }}>
+          <p className="text-white text-lg font-semibold mb-2">Could not load the cases file.</p>
+          <p className="text-sm" style={{ color: "#94a3b8" }}>
+            {loadError}
+          </p>
+          <p className="text-sm mt-3" style={{ color: "#94a3b8" }}>
+            Put <span className="font-mono">cases_master_250.txt</span> in your <span className="font-mono">public</span> folder.
+          </p>
+        </div>
+      </main>
+    );
+  }
+
+  if (!current) {
+    return (
+      <main className="min-h-screen flex items-center justify-center" style={{ background: "#022129" }}>
+        <p className="text-white text-xl">Loading...</p>
+      </main>
+    );
+  }
 
   return (
     <main className="min-h-screen flex flex-col items-center px-4 pb-16" style={{ background: "#022129" }}>
@@ -315,51 +592,114 @@ export default function Home() {
       <Analytics />
 
       {gameOver && current && (
-        <ResultModal won={won} current={current} guesses={guesses} onNext={startNextCase} />
+        <ResultModal
+          won={won}
+          current={current}
+          guesses={guesses}
+          solvedAtClueCount={solvedAtClueCount}
+          onNext={startNextCase}
+        />
       )}
 
-  {/* Header */}
-  <div style={{ marginTop: "32px", marginBottom: "24px", display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+      <div
+        style={{
+          marginTop: "32px",
+          marginBottom: "18px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          textAlign: "center",
+          gap: "10px",
+        }}
+      >
         <img src="/logo.png" alt="Medicle" style={{ height: "80px" }} />
-        <p style={{ marginTop: "10px", fontSize: "15px", color: "#ffffff", fontWeight: "500", letterSpacing: "0.01em" }}>
+        <p style={{ fontSize: "15px", color: "#ffffff", fontWeight: "500", letterSpacing: "0.01em" }}>
           Can you diagnose the patient before it&apos;s too late?
         </p>
-        <p style={{ marginTop: "4px", fontSize: "12px", color: "#4a9aaa" }}>
-          Endless progressive clue-based vignettes — a new case every round
+        <p style={{ fontSize: "12px", color: "#4a9aaa" }}>
+          Endless progressive clue-based vignettes. A new case every round.
         </p>
-        <a href="https://www.medicle.net" target="_blank" rel="noopener noreferrer" style={{ marginTop: "5px", fontSize: "13px", fontWeight: "bold", color: "#14b8a6", textDecoration: "none" }}>
+        <a
+          href="https://www.medicle.net"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ fontSize: "13px", fontWeight: "bold", color: "#14b8a6", textDecoration: "none" }}
+        >
           🔗 www.medicle.net
         </a>
+
+        <div className="w-full max-w-3xl grid gap-3 sm:grid-cols-[1fr_auto] items-center">
+          <div className="text-left">
+            <label className="block text-xs font-mono tracking-widest mb-1" style={{ color: "#6b7280" }}>
+              Jump to case
+            </label>
+            <select
+              value={selectedCaseId}
+              onChange={(e) => loadCaseById(e.target.value)}
+              className="w-full rounded-xl px-3 py-2 text-sm outline-none"
+              style={{ background: "#0a2f38", border: "1px solid #0e3d4a", color: "white" }}
+              disabled={!cases.length}
+            >
+              {caseOptions.map((opt) => (
+                <option key={opt.id} value={opt.id}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {current && (
+            <div className="sm:text-right text-left">
+              <p className="text-xs font-mono tracking-widest" style={{ color: "#6b7280" }}>
+                CURRENT CASE
+              </p>
+              <p className="text-lg font-bold" style={{ color: "#e2e8f0" }}>
+                #{current.id}
+              </p>
+              {current.system && (
+                <p className="text-xs" style={{ color: "#4a9aaa" }}>
+                  {current.system}
+                </p>
+              )}
+            </div>
+          )}
+        </div>
       </div>
 
-      {/* Clue progress */}
       <div className="flex items-center gap-2 mb-3 text-sm w-full max-w-3xl" style={{ color: "#6b7280" }}>
-        <span className="whitespace-nowrap">Clue {revealed}/{current.clues.length}</span>
+        <span className="whitespace-nowrap">
+          Clue {revealed}/{current.clues.length}
+        </span>
         <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ background: "#0e3d4a" }}>
-          <div className="h-full rounded-full transition-all duration-500"
-            style={{ width: `${(revealed / current.clues.length) * 100}%`, background: "#14b8a6" }} />
+          <div
+            className="h-full rounded-full transition-all duration-500"
+            style={{ width: `${(revealed / current.clues.length) * 100}%`, background: "#14b8a6" }}
+          />
         </div>
         <span className="text-xs font-mono whitespace-nowrap" style={{ color: "#6b7280" }}>
           {guessesLeft} guess{guessesLeft !== 1 ? "es" : ""} left
         </span>
       </div>
 
-      {/* Clue cards */}
       <div className="w-full max-w-3xl space-y-2 mb-4">
         {current.clues.slice(0, revealed).map((clue, i) => (
-          <div key={i} className="rounded-xl px-4 py-3 text-sm border-l-4 transition-all duration-300"
+          <div
+            key={i}
+            className="rounded-xl px-4 py-3 text-sm border-l-4 transition-all duration-300"
             style={{
               background: "#0a2f38",
               borderColor: i === revealed - 1 ? "#14b8a6" : "#0e3d4a",
-              color: "#e2e8f0"
-            }}>
-            <span className="text-xs font-mono mr-2" style={{ color: "#2d7a8a" }}>#{i + 1}</span>
+              color: "#e2e8f0",
+            }}
+          >
+            <span className="text-xs font-mono mr-2" style={{ color: "#2d7a8a" }}>
+              #{i + 1}
+            </span>
             {clue}
           </div>
         ))}
       </div>
 
-      {/* Input */}
       {!gameOver && (
         <div className="relative w-full max-w-3xl mb-2">
           <div className="flex gap-2">
@@ -368,30 +708,43 @@ export default function Home() {
               style={{ background: "#0a2f38", border: "1px solid #0e3d4a", color: "white" }}
               placeholder="Enter diagnosis..."
               value={guess}
-              onChange={e => { setGuess(e.target.value); setShowDropdown(true); }}
-              onKeyDown={e => e.key === "Enter" && submitGuess(guess)}
+              onChange={(e) => {
+                setGuess(e.target.value);
+                setShowDropdown(true);
+              }}
+              onKeyDown={(e) => e.key === "Enter" && submitGuess(guess)}
               onFocus={() => setShowDropdown(true)}
             />
-            <button onClick={() => submitGuess(guess)}
+            <button
+              onClick={() => submitGuess(guess)}
               className="text-white py-2 rounded-xl font-bold text-sm shrink-0"
-              style={{ background: "#14b8a6", minWidth: "64px" }}>
+              style={{ background: "#14b8a6", minWidth: "64px" }}
+            >
               Guess
             </button>
-            <button onClick={() => submitGuess("", true)}
+            <button
+              onClick={() => submitGuess("", true)}
               className="text-white py-2 rounded-xl font-bold text-sm shrink-0"
-              style={{ background: "#0e3d4a", minWidth: "52px" }}>
+              style={{ background: "#0e3d4a", minWidth: "52px" }}
+            >
               Skip
             </button>
           </div>
+
           {showDropdown && filtered.length > 0 && (
-            <div className="absolute z-10 w-full rounded-xl mt-1 overflow-hidden shadow-lg"
-              style={{ background: "#0a2f38", border: "1px solid #0e3d4a" }}>
+            <div
+              className="absolute z-10 w-full rounded-xl mt-1 overflow-hidden shadow-lg"
+              style={{ background: "#0a2f38", border: "1px solid #0e3d4a" }}
+            >
               {filtered.map((d, i) => (
-                <div key={i} className="px-4 py-2 text-white cursor-pointer text-sm"
+                <div
+                  key={i}
+                  className="px-4 py-2 text-white cursor-pointer text-sm"
                   style={{ borderBottom: "1px solid #0e3d4a" }}
                   onMouseDown={() => submitGuess(d)}
-                  onMouseOver={e => (e.currentTarget.style.background = "#14b8a6")}
-                  onMouseOut={e => (e.currentTarget.style.background = "transparent")}>
+                  onMouseOver={(e) => (e.currentTarget.style.background = "#14b8a6")}
+                  onMouseOut={(e) => (e.currentTarget.style.background = "transparent")}
+                >
                   {d}
                 </div>
               ))}
@@ -400,7 +753,6 @@ export default function Home() {
         </div>
       )}
 
-      {/* Guess history */}
       <div className="mt-2 space-y-1 w-full max-w-3xl">
         {guesses.map((g, i) => (
           <div key={i} className="flex items-center gap-2 text-sm">
@@ -414,10 +766,9 @@ export default function Home() {
         ))}
       </div>
 
-      {/* ECG toggle */}
       <div className="mt-8 w-full max-w-3xl">
         <button
-          onClick={() => setShowECG(s => !s)}
+          onClick={() => setShowECG((s) => !s)}
           className="flex items-center gap-2 text-xs font-mono mb-2 px-3 py-1 rounded-lg transition-all"
           style={{
             background: showECG ? "#0a2f38" : "transparent",
@@ -428,12 +779,9 @@ export default function Home() {
           <span style={{ color: showECG ? "#22c55e" : "#2d7a8a" }}>●</span>
           {showECG ? "Hide" : "Show"} Patient Monitor
         </button>
-        {showECG && (
-          <ECGMonitor badGuesses={badGuesses} gameOver={gameOver} won={won} guessesLeft={guessesLeft} />
-        )}
+        {showECG && <ECGMonitor badGuesses={badGuesses} gameOver={gameOver} won={won} guessesLeft={guessesLeft} />}
       </div>
 
-      {/* Footer */}
       <div className="mt-8 w-full max-w-3xl text-center space-y-3">
         <p className="text-xs" style={{ color: "#2d7a8a" }}>
           ⚠️ Cases are AI-generated for educational purposes only and may contain inaccuracies. Not for clinical use.
@@ -443,8 +791,8 @@ export default function Home() {
           <a href="https://doctordle.org" target="_blank" rel="noopener noreferrer" style={{ color: "#14b8a6" }}>
             Doctordle
           </a>
-          . We love what they built and created this as a complement — not a competitor — so medical students can
-          practice endlessly. All credit to the Doctordle team for the original concept.
+          . We built this as a complement, not a competitor, so medical students can practice endlessly. All credit to the
+          Doctordle team for the original concept.
         </p>
         <p className="text-xs" style={{ color: "#2d7a8a" }}>
           Questions or feedback?{" "}
