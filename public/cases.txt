@@ -1,0 +1,1288 @@
+CASE_ID: 001
+DIFFICULTY: step1
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Hypertrophic Cardiomyopathy
+
+ALIASES:
+HCM
+hypertrophic obstructive cardiomyopathy
+HOCM
+
+VIGNETTE_LINES:
+1. An 18-year-old male collapses suddenly during a basketball game and is resuscitated.
+2. His father died unexpectedly at age 40 from an unknown cardiac cause.
+3. A harsh crescendo-decrescendo systolic murmur is heard at the left sternal border that intensifies with Valsalva.
+4. ECG shows left ventricular hypertrophy with deep narrow Q waves in the lateral leads.
+5. Echocardiography reveals asymmetric septal hypertrophy with systolic anterior motion of the mitral valve.
+6. Genetic testing reveals a pathogenic MYH7 mutation, and an ICD is implanted given his resuscitated cardiac arrest.
+
+TEACHING_POINTS:
+- HCM is the most common cause of sudden cardiac death in young athletes.
+- The murmur increases with maneuvers that decrease preload (Valsalva, standing) and decreases with squatting.
+- Most cases are autosomal dominant mutations in sarcomere genes such as MYH7 and MYBPC3.
+
+==================================================
+
+CASE_ID: 002
+DIFFICULTY: step1
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Aortic Stenosis
+
+ALIASES:
+AS
+calcific aortic stenosis
+severe aortic stenosis
+
+VIGNETTE_LINES:
+1. A 74-year-old man reports exertional chest pain, dizziness, and one episode of syncope while climbing stairs.
+2. He has a long history of hypertension and hyperlipidemia.
+3. A harsh late-peaking systolic ejection murmur radiates to the carotids with diminished and delayed carotid upstrokes.
+4. ECG shows left ventricular hypertrophy with a strain pattern.
+5. Echocardiography shows a heavily calcified valve with a mean gradient of 48 mmHg.
+6. He undergoes TAVR, and intraoperative findings confirm a severely calcified tricuspid aortic valve with a final valve area of 0.7 cm2.
+
+TEACHING_POINTS:
+- The classic triad of symptomatic aortic stenosis is angina, syncope, and heart failure.
+- In patients over 70, calcific degeneration of a normal trileaflet valve is the most common cause.
+- Onset of symptoms marks a sharp decline in prognosis and is an indication for valve replacement.
+
+==================================================
+
+CASE_ID: 003
+DIFFICULTY: step1
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Cardiac Tamponade
+
+ALIASES:
+pericardial tamponade
+tamponade
+
+VIGNETTE_LINES:
+1. A 58-year-old woman presents with worsening shortness of breath and fatigue over two weeks.
+2. She was diagnosed with metastatic lung adenocarcinoma three months ago.
+3. Examination reveals hypotension, muffled heart sounds, distended neck veins, and a pulsus paradoxus of 18 mmHg.
+4. ECG shows low voltage QRS complexes with electrical alternans.
+5. Echocardiography demonstrates a large pericardial effusion with diastolic collapse of the right ventricle.
+6. Pericardiocentesis removes 480 mL of hemorrhagic fluid, and cytology reveals malignant cells consistent with metastatic lung cancer.
+
+TEACHING_POINTS:
+- Beck triad consists of hypotension, distended neck veins, and muffled heart sounds.
+- Pulsus paradoxus is an exaggerated drop in systolic blood pressure greater than 10 mmHg during inspiration.
+- Electrical alternans reflects the swinging motion of the heart within a fluid-filled pericardial sac.
+
+==================================================
+
+CASE_ID: 004
+DIFFICULTY: step1
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Acute ST-Elevation Myocardial Infarction
+
+ALIASES:
+STEMI
+acute MI
+heart attack
+
+VIGNETTE_LINES:
+1. A 62-year-old man develops sudden crushing substernal chest pressure radiating to his left arm with diaphoresis.
+2. He has a 40-pack-year smoking history and type 2 diabetes.
+3. He appears diaphoretic and anxious with an S4 gallop on auscultation.
+4. ECG shows ST-segment elevation in leads II, III, and aVF.
+5. Bedside echocardiography shows hypokinesis of the inferior wall.
+6. Coronary angiography reveals 100% occlusion of the right coronary artery, and a drug-eluting stent is placed with restoration of flow.
+
+TEACHING_POINTS:
+- Inferior wall MIs are most often caused by right coronary artery occlusion.
+- Troponin is the most sensitive and specific biomarker for myocardial injury.
+- Time to reperfusion is critical, and primary PCI is preferred when available within 90 minutes.
+
+==================================================
+
+CASE_ID: 005
+DIFFICULTY: step1
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Infective Endocarditis
+
+ALIASES:
+bacterial endocarditis
+IE
+
+VIGNETTE_LINES:
+1. A 32-year-old man presents with five days of fever, chills, and malaise.
+2. He has a history of intravenous heroin use.
+3. Examination reveals a new holosystolic murmur at the left lower sternal border and painless erythematous macules on his palms.
+4. Blood cultures grow Staphylococcus aureus in three of three bottles.
+5. Transesophageal echocardiography shows a mobile vegetation on the tricuspid valve.
+6. Repeat cultures remain positive over 48 hours, and the patient is started on a six-week course of IV antibiotics for confirmed tricuspid valve endocarditis.
+
+TEACHING_POINTS:
+- Right-sided endocarditis in injection drug users most commonly involves the tricuspid valve.
+- Staphylococcus aureus is the most common cause of acute infective endocarditis.
+- The Duke criteria are used to establish the diagnosis based on major and minor findings.
+
+==================================================
+
+CASE_ID: 006
+DIFFICULTY: step1
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Pulmonary Embolism
+
+ALIASES:
+PE
+acute pulmonary embolism
+venous thromboembolism
+
+VIGNETTE_LINES:
+1. A 55-year-old woman presents with sudden-onset pleuritic chest pain and shortness of breath.
+2. She returned yesterday from a 12-hour transatlantic flight and takes oral contraceptives.
+3. She is tachycardic and tachypneic with an oxygen saturation of 89% on room air and a swollen tender right calf.
+4. Arterial blood gas shows hypoxemia with a respiratory alkalosis, and D-dimer is markedly elevated.
+5. CT pulmonary angiography reveals a filling defect in the right main pulmonary artery.
+6. Lower extremity ultrasound confirms a deep vein thrombosis in the right femoral vein, and the patient is started on therapeutic anticoagulation.
+
+TEACHING_POINTS:
+- Virchow triad describes the three contributors to thrombosis: stasis, endothelial injury, and hypercoagulability.
+- The most common ECG finding in PE is sinus tachycardia, though S1Q3T3 is classically described.
+- CT pulmonary angiography is the gold standard diagnostic test in hemodynamically stable patients.
+
+==================================================
+
+CASE_ID: 007
+DIFFICULTY: step1
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Chronic Obstructive Pulmonary Disease
+
+ALIASES:
+COPD
+emphysema
+chronic bronchitis
+
+VIGNETTE_LINES:
+1. A 66-year-old man complains of progressive shortness of breath and a chronic productive cough for years.
+2. He has smoked one pack of cigarettes daily for 45 years.
+3. He has a barrel-shaped chest, prolonged expiration, and diffuse wheezing on auscultation.
+4. Arterial blood gas shows chronic CO2 retention with a compensated respiratory acidosis.
+5. Chest X-ray shows hyperinflated lungs with flattened diaphragms and increased retrosternal air space.
+6. Spirometry reveals an FEV1/FVC ratio of 0.58 that does not improve significantly with bronchodilators, confirming irreversible airflow obstruction.
+
+TEACHING_POINTS:
+- COPD is defined by airflow limitation that is not fully reversible, distinguishing it from asthma.
+- Smoking cessation is the single most effective intervention to slow disease progression.
+- A reduced FEV1/FVC ratio below 0.70 is the spirometric hallmark of obstructive disease.
+
+==================================================
+
+CASE_ID: 008
+DIFFICULTY: step1
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Community-Acquired Pneumonia
+
+ALIASES:
+CAP
+pneumococcal pneumonia
+lobar pneumonia
+
+VIGNETTE_LINES:
+1. A 48-year-old man presents with three days of high fever, productive cough with rust-colored sputum, and right-sided chest pain.
+2. He recently recovered from an upper respiratory infection.
+3. Examination reveals dullness to percussion, bronchial breath sounds, and increased tactile fremitus over the right lower lobe.
+4. Sputum Gram stain shows lancet-shaped gram-positive diplococci.
+5. Chest X-ray reveals a dense right lower lobe consolidation with air bronchograms.
+6. Sputum culture grows Streptococcus pneumoniae, and the patient improves on empiric ceftriaxone and azithromycin.
+
+TEACHING_POINTS:
+- Streptococcus pneumoniae is the most common cause of community-acquired pneumonia.
+- Rust-colored sputum is classically associated with pneumococcal infection.
+- The CURB-65 score helps determine the need for hospitalization.
+
+==================================================
+
+CASE_ID: 009
+DIFFICULTY: step1
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Asthma
+
+ALIASES:
+bronchial asthma
+reactive airway disease
+
+VIGNETTE_LINES:
+1. A 24-year-old woman presents with recurrent episodes of wheezing, chest tightness, and cough that worsen at night.
+2. She has a history of eczema and seasonal allergic rhinitis.
+3. Examination during an episode reveals diffuse expiratory wheezing and a prolonged expiratory phase.
+4. Peak expiratory flow is reduced, and CBC shows mild eosinophilia.
+5. Chest X-ray during an acute episode shows hyperinflation without focal consolidation.
+6. Spirometry shows obstruction with greater than 12% improvement in FEV1 after bronchodilator administration, confirming reversible airflow limitation.
+
+TEACHING_POINTS:
+- Asthma is characterized by reversible airway obstruction, bronchial hyperresponsiveness, and inflammation.
+- The atopic triad consists of asthma, eczema, and allergic rhinitis.
+- Reversibility of obstruction with bronchodilators distinguishes asthma from COPD.
+
+==================================================
+
+CASE_ID: 010
+DIFFICULTY: step1
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Sarcoidosis
+
+ALIASES:
+pulmonary sarcoidosis
+
+VIGNETTE_LINES:
+1. A 35-year-old African American woman presents with several weeks of dry cough, fatigue, and mild dyspnea.
+2. She also reports tender red nodules on her shins and blurred vision.
+3. Examination reveals erythema nodosum on the lower extremities and anterior uveitis on slit-lamp exam.
+4. Serum calcium and angiotensin-converting enzyme levels are elevated.
+5. Chest X-ray shows bilateral hilar lymphadenopathy.
+6. Transbronchial biopsy reveals noncaseating granulomas, and stains for acid-fast bacilli and fungi are negative.
+
+TEACHING_POINTS:
+- Sarcoidosis is a diagnosis of exclusion characterized by noncaseating granulomas.
+- Hypercalcemia results from increased 1-alpha-hydroxylase activity in granulomas producing active vitamin D.
+- It most commonly affects young African American women and shows bilateral hilar lymphadenopathy.
+
+==================================================
+
+CASE_ID: 011
+DIFFICULTY: step1
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Acute Pancreatitis
+
+ALIASES:
+pancreatitis
+
+VIGNETTE_LINES:
+1. A 45-year-old man presents with severe epigastric pain radiating to the back, with nausea and vomiting.
+2. He admits to heavy alcohol use over the past weekend.
+3. Examination reveals epigastric tenderness, abdominal guarding, and decreased bowel sounds.
+4. Serum lipase is elevated to more than three times the upper limit of normal.
+5. Contrast-enhanced CT of the abdomen shows an edematous pancreas with peripancreatic fat stranding.
+6. The patient improves with aggressive IV fluids and bowel rest, and his lipase trends down over several days confirming resolving pancreatitis.
+
+TEACHING_POINTS:
+- Gallstones and alcohol are the two most common causes of acute pancreatitis.
+- Lipase is more specific than amylase for pancreatic injury.
+- Aggressive fluid resuscitation is the cornerstone of early management.
+
+==================================================
+
+CASE_ID: 012
+DIFFICULTY: step1
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Crohn Disease
+
+ALIASES:
+Crohn's disease
+regional enteritis
+
+VIGNETTE_LINES:
+1. A 27-year-old woman presents with months of crampy abdominal pain, non-bloody diarrhea, and unintended weight loss.
+2. She reports intermittent mouth ulcers and joint pains.
+3. Examination reveals a tender right lower quadrant fullness and perianal skin tags.
+4. Labs show anemia, elevated CRP, and low vitamin B12.
+5. CT enterography shows skip lesions with bowel wall thickening in the terminal ileum.
+6. Colonoscopy with biopsy reveals transmural inflammation with noncaseating granulomas in a cobblestone mucosal pattern.
+
+TEACHING_POINTS:
+- Crohn disease can affect any part of the GI tract from mouth to anus with skip lesions.
+- Transmural inflammation predisposes to fistulas, strictures, and abscesses.
+- Terminal ileum involvement causes malabsorption of vitamin B12 and bile acids.
+
+==================================================
+
+CASE_ID: 013
+DIFFICULTY: step1
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Ulcerative Colitis
+
+ALIASES:
+UC
+
+VIGNETTE_LINES:
+1. A 30-year-old man presents with several weeks of bloody diarrhea with mucus and lower abdominal cramping.
+2. He reports a frequent sensation of incomplete evacuation and urgency.
+3. Examination reveals mild lower abdominal tenderness without masses.
+4. Labs show anemia and elevated inflammatory markers, with p-ANCA positivity.
+5. CT shows continuous colonic wall thickening extending proximally from the rectum.
+6. Colonoscopy reveals continuous mucosal inflammation with friability and pseudopolyps, and biopsy shows crypt abscesses limited to the mucosa.
+
+TEACHING_POINTS:
+- Ulcerative colitis involves continuous inflammation starting at the rectum and extending proximally.
+- Inflammation is limited to the mucosa and submucosa, unlike the transmural disease of Crohn.
+- Primary sclerosing cholangitis is an associated extraintestinal manifestation.
+
+==================================================
+
+CASE_ID: 014
+DIFFICULTY: step1
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Hereditary Hemochromatosis
+
+ALIASES:
+hemochromatosis
+iron overload
+
+VIGNETTE_LINES:
+1. A 52-year-old man presents with fatigue, joint pain, and decreased libido.
+2. He has noticed a bronze discoloration of his skin and was recently diagnosed with diabetes.
+3. Examination reveals hepatomegaly and hyperpigmentation of the skin.
+4. Labs show elevated serum ferritin and a transferrin saturation of 78%.
+5. MRI of the liver demonstrates iron deposition with decreased signal intensity.
+6. Genetic testing confirms homozygosity for the C282Y mutation in the HFE gene.
+
+TEACHING_POINTS:
+- Hereditary hemochromatosis is an autosomal recessive disorder of iron absorption due to HFE mutations.
+- The classic triad is cirrhosis, diabetes, and skin hyperpigmentation, called bronze diabetes.
+- Therapeutic phlebotomy is the mainstay of treatment.
+
+==================================================
+
+CASE_ID: 015
+DIFFICULTY: step1
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Celiac Disease
+
+ALIASES:
+celiac sprue
+gluten-sensitive enteropathy
+
+VIGNETTE_LINES:
+1. A 29-year-old woman presents with chronic diarrhea, bloating, and unintentional weight loss.
+2. She notes her symptoms worsen after eating bread and pasta.
+3. Examination reveals an itchy vesicular rash on the extensor surfaces of her elbows.
+4. Labs show iron deficiency anemia and positive anti-tissue transglutaminase IgA antibodies.
+5. Capsule endoscopy shows scalloping of the duodenal folds.
+6. Duodenal biopsy reveals villous atrophy, crypt hyperplasia, and intraepithelial lymphocytosis that improve on a gluten-free diet.
+
+TEACHING_POINTS:
+- Celiac disease is an autoimmune reaction to gliadin in genetically susceptible individuals (HLA-DQ2/DQ8).
+- Dermatitis herpetiformis is the characteristic skin manifestation.
+- Biopsy of the distal duodenum showing villous atrophy is the diagnostic gold standard.
+
+==================================================
+
+CASE_ID: 016
+DIFFICULTY: step1
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Graves Disease
+
+ALIASES:
+Graves' disease
+toxic diffuse goiter
+hyperthyroidism
+
+VIGNETTE_LINES:
+1. A 33-year-old woman presents with palpitations, heat intolerance, weight loss despite increased appetite, and anxiety.
+2. She reports her eyes appear more prominent and her neck has become fuller.
+3. Examination reveals exophthalmos, a diffuse nontender goiter with a bruit, and a fine resting tremor.
+4. Labs show suppressed TSH with elevated free T4 and positive thyroid-stimulating immunoglobulin.
+5. Radioactive iodine uptake scan shows diffusely increased uptake throughout the gland.
+6. The presence of pretibial myxedema and stimulating TSH receptor antibodies confirms autoimmune Graves disease.
+
+TEACHING_POINTS:
+- Graves disease is caused by IgG autoantibodies that stimulate the TSH receptor.
+- Exophthalmos and pretibial myxedema are specific extrathyroidal manifestations.
+- Diffusely increased radioactive iodine uptake distinguishes it from toxic nodular disease and thyroiditis.
+
+==================================================
+
+CASE_ID: 017
+DIFFICULTY: step1
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Diabetic Ketoacidosis
+
+ALIASES:
+DKA
+
+VIGNETTE_LINES:
+1. A 19-year-old man presents with one day of nausea, vomiting, abdominal pain, and rapid breathing.
+2. He was recently diagnosed with type 1 diabetes and ran out of his insulin.
+3. Examination reveals deep rapid Kussmaul respirations and a fruity odor on his breath.
+4. Labs show glucose of 480 mg/dL, anion gap metabolic acidosis, and positive serum ketones.
+5. There is no acute finding on chest imaging to suggest an alternative cause.
+6. Arterial pH is 7.18 with a bicarbonate of 12, and the patient improves with IV fluids, an insulin infusion, and potassium repletion.
+
+TEACHING_POINTS:
+- DKA is characterized by hyperglycemia, anion gap metabolic acidosis, and ketosis.
+- Total body potassium is depleted despite a normal or high serum level, requiring careful repletion.
+- IV fluids and insulin are the cornerstones of treatment, with glucose monitoring to avoid hypoglycemia.
+
+==================================================
+
+CASE_ID: 018
+DIFFICULTY: step1
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Cushing Syndrome
+
+ALIASES:
+hypercortisolism
+Cushing's syndrome
+
+VIGNETTE_LINES:
+1. A 44-year-old woman presents with progressive weight gain, easy bruising, and muscle weakness.
+2. She reports new purple stretch marks on her abdomen and worsening hypertension.
+3. Examination reveals central obesity, a dorsocervical fat pad, moon facies, and wide violaceous abdominal striae.
+4. Labs show hyperglycemia and elevated late-night salivary cortisol with failure to suppress on low-dose dexamethasone.
+5. Pituitary MRI reveals a small adenoma.
+6. High-dose dexamethasone suppresses cortisol and ACTH is elevated, confirming a pituitary source of ACTH-dependent hypercortisolism.
+
+TEACHING_POINTS:
+- Cushing disease specifically refers to an ACTH-secreting pituitary adenoma.
+- The most common overall cause of Cushing syndrome is exogenous glucocorticoid use.
+- High-dose dexamethasone suppression distinguishes pituitary adenomas from ectopic ACTH sources.
+
+==================================================
+
+CASE_ID: 019
+DIFFICULTY: step1
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Primary Hyperparathyroidism
+
+ALIASES:
+hyperparathyroidism
+parathyroid adenoma
+
+VIGNETTE_LINES:
+1. A 56-year-old woman is found to have an elevated calcium level on routine bloodwork.
+2. She reports fatigue, constipation, increased thirst, and a recent kidney stone.
+3. Examination is largely unremarkable without a palpable neck mass.
+4. Labs show hypercalcemia with an inappropriately elevated PTH and low phosphate.
+5. A sestamibi scan localizes a single hyperfunctioning parathyroid gland.
+6. Surgical resection reveals a solitary parathyroid adenoma, and intraoperative PTH falls by more than 50% after removal.
+
+TEACHING_POINTS:
+- A solitary parathyroid adenoma is the most common cause of primary hyperparathyroidism.
+- Symptoms are remembered as stones, bones, groans, and psychiatric overtones.
+- High calcium with high PTH distinguishes primary hyperparathyroidism from other causes of hypercalcemia.
+
+==================================================
+
+CASE_ID: 020
+DIFFICULTY: step1
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Pheochromocytoma
+
+ALIASES:
+pheo
+adrenal medullary tumor
+
+VIGNETTE_LINES:
+1. A 41-year-old man presents with episodic pounding headaches, palpitations, and profuse sweating.
+2. He reports these spells come on suddenly and resolve over half an hour.
+3. During an episode his blood pressure is 210/120 mmHg with tachycardia and pallor.
+4. Plasma free metanephrines and 24-hour urine metanephrines are markedly elevated.
+5. CT of the abdomen reveals a 4 cm right adrenal mass.
+6. After alpha-blockade and surgical resection, pathology confirms a catecholamine-secreting tumor of chromaffin cells.
+
+TEACHING_POINTS:
+- Pheochromocytoma follows the rule of 10s: 10% bilateral, 10% malignant, 10% extra-adrenal.
+- The classic triad is episodic headache, sweating, and tachycardia.
+- Alpha-blockade must precede beta-blockade to avoid unopposed alpha stimulation and hypertensive crisis.
+
+==================================================
+
+CASE_ID: 021
+DIFFICULTY: step1
+SYSTEM: neurology
+
+DIAGNOSIS:
+Multiple Sclerosis
+
+ALIASES:
+MS
+
+VIGNETTE_LINES:
+1. A 28-year-old woman presents with one week of blurred vision and pain in her right eye with movement.
+2. She recalls an episode of arm numbness and weakness last year that resolved spontaneously.
+3. Examination reveals an afferent pupillary defect and internuclear ophthalmoplegia.
+4. Lumbar puncture shows oligoclonal bands in the cerebrospinal fluid.
+5. MRI of the brain reveals multiple periventricular white matter lesions oriented perpendicular to the ventricles.
+6. A follow-up MRI months later shows new enhancing lesions, confirming dissemination in time and space.
+
+TEACHING_POINTS:
+- MS is an autoimmune demyelinating disease of the CNS with lesions separated in time and space.
+- Optic neuritis is a common presenting symptom.
+- Oligoclonal bands in the CSF and periventricular plaques on MRI support the diagnosis.
+
+==================================================
+
+CASE_ID: 022
+DIFFICULTY: step1
+SYSTEM: neurology
+
+DIAGNOSIS:
+Myasthenia Gravis
+
+ALIASES:
+MG
+
+VIGNETTE_LINES:
+1. A 36-year-old woman presents with drooping eyelids and double vision that worsen toward the end of the day.
+2. She reports difficulty chewing and a weak voice after prolonged talking.
+3. Examination reveals fatigable ptosis that worsens with sustained upgaze.
+4. Serum testing is positive for acetylcholine receptor antibodies.
+5. CT of the chest reveals an anterior mediastinal mass consistent with a thymoma.
+6. Repetitive nerve stimulation shows a decremental response, and symptoms improve dramatically after edrophonium administration.
+
+TEACHING_POINTS:
+- Myasthenia gravis is caused by autoantibodies against postsynaptic acetylcholine receptors.
+- Symptoms characteristically worsen with use and improve with rest.
+- Thymic abnormalities, including thymoma and hyperplasia, are commonly associated.
+
+==================================================
+
+CASE_ID: 023
+DIFFICULTY: step1
+SYSTEM: neurology
+
+DIAGNOSIS:
+Guillain-Barre Syndrome
+
+ALIASES:
+GBS
+acute inflammatory demyelinating polyradiculoneuropathy
+
+VIGNETTE_LINES:
+1. A 40-year-old man presents with progressive symmetric weakness in his legs ascending over several days.
+2. He had a diarrheal illness two weeks ago.
+3. Examination reveals symmetric lower extremity weakness with absent deep tendon reflexes.
+4. Lumbar puncture shows elevated protein with a normal cell count.
+5. Nerve conduction studies show demyelination with reduced conduction velocities.
+6. The patient develops declining respiratory function requiring monitoring of vital capacity, and improves with IVIG, consistent with post-infectious GBS following Campylobacter.
+
+TEACHING_POINTS:
+- Guillain-Barre syndrome is an acute immune-mediated demyelinating polyneuropathy, often post-infectious.
+- Campylobacter jejuni is the most commonly identified preceding infection.
+- Albuminocytologic dissociation (high protein, normal cells) in the CSF is characteristic.
+
+==================================================
+
+CASE_ID: 024
+DIFFICULTY: step1
+SYSTEM: neurology
+
+DIAGNOSIS:
+Bacterial Meningitis
+
+ALIASES:
+meningitis
+
+VIGNETTE_LINES:
+1. A 20-year-old college student presents with a severe headache, high fever, and neck stiffness for one day.
+2. He lives in a crowded dormitory and several classmates have been ill.
+3. Examination reveals nuchal rigidity, photophobia, and positive Kernig and Brudzinski signs.
+4. Lumbar puncture shows high opening pressure, high protein, low glucose, and neutrophilic pleocytosis.
+5. Head CT prior to LP shows no mass or midline shift.
+6. CSF Gram stain reveals gram-negative diplococci, and culture grows Neisseria meningitidis.
+
+TEACHING_POINTS:
+- Bacterial meningitis shows low glucose, high protein, and neutrophil-predominant pleocytosis in the CSF.
+- Neisseria meningitidis is common in young adults in close quarters such as dormitories.
+- Empiric antibiotics should not be delayed and dexamethasone reduces neurologic complications.
+
+==================================================
+
+CASE_ID: 025
+DIFFICULTY: step1
+SYSTEM: neurology
+
+DIAGNOSIS:
+Parkinson Disease
+
+ALIASES:
+Parkinson's disease
+idiopathic parkinsonism
+
+VIGNETTE_LINES:
+1. A 68-year-old man presents with a tremor in his right hand that is most noticeable at rest.
+2. His wife notes he has become slower in his movements and his handwriting has shrunk.
+3. Examination reveals a pill-rolling resting tremor, cogwheel rigidity, bradykinesia, and a shuffling gait.
+4. Routine labs and metabolic workup are unremarkable.
+5. MRI of the brain shows no structural lesion or vascular cause.
+6. Symptoms improve substantially with a trial of levodopa, supporting a diagnosis of dopaminergic nigrostriatal degeneration.
+
+TEACHING_POINTS:
+- Parkinson disease results from loss of dopaminergic neurons in the substantia nigra pars compacta.
+- The classic features are resting tremor, rigidity, bradykinesia, and postural instability.
+- Lewy bodies containing alpha-synuclein are the pathological hallmark.
+
+==================================================
+
+CASE_ID: 026
+DIFFICULTY: step1
+SYSTEM: nephrology
+
+DIAGNOSIS:
+Poststreptococcal Glomerulonephritis
+
+ALIASES:
+PSGN
+acute glomerulonephritis
+
+VIGNETTE_LINES:
+1. A 7-year-old boy presents with dark cola-colored urine and puffiness around his eyes.
+2. He had a sore throat about two weeks ago that resolved on its own.
+3. Examination reveals periorbital edema and a blood pressure elevated for his age.
+4. Urinalysis shows hematuria with red blood cell casts and mild proteinuria, with low serum C3.
+5. Renal ultrasound shows normal-sized kidneys without obstruction.
+6. Antistreptolysin O titers are elevated, and renal biopsy would show subepithelial humps on electron microscopy.
+
+TEACHING_POINTS:
+- PSGN classically follows group A streptococcal pharyngitis or skin infection by one to several weeks.
+- It presents as a nephritic syndrome with hematuria, hypertension, and edema.
+- Subepithelial immune complex humps and low complement are characteristic.
+
+==================================================
+
+CASE_ID: 027
+DIFFICULTY: step1
+SYSTEM: nephrology
+
+DIAGNOSIS:
+Minimal Change Disease
+
+ALIASES:
+MCD
+lipoid nephrosis
+
+VIGNETTE_LINES:
+1. A 4-year-old boy presents with progressive swelling of his face, legs, and abdomen.
+2. His parents note his urine has been frothy.
+3. Examination reveals periorbital edema, pitting lower extremity edema, and ascites.
+4. Urinalysis shows massive proteinuria, and serum albumin is low with elevated lipids.
+5. Renal ultrasound is unremarkable.
+6. The child responds rapidly to corticosteroids, and electron microscopy would reveal diffuse effacement of podocyte foot processes.
+
+TEACHING_POINTS:
+- Minimal change disease is the most common cause of nephrotic syndrome in children.
+- Light microscopy is normal, but electron microscopy shows foot process effacement.
+- It is highly responsive to corticosteroid therapy.
+
+==================================================
+
+CASE_ID: 028
+DIFFICULTY: step1
+SYSTEM: nephrology
+
+DIAGNOSIS:
+Acute Tubular Necrosis
+
+ALIASES:
+ATN
+
+VIGNETTE_LINES:
+1. A 64-year-old man develops decreased urine output two days after major abdominal surgery complicated by hypotension.
+2. He received IV contrast and aminoglycosides during his hospitalization.
+3. Examination reveals mild volume overload with bibasilar crackles.
+4. Labs show rising creatinine, and urinalysis reveals muddy brown granular casts with a high fractional excretion of sodium.
+5. Renal ultrasound shows no hydronephrosis or obstruction.
+6. Urine sodium is greater than 40 and FENa exceeds 2%, consistent with intrinsic tubular injury rather than a prerenal cause.
+
+TEACHING_POINTS:
+- Acute tubular necrosis is the most common cause of intrinsic acute kidney injury.
+- Ischemia and nephrotoxins such as aminoglycosides and contrast are common causes.
+- Muddy brown granular casts and high FENa distinguish ATN from prerenal azotemia.
+
+==================================================
+
+CASE_ID: 029
+DIFFICULTY: step1
+SYSTEM: nephrology
+
+DIAGNOSIS:
+Autosomal Dominant Polycystic Kidney Disease
+
+ALIASES:
+ADPKD
+polycystic kidney disease
+
+VIGNETTE_LINES:
+1. A 38-year-old man presents with flank pain, blood in his urine, and difficult-to-control hypertension.
+2. His father required dialysis and died of a brain aneurysm rupture.
+3. Examination reveals bilateral palpable flank masses.
+4. Labs show mild renal insufficiency and hematuria.
+5. Abdominal ultrasound reveals numerous bilateral renal cysts with markedly enlarged kidneys.
+6. Genetic testing reveals a pathogenic PKD1 mutation, and MR angiography screening detects a small berry aneurysm.
+
+TEACHING_POINTS:
+- ADPKD is most often caused by mutations in PKD1 on chromosome 16.
+- Extrarenal manifestations include berry aneurysms, hepatic cysts, and mitral valve prolapse.
+- It is a leading inherited cause of end-stage renal disease.
+
+==================================================
+
+CASE_ID: 030
+DIFFICULTY: step1
+SYSTEM: nephrology
+
+DIAGNOSIS:
+Diabetic Nephropathy
+
+ALIASES:
+diabetic kidney disease
+Kimmelstiel-Wilson disease
+
+VIGNETTE_LINES:
+1. A 59-year-old woman with long-standing diabetes presents for routine follow-up with mild lower extremity swelling.
+2. She has had type 2 diabetes for 18 years with poor glycemic control and coexisting retinopathy.
+3. Examination reveals mild pitting edema and elevated blood pressure.
+4. Urinalysis shows persistent albuminuria, and HbA1c is 9.2%.
+5. Renal ultrasound shows normal to enlarged kidneys early in the disease.
+6. Renal biopsy, if performed, would reveal nodular glomerulosclerosis with Kimmelstiel-Wilson nodules and mesangial expansion.
+
+TEACHING_POINTS:
+- Diabetic nephropathy is the leading cause of end-stage renal disease in the United States.
+- Persistent albuminuria is the earliest clinical sign.
+- ACE inhibitors and ARBs slow progression by reducing intraglomerular pressure.
+
+==================================================
+
+CASE_ID: 031
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+Chronic Myeloid Leukemia
+
+ALIASES:
+CML
+
+VIGNETTE_LINES:
+1. A 50-year-old man presents with fatigue, early satiety, and abdominal fullness.
+2. He has noticed drenching night sweats and unintentional weight loss.
+3. Examination reveals massive splenomegaly extending toward the pelvis.
+4. CBC shows marked leukocytosis with the full spectrum of myeloid maturation and a low leukocyte alkaline phosphatase score.
+5. Abdominal imaging confirms an enlarged spleen.
+6. Cytogenetic testing reveals the t(9;22) Philadelphia chromosome producing the BCR-ABL fusion gene, and he is started on imatinib.
+
+TEACHING_POINTS:
+- CML is defined by the BCR-ABL fusion gene from the t(9;22) translocation.
+- Tyrosine kinase inhibitors such as imatinib have revolutionized treatment.
+- A low leukocyte alkaline phosphatase score helps distinguish CML from a leukemoid reaction.
+
+==================================================
+
+CASE_ID: 032
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+Acute Lymphoblastic Leukemia
+
+ALIASES:
+ALL
+
+VIGNETTE_LINES:
+1. A 5-year-old boy presents with fatigue, easy bruising, bone pain, and recurrent fevers.
+2. His parents note he has been pale and less active over the past month.
+3. Examination reveals pallor, scattered petechiae, hepatosplenomegaly, and lymphadenopathy.
+4. CBC shows anemia, thrombocytopenia, and a high white count with circulating lymphoblasts.
+5. Chest X-ray may show a mediastinal mass in the T-cell subtype.
+6. Bone marrow biopsy shows greater than 20% lymphoblasts that are TdT positive, confirming acute lymphoblastic leukemia.
+
+TEACHING_POINTS:
+- ALL is the most common malignancy in children.
+- TdT positivity marks lymphoblasts and distinguishes ALL from myeloid leukemias.
+- The t(12;21) translocation in children carries a favorable prognosis.
+
+==================================================
+
+CASE_ID: 033
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+Multiple Myeloma
+
+ALIASES:
+MM
+plasma cell myeloma
+
+VIGNETTE_LINES:
+1. A 67-year-old man presents with progressive back pain, fatigue, and recurrent infections.
+2. He reports increased thirst and constipation over recent weeks.
+3. Examination reveals bony tenderness over the spine and pallor.
+4. Labs show anemia, hypercalcemia, elevated creatinine, and a narrow spike on serum protein electrophoresis.
+5. Skeletal survey reveals multiple punched-out lytic lesions in the skull.
+6. Bone marrow biopsy shows greater than 10% clonal plasma cells, and urine contains Bence Jones proteins.
+
+TEACHING_POINTS:
+- Multiple myeloma features are recalled by the CRAB mnemonic: hyperCalcemia, Renal failure, Anemia, Bone lesions.
+- A monoclonal M spike on protein electrophoresis is characteristic.
+- Bence Jones proteins are free monoclonal light chains found in the urine.
+
+==================================================
+
+CASE_ID: 034
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+Hodgkin Lymphoma
+
+ALIASES:
+Hodgkin's lymphoma
+Hodgkin disease
+
+VIGNETTE_LINES:
+1. A 24-year-old man presents with a painless enlarging lump in his neck for two months.
+2. He reports drenching night sweats, fevers, and unexplained weight loss, with pain in the node after drinking alcohol.
+3. Examination reveals firm, rubbery, nontender cervical lymphadenopathy.
+4. Labs show mild anemia and an elevated ESR.
+5. CT of the chest reveals mediastinal lymphadenopathy.
+6. Excisional lymph node biopsy reveals Reed-Sternberg cells with an owl-eye appearance on a mixed inflammatory background.
+
+TEACHING_POINTS:
+- Reed-Sternberg cells are the pathognomonic finding in Hodgkin lymphoma.
+- It has a bimodal age distribution peaking in young adults and the elderly.
+- Hodgkin lymphoma spreads in a contiguous, predictable fashion between lymph node groups.
+
+==================================================
+
+CASE_ID: 035
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+Sickle Cell Disease
+
+ALIASES:
+sickle cell anemia
+SCD
+
+VIGNETTE_LINES:
+1. A 9-year-old African American boy presents with sudden severe pain in his arms, legs, and back.
+2. He has had similar painful episodes since early childhood, often triggered by cold or dehydration.
+3. Examination reveals tenderness over the long bones, scleral icterus, and splenic atrophy.
+4. CBC shows anemia with sickled cells and target cells on the peripheral smear, with elevated reticulocytes.
+5. Chest X-ray during an episode of fever and hypoxia shows a new pulmonary infiltrate.
+6. Hemoglobin electrophoresis reveals predominantly HbS, confirming homozygosity for the sickle mutation.
+
+TEACHING_POINTS:
+- Sickle cell disease results from a glutamate-to-valine substitution in the beta-globin chain.
+- Vaso-occlusive crises cause acute pain and complications such as acute chest syndrome.
+- Functional asplenia from autoinfarction increases susceptibility to encapsulated organisms.
+
+==================================================
+
+CASE_ID: 036
+DIFFICULTY: step1
+SYSTEM: infectious disease
+
+DIAGNOSIS:
+Tuberculosis
+
+ALIASES:
+TB
+pulmonary tuberculosis
+
+VIGNETTE_LINES:
+1. A 45-year-old man presents with a chronic productive cough for six weeks, now with blood-streaked sputum.
+2. He recently emigrated from a high-prevalence country and has had night sweats and weight loss.
+3. Examination reveals cachexia and crackles over the upper lung fields.
+4. Sputum acid-fast bacilli smear is positive, and an interferon-gamma release assay is positive.
+5. Chest X-ray reveals upper lobe cavitary lesions.
+6. Sputum culture grows Mycobacterium tuberculosis, and the patient is started on a four-drug regimen of rifampin, isoniazid, pyrazinamide, and ethambutol.
+
+TEACHING_POINTS:
+- Reactivation tuberculosis classically involves the apical and posterior segments of the upper lobes.
+- Acid-fast staining and culture confirm the diagnosis.
+- The initial treatment regimen is remembered as RIPE.
+
+==================================================
+
+CASE_ID: 037
+DIFFICULTY: step1
+SYSTEM: infectious disease
+
+DIAGNOSIS:
+Infectious Mononucleosis
+
+ALIASES:
+mono
+EBV infection
+
+VIGNETTE_LINES:
+1. A 19-year-old college student presents with one week of sore throat, fever, and profound fatigue.
+2. She mentions kissing a partner who had similar symptoms recently.
+3. Examination reveals exudative pharyngitis, posterior cervical lymphadenopathy, and splenomegaly.
+4. CBC shows lymphocytosis with atypical lymphocytes, and a heterophile antibody (Monospot) test is positive.
+5. Abdominal ultrasound confirms an enlarged spleen.
+6. EBV-specific viral capsid antigen IgM antibodies are positive, confirming acute Epstein-Barr virus infection.
+
+TEACHING_POINTS:
+- Infectious mononucleosis is most often caused by Epstein-Barr virus infecting B lymphocytes via CD21.
+- Administration of amoxicillin or ampicillin classically causes a rash.
+- Splenomegaly warrants avoidance of contact sports due to the risk of splenic rupture.
+
+==================================================
+
+CASE_ID: 038
+DIFFICULTY: step1
+SYSTEM: infectious disease
+
+DIAGNOSIS:
+Lyme Disease
+
+ALIASES:
+Lyme borreliosis
+
+VIGNETTE_LINES:
+1. A 34-year-old man presents with fatigue, fever, and an expanding circular rash on his thigh.
+2. He went hiking in wooded areas of the northeastern United States two weeks ago.
+3. Examination reveals a 10 cm targetoid lesion with central clearing.
+4. Early serologic testing may be negative during the acute phase.
+5. There is no acute imaging abnormality on evaluation.
+6. ELISA followed by confirmatory Western blot is positive for antibodies to Borrelia burgdorferi, and he responds to doxycycline.
+
+TEACHING_POINTS:
+- Lyme disease is caused by Borrelia burgdorferi transmitted by the Ixodes tick.
+- Erythema migrans is the characteristic early skin manifestation.
+- Later complications include heart block, facial nerve palsy, and migratory arthritis.
+
+==================================================
+
+CASE_ID: 039
+DIFFICULTY: step1
+SYSTEM: infectious disease
+
+DIAGNOSIS:
+Malaria
+
+ALIASES:
+Plasmodium infection
+
+VIGNETTE_LINES:
+1. A 29-year-old woman presents with cyclical high fevers, shaking chills, and sweats every 48 hours.
+2. She returned from a trip to sub-Saharan Africa three weeks ago and did not take prophylaxis.
+3. Examination reveals fever, pallor, jaundice, and splenomegaly.
+4. Labs show anemia, thrombocytopenia, and elevated indirect bilirubin.
+5. No focal source is found on chest or abdominal imaging.
+6. Thick and thin blood smears reveal intraerythrocytic ring forms and banana-shaped gametocytes consistent with Plasmodium falciparum.
+
+TEACHING_POINTS:
+- Malaria is transmitted by the female Anopheles mosquito.
+- Plasmodium falciparum causes the most severe disease and can cause cerebral malaria.
+- Plasmodium vivax and ovale form hypnozoites requiring primaquine to prevent relapse.
+
+==================================================
+
+CASE_ID: 040
+DIFFICULTY: step1
+SYSTEM: infectious disease
+
+DIAGNOSIS:
+Clostridioides difficile Colitis
+
+ALIASES:
+C. diff colitis
+pseudomembranous colitis
+
+VIGNETTE_LINES:
+1. A 70-year-old woman presents with profuse watery diarrhea and crampy abdominal pain.
+2. She completed a course of clindamycin for a dental infection last week.
+3. Examination reveals lower abdominal tenderness and a low-grade fever.
+4. Stool testing is positive for C. difficile toxin B by PCR, and the white count is markedly elevated.
+5. CT of the abdomen shows colonic wall thickening with mucosal edema.
+6. Colonoscopy reveals raised yellow-white pseudomembranes on the colonic mucosa, and she improves on oral vancomycin.
+
+TEACHING_POINTS:
+- C. difficile infection commonly follows antibiotic use that disrupts normal gut flora.
+- Clindamycin and fluoroquinolones are classic precipitants.
+- Oral vancomycin or fidaxomicin are first-line treatments, not metronidazole for severe disease.
+
+==================================================
+
+CASE_ID: 041
+DIFFICULTY: step1
+SYSTEM: musculoskeletal
+
+DIAGNOSIS:
+Rheumatoid Arthritis
+
+ALIASES:
+RA
+
+VIGNETTE_LINES:
+1. A 45-year-old woman presents with several months of symmetric pain and swelling in the small joints of her hands.
+2. She reports morning stiffness lasting more than an hour that improves with use.
+3. Examination reveals swelling of the metacarpophalangeal and proximal interphalangeal joints with ulnar deviation.
+4. Labs show positive rheumatoid factor and anti-cyclic citrullinated peptide antibodies with elevated ESR.
+5. Hand X-rays reveal periarticular osteopenia and marginal joint erosions.
+6. Synovial findings of pannus formation confirm chronic inflammatory destruction of the joint.
+
+TEACHING_POINTS:
+- Rheumatoid arthritis is a symmetric inflammatory polyarthritis sparing the distal interphalangeal joints.
+- Anti-CCP antibodies are highly specific for the diagnosis.
+- Morning stiffness improving with activity distinguishes it from osteoarthritis.
+
+==================================================
+
+CASE_ID: 042
+DIFFICULTY: step1
+SYSTEM: musculoskeletal
+
+DIAGNOSIS:
+Gout
+
+ALIASES:
+gouty arthritis
+podagra
+
+VIGNETTE_LINES:
+1. A 52-year-old man wakes with sudden excruciating pain, redness, and swelling of his right great toe.
+2. He attended a party the night before with heavy beer and red meat consumption.
+3. Examination reveals an exquisitely tender, erythematous, swollen first metatarsophalangeal joint.
+4. Serum uric acid is elevated, though it may be normal during an acute attack.
+5. Joint X-ray may show punched-out erosions with overhanging edges in chronic disease.
+6. Arthrocentesis reveals needle-shaped, negatively birefringent crystals that appear yellow when parallel to the polarizer.
+
+TEACHING_POINTS:
+- Gout results from deposition of monosodium urate crystals in joints.
+- The first metatarsophalangeal joint is most commonly affected, called podagra.
+- Crystals are needle-shaped and negatively birefringent under polarized light.
+
+==================================================
+
+CASE_ID: 043
+DIFFICULTY: step1
+SYSTEM: musculoskeletal
+
+DIAGNOSIS:
+Systemic Lupus Erythematosus
+
+ALIASES:
+SLE
+lupus
+
+VIGNETTE_LINES:
+1. A 26-year-old woman presents with fatigue, joint pain, and a facial rash that worsens with sun exposure.
+2. She reports painless mouth ulcers and hair loss over recent months.
+3. Examination reveals a malar rash sparing the nasolabial folds and nonerosive arthritis.
+4. Labs show positive ANA and anti-double-stranded DNA antibodies with low complement levels.
+5. Urinalysis reveals proteinuria and red cell casts suggesting renal involvement.
+6. Renal biopsy demonstrates immune complex deposition with a wire-loop appearance, consistent with lupus nephritis.
+
+TEACHING_POINTS:
+- Anti-dsDNA and anti-Smith antibodies are highly specific for SLE.
+- Lupus nephritis is a major cause of morbidity and is monitored with complement and dsDNA levels.
+- The malar rash characteristically spares the nasolabial folds.
+
+==================================================
+
+CASE_ID: 044
+DIFFICULTY: step1
+SYSTEM: musculoskeletal
+
+DIAGNOSIS:
+Osteoarthritis
+
+ALIASES:
+OA
+degenerative joint disease
+
+VIGNETTE_LINES:
+1. A 64-year-old obese woman presents with chronic knee pain that worsens with activity and improves with rest.
+2. She reports brief morning stiffness lasting under 30 minutes.
+3. Examination reveals bony enlargement of the distal interphalangeal joints and crepitus in the knees.
+4. Inflammatory markers are normal and rheumatoid factor is negative.
+5. Knee X-ray reveals joint space narrowing, subchondral sclerosis, and osteophytes.
+6. The combination of weight-bearing joint involvement with Heberden nodes and absent systemic inflammation confirms degenerative joint disease.
+
+TEACHING_POINTS:
+- Osteoarthritis is a noninflammatory degenerative disease driven by mechanical wear.
+- Heberden nodes affect the DIP joints and Bouchard nodes affect the PIP joints.
+- X-ray findings include joint space narrowing, osteophytes, and subchondral sclerosis and cysts.
+
+==================================================
+
+CASE_ID: 045
+DIFFICULTY: step1
+SYSTEM: psychiatry
+
+DIAGNOSIS:
+Major Depressive Disorder
+
+ALIASES:
+MDD
+clinical depression
+
+VIGNETTE_LINES:
+1. A 34-year-old woman presents with two months of persistent low mood, loss of interest in activities, and fatigue.
+2. She reports difficulty sleeping, poor concentration at work, and feelings of worthlessness.
+3. On mental status exam she has a flat affect, slowed speech, and poor eye contact.
+4. Thyroid function tests and other labs are within normal limits.
+5. There are no focal findings on neurologic examination or imaging.
+6. She meets criteria with at least five depressive symptoms present nearly every day for over two weeks causing significant functional impairment.
+
+TEACHING_POINTS:
+- The diagnosis of major depression requires five or more symptoms for at least two weeks, including depressed mood or anhedonia.
+- SSRIs are first-line pharmacotherapy.
+- Always screen for suicidal ideation and rule out medical mimics such as hypothyroidism.
+
+==================================================
+
+CASE_ID: 046
+DIFFICULTY: step1
+SYSTEM: psychiatry
+
+DIAGNOSIS:
+Schizophrenia
+
+ALIASES:
+schizophrenic disorder
+
+VIGNETTE_LINES:
+1. A 22-year-old man is brought in by his family for six months of bizarre behavior and social withdrawal.
+2. They report he believes the government is broadcasting messages to him through the television.
+3. On mental status exam he displays disorganized speech, paranoid delusions, and reports hearing voices commenting on his actions.
+4. Toxicology screen is negative and metabolic workup is unremarkable.
+5. Brain imaging shows no structural lesion.
+6. He has continuous signs of disturbance for more than six months with two or more active-phase symptoms, meeting criteria for schizophrenia.
+
+TEACHING_POINTS:
+- Schizophrenia requires at least six months of symptoms with one month of active-phase psychotic symptoms.
+- Positive symptoms include hallucinations and delusions; negative symptoms include flat affect and avolition.
+- The dopamine hypothesis underlies the efficacy of antipsychotics blocking D2 receptors.
+
+==================================================
+
+CASE_ID: 047
+DIFFICULTY: step1
+SYSTEM: dermatology
+
+DIAGNOSIS:
+Malignant Melanoma
+
+ALIASES:
+melanoma
+
+VIGNETTE_LINES:
+1. A 55-year-old fair-skinned man presents with a changing mole on his back noticed by his wife.
+2. He has a history of multiple blistering sunburns and uses tanning beds.
+3. Examination reveals a 9 mm asymmetric pigmented lesion with irregular borders and variegated brown, black, and red coloration.
+4. Dermoscopy shows an atypical pigment network and irregular streaks.
+5. Imaging is reserved for staging if invasion is confirmed.
+6. Excisional biopsy reveals atypical melanocytes invading the dermis with a Breslow depth of 1.8 mm.
+
+TEACHING_POINTS:
+- The ABCDEs of melanoma are Asymmetry, Border irregularity, Color variation, Diameter over 6 mm, and Evolution.
+- Breslow depth is the most important prognostic factor for melanoma.
+- UV exposure and fair skin are major risk factors.
+
+==================================================
+
+CASE_ID: 048
+DIFFICULTY: step1
+SYSTEM: pediatrics
+
+DIAGNOSIS:
+Kawasaki Disease
+
+ALIASES:
+mucocutaneous lymph node syndrome
+
+VIGNETTE_LINES:
+1. A 3-year-old boy presents with five days of high fever unresponsive to antipyretics.
+2. His parents note red eyes, cracked lips, and a rash.
+3. Examination reveals bilateral nonexudative conjunctivitis, a strawberry tongue, cervical lymphadenopathy, and erythema with desquamation of the hands and feet.
+4. Labs show elevated inflammatory markers and thrombocytosis.
+5. Echocardiography is performed to evaluate the coronary arteries and reveals early aneurysmal dilation.
+6. The constellation of prolonged fever with mucocutaneous findings and coronary changes confirms Kawasaki disease, and IVIG with aspirin is started.
+
+TEACHING_POINTS:
+- Kawasaki disease is a medium-vessel vasculitis and a leading cause of acquired heart disease in children.
+- Coronary artery aneurysms are the most feared complication.
+- Treatment with IVIG and aspirin reduces the risk of coronary complications.
+
+==================================================
+
+CASE_ID: 049
+DIFFICULTY: step1
+SYSTEM: pharmacology/toxicology
+
+DIAGNOSIS:
+Acetaminophen Toxicity
+
+ALIASES:
+acetaminophen overdose
+paracetamol poisoning
+Tylenol overdose
+
+VIGNETTE_LINES:
+1. A 19-year-old woman is brought to the ED after ingesting a large quantity of pills in a suicide attempt several hours ago.
+2. She initially had only mild nausea and now reports right upper quadrant pain.
+3. Examination reveals right upper quadrant tenderness without jaundice initially.
+4. Labs show rising AST and ALT into the thousands with a prolonged INR.
+5. There is no acute imaging abnormality early in the course.
+6. A serum acetaminophen level plotted on the Rumack-Matthew nomogram falls in the hepatotoxic range, and N-acetylcysteine is administered.
+
+TEACHING_POINTS:
+- Acetaminophen toxicity causes centrilobular hepatic necrosis from the metabolite NAPQI depleting glutathione.
+- N-acetylcysteine is the antidote and replenishes glutathione stores.
+- The Rumack-Matthew nomogram guides treatment based on the level and time since ingestion.
+
+==================================================
+
+CASE_ID: 050
+DIFFICULTY: step1
+SYSTEM: reproductive
+
+DIAGNOSIS:
+Ectopic Pregnancy
+
+ALIASES:
+tubal pregnancy
+
+VIGNETTE_LINES:
+1. A 28-year-old woman presents with sudden severe right lower quadrant pain and vaginal spotting.
+2. Her last menstrual period was seven weeks ago and she has a history of pelvic inflammatory disease.
+3. Examination reveals lower abdominal tenderness with cervical motion tenderness and a slightly enlarged adnexa.
+4. A urine pregnancy test is positive, and serum beta-hCG is lower than expected for gestational age.
+5. Transvaginal ultrasound shows an empty uterus with an adnexal mass and free fluid in the pelvis.
+6. Laparoscopy confirms an unruptured tubal pregnancy, which is managed surgically given hemodynamic concerns.
+
+TEACHING_POINTS:
+- The ampulla of the fallopian tube is the most common site of ectopic implantation.
+- Risk factors include prior PID, tubal surgery, and previous ectopic pregnancy.
+- A beta-hCG that fails to rise appropriately with an empty uterus on ultrasound suggests ectopic pregnancy.
