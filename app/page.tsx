@@ -430,7 +430,7 @@ export default function Home() {
   const [won, setWon] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
-  const [showECG, setShowECG] = useState(false);
+  const [showECG, setShowECG] = useState(true);
   const [showSystem, setShowSystem] = useState(true);
   const [solvedAtClueCount, setSolvedAtClueCount] = useState(1);
   const [loadError, setLoadError] = useState("");
@@ -451,7 +451,7 @@ export default function Home() {
     setWon(false);
     setShowDropdown(false);
     setShowConfetti(false);
-    setShowECG(false);
+    setShowECG(true);
     setSolvedAtClueCount(1);
   }, []);
 
