@@ -176,10 +176,8 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center p-6 pb-16" style={{ background: "#022129" }}>
 
-      {/* Logo */}
       <img src="/logo.png" alt="Medicle" className="h-14 mt-8 mb-6" />
 
-      {/* ECG Monitor */}
       <ECGMonitor
         wrongGuesses={wrongGuesses}
         gameOver={gameOver}
@@ -187,7 +185,6 @@ export default function Home() {
         guessesLeft={guessesLeft}
       />
 
-      {/* Clue progress bar */}
       <div className="flex items-center gap-2 mb-3 text-sm w-full max-w-xl" style={{ color: "#6b7280" }}>
         <span>Clue {revealed}/{current.clues.length}</span>
         <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ background: "#0e3d4a" }}>
@@ -198,7 +195,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Clue cards */}
       <div className="w-full max-w-xl space-y-2 mb-4">
         {current.clues.slice(0, revealed).map((clue, i) => (
           <div
@@ -216,7 +212,6 @@ export default function Home() {
         ))}
       </div>
 
-      {/* End screen */}
       {gameOver ? (
         <div
           className="w-full max-w-xl rounded-2xl p-6 text-center mt-2"
@@ -296,7 +291,6 @@ export default function Home() {
         </div>
       )}
 
-      {/* Guess history */}
       <div className="mt-3 space-y-1 w-full max-w-xl">
         {guesses.map((g, i) => (
           <div key={i} className="flex items-center gap-2 text-sm">
@@ -310,7 +304,6 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Footer */}
       <div className="mt-12 w-full max-w-xl text-center space-y-3">
         <p className="text-xs" style={{ color: "#2d7a8a" }}>
           ⚠️ Cases are AI-generated for educational purposes only and may contain inaccuracies. Not for clinical use.
