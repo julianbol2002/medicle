@@ -318,19 +318,13 @@ export default function Home() {
         <ResultModal won={won} current={current} guesses={guesses} onNext={startNextCase} />
       )}
 
-     {/* Header */}
-     <div style={{ marginTop: "32px", marginBottom: "24px", display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+  {/* Header */}
+  <div style={{ marginTop: "32px", marginBottom: "24px", display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
         <img src="/logo.png" alt="Medicle" style={{ height: "80px" }} />
-        <p style={{ marginTop: "10px", fontSize: "13px", color: "#4a9aaa", fontFamily: "sans-serif" }}>
+        <p style={{ marginTop: "10px", fontSize: "13px", color: "#4a9aaa" }}>
           The endless clinical vignette diagnosis game for medical students
         </p>
-        
-        >
-          www.medicle.net
-        </a>          target="_blank"
-          rel="noopener noreferrer"
-          style={{ marginTop: "4px", fontSize: "13px", fontWeight: "bold", color: "#14b8a6", fontFamily: "sans-serif", textDecoration: "none" }}
-        >
+        <a href="https://www.medicle.net" target="_blank" rel="noopener noreferrer" style={{ marginTop: "4px", fontSize: "13px", fontWeight: "bold", color: "#14b8a6", textDecoration: "none" }}>
           www.medicle.net
         </a>
       </div>
