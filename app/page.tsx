@@ -324,6 +324,9 @@ export default function Home() {
         <p style={{ marginTop: "10px", fontSize: "15px", color: "#ffffff", fontWeight: "500", letterSpacing: "0.01em" }}>
           Can you diagnose the patient before it&apos;s too late?
         </p>
+        <p style={{ marginTop: "4px", fontSize: "12px", color: "#4a9aaa" }}>
+          Endless progressive clue-based vignettes — a new case every round
+        </p>
         <a href="https://www.medicle.net" target="_blank" rel="noopener noreferrer" style={{ marginTop: "5px", fontSize: "13px", fontWeight: "bold", color: "#14b8a6", textDecoration: "none" }}>
           🔗 www.medicle.net
         </a>
