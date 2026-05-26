@@ -321,11 +321,11 @@ export default function Home() {
   {/* Header */}
   <div style={{ marginTop: "32px", marginBottom: "24px", display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
         <img src="/logo.png" alt="Medicle" style={{ height: "80px" }} />
-        <p style={{ marginTop: "10px", fontSize: "13px", color: "#4a9aaa" }}>
-          The endless clinical vignette diagnosis game for medical students
+        <p style={{ marginTop: "10px", fontSize: "15px", color: "#ffffff", fontWeight: "500", letterSpacing: "0.01em" }}>
+          Can you diagnose the patient before it&apos;s too late?
         </p>
-        <a href="https://www.medicle.net" target="_blank" rel="noopener noreferrer" style={{ marginTop: "4px", fontSize: "13px", fontWeight: "bold", color: "#14b8a6", textDecoration: "none" }}>
-          www.medicle.net
+        <a href="https://www.medicle.net" target="_blank" rel="noopener noreferrer" style={{ marginTop: "5px", fontSize: "13px", fontWeight: "bold", color: "#14b8a6", textDecoration: "none" }}>
+          🔗 www.medicle.net
         </a>
       </div>
 
