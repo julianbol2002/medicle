@@ -32,6 +32,74 @@ function parseCases(text: string): Case[] {
 
 const MAX_GUESSES = 6;
 
+const VITALS_STATES = [
+  { label: "Stable", color: "#22c55e", path: "M0,50 Q25,20 50,50 Q75,80 100,50 Q125,20 150,50 Q175,80 200,50" },
+  { label: "Elevated", color: "#86efac", path: "M0,50 Q20,15 50,50 Q70,75 100,50 Q120,15 150,50 Q170,75 200,50" },
+  { label: "Concerning", color: "#facc15", path: "M0,50 Q15,10 50,50 Q65,80 100,50 Q115,10 150,50 Q165,80 200,50" },
+  { label: "Critical", color: "#f97316", path: "M0,50 Q10,5 50,50 Q60,90 100,50 Q110,5 150,50 Q160,90 200,50" },
+  { label: "Severe", color: "#ef4444", path: "M0,50 Q8,0 50,50 Q58,95 100,50 Q108,0 150,50 Q158,95 200,50" },
+  { label: "Critical", color: "#dc2626", path: "M0,50 Q5,0 50,50 Q55,98 100,50 Q105,0 150,50 Q155,98 200,50" },
+];
+
+const FLATLINE = "M0,50 L200,50";
+
+function VitalsMonitor({ wrongGuesses, gameOver, won }: { wrongGuesses: number; gameOver: boolean; won: boolean }) {
+  const state = VITALS_STATES[Math.min(wrongGuesses, VITALS_STATES.length - 1)];
+  const flatlined = gameOver && !won;
+
+  return (
+    <div className="max-w-xl w-full mb-4 bg-slate-950 rounded-2xl p-3 border border-slate-700">
+      <div className="flex items-center justify-between mb-1">
+        <span className="text-xs font-mono text-slate-400">VITALS MONITOR</span>
+        <span className="text-xs font-mono" style={{ color: flatlined ? "#ef4444" : state.color }}>
+          ● {flatlined ? "FLATLINE" : wrongGuesses === 0 ? "STABLE" : state.label}
+        </span>
+      </div>
+      <svg viewBox="0 0 200 100" className="w-full h-16">
+        <rect width="200" height="100" fill="#0a0a0a" rx="4" />
+        {/* Grid lines */}
+        {[25, 50, 75].map(y => (
+          <line key={y} x1="0" y1={y} x2="200" y2={y} stroke="#1e293b" strokeWidth="0.5" />
+        ))}
+        {[50, 100, 150].map(x => (
+          <line key={x} x1={x} y1="0" x2={x} y2="100" stroke="#1e293b" strokeWidth="0.5" />
+        ))}
+        {/* Waveform */}
+        <path
+          d={flatlined ? FLATLINE : state.path}
+          fill="none"
+          stroke={flatlined ? "#ef4444" : state.color}
+          strokeWidth={flatlined ? "1.5" : "2"}
+          strokeLinecap="round"
+        />
+        {/* Animated dot */}
+        {!flatlined && (
+          <circle r="3" fill={state.color}>
+            <animateMotion
+              dur="1.5s"
+              repeatCount="indefinite"
+              path={state.path}
+            />
+          </circle>
+        )}
+      </svg>
+      <div className="flex justify-between mt-1">
+        {Array.from({ length: MAX_GUESSES }).map((_, i) => (
+          <div
+            key={i}
+            className="h-1.5 rounded-full flex-1 mx-0.5 transition-all duration-500"
+            style={{
+              background: i < wrongGuesses
+                ? (flatlined ? "#ef4444" : state.color)
+                : "#1e293b"
+            }}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   const [cases, setCases] = useState<Case[]>([]);
   const [current, setCurrent] = useState<Case | null>(null);
@@ -47,8 +115,7 @@ export default function Home() {
   const pickNewCase = useCallback((allCases: Case[], seen: Set<string>) => {
     const unseen = allCases.filter(c => !seen.has(c.id));
     const pool = unseen.length > 0 ? unseen : allCases;
-    const picked = pool[Math.floor(Math.random() * pool.length)];
-    return picked;
+    return pool[Math.floor(Math.random() * pool.length)];
   }, []);
 
   useEffect(() => {
@@ -65,7 +132,7 @@ export default function Home() {
 
   const startNextCase = () => {
     const newSeen = new Set(seenIds);
-    newSeen.add(current?.id || "");
+    if (current) newSeen.add(current.id);
     const next = pickNewCase(cases, newSeen);
     setSeenIds(new Set([...newSeen, next.id]));
     setCurrent(next);
@@ -82,6 +149,8 @@ export default function Home() {
   const filtered = guess.trim().length > 0
     ? allDiagnoses.filter(d => d.toLowerCase().includes(guess.toLowerCase().trim())).slice(0, 6)
     : [];
+
+  const wrongGuesses = guesses.filter(g => !g.correct && !g.skipped).length;
 
   const submitGuess = (text: string, skipped = false) => {
     if (!current || gameOver) return;
@@ -104,8 +173,7 @@ export default function Home() {
       return;
     }
 
-    const nextRevealed = Math.min(revealed + 1, current.clues.length);
-    setRevealed(nextRevealed);
+    setRevealed(prev => Math.min(prev + 1, current.clues.length));
 
     if (newGuesses.length >= MAX_GUESSES) {
       setGameOver(true);
@@ -124,7 +192,7 @@ export default function Home() {
     <main className="min-h-screen bg-slate-900 flex flex-col items-center p-6 pb-16">
 
       {/* Header */}
-      <h1 className="text-3xl font-bold text-white mt-8 mb-1">Diagnos.io</h1>
+      <h1 className="text-3xl font-bold text-white mt-8 mb-1">Medicle</h1>
       <p className="text-teal-400 mb-1">What&apos;s the Diagnosis?</p>
       {gamesPlayed > 0 && (
         <p className="text-slate-500 text-xs mb-3">Case #{gamesPlayed + 1}</p>
@@ -142,17 +210,29 @@ export default function Home() {
         {!gameOver && <span>{guessesLeft} guess{guessesLeft !== 1 ? "es" : ""} left</span>}
       </div>
 
-      {/* Clues */}
-      <div className="bg-slate-800 rounded-2xl p-6 max-w-xl w-full text-white space-y-3 mb-4">
+      {/* Vitals Monitor */}
+      <VitalsMonitor wrongGuesses={wrongGuesses} gameOver={gameOver} won={won} />
+
+      {/* Clues — separate cards */}
+      <div className="max-w-xl w-full space-y-2 mb-4">
         {current.clues.slice(0, revealed).map((clue, i) => (
-          <p key={i} className="text-gray-200">{clue}</p>
+          <div
+            key={i}
+            className="bg-slate-800 rounded-xl px-5 py-3 text-gray-200 text-sm border-l-4 transition-all duration-300"
+            style={{ borderColor: i === revealed - 1 ? "#14b8a6" : "#334155" }}
+          >
+            <span className="text-slate-500 text-xs font-mono mr-2">#{i + 1}</span>
+            {clue}
+          </div>
         ))}
       </div>
 
       {/* End screen */}
       {gameOver ? (
-        <div className="max-w-xl w-full rounded-2xl p-6 text-center mt-2"
-          style={{ background: won ? "rgb(20,83,45)" : "rgb(127,29,29)" }}>
+        <div
+          className="max-w-xl w-full rounded-2xl p-6 text-center mt-2"
+          style={{ background: won ? "rgb(20,83,45)" : "rgb(127,29,29)" }}
+        >
           {won ? (
             <>
               <p className="text-4xl mb-2">🎉</p>
@@ -164,8 +244,8 @@ export default function Home() {
             </>
           ) : (
             <>
-              <p className="text-4xl mb-2">🩺</p>
-              <p className="text-red-300 text-2xl font-bold mb-1">Better Luck Next Time</p>
+              <p className="text-4xl mb-2">💀</p>
+              <p className="text-red-300 text-2xl font-bold mb-1">Patient Lost</p>
               <p className="text-white text-sm mb-1">The diagnosis was:</p>
               <p className="text-white text-xl font-bold mb-4">{current.diagnosis}</p>
             </>
@@ -178,7 +258,6 @@ export default function Home() {
           </button>
         </div>
       ) : (
-        /* Input */
         <div className="relative max-w-xl w-full mb-2">
           <div className="flex gap-2">
             <input
@@ -221,7 +300,7 @@ export default function Home() {
       {/* Guess history */}
       <div className="mt-3 space-y-1 max-w-xl w-full">
         {guesses.map((g, i) => (
-          <div key={i} className="flex items-center gap-2">
+          <div key={i} className="flex items-center gap-2 text-sm">
             <span className={g.skipped ? "text-slate-400" : g.correct ? "text-green-400" : "text-red-400"}>
               {g.skipped ? "—" : g.correct ? "✓" : "✗"}
             </span>
@@ -232,9 +311,26 @@ export default function Home() {
         ))}
       </div>
 
-      <p className="mt-8 text-slate-500 text-xs text-center max-w-md">
-        ⚠️ Cases are AI-generated for educational purposes only and may contain inaccuracies. Not for clinical use.
-      </p>
+      {/* Footer */}
+      <div className="mt-12 max-w-xl w-full text-center space-y-3">
+        <p className="text-slate-500 text-xs">
+          ⚠️ Cases are AI-generated for educational purposes only and may contain inaccuracies. Not for clinical use.
+        </p>
+        <p className="text-slate-600 text-xs">
+          Medicle is an independent, fan-made endless diagnosis game inspired by{" "}
+          <a href="https://doctordle.org" target="_blank" rel="noopener noreferrer" className="text-teal-700 hover:text-teal-500 underline">
+            Doctordle
+          </a>
+          . We love what they built and created this as a complement — not a competitor — so medical students can practice endlessly. All credit to the Doctordle team for the original concept.
+        </p>
+        <p className="text-slate-500 text-xs">
+          Questions or feedback?{" "}
+          <a href="mailto:medle.game@gmail.com" className="text-teal-600 hover:text-teal-400 underline">
+            medle.game@gmail.com
+          </a>
+        </p>
+      </div>
+
     </main>
   );
 }
