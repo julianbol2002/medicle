@@ -32,18 +32,178 @@ function parseCases(text: string): Case[] {
 
 const MAX_GUESSES = 6;
 
-const ECG_PATHS = [
-  "M0,50 L20,50 L22,46 L24,54 L26,10 L28,90 L30,44 L32,50 L60,50 L62,46 L64,54 L66,10 L68,90 L70,44 L72,50 L100,50 L102,46 L104,54 L106,10 L108,90 L110,44 L112,50 L140,50 L142,46 L144,54 L146,10 L148,90 L150,44 L152,50 L180,50 L182,46 L184,54 L186,10 L188,90 L190,44 L192,50 L220,50 L222,46 L224,54 L226,10 L228,90 L230,44 L232,50 L260,50 L262,46 L264,54 L266,10 L268,90 L270,44 L272,50 L300,50",
-  "M0,50 L15,50 L17,45 L19,55 L21,8 L23,92 L25,43 L27,50 L47,50 L49,45 L51,55 L53,8 L55,92 L57,43 L59,50 L79,50 L81,45 L83,55 L85,8 L87,92 L89,43 L91,50 L111,50 L113,45 L115,55 L117,8 L119,92 L121,43 L123,50 L143,50 L145,45 L147,55 L149,8 L151,92 L153,43 L155,50 L175,50 L177,45 L179,55 L181,8 L183,92 L185,43 L187,50 L207,50 L209,45 L211,55 L213,8 L215,92 L217,43 L219,50 L239,50 L241,45 L243,55 L245,8 L247,92 L249,43 L251,50 L271,50 L273,45 L275,55 L277,8 L279,92 L281,43 L283,50 L300,50",
-  "M0,50 L12,50 L14,44 L16,56 L18,6 L20,94 L22,42 L24,50 L38,50 L40,56 L42,44 L44,50 L56,50 L58,44 L60,56 L62,6 L64,94 L66,42 L68,50 L82,50 L84,56 L86,44 L88,50 L100,50 L102,44 L104,56 L106,6 L108,94 L110,42 L112,50 L126,50 L128,56 L130,44 L132,50 L144,50 L146,44 L148,56 L150,6 L152,94 L154,42 L156,50 L170,50 L172,56 L174,44 L176,50 L188,50 L190,44 L192,56 L194,6 L196,94 L198,42 L200,50 L214,50 L216,56 L218,44 L220,50 L232,50 L234,44 L236,56 L238,6 L240,94 L242,42 L244,50 L258,50 L260,56 L262,44 L264,50 L276,50 L278,44 L280,56 L282,6 L284,94 L286,42 L288,50 L300,50",
-  "M0,50 L25,50 L27,58 L29,42 L31,5 L33,95 L35,58 L37,42 L39,50 L75,50 L77,58 L79,42 L81,5 L83,95 L85,58 L87,42 L89,50 L125,50 L127,58 L129,42 L131,5 L133,95 L135,58 L137,42 L139,50 L175,50 L177,58 L179,42 L181,5 L183,95 L185,58 L187,42 L189,50 L225,50 L227,58 L229,42 L231,5 L233,95 L235,58 L237,42 L239,50 L275,50 L277,58 L279,42 L281,5 L283,95 L285,58 L287,42 L289,50 L300,50",
-  "M0,50 L4,28 L8,72 L12,18 L16,82 L20,35 L24,65 L28,22 L32,78 L36,40 L40,60 L44,25 L48,75 L52,32 L56,68 L60,18 L64,82 L68,38 L72,62 L76,28 L80,72 L84,42 L88,58 L92,22 L96,78 L100,35 L104,65 L108,20 L112,80 L116,38 L120,62 L124,28 L128,72 L132,42 L136,58 L140,22 L144,78 L148,35 L152,65 L156,18 L160,82 L164,38 L168,62 L172,28 L176,72 L180,42 L184,58 L188,22 L192,78 L196,35 L200,65 L204,20 L208,80 L212,38 L216,62 L220,28 L224,72 L228,42 L232,58 L236,22 L240,78 L244,35 L248,65 L252,18 L256,82 L260,38 L264,62 L268,28 L272,72 L276,42 L280,58 L284,22 L288,78 L292,35 L296,65 L300,50",
-  "M0,50 L2,42 L4,63 L6,35 L8,70 L10,28 L12,58 L14,44 L16,67 L18,30 L20,55 L22,40 L24,68 L26,25 L28,72 L30,38 L32,56 L34,46 L36,65 L38,29 L40,60 L42,43 L44,70 L46,26 L48,55 L50,40 L52,68 L54,32 L56,58 L58,45 L60,71 L62,28 L64,53 L66,41 L68,66 L70,27 L72,60 L74,43 L76,70 L78,30 L80,55 L82,39 L84,68 L86,24 L88,72 L90,37 L92,56 L94,46 L96,63 L98,28 L100,58 L102,42 L104,67 L106,27 L108,55 L110,40 L112,70 L114,31 L116,57 L118,44 L120,71 L122,28 L124,53 L126,41 L128,65 L130,26 L132,60 L134,43 L136,68 L138,30 L140,55 L142,39 L144,70 L146,24 L148,72 L150,37 L152,56 L154,46 L156,62 L158,28 L160,58 L162,42 L164,67 L166,27 L168,55 L170,40 L172,70 L174,31 L176,57 L178,44 L180,71 L182,28 L184,53 L186,41 L188,65 L190,26 L192,60 L194,43 L196,68 L198,30 L200,55 L202,39 L204,70 L206,24 L208,72 L210,37 L212,56 L214,46 L216,63 L218,28 L220,58 L222,42 L224,67 L226,27 L228,55 L230,40 L232,70 L234,31 L236,57 L238,44 L240,71 L242,28 L244,53 L246,41 L248,65 L250,26 L252,60 L254,43 L256,68 L258,30 L260,55 L262,39 L264,70 L266,24 L268,72 L270,37 L272,56 L274,46 L276,62 L278,28 L280,58 L282,42 L284,67 L286,27 L288,55 L290,40 L292,70 L294,31 L296,57 L298,44 L300,50",
+// Each array is [x, y] points for the ECG waveform
+const ECG_POINTS: [number, number][][] = [
+  // Stable - normal sinus
+  [[0,50],[20,50],[22,46],[24,54],[26,10],[28,90],[30,44],[32,50],[60,50],[62,46],[64,54],[66,10],[68,90],[70,44],[72,50],[100,50],[102,46],[104,54],[106,10],[108,90],[110,44],[112,50],[140,50],[142,46],[144,54],[146,10],[148,90],[150,44],[152,50],[180,50],[182,46],[184,54],[186,10],[188,90],[190,44],[192,50],[220,50],[222,46],[224,54],[226,10],[228,90],[230,44],[232,50],[260,50],[262,46],[264,54],[266,10],[268,90],[270,44],[272,50],[300,50]],
+  // Ill-appearing - faster
+  [[0,50],[15,50],[17,45],[19,55],[21,8],[23,92],[25,43],[27,50],[47,50],[49,45],[51,55],[53,8],[55,92],[57,43],[59,50],[79,50],[81,45],[83,55],[85,8],[87,92],[89,43],[91,50],[111,50],[113,45],[115,55],[117,8],[119,92],[121,43],[123,50],[143,50],[145,45],[147,55],[149,8],[151,92],[153,43],[155,50],[175,50],[177,45],[179,55],[181,8],[183,92],[185,43],[187,50],[207,50],[209,45],[211,55],[213,8],[215,92],[217,43],[219,50],[239,50],[241,45],[243,55],[245,8],[247,92],[249,43],[251,50],[271,50],[273,45],[275,55],[277,8],[279,92],[281,43],[283,50],[300,50]],
+  // Distressed - tachycardia with ST changes
+  [[0,50],[12,50],[14,44],[16,56],[18,6],[20,94],[22,42],[24,50],[38,50],[40,56],[42,44],[44,50],[56,50],[58,44],[60,56],[62,6],[64,94],[66,42],[68,50],[82,50],[84,56],[86,44],[88,50],[100,50],[102,44],[104,56],[106,6],[108,94],[110,42],[112,50],[126,50],[128,56],[130,44],[132,50],[144,50],[146,44],[148,56],[150,6],[152,94],[154,42],[156,50],[170,50],[172,56],[174,44],[176,50],[188,50],[190,44],[192,56],[194,6],[196,94],[198,42],[200,50],[214,50],[216,56],[218,44],[220,50],[232,50],[234,44],[236,56],[238,6],[240,94],[242,42],[244,50],[258,50],[260,56],[262,44],[264,50],[276,50],[278,44],[280,56],[282,6],[284,94],[286,42],[288,50],[300,50]],
+  // Obtunded - wide complex bradycardia
+  [[0,50],[25,50],[27,58],[29,42],[31,5],[33,95],[35,58],[37,42],[39,50],[75,50],[77,58],[79,42],[81,5],[83,95],[85,58],[87,42],[89,50],[125,50],[127,58],[129,42],[131,5],[133,95],[135,58],[137,42],[139,50],[175,50],[177,58],[179,42],[181,5],[183,95],[185,58],[187,42],[189,50],[225,50],[227,58],[229,42],[231,5],[233,95],[235,58],[237,42],[239,50],[275,50],[277,58],[279,42],[281,5],[283,95],[285,58],[287,42],[289,50],[300,50]],
+  // Critical - v-tach
+  [[0,50],[4,28],[8,72],[12,18],[16,82],[20,35],[24,65],[28,22],[32,78],[36,40],[40,60],[44,25],[48,75],[52,32],[56,68],[60,18],[64,82],[68,38],[72,62],[76,28],[80,72],[84,42],[88,58],[92,22],[96,78],[100,35],[104,65],[108,20],[112,80],[116,38],[120,62],[124,28],[128,72],[132,42],[136,58],[140,22],[144,78],[148,35],[152,65],[156,18],[160,82],[164,38],[168,62],[172,28],[176,72],[180,42],[184,58],[188,22],[192,78],[196,35],[200,65],[204,20],[208,80],[212,38],[216,62],[220,28],[224,72],[228,42],[232,58],[236,22],[240,78],[244,35],[248,65],[252,18],[256,82],[260,38],[264,62],[268,28],[272,72],[276,42],[280,58],[284,22],[288,78],[292,35],[296,65],[300,50]],
+  // Peri-arrest - v-fib
+  [[0,50],[2,42],[4,63],[6,35],[8,70],[10,28],[12,58],[14,44],[16,67],[18,30],[20,55],[22,40],[24,68],[26,25],[28,72],[30,38],[32,56],[34,46],[36,65],[38,29],[40,60],[42,43],[44,70],[46,26],[48,55],[50,40],[52,68],[54,32],[56,58],[58,45],[60,71],[62,28],[64,53],[66,41],[68,66],[70,27],[72,60],[74,43],[76,70],[78,30],[80,55],[82,39],[84,68],[86,24],[88,72],[90,37],[92,56],[94,46],[96,63],[98,28],[100,58],[102,42],[104,67],[106,27],[108,55],[110,40],[112,70],[114,31],[116,57],[118,44],[120,71],[122,28],[124,53],[126,41],[128,65],[130,26],[132,60],[134,43],[136,68],[138,30],[140,55],[142,39],[144,70],[146,24],[148,72],[150,37],[152,56],[154,46],[156,62],[158,28],[160,58],[162,42],[164,67],[166,27],[168,55],[170,40],[172,70],[174,31],[176,57],[178,44],[180,71],[182,28],[184,53],[186,41],[188,65],[190,26],[192,60],[194,43],[196,68],[198,30],[200,55],[202,39],[204,70],[206,24],[208,72],[210,37],[212,56],[214,46],[216,63],[218,28],[220,58],[222,42],[224,67],[226,27],[228,55],[230,40],[232,70],[234,31],[236,57],[238,44],[240,71],[242,28],[244,53],[246,41],[248,65],[250,26],[252,60],[254,43],[256,68],[258,30],[260,55],[262,39],[264,70],[266,24],[268,72],[270,37],[272,56],[274,46],[276,62],[278,28],[280,58],[282,42],[284,67],[286,27],[288,55],[290,40],[292,70],[294,31],[296,57],[298,44],[300,50]],
 ];
 
 const ECG_COLORS = ["#22c55e", "#84cc16", "#facc15", "#f97316", "#ef4444", "#dc2626"];
-const ECG_SPEEDS = ["4.0s", "3.4s", "2.8s", "3.2s", "2.0s", "1.4s"];
+const ECG_X_SPEEDS = [0.4, 0.55, 0.7, 0.5, 1.0, 1.4]; // pixels per frame in x only
 const ECG_LABELS = ["Stable", "Ill-Appearing", "Distressed", "Obtunded", "Critical", "Peri-Arrest"];
+
+// Get Y value at a given X by interpolating between points
+function getYatX(points: [number, number][], x: number): number {
+  for (let i = 0; i < points.length - 1; i++) {
+    const [x1, y1] = points[i];
+    const [x2, y2] = points[i + 1];
+    if (x >= x1 && x <= x2) {
+      const t = (x - x1) / (x2 - x1);
+      return y1 + t * (y2 - y1);
+    }
+  }
+  return 50;
+}
+
+function ECGCanvas({ points, color, xSpeed, flatlined }: {
+  points: [number, number][];
+  color: string;
+  xSpeed: number;
+  flatlined: boolean;
+}) {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const dotXRef = useRef(0);
+  const animRef = useRef<number>(0);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const W = canvas.width;
+    const H = canvas.height;
+    const scaleX = W / 300;
+    const scaleY = H / 100;
+
+    const drawFrame = () => {
+      ctx.clearRect(0, 0, W, H);
+
+      // Grid
+      ctx.strokeStyle = "#0d1f2d";
+      ctx.lineWidth = 0.5;
+      [25, 50, 75].forEach(y => {
+        ctx.beginPath();
+        ctx.moveTo(0, y * scaleY);
+        ctx.lineTo(W, y * scaleY);
+        ctx.stroke();
+      });
+      [60, 120, 180, 240].forEach(x => {
+        ctx.beginPath();
+        ctx.moveTo(x * scaleX, 0);
+        ctx.lineTo(x * scaleX, H);
+        ctx.stroke();
+      });
+
+      // ECG line
+      ctx.beginPath();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 2.2;
+      ctx.lineJoin = "round";
+      ctx.lineCap = "round";
+      if (flatlined) {
+        ctx.moveTo(0, 50 * scaleY);
+        ctx.lineTo(W, 50 * scaleY);
+      } else {
+        points.forEach(([x, y], i) => {
+          if (i === 0) ctx.moveTo(x * scaleX, y * scaleY);
+          else ctx.lineTo(x * scaleX, y * scaleY);
+        });
+      }
+      ctx.stroke();
+
+      // Glow
+      ctx.beginPath();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 6;
+      ctx.globalAlpha = 0.12;
+      if (flatlined) {
+        ctx.moveTo(0, 50 * scaleY);
+        ctx.lineTo(W, 50 * scaleY);
+      } else {
+        points.forEach(([x, y], i) => {
+          if (i === 0) ctx.moveTo(x * scaleX, y * scaleY);
+          else ctx.lineTo(x * scaleX, y * scaleY);
+        });
+      }
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+
+      // Moving dot — advances only in X
+      if (!flatlined) {
+        dotXRef.current = (dotXRef.current + xSpeed) % 300;
+        const dotX = dotXRef.current;
+        const dotY = getYatX(points, dotX);
+
+        ctx.beginPath();
+        ctx.arc(dotX * scaleX, dotY * scaleY, 4, 0, Math.PI * 2);
+        ctx.fillStyle = color;
+        ctx.globalAlpha = 0.95;
+        ctx.fill();
+        ctx.globalAlpha = 1;
+      }
+
+      animRef.current = requestAnimationFrame(drawFrame);
+    };
+
+    animRef.current = requestAnimationFrame(drawFrame);
+    return () => cancelAnimationFrame(animRef.current);
+  }, [points, color, xSpeed, flatlined]);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      width={600}
+      height={120}
+      className="w-full rounded-xl"
+      style={{ background: "#050a0e", display: "block" }}
+    />
+  );
+}
+
+function ECGMonitor({ badGuesses, gameOver, won, guessesLeft }: {
+  badGuesses: number;
+  gameOver: boolean;
+  won: boolean;
+  guessesLeft: number;
+}) {
+  const idx = won ? 0 : Math.min(badGuesses, ECG_POINTS.length - 1);
+  const flatlined = gameOver && !won;
+  const color = won ? "#22c55e" : flatlined ? "#dc2626" : ECG_COLORS[idx];
+  const label = won ? "Patient Saved ✓" : flatlined ? "FLATLINE" : ECG_LABELS[idx];
+  const xSpeed = ECG_X_SPEEDS[idx];
+
+  return (
+    <div className="w-full mb-4 rounded-2xl p-3 border" style={{ background: "#011a1f", borderColor: "#0e3d4a" }}>
+      <div className="flex items-center justify-between mb-2 px-1">
+        <span className="text-xs font-mono tracking-widest" style={{ color }}>
+          ● {label}
+        </span>
+        {!gameOver && (
+          <span className="text-xs font-mono" style={{ color: "#6b7280" }}>
+            {guessesLeft} guess{guessesLeft !== 1 ? "es" : ""} left
+          </span>
+        )}
+      </div>
+      <ECGCanvas
+        points={ECG_POINTS[idx]}
+        color={color}
+        xSpeed={xSpeed}
+        flatlined={flatlined}
+      />
+    </div>
+  );
+}
 
 function Confetti() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -60,7 +220,6 @@ function Confetti() {
       y: Math.random() * canvas.height - canvas.height,
       r: Math.random() * 7 + 3,
       color: colors[Math.floor(Math.random() * colors.length)],
-      tilt: 0,
       tiltAngle: Math.random() * Math.PI * 2,
       tiltSpeed: Math.random() * 0.07 + 0.03,
       speed: Math.random() * 2.5 + 1.5,
@@ -71,12 +230,12 @@ function Confetti() {
       pieces.forEach(p => {
         p.tiltAngle += p.tiltSpeed;
         p.y += p.speed;
-        p.tilt = Math.sin(p.tiltAngle) * 14;
+        const tilt = Math.sin(p.tiltAngle) * 14;
         ctx.beginPath();
         ctx.lineWidth = p.r;
         ctx.strokeStyle = p.color;
-        ctx.moveTo(p.x + p.tilt + p.r / 2, p.y);
-        ctx.lineTo(p.x + p.tilt, p.y + p.tilt + p.r / 2);
+        ctx.moveTo(p.x + tilt + p.r / 2, p.y);
+        ctx.lineTo(p.x + tilt, p.y + tilt + p.r / 2);
         ctx.stroke();
         if (p.y > canvas.height) p.y = -10;
       });
@@ -87,50 +246,6 @@ function Confetti() {
     return () => { cancelAnimationFrame(animId); clearTimeout(stop); };
   }, []);
   return <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none z-50" />;
-}
-
-function ECGMonitor({ badGuesses, gameOver, won, guessesLeft }: {
-  badGuesses: number;
-  gameOver: boolean;
-  won: boolean;
-  guessesLeft: number;
-}) {
-  const idx = won ? 0 : Math.min(badGuesses, ECG_PATHS.length - 1);
-  const flatlined = gameOver && !won;
-  const path = flatlined ? "M0,50 L300,50" : ECG_PATHS[idx];
-  const color = won ? "#22c55e" : flatlined ? "#dc2626" : ECG_COLORS[idx];
-  const speed = ECG_SPEEDS[idx];
-  const label = won ? "Patient Saved ✓" : flatlined ? "FLATLINE" : ECG_LABELS[idx];
-
-  return (
-    <div className="w-full mb-4 rounded-2xl p-3 border" style={{ background: "#011a1f", borderColor: "#0e3d4a" }}>
-      <div className="flex items-center justify-between mb-2 px-1">
-        <span className="text-xs font-mono tracking-widest" style={{ color }}>
-          ● {label}
-        </span>
-        {!gameOver && (
-          <span className="text-xs font-mono" style={{ color: "#6b7280" }}>
-            {guessesLeft} guess{guessesLeft !== 1 ? "es" : ""} left
-          </span>
-        )}
-      </div>
-      <svg viewBox="0 0 300 100" className="w-full h-24" style={{ background: "#050a0e", borderRadius: "10px" }}>
-        {[25, 50, 75].map(y => (
-          <line key={y} x1="0" y1={y} x2="300" y2={y} stroke="#0d1f2d" strokeWidth="0.5" />
-        ))}
-        {[60, 120, 180, 240].map(x => (
-          <line key={x} x1={x} y1="0" x2={x} y2="100" stroke="#0d1f2d" strokeWidth="0.5" />
-        ))}
-        <path d={path} fill="none" stroke={color} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-        <path d={path} fill="none" stroke={color} strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" opacity="0.12" />
-        {!flatlined && (
-          <circle r="3.5" fill={color} opacity="0.95">
-            <animateMotion dur={speed} repeatCount="indefinite" path={path} />
-          </circle>
-        )}
-      </svg>
-    </div>
-  );
 }
 
 export default function Home() {
@@ -185,7 +300,6 @@ export default function Home() {
     ? allDiagnoses.filter(d => d.toLowerCase().includes(guess.toLowerCase().trim())).slice(0, 6)
     : [];
 
-  // skips AND wrong guesses both count as bad
   const badGuesses = guesses.filter(g => !g.correct).length;
   const guessesLeft = MAX_GUESSES - guesses.length;
 
@@ -225,10 +339,8 @@ export default function Home() {
     <main className="min-h-screen flex flex-col items-center px-6 pb-16" style={{ background: "#022129" }}>
       {showConfetti && <Confetti />}
 
-      {/* Logo */}
       <img src="/logo.png" alt="Medicle" className="mt-8 mb-5" style={{ height: "80px" }} />
 
-      {/* ECG full width */}
       <div className="w-full max-w-3xl">
         <ECGMonitor
           badGuesses={badGuesses}
@@ -238,7 +350,6 @@ export default function Home() {
         />
       </div>
 
-      {/* Clue progress */}
       <div className="flex items-center gap-2 mb-3 text-sm w-full max-w-3xl" style={{ color: "#6b7280" }}>
         <span>Clue {revealed}/{current.clues.length}</span>
         <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ background: "#0e3d4a" }}>
@@ -249,7 +360,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Clue cards */}
       <div className="w-full max-w-3xl space-y-2 mb-4">
         {current.clues.slice(0, revealed).map((clue, i) => (
           <div
@@ -267,7 +377,6 @@ export default function Home() {
         ))}
       </div>
 
-      {/* End screen */}
       {gameOver ? (
         <div
           className="w-full max-w-3xl rounded-2xl p-8 text-center mt-2"
@@ -347,7 +456,6 @@ export default function Home() {
         </div>
       )}
 
-      {/* Guess history */}
       <div className="mt-3 space-y-1 w-full max-w-3xl">
         {guesses.map((g, i) => (
           <div key={i} className="flex items-center gap-2 text-sm">
@@ -361,7 +469,6 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Footer */}
       <div className="mt-12 w-full max-w-3xl text-center space-y-3">
         <p className="text-xs" style={{ color: "#2d7a8a" }}>
           ⚠️ Cases are AI-generated for educational purposes only and may contain inaccuracies. Not for clinical use.
