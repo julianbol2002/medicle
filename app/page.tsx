@@ -641,20 +641,17 @@ export default function Home() {
         }}
       >
         <img src="/logo.png" alt="Medicle" style={{ height: "80px" }} />
-        <p style={{ fontSize: "15px", color: "#ffffff", fontWeight: "500", letterSpacing: "0.01em" }}>
-          Can you diagnose the patient before it&apos;s too late?
-        </p>
-        <p style={{ fontSize: "12px", color: "#4a9aaa" }}>
-          Endless progressive clue-based vignettes. A new case every round.
-        </p>
-        <a
-          href="https://www.medicle.net"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ fontSize: "13px", fontWeight: "bold", color: "#14b8a6", textDecoration: "none" }}
-        >
-          🔗 www.medicle.net
-        </a>
+        <div style={{ background: "#044", border: "1px solid #0e3d4a", borderRadius: "16px", padding: "16px 20px", maxWidth: "720px", width: "100%" }}>
+<p style={{ fontSize: "15px", color: "#ffffff", fontWeight: "600", marginBottom: "6px" }}>
+Can you diagnose the patient before it's too late?
+</p>
+<p style={{ fontSize: "12px", color: "#94a3b8", marginBottom: "8px" }}>
+Endless progressive clue-based vignettes. A new case every round.
+</p>
+<a href="https://www.medicle.net" target="_blank" rel="noopener noreferrer" style={{ fontSize: "13px", fontWeight: "bold", color: "#14b8a6", textDecoration: "none" }}>
+🔗 www.medicle.net
+</a>
+</div>
 
         <div className="w-full max-w-3xl grid gap-3 sm:grid-cols-[1fr_auto] items-center">
           <div className="text-left">
