@@ -325,8 +325,9 @@ export default function Home() {
           The endless clinical vignette diagnosis game for medical students
         </p>
         
-          href="https://www.medicle.net"
-          target="_blank"
+        >
+          www.medicle.net
+        </a>          target="_blank"
           rel="noopener noreferrer"
           style={{ marginTop: "4px", fontSize: "13px", fontWeight: "bold", color: "#14b8a6", fontFamily: "sans-serif", textDecoration: "none" }}
         >
