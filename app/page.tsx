@@ -113,7 +113,15 @@ function ECGCanvas({ points, color, xSpeed, flatlined }: {
     return () => cancelAnimationFrame(animRef.current);
   }, [points, color, xSpeed, flatlined]);
 
-  return <canvas ref={canvasRef} width={600} height={120} className="w-full rounded-xl" style={{ background: "#050a0e", display: "block" }} />;
+  return (
+    <canvas
+      ref={canvasRef}
+      width={600}
+      height={80}
+      className="w-full rounded-xl"
+      style={{ background: "#050a0e", display: "block" }}
+    />
+  );
 }
 
 function ECGMonitor({ badGuesses, gameOver, won, guessesLeft }: {
@@ -124,10 +132,14 @@ function ECGMonitor({ badGuesses, gameOver, won, guessesLeft }: {
   const color = won ? "#22c55e" : flatlined ? "#dc2626" : ECG_COLORS[idx];
   const label = won ? "Patient Saved ✓" : flatlined ? "FLATLINE" : ECG_LABELS[idx];
   return (
-    <div className="w-full mb-4 rounded-2xl p-3 border" style={{ background: "#011a1f", borderColor: "#0e3d4a" }}>
+    <div className="w-full rounded-2xl p-3 border" style={{ background: "#011a1f", borderColor: "#0e3d4a" }}>
       <div className="flex items-center justify-between mb-2 px-1">
         <span className="text-xs font-mono tracking-widest" style={{ color }}>● {label}</span>
-        {!gameOver && <span className="text-xs font-mono" style={{ color: "#6b7280" }}>{guessesLeft} guess{guessesLeft !== 1 ? "es" : ""} left</span>}
+        {!gameOver && (
+          <span className="text-xs font-mono" style={{ color: "#6b7280" }}>
+            {guessesLeft} guess{guessesLeft !== 1 ? "es" : ""} left
+          </span>
+        )}
       </div>
       <ECGCanvas points={ECG_POINTS[idx]} color={color} xSpeed={ECG_X_SPEEDS[idx]} flatlined={flatlined} />
     </div>
@@ -147,7 +159,8 @@ function Confetti() {
     const pieces = Array.from({ length: 200 }, () => ({
       x: Math.random() * canvas.width, y: Math.random() * canvas.height - canvas.height,
       r: Math.random() * 7 + 3, color: colors[Math.floor(Math.random() * colors.length)],
-      tiltAngle: Math.random() * Math.PI * 2, tiltSpeed: Math.random() * 0.07 + 0.03, speed: Math.random() * 2.5 + 1.5,
+      tiltAngle: Math.random() * Math.PI * 2, tiltSpeed: Math.random() * 0.07 + 0.03,
+      speed: Math.random() * 2.5 + 1.5,
     }));
     let animId: number;
     const draw = () => {
@@ -169,19 +182,15 @@ function Confetti() {
 }
 
 function ResultModal({ won, current, guesses, onNext }: {
-  won: boolean;
-  current: Case;
+  won: boolean; current: Case;
   guesses: { text: string; correct: boolean; skipped: boolean }[];
   onNext: () => void;
 }) {
   const [showTeaching, setShowTeaching] = useState(false);
-
   return (
     <div className="fixed inset-0 z-40 flex items-center justify-center p-4" style={{ background: "rgba(0,0,0,0.75)" }}>
-      <div
-        className="w-full max-w-lg rounded-2xl p-7 text-center shadow-2xl"
-        style={{ background: won ? "#0a3320" : "#2d0a0a", border: `1px solid ${won ? "#22c55e" : "#dc2626"}` }}
-      >
+      <div className="w-full max-w-lg rounded-2xl p-7 text-center shadow-2xl"
+        style={{ background: won ? "#0a3320" : "#2d0a0a", border: `1px solid ${won ? "#22c55e" : "#dc2626"}` }}>
         {won ? (
           <>
             <p className="text-5xl mb-3">🎉</p>
@@ -199,13 +208,11 @@ function ResultModal({ won, current, guesses, onNext }: {
             <p className="text-white text-2xl font-bold mb-4">{current.diagnosis}</p>
           </>
         )}
-
-        {/* Teaching points toggle */}
         {current.teachingPoints.length > 0 && (
           <div className="mb-4">
             <button
               onClick={() => setShowTeaching(s => !s)}
-              className="text-sm font-semibold px-4 py-2 rounded-xl transition-all"
+              className="text-sm font-semibold px-4 py-2 rounded-xl"
               style={{ background: "#0e3d4a", color: "#14b8a6", border: "1px solid #14b8a6" }}
             >
               {showTeaching ? "Hide" : "📚 Show"} Teaching Points
@@ -221,12 +228,8 @@ function ResultModal({ won, current, guesses, onNext }: {
             )}
           </div>
         )}
-
-        <button
-          onClick={onNext}
-          className="text-white px-10 py-3 rounded-xl font-bold text-lg w-full"
-          style={{ background: "#14b8a6" }}
-        >
+        <button onClick={onNext} className="text-white px-10 py-3 rounded-xl font-bold text-lg w-full"
+          style={{ background: "#14b8a6" }}>
           Next Case →
         </button>
       </div>
@@ -245,6 +248,7 @@ export default function Home() {
   const [won, setWon] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
+  const [showECG, setShowECG] = useState(false);
 
   const pickNewCase = useCallback((allCases: Case[], seen: Set<string>) => {
     const unseen = allCases.filter(c => !seen.has(c.id));
@@ -315,25 +319,25 @@ export default function Home() {
       {showConfetti && <Confetti />}
       <Analytics />
 
-      {/* Result popup */}
       {gameOver && current && (
         <ResultModal won={won} current={current} guesses={guesses} onNext={startNextCase} />
       )}
 
       <img src="/logo.png" alt="Medicle" className="mt-8 mb-5" style={{ height: "80px" }} />
 
-      <div className="w-full max-w-3xl">
-        <ECGMonitor badGuesses={badGuesses} gameOver={gameOver} won={won} guessesLeft={guessesLeft} />
-      </div>
-
+      {/* Clue progress */}
       <div className="flex items-center gap-2 mb-3 text-sm w-full max-w-3xl" style={{ color: "#6b7280" }}>
         <span className="whitespace-nowrap">Clue {revealed}/{current.clues.length}</span>
         <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ background: "#0e3d4a" }}>
           <div className="h-full rounded-full transition-all duration-500"
             style={{ width: `${(revealed / current.clues.length) * 100}%`, background: "#14b8a6" }} />
         </div>
+        <span className="text-xs font-mono whitespace-nowrap" style={{ color: "#6b7280" }}>
+          {guessesLeft} guess{guessesLeft !== 1 ? "es" : ""} left
+        </span>
       </div>
 
+      {/* Clue cards */}
       <div className="w-full max-w-3xl space-y-2 mb-4">
         {current.clues.slice(0, revealed).map((clue, i) => (
           <div key={i} className="rounded-xl px-4 py-3 text-sm border-l-4 transition-all duration-300"
@@ -344,6 +348,7 @@ export default function Home() {
         ))}
       </div>
 
+      {/* Input */}
       {!gameOver && (
         <div className="relative w-full max-w-3xl mb-2">
           <div className="flex gap-2">
@@ -384,7 +389,8 @@ export default function Home() {
         </div>
       )}
 
-      <div className="mt-3 space-y-1 w-full max-w-3xl">
+      {/* Guess history */}
+      <div className="mt-2 space-y-1 w-full max-w-3xl">
         {guesses.map((g, i) => (
           <div key={i} className="flex items-center gap-2 text-sm">
             <span style={{ color: g.skipped ? "#6b7280" : g.correct ? "#4ade80" : "#f87171" }}>
@@ -395,7 +401,27 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="mt-12 w-full max-w-3xl text-center space-y-3">
+      {/* ECG toggle + monitor at bottom */}
+      <div className="mt-8 w-full max-w-3xl">
+        <button
+          onClick={() => setShowECG(s => !s)}
+          className="flex items-center gap-2 text-xs font-mono mb-2 px-3 py-1 rounded-lg transition-all"
+          style={{
+            background: showECG ? "#0a2f38" : "transparent",
+            border: "1px solid #0e3d4a",
+            color: showECG ? "#14b8a6" : "#2d7a8a"
+          }}
+        >
+          <span style={{ color: showECG ? "#22c55e" : "#2d7a8a" }}>●</span>
+          {showECG ? "Hide" : "Show"} Patient Monitor
+        </button>
+        {showECG && (
+          <ECGMonitor badGuesses={badGuesses} gameOver={gameOver} won={won} guessesLeft={guessesLeft} />
+        )}
+      </div>
+
+      {/* Footer */}
+      <div className="mt-8 w-full max-w-3xl text-center space-y-3">
         <p className="text-xs" style={{ color: "#2d7a8a" }}>
           ⚠️ Cases are AI-generated for educational purposes only and may contain inaccuracies. Not for clinical use.
         </p>
