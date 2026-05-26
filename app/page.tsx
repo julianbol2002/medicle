@@ -49,7 +49,7 @@ const ECG_POINTS: [number, number][][] = [
 ];
 
 const ECG_COLORS = ["#22c55e", "#84cc16", "#facc15", "#f97316", "#ef4444", "#dc2626"];
-const ECG_X_SPEEDS = [0.4, 0.55, 0.7, 0.5, 1.0, 1.4]; // pixels per frame in x only
+const ECG_X_SPEEDS = [0.8, 1.1, 1.4, 1.0, 2.0, 2.8]; // pixels per frame in x only
 const ECG_LABELS = ["Stable", "Ill-Appearing", "Distressed", "Obtunded", "Critical", "Peri-Arrest"];
 
 // Get Y value at a given X by interpolating between points
