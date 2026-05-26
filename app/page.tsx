@@ -597,6 +597,27 @@ export default function Home() {
     <main className="min-h-screen flex flex-col items-center px-4 pb-16" style={{ background: "#022129" }}>
       {showConfetti && <Confetti />}
       <Analytics />
+      {/* OTHER GAMES DROPDOWN */}
+      <div style={{ position: "absolute", top: "16px", left: "16px" }}>
+        <select
+          onChange={(e) => {
+            if (e.target.value === "medicle") window.location.href = "/";
+            if (e.target.value === "vettle") window.location.href = "/vettle";
+          }}
+          style={{
+            background: "#0a2f38",
+            border: "1px solid #0e3d4a",
+            color: "#ffffff",
+            borderRadius: "8px",
+            padding: "6px 10px",
+            fontSize: "12px"
+          }}
+        >
+          <option value="medicle">🧠 Medicle</option>
+          <option value="vettle">🐾 Vettle — Veterinary cases</option>
+        </select>
+      </div>
+
 
       {gameOver && current && (
         <ResultModal
