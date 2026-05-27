@@ -598,6 +598,32 @@ export default function Home() {
       {showConfetti && <Confetti />}
       <Analytics />
 
+      {/* OTHER GAMES DROPDOWN */}
+      <div style={{ position: "absolute", top: "16px", left: "16px" }}>
+        <select
+          onChange={(e) => {
+            if (e.target.value === "medicle") window.location.href = "/";
+            if (e.target.value === "vettle") window.location.href = "/vettle";
+            if (e.target.value === "psychodle") window.location.href = "/psychodle";
+            if (e.target.value === "dentdle") window.location.href = "/dentdle";
+          }}
+          defaultValue="vettle"
+          style={{
+            background: "#3b2c1e",
+            border: "1px solid #5a4430",
+            color: "#ffffff",
+            borderRadius: "8px",
+            padding: "6px 10px",
+            fontSize: "12px"
+          }}
+        >
+          <option value="vettle">🐾 Vettle — Veterinary cases</option>
+          <option value="medicle">🧠 Medicle</option>
+          <option value="psychodle">🧩 Psychodle — Psychiatry cases</option>
+          <option value="dentdle">🦷 Dentdle — Dental cases</option>
+        </select>
+      </div>
+
       {gameOver && current && (
         <ResultModal
           won={won}
@@ -620,20 +646,22 @@ export default function Home() {
         }}
       >
         <img src="/vettle-logo.png" alt="Vettle" style={{ height: "80px" }} />
-        <p style={{ fontSize: "15px", color: "#ffffff", fontWeight: "500", letterSpacing: "0.01em" }}>
-          Can you diagnose the animal before it&apos;s too late?
-        </p>
-        <p style={{ fontSize: "12px", color: "#c2a98d" }}>
-          Endless progressive clue-based vignettes. A new case every round.
-        </p>
-        <a
-          href="https://www.medicle.net"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ fontSize: "13px", fontWeight: "bold", color: "#d97706", textDecoration: "none" }}
-        >
-          🔗 www.medicle.net
-        </a>
+        <div style={{ background: "#3b2c1e", border: "1px solid #5a4430", borderRadius: "16px", padding: "16px 20px", maxWidth: "720px", width: "100%" }}>
+          <p style={{ fontSize: "15px", color: "#ffffff", fontWeight: "600", marginBottom: "6px" }}>
+            Can you diagnose the animal before it&apos;s too late?
+          </p>
+          <p style={{ fontSize: "12px", color: "#c2a98d", marginBottom: "8px" }}>
+            Endless progressive clue-based vignettes. A new case every round.
+          </p>
+          <a
+            href="https://www.medicle.net/vettle"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ fontSize: "13px", fontWeight: "bold", color: "#d97706", textDecoration: "none" }}
+          >
+            🔗 www.medicle.net/vettle
+          </a>
+        </div>
 
         <div className="w-full max-w-3xl grid gap-3 sm:grid-cols-[1fr_auto] items-center">
           <div className="text-left">
