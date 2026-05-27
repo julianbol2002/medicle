@@ -1,0 +1,265 @@
+CASE_ID: 504
+DIFFICULTY: step1
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Wolff-Parkinson-White Syndrome
+
+ALIASES:
+WPW
+pre-excitation syndrome
+accessory pathway
+
+VIGNETTE_LINES:
+1. A young athletic man presents to the emergency department with sudden-onset palpitations and lightheadedness that began while he was jogging.
+2. The episode started abruptly and resolved spontaneously after about twenty minutes before he arrived.
+3. He has had two similar episodes over the past year, each resolving on their own.
+4. Examination between episodes is entirely normal with no murmur and normal vital signs.
+5. Resting ECG reveals a short PR interval, a slurred upstroke at the beginning of the QRS complex, and a widened QRS in multiple leads.
+6. He is referred to electrophysiology for ablation of the accessory pathway.
+
+TEACHING_POINTS:
+- WPW features a delta wave (slurred QRS upstroke), short PR interval, and widened QRS due to ventricular pre-excitation via an accessory pathway.
+- It can precipitate life-threatening arrhythmias including atrial fibrillation with rapid ventricular response.
+- AV nodal blocking agents such as adenosine and digoxin are contraindicated in WPW with AF.
+
+==================================================
+
+CASE_ID: 505
+DIFFICULTY: step1
+SYSTEM: neurology
+
+DIAGNOSIS:
+Subarachnoid Hemorrhage
+
+ALIASES:
+SAH
+ruptured cerebral aneurysm
+subarachnoid bleed
+
+VIGNETTE_LINES:
+1. A middle-aged woman presents to the emergency department describing the worst headache of her life that came on suddenly while she was lifting groceries.
+2. She says it felt like something exploded in the back of her head and reached maximum intensity within seconds.
+3. She vomited twice en route and is now mildly confused.
+4. Examination reveals nuchal rigidity, bilateral papilledema, and a left third nerve palsy with a dilated unreactive pupil.
+5. Non-contrast CT of the head shows hyperdense material in the basal cisterns and sylvian fissures; lumbar puncture reveals xanthochromia with elevated red blood cells that do not decrease between tubes.
+6. CT angiography identifies a saccular aneurysm at the junction of the posterior communicating artery and internal carotid artery, and she is taken for endovascular coiling.
+
+TEACHING_POINTS:
+- Subarachnoid hemorrhage classically presents with a thunderclap headache reaching peak intensity within seconds.
+- A third nerve palsy with pupillary involvement suggests compression by a posterior communicating artery aneurysm.
+- If CT is negative, lumbar puncture must be performed; xanthochromia confirms the diagnosis.
+
+==================================================
+
+CASE_ID: 506
+DIFFICULTY: step1
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Addison Disease
+
+ALIASES:
+primary adrenal insufficiency
+adrenal insufficiency
+Addison's disease
+
+VIGNETTE_LINES:
+1. A young woman presents with several months of progressive fatigue, weight loss, and intermittent nausea and vomiting.
+2. She craves salty foods and feels dizzy when standing up quickly.
+3. Her family has noticed a deepening tan even though she has not been in the sun, and dark patches have appeared on her gums and the creases of her palms.
+4. Labs show hyponatremia, hyperkalemia, and a mild metabolic acidosis; blood glucose is low-normal.
+5. Morning cortisol is low and fails to rise appropriately after synthetic ACTH stimulation; ACTH level is markedly elevated.
+6. She is started on hydrocortisone and fludrocortisone replacement and counseled on sick-day dosing rules.
+
+TEACHING_POINTS:
+- Addison disease is primary adrenal insufficiency causing deficiency of both cortisol and aldosterone.
+- Hyperpigmentation results from excess ACTH cross-reacting with melanocortin receptors.
+- Hyponatremia and hyperkalemia distinguish primary from secondary adrenal insufficiency.
+
+==================================================
+
+CASE_ID: 507
+DIFFICULTY: step1
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Hepatic Encephalopathy
+
+ALIASES:
+portosystemic encephalopathy
+liver encephalopathy
+
+VIGNETTE_LINES:
+1. An older man with a history of chronic liver disease is brought in by his family for confusion and inappropriate behavior over the past two days.
+2. He has been more sleepy than usual and his family noticed his hands shaking in a flapping pattern.
+3. He recently started a high-protein diet and has been constipated for four days.
+4. Examination reveals jaundice, spider angiomata, a flapping tremor of the hands on outstretched arms, and disorientation to time and place.
+5. Ammonia level is markedly elevated, EEG shows diffuse slow-wave activity, and head CT reveals no acute intracranial pathology.
+6. He is started on lactulose titrated to produce several soft stools per day and oral rifaximin, with identification and treatment of a concurrent urinary tract infection as the precipitant.
+
+TEACHING_POINTS:
+- Hepatic encephalopathy results from accumulation of ammonia and other toxins due to impaired hepatic clearance.
+- Asterixis (flapping tremor) is a characteristic finding.
+- Common precipitants include GI bleeding, infection, constipation, excessive dietary protein, and diuretic overuse.
+
+==================================================
+
+CASE_ID: 508
+DIFFICULTY: step1
+SYSTEM: infectious_disease
+
+DIAGNOSIS:
+Rocky Mountain Spotted Fever
+
+ALIASES:
+RMSF
+Rickettsia rickettsii infection
+
+VIGNETTE_LINES:
+1. A child is brought in with five days of high fever, severe headache, and myalgias that began shortly after a family camping trip.
+2. The parents noticed a rash that started on the wrists and ankles two days ago and has been spreading toward the trunk.
+3. One parent recalls finding a tick attached to the child's scalp on the third day of the trip.
+4. Examination reveals a febrile ill-appearing child with a petechial and maculopapular rash on the palms and soles extending centrally, along with periorbital edema.
+5. Labs show thrombocytopenia, hyponatremia, and elevated transaminases; the peripheral smear shows no parasites.
+6. Doxycycline is started empirically without waiting for confirmatory serology, with rapid defervescence over 48 hours.
+
+TEACHING_POINTS:
+- RMSF is caused by Rickettsia rickettsii transmitted by Dermacentor ticks.
+- The classic triad is fever, headache, and rash; the rash classically begins peripherally and spreads centrally.
+- Doxycycline is the treatment of choice for all ages and should never be delayed pending confirmation.
+
+==================================================
+
+CASE_ID: 509
+DIFFICULTY: step1
+SYSTEM: nephrology
+
+DIAGNOSIS:
+Nephrotic Syndrome
+
+ALIASES:
+nephrotic syndrome unspecified
+heavy proteinuria syndrome
+
+VIGNETTE_LINES:
+1. A middle-aged man presents with progressive bilateral leg swelling and puffiness around his eyes that has worsened over three weeks.
+2. He has noticed his urine looks frothy and his pants no longer fit due to abdominal swelling.
+3. He was recently diagnosed with type 2 diabetes and has poorly controlled hypertension.
+4. Examination reveals pitting edema to the thighs, ascites, and periorbital edema; blood pressure is significantly elevated.
+5. Urinalysis shows 4+ protein without blood, 24-hour urine protein is 6.8 grams, serum albumin is markedly low, and cholesterol is elevated; renal biopsy shows nodular glomerulosclerosis.
+6. He is started on an ACE inhibitor, a diuretic for edema management, and anticoagulation given the thrombotic risk.
+
+TEACHING_POINTS:
+- Nephrotic syndrome is defined by proteinuria greater than 3.5 g/day, hypoalbuminemia, edema, and hyperlipidemia.
+- Patients are at increased risk of thromboembolism due to urinary loss of antithrombin III.
+- The most common cause in adults with diabetes is diabetic nephropathy.
+
+==================================================
+
+CASE_ID: 510
+DIFFICULTY: step1
+SYSTEM: hematology_oncology
+
+DIAGNOSIS:
+Iron Deficiency Anemia
+
+ALIASES:
+iron deficiency
+IDA
+microcytic anemia
+
+VIGNETTE_LINES:
+1. A young woman presents with several months of fatigue, exertional shortness of breath, and difficulty concentrating at work.
+2. She has heavy menstrual periods lasting seven to eight days each month and has been a vegetarian for four years.
+3. She reports craving and chewing ice compulsively, something she finds embarrassing.
+4. Examination reveals pallor of the conjunctivae and nail beds, with spoon-shaped nails and angular cheilitis.
+5. CBC shows a microcytic hypochromic anemia with elevated RDW; serum ferritin is critically low, serum iron is low, and TIBC is elevated.
+6. She is started on oral ferrous sulfate and referred for gynecology evaluation of her menorrhagia.
+
+TEACHING_POINTS:
+- Iron deficiency anemia is the most common cause of anemia worldwide.
+- Pica (craving non-nutritive substances, especially ice) is a classic symptom.
+- Low ferritin is the most sensitive and specific test for iron deficiency.
+
+==================================================
+
+CASE_ID: 511
+DIFFICULTY: step1
+SYSTEM: musculoskeletal
+
+DIAGNOSIS:
+Septic Arthritis
+
+ALIASES:
+infectious arthritis
+bacterial arthritis
+joint infection
+
+VIGNETTE_LINES:
+1. A middle-aged man presents with one day of severe pain, swelling, and inability to bear weight on his right knee.
+2. The joint pain came on rapidly and is associated with fever and chills.
+3. He had a dental procedure four days ago and has a history of osteoarthritis in the same knee.
+4. Examination reveals a warm, erythematous, markedly swollen right knee with exquisite tenderness on any range of motion; he holds the joint in slight flexion.
+5. Arthrocentesis yields cloudy yellow fluid with a white cell count of 85,000 per microliter with 95% neutrophils; Gram stain reveals gram-positive cocci in clusters.
+6. He is admitted for IV antibiotics and daily joint aspiration, with orthopedic surgery consulted for possible washout.
+
+TEACHING_POINTS:
+- Septic arthritis is a medical emergency requiring prompt joint aspiration and antibiotic therapy.
+- Synovial fluid WBC greater than 50,000 with neutrophil predominance strongly suggests infection.
+- Staphylococcus aureus is the most common cause of septic arthritis in adults.
+
+==================================================
+
+CASE_ID: 512
+DIFFICULTY: step1
+SYSTEM: dermatology
+
+DIAGNOSIS:
+Stevens-Johnson Syndrome
+
+ALIASES:
+SJS
+SJS-TEN
+erythema multiforme major
+
+VIGNETTE_LINES:
+1. A young woman is brought to the emergency department with a spreading painful rash, fever, and difficulty swallowing that began three days ago.
+2. She started trimethoprim-sulfamethoxazole for a urinary tract infection ten days prior.
+3. She has developed blistering sores in her mouth, on her lips, and around her eyes that make it difficult to eat or open her eyes fully.
+4. Examination reveals a toxic-appearing woman with extensive erythematous and dusky targetoid lesions across her trunk and extremities, with mucosal involvement in three distinct sites; the skin peels off with gentle lateral pressure.
+5. The affected body surface area is estimated at 12%, and ophthalmology is urgently consulted for corneal involvement.
+6. The offending antibiotic is immediately discontinued, she is transferred to a burn unit for wound care, and supportive management is initiated.
+
+TEACHING_POINTS:
+- Stevens-Johnson syndrome involves less than 10% BSA detachment with mucosal involvement at two or more sites.
+- Drug reactions, particularly sulfonamides, anticonvulsants, and allopurinol, are the most common triggers.
+- The Nikolsky sign (skin separation with lateral pressure) is positive.
+
+==================================================
+
+CASE_ID: 513
+DIFFICULTY: step1
+SYSTEM: reproductive
+
+DIAGNOSIS:
+Preeclampsia
+
+ALIASES:
+pre-eclampsia
+pregnancy-induced hypertension with proteinuria
+
+VIGNETTE_LINES:
+1. A woman in her third trimester presents with a persistent frontal headache and visual disturbances including flashing lights for the past two days.
+2. She has noticed significant swelling of her hands and face that came on suddenly over the past week.
+3. This is her first pregnancy and she has no prior history of hypertension.
+4. Blood pressure on two readings taken four hours apart is 158/102 mmHg and 162/104 mmHg; examination reveals hyperreflexia and 3+ pitting edema.
+5. Urinalysis shows 3+ proteinuria, 24-hour urine protein is 400 mg, platelets are trending down, and liver enzymes are mildly elevated.
+6. She is admitted, started on magnesium sulfate for seizure prophylaxis and antihypertensives, and delivery is planned given gestational age.
+
+TEACHING_POINTS:
+- Preeclampsia is defined as new-onset hypertension after 20 weeks gestation with proteinuria or end-organ dysfunction.
+- Severe features include BP greater than 160/110, thrombocytopenia, renal insufficiency, liver dysfunction, or neurologic symptoms.
+- Magnesium sulfate prevents progression to eclampsia; delivery is the only definitive treatment.
+
+==================================================
