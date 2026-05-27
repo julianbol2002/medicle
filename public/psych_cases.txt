@@ -1,0 +1,100 @@
+CASE_ID: 001
+DIFFICULTY: psychodle
+SYSTEM: psychiatry_mood_disorders
+DIAGNOSIS:
+Major Depressive Disorder
+ALIASES:
+depression
+clinical depression
+MDD
+VIGNETTE_LINES:
+- A 28-year-old presents with persistent low mood, loss of interest in activities, and fatigue lasting over two months.
+- The patient reports difficulty sleeping, poor concentration, and feelings of worthlessness.
+- Appetite has decreased and there has been unintentional weight loss.
+- No history of manic episodes is reported.
+- Symptoms cause significant impairment in daily functioning.
+TEACHING_POINTS:
+- MDD requires at least 2 weeks of depressive symptoms with functional impairment.
+- Anhedonia and low mood are key diagnostic features.
+- Always assess for suicidality and risk factors.
+==================================================
+
+CASE_ID: 002
+DIFFICULTY: psychodle
+SYSTEM: psychiatry_anxiety
+DIAGNOSIS:
+Generalized Anxiety Disorder
+ALIASES:
+GAD
+chronic anxiety
+VIGNETTE_LINES:
+- A 35-year-old reports excessive worry about multiple aspects of life for over 6 months.
+- The patient experiences restlessness, muscle tension, and difficulty concentrating.
+- Sleep is disturbed with frequent awakenings.
+- The worry is difficult to control and not limited to one specific trigger.
+- Symptoms interfere with work and relationships.
+TEACHING_POINTS:
+- GAD involves excessive uncontrollable worry lasting at least 6 months.
+- Physical symptoms like muscle tension and sleep disturbance are common.
+- Cognitive behavioral therapy is a first-line treatment alongside SSRIs.
+==================================================
+
+CASE_ID: 003
+DIFFICULTY: psychodle
+SYSTEM: psychiatry_psychotic
+DIAGNOSIS:
+Schizophrenia
+ALIASES:
+psychotic disorder
+chronic schizophrenia
+VIGNETTE_LINES:
+- A 22-year-old presents with auditory hallucinations and paranoid delusions.
+- The patient believes others are plotting against them and reports hearing voices commenting on actions.
+- Social withdrawal and reduced emotional expression are noted.
+- Symptoms have persisted for over 6 months.
+- Functioning in school and work has significantly declined.
+TEACHING_POINTS:
+- Schizophrenia requires at least 6 months of symptoms including psychosis.
+- Positive symptoms include hallucinations and delusions.
+- Negative symptoms include flat affect and social withdrawal.
+==================================================
+
+CASE_ID: 004
+DIFFICULTY: psychodle
+SYSTEM: psychiatry_trauma
+DIAGNOSIS:
+Post-Traumatic Stress Disorder
+ALIASES:
+PTSD
+trauma disorder
+VIGNETTE_LINES:
+- A 30-year-old presents after a traumatic event with recurrent nightmares and flashbacks.
+- The patient avoids reminders of the trauma and feels persistently on edge.
+- Sleep disturbances and irritability are present.
+- Symptoms have lasted for several months after the event.
+- There is significant impairment in daily functioning.
+TEACHING_POINTS:
+- PTSD includes intrusion, avoidance, negative mood, and hyperarousal.
+- Symptoms must last more than 1 month.
+- Trauma-focused therapy is first-line treatment.
+==================================================
+
+CASE_ID: 005
+DIFFICULTY: psychodle
+SYSTEM: psychiatry_personality
+DIAGNOSIS:
+Borderline Personality Disorder
+ALIASES:
+BPD
+emotion dysregulation disorder
+VIGNETTE_LINES:
+- A 24-year-old presents with intense unstable relationships and fear of abandonment.
+- The patient reports impulsive behaviors and frequent mood swings.
+- Episodes of self-harm and chronic feelings of emptiness are described.
+- Identity disturbance and unstable self-image are noted.
+- Interpersonal conflicts are frequent and severe.
+TEACHING_POINTS:
+- BPD involves instability in relationships, self-image, and emotions.
+- Impulsivity and self-harm are common features.
+- Dialectical behavior therapy is a key treatment approach.
+==================================================
