@@ -20,7 +20,12 @@ type Guess = {
 };
 
 const MAX_GUESSES = 6;
-const CASES_PATH = "/cases_master_250.txt";
+
+// To add more cases, just drop a new .txt file in /public/doctordle cases/
+// and add its filename to this list. Then push to deploy.
+const CASES_FILES = [
+  "/doctordle cases/cases_master_250.txt",
+];
 
 const ECG_POINTS: [number, number][][] = [
   [[0,50],[20,50],[22,46],[24,54],[26,10],[28,90],[30,44],[32,50],[60,50],[62,46],[64,54],[66,10],[68,90],[70,44],[72,50],[100,50],[102,46],[104,54],[106,10],[108,90],[110,44],[112,50],[140,50],[142,46],[144,54],[146,10],[148,90],[150,44],[152,50],[180,50],[182,46],[184,54],[186,10],[188,90],[190,44],[192,50],[220,50],[222,46],[224,54],[226,10],[228,90],[230,44],[232,50],[260,50],[262,46],[264,54],[266,10],[268,90],[270,44],[272,50],[300,50]],
@@ -484,17 +489,35 @@ export default function Home() {
 
     async function loadCases() {
       try {
-        const response = await fetch(CASES_PATH);
-        if (!response.ok) throw new Error(`Failed to load cases from ${CASES_PATH}`);
-        const text = await response.text();
-        const parsed = parseCases(text);
+        // Fetch every case file in parallel
+        const responses = await Promise.all(
+          CASES_FILES.map(async (path) => {
+            const response = await fetch(path);
+            if (!response.ok) {
+              throw new Error(`Failed to load cases from ${path}`);
+            }
+            return response.text();
+          })
+        );
+
+        // Parse each file and combine all cases into one array
+        const allCases = responses.flatMap((text) => parseCases(text));
+
+        // Deduplicate by CASE_ID (later files override earlier ones if IDs collide)
+        const seenIds = new Map<string, Case>();
+        for (const c of allCases) {
+          seenIds.set(c.id, c);
+        }
+        const parsed = Array.from(seenIds.values()).sort(
+          (a, b) => Number(a.id) - Number(b.id)
+        );
 
         if (!active) return;
 
         setCases(parsed);
 
         if (parsed.length === 0) {
-          setLoadError("No cases were parsed from the file.");
+          setLoadError("No cases were parsed from any file.");
           return;
         }
 
@@ -614,7 +637,7 @@ export default function Home() {
             {loadError}
           </p>
           <p className="text-sm mt-3" style={{ color: "#94a3b8" }}>
-            Put <span className="font-mono">cases_master_250.txt</span> in your <span className="font-mono">public</span> folder.
+            Put your case files in <span className="font-mono">public/doctordle cases/</span> and add their filenames to <span className="font-mono">CASES_FILES</span>.
           </p>
         </div>
       </main>
