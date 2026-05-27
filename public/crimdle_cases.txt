@@ -1,0 +1,2300 @@
+CASE_ID: 001
+DIFFICULTY: crimdle
+SYSTEM: homicide
+
+DIAGNOSIS:
+First-Degree Murder
+
+ALIASES:
+murder one|premeditated murder
+
+VIGNETTE_LINES:
+1. A man tells a coworker he plans to kill his wife.
+2. He buys a firearm and drives to her workplace.
+3. He waits in the garage for two hours.
+4. He shoots her four times and flees.
+5. Police find a note detailing the plan.
+6. Convicted for willful, deliberate, premeditated killing.
+
+TEACHING_POINTS:
+- Requires willfulness, deliberation, and premeditation.
+- Classic indicators: lying in wait, prior expressed plan.
+==================================================
+
+CASE_ID: 002
+DIFFICULTY: crimdle
+SYSTEM: system_2
+
+DIAGNOSIS:
+Diagnosis 2
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 003
+DIFFICULTY: crimdle
+SYSTEM: system_3
+
+DIAGNOSIS:
+Diagnosis 3
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 004
+DIFFICULTY: crimdle
+SYSTEM: system_4
+
+DIAGNOSIS:
+Diagnosis 4
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 005
+DIFFICULTY: crimdle
+SYSTEM: system_5
+
+DIAGNOSIS:
+Diagnosis 5
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 006
+DIFFICULTY: crimdle
+SYSTEM: system_6
+
+DIAGNOSIS:
+Diagnosis 6
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 007
+DIFFICULTY: crimdle
+SYSTEM: system_7
+
+DIAGNOSIS:
+Diagnosis 7
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 008
+DIFFICULTY: crimdle
+SYSTEM: system_8
+
+DIAGNOSIS:
+Diagnosis 8
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 009
+DIFFICULTY: crimdle
+SYSTEM: system_9
+
+DIAGNOSIS:
+Diagnosis 9
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 010
+DIFFICULTY: crimdle
+SYSTEM: system_10
+
+DIAGNOSIS:
+Diagnosis 10
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 011
+DIFFICULTY: crimdle
+SYSTEM: system_11
+
+DIAGNOSIS:
+Diagnosis 11
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 012
+DIFFICULTY: crimdle
+SYSTEM: system_12
+
+DIAGNOSIS:
+Diagnosis 12
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 013
+DIFFICULTY: crimdle
+SYSTEM: system_13
+
+DIAGNOSIS:
+Diagnosis 13
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 014
+DIFFICULTY: crimdle
+SYSTEM: system_14
+
+DIAGNOSIS:
+Diagnosis 14
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 015
+DIFFICULTY: crimdle
+SYSTEM: system_15
+
+DIAGNOSIS:
+Diagnosis 15
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 016
+DIFFICULTY: crimdle
+SYSTEM: system_16
+
+DIAGNOSIS:
+Diagnosis 16
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 017
+DIFFICULTY: crimdle
+SYSTEM: system_17
+
+DIAGNOSIS:
+Diagnosis 17
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 018
+DIFFICULTY: crimdle
+SYSTEM: system_18
+
+DIAGNOSIS:
+Diagnosis 18
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 019
+DIFFICULTY: crimdle
+SYSTEM: system_19
+
+DIAGNOSIS:
+Diagnosis 19
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 020
+DIFFICULTY: crimdle
+SYSTEM: system_20
+
+DIAGNOSIS:
+Diagnosis 20
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 021
+DIFFICULTY: crimdle
+SYSTEM: system_21
+
+DIAGNOSIS:
+Diagnosis 21
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 022
+DIFFICULTY: crimdle
+SYSTEM: system_22
+
+DIAGNOSIS:
+Diagnosis 22
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 023
+DIFFICULTY: crimdle
+SYSTEM: system_23
+
+DIAGNOSIS:
+Diagnosis 23
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 024
+DIFFICULTY: crimdle
+SYSTEM: system_24
+
+DIAGNOSIS:
+Diagnosis 24
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 025
+DIFFICULTY: crimdle
+SYSTEM: system_25
+
+DIAGNOSIS:
+Diagnosis 25
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 026
+DIFFICULTY: crimdle
+SYSTEM: system_26
+
+DIAGNOSIS:
+Diagnosis 26
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 027
+DIFFICULTY: crimdle
+SYSTEM: system_27
+
+DIAGNOSIS:
+Diagnosis 27
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 028
+DIFFICULTY: crimdle
+SYSTEM: system_28
+
+DIAGNOSIS:
+Diagnosis 28
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 029
+DIFFICULTY: crimdle
+SYSTEM: system_29
+
+DIAGNOSIS:
+Diagnosis 29
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 030
+DIFFICULTY: crimdle
+SYSTEM: system_30
+
+DIAGNOSIS:
+Diagnosis 30
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 031
+DIFFICULTY: crimdle
+SYSTEM: system_31
+
+DIAGNOSIS:
+Diagnosis 31
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 032
+DIFFICULTY: crimdle
+SYSTEM: system_32
+
+DIAGNOSIS:
+Diagnosis 32
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 033
+DIFFICULTY: crimdle
+SYSTEM: system_33
+
+DIAGNOSIS:
+Diagnosis 33
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 034
+DIFFICULTY: crimdle
+SYSTEM: system_34
+
+DIAGNOSIS:
+Diagnosis 34
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 035
+DIFFICULTY: crimdle
+SYSTEM: system_35
+
+DIAGNOSIS:
+Diagnosis 35
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 036
+DIFFICULTY: crimdle
+SYSTEM: system_36
+
+DIAGNOSIS:
+Diagnosis 36
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 037
+DIFFICULTY: crimdle
+SYSTEM: system_37
+
+DIAGNOSIS:
+Diagnosis 37
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 038
+DIFFICULTY: crimdle
+SYSTEM: system_38
+
+DIAGNOSIS:
+Diagnosis 38
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 039
+DIFFICULTY: crimdle
+SYSTEM: system_39
+
+DIAGNOSIS:
+Diagnosis 39
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 040
+DIFFICULTY: crimdle
+SYSTEM: system_40
+
+DIAGNOSIS:
+Diagnosis 40
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 041
+DIFFICULTY: crimdle
+SYSTEM: system_41
+
+DIAGNOSIS:
+Diagnosis 41
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 042
+DIFFICULTY: crimdle
+SYSTEM: system_42
+
+DIAGNOSIS:
+Diagnosis 42
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 043
+DIFFICULTY: crimdle
+SYSTEM: system_43
+
+DIAGNOSIS:
+Diagnosis 43
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 044
+DIFFICULTY: crimdle
+SYSTEM: system_44
+
+DIAGNOSIS:
+Diagnosis 44
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 045
+DIFFICULTY: crimdle
+SYSTEM: system_45
+
+DIAGNOSIS:
+Diagnosis 45
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 046
+DIFFICULTY: crimdle
+SYSTEM: system_46
+
+DIAGNOSIS:
+Diagnosis 46
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 047
+DIFFICULTY: crimdle
+SYSTEM: system_47
+
+DIAGNOSIS:
+Diagnosis 47
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 048
+DIFFICULTY: crimdle
+SYSTEM: system_48
+
+DIAGNOSIS:
+Diagnosis 48
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 049
+DIFFICULTY: crimdle
+SYSTEM: system_49
+
+DIAGNOSIS:
+Diagnosis 49
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 050
+DIFFICULTY: crimdle
+SYSTEM: system_50
+
+DIAGNOSIS:
+Diagnosis 50
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 051
+DIFFICULTY: crimdle
+SYSTEM: system_51
+
+DIAGNOSIS:
+Diagnosis 51
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 052
+DIFFICULTY: crimdle
+SYSTEM: system_52
+
+DIAGNOSIS:
+Diagnosis 52
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 053
+DIFFICULTY: crimdle
+SYSTEM: system_53
+
+DIAGNOSIS:
+Diagnosis 53
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 054
+DIFFICULTY: crimdle
+SYSTEM: system_54
+
+DIAGNOSIS:
+Diagnosis 54
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 055
+DIFFICULTY: crimdle
+SYSTEM: system_55
+
+DIAGNOSIS:
+Diagnosis 55
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 056
+DIFFICULTY: crimdle
+SYSTEM: system_56
+
+DIAGNOSIS:
+Diagnosis 56
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 057
+DIFFICULTY: crimdle
+SYSTEM: system_57
+
+DIAGNOSIS:
+Diagnosis 57
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 058
+DIFFICULTY: crimdle
+SYSTEM: system_58
+
+DIAGNOSIS:
+Diagnosis 58
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 059
+DIFFICULTY: crimdle
+SYSTEM: system_59
+
+DIAGNOSIS:
+Diagnosis 59
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 060
+DIFFICULTY: crimdle
+SYSTEM: system_60
+
+DIAGNOSIS:
+Diagnosis 60
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 061
+DIFFICULTY: crimdle
+SYSTEM: system_61
+
+DIAGNOSIS:
+Diagnosis 61
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 062
+DIFFICULTY: crimdle
+SYSTEM: system_62
+
+DIAGNOSIS:
+Diagnosis 62
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 063
+DIFFICULTY: crimdle
+SYSTEM: system_63
+
+DIAGNOSIS:
+Diagnosis 63
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 064
+DIFFICULTY: crimdle
+SYSTEM: system_64
+
+DIAGNOSIS:
+Diagnosis 64
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 065
+DIFFICULTY: crimdle
+SYSTEM: system_65
+
+DIAGNOSIS:
+Diagnosis 65
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 066
+DIFFICULTY: crimdle
+SYSTEM: system_66
+
+DIAGNOSIS:
+Diagnosis 66
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 067
+DIFFICULTY: crimdle
+SYSTEM: system_67
+
+DIAGNOSIS:
+Diagnosis 67
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 068
+DIFFICULTY: crimdle
+SYSTEM: system_68
+
+DIAGNOSIS:
+Diagnosis 68
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 069
+DIFFICULTY: crimdle
+SYSTEM: system_69
+
+DIAGNOSIS:
+Diagnosis 69
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 070
+DIFFICULTY: crimdle
+SYSTEM: system_70
+
+DIAGNOSIS:
+Diagnosis 70
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 071
+DIFFICULTY: crimdle
+SYSTEM: system_71
+
+DIAGNOSIS:
+Diagnosis 71
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 072
+DIFFICULTY: crimdle
+SYSTEM: system_72
+
+DIAGNOSIS:
+Diagnosis 72
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 073
+DIFFICULTY: crimdle
+SYSTEM: system_73
+
+DIAGNOSIS:
+Diagnosis 73
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 074
+DIFFICULTY: crimdle
+SYSTEM: system_74
+
+DIAGNOSIS:
+Diagnosis 74
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 075
+DIFFICULTY: crimdle
+SYSTEM: system_75
+
+DIAGNOSIS:
+Diagnosis 75
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 076
+DIFFICULTY: crimdle
+SYSTEM: system_76
+
+DIAGNOSIS:
+Diagnosis 76
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 077
+DIFFICULTY: crimdle
+SYSTEM: system_77
+
+DIAGNOSIS:
+Diagnosis 77
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 078
+DIFFICULTY: crimdle
+SYSTEM: system_78
+
+DIAGNOSIS:
+Diagnosis 78
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 079
+DIFFICULTY: crimdle
+SYSTEM: system_79
+
+DIAGNOSIS:
+Diagnosis 79
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 080
+DIFFICULTY: crimdle
+SYSTEM: system_80
+
+DIAGNOSIS:
+Diagnosis 80
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 081
+DIFFICULTY: crimdle
+SYSTEM: system_81
+
+DIAGNOSIS:
+Diagnosis 81
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 082
+DIFFICULTY: crimdle
+SYSTEM: system_82
+
+DIAGNOSIS:
+Diagnosis 82
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 083
+DIFFICULTY: crimdle
+SYSTEM: system_83
+
+DIAGNOSIS:
+Diagnosis 83
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 084
+DIFFICULTY: crimdle
+SYSTEM: system_84
+
+DIAGNOSIS:
+Diagnosis 84
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 085
+DIFFICULTY: crimdle
+SYSTEM: system_85
+
+DIAGNOSIS:
+Diagnosis 85
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 086
+DIFFICULTY: crimdle
+SYSTEM: system_86
+
+DIAGNOSIS:
+Diagnosis 86
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 087
+DIFFICULTY: crimdle
+SYSTEM: system_87
+
+DIAGNOSIS:
+Diagnosis 87
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 088
+DIFFICULTY: crimdle
+SYSTEM: system_88
+
+DIAGNOSIS:
+Diagnosis 88
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 089
+DIFFICULTY: crimdle
+SYSTEM: system_89
+
+DIAGNOSIS:
+Diagnosis 89
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 090
+DIFFICULTY: crimdle
+SYSTEM: system_90
+
+DIAGNOSIS:
+Diagnosis 90
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 091
+DIFFICULTY: crimdle
+SYSTEM: system_91
+
+DIAGNOSIS:
+Diagnosis 91
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 092
+DIFFICULTY: crimdle
+SYSTEM: system_92
+
+DIAGNOSIS:
+Diagnosis 92
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 093
+DIFFICULTY: crimdle
+SYSTEM: system_93
+
+DIAGNOSIS:
+Diagnosis 93
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 094
+DIFFICULTY: crimdle
+SYSTEM: system_94
+
+DIAGNOSIS:
+Diagnosis 94
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 095
+DIFFICULTY: crimdle
+SYSTEM: system_95
+
+DIAGNOSIS:
+Diagnosis 95
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 096
+DIFFICULTY: crimdle
+SYSTEM: system_96
+
+DIAGNOSIS:
+Diagnosis 96
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 097
+DIFFICULTY: crimdle
+SYSTEM: system_97
+
+DIAGNOSIS:
+Diagnosis 97
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 098
+DIFFICULTY: crimdle
+SYSTEM: system_98
+
+DIAGNOSIS:
+Diagnosis 98
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 099
+DIFFICULTY: crimdle
+SYSTEM: system_99
+
+DIAGNOSIS:
+Diagnosis 99
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
+CASE_ID: 100
+DIFFICULTY: crimdle
+SYSTEM: system_100
+
+DIAGNOSIS:
+Diagnosis 100
+
+ALIASES:
+alias
+
+VIGNETTE_LINES:
+1. v1
+2. v2
+3. v3
+4. v4
+5. v5
+6. v6
+
+TEACHING_POINTS:
+- tp1
+- tp2
+==================================================
+
