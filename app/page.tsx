@@ -435,6 +435,30 @@ export default function Home() {
   const [solvedAtClueCount, setSolvedAtClueCount] = useState(1);
   const [loadError, setLoadError] = useState("");
 
+  const [showSystemFilter, setShowSystemFilter] = useState(false);
+  const [selectedSystems, setSelectedSystems] = useState<Set<string>>(new Set());
+
+  const allSystems = useMemo(() => {
+    const set = new Set<string>();
+    cases.forEach((c) => {
+      if (c.system) set.add(c.system);
+    });
+    return Array.from(set).sort((a, b) => a.localeCompare(b));
+  }, [cases]);
+
+  const eligibleCases = useMemo(() => {
+    if (selectedSystems.size === 0) return cases;
+    return cases.filter((c) => c.system && selectedSystems.has(c.system));
+  }, [cases, selectedSystems]);
+
+  const toggleSystem = useCallback((system: string) => {
+    setSelectedSystems((prev) => {
+      const next = new Set(prev);
+      if (next.has(system)) next.delete(system);
+      else next.add(system);
+      return next;
+    });
+  }, []);
   const pickNewCase = useCallback((allCases: Case[], seen: Set<string>) => {
     const unseen = allCases.filter((c) => !seen.has(c.id));
     const pool = unseen.length > 0 ? unseen : allCases;
@@ -491,43 +515,55 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    // If a filter is active and the current case does not match it, switch to an eligible case.
+    if (!current) return;
+    if (selectedSystems.size === 0) return;
+    const matches = current.system && selectedSystems.has(current.system);
+    if (matches) return;
+    if (eligibleCases.length === 0) return;
+    const next = eligibleCases[Math.floor(Math.random() * eligibleCases.length)];
+    setSeenIds(new Set([next.id]));
+    resetRound(next);
+  }, [current, eligibleCases, resetRound, selectedSystems]);
+
   const loadCaseById = useCallback(
     (caseId: string) => {
-      if (!cases.length) return;
-      const nextCase = cases.find((c) => c.id === caseId);
+      if (!eligibleCases.length) return;
+      const nextCase = eligibleCases.find((c) => c.id === caseId);
       if (!nextCase) return;
 
       setSeenIds(new Set([nextCase.id]));
       resetRound(nextCase);
     },
-    [cases, resetRound]
+    [eligibleCases, resetRound]
   );
 
   const startNextCase = useCallback(() => {
-    if (!cases.length || !current) return;
+    if (!eligibleCases.length || !current) return;
 
     const newSeen = new Set(seenIds);
     newSeen.add(current.id);
 
-    const next = pickNewCase(cases, newSeen);
+    const next = pickNewCase(eligibleCases, newSeen);
     setSeenIds(new Set([...newSeen, next.id]));
     resetRound(next);
-  }, [cases, current, pickNewCase, resetRound, seenIds]);
+  }, [eligibleCases, current, pickNewCase, resetRound, seenIds]);
 
   const allDiagnoses = useMemo(
-    () => cases.flatMap((c) => [c.diagnosis, ...c.aliases]),
-    [cases]
+    () => eligibleCases.flatMap((c) => [c.diagnosis, ...c.aliases]),
+    [eligibleCases]
   );
 
   const caseOptions = useMemo(
     () =>
-      cases.map((c) => ({
+      eligibleCases.map((c) => ({
         id: c.id,
         label: showSystem
           ? `Case ${c.id}${c.system ? ` • ${c.system}` : ""}`
           : `Case ${c.id}`,
       })),
-    [cases, showSystem]
+    [eligibleCases, showSystem]
   );
 
   const filtered = useMemo(() => {
@@ -824,8 +860,82 @@ Endless progressive clue-based vignettes. A new case every round.
           <span style={{ color: showSystem ? "#14b8a6" : "#2d7a8a" }}>●</span>
           {showSystem ? "Hide" : "Show"} Body System
         </button>
+ 
+ <button
+ onClick={() => setShowSystemFilter((s) => !s)}
+ className="flex items-center gap-2 text-xs font-mono mb-2 px-3 py-1 rounded-lg transition-all"
+ style={{
+ background: showSystemFilter ? "#0a2f38" : "transparent",
+ border: "1px solid #0e3d4a",
+ color: showSystemFilter ? "#14b8a6" : "#2d7a8a",
+ }}
+ >
+ <span style={{ color: selectedSystems.size > 0 ? "#14b8a6" : "#2d7a8a" }}>●</span>
+ Filter Systems{selectedSystems.size > 0 ? ` (${selectedSystems.size})` : ""}
+ </button>
         
-        </div>
+         {showSystemFilter && (
+ <div className="w-full rounded-xl p-3 border mb-2" style={{ background: "#0a2f38", borderColor: "#0e3d4a" }}>
+ <div className="flex items-center justify-between gap-3">
+ <p className="text-xs font-mono tracking-widest" style={{ color: "#6b7280" }}>
+ FILTER BY BODY SYSTEM (OPTIONAL)
+ </p>
+ <div className="flex items-center gap-2">
+ <button
+ onClick={() => setSelectedSystems(new Set())}
+ className="text-xs font-bold px-3 py-1.5 rounded-lg"
+ style={{ background: "#0e3d4a", color: "#e2e8f0" }}
+ >
+ Clear
+ </button>
+ <button
+ onClick={() => setSelectedSystems(new Set(allSystems))}
+ className="text-xs font-bold px-3 py-1.5 rounded-lg"
+ style={{ background: "#14b8a6", color: "#042b33" }}
+ >
+ Select all
+ </button>
+ </div>
+ </div>
+ {allSystems.length === 0 ? (
+ <p className="text-sm mt-2" style={{ color: "#94a3b8" }}>
+ No body-system tags were found in your cases file.
+ </p>
+ ) : (
+ <div className="mt-3 flex flex-wrap gap-2">
+ {allSystems.map((sys) => (
+ <label
+ key={sys}
+ className="flex items-center gap-2 px-3 py-1.5 rounded-lg border text-xs cursor-pointer select-none"
+ style={{
+ background: selectedSystems.has(sys) ? "rgba(20,184,166,0.12)" : "transparent",
+ borderColor: selectedSystems.has(sys) ? "#14b8a6" : "#0e3d4a",
+ color: selectedSystems.has(sys) ? "#e2e8f0" : "#94a3b8",
+ }}
+ >
+ <input
+ type="checkbox"
+ checked={selectedSystems.has(sys)}
+ onChange={() => toggleSystem(sys)}
+ style={{ accentColor: "#14b8a6" }}
+ />
+ <span>{sys}</span>
+ </label>
+ ))}
+ </div>
+ )}
+ {selectedSystems.size > 0 && (
+ <p className="text-xs mt-3" style={{ color: "#2d7a8a" }}>
+ Active filter: {Array.from(selectedSystems).join(", ")}
+ </p>
+ )}
+ <p className="text-xs mt-2" style={{ color: "#1d5a66" }}>
+ Tip: If you pick systems here, the game will only pull new cases from those systems for this session.
+ </p>
+ </div>
+ )}
+
+</div>
 
         {showECG && <ECGMonitor badGuesses={badGuesses} gameOver={gameOver} won={won} guessesLeft={guessesLeft} />}
       </div>
