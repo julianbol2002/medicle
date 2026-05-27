@@ -836,6 +836,35 @@ function parseCases(text: string): Case[] {
 }
 
 // =============================================================
+// CASE DEDUPLICATION (prevents duplicate case IDs showing twice)
+// =============================================================
+
+function dedupeCasesById(list: Case[]): Case[] {
+  // If the same CASE_ID appears more than once (e.g., included in multiple files),
+  // keep the most information-rich version.
+  const map = new Map<string, Case>();
+
+  for (const c of list) {
+    const prev = map.get(c.id);
+    if (!prev) {
+      map.set(c.id, c);
+      continue;
+    }
+
+    // Prefer the case with more clues, then more teaching points, then longer diagnosis string.
+    const prevScore = (prev.clues?.length || 0) * 1000 + (prev.teachingPoints?.length || 0) * 10 + (prev.diagnosis?.length || 0);
+    const curScore = (c.clues?.length || 0) * 1000 + (c.teachingPoints?.length || 0) * 10 + (c.diagnosis?.length || 0);
+
+    if (curScore > prevScore) {
+      map.set(c.id, c);
+    }
+  }
+
+  return Array.from(map.values()).sort((a, b) => Number(a.id) - Number(b.id));
+}
+
+
+// =============================================================
 // ECG RENDERING HELPERS
 // =============================================================
 
@@ -1246,7 +1275,8 @@ export default function Home() {
           combinedText = await response.text();
         }
     
-        const parsed = parseCases(combinedText);
+        const parsedRaw = parseCases(combinedText);
+        const parsed = dedupeCasesById(parsedRaw);
     
         if (!active) return;
     
@@ -1319,8 +1349,12 @@ export default function Home() {
   }, [cases]);
 
   const eligibleCases = useMemo(() => {
-    if (selectedSystems.size === 0) return cases;
-    return cases.filter((c) => c.system && selectedSystems.has(normalizeSystem(c.system)));
+    const base = selectedSystems.size === 0
+      ? cases
+      : cases.filter((c) => c.system && selectedSystems.has(normalizeSystem(c.system)));
+
+    // Safety: dedupe again by id to prevent any UI duplicates.
+    return dedupeCasesById(base);
   }, [cases, selectedSystems]);
 
   const toggleSystem = useCallback((system: string) => {
