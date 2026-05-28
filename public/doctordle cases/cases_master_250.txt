@@ -1239,7 +1239,7 @@ TEACHING_POINTS:
 
 CASE_ID: 049
 DIFFICULTY: step1
-SYSTEM: pharmacology/toxicology
+SYSTEM: pharmacology
 
 DIAGNOSIS:
 Acetaminophen Toxicity
@@ -1286,6 +1286,8 @@ TEACHING_POINTS:
 - The ampulla of the fallopian tube is the most common site of ectopic implantation.
 - Risk factors include prior PID, tubal surgery, and previous ectopic pregnancy.
 - A beta-hCG that fails to rise appropriately with an empty uterus on ultrasound suggests ectopic pregnancy.
+
+==================================================
 
 CASE_ID: 051
 DIFFICULTY: step1
@@ -1496,12 +1498,12 @@ sleep apnea
 OSAHS
 
 VIGNETTE_LINES:
-1. A 52-year-old obese man is referred by his wife who reports he snores loudly and she has observed him stop breathing for 30-second intervals during sleep on multiple occasions.
-2. He reports excessive daytime sleepiness, morning headaches, and difficulty concentrating; he has fallen asleep while driving twice in the past year.
-3. On exam, BMI is 38, neck circumference is 18 inches, and Mallampati class III airway is noted.
-4. Overnight polysomnography shows an apnea-hypopnea index of 48 events per hour with oxygen desaturation nadir of 76% during obstructive events.
-5. He also has new-onset hypertension, type 2 diabetes, and was recently found to have atrial fibrillation on a routine ECG.
-6. CPAP titration study identifies an optimal pressure of 10 cmH2O with complete resolution of apneic events; after 3 months of CPAP compliance his blood pressure and daytime sleepiness improve significantly.
+1. A 52-year-old obese man is brought in by his wife who is concerned about his loud snoring and her observation that he sometimes seems to stop breathing during the night.
+2. He reports excessive daytime sleepiness, morning headaches, and difficulty concentrating; he recently fell asleep at the wheel while driving.
+3. Vitals show BMI 38, blood pressure 152/94 mmHg, and a neck circumference of 18 inches; oropharyngeal exam shows a crowded oropharynx with a large tongue and a Mallampati class IV airway.
+4. An Epworth Sleepiness Scale score is 16 (severely abnormal); morning hematocrit is mildly elevated and ECG shows right axis deviation.
+5. Overnight pulse oximetry shows multiple episodes of oxygen desaturation below 88%.
+6. Polysomnography reveals an apnea-hypopnea index (AHI) of 42 events per hour with predominantly obstructive events, and he is started on CPAP therapy with rapid symptomatic improvement.
 
 TEACHING_POINTS:
 - Repetitive upper airway collapse during sleep; obesity is the most important risk factor.
@@ -1876,7 +1878,7 @@ TEACHING_POINTS:
 
 CASE_ID: 072
 DIFFICULTY: step1
-SYSTEM: renal
+SYSTEM: nephrology
 
 DIAGNOSIS:
 Acute Interstitial Nephritis
@@ -1904,7 +1906,7 @@ TEACHING_POINTS:
 
 CASE_ID: 073
 DIFFICULTY: step1
-SYSTEM: renal
+SYSTEM: nephrology
 
 DIAGNOSIS:
 Renal Tubular Acidosis
@@ -1935,7 +1937,7 @@ TEACHING_POINTS:
 
 CASE_ID: 074
 DIFFICULTY: step1
-SYSTEM: hematology_oncology
+SYSTEM: hematology/oncology
 
 DIAGNOSIS:
 Hemolytic Uremic Syndrome
@@ -1963,7 +1965,7 @@ TEACHING_POINTS:
 
 CASE_ID: 075
 DIFFICULTY: step1
-SYSTEM: hematology_oncology
+SYSTEM: hematology/oncology
 
 DIAGNOSIS:
 Von Willebrand Disease
@@ -1992,7 +1994,7 @@ TEACHING_POINTS:
 
 CASE_ID: 076
 DIFFICULTY: step1
-SYSTEM: hematology_oncology
+SYSTEM: hematology/oncology
 
 DIAGNOSIS:
 Acute Lymphoblastic Leukemia
@@ -2020,7 +2022,7 @@ TEACHING_POINTS:
 
 CASE_ID: 077
 DIFFICULTY: step1
-SYSTEM: hematology_oncology
+SYSTEM: hematology/oncology
 
 DIAGNOSIS:
 Chronic Lymphocytic Leukemia
@@ -2050,7 +2052,7 @@ TEACHING_POINTS:
 
 CASE_ID: 078
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Pneumocystis Pneumonia
@@ -2079,7 +2081,7 @@ TEACHING_POINTS:
 
 CASE_ID: 079
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Cryptococcal Meningitis
@@ -2107,7 +2109,7 @@ TEACHING_POINTS:
 
 CASE_ID: 080
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Rocky Mountain Spotted Fever
@@ -2136,7 +2138,7 @@ TEACHING_POINTS:
 
 CASE_ID: 081
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Septic Arthritis
@@ -2517,12 +2519,12 @@ heparin induced thrombocytopenia thrombosis
 HITT
 
 VIGNETTE_LINES:
-1. A 60-year-old woman who was started on unfractionated heparin 8 days ago for DVT treatment develops new right arm swelling and pain; her platelet count has dropped from 240,000 to 56,000.
-2. She now has a new brachial vein thrombosis confirmed by duplex ultrasound despite being on heparin therapy.
-3. Her 4T score is calculated at 7 (high probability for HIT); PF4-heparin antibody ELISA returns strongly positive.
-4. All heparin products including flushes are immediately discontinued.
-5. Platelet transfusion is withheld despite the low platelet count given the risk of worsening thrombosis.
-6. Argatroban (a direct thrombin inhibitor) is started as an alternative anticoagulant; serotonin release assay subsequently confirms HIT; after platelet recovery, she is transitioned to rivaroxaban for long-term anticoagulation.
+1. A 60-year-old woman who is postoperative day 8 from hip replacement surgery develops new swelling and tenderness in her left lower extremity.
+2. She has been receiving prophylactic anticoagulation since the day of surgery without complications until now.
+3. On exam, the left calf is swollen, warm, and tender; there are no skin lesions; her platelet count has dropped from 240,000 to 78,000 over the past 3 days.
+4. Doppler ultrasound of the left leg confirms an acute deep vein thrombosis in the femoral vein.
+5. The 4Ts score is 7 (high probability); a serotonin release assay is sent and PF4-heparin antibody ELISA is strongly positive.
+6. All forms of heparin including line flushes are stopped immediately; she is transitioned to argatroban with platelet recovery over the following week.
 
 TEACHING_POINTS:
 - HIT type 2: immune-mediated; IgG antibodies against PF4-heparin complexes → platelet activation → paradoxical thrombosis.
@@ -2574,12 +2576,12 @@ warfarin overdose
 supratherapeutic anticoagulation
 
 VIGNETTE_LINES:
-1. A 78-year-old woman on warfarin for atrial fibrillation presents with 2 days of blood in her urine, spontaneous bruising on her arms, and one episode of epistaxis that lasted 30 minutes.
-2. She recently started clarithromycin for a respiratory infection without her anticoagulation being adjusted.
-3. Her INR is found to be 9.8 (therapeutic target 2-3); she is hemodynamically stable with blood pressure 136/82 mmHg.
-4. Urinalysis confirms gross hematuria with >100 RBCs per high-power field; renal ultrasound is normal with no obstructive cause.
-5. CT abdomen/pelvis shows no retroperitoneal hematoma or intra-abdominal bleeding; CBC shows hemoglobin 10.8 g/dL.
-6. Warfarin is held; vitamin K 5 mg is given orally; she is monitored with repeat INR at 24 hours showing improvement to 3.2; clarithromycin is switched to azithromycin and warfarin is resumed at a lower dose.
+1. A 78-year-old woman on chronic anticoagulation for atrial fibrillation presents with 2 days of blood in her urine, gum bleeding, and a large bruise on her thigh.
+2. She recently started a new antibiotic for a respiratory infection without her anticoagulation being adjusted.
+3. On exam, she has ecchymoses on her arms and thighs; there is gross hematuria; no acute external bleeding source is identified.
+4. Labs show INR of 9.2 (target 2-3); CBC shows hemoglobin of 10.4 g/dL (baseline 12.8); the new antibiotic is identified as clarithromycin, a CYP inhibitor.
+5. Her medication list confirms warfarin therapy; PT is markedly prolonged and corrects with mixing studies, consistent with vitamin K-dependent factor deficiency.
+6. Warfarin is held; she receives IV vitamin K and 4-factor prothrombin complex concentrate; INR normalizes within 12 hours and bleeding resolves.
 
 TEACHING_POINTS:
 - Warfarin: inhibits vitamin K-dependent factors (II, VII, IX, X, protein C and S).
@@ -3132,7 +3134,7 @@ TEACHING_POINTS:
 
 CASE_ID: 116
 DIFFICULTY: step1
-SYSTEM: renal
+SYSTEM: nephrology
 
 DIAGNOSIS:
 Hyperkalemia
@@ -3160,7 +3162,7 @@ TEACHING_POINTS:
 
 CASE_ID: 117
 DIFFICULTY: step1
-SYSTEM: renal
+SYSTEM: nephrology
 
 DIAGNOSIS:
 Nephrolithiasis
@@ -3190,7 +3192,7 @@ TEACHING_POINTS:
 
 CASE_ID: 118
 DIFFICULTY: step1
-SYSTEM: hematology_oncology
+SYSTEM: hematology/oncology
 
 DIAGNOSIS:
 Iron Deficiency Anemia
@@ -3219,7 +3221,7 @@ TEACHING_POINTS:
 
 CASE_ID: 119
 DIFFICULTY: step1
-SYSTEM: hematology_oncology
+SYSTEM: hematology/oncology
 
 DIAGNOSIS:
 Aplastic Anemia
@@ -3248,7 +3250,7 @@ TEACHING_POINTS:
 
 CASE_ID: 120
 DIFFICULTY: step1
-SYSTEM: hematology_oncology
+SYSTEM: hematology/oncology
 
 DIAGNOSIS:
 Polycythemia Vera
@@ -3277,7 +3279,7 @@ TEACHING_POINTS:
 
 CASE_ID: 121
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Herpes Simplex Encephalitis
@@ -3306,7 +3308,7 @@ TEACHING_POINTS:
 
 CASE_ID: 122
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Cellulitis
@@ -3335,7 +3337,7 @@ TEACHING_POINTS:
 
 CASE_ID: 123
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Osteomyelitis
@@ -3364,7 +3366,7 @@ TEACHING_POINTS:
 
 CASE_ID: 124
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Gonorrhea
@@ -3577,12 +3579,12 @@ meconium aspiration
 meconium-stained amniotic fluid
 
 VIGNETTE_LINES:
-1. A 42-week postterm male neonate is delivered via emergency cesarean section for fetal distress; the amniotic fluid is thick, pea-soup colored (meconium-stained).
-2. At delivery, the infant is limp, cyanotic, and apneic; meconium is visible below the vocal cords on direct laryngoscopy.
-3. After initial resuscitation with positive pressure ventilation, he develops worsening respiratory distress with grunting, nasal flaring, and intercostal retractions.
-4. Chest X-ray shows coarse, irregular patchy infiltrates with areas of hyperinflation and bilateral pneumothorax on the right side.
-5. Blood gas shows pH 7.18, pCO2 58, pO2 42 on FiO2 of 1.0 with worsening respiratory failure.
-6. He is intubated and placed on high-frequency oscillatory ventilation; inhaled nitric oxide is added for persistent pulmonary hypertension; he requires ECMO and recovers after 10 days of intensive support.
+1. A 42-week postterm male neonate is delivered by emergency cesarean section for fetal distress; the amniotic fluid is noted to be thick and pea-soup colored at delivery.
+2. At delivery the infant is limp, cyanotic, and apneic; thick particulate material is visualized below the vocal cords on direct laryngoscopy.
+3. After initial resuscitation he develops worsening respiratory distress with grunting, nasal flaring, and intercostal retractions over the first hours of life.
+4. Chest X-ray shows coarse irregular patchy infiltrates with areas of hyperinflation and a right-sided pneumothorax.
+5. Blood gas shows pH 7.18, pCO2 58, and pO2 42 on FiO2 of 1.0; echocardiography demonstrates right-to-left shunting across a patent ductus arteriosus consistent with persistent pulmonary hypertension of the newborn.
+6. He is intubated and placed on high-frequency oscillatory ventilation with inhaled nitric oxide; ECMO is required for refractory hypoxemia, and he recovers after 10 days of intensive support.
 
 TEACHING_POINTS:
 - Postterm neonates at highest risk; meconium in amniotic fluid occurs in ~10-15% of deliveries.
@@ -3719,12 +3721,12 @@ digitalis toxicity
 digoxin overdose
 
 VIGNETTE_LINES:
-1. An 82-year-old woman with heart failure and atrial fibrillation on digoxin presents with 2 days of nausea, vomiting, and seeing yellow-green halos around lights and objects.
-2. She recently started clarithromycin for a respiratory infection without dose adjustment of her digoxin.
-3. On exam, heart rate is 42 bpm and irregular; she is nauseated and complains of blurred, yellow-tinted vision.
-4. ECG shows atrial fibrillation with slow ventricular response, bidirectional ventricular tachycardia, and scooped ST depression ("Salvador Dali mustache" pattern) in the lateral leads.
-5. Serum digoxin level is 4.2 ng/mL (therapeutic range 0.5-2.0 ng/mL); potassium is 5.8 mEq/L.
-6. Digoxin-specific antibody fragments (Digibind) are administered with resolution of arrhythmias and improvement in symptoms over 6 hours; clarithromycin is discontinued.
+1. An 82-year-old woman with heart failure and atrial fibrillation presents with 2 days of nausea, vomiting, and seeing yellow-green halos around lights.
+2. She recently started clarithromycin for a respiratory infection without any adjustment to her chronic cardiac medications.
+3. On exam her heart rate is 42 bpm and irregular; she is nauseated and complains of blurred, yellow-tinted vision.
+4. ECG shows atrial fibrillation with slow ventricular response, scooped ST-segment depression in the lateral leads, and runs of bidirectional ventricular tachycardia.
+5. Serum potassium is 5.8 mEq/L; a focused medication history confirms she is on a cardiac glycoside, and a drug level returns at 4.2 ng/mL (therapeutic 0.5-2.0).
+6. Digoxin-specific antibody fragments (Digibind) are administered with resolution of the arrhythmias over 6 hours; clarithromycin is discontinued.
 
 TEACHING_POINTS:
 - Digoxin inhibits Na/K-ATPase; increased intracellular calcium → increased inotropy; increased vagal tone → decreased AV conduction.
@@ -3748,12 +3750,12 @@ lithium overdose
 lithium poisoning
 
 VIGNETTE_LINES:
-1. A 44-year-old man with bipolar disorder on lithium presents with a 2-day history of coarse tremor, slurred speech, ataxia, and confusion.
-2. He recently started ibuprofen for a knee injury without telling his psychiatrist; he also had a gastrointestinal illness with diarrhea and decreased oral intake last week.
-3. On exam, he has a coarse resting and action tremor, dysarthria, ataxic gait, hyperreflexia, and cognitive slowing.
-4. Serum lithium level is 2.8 mEq/L (therapeutic range 0.6-1.2 mEq/L); serum creatinine is 2.4 mg/dL (baseline 0.9).
-5. NSAIDs reduced renal prostaglandins, causing lithium retention; dehydration further elevated serum lithium.
-6. Ibuprofen is discontinued; aggressive IV normal saline hydration is administered; given his severe neurological symptoms and level of 2.8, hemodialysis is performed with complete neurological recovery.
+1. A 44-year-old man with bipolar disorder presents with a 2-day history of coarse tremor, slurred speech, ataxia, and confusion.
+2. He recently started ibuprofen for a knee injury without telling his psychiatrist; he also had a recent gastrointestinal illness with diarrhea and decreased oral intake.
+3. On exam he has a coarse resting and action tremor, dysarthria, ataxic gait, hyperreflexia, and cognitive slowing.
+4. Basic labs show serum creatinine of 2.4 mg/dL (baseline 0.9) consistent with prerenal injury; sodium is 132 mEq/L.
+5. A review of his psychiatric medications and a serum drug level return at 2.8 mEq/L (therapeutic range 0.6-1.2), with NSAIDs and dehydration identified as precipitants.
+6. The offending agent is discontinued; aggressive IV normal saline is given; given the severe neurological symptoms and elevated level, hemodialysis is performed with complete neurological recovery.
 
 TEACHING_POINTS:
 - Lithium has a narrow therapeutic index (0.6-1.2 mEq/L); renal elimination; no hepatic metabolism.
@@ -3807,12 +3809,12 @@ POAG
 chronic glaucoma
 
 VIGNETTE_LINES:
-1. A 62-year-old African American man presents for a routine eye exam; he denies any visual symptoms but his brother was recently diagnosed with glaucoma.
-2. He has no eye pain or redness; he is not aware of any vision changes.
-3. On exam, intraocular pressure (IOP) is 28 mmHg in both eyes (normal <21); slit-lamp exam shows a wide-open anterior chamber angle bilaterally on gonioscopy.
+1. A 62-year-old African American man presents for a routine eye exam; he denies any visual symptoms but has a family history of progressive vision loss.
+2. He has no eye pain or redness; he is not aware of any peripheral vision changes.
+3. On exam, visual acuity is 20/20 bilaterally; intraocular pressure is 28 mmHg in both eyes (normal <21); slit-lamp exam with gonioscopy shows a wide-open anterior chamber angle bilaterally.
 4. Fundoscopy shows an enlarged cup-to-disc ratio of 0.8 bilaterally (normal <0.5) with inferior neuroretinal rim thinning and notching.
-5. Humphrey visual field testing reveals characteristic arcuate scotomas (nerve fiber bundle defects) and nasal step defects bilaterally — consistent with glaucomatous visual field loss.
-6. He is started on topical timolol (beta-blocker) plus latanoprost (prostaglandin analog); IOP decreases to 16 mmHg and disease progression is halted at 2-year follow-up.
+5. Humphrey visual field testing reveals characteristic arcuate scotomas and nasal step defects bilaterally consistent with nerve fiber bundle defects.
+6. He is started on topical latanoprost and timolol; IOP decreases to 16 mmHg, and optical coherence tomography shows stabilization of the retinal nerve fiber layer at 2-year follow-up.
 
 TEACHING_POINTS:
 - Most common cause of irreversible blindness worldwide; often asymptomatic until advanced.
@@ -4058,7 +4060,7 @@ TEACHING_POINTS:
 
 CASE_ID: 148
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Aspergillosis
@@ -4117,7 +4119,7 @@ TEACHING_POINTS:
 
 CASE_ID: 150
 DIFFICULTY: step1
-SYSTEM: hematology_oncology
+SYSTEM: hematology/oncology
 
 DIAGNOSIS:
 Thrombotic Thrombocytopenic Purpura
@@ -4319,7 +4321,7 @@ TEACHING_POINTS:
 
 CASE_ID: 157
 DIFFICULTY: step1
-SYSTEM: renal
+SYSTEM: nephrology
 
 DIAGNOSIS:
 Goodpasture Syndrome
@@ -4348,7 +4350,7 @@ TEACHING_POINTS:
 
 CASE_ID: 158
 DIFFICULTY: step1
-SYSTEM: hematology_oncology
+SYSTEM: hematology/oncology
 
 DIAGNOSIS:
 Non-Hodgkin Lymphoma
@@ -4378,7 +4380,7 @@ TEACHING_POINTS:
 
 CASE_ID: 159
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Syphilis
@@ -4409,7 +4411,7 @@ TEACHING_POINTS:
 
 CASE_ID: 160
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Rabies
@@ -4420,12 +4422,12 @@ lyssavirus
 hydrophobia
 
 VIGNETTE_LINES:
-1. A 35-year-old man who returned from a 3-week rural trip to Southeast Asia 6 weeks ago presents with 4 days of fever, headache, and paresthesias radiating from a dog bite wound on his left calf that he received during his trip but did not seek treatment for.
-2. Over 24 hours he develops severe agitation, hydrophobia (intense spasms when attempting to drink water), and aerophobia (spasms triggered by air blowing on his face).
-3. On exam, he is highly agitated, confused, and has excessive salivation; he is unable to swallow without severe pharyngeal spasms.
-4. Nuchal rigidity is present; CSF shows mild lymphocytic pleocytosis; MRI of the brain shows T2 signal changes in the brainstem and hippocampus.
-5. Direct fluorescent antibody testing of a nuchal skin biopsy shows rabies antigen in nerve fibers around hair follicles; saliva RT-PCR is positive for rabies virus RNA.
-6. Despite intensive supportive care using the Milwaukee protocol, he deteriorates and dies on day 7; the case highlights the critical importance of post-exposure prophylaxis (PEP) after any animal bite in an endemic area.
+1. A 35-year-old man who returned from a 3-week rural trip to Southeast Asia 6 weeks ago presents with 3 days of fever, malaise, and a strange tingling sensation at a healed scar on his right hand.
+2. He becomes progressively agitated and disoriented; he refuses to drink water, recoiling when a cup is brought near him, and is also disturbed by drafts of air.
+3. On exam, he is febrile at 39.4°C, anxious, and intermittently combative; he has profuse salivation and pharyngeal spasms when offered fluids.
+4. On further history he recalls being bitten on the hand by a stray dog during his trip; he never sought medical care or post-exposure prophylaxis.
+5. MRI of the brain shows nonspecific T2 hyperintensities in the limbic system and brainstem; CSF shows lymphocytic pleocytosis with normal glucose.
+6. Negri bodies are seen in neurons on postmortem brain biopsy and RT-PCR of saliva confirms infection; despite aggressive supportive care he dies within a week of presentation.
 
 TEACHING_POINTS:
 - RNA virus (lyssavirus); transmitted via saliva of infected animals (dogs, bats, raccoons, foxes).
@@ -5044,7 +5046,7 @@ TEACHING_POINTS:
 
 CASE_ID: 182
 DIFFICULTY: step1
-SYSTEM: renal
+SYSTEM: nephrology
 
 DIAGNOSIS:
 Lupus Nephritis
@@ -5073,7 +5075,7 @@ TEACHING_POINTS:
 
 CASE_ID: 183
 DIFFICULTY: step1
-SYSTEM: renal
+SYSTEM: nephrology
 
 DIAGNOSIS:
 Membranous Nephropathy
@@ -5102,7 +5104,7 @@ TEACHING_POINTS:
 
 CASE_ID: 184
 DIFFICULTY: step1
-SYSTEM: hematology_oncology
+SYSTEM: hematology/oncology
 
 DIAGNOSIS:
 Myelodysplastic Syndrome
@@ -5131,7 +5133,7 @@ TEACHING_POINTS:
 
 CASE_ID: 185
 DIFFICULTY: step1
-SYSTEM: hematology_oncology
+SYSTEM: hematology/oncology
 
 DIAGNOSIS:
 Essential Thrombocythemia
@@ -5160,7 +5162,7 @@ TEACHING_POINTS:
 
 CASE_ID: 186
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Dengue Fever
@@ -5189,7 +5191,7 @@ TEACHING_POINTS:
 
 CASE_ID: 187
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Varicella Zoster Primary Infection
@@ -5229,12 +5231,12 @@ glenohumeral dislocation
 anterior glenohumeral dislocation
 
 VIGNETTE_LINES:
-1. A 22-year-old football player is brought to the sideline after his right arm was forcefully abducted and externally rotated during a tackle; he is holding his arm in slight abduction and external rotation.
-2. He is in significant pain and will not allow anyone to move his arm; this is his third shoulder dislocation on the same side.
-3. On exam, there is a visible step-off deformity at the right shoulder with a flattened deltoid; the humeral head is palpable anteriorly below the coracoid process.
-4. Neurovascular exam shows reduced sensation over the lateral deltoid (axillary nerve distribution) and weak shoulder abduction.
-5. X-ray shows an anterior dislocation of the humeral head with a Hill-Sachs lesion and a Bankart lesion (fracture of the anterior-inferior glenoid rim).
-6. The shoulder is reduced using the Cunningham technique with immediate pain relief; post-reduction X-ray confirms appropriate position; he is referred for arthroscopic Bankart repair given his recurrent dislocations.
+1. A 22-year-old football player is brought to the sideline after his right arm was forcefully abducted and externally rotated during a tackle.
+2. He is in significant pain and refuses to let anyone move his arm; he has had similar injuries in the past with recurrent instability.
+3. On exam, his right shoulder has a squared-off appearance with loss of the normal deltoid contour; he holds his arm in slight abduction and external rotation and resists any movement.
+4. Sensation is diminished over the lateral aspect of the deltoid (axillary nerve territory); distal pulses are intact.
+5. AP and axillary lateral X-rays show the humeral head displaced anteriorly and inferiorly from the glenoid fossa, sitting beneath the coracoid process.
+6. Closed reduction is performed under procedural sedation with restoration of normal contour; post-reduction films confirm anatomic alignment, and MR arthrography later reveals a Bankart lesion.
 
 TEACHING_POINTS:
 - Most common joint dislocation; anterior dislocation (95%) results from forced abduction and external rotation.
@@ -5684,7 +5686,7 @@ TEACHING_POINTS:
 
 CASE_ID: 204
 DIFFICULTY: step1
-SYSTEM: renal
+SYSTEM: nephrology
 
 DIAGNOSIS:
 Renovascular Hypertension
@@ -5713,7 +5715,7 @@ TEACHING_POINTS:
 
 CASE_ID: 205
 DIFFICULTY: step1
-SYSTEM: hematology_oncology
+SYSTEM: hematology/oncology
 
 DIAGNOSIS:
 Burkitt Lymphoma
@@ -5742,7 +5744,7 @@ TEACHING_POINTS:
 
 CASE_ID: 206
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Toxoplasmosis
@@ -5771,7 +5773,7 @@ TEACHING_POINTS:
 
 CASE_ID: 207
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Influenza
@@ -5956,12 +5958,12 @@ high-grade serous ovarian carcinoma
 ovarian carcinoma
 
 VIGNETTE_LINES:
-1. A 58-year-old postmenopausal woman presents with 3 months of increasing abdominal girth, early satiety, bloating, and a 15-pound weight loss.
-2. She has a family history of ovarian cancer in her mother and breast cancer in her sister; she is nulliparous and never used oral contraceptives.
-3. On exam, the abdomen is distended with shifting dullness indicating ascites; a firm irregular pelvic mass is palpable on bimanual exam.
-4. CA-125 is markedly elevated at 2,840 U/mL; CT abdomen and pelvis shows bilateral complex ovarian masses with peritoneal implants and omental caking.
-5. Paracentesis yields serous fluid with malignant cells on cytology; BRCA1 mutation is found on germline genetic testing.
-6. She undergoes optimal cytoreductive surgery followed by carboplatin-paclitaxel chemotherapy with olaparib (PARP inhibitor) maintenance therapy given her BRCA1 mutation.
+1. A 58-year-old postmenopausal woman presents with 3 months of increasing abdominal girth, early satiety, bloating, and unintentional weight loss of 12 pounds.
+2. She has a strong family history of breast and reproductive cancers; she is nulliparous and underwent menarche at age 11.
+3. On exam, she has a distended abdomen with shifting dullness; bimanual exam reveals a fixed firm right adnexal mass; supraclavicular and inguinal lymph nodes are not enlarged.
+4. CA-125 is markedly elevated at 1,840 U/mL; transvaginal ultrasound shows a complex solid and cystic 11 cm right adnexal mass with septations and mural nodules.
+5. CT abdomen/pelvis shows ascites, omental caking, and multiple peritoneal implants; pelvic mass is staged as advanced disease.
+6. She undergoes optimal cytoreductive surgery with total abdominal hysterectomy, bilateral salpingo-oophorectomy, omentectomy, and pelvic lymphadenectomy; pathology shows high-grade serous carcinoma with a germline BRCA1 mutation, and she is started on carboplatin-paclitaxel chemotherapy.
 
 TEACHING_POINTS:
 - Most lethal gynecologic malignancy; often diagnosed at advanced stage (III or IV) due to vague nonspecific symptoms.
@@ -6216,12 +6218,12 @@ aspirin overdose
 salicylism
 
 VIGNETTE_LINES:
-1. A 22-year-old woman presents to the ED 4 hours after intentionally ingesting 60 aspirin tablets (325 mg each); she has tinnitus, nausea, vomiting, and feels she is breathing very fast.
-2. She is agitated and complaining of loud ringing in her ears and decreased hearing; she is hyperventilating.
-3. On exam, respiratory rate is 32/min; she is diaphoretic and febrile at 38.8°C; she is confused and agitated.
-4. ABG shows pH 7.48, pCO2 18 mmHg, bicarbonate 14 mEq/L — respiratory alkalosis with underlying metabolic acidosis (mixed disorder); serum salicylate is 68 mg/dL (toxic >30 mg/dL).
-5. Blood glucose is 62 mg/dL despite normal serum glucose (CNS glucose is depleted); urine pH is 5.2.
-6. She receives activated charcoal, IV dextrose-containing fluids, and sodium bicarbonate to alkalinize the urine; with worsening acidosis and confusion, hemodialysis is initiated with clinical improvement.
+1. A 22-year-old woman is brought to the ED 4 hours after an intentional medication ingestion; she will not specify which medication or how much.
+2. She is agitated and complaining of loud ringing in her ears and decreased hearing; she is hyperventilating with deep rapid respirations.
+3. On exam, her temperature is 38.6°C; she is diaphoretic and confused with a respiratory rate of 32; her lungs are clear and abdomen is soft.
+4. Arterial blood gas shows a mixed primary respiratory alkalosis (pH 7.48) and primary anion gap metabolic acidosis (HCO3 12, anion gap 22); glucose is 64 mg/dL.
+5. Urine ferric chloride test turns dark purple; serum salicylate level returns at 78 mg/dL (toxic >40), and acetaminophen level is negative.
+6. She is given IV sodium bicarbonate to alkalinize the urine and serum; given persistently elevated levels and worsening mental status, hemodialysis is performed with full neurological recovery.
 
 TEACHING_POINTS:
 - Salicylate directly stimulates the respiratory center causing respiratory alkalosis (early); then uncouples oxidative phosphorylation causing anion gap metabolic acidosis (late).
@@ -6408,7 +6410,7 @@ TEACHING_POINTS:
 
 CASE_ID: 229
 DIFFICULTY: step1
-SYSTEM: renal
+SYSTEM: nephrology
 
 DIAGNOSIS:
 Contrast-Induced Nephropathy
@@ -6419,12 +6421,12 @@ radiocontrast nephropathy
 contrast nephropathy
 
 VIGNETTE_LINES:
-1. A 72-year-old man with CKD (baseline creatinine 2.2 mg/dL), diabetes, and peripheral vascular disease undergoes CT angiography with 180 mL of iodinated contrast without pre-hydration.
-2. He is asymptomatic but 48 hours post-procedure his creatinine has risen from 2.2 to 3.8 mg/dL; urine output has decreased.
-3. Urinalysis shows granular muddy brown casts and tubular epithelial cells consistent with acute tubular injury; urine sodium is 38 mEq/L and FENa is 2.4%.
-4. Renal ultrasound shows no obstruction; he has no fever and urine culture is negative.
-5. He is managed with IV normal saline hydration; creatinine peaks at 4.2 mg/dL at day 3 and returns to 2.4 mg/dL by day 10 without requiring dialysis.
-6. He is counseled on minimizing future contrast use and ensuring adequate pre-hydration; nephrology is consulted regarding his progressive CKD.
+1. A 72-year-old man with chronic kidney disease (baseline creatinine 2.2 mg/dL), diabetes, and peripheral vascular disease undergoes a coronary angiogram for unstable angina.
+2. Forty-eight hours after the procedure he develops decreased urine output and rising creatinine without any new symptoms or medications.
+3. On exam, he is euvolemic without signs of hypotension or sepsis; there is no rash and no livedo reticularis on his lower extremities.
+4. Labs show creatinine 4.6 mg/dL (peak); urinalysis is bland with rare granular casts and no eosinophils; FENa is low at <1%.
+5. Renal ultrasound shows no obstruction; the timing 48-72 hours after iodinated contrast exposure and the absence of other insults make the etiology clear.
+6. He is managed with supportive care and IV hydration; creatinine returns to within 25% of baseline by day 10, consistent with the expected course of contrast-induced acute kidney injury.
 
 TEACHING_POINTS:
 - AKI occurring within 48-72 hours of intravascular contrast administration; peak creatinine at 3-5 days; usually reversible within 2 weeks.
@@ -6437,7 +6439,7 @@ TEACHING_POINTS:
 
 CASE_ID: 230
 DIFFICULTY: step1
-SYSTEM: hematology_oncology
+SYSTEM: hematology/oncology
 
 DIAGNOSIS:
 Hemophilia B
@@ -6466,7 +6468,7 @@ TEACHING_POINTS:
 
 CASE_ID: 231
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Candidiasis
@@ -6495,7 +6497,7 @@ TEACHING_POINTS:
 
 CASE_ID: 232
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Whooping Cough
@@ -6506,12 +6508,12 @@ Bordetella pertussis
 pertussis syndrome
 
 VIGNETTE_LINES:
-1. A 6-week-old unvaccinated infant is brought to the ED with paroxysmal coughing episodes ending with a high-pitched inspiratory whoop and post-tussive vomiting; between paroxysms she appears well.
-2. She has had a runny nose and low-grade fever for 1 week; her father had a prolonged persistent cough 3 weeks ago.
-3. On exam, she is afebrile; during a coughing paroxysm her face turns red and she briefly becomes cyanotic; the characteristic whoop is heard at the end of each paroxysm.
+1. A 6-week-old unvaccinated infant is brought to the ED with paroxysmal coughing episodes followed by post-tussive vomiting; between paroxysms she appears well.
+2. She has had a runny nose and low-grade fever for the past week; her father has had a prolonged persistent cough for 3 weeks that has been dismissed as a cold.
+3. On exam she is afebrile; during a coughing paroxysm her face turns red and she briefly becomes cyanotic, and a high-pitched inspiratory whoop is heard at the end of the paroxysm.
 4. WBC is 42,000 with 80% lymphocytes (marked lymphocytosis); chest X-ray shows a shaggy heart border.
 5. Nasopharyngeal PCR for Bordetella pertussis is positive; the infant is placed on droplet precautions.
-6. She is admitted given her young age and started on azithromycin; household contacts are given azithromycin prophylaxis; her father is confirmed as the source from waning vaccine immunity.
+6. She is admitted given her young age and started on azithromycin; household contacts receive azithromycin prophylaxis, and her father is confirmed as the source from waning vaccine immunity.
 
 TEACHING_POINTS:
 - Three stages: catarrhal (1-2 weeks, URI symptoms, most contagious), paroxysmal (2-6 weeks, classic whooping cough), convalescent (weeks to months, gradual improvement).
@@ -6651,12 +6653,12 @@ testicular germ cell tumor
 nonseminomatous germ cell tumor
 
 VIGNETTE_LINES:
-1. A 26-year-old man presents with a 2-month history of painless left testicular enlargement and heaviness that he initially dismissed; he has a history of cryptorchidism repaired surgically at age 2.
-2. He denies trauma or fever; the swelling has been gradually increasing.
-3. On exam, the left testicle is enlarged and firm with a hard non-tender nodule on the posterior surface; transillumination does not show light transmission through the mass.
-4. Serum tumor markers: beta-hCG markedly elevated at 4,200 mIU/mL and AFP elevated at 1,840 ng/mL; LDH is elevated; scrotal ultrasound confirms a hypoechoic intratesticular mass.
-5. CT chest, abdomen, and pelvis shows retroperitoneal lymphadenopathy measuring up to 3.2 cm; no visceral metastases are seen.
-6. Radical orchiectomy via inguinal approach is performed; pathology shows mixed germ cell tumor (embryonal carcinoma plus teratoma); he is staged as IIB and treated with BEP chemotherapy (bleomycin, etoposide, cisplatin).
+1. A 26-year-old man presents with a 2-month history of painless left scrotal enlargement and heaviness that he initially dismissed.
+2. He has a history of cryptorchidism that was surgically repaired at age 2; he denies trauma, fever, or urinary symptoms.
+3. On exam, the left testicle is enlarged and firm with a hard non-tender nodule on the posterior surface that does not transilluminate; the right testis and epididymis are normal.
+4. Scrotal ultrasound shows a hypoechoic, heterogeneous intratesticular mass with internal vascularity; serum tumor markers reveal beta-hCG at 4,200 mIU/mL, AFP at 1,840 ng/mL, and elevated LDH.
+5. CT chest, abdomen, and pelvis shows retroperitoneal lymphadenopathy measuring up to 3.2 cm with no visceral metastases.
+6. Radical orchiectomy via an inguinal approach is performed; pathology shows mixed germ cell tumor (embryonal carcinoma plus teratoma), and he is staged as IIB and treated with BEP chemotherapy.
 
 TEACHING_POINTS:
 - Most common solid tumor in men aged 20-35; cryptorchidism is the strongest risk factor.
@@ -6680,12 +6682,12 @@ aortic aneurysm
 infrarenal aortic aneurysm
 
 VIGNETTE_LINES:
-1. A 72-year-old male smoker with hypertension and hyperlipidemia is found to have an infrarenal aortic aneurysm measuring 5.8 cm on routine ultrasound screening; he is completely asymptomatic.
-2. His father died at age 68 from a ruptured aortic aneurysm; he has smoked one pack per day for 40 years.
-3. On exam, a pulsatile expansile midline abdominal mass is palpable just above the umbilicus; bruits are heard over the mass.
-4. CT angiography confirms an infrarenal AAA measuring 5.9 cm in maximum diameter with mural thrombus and no evidence of rupture or leakage.
-5. Cardiology clearance is obtained; he undergoes elective endovascular aortic aneurysm repair (EVAR) with deployment of an endograft.
-6. Postoperative CT confirms good graft position with no endoleak; he is discharged on post-operative day 2 and enrolled in annual CT surveillance.
+1. A 72-year-old male smoker with hypertension and hyperlipidemia presents to his primary care physician for a routine well-man visit; he is completely asymptomatic.
+2. His father died at age 68 from a sudden vascular catastrophe; he has smoked one pack per day for 40 years.
+3. On exam, a pulsatile, expansile midline abdominal mass is palpable just above the umbilicus; bruits are auscultated over the mass; femoral pulses are intact.
+4. Bedside ultrasound shows an infrarenal aortic diameter of 5.8 cm; basic labs are unremarkable.
+5. CT angiography confirms an infrarenal aortic aneurysm measuring 5.9 cm in maximum diameter with mural thrombus and no evidence of rupture or contained leak.
+6. After cardiology clearance, he undergoes elective endovascular aortic aneurysm repair (EVAR); postoperative CT confirms good graft position with no endoleak, and he is enrolled in annual surveillance.
 
 TEACHING_POINTS:
 - Defined as aortic diameter >3 cm; most commonly in the infrarenal location.
@@ -6756,7 +6758,7 @@ TEACHING_POINTS:
 
 CASE_ID: 241
 DIFFICULTY: step1
-SYSTEM: hematology_oncology
+SYSTEM: hematology/oncology
 
 DIAGNOSIS:
 Paroxysmal Nocturnal Hemoglobinuria
@@ -6785,7 +6787,7 @@ TEACHING_POINTS:
 
 CASE_ID: 242
 DIFFICULTY: step1
-SYSTEM: infectious_disease
+SYSTEM: infectious disease
 
 DIAGNOSIS:
 Listeria Monocytogenes
@@ -7040,4 +7042,6 @@ TEACHING_POINTS:
 - Pure lower motor neuron disease: flaccid weakness, hypotonia, areflexia, tongue fasciculations; normal sensation distinguishes from other conditions.
 - Paradoxical (bell-shaped chest) breathing from intercostal weakness with relatively preserved diaphragm function.
 - Treatment: nusinersen (intrathecal), risdiplam (oral), onasemnogene abeparvovec (gene therapy — most effective when given early, ideally before symptoms); newborn screening is now universal in most US states.
+
+==================================================
 
