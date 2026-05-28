@@ -1687,21 +1687,25 @@ export default function Home() {
           maxWidth: "720px",
         }}
       >
-        {/* LOGO PANEL — dark background so logo always looks right */}
-        <div
-          style={{
-            background: theme.logoPanel,
-            border: `1px solid ${theme.logoBorder}`,
-            borderRadius: "20px",
-            padding: "20px 32px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: "100%",
-          }}
-        >
+        {/* LOGO PANEL — only shown in light mode to prevent awkward cutoff */}
+        {lightMode ? (
+          <div
+            style={{
+              background: theme.logoPanel,
+              border: `1px solid ${theme.logoBorder}`,
+              borderRadius: "20px",
+              padding: "20px 32px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "100%",
+            }}
+          >
+            <img src="/logo.png" alt="Medicle" style={{ height: "72px" }} />
+          </div>
+        ) : (
           <img src="/logo.png" alt="Medicle" style={{ height: "72px" }} />
-        </div>
+        )}
 
         {/* INFO PANEL */}
         <div
@@ -1999,10 +2003,43 @@ export default function Home() {
         </p>
         <p className="text-xs" style={{ color: theme.textFaint }}>
           Questions or feedback?{" "}
-          <a href="mailto:jubolanosmed@gmail.com" style={{ color: theme.accent }}>
-            Contact us
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe6EvwFZl8bNjuiICiyTB-lekERWn_L32p_fR6Wu8qIETYBmw/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: theme.accent, fontWeight: 600 }}
+          >
+            Leave us feedback →
           </a>
         </p>
+      </div>
+
+      {/* FEEDBACK FORM */}
+      <div className="mt-6 w-full max-w-3xl mb-8">
+        <div
+          className="rounded-2xl overflow-hidden border"
+          style={{ borderColor: theme.border, background: theme.bgCard }}
+        >
+          <div
+            className="px-4 py-3 border-b"
+            style={{ borderColor: theme.border, background: theme.bgCard }}
+          >
+            <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>
+              💬 SHARE YOUR FEEDBACK
+            </p>
+          </div>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe6EvwFZl8bNjuiICiyTB-lekERWn_L32p_fR6Wu8qIETYBmw/viewform?embedded=true"
+            width="100%"
+            height="520"
+            frameBorder="0"
+            marginHeight={0}
+            marginWidth={0}
+            style={{ display: "block", background: "transparent" }}
+          >
+            Loading…
+          </iframe>
+        </div>
       </div>
     </main>
   );
