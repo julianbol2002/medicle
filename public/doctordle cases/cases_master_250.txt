@@ -7045,3 +7045,1426 @@ TEACHING_POINTS:
 
 ==================================================
 
+CASE_ID: 251
+DIFFICULTY: step1
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Wolff-Parkinson-White Syndrome
+
+ALIASES:
+WPW
+pre-excitation syndrome
+ventricular pre-excitation
+
+VIGNETTE_LINES:
+1. A 22-year-old man presents to the ED with sudden onset palpitations and lightheadedness that began abruptly while at rest.
+2. He reports several similar episodes over the past year that resolved spontaneously after a few minutes.
+3. On exam, heart rate is 198 bpm and regular with normal blood pressure; he is anxious but otherwise stable.
+4. ECG during tachycardia shows a narrow complex regular tachycardia at 200 bpm without discernible P waves.
+5. After vagal maneuvers convert the rhythm, a resting ECG reveals a short PR interval (110 ms) with a slurred upstroke of the QRS complex.
+6. Electrophysiology study identifies a left-sided accessory pathway, and he undergoes successful radiofrequency catheter ablation of the bundle of Kent.
+
+TEACHING_POINTS:
+- WPW results from an accessory atrioventricular conduction pathway (bundle of Kent) that bypasses the AV node.
+- ECG hallmarks: short PR interval, delta wave (slurred QRS upstroke), and widened QRS during sinus rhythm.
+- Atrial fibrillation in WPW is dangerous because rapid conduction down the accessory pathway can degenerate into ventricular fibrillation.
+- Avoid AV nodal blockers (adenosine, beta blockers, calcium channel blockers, digoxin) in WPW with atrial fibrillation; use procainamide or cardioversion instead.
+- Definitive treatment is radiofrequency catheter ablation of the accessory pathway.
+
+==================================================
+
+CASE_ID: 252
+DIFFICULTY: step1
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Tetralogy of Fallot
+
+ALIASES:
+TOF
+cyanotic congenital heart disease
+
+VIGNETTE_LINES:
+1. A 9-month-old infant is brought in for evaluation of episodes during which he becomes blue and irritable, particularly when crying or feeding.
+2. His mother notes that during these episodes he instinctively squats or pulls his knees to his chest, which seems to help him recover.
+3. On exam he has central cyanosis and clubbing of the fingers; a harsh systolic ejection murmur is heard at the left upper sternal border.
+4. Pulse oximetry shows oxygen saturation of 82% on room air; chest X-ray demonstrates a boot-shaped cardiac silhouette with decreased pulmonary vascular markings.
+5. ECG shows right axis deviation and right ventricular hypertrophy.
+6. Echocardiography reveals a large subaortic ventricular septal defect, an overriding aorta, infundibular pulmonary stenosis, and right ventricular hypertrophy; he is referred for surgical repair.
+
+TEACHING_POINTS:
+- Tetralogy of Fallot consists of four anatomic features: VSD, overriding aorta, pulmonary stenosis, and right ventricular hypertrophy.
+- It is the most common cyanotic congenital heart disease beyond infancy.
+- "Tet spells" are hypercyanotic episodes; squatting increases systemic vascular resistance, reducing right-to-left shunting and improving pulmonary blood flow.
+- Boot-shaped heart on chest X-ray results from right ventricular hypertrophy and a small pulmonary artery segment.
+- Treatment is surgical repair, typically within the first year of life.
+
+==================================================
+
+CASE_ID: 253
+DIFFICULTY: step1
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Atrial Septal Defect
+
+ALIASES:
+ASD
+ostium secundum defect
+
+VIGNETTE_LINES:
+1. A 32-year-old woman presents with progressive exertional dyspnea and palpitations over the past year.
+2. She has otherwise been healthy and recalls being told as a child she had a heart murmur that did not require further workup.
+3. On exam, a soft mid-systolic ejection murmur is heard at the left upper sternal border with a wide and fixed split S2 that does not vary with respiration.
+4. ECG shows right axis deviation and incomplete right bundle branch block.
+5. Chest X-ray reveals an enlarged right atrium and right ventricle with prominent pulmonary vascular markings.
+6. Transesophageal echocardiography with bubble study demonstrates a 2 cm defect in the interatrial septum with left-to-right shunting, and percutaneous device closure is performed.
+
+TEACHING_POINTS:
+- ASD allows left-to-right shunting at the atrial level, often asymptomatic until adulthood.
+- The classic auscultatory finding is a wide and fixed split S2 (the gap does not change with respiration).
+- Ostium secundum is the most common type, located in the region of the fossa ovalis.
+- Long-standing left-to-right shunting can lead to pulmonary hypertension and eventual shunt reversal (Eisenmenger syndrome).
+- Paradoxical embolism is a complication when venous emboli cross into the systemic circulation.
+
+==================================================
+
+CASE_ID: 254
+DIFFICULTY: step1
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Restrictive Cardiomyopathy
+
+ALIASES:
+restrictive heart disease
+infiltrative cardiomyopathy
+amyloid cardiomyopathy
+
+VIGNETTE_LINES:
+1. A 68-year-old man presents with several months of progressive lower extremity swelling, fatigue, and exertional dyspnea.
+2. He has a history of bilateral carpal tunnel syndrome and chronic low back pain attributed to spinal stenosis.
+3. On exam, jugular venous pressure is elevated with prominent x and y descents; there is hepatomegaly, ascites, and bilateral lower extremity edema; lungs are clear.
+4. ECG shows low voltage QRS complexes with a pseudoinfarct pattern in the precordial leads.
+5. Echocardiography reveals biventricular wall thickening with a sparkling speckled myocardial appearance, biatrial enlargement, and preserved ejection fraction with diastolic dysfunction.
+6. Endomyocardial biopsy shows apple-green birefringence under polarized light after Congo red staining, and mass spectrometry identifies transthyretin amyloid deposits.
+
+TEACHING_POINTS:
+- Restrictive cardiomyopathy is characterized by impaired ventricular filling with preserved systolic function and small or normal ventricular cavities.
+- Cardiac amyloidosis is a leading cause; ATTR amyloid is associated with bilateral carpal tunnel syndrome and lumbar spinal stenosis.
+- Low voltage on ECG combined with thick walls on echocardiography is a strong clue to amyloidosis.
+- Diastolic dysfunction with prominent x and y descents on JVP and a square-root sign on hemodynamic tracings is characteristic.
+- Tafamidis stabilizes transthyretin and improves survival in ATTR cardiomyopathy.
+
+==================================================
+
+CASE_ID: 255
+DIFFICULTY: step1
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Acute Respiratory Distress Syndrome
+
+ALIASES:
+ARDS
+non-cardiogenic pulmonary edema
+
+VIGNETTE_LINES:
+1. A 56-year-old man with severe pancreatitis develops progressive hypoxemia and respiratory distress on hospital day 3.
+2. He has required increasing supplemental oxygen and is now intubated for hypoxemic respiratory failure.
+3. On exam, he has bilateral diffuse crackles and is on mechanical ventilation; there is no jugular venous distention or peripheral edema.
+4. Chest X-ray shows bilateral diffuse alveolar infiltrates with normal cardiac silhouette; echocardiography shows preserved ejection fraction without elevated filling pressures.
+5. PaO2/FiO2 ratio is 140 (moderate ARDS) on PEEP of 10 cmH2O.
+6. He is managed with low tidal volume ventilation (6 mL/kg ideal body weight), permissive hypercapnia, high PEEP, and prone positioning, with gradual improvement over 10 days.
+
+TEACHING_POINTS:
+- ARDS is defined by acute onset (within 1 week of insult), bilateral infiltrates, PaO2/FiO2 ≤300, and not fully explained by cardiac failure.
+- Pathophysiology: diffuse alveolar damage with increased capillary permeability, hyaline membranes, and surfactant dysfunction.
+- Common triggers: sepsis, pneumonia, aspiration, pancreatitis, trauma, transfusion (TRALI).
+- Low tidal volume ventilation (6 mL/kg) and plateau pressure <30 cmH2O reduce mortality (ARDSNet protocol).
+- Prone positioning improves outcomes in moderate-to-severe ARDS.
+
+==================================================
+
+CASE_ID: 256
+DIFFICULTY: step1
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Tension Pneumothorax
+
+ALIASES:
+tension PTX
+
+VIGNETTE_LINES:
+1. A 28-year-old man involved in a motor vehicle collision arrives at the trauma bay with acute respiratory distress and chest pain.
+2. He sustained blunt chest trauma and was previously stable but is now rapidly deteriorating.
+3. On exam, he is tachycardic at 138 bpm and hypotensive at 78/50 mmHg; breath sounds are absent on the right with hyperresonance to percussion; the trachea is deviated to the left and the jugular veins are distended.
+4. SpO2 is 84% on high-flow oxygen.
+5. Without waiting for imaging, immediate needle decompression is performed at the second intercostal space in the midclavicular line with a rush of air and rapid hemodynamic improvement.
+6. A tube thoracostomy is then placed, and subsequent chest X-ray confirms re-expansion of the right lung.
+
+TEACHING_POINTS:
+- Tension pneumothorax is a clinical diagnosis; do NOT wait for imaging if suspected.
+- Classic findings: respiratory distress, hypotension, tracheal deviation away from the affected side, absent breath sounds, hyperresonance, distended neck veins.
+- Pathophysiology: one-way valve mechanism traps air in the pleural space, increasing pressure and compressing the contralateral lung, mediastinum, and great vessels, leading to obstructive shock.
+- Immediate treatment: needle decompression at the 2nd intercostal space midclavicular line (or 4th-5th intercostal space anterior axillary line) followed by tube thoracostomy.
+- Differs from simple pneumothorax by hemodynamic compromise and mediastinal shift.
+
+==================================================
+
+CASE_ID: 257
+DIFFICULTY: step1
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Bronchiectasis
+
+ALIASES:
+non-cystic fibrosis bronchiectasis
+bronchial dilation
+
+VIGNETTE_LINES:
+1. A 58-year-old woman presents with a chronic productive cough producing large volumes of purulent sputum daily for the past several years.
+2. She has had multiple episodes of pneumonia and reports occasional hemoptysis; she had severe whooping cough as a child.
+3. On exam, coarse crackles are heard over both lower lung fields; clubbing of the fingers is present.
+4. Sputum culture grows Pseudomonas aeruginosa; CBC shows mild leukocytosis.
+5. Pulmonary function tests reveal an obstructive pattern that does not respond to bronchodilators.
+6. High-resolution CT of the chest demonstrates dilated bronchi with thickened walls, signet ring sign, and tram tracks predominantly in the lower lobes.
+
+TEACHING_POINTS:
+- Bronchiectasis is permanent abnormal dilation of bronchi due to repeated cycles of infection and inflammation.
+- Causes: cystic fibrosis (most common in younger patients), prior severe infections (whooping cough, TB, measles), immunodeficiency, ABPA, ciliary dyskinesia (Kartagener syndrome).
+- Classic symptoms: chronic productive cough with copious foul-smelling sputum, recurrent infections, hemoptysis.
+- HRCT shows bronchial dilation greater than the adjacent pulmonary artery (signet ring sign) and tram tracks.
+- Pseudomonas aeruginosa colonization is associated with worse outcomes; treatment includes airway clearance, inhaled antibiotics, and immunizations.
+
+==================================================
+
+CASE_ID: 258
+DIFFICULTY: step1
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Gastroesophageal Reflux Disease
+
+ALIASES:
+GERD
+acid reflux
+reflux esophagitis
+
+VIGNETTE_LINES:
+1. A 48-year-old obese man presents with several months of substernal burning chest discomfort that worsens after meals and when lying down at night.
+2. He reports a sour taste in his mouth in the mornings and intermittent hoarseness; cardiac workup including stress testing has been negative.
+3. On exam, he is overweight (BMI 32) without abdominal tenderness; oropharynx is unremarkable.
+4. An empiric trial of high-dose proton pump inhibitor for 8 weeks provides significant symptom relief.
+5. Upper endoscopy performed for ongoing symptoms shows linear erosions in the distal esophagus.
+6. Biopsies of suspicious salmon-colored mucosa at the gastroesophageal junction reveal specialized intestinal metaplasia with goblet cells, consistent with Barrett esophagus.
+
+TEACHING_POINTS:
+- GERD results from inappropriate transient relaxation of the lower esophageal sphincter, allowing acid reflux into the esophagus.
+- Risk factors: obesity, hiatal hernia, pregnancy, smoking, certain foods (caffeine, chocolate, alcohol, fatty foods).
+- Diagnosis is usually clinical; empiric PPI trial is both diagnostic and therapeutic.
+- Complications: erosive esophagitis, stricture, Barrett esophagus (intestinal metaplasia), and adenocarcinoma.
+- Alarm symptoms (dysphagia, weight loss, GI bleeding, anemia, age >55) warrant endoscopy.
+
+==================================================
+
+CASE_ID: 259
+DIFFICULTY: step1
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Peptic Ulcer Disease
+
+ALIASES:
+PUD
+duodenal ulcer
+gastric ulcer
+
+VIGNETTE_LINES:
+1. A 52-year-old man presents with several weeks of intermittent gnawing epigastric pain that is relieved by eating and worsens 2 to 3 hours after meals.
+2. He takes ibuprofen daily for chronic back pain and drinks 3 to 4 alcoholic beverages on weekends.
+3. On exam, he has mild epigastric tenderness without rebound or guarding; stool is brown but guaiac positive.
+4. CBC shows microcytic anemia with hemoglobin of 10.2 g/dL.
+5. Upper endoscopy reveals a clean-based 1 cm ulcer in the duodenal bulb without active bleeding.
+6. Biopsy of the gastric antrum shows curved gram-negative rods and a positive rapid urease test, and triple therapy with a PPI, clarithromycin, and amoxicillin is initiated.
+
+TEACHING_POINTS:
+- The two major causes of PUD are Helicobacter pylori infection and NSAID use.
+- Duodenal ulcer pain is classically relieved by food; gastric ulcer pain is worsened by food.
+- H. pylori produces urease, which converts urea to ammonia, raising local pH and damaging mucosa.
+- Diagnosis of H. pylori: urea breath test, stool antigen, or rapid urease test on endoscopic biopsy.
+- Complications: bleeding (most common), perforation, gastric outlet obstruction, and gastric cancer (long-term H. pylori).
+
+==================================================
+
+CASE_ID: 260
+DIFFICULTY: step1
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Achalasia
+
+ALIASES:
+esophageal achalasia
+primary achalasia
+
+VIGNETTE_LINES:
+1. A 42-year-old woman presents with a 2-year history of progressive difficulty swallowing both solids and liquids that has worsened over time.
+2. She reports regurgitation of undigested food, occasional chest pain, and an unintentional 15-pound weight loss.
+3. On exam, she appears thin but otherwise well; no neck mass or lymphadenopathy is appreciated.
+4. Barium swallow shows a dilated esophagus that tapers to a smooth bird-beak narrowing at the lower esophageal sphincter.
+5. Upper endoscopy excludes mechanical obstruction or malignancy at the gastroesophageal junction.
+6. Esophageal manometry demonstrates absent peristalsis in the distal esophagus and failure of the lower esophageal sphincter to relax with swallowing, and she undergoes pneumatic dilation.
+
+TEACHING_POINTS:
+- Achalasia results from loss of inhibitory neurons in the myenteric plexus of the esophagus, causing failure of LES relaxation and absent peristalsis.
+- Hallmark: dysphagia to BOTH solids and liquids from the onset (unlike obstructing lesions, which progress from solids to liquids).
+- Barium swallow shows the classic bird-beak (tapered) appearance at the LES.
+- High-resolution manometry is the gold standard for diagnosis.
+- Treatment options: pneumatic dilation, Heller myotomy, peroral endoscopic myotomy (POEM), or botulinum toxin injection.
+
+==================================================
+
+CASE_ID: 261
+DIFFICULTY: step1
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Wilson Disease
+
+ALIASES:
+hepatolenticular degeneration
+copper overload
+
+VIGNETTE_LINES:
+1. A 22-year-old college student is referred for evaluation of elevated liver enzymes found on routine screening, with mild fatigue.
+2. Over the past year his roommate has noticed worsening tremor, slurred speech, and emotional lability; his grades have declined sharply.
+3. On exam, he has a resting and intention tremor, dysarthria, and slow movements; slit-lamp examination reveals golden-brown rings at the corneal limbus.
+4. Labs show AST 110, ALT 145, low alkaline phosphatase, and a Coombs-negative hemolytic anemia.
+5. Serum ceruloplasmin is markedly low at 8 mg/dL and 24-hour urinary copper is elevated at 280 mcg.
+6. Liver biopsy shows hepatic copper content greater than 250 mcg/g dry weight, and genetic testing confirms biallelic ATP7B mutations; he is started on penicillamine.
+
+TEACHING_POINTS:
+- Wilson disease is an autosomal recessive disorder caused by ATP7B gene mutations leading to impaired biliary excretion of copper.
+- Copper accumulates in the liver, brain (especially basal ganglia), and cornea.
+- Kayser-Fleischer rings (copper deposition in Descemet membrane) are characteristic and best seen on slit-lamp examination.
+- Triad: liver disease (hepatitis, cirrhosis), neurologic symptoms (tremor, dystonia, parkinsonism), and psychiatric symptoms.
+- Treatment: chelation with penicillamine or trientine; zinc reduces intestinal copper absorption; liver transplant for fulminant or end-stage disease.
+
+==================================================
+
+CASE_ID: 262
+DIFFICULTY: step1
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Alpha-1 Antitrypsin Deficiency
+
+ALIASES:
+A1AT deficiency
+AAT deficiency
+
+VIGNETTE_LINES:
+1. A 42-year-old nonsmoker presents with progressive exertional dyspnea over the past 2 years and a chronic cough.
+2. He has no history of occupational exposures but his father had cirrhosis of unknown cause at age 55.
+3. On exam, he has decreased breath sounds bilaterally with prolonged expiration; the liver is enlarged and firm to palpation.
+4. Pulmonary function tests show an obstructive pattern with significantly decreased FEV1; chest CT reveals panacinar emphysema predominantly in the lower lobes.
+5. Liver enzymes are mildly elevated and serum alpha-1 antitrypsin level is low at 35 mg/dL (normal 90-200).
+6. Genetic testing confirms homozygous PiZZ phenotype, and liver biopsy reveals PAS-positive, diastase-resistant globules in hepatocytes.
+
+TEACHING_POINTS:
+- Alpha-1 antitrypsin is a serine protease inhibitor that protects lung tissue from neutrophil elastase.
+- Deficiency causes early-onset panacinar emphysema (lower lobe predominant, in contrast to smoking-related upper lobe emphysema).
+- The PiZZ phenotype causes misfolded protein accumulation in hepatocytes, leading to liver disease.
+- Liver biopsy shows characteristic PAS-positive, diastase-resistant intracytoplasmic globules.
+- Treatment: smoking cessation (essential), bronchodilators, intravenous AAT augmentation therapy; liver transplant cures the deficiency.
+
+==================================================
+
+CASE_ID: 263
+DIFFICULTY: step1
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Gilbert Syndrome
+
+ALIASES:
+constitutional hepatic dysfunction
+familial nonhemolytic unconjugated hyperbilirubinemia
+
+VIGNETTE_LINES:
+1. A 21-year-old college student is referred for evaluation of yellow eyes noticed by his roommate during exam week.
+2. He recently recovered from a viral upper respiratory infection and reports being stressed and skipping meals during finals.
+3. On exam, he has mild scleral icterus but is otherwise asymptomatic and well-appearing; there is no hepatosplenomegaly.
+4. Labs show total bilirubin of 3.2 mg/dL with direct bilirubin of 0.3 mg/dL; AST, ALT, alkaline phosphatase, CBC, and reticulocyte count are all normal.
+5. Haptoglobin, LDH, and Coombs test are normal, ruling out hemolysis.
+6. Repeat testing after he resumes regular meals shows bilirubin returning toward normal, and genetic testing identifies a homozygous TA insertion in the UGT1A1 promoter consistent with reduced enzyme activity.
+
+TEACHING_POINTS:
+- Gilbert syndrome is caused by reduced activity of UDP-glucuronosyltransferase 1A1 (UGT1A1), the enzyme responsible for conjugating bilirubin.
+- It is a benign autosomal recessive condition affecting 5-10% of the population.
+- Presents with mild unconjugated hyperbilirubinemia precipitated by fasting, illness, stress, or dehydration.
+- Distinguished from hemolysis by normal CBC, reticulocyte count, LDH, and haptoglobin.
+- No treatment is necessary; reassurance is appropriate; important to recognize to avoid unnecessary workup.
+
+==================================================
+
+CASE_ID: 264
+DIFFICULTY: step1
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Diabetes Insipidus
+
+ALIASES:
+DI
+central diabetes insipidus
+nephrogenic diabetes insipidus
+
+VIGNETTE_LINES:
+1. A 38-year-old man presents with 3 weeks of excessive thirst and urination, drinking large amounts of water and getting up multiple times each night to urinate.
+2. He sustained a traumatic brain injury in a motor vehicle accident 2 months ago and has otherwise recovered well.
+3. On exam, vital signs are normal; mucous membranes are mildly dry; neurologic exam is nonfocal.
+4. 24-hour urine output is 6.5 L with a urine specific gravity of 1.002; serum sodium is 148 mEq/L and serum osmolality is 304 mOsm/kg.
+5. A water deprivation test fails to concentrate the urine, with urine osmolality remaining at 120 mOsm/kg.
+6. After administration of desmopressin, urine osmolality rises by more than 100% to 580 mOsm/kg, confirming central etiology, and MRI shows loss of the normal posterior pituitary bright spot.
+
+TEACHING_POINTS:
+- Diabetes insipidus is characterized by polyuria, polydipsia, hypernatremia, and dilute urine.
+- Central DI: deficient ADH secretion from the posterior pituitary (head trauma, surgery, tumors, idiopathic).
+- Nephrogenic DI: renal resistance to ADH (lithium, hypercalcemia, hypokalemia, hereditary).
+- Water deprivation test: failure to concentrate urine; desmopressin challenge then distinguishes central (responds) from nephrogenic (no response).
+- Treatment: central DI with desmopressin; nephrogenic DI with thiazide diuretics, low-salt/protein diet, and removal of offending agents.
+
+==================================================
+
+CASE_ID: 265
+DIFFICULTY: step1
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Hashimoto Thyroiditis
+
+ALIASES:
+chronic lymphocytic thyroiditis
+autoimmune hypothyroidism
+Hashimoto disease
+
+VIGNETTE_LINES:
+1. A 45-year-old woman presents with several months of fatigue, weight gain, cold intolerance, constipation, and dry skin.
+2. She reports menstrual irregularities and worsening depression; her mother has vitiligo and her sister has type 1 diabetes.
+3. On exam, she has bradycardia, periorbital puffiness, delayed relaxation of deep tendon reflexes, and a firm nontender enlarged thyroid gland with a bumpy texture.
+4. Labs show TSH 38 mIU/L (markedly elevated), free T4 of 0.4 ng/dL (low), and elevated LDL cholesterol.
+5. Anti-thyroid peroxidase (anti-TPO) and anti-thyroglobulin antibodies are strongly positive.
+6. Thyroid ultrasound shows a heterogeneous gland with hypoechoic areas, and fine-needle aspiration would reveal lymphocytic infiltration with germinal centers and Hurthle cells.
+
+TEACHING_POINTS:
+- Hashimoto thyroiditis is the most common cause of hypothyroidism in iodine-sufficient regions.
+- Autoimmune destruction of the thyroid mediated by anti-TPO and anti-thyroglobulin antibodies.
+- Histology: lymphocytic infiltration with germinal centers and Hurthle (Askanazy) cells.
+- Strongly associated with HLA-DR3 and HLA-DR5 and with other autoimmune diseases (type 1 DM, vitiligo, Addison disease).
+- Increased risk of primary thyroid lymphoma; treatment is lifelong levothyroxine replacement.
+
+==================================================
+
+CASE_ID: 266
+DIFFICULTY: step1
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Subacute Thyroiditis
+
+ALIASES:
+de Quervain thyroiditis
+granulomatous thyroiditis
+subacute granulomatous thyroiditis
+
+VIGNETTE_LINES:
+1. A 34-year-old woman presents with 2 weeks of anterior neck pain that radiates to her jaw, low-grade fever, palpitations, and tremor.
+2. She had a viral upper respiratory infection about 3 weeks ago that resolved on its own.
+3. On exam, she is tachycardic with a temperature of 38.1°C; the thyroid gland is firm and exquisitely tender to palpation.
+4. Labs show suppressed TSH, elevated free T4, an ESR of 78 mm/hr, and a CRP of 42 mg/L.
+5. Radioactive iodine uptake is markedly decreased at less than 2%, distinguishing this from Graves disease.
+6. She is treated with NSAIDs and a short course of prednisone with rapid symptomatic improvement, and over weeks transitions through a hypothyroid phase before returning to euthyroid.
+
+TEACHING_POINTS:
+- Subacute thyroiditis classically follows a viral illness and presents with a painful, tender thyroid gland.
+- Triphasic course: hyperthyroid phase (release of preformed hormone), hypothyroid phase, then recovery to euthyroid in most cases.
+- Markedly elevated ESR and CRP are characteristic.
+- LOW radioactive iodine uptake (gland is not synthesizing hormone, only releasing stored hormone) distinguishes it from Graves disease (high uptake).
+- Treatment is supportive: NSAIDs, beta blockers for symptoms, prednisone for severe cases.
+
+==================================================
+
+CASE_ID: 267
+DIFFICULTY: step1
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Carcinoid Syndrome
+
+ALIASES:
+neuroendocrine tumor syndrome
+serotonin syndrome from tumor
+
+VIGNETTE_LINES:
+1. A 58-year-old man presents with episodic facial flushing, diarrhea, and wheezing occurring multiple times per week over the past 6 months.
+2. The episodes are sometimes triggered by alcohol, certain foods, or emotional stress; he has lost 10 pounds.
+3. On exam, telangiectasias are noted on the cheeks and nose; auscultation reveals expiratory wheezing and a tricuspid regurgitation murmur that increases with inspiration.
+4. Labs show elevated 24-hour urinary 5-hydroxyindoleacetic acid (5-HIAA) at 80 mg/24 hr (normal <8) and elevated chromogranin A.
+5. CT of the abdomen reveals a 3 cm mass in the terminal ileum with mesenteric lymphadenopathy and multiple hepatic lesions.
+6. Octreotide scan shows intense uptake in the liver and ileal mass, and biopsy of a liver lesion confirms a well-differentiated neuroendocrine tumor.
+
+TEACHING_POINTS:
+- Carcinoid tumors are neuroendocrine tumors that secrete serotonin and other vasoactive substances; most arise in the GI tract (ileum most common).
+- Carcinoid SYNDROME requires liver metastases (or extra-portal primary) because the liver normally inactivates serotonin via first-pass metabolism.
+- Classic tetrad: flushing, diarrhea, wheezing/bronchospasm, right-sided valvular heart disease (tricuspid regurgitation, pulmonic stenosis).
+- Diagnosis: elevated 24-hour urine 5-HIAA (serotonin metabolite); somatostatin receptor imaging (octreotide scan or DOTATATE PET).
+- Treatment: surgical resection if possible; octreotide (somatostatin analog) controls symptoms and slows tumor growth.
+
+==================================================
+
+CASE_ID: 268
+DIFFICULTY: step1
+SYSTEM: neurology
+
+DIAGNOSIS:
+Alzheimer Disease
+
+ALIASES:
+AD
+Alzheimer dementia
+senile dementia of Alzheimer type
+
+VIGNETTE_LINES:
+1. A 74-year-old woman is brought in by her daughter who reports a 2-year history of gradual decline in her mother's memory and ability to manage household finances.
+2. She has gotten lost while driving familiar routes and repeats the same questions; she has no significant vascular risk factors and no stepwise decline.
+3. On exam, she is pleasant but confabulates dates and has difficulty recalling 3 of 3 objects after 5 minutes; cranial nerves and motor exam are normal; gait is normal.
+4. MMSE score is 19/30 with prominent deficits in recall and orientation; basic labs, TSH, B12, and RPR are all normal.
+5. MRI of the brain shows generalized cortical atrophy with prominent hippocampal and medial temporal lobe atrophy without acute lesions.
+6. CSF biomarkers show decreased amyloid-beta 42 and elevated total and phosphorylated tau, supporting a diagnosis of Alzheimer disease.
+
+TEACHING_POINTS:
+- Alzheimer disease is the most common cause of dementia in older adults; characterized by gradual progressive memory loss with preserved alertness early on.
+- Pathology: extracellular amyloid-beta plaques and intracellular neurofibrillary tangles of hyperphosphorylated tau.
+- Earliest atrophy is in the hippocampus and entorhinal cortex; APOE-e4 is the strongest genetic risk factor.
+- Early-onset familial AD is associated with mutations in APP, presenilin-1, and presenilin-2; trisomy 21 (Down syndrome) causes early AD due to extra APP gene copies.
+- Treatment: cholinesterase inhibitors (donepezil, rivastigmine, galantamine) and memantine (NMDA antagonist) for symptoms; anti-amyloid monoclonals for early disease.
+
+==================================================
+
+CASE_ID: 269
+DIFFICULTY: step1
+SYSTEM: neurology
+
+DIAGNOSIS:
+Ischemic Stroke
+
+ALIASES:
+cerebrovascular accident
+CVA
+acute ischemic stroke
+
+VIGNETTE_LINES:
+1. A 68-year-old man with atrial fibrillation is brought to the ED by his wife after she noticed he was suddenly unable to speak clearly and had right-sided facial drooping while watching TV 90 minutes ago.
+2. He has a history of poorly controlled hypertension and diabetes; he stopped taking his anticoagulation due to cost.
+3. On exam, he has right facial droop sparing the forehead, severely impaired expressive language with intact comprehension, and right arm and leg weakness (4/5 strength).
+4. NIH Stroke Scale is 12; fingerstick glucose is 142 mg/dL; blood pressure is 184/96 mmHg.
+5. Non-contrast CT of the head shows no hemorrhage and a hyperdense left middle cerebral artery sign; CT angiography reveals a proximal left M1 occlusion.
+6. He receives IV alteplase within the time window and undergoes mechanical thrombectomy with successful recanalization, recovering most function over the following week.
+
+TEACHING_POINTS:
+- Acute ischemic stroke is caused by occlusion of a cerebral artery, most commonly from thromboembolism (atrial fibrillation, carotid disease).
+- Time is brain: IV tPA is given within 4.5 hours of symptom onset; mechanical thrombectomy for large vessel occlusion up to 24 hours in selected patients.
+- MCA territory stroke causes contralateral face/arm weakness > leg, aphasia (if dominant hemisphere), and hemineglect (if non-dominant).
+- Forehead is spared in upper motor neuron facial weakness (bilateral innervation of upper face).
+- Non-contrast CT is mandatory before tPA to exclude hemorrhage; blood pressure must be <185/110 for tPA eligibility.
+
+==================================================
+
+CASE_ID: 270
+DIFFICULTY: step1
+SYSTEM: neurology
+
+DIAGNOSIS:
+Intracerebral Hemorrhage
+
+ALIASES:
+ICH
+hypertensive hemorrhage
+hemorrhagic stroke
+
+VIGNETTE_LINES:
+1. A 64-year-old man with poorly controlled hypertension develops sudden severe headache, vomiting, and progressive left-sided weakness while shoveling snow.
+2. He has not been taking his antihypertensive medications consistently for several months.
+3. On exam, he is lethargic with blood pressure of 218/118 mmHg; he has a left hemiparesis with left facial droop sparing the forehead and conjugate gaze deviation to the right.
+4. Non-contrast CT of the head shows a 35 mL hyperdense lesion centered in the right putamen with surrounding edema and mild mass effect.
+5. There is no fluid level to suggest coagulopathy and no underlying mass on subsequent MRI.
+6. Blood pressure is carefully lowered to a systolic target of 140 mmHg with IV nicardipine, and he is admitted to the neuro-ICU for monitoring of intracranial pressure.
+
+TEACHING_POINTS:
+- Hypertensive intracerebral hemorrhage most commonly occurs in the basal ganglia (putamen most common), thalamus, pons, and cerebellum due to rupture of Charcot-Bouchard microaneurysms.
+- Presents with sudden focal neurologic deficits PLUS headache, vomiting, and decreased level of consciousness (less common in ischemic stroke).
+- Non-contrast CT shows hyperdense (bright) acute blood; this is the test that distinguishes ischemic from hemorrhagic stroke.
+- Other causes: cerebral amyloid angiopathy (lobar hemorrhage in elderly), vascular malformations (younger patients), anticoagulant use, trauma.
+- Management: blood pressure control (systolic <140-160), reverse anticoagulation, manage ICP, surgical evacuation for cerebellar hemorrhage >3 cm.
+
+==================================================
+
+CASE_ID: 271
+DIFFICULTY: step1
+SYSTEM: neurology
+
+DIAGNOSIS:
+Friedreich Ataxia
+
+ALIASES:
+Friedreich's ataxia
+FRDA
+FXN deficiency
+
+VIGNETTE_LINES:
+1. A 14-year-old boy is brought in for evaluation of progressive clumsiness, frequent falls, and worsening handwriting over the past 2 years.
+2. He was previously athletic but now has difficulty walking and his speech has become slurred; an older sister has similar symptoms.
+3. On exam, he has gait ataxia, dysarthria, dysmetria, absent deep tendon reflexes in the lower extremities, extensor plantar responses, and impaired proprioception and vibration sense.
+4. He has high-arched feet (pes cavus), hammer toes, and kyphoscoliosis; echocardiogram shows concentric left ventricular hypertrophy.
+5. Fasting glucose is 158 mg/dL consistent with diabetes mellitus.
+6. Genetic testing reveals a homozygous GAA trinucleotide repeat expansion in intron 1 of the FXN gene, reducing frataxin protein expression.
+
+TEACHING_POINTS:
+- Friedreich ataxia is an autosomal recessive trinucleotide repeat disorder (GAA expansion in the FXN gene on chromosome 9).
+- Frataxin deficiency impairs mitochondrial iron metabolism, affecting tissues with high energy demand.
+- Neurologic features: progressive gait ataxia, dysarthria, areflexia, loss of proprioception/vibration, and upgoing toes (combination of dorsal column and corticospinal tract degeneration).
+- Systemic features: hypertrophic cardiomyopathy (most common cause of death), diabetes mellitus, pes cavus, kyphoscoliosis.
+- One of the few trinucleotide repeat diseases that is AUTOSOMAL RECESSIVE (most are autosomal dominant).
+
+==================================================
+
+CASE_ID: 272
+DIFFICULTY: step1
+SYSTEM: neurology
+
+DIAGNOSIS:
+Tourette Syndrome
+
+ALIASES:
+Gilles de la Tourette syndrome
+chronic tic disorder
+
+VIGNETTE_LINES:
+1. An 11-year-old boy is brought in for evaluation of involuntary blinking, throat-clearing, and shoulder shrugging that have waxed and waned over the past 2 years.
+2. He recently started uttering brief inappropriate words at school, causing embarrassment; he has difficulty paying attention in class and washes his hands repeatedly.
+3. On exam, he is alert and engaged but exhibits frequent eye blinking, head jerking, and grunting throughout the visit; he can suppress them briefly with effort.
+4. The movements are not present during sleep and worsen with stress; they have been present for more than 1 year with onset before age 18.
+5. Neurologic exam is otherwise normal, and laboratory studies including TSH, ANA, and antistreptolysin O are unremarkable.
+6. He is diagnosed clinically based on the combination of multiple motor tics and at least one vocal tic for more than 1 year; comorbid ADHD and OCD are also identified and treated.
+
+TEACHING_POINTS:
+- Tourette syndrome requires multiple motor tics AND at least one vocal tic (need not be concurrent) for more than 1 year, with onset before age 18.
+- Tics are sudden, brief, stereotyped movements or vocalizations; can be temporarily suppressed; worsen with stress; usually disappear during sleep.
+- Coprolalia (involuntary inappropriate words) is famous but occurs in less than 20% of patients.
+- High comorbidity with OCD and ADHD; commonly involves dysfunction of basal ganglia circuits.
+- Treatment: behavioral therapy (habit reversal) first-line; medications (alpha-2 agonists like clonidine, antipsychotics like risperidone) for severe symptoms.
+
+==================================================
+
+CASE_ID: 273
+DIFFICULTY: step1
+SYSTEM: nephrology
+
+DIAGNOSIS:
+IgA Nephropathy
+
+ALIASES:
+Berger disease
+IgAN
+
+VIGNETTE_LINES:
+1. A 24-year-old man presents with cola-colored urine that began 1 day ago.
+2. He has had an upper respiratory infection with sore throat for the past 2 days; he had a similar episode 18 months ago that resolved spontaneously.
+3. On exam, he is normotensive with no edema; throat is mildly erythematous; the remainder of the exam is unremarkable.
+4. Urinalysis shows gross hematuria with red blood cell casts and 2+ proteinuria; serum creatinine is 1.1 mg/dL; complement levels (C3 and C4) are normal.
+5. Antistreptolysin O titer is normal, distinguishing this from poststreptococcal glomerulonephritis.
+6. Renal biopsy shows mesangial proliferation on light microscopy and granular mesangial deposits of IgA on immunofluorescence, confirming the diagnosis.
+
+TEACHING_POINTS:
+- IgA nephropathy is the most common primary glomerulonephritis worldwide.
+- Classic presentation: episodic gross hematuria SYNPHARYNGITIC (concurrent with mucosal infection), in contrast to PSGN which occurs 1-3 weeks AFTER infection.
+- Normal complement levels distinguish IgAN from PSGN (which has low C3) and lupus nephritis (low C3 and C4).
+- Mesangial IgA deposition on immunofluorescence is diagnostic.
+- Henoch-Schönlein purpura (IgA vasculitis) is the systemic form; treatment may include ACE inhibitors, fish oil, and immunosuppression for progressive disease.
+
+==================================================
+
+CASE_ID: 274
+DIFFICULTY: step1
+SYSTEM: nephrology
+
+DIAGNOSIS:
+Focal Segmental Glomerulosclerosis
+
+ALIASES:
+FSGS
+focal segmental glomerular sclerosis
+
+VIGNETTE_LINES:
+1. A 32-year-old African American man presents with progressive swelling of his legs and face and frothy urine over the past 2 months.
+2. He has a history of HIV infection diagnosed 5 years ago, currently on antiretroviral therapy, with otherwise stable disease.
+3. On exam, he has periorbital edema, anasarca with 3+ pitting edema, and blood pressure of 152/96 mmHg.
+4. Urinalysis shows 4+ proteinuria with oval fat bodies; 24-hour urine protein is 9.2 g; serum albumin is 2.1 g/dL and LDL is 280 mg/dL.
+5. Complement levels are normal; ANA, hepatitis serologies, and other secondary workup are unrevealing.
+6. Renal biopsy shows segmental sclerosis affecting some (focal) but not all glomeruli on light microscopy, with effacement of podocyte foot processes on electron microscopy.
+
+TEACHING_POINTS:
+- FSGS is the most common cause of nephrotic syndrome in adults, particularly in African Americans (linked to APOL1 gene variants).
+- Causes: primary (idiopathic), secondary to HIV (collapsing variant), heroin use, obesity, sickle cell, reduced nephron mass.
+- Light microscopy: focal (some glomeruli) and segmental (part of glomerulus) sclerosis; immunofluorescence is typically negative.
+- Electron microscopy: diffuse foot process effacement.
+- Treatment: corticosteroids (primary), ACE inhibitors/ARBs, treatment of underlying cause; less responsive to steroids than minimal change disease.
+
+==================================================
+
+CASE_ID: 275
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+Hereditary Spherocytosis
+
+ALIASES:
+HS
+spherocytic hemolytic anemia
+
+VIGNETTE_LINES:
+1. A 16-year-old girl presents with intermittent fatigue, mild jaundice, and right upper quadrant pain that worsens after meals.
+2. She had neonatal jaundice requiring phototherapy; her father had his gallbladder and spleen removed in his 30s for unclear reasons.
+3. On exam, she has scleral icterus and palpable splenomegaly; mild jaundice is noted.
+4. CBC shows hemoglobin 9.4 g/dL with elevated MCHC, elevated reticulocyte count, and a peripheral smear showing numerous spherocytes lacking central pallor.
+5. Total bilirubin is 3.8 mg/dL with predominantly unconjugated bilirubin, LDH is elevated, and haptoglobin is decreased; direct Coombs test is negative.
+6. Eosin-5-maleimide (EMA) binding flow cytometry shows decreased binding to red blood cells, and right upper quadrant ultrasound reveals pigmented gallstones.
+
+TEACHING_POINTS:
+- Hereditary spherocytosis is most commonly autosomal dominant, caused by mutations in red cell membrane proteins (ankyrin most common, also spectrin, band 3, protein 4.2).
+- Loss of membrane → spherical RBCs that are trapped and destroyed in the spleen → chronic extravascular hemolysis.
+- Classic CBC finding: elevated MCHC (RBCs are dehydrated and concentrated).
+- Coombs-negative hemolytic anemia distinguishes HS from autoimmune hemolytic anemia (which also has spherocytes).
+- Complications: pigmented bilirubin gallstones, aplastic crisis (parvovirus B19), splenomegaly; treatment is splenectomy and folate supplementation; cholecystectomy if symptomatic gallstones.
+
+==================================================
+
+CASE_ID: 276
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+G6PD Deficiency
+
+ALIASES:
+glucose-6-phosphate dehydrogenase deficiency
+favism
+
+VIGNETTE_LINES:
+1. A 22-year-old Mediterranean man presents with sudden onset fatigue, dark urine, and yellow skin 2 days after starting a new medication for a urinary tract infection.
+2. He had a similar episode after eating fava beans as a child; family history is notable for similar episodes in maternal uncles.
+3. On exam, he has scleral icterus and pallor; spleen tip is palpable; the remainder of the exam is unremarkable.
+4. CBC shows hemoglobin of 7.8 g/dL (was 13.5 last month) with elevated reticulocytes; LDH is elevated and haptoglobin is undetectable; indirect bilirubin is 4.2 mg/dL.
+5. Peripheral smear shows bite cells and Heinz bodies (visible with supravital stain); direct Coombs test is negative.
+6. The triggering medication (trimethoprim-sulfamethoxazole) is discontinued; quantitative G6PD assay performed weeks after the acute episode is markedly low at 5% of normal, confirming the enzyme defect.
+
+TEACHING_POINTS:
+- G6PD deficiency is the most common enzymopathy worldwide; X-linked recessive inheritance.
+- G6PD generates NADPH via the pentose phosphate pathway, which is needed to regenerate reduced glutathione that protects RBCs from oxidative damage.
+- Triggers: oxidative stressors such as sulfa drugs, antimalarials (primaquine), nitrofurantoin, dapsone, fava beans, infection, and naphthalene (mothballs).
+- Episodic hemolytic anemia with bite cells (splenic macrophages bite out denatured hemoglobin) and Heinz bodies (oxidized hemoglobin precipitates).
+- Test enzyme levels AFTER the acute episode (false-normal during hemolysis as deficient cells are destroyed); treatment is avoidance of triggers.
+
+==================================================
+
+CASE_ID: 277
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+Beta Thalassemia Major
+
+ALIASES:
+Cooley anemia
+transfusion-dependent thalassemia
+beta-thalassemia major
+
+VIGNETTE_LINES:
+1. A 2-year-old child of Mediterranean descent is brought in for evaluation of pallor, poor feeding, and failure to thrive.
+2. He has had multiple episodes of severe anemia requiring transfusion since infancy; his parents are first cousins.
+3. On exam, he has pallor, mild jaundice, prominent maxillary and frontal bones with widened cheekbones, and a markedly enlarged spleen extending to the iliac crest.
+4. CBC shows hemoglobin of 5.4 g/dL with severe microcytic anemia (MCV 58), elevated reticulocytes, and a peripheral smear showing target cells, nucleated RBCs, and severe anisopoikilocytosis.
+5. Skull X-ray demonstrates a hair-on-end appearance from marrow expansion.
+6. Hemoglobin electrophoresis reveals absent or markedly reduced HbA, with marked elevation of HbF and HbA2, confirming the diagnosis.
+
+TEACHING_POINTS:
+- Beta thalassemia results from mutations in the HBB gene reducing or eliminating beta-globin production; autosomal recessive.
+- Beta-thalassemia major (homozygous): severe transfusion-dependent anemia presenting after 6 months as HbF declines.
+- Ineffective erythropoiesis causes marrow expansion (skull X-ray: hair-on-end; widened maxilla, chipmunk facies) and extramedullary hematopoiesis (hepatosplenomegaly).
+- Hemoglobin electrophoresis: increased HbF and HbA2, absent or low HbA (compare to beta-thalassemia minor: mildly elevated HbA2).
+- Treatment: lifelong transfusions with iron chelation (deferoxamine, deferasirox) to prevent secondary hemochromatosis; bone marrow transplant is curative.
+
+==================================================
+
+CASE_ID: 278
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+Disseminated Intravascular Coagulation
+
+ALIASES:
+DIC
+consumption coagulopathy
+defibrination syndrome
+
+VIGNETTE_LINES:
+1. A 64-year-old woman with sepsis from a urinary source becomes acutely confused with diffuse oozing from her IV sites and nasogastric tube.
+2. She has been on broad-spectrum antibiotics and vasopressors for the past 24 hours.
+3. On exam, she is tachycardic and hypotensive; petechiae are present on the trunk and extremities; oozing is noted from multiple puncture sites and her gums.
+4. Labs show platelet count 38,000, prolonged PT (24 sec) and aPTT (62 sec), markedly elevated D-dimer at 12,000 ng/mL, and low fibrinogen at 80 mg/dL.
+5. Peripheral smear demonstrates schistocytes consistent with microangiopathic hemolytic anemia.
+6. Blood cultures grow gram-negative rods; she is supported with FFP, cryoprecipitate, and platelets in addition to source control, with gradual normalization of coagulation parameters.
+
+TEACHING_POINTS:
+- DIC is widespread activation of the coagulation cascade leading to simultaneous thrombosis (consumption of clotting factors) and bleeding.
+- Triggers: sepsis (especially gram-negative), obstetric complications (amniotic fluid embolism, abruption), malignancy (AML M3), trauma, snake bites.
+- Lab findings: thrombocytopenia, prolonged PT and aPTT, elevated D-dimer, LOW fibrinogen, schistocytes on smear.
+- Differs from TTP/HUS: TTP/HUS has normal PT/aPTT/fibrinogen; DIC has all abnormal.
+- Treatment is primarily of the underlying cause; support with FFP, cryoprecipitate, and platelets for bleeding.
+
+==================================================
+
+CASE_ID: 279
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+Immune Thrombocytopenic Purpura
+
+ALIASES:
+ITP
+idiopathic thrombocytopenic purpura
+immune thrombocytopenia
+
+VIGNETTE_LINES:
+1. A 6-year-old previously healthy girl is brought in for evaluation of a new petechial rash and easy bruising that appeared over the past 3 days.
+2. She had a viral upper respiratory infection 2 weeks ago that resolved without treatment.
+3. On exam, she is well-appearing with diffuse petechiae on the trunk and extremities and several ecchymoses on the shins; no hepatosplenomegaly or lymphadenopathy.
+4. CBC shows platelet count of 12,000 with normal hemoglobin and white cell count; peripheral smear shows decreased platelets but those present are large; no blasts or schistocytes.
+5. Coagulation studies (PT, aPTT, fibrinogen) are all normal, ruling out DIC.
+6. Bone marrow aspiration, if performed, would show increased megakaryocytes with normal myeloid and erythroid lines; she is observed without treatment and her count recovers spontaneously over weeks.
+
+TEACHING_POINTS:
+- ITP is caused by autoantibodies (usually IgG) against platelet glycoproteins (GPIIb/IIIa), leading to splenic destruction of platelets.
+- Acute ITP: common in children after viral illness; usually self-limited within weeks to months.
+- Chronic ITP: more common in adults, especially young women; may require treatment.
+- Diagnosis of exclusion: isolated thrombocytopenia with otherwise normal CBC, smear, and coagulation; bone marrow shows increased megakaryocytes (peripheral destruction).
+- Treatment for symptomatic or severe thrombocytopenia: corticosteroids, IVIG (rapid), anti-D immunoglobulin, rituximab, thrombopoietin receptor agonists, splenectomy for refractory cases.
+
+==================================================
+
+CASE_ID: 280
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+Tumor Lysis Syndrome
+
+ALIASES:
+TLS
+
+VIGNETTE_LINES:
+1. A 14-year-old boy with newly diagnosed Burkitt lymphoma develops decreased urine output, muscle cramps, and lethargy 24 hours after starting chemotherapy.
+2. He had a large abdominal mass and bulky lymphadenopathy at presentation; prophylactic allopurinol and IV fluids were started but he received only one dose before chemotherapy.
+3. On exam, he is lethargic with tetany of the hands when his arm is occluded by a blood pressure cuff; ECG shows peaked T waves.
+4. Labs show potassium 7.2 mEq/L, phosphate 9.8 mg/dL, calcium 6.4 mg/dL (low), uric acid 18 mg/dL, and creatinine 3.4 mg/dL (baseline 0.7).
+5. Urinalysis shows uric acid crystals; LDH is markedly elevated at 4,800 U/L.
+6. He is started on aggressive IV hydration, rasburicase for hyperuricemia, and emergent hemodialysis for severe metabolic derangements and acute kidney injury; he recovers fully.
+
+TEACHING_POINTS:
+- Tumor lysis syndrome occurs with rapid destruction of tumor cells, releasing intracellular contents into the circulation.
+- Classic electrolyte tetrad: HIGH potassium, HIGH phosphate, HIGH uric acid, LOW calcium (binds released phosphate).
+- Highest risk: hematologic malignancies with high cell turnover (Burkitt lymphoma, ALL, AML), large tumor burden, high LDH.
+- Acute kidney injury results from uric acid and calcium phosphate crystal deposition in renal tubules.
+- Prevention: aggressive IV hydration, allopurinol (xanthine oxidase inhibitor) or rasburicase (recombinant uricase) before chemotherapy; treatment includes hemodialysis if severe.
+
+==================================================
+
+CASE_ID: 281
+DIFFICULTY: step1
+SYSTEM: reproductive
+
+DIAGNOSIS:
+Polycystic Ovary Syndrome
+
+ALIASES:
+PCOS
+Stein-Leventhal syndrome
+hyperandrogenic anovulation
+
+VIGNETTE_LINES:
+1. A 24-year-old woman presents with irregular menstrual cycles occurring every 60-90 days since menarche, along with progressive weight gain and unwanted facial hair growth.
+2. She has been unable to conceive after 18 months of trying with her partner; she has noticed darkened velvety skin in her armpits and neck.
+3. On exam, BMI is 34, blood pressure is 138/86 mmHg; she has terminal hair on the chin and upper lip, mild facial acne, and acanthosis nigricans of the neck.
+4. Labs show elevated free testosterone, LH:FSH ratio of 3:1, fasting insulin elevated with HOMA-IR consistent with insulin resistance, and HbA1c of 6.2%.
+5. Pregnancy test, prolactin, TSH, and 17-hydroxyprogesterone are all normal, excluding alternative causes.
+6. Transvaginal ultrasound reveals bilateral enlarged ovaries with more than 20 small peripheral follicles arranged in a string-of-pearls pattern; metformin and combined oral contraceptives are started.
+
+TEACHING_POINTS:
+- PCOS is diagnosed by Rotterdam criteria (2 of 3): oligo/anovulation, clinical or biochemical hyperandrogenism, polycystic ovarian morphology on ultrasound.
+- Pathophysiology involves insulin resistance with hyperinsulinemia driving ovarian androgen production and reducing SHBG.
+- Strong association with metabolic syndrome, type 2 diabetes, obstructive sleep apnea, NAFLD, and endometrial hyperplasia/cancer (from unopposed estrogen).
+- Acanthosis nigricans and skin tags suggest insulin resistance.
+- Treatment: lifestyle modification, combined oral contraceptives (regulate cycles, reduce androgens), metformin (insulin sensitization), letrozole or clomiphene for fertility, spironolactone for hirsutism.
+
+==================================================
+
+CASE_ID: 282
+DIFFICULTY: step1
+SYSTEM: reproductive
+
+DIAGNOSIS:
+Prostate Cancer
+
+ALIASES:
+prostate adenocarcinoma
+carcinoma of the prostate
+
+VIGNETTE_LINES:
+1. A 68-year-old man presents for routine follow-up; he is largely asymptomatic but reports new mid-lower back pain over the past 2 months that worsens at night.
+2. He has a family history of his father dying of metastatic disease and African American ancestry.
+3. On exam, digital rectal examination reveals a firm asymmetric nodule on the posterior aspect of the prostate; spine is tender to palpation over L3-L4.
+4. Serum PSA is 38 ng/mL (markedly elevated); alkaline phosphatase is elevated at 320 U/L.
+5. Multiparametric MRI of the prostate shows a PI-RADS 5 lesion in the peripheral zone; bone scan demonstrates multiple osteoblastic lesions in the lumbar spine, pelvis, and ribs.
+6. Transrectal ultrasound-guided prostate biopsy of the lesion reveals adenocarcinoma with a Gleason score of 4+5=9, and he is started on androgen deprivation therapy with leuprolide plus abiraterone.
+
+TEACHING_POINTS:
+- Prostate cancer is the most common non-skin cancer in men; African American ancestry and family history are strong risk factors.
+- Most arise in the peripheral zone of the prostate, palpable on DRE; in contrast, BPH affects the transitional/periurethral zone.
+- Bone metastases are characteristically OSTEOBLASTIC (sclerotic) on imaging, with elevated alkaline phosphatase.
+- Gleason scoring (now grouped into Grade Groups 1-5) assesses histologic grade; higher = more aggressive.
+- Treatment depends on stage: active surveillance for low-risk, radical prostatectomy or radiation for localized, androgen deprivation (GnRH agonists/antagonists, antiandrogens) for advanced disease.
+
+==================================================
+
+CASE_ID: 283
+DIFFICULTY: step1
+SYSTEM: reproductive
+
+DIAGNOSIS:
+Breast Cancer
+
+ALIASES:
+invasive ductal carcinoma
+mammary carcinoma
+
+VIGNETTE_LINES:
+1. A 52-year-old postmenopausal woman presents after noticing a firm lump in her left breast on self-examination 2 weeks ago.
+2. Her mother had a similar diagnosis at age 48 and a maternal aunt died of ovarian disease; she had her first child at age 35 and used hormone replacement therapy for 7 years.
+3. On exam, there is a 2.5 cm firm, irregular, fixed mass in the upper outer quadrant of the left breast with skin dimpling; a 1.5 cm hard mobile left axillary lymph node is palpable; no nipple discharge.
+4. Diagnostic mammography shows an irregular spiculated mass with pleomorphic microcalcifications; ultrasound confirms a solid hypoechoic lesion with posterior acoustic shadowing.
+5. Core needle biopsy reveals invasive ductal carcinoma; immunohistochemistry shows ER positive, PR positive, HER2 negative.
+6. MRI staging and PET-CT reveal no distant metastases; she undergoes breast-conserving surgery with sentinel lymph node biopsy followed by radiation, adjuvant chemotherapy, and tamoxifen, and genetic testing identifies a pathogenic BRCA2 mutation.
+
+TEACHING_POINTS:
+- Invasive ductal carcinoma is the most common type of breast cancer (75-80%).
+- Risk factors: increasing age, female sex, BRCA1/BRCA2 mutations, family history, early menarche, late menopause, nulliparity or first child after age 30, hormone replacement therapy, obesity.
+- Suspicious findings: hard, fixed, irregular mass; skin/nipple changes; spiculated mass with microcalcifications on mammography.
+- Receptor status guides treatment: ER/PR positive (endocrine therapy: tamoxifen premenopausal, aromatase inhibitors postmenopausal); HER2 positive (trastuzumab); triple negative (chemotherapy).
+- BRCA1: increased risk of breast and ovarian cancer; BRCA2: breast (including male), ovarian, pancreatic, prostate; risk-reducing surgery and screening for carriers.
+
+==================================================
+
+CASE_ID: 284
+DIFFICULTY: step1
+SYSTEM: reproductive
+
+DIAGNOSIS:
+Endometrial Cancer
+
+ALIASES:
+endometrial adenocarcinoma
+uterine cancer
+endometrial carcinoma
+
+VIGNETTE_LINES:
+1. A 62-year-old obese woman presents with vaginal bleeding that started 6 months after her last menstrual period.
+2. She has a history of type 2 diabetes, hypertension, polycystic ovary syndrome, and nulliparity; she took unopposed estrogen briefly for menopausal symptoms.
+3. On exam, BMI is 38; pelvic exam reveals a normal-appearing cervix with blood in the vaginal vault; the uterus is mobile and slightly enlarged.
+4. Pelvic ultrasound shows an endometrial stripe thickness of 16 mm (postmenopausal abnormal >4 mm).
+5. Endometrial biopsy reveals complex atypical hyperplasia with foci of well-differentiated endometrioid adenocarcinoma.
+6. CT staging shows disease confined to the uterus; she undergoes total hysterectomy with bilateral salpingo-oophorectomy and pelvic lymphadenectomy, and final pathology confirms FIGO stage IA endometrioid adenocarcinoma.
+
+TEACHING_POINTS:
+- Postmenopausal bleeding is endometrial cancer until proven otherwise; requires endometrial sampling.
+- Risk factors are mostly states of unopposed estrogen: obesity, nulliparity, late menopause, early menarche, PCOS, unopposed estrogen therapy, tamoxifen, Lynch syndrome (HNPCC).
+- Type I (endometrioid, 80%): estrogen-dependent, often arises from hyperplasia, better prognosis; Type II (serous, clear cell): non-estrogen-dependent, p53 mutations, worse prognosis.
+- Postmenopausal endometrial stripe >4 mm on transvaginal ultrasound warrants biopsy.
+- Treatment: total hysterectomy with bilateral salpingo-oophorectomy; radiation and/or chemotherapy for higher stages.
+
+==================================================
+
+CASE_ID: 285
+DIFFICULTY: step1
+SYSTEM: reproductive
+
+DIAGNOSIS:
+Placental Abruption
+
+ALIASES:
+abruptio placentae
+placental separation
+
+VIGNETTE_LINES:
+1. A 31-year-old woman at 34 weeks gestation presents to labor and delivery with sudden onset severe abdominal pain and dark vaginal bleeding that began 2 hours ago.
+2. She has a history of hypertension, smokes one pack per day, and was in a minor motor vehicle collision yesterday without immediate symptoms.
+3. On exam, blood pressure is 92/58 mmHg with tachycardia at 122; the abdomen is rigid and tender with a firm woody uterus; fetal heart rate shows late decelerations.
+4. Hemoglobin has dropped from 11.8 to 9.4 g/dL since her last visit; platelets are 88,000; fibrinogen is 180 mg/dL; coagulation studies are mildly abnormal.
+5. Bedside ultrasound shows a retroplacental hypoechoic collection; the placenta is normally located away from the cervical os.
+6. Given the maternal hemodynamic instability and non-reassuring fetal heart tracing, she undergoes emergency cesarean delivery with concurrent blood product resuscitation and delivers a viable infant.
+
+TEACHING_POINTS:
+- Placental abruption is premature separation of the placenta from the uterine wall before delivery.
+- Classic triad: PAINFUL vaginal bleeding (may be concealed if retroplacental) + uterine tenderness/rigidity + fetal distress.
+- Risk factors: hypertension (most important), trauma, cocaine use, smoking, prior abruption, advanced maternal age, multiparity, polyhydramnios.
+- DIC can develop from release of thromboplastin into maternal circulation.
+- Treatment depends on fetal/maternal status: delivery if hemodynamically unstable or non-reassuring fetal tracing; expectant management for select stable cases remote from term.
+
+==================================================
+
+CASE_ID: 286
+DIFFICULTY: step1
+SYSTEM: pediatrics
+
+DIAGNOSIS:
+Croup
+
+ALIASES:
+laryngotracheobronchitis
+viral croup
+
+VIGNETTE_LINES:
+1. A 2-year-old boy is brought to the ED at 1 AM with a 1-day history of low-grade fever, runny nose, and now a harsh barking cough that started this evening.
+2. He has been increasingly fussy and his cough sounds like a seal barking; symptoms worsen when he is upset.
+3. On exam, temperature is 38.4°C; he has inspiratory stridor at rest, mild suprasternal retractions, and a hoarse voice; oxygen saturation is 96% on room air; he is drooling slightly but able to swallow.
+4. AP neck X-ray shows subglottic narrowing of the tracheal air column producing a steeple sign.
+5. He is given nebulized racemic epinephrine and a single dose of oral dexamethasone with marked improvement in stridor and respiratory effort.
+6. He is observed for 4 hours without recurrence of stridor at rest and discharged home with parental education; symptoms gradually resolve over the next several days.
+
+TEACHING_POINTS:
+- Croup (laryngotracheobronchitis) is caused most commonly by parainfluenza virus type 1; affects children 6 months to 6 years.
+- Classic triad: barking (seal-like) cough, inspiratory stridor, hoarse voice; preceded by 1-2 days of URI symptoms.
+- "Steeple sign" on AP neck X-ray reflects subglottic edema.
+- Distinguish from epiglottitis: croup is gradual onset, viral, child can lie down and tolerate secretions; epiglottitis is acute, "tripod" position, drooling, toxic appearance, "thumbprint sign" on lateral neck X-ray.
+- Treatment: humidified air, dexamethasone for all severities, nebulized racemic epinephrine for moderate-to-severe stridor at rest.
+
+==================================================
+
+CASE_ID: 287
+DIFFICULTY: step1
+SYSTEM: pediatrics
+
+DIAGNOSIS:
+Down Syndrome
+
+ALIASES:
+trisomy 21
+Down's syndrome
+
+VIGNETTE_LINES:
+1. A newborn male is evaluated immediately after delivery for distinctive facial features and generalized hypotonia.
+2. His mother is 41 years old; she declined first-trimester screening during pregnancy and the delivery was uncomplicated.
+3. On exam, he has upslanting palpebral fissures, epicanthal folds, flat nasal bridge, small ears, a protruding tongue, a single transverse palmar crease bilaterally, and a gap between the first and second toes; a harsh holosystolic murmur is heard at the left lower sternal border.
+4. Echocardiogram demonstrates a complete atrioventricular septal defect; abdominal X-ray for bilious vomiting on day 2 shows a double bubble sign.
+5. CBC reveals a transient leukemoid reaction with elevated WBC, common in this condition.
+6. Karyotype analysis confirms 47,XY,+21 (full trisomy 21), and a comprehensive evaluation including thyroid studies, hearing screen, and ophthalmologic exam is initiated.
+
+TEACHING_POINTS:
+- Down syndrome (trisomy 21) is the most common chromosomal disorder; risk increases with advanced maternal age due to meiotic nondisjunction.
+- Three mechanisms: meiotic nondisjunction (95%, maternal age-related), Robertsonian translocation (4%, can be inherited), mosaicism (1%, milder features).
+- Cardiac defects (50%): endocardial cushion defects (complete AVSD) most characteristic; also VSD, ASD, PDA, Tetralogy of Fallot.
+- GI: duodenal atresia (double bubble sign), Hirschsprung disease, imperforate anus, annular pancreas.
+- Other associations: intellectual disability, hypothyroidism, atlantoaxial instability, early Alzheimer disease, increased risk of ALL and AML (especially AMKL).
+
+==================================================
+
+CASE_ID: 288
+DIFFICULTY: step1
+SYSTEM: pediatrics
+
+DIAGNOSIS:
+Turner Syndrome
+
+ALIASES:
+45,X
+monosomy X
+gonadal dysgenesis
+
+VIGNETTE_LINES:
+1. A 14-year-old girl is referred for evaluation of short stature and primary amenorrhea; she has never had a menstrual period.
+2. Her parents are average height; she has been below the 5th percentile for height since age 4 and has not had any signs of pubertal development.
+3. On exam, she is 142 cm tall (below 3rd percentile) with a webbed neck, low posterior hairline, broad shield-shaped chest with widely spaced nipples, and cubitus valgus; Tanner stage 1 breast and pubic hair.
+4. A continuous machinery-like murmur is heard at the back; blood pressure is higher in the arms than the legs; femoral pulses are diminished.
+5. Labs show markedly elevated FSH and LH with low estradiol consistent with hypergonadotropic hypogonadism; renal ultrasound reveals a horseshoe kidney.
+6. Karyotype confirms 45,X; echocardiogram identifies a bicuspid aortic valve with coarctation of the aorta, and growth hormone and eventually estrogen replacement therapy are initiated.
+
+TEACHING_POINTS:
+- Turner syndrome results from complete or partial absence of one X chromosome (most commonly 45,X, also mosaicism 45,X/46,XX).
+- Clinical features: short stature, primary amenorrhea (streak ovaries), webbed neck, shield chest with widely spaced nipples, cubitus valgus, low posterior hairline, lymphedema in infancy.
+- Cardiovascular: bicuspid aortic valve (most common), coarctation of the aorta (continuous murmur, BP discrepancy), aortic dissection.
+- Other: horseshoe kidney, hypothyroidism, primary ovarian failure (hypergonadotropic hypogonadism with elevated FSH/LH).
+- Treatment: growth hormone in childhood, estrogen replacement at appropriate age for puberty and bone health.
+
+==================================================
+
+CASE_ID: 289
+DIFFICULTY: step1
+SYSTEM: pediatrics
+
+DIAGNOSIS:
+Klinefelter Syndrome
+
+ALIASES:
+47,XXY
+XXY syndrome
+
+VIGNETTE_LINES:
+1. A 17-year-old boy is brought in by his mother because he has not undergone normal puberty and has been struggling academically.
+2. He is taller than his classmates but has not had a growth of facial hair, deepening of his voice, or development of muscle bulk; his testes have always been small.
+3. On exam, he is 191 cm tall with long arms and legs (eunuchoid body habitus), bilateral gynecomastia, sparse facial and body hair, and very small firm testes (4 mL bilaterally with a normal-sized penis).
+4. Labs show elevated FSH and LH with low testosterone, consistent with hypergonadotropic hypogonadism.
+5. Semen analysis reveals azoospermia.
+6. Karyotype confirms 47,XXY; he is started on testosterone replacement therapy with subsequent development of secondary sexual characteristics.
+
+TEACHING_POINTS:
+- Klinefelter syndrome (47,XXY) is the most common cause of primary hypogonadism and infertility in men.
+- Caused by meiotic nondisjunction; risk increases with advanced parental age.
+- Classic features: tall stature with long extremities, small firm testes (<6 mL), gynecomastia, sparse body hair, infertility (azoospermia), low testosterone with elevated FSH/LH.
+- Increased risk of breast cancer (related to gynecomastia), osteoporosis, varicose veins, autoimmune disease, and germ cell tumors.
+- Treatment: testosterone replacement for virilization and bone health; assisted reproductive technologies (TESE-ICSI) for fertility.
+
+==================================================
+
+CASE_ID: 290
+DIFFICULTY: step1
+SYSTEM: ophthalmology
+
+DIAGNOSIS:
+Acute Angle-Closure Glaucoma
+
+ALIASES:
+acute angle closure
+closed-angle glaucoma
+angle-closure crisis
+
+VIGNETTE_LINES:
+1. A 62-year-old hyperopic woman presents to the ED with sudden onset severe right eye pain, blurred vision, nausea, and vomiting that began while she was in a dark movie theater.
+2. She reports seeing halos around lights and her right eye feels rock-hard; she takes diphenhydramine for sleep occasionally.
+3. On exam, the right eye is markedly injected with a fixed mid-dilated pupil that does not respond to light, hazy cornea, and shallow anterior chamber; visual acuity is severely reduced.
+4. Tonometry reveals intraocular pressure of 58 mmHg in the right eye (normal <21); gonioscopy of the left eye shows a narrow anterior chamber angle.
+5. Slit-lamp examination of the affected eye shows corneal microcystic edema and a closed iridocorneal angle.
+6. She is treated with topical timolol, brimonidine, and pilocarpine, IV acetazolamide, and IV mannitol; pressure decreases, and definitive treatment with laser peripheral iridotomy is performed bilaterally.
+
+TEACHING_POINTS:
+- Acute angle-closure glaucoma is an ophthalmologic emergency caused by sudden closure of the anterior chamber angle and blockage of aqueous humor outflow.
+- Risk factors: anatomically narrow angles (hyperopia, Asian ancestry, age >60, female sex), pupillary dilation (dim light, anticholinergics, sympathomimetics).
+- Presentation: severe eye pain, headache, blurred vision, halos around lights, nausea/vomiting (parasympathetic response), fixed mid-dilated pupil, rock-hard eye, conjunctival injection.
+- IOP markedly elevated (40-80 mmHg); diagnosis confirmed by gonioscopy showing closed angle.
+- Treatment: medical lowering of IOP (topical and systemic), then definitive laser peripheral iridotomy (creates a hole in the iris to bypass pupillary block).
+
+==================================================
+
+CASE_ID: 291
+DIFFICULTY: step1
+SYSTEM: ophthalmology
+
+DIAGNOSIS:
+Age-Related Macular Degeneration
+
+ALIASES:
+AMD
+ARMD
+macular degeneration
+
+VIGNETTE_LINES:
+1. A 76-year-old woman presents with progressive blurring and distortion of central vision in her right eye that has been worsening over the past 6 months.
+2. She reports that straight lines such as door frames appear wavy and she has difficulty reading and recognizing faces; peripheral vision is preserved.
+3. On exam, visual acuity is 20/200 in the right eye and 20/40 in the left eye; an Amsler grid shows central metamorphopsia in the right eye.
+4. Fundoscopy of the right eye reveals subretinal hemorrhage, exudates, and elevation of the macula; the left eye shows numerous drusen at the macula.
+5. Optical coherence tomography demonstrates subretinal fluid and a choroidal neovascular membrane in the right eye.
+6. Intravitreal anti-VEGF (ranibizumab) injections are initiated for the right eye with stabilization of visual acuity; AREDS2 vitamin supplements are recommended for the left eye.
+
+TEACHING_POINTS:
+- AMD is the leading cause of irreversible central vision loss in adults over 50.
+- Dry (atrophic, non-exudative, 80-90%): gradual central vision loss; characterized by drusen and retinal pigment epithelium atrophy.
+- Wet (exudative, 10-20%): rapid central vision loss with metamorphopsia (wavy distortion); choroidal neovascularization with subretinal hemorrhage and exudates.
+- Risk factors: age, smoking (most important modifiable), family history, light iris color, female sex.
+- Treatment: AREDS2 vitamins (antioxidants, zinc) for intermediate dry AMD; intravitreal anti-VEGF injections (ranibizumab, aflibercept, bevacizumab) for wet AMD.
+
+==================================================
+
+CASE_ID: 292
+DIFFICULTY: step1
+SYSTEM: ophthalmology
+
+DIAGNOSIS:
+Diabetic Retinopathy
+
+ALIASES:
+DR
+proliferative diabetic retinopathy
+nonproliferative diabetic retinopathy
+
+VIGNETTE_LINES:
+1. A 56-year-old man presents for an annual eye exam reporting gradual blurring of vision in both eyes over the past year, with occasional floaters in the right eye.
+2. He has had type 2 diabetes for 18 years with poor glycemic control (HbA1c 10.2%) and has not had an eye exam in 5 years.
+3. On exam, best-corrected visual acuity is 20/60 in the right eye and 20/40 in the left eye; intraocular pressure is normal.
+4. Dilated fundoscopy of both eyes reveals microaneurysms, dot-blot hemorrhages, hard exudates, and cotton wool spots; the right eye additionally shows new vessels emanating from the optic disc with associated preretinal hemorrhage.
+5. Fluorescein angiography demonstrates extensive areas of capillary nonperfusion and leakage from the neovascular vessels.
+6. The right eye is treated with panretinal photocoagulation and intravitreal anti-VEGF injection; tighter glycemic and blood pressure control are emphasized.
+
+TEACHING_POINTS:
+- Diabetic retinopathy is a leading cause of blindness in working-age adults; risk correlates with duration of diabetes and glycemic control.
+- Pathophysiology: chronic hyperglycemia damages retinal microvasculature; ischemia drives release of VEGF and neovascularization.
+- Nonproliferative DR: microaneurysms, dot-blot hemorrhages, hard exudates, cotton wool spots.
+- Proliferative DR: neovascularization (of disc, elsewhere, of iris); complications include vitreous hemorrhage, tractional retinal detachment, and neovascular glaucoma.
+- Treatment: optimize glucose/BP/lipids; anti-VEGF intravitreal injections for diabetic macular edema; panretinal photocoagulation for proliferative disease.
+
+==================================================
+
+CASE_ID: 293
+DIFFICULTY: step1
+SYSTEM: ophthalmology
+
+DIAGNOSIS:
+Cataract
+
+ALIASES:
+age-related cataract
+nuclear sclerotic cataract
+senile cataract
+
+VIGNETTE_LINES:
+1. A 72-year-old woman presents with progressive blurring of vision over the past 2 years that has made night driving particularly difficult.
+2. She complains of increased glare from oncoming headlights and the sensation that she is looking through a foggy window; she has noted that colors appear less vibrant.
+3. On exam, best-corrected visual acuity is 20/80 in the right eye and 20/60 in the left eye; the red reflex is dim and brownish in both eyes.
+4. Slit-lamp examination shows clouding and yellowing of the central lens nucleus bilaterally.
+5. Fundoscopy through the cloudy media reveals normal optic discs and maculae bilaterally, indicating that the visual loss is due to lens opacity rather than retinal disease.
+6. She undergoes phacoemulsification with intraocular lens implantation in the right eye, with postoperative visual acuity improving to 20/25.
+
+TEACHING_POINTS:
+- Cataract is opacification of the lens; the most common cause of reversible vision loss worldwide.
+- Risk factors: aging (most common), diabetes, smoking, UV light exposure, chronic corticosteroid use, trauma, congenital (TORCH infections, galactosemia).
+- Symptoms: gradually progressive painless vision loss, glare/halos around lights (especially at night), color desaturation, second sight (myopic shift may temporarily improve near vision).
+- Types: nuclear sclerotic (most common, age-related), cortical, posterior subcapsular (steroid-associated, diabetes).
+- Treatment: surgical removal (phacoemulsification) with intraocular lens implantation when vision interferes with daily activities.
+
+==================================================
+
+CASE_ID: 294
+DIFFICULTY: step1
+SYSTEM: surgery
+
+DIAGNOSIS:
+Acute Appendicitis
+
+ALIASES:
+appendicitis
+inflamed appendix
+
+VIGNETTE_LINES:
+1. A 19-year-old man presents to the ED with 12 hours of progressive abdominal pain that began around his umbilicus and has now migrated to the right lower quadrant.
+2. He has anorexia, nausea, has vomited twice, and now has a low-grade fever; he has not had a bowel movement today.
+3. On exam, temperature is 38.2°C; there is right lower quadrant tenderness with rebound and guarding at McBurney point; psoas and obturator signs are positive.
+4. Labs show WBC of 16,200 with left shift; urinalysis is unremarkable; CRP is elevated.
+5. CT of the abdomen and pelvis with IV contrast shows a dilated (12 mm) non-compressible blind-ending tubular structure in the right lower quadrant with surrounding fat stranding and a fecalith at the base.
+6. He undergoes urgent laparoscopic appendectomy; the appendix is acutely inflamed without perforation, and pathology confirms acute suppurative appendicitis.
+
+TEACHING_POINTS:
+- Acute appendicitis is the most common surgical abdominal emergency, typically resulting from luminal obstruction (fecalith, lymphoid hyperplasia, tumor).
+- Classic progression: periumbilical visceral pain (T10 dermatome) → migration to right lower quadrant (somatic, parietal peritoneum) → fever, leukocytosis.
+- Physical signs: McBurney point tenderness, Rovsing sign, psoas sign (retrocecal), obturator sign (pelvic location).
+- CT is the most sensitive imaging in adults; ultrasound preferred in children and pregnancy to avoid radiation.
+- Treatment: appendectomy (laparoscopic preferred); antibiotics-only therapy is an option for uncomplicated cases in selected patients.
+
+==================================================
+
+CASE_ID: 295
+DIFFICULTY: step1
+SYSTEM: surgery
+
+DIAGNOSIS:
+Acute Cholecystitis
+
+ALIASES:
+cholecystitis
+gallbladder inflammation
+
+VIGNETTE_LINES:
+1. A 48-year-old obese woman presents with 18 hours of constant right upper quadrant abdominal pain that radiates to her right scapula, with nausea and vomiting.
+2. She has had several previous episodes of similar but shorter pain after eating fatty meals; she takes oral contraceptives.
+3. On exam, temperature is 38.5°C; there is right upper quadrant tenderness with arrest of inspiration during deep palpation; the gallbladder is not clearly palpable.
+4. Labs show WBC 14,800 with left shift, mildly elevated AST/ALT and alkaline phosphatase; total bilirubin is 1.4 mg/dL; lipase is normal.
+5. Right upper quadrant ultrasound shows a thickened gallbladder wall (6 mm), pericholecystic fluid, and multiple gallstones with a sonographic Murphy sign.
+6. HIDA scan, performed because the diagnosis remained uncertain, shows non-visualization of the gallbladder at 4 hours; she undergoes laparoscopic cholecystectomy.
+
+TEACHING_POINTS:
+- Acute cholecystitis is most commonly caused by gallstone obstruction of the cystic duct, leading to gallbladder inflammation; less commonly acalculous (critically ill patients).
+- Classic patient: "Fat, female, forty, fertile" (4 F's); other risk factors include rapid weight loss, hemolytic anemia (pigmented stones), Native American ancestry.
+- Murphy sign (inspiratory arrest with palpation of the right upper quadrant) is highly specific.
+- Ultrasound is the first-line imaging: gallstones, thickened wall (>3 mm), pericholecystic fluid, sonographic Murphy sign; HIDA scan is most accurate (non-visualization of gallbladder = positive).
+- Treatment: IV antibiotics and laparoscopic cholecystectomy within 72 hours; percutaneous cholecystostomy for unstable patients.
+
+==================================================
+
+CASE_ID: 296
+DIFFICULTY: step1
+SYSTEM: surgery
+
+DIAGNOSIS:
+Choledocholithiasis
+
+ALIASES:
+common bile duct stones
+CBD stone
+bile duct calculus
+
+VIGNETTE_LINES:
+1. A 54-year-old woman presents with intermittent right upper quadrant pain and progressive yellowing of her skin and eyes over the past 3 days; her urine has become dark.
+2. She had previous biliary colic but has not undergone cholecystectomy; she is afebrile and not particularly ill-appearing.
+3. On exam, scleral icterus is present; there is mild right upper quadrant tenderness without rebound or peritoneal signs; the gallbladder is not enlarged on palpation.
+4. Labs show total bilirubin of 6.8 mg/dL (direct 5.2), alkaline phosphatase 480 U/L, GGT 320 U/L, AST 180, ALT 220, and a normal lipase.
+5. Right upper quadrant ultrasound shows cholelithiasis with a dilated common bile duct measuring 12 mm; magnetic resonance cholangiopancreatography reveals a 9 mm filling defect in the distal CBD.
+6. She undergoes ERCP with sphincterotomy and stone extraction, followed by laparoscopic cholecystectomy during the same hospitalization.
+
+TEACHING_POINTS:
+- Choledocholithiasis is the presence of gallstones in the common bile duct, usually migrated from the gallbladder.
+- Presentation: jaundice (conjugated hyperbilirubinemia), cholestatic LFTs (elevated alk phos, GGT), dark urine, pale stools, intermittent right upper quadrant pain.
+- Cholestatic pattern: alkaline phosphatase rises more than transaminases (opposite of hepatitis).
+- Diagnosis: ultrasound shows dilated CBD (>6 mm normally, >8 mm post-cholecystectomy); MRCP or endoscopic ultrasound for visualization; ERCP for diagnosis AND therapy.
+- Complications: ascending cholangitis (Charcot triad: fever, jaundice, RUQ pain), gallstone pancreatitis, secondary biliary cirrhosis.
+
+==================================================
+
+CASE_ID: 297
+DIFFICULTY: step1
+SYSTEM: psychiatry
+
+DIAGNOSIS:
+Bipolar I Disorder
+
+ALIASES:
+manic-depressive illness
+bipolar disorder
+bipolar affective disorder
+
+VIGNETTE_LINES:
+1. A 26-year-old graduate student is brought in by his roommate because he has not slept for 5 days, has been talking rapidly, and started multiple new business ventures this week.
+2. He has a history of two depressive episodes in college that resolved with therapy; his uncle was hospitalized for psychiatric reasons.
+3. On exam, he is well-groomed and energetic, speech is rapid and difficult to interrupt, his thoughts jump between topics, and he reports feeling on top of the world; he denies hallucinations but admits to spending $15,000 of credit on a get-rich-quick scheme.
+4. Urine drug screen is negative; TSH and basic metabolic panel are normal.
+5. The symptoms have been present continuously for 1 week and have caused significant functional impairment, satisfying DSM-5 criteria for a manic episode.
+6. He is admitted for safety, started on lithium with adjunctive olanzapine, and stabilizes over 2 weeks; outpatient follow-up and a long-term mood stabilizer plan are arranged.
+
+TEACHING_POINTS:
+- Bipolar I disorder requires at least one lifetime manic episode (≥1 week of elevated/irritable mood with 3+ symptoms or any duration if hospitalization required); depressive episodes are common but not required.
+- Manic symptoms (DIG FAST): Distractibility, Indiscretion (risky behavior), Grandiosity, Flight of ideas, increased Activity/Agitation, decreased Sleep, Talkativeness/pressured speech.
+- Bipolar II: hypomania (≥4 days, no marked impairment, no psychosis, no hospitalization) plus at least one major depressive episode.
+- High lifetime suicide risk; 50% present first with a depressive episode (important to screen for prior mania before prescribing antidepressants alone, which can trigger mania).
+- Treatment: mood stabilizers (lithium first-line, also valproate, lamotrigine, carbamazepine); atypical antipsychotics for acute mania; psychoeducation and adherence are critical.
+
+==================================================
+
+CASE_ID: 298
+DIFFICULTY: step1
+SYSTEM: psychiatry
+
+DIAGNOSIS:
+Panic Disorder
+
+ALIASES:
+panic attacks
+recurrent panic attacks
+
+VIGNETTE_LINES:
+1. A 28-year-old woman presents to the ED for the third time in 2 months with sudden onset chest pain, palpitations, shortness of breath, and a feeling that she is about to die.
+2. Each episode reaches peak intensity within minutes and resolves within 30 minutes; she has been avoiding driving and large crowds for fear of having another episode.
+3. On exam, she appears anxious but is hemodynamically stable; the remainder of the exam is unremarkable.
+4. ECG, troponin, D-dimer, TSH, urine drug screen, and basic metabolic panel are all normal.
+5. The episodes are unprovoked, recurrent, and unexpected, and she experiences persistent worry between attacks about having more episodes, with associated behavioral change.
+6. She is started on sertraline with a short-term course of clonazepam for breakthrough symptoms, and referred for cognitive behavioral therapy with exposure components.
+
+TEACHING_POINTS:
+- Panic attacks are abrupt surges of intense fear with somatic and cognitive symptoms peaking within minutes; common in many psychiatric and medical conditions.
+- Panic disorder requires RECURRENT unexpected panic attacks PLUS at least 1 month of persistent worry about additional attacks OR maladaptive change in behavior.
+- Common medical mimics to exclude: arrhythmia, hyperthyroidism, pheochromocytoma, hypoglycemia, stimulant use; first-time presentation requires medical workup.
+- Often complicated by agoraphobia (fear/avoidance of situations from which escape would be difficult).
+- Treatment: SSRIs or SNRIs first-line (long-term); benzodiazepines for short-term symptom relief; cognitive behavioral therapy with interoceptive exposure is highly effective.
+
+==================================================
+
+CASE_ID: 299
+DIFFICULTY: step1
+SYSTEM: musculoskeletal
+
+DIAGNOSIS:
+Ankylosing Spondylitis
+
+ALIASES:
+AS
+axial spondyloarthritis
+Bechterew disease
+
+VIGNETTE_LINES:
+1. A 24-year-old man presents with 8 months of progressive lower back pain and morning stiffness lasting over an hour that improves with exercise.
+2. He has had recurrent episodes of red painful eye over the past year; his maternal uncle has a similar back condition.
+3. On exam, lumbar flexion is decreased with reduced chest expansion (3 cm); the Schober test is positive; both sacroiliac joints are tender to palpation.
+4. Labs show ESR 58 mm/hr and CRP 32 mg/L; HLA-B27 is positive; rheumatoid factor and anti-CCP are negative.
+5. Pelvic X-ray reveals bilateral sacroiliitis with subchondral sclerosis and erosions; lumbar spine X-ray shows squaring of the vertebral bodies and early syndesmophyte formation.
+6. MRI of the sacroiliac joints demonstrates active inflammation with bone marrow edema, confirming the diagnosis, and he is started on an NSAID followed by a TNF-alpha inhibitor.
+
+TEACHING_POINTS:
+- Ankylosing spondylitis is a chronic inflammatory seronegative spondyloarthropathy affecting the axial skeleton; strong association with HLA-B27.
+- Classic features: inflammatory back pain (worse in morning, better with activity, age <40, gradual onset, >3 months), sacroiliitis, enthesitis.
+- Extraskeletal manifestations: anterior uveitis (most common, recurrent painful red eye), aortic regurgitation, restrictive lung disease (limited chest expansion), IBD, psoriasis.
+- Spine X-ray progression: squaring of vertebral bodies → syndesmophytes → "bamboo spine" (late ankylosis).
+- Treatment: NSAIDs first-line; TNF-alpha inhibitors (etanercept, infliximab) and IL-17 inhibitors (secukinumab) for refractory disease; physical therapy critical.
+
+==================================================
+
+CASE_ID: 300
+DIFFICULTY: step1
+SYSTEM: musculoskeletal
+
+DIAGNOSIS:
+Systemic Sclerosis
+
+ALIASES:
+scleroderma
+systemic scleroderma
+diffuse cutaneous systemic sclerosis
+
+VIGNETTE_LINES:
+1. A 46-year-old woman presents with 6 months of fingers that turn white then blue then red in response to cold exposure, along with progressive tightening of the skin on her hands and difficulty swallowing solid foods.
+2. She also reports heartburn, shortness of breath on exertion, and several small ulcers on her fingertips that have been slow to heal.
+3. On exam, she has thickened shiny skin extending proximally past the metacarpophalangeal joints to the forearms and trunk; telangiectasias are noted on the face; bibasilar fine inspiratory crackles are heard.
+4. Labs show ANA positive at 1:1280 with a nucleolar pattern; anti-Scl-70 (anti-topoisomerase I) is positive; anti-centromere antibodies are negative.
+5. High-resolution CT of the chest shows bilateral basilar reticular opacities and ground-glass changes consistent with interstitial lung disease; pulmonary function tests show a restrictive pattern with decreased DLCO.
+6. Echocardiography reveals an elevated estimated pulmonary artery systolic pressure; she is started on mycophenolate for lung disease, calcium channel blockers for Raynaud, and PPI for reflux.
+
+TEACHING_POINTS:
+- Systemic sclerosis is an autoimmune connective tissue disease characterized by vasculopathy, autoimmunity, and excessive collagen deposition (fibrosis).
+- Two main forms: limited cutaneous (CREST: Calcinosis, Raynaud, Esophageal dysmotility, Sclerodactyly, Telangiectasia; anti-centromere; pulmonary arterial hypertension is feared) vs. diffuse cutaneous (truncal skin involvement; anti-Scl-70; interstitial lung disease, scleroderma renal crisis).
+- Raynaud phenomenon (triphasic color change: white-blue-red) is the most common initial manifestation.
+- Scleroderma renal crisis: acute malignant hypertension with acute kidney injury, microangiopathic hemolysis; treated with ACE inhibitors (life-saving) even with renal failure.
+- Treatment is organ-specific: ACE inhibitors for renal crisis, immunosuppressants (mycophenolate, cyclophosphamide) for ILD, endothelin receptor antagonists/PDE-5 inhibitors for PAH, PPIs for reflux.
+
+==================================================
+
