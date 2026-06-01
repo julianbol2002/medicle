@@ -12725,3 +12725,676 @@ TEACHING_POINTS:
 
 ==================================================
 
+CASE_ID: 451
+DIFFICULTY: step1
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Cardiac Amyloidosis
+
+ALIASES:
+amyloid cardiomyopathy
+ATTR amyloidosis
+AL amyloidosis cardiac
+
+VIGNETTE_LINES:
+1. A 72-year-old man presents with six months of progressive exertional dyspnea and bilateral lower extremity edema.
+2. He has bilateral carpal tunnel syndrome from a decade ago and his previously well-controlled hypertension has resolved without any medication changes.
+3. Exam reveals an elevated jugular venous pressure, an S4 gallop, pitting pretibial edema, and faint periorbital purpura after Valsalva.
+4. ECG shows low-voltage limb leads despite a wall thickness of 16 mm on echo; troponin is mildly and chronically elevated.
+5. Echocardiography demonstrates concentric LV hypertrophy with a "sparkling" granular myocardium, biatrial enlargement, and a relative apical sparing pattern on strain imaging.
+6. Technetium-99m pyrophosphate scintigraphy shows grade 3 myocardial uptake, serum and urine immunofixation are negative for a monoclonal protein, and tafamidis is initiated for confirmed ATTR cardiac amyloidosis.
+
+TEACHING_POINTS:
+- Cardiac amyloidosis classically causes HFpEF with a voltage-mass discrepancy on ECG (low voltage despite thick walls) and a "sparkling" myocardium.
+- Bilateral carpal tunnel syndrome and spontaneous resolution of prior hypertension are important non-cardiac clues that should prompt evaluation.
+- PYP scintigraphy with grade 2-3 uptake distinguishes ATTR from AL when monoclonal proteins are absent; tafamidis stabilizes the transthyretin tetramer.
+
+==================================================
+
+CASE_ID: 452
+DIFFICULTY: step1
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Arrhythmogenic Right Ventricular Cardiomyopathy
+
+ALIASES:
+ARVC
+ARVD
+arrhythmogenic right ventricular dysplasia
+
+VIGNETTE_LINES:
+1. A 22-year-old male collegiate soccer player collapses during a match and is resuscitated from ventricular fibrillation.
+2. He has had months of palpitations and presyncope on exertion that he dismissed as anxiety; his uncle died suddenly at age 35.
+3. He is hemodynamically stable on arrival; cardiac auscultation reveals a soft systolic murmur at the lower left sternal border.
+4. A 12-lead ECG shows a terminal notch on the QRS in V1-V3 and T-wave inversions in the right precordial leads.
+5. Cardiac MRI demonstrates a dilated, hypokinetic right ventricle with fibrofatty replacement of the free wall and regional wall motion abnormalities.
+6. Genetic testing identifies a pathogenic plakophilin-2 (PKP2) desmosomal mutation, and an ICD is implanted given his aborted sudden cardiac death.
+
+TEACHING_POINTS:
+- ARVC causes fibrofatty replacement of the right ventricular myocardium and presents with exercise-induced ventricular arrhythmias and sudden death in young athletes.
+- The epsilon wave (terminal QRS notch in V1-V3) and right precordial T-wave inversions are characteristic ECG findings.
+- It is autosomal dominant with desmosomal gene mutations (PKP2 most common); management is exercise restriction plus ICD in high-risk patients.
+
+==================================================
+
+CASE_ID: 453
+DIFFICULTY: step1
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Brugada Syndrome
+
+ALIASES:
+Brugada
+SCN5A channelopathy
+sudden unexplained nocturnal death syndrome
+
+VIGNETTE_LINES:
+1. A 34-year-old man of Southeast Asian descent is evaluated after a nighttime syncopal event with gasping respirations witnessed by his wife.
+2. His brother died unexpectedly in his sleep at age 38 and an uncle drowned without explanation.
+3. Exam is unremarkable; he is in sinus rhythm with a structurally normal heart on echocardiography.
+4. A baseline ECG shows incomplete right bundle branch block; during a febrile illness, the ECG develops a coved ST elevation greater than 2 mm in V1-V2.
+5. A procainamide challenge unmasks a type 1 Brugada pattern across the right precordial leads.
+6. Genetic testing reveals a pathogenic SCN5A loss-of-function mutation, and an ICD is implanted given his arrhythmic syncope.
+
+TEACHING_POINTS:
+- Brugada syndrome is an inherited sodium channelopathy classically affecting young men of Asian descent and presenting with nocturnal arrhythmic death.
+- Type 1 ECG pattern is a coved ST elevation greater than 2 mm with T-wave inversion in V1-V2; fever and sodium channel blockers can unmask it.
+- SCN5A mutations are the most common cause; ICD is indicated for survivors of cardiac arrest or those with arrhythmic syncope plus a type 1 pattern.
+
+==================================================
+
+CASE_ID: 454
+DIFFICULTY: step1
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Takotsubo Cardiomyopathy
+
+ALIASES:
+stress cardiomyopathy
+apical ballooning syndrome
+broken heart syndrome
+
+VIGNETTE_LINES:
+1. A 68-year-old postmenopausal woman presents with acute substernal chest pain and dyspnea that began an hour after learning of her husband's sudden death.
+2. She has no history of coronary disease and her only medication is a thiazide.
+3. Vitals show mild hypotension; lung auscultation reveals bibasilar crackles and her ECG shows new anterior T-wave inversions with QT prolongation.
+4. Troponin is only mildly elevated and is disproportionately low for the degree of wall-motion abnormality; brain natriuretic peptide is markedly elevated.
+5. Bedside echocardiography demonstrates apical akinesis with hypercontractile basal segments and an LV ejection fraction of 30%.
+6. Coronary angiography shows no obstructive disease and a ventriculogram captures the characteristic apical ballooning; repeat echo at six weeks demonstrates fully normalized LV function.
+
+TEACHING_POINTS:
+- Takotsubo cardiomyopathy mimics anterior MI with chest pain, ECG changes, and modest troponin elevation, classically triggered by intense emotional or physical stress in postmenopausal women.
+- The defining feature is transient apical ballooning with preserved basal contraction in the absence of obstructive coronary disease.
+- It is mediated by catecholamine surge and usually resolves over weeks with supportive care; watch for LVOT obstruction, mural thrombus, and arrhythmias.
+
+==================================================
+
+CASE_ID: 455
+DIFFICULTY: step1
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Lymphangioleiomyomatosis
+
+ALIASES:
+LAM
+pulmonary lymphangioleiomyomatosis
+TSC-associated LAM
+
+VIGNETTE_LINES:
+1. A 32-year-old woman presents with her third spontaneous pneumothorax in two years and progressive dyspnea on exertion.
+2. She has no smoking history; she has had mild hemoptysis and small facial angiofibromas across her nose and cheeks.
+3. Exam reveals decreased breath sounds at the apices and a palpable left flank mass.
+4. Pulmonary function testing reveals an obstructive pattern with reduced DLCO; abdominal imaging incidentally reveals bilateral renal angiomyolipomas.
+5. High-resolution chest CT shows numerous thin-walled, round cysts diffusely distributed throughout both lungs.
+6. Serum VEGF-D returns at 1200 pg/mL and genetic testing confirms a TSC2 mutation; sirolimus is initiated with stabilization of lung function.
+
+TEACHING_POINTS:
+- LAM is a rare cystic lung disease almost exclusively in women of reproductive age, causing recurrent pneumothorax and progressive obstruction.
+- It is associated with tuberous sclerosis complex (sporadic LAM also occurs) and features renal angiomyolipomas and chylothorax.
+- Diagnosis: characteristic HRCT cysts plus elevated VEGF-D or compatible features; mTOR inhibitors (sirolimus) are the mainstay of treatment.
+
+==================================================
+
+CASE_ID: 456
+DIFFICULTY: step1
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Pulmonary Alveolar Proteinosis
+
+ALIASES:
+PAP
+alveolar proteinosis
+GM-CSF autoantibody PAP
+
+VIGNETTE_LINES:
+1. A 40-year-old man presents with several months of progressive dyspnea on exertion and a dry cough.
+2. He has no significant occupational exposures and is a never-smoker; he has had several recent low-grade respiratory infections.
+3. Exam reveals diffuse fine inspiratory crackles bilaterally and an oxygen saturation of 88% on room air; clubbing is absent.
+4. Pulmonary function tests show restrictive physiology with reduced DLCO and serum LDH is markedly elevated.
+5. High-resolution chest CT demonstrates bilateral ground-glass opacities with superimposed interlobular septal thickening producing a "crazy-paving" pattern.
+6. Bronchoalveolar lavage returns opaque, milky fluid with PAS-positive amorphous eosinophilic material, anti-GM-CSF antibodies are detected in serum, and whole-lung lavage produces marked clinical improvement.
+
+TEACHING_POINTS:
+- Pulmonary alveolar proteinosis results from accumulation of surfactant-derived lipoproteinaceous material in alveoli.
+- Most adult cases are autoimmune, caused by anti-GM-CSF antibodies impairing macrophage clearance; secondary forms occur with hematologic disease or silica exposure.
+- HRCT shows "crazy-paving," BAL fluid is milky and PAS-positive, and whole-lung lavage plus inhaled GM-CSF are mainstays of treatment.
+
+==================================================
+
+CASE_ID: 457
+DIFFICULTY: step1
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Pulmonary Langerhans Cell Histiocytosis
+
+ALIASES:
+PLCH
+pulmonary histiocytosis X
+eosinophilic granuloma of the lung
+
+VIGNETTE_LINES:
+1. A 32-year-old man presents with a spontaneous right-sided pneumothorax and several months of dry cough and dyspnea on exertion.
+2. He has smoked a pack of cigarettes daily since age 16 and has new polyuria with nocturia.
+3. Exam reveals diminished breath sounds on the right and clubbing is absent; he is afebrile.
+4. Pulmonary function testing shows a mixed obstructive-restrictive pattern with reduced DLCO; a water deprivation test demonstrates central diabetes insipidus.
+5. High-resolution chest CT shows numerous bizarre, irregularly shaped cysts and small nodules predominantly in the upper and middle lung zones, sparing the costophrenic angles.
+6. Surgical lung biopsy reveals stellate bronchiolocentric nodules infiltrated by CD1a- and S100-positive Langerhans cells, and smoking cessation produces stabilization of his lung function.
+
+TEACHING_POINTS:
+- Pulmonary Langerhans cell histiocytosis is a smoking-related interstitial lung disease in young to middle-aged adults, with bizarre upper-lobe-predominant cysts and nodules that spare the costophrenic angles.
+- Extrapulmonary involvement (bone lytic lesions, central diabetes insipidus from pituitary stalk infiltration) supports the diagnosis.
+- Diagnosis is by biopsy showing CD1a/CD207/S100-positive Langerhans cells; smoking cessation is the cornerstone of treatment and often halts progression.
+
+==================================================
+
+CASE_ID: 458
+DIFFICULTY: step1
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Eosinophilic Esophagitis
+
+ALIASES:
+EoE
+eosinophilic esophagitis
+
+VIGNETTE_LINES:
+1. A 28-year-old man presents with three years of intermittent solid food dysphagia and a recent food impaction with a piece of meat at a restaurant.
+2. He has childhood asthma, seasonal allergies, and atopic dermatitis; an 8-week PPI trial has not relieved his symptoms.
+3. Exam is unremarkable and his weight is stable.
+4. Routine labs are unremarkable apart from a mild peripheral eosinophilia.
+5. Upper endoscopy reveals esophageal rings ("trachealization"), longitudinal furrows, scattered white exudates, and a narrow-caliber lumen.
+6. Esophageal biopsies from proximal and distal segments show greater than 60 eosinophils per high-power field with eosinophilic microabscesses; topical swallowed budesonide and an empiric six-food elimination diet are initiated.
+
+TEACHING_POINTS:
+- Eosinophilic esophagitis is a chronic, immune-mediated esophageal disease driven by food and aeroallergen sensitization, common in atopic young men.
+- Endoscopic clues include rings, furrows, exudates, and strictures; biopsy showing greater than 15 eosinophils per HPF on PPI therapy confirms diagnosis.
+- Treatment is the "3 Ds": diet (empiric elimination), drugs (topical swallowed corticosteroids, PPIs, dupilumab), and dilation for strictures.
+
+==================================================
+
+CASE_ID: 459
+DIFFICULTY: step1
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Plummer-Vinson Syndrome
+
+ALIASES:
+Paterson-Brown-Kelly syndrome
+sideropenic dysphagia
+Plummer-Vinson
+
+VIGNETTE_LINES:
+1. A 48-year-old white woman presents with progressive solid food dysphagia over the past year and a "burning" tongue.
+2. She has long-standing heavy menstrual bleeding and chronic fatigue; she avoids meat in her diet.
+3. Exam reveals pallor, angular cheilitis, atrophic glossitis, and brittle spoon-shaped nails.
+4. Labs show microcytic anemia with Hb 8.4, MCV 72, ferritin 4, and a transferrin saturation of 5%.
+5. Barium swallow demonstrates a thin web in the postcricoid region of the upper esophagus.
+6. Upper endoscopy confirms a postcricoid esophageal web that is dilated, biopsies rule out malignancy, and IV iron replacement plus dietary correction resolves her dysphagia.
+
+TEACHING_POINTS:
+- Plummer-Vinson syndrome is the triad of iron deficiency anemia, dysphagia, and esophageal webs, classically in middle-aged white women.
+- It is a recognized risk factor for squamous cell carcinoma of the upper esophagus and hypopharynx, warranting surveillance.
+- Treatment is iron repletion and endoscopic dilation of the web; symptoms typically resolve with restoration of iron stores.
+
+==================================================
+
+CASE_ID: 460
+DIFFICULTY: step1
+SYSTEM: nephrology
+
+DIAGNOSIS:
+Bartter Syndrome
+
+ALIASES:
+Bartter's syndrome
+classic Bartter syndrome
+NKCC2 channelopathy
+
+VIGNETTE_LINES:
+1. A 16-year-old girl presents with chronic fatigue, polyuria, polydipsia, and muscle cramps; she has always been below the 5th percentile for height.
+2. She has had several episodes of unexplained hypokalemia attributed to dieting and is not on diuretics.
+3. Exam reveals a thin, mildly dehydrated adolescent with normal blood pressure of 102/64 and no edema.
+4. Labs show K+ 2.6, HCO3- 32, Cl- 88, Mg 1.5, and a urine chloride of 50 mEq/L; her urinary calcium is elevated.
+5. Plasma renin and aldosterone are both markedly elevated; a urine diuretic screen is negative.
+6. Genetic testing reveals a homozygous mutation in the NKCC2 (SLC12A1) gene, and she is started on potassium-sparing diuretics, indomethacin, and oral potassium with improvement.
+
+TEACHING_POINTS:
+- Bartter syndrome mimics chronic loop diuretic use: hypokalemic, hypochloremic metabolic alkalosis with normotension and hyperreninemia/hyperaldosteronism.
+- Hypercalciuria distinguishes Bartter from Gitelman syndrome (which causes hypocalciuria and hypomagnesemia, thiazide-like).
+- Causative genes encode NKCC2, ROMK, ClC-Kb, or barttin (thick ascending limb proteins); treat with potassium-sparing diuretics, NSAIDs, and electrolyte repletion.
+
+==================================================
+
+CASE_ID: 461
+DIFFICULTY: step1
+SYSTEM: nephrology
+
+DIAGNOSIS:
+Type 4 Renal Tubular Acidosis
+
+ALIASES:
+type IV RTA
+hyperkalemic RTA
+hypoaldosteronism RTA
+
+VIGNETTE_LINES:
+1. A 68-year-old man with long-standing diabetes is found to have persistent hyperkalemia despite a normal GFR and no medication changes.
+2. He has diabetic nephropathy with stage 3a CKD; his medications include an ACE inhibitor and a beta-blocker.
+3. Exam is unremarkable apart from mild peripheral neuropathy; he is normotensive.
+4. Labs show K+ 6.1, Na+ 138, Cl- 110, HCO3- 18 with a normal anion gap, urine pH 5.2 (appropriately acidic), and urine sodium 60.
+5. The urine anion gap is positive (Na + K > Cl), and both aldosterone and plasma renin are suppressed.
+6. A fludrocortisone trial corrects the hyperkalemia and metabolic acidosis, confirming hyporeninemic hypoaldosteronism; diabetic management is intensified and the ACE inhibitor is reduced.
+
+TEACHING_POINTS:
+- Type 4 RTA is a hyperkalemic, normal anion gap metabolic acidosis caused by aldosterone deficiency or resistance, classically in diabetic nephropathy.
+- Urine pH is appropriately low (often less than 5.5) because hydrogen secretion is preserved, distinguishing it from type 1 (distal) RTA.
+- Treatment: low-potassium diet, loop diuretics, fludrocortisone, and addressing contributing medications (ACE inhibitors, NSAIDs, potassium-sparing diuretics).
+
+==================================================
+
+CASE_ID: 462
+DIFFICULTY: step1
+SYSTEM: nephrology
+
+DIAGNOSIS:
+Atypical Hemolytic Uremic Syndrome
+
+ALIASES:
+aHUS
+complement-mediated TMA
+atypical HUS
+
+VIGNETTE_LINES:
+1. A 27-year-old woman presents three days postpartum with fatigue, dark urine, and decreased urine output.
+2. The delivery was uncomplicated, but her aunt died of "kidney failure" in her 30s.
+3. Exam shows pallor, scleral icterus, and minimal lower extremity edema; she is afebrile with normal mental status.
+4. Labs show Hb 7.2, platelets 38,000, creatinine 4.1, LDH 1800, and indirect hyperbilirubinemia; peripheral smear shows numerous schistocytes.
+5. ADAMTS13 activity is 75% (well above the TTP threshold), stool studies are negative for Shiga toxin, and complement testing shows low C3 with normal C4.
+6. Genetic testing reveals a pathogenic complement factor H (CFH) mutation, and she is started on eculizumab with hematologic and renal recovery.
+
+TEACHING_POINTS:
+- aHUS is a complement-mediated thrombotic microangiopathy with microangiopathic hemolytic anemia, thrombocytopenia, and AKI; pregnancy/postpartum is a classic trigger.
+- Distinguish from typical HUS (Shiga-toxin E. coli, often diarrhea-positive) and TTP (severely low ADAMTS13, neurologic symptoms).
+- Most cases involve mutations in complement regulators (CFH, CFI, MCP) or anti-CFH antibodies; treat with C5 inhibitor eculizumab or ravulizumab.
+
+==================================================
+
+CASE_ID: 463
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+Cold Agglutinin Disease
+
+ALIASES:
+cold agglutinin syndrome
+cold autoimmune hemolytic anemia
+IgM mediated AIHA
+
+VIGNETTE_LINES:
+1. A 68-year-old woman presents in winter with fatigue, exertional dyspnea, and dusky discoloration of her fingertips and nose tip whenever she goes outside.
+2. She has had recurrent pneumonia in the past year and has noted dark urine on cold mornings.
+3. Exam reveals pallor, scleral icterus, and acrocyanosis of the digits and pinnae that resolves with rewarming.
+4. Labs show Hb 8.2, MCV 110 (spuriously elevated), reticulocyte count 8%, LDH 850, undetectable haptoglobin, and indirect hyperbilirubinemia; the peripheral smear shows striking red cell agglutination at room temperature.
+5. The direct antiglobulin test is positive for C3d and negative for IgG, and the cold agglutinin titer is 1:2048.
+6. Serum protein electrophoresis identifies a small IgM kappa monoclonal protein, bone marrow biopsy reveals a low-grade lymphoplasmacytic infiltrate, and rituximab is initiated with hematologic improvement.
+
+TEACHING_POINTS:
+- Cold agglutinin disease is an IgM-mediated autoimmune hemolytic anemia in which agglutinins bind erythrocytes at low temperatures and activate complement, causing extravascular (and sometimes intravascular) hemolysis.
+- Classic features: cold-induced acrocyanosis of distal extremities and nose, hemolytic anemia worse in winter, and red-cell agglutination on a room-temperature smear with a spuriously high MCV.
+- DAT is positive for C3d (not IgG); primary disease is associated with a clonal IgM gammopathy, while secondary causes include Mycoplasma pneumoniae, EBV, and B-cell lymphomas; rituximab is first-line, and avoid cold exposure.
+
+==================================================
+
+CASE_ID: 464
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+Acute Promyelocytic Leukemia
+
+ALIASES:
+APL
+APML
+AML-M3
+
+VIGNETTE_LINES:
+1. A 38-year-old woman presents with two weeks of bruising, gum bleeding, fatigue, and new heavy menstrual bleeding.
+2. She has no recent illnesses, medications, or toxin exposures and is otherwise healthy.
+3. Exam reveals pallor, scattered petechiae over the legs, and oozing from venipuncture sites; there is no hepatosplenomegaly or lymphadenopathy.
+4. CBC shows WBC 1.2, Hb 7.4, and platelets 18,000; coagulation studies show PT 22, aPTT 48, fibrinogen 90, and markedly elevated D-dimer, consistent with DIC.
+5. Peripheral smear reveals hypergranular promyelocytes with bundles of Auer rods ("faggot cells") and bilobed nuclei.
+6. FISH on bone marrow demonstrates the t(15;17)(q22;q21) PML-RARA fusion, and emergent ATRA plus arsenic trioxide produce rapid resolution of coagulopathy and remission.
+
+TEACHING_POINTS:
+- APL (AML-M3) is defined by the t(15;17) PML-RARA fusion and presents with severe coagulopathy (DIC plus hyperfibrinolysis) and hypergranular blasts.
+- "Faggot cells" (bundles of Auer rods) on the smear are pathognomonic; start ATRA immediately on clinical suspicion to reduce early hemorrhagic death.
+- ATRA plus arsenic trioxide has made APL the most curable acute leukemia; watch for differentiation syndrome (fever, dyspnea, weight gain, hypotension).
+
+==================================================
+
+CASE_ID: 465
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+Mantle Cell Lymphoma
+
+ALIASES:
+MCL
+cyclin D1 lymphoma
+t(11;14) lymphoma
+
+VIGNETTE_LINES:
+1. A 66-year-old man presents with generalized painless lymphadenopathy, night sweats, and a 15-pound weight loss over four months.
+2. He has had progressive abdominal bloating and early satiety; his stools have recently become more frequent and loose.
+3. Exam reveals diffuse non-tender lymphadenopathy, marked splenomegaly, and tonsillar enlargement; he has multiple small polypoid lesions seen on rectal exam.
+4. CBC shows a leukocytosis with a lymphocytosis of 22,000; peripheral smear shows medium-sized irregular lymphocytes with cleaved nuclei.
+5. Excisional lymph node biopsy reveals a diffuse proliferation of small to medium-sized lymphocytes effacing the nodal architecture, and immunohistochemistry is positive for CD5, CD20, and cyclin D1 while negative for CD23.
+6. FISH demonstrates the t(11;14)(q13;q32) translocation, colonoscopy reveals multiple lymphomatous polyps (lymphomatous polyposis), and he is started on rituximab plus high-dose cytarabine-containing induction with planned autologous stem cell transplant.
+
+TEACHING_POINTS:
+- Mantle cell lymphoma is an aggressive B-cell non-Hodgkin lymphoma defined by the t(11;14) translocation, which juxtaposes cyclin D1 (CCND1) with the IgH locus, driving overexpression.
+- Immunophenotype: CD20+, CD5+, CD23- (vs CLL, which is CD23+), cyclin D1+; lymphomatous polyposis of the GI tract is a characteristic feature.
+- Treatment usually involves intensive chemoimmunotherapy plus autologous stem cell transplant for younger patients, with BTK inhibitors (ibrutinib, acalabrutinib) for relapsed disease.
+
+==================================================
+
+CASE_ID: 466
+DIFFICULTY: step1
+SYSTEM: hematology/oncology
+
+DIAGNOSIS:
+Acquired Hemophilia A
+
+ALIASES:
+acquired factor VIII deficiency
+autoimmune hemophilia
+factor VIII inhibitor
+
+VIGNETTE_LINES:
+1. A 72-year-old woman with no personal or family history of bleeding presents with extensive spontaneous bruising and a large painful right thigh hematoma.
+2. She has no recent trauma, is on no anticoagulants, and was recently diagnosed with breast cancer awaiting treatment.
+3. Exam reveals widespread large ecchymoses across the trunk and limbs, a tense and tender right thigh hematoma, and pallor.
+4. Labs show Hb 7.6, a markedly prolonged aPTT of 86 seconds, a normal PT, and a normal platelet count.
+5. A mixing study fails to correct the prolonged aPTT after a 2-hour incubation, and factor VIII activity is less than 1%.
+6. A Bethesda assay confirms an anti-factor VIII inhibitor at 18 Bethesda units; she receives recombinant activated factor VII for active bleeding and is started on prednisone plus rituximab to eradicate the inhibitor.
+
+TEACHING_POINTS:
+- Acquired hemophilia A is an autoantibody-mediated factor VIII deficiency in adults with no prior bleeding history, presenting with spontaneous mucocutaneous and soft-tissue hemorrhage.
+- The key lab finding is an isolated prolonged aPTT that does NOT correct on mixing study (with delayed incubation), reflecting an inhibitor rather than a factor deficiency.
+- Associations include the postpartum state, malignancy, autoimmune disease, and drugs; treat acute bleeding with bypassing agents (recombinant FVIIa, aPCC, or recombinant porcine FVIII) and eradicate the inhibitor with immunosuppression (steroids plus rituximab or cyclophosphamide).
+
+==================================================
+
+CASE_ID: 467
+DIFFICULTY: step1
+SYSTEM: infectious disease
+
+DIAGNOSIS:
+Babesiosis
+
+ALIASES:
+Babesia microti infection
+babesiosis
+piroplasmosis
+
+VIGNETTE_LINES:
+1. A 70-year-old asplenic man presents with two weeks of fevers, chills, drenching sweats, and progressive fatigue.
+2. He spends summers on Nantucket and recalls multiple tick bites a month ago.
+3. Exam shows fever to 39.4 C, tachycardia, scleral icterus, and a midline splenectomy scar; no rash is present.
+4. Labs show Hb 8.6, platelets 64,000, total bilirubin 3.8 with indirect predominance, undetectable haptoglobin, and LDH 720, consistent with intravascular hemolysis.
+5. Peripheral smear reveals intraerythrocytic ring forms, some in a tetrad ("Maltese cross") configuration, and PCR is positive for Babesia microti.
+6. He develops respiratory failure requiring partial exchange transfusion, IV clindamycin plus quinine clear his parasitemia, and convalescent serology confirms cure.
+
+TEACHING_POINTS:
+- Babesiosis is a tick-borne (Ixodes scapularis) intraerythrocytic parasitic infection causing fever and hemolytic anemia, endemic to the Northeast US.
+- Asplenic, elderly, or immunocompromised hosts develop severe disease with high parasitemia, ARDS, DIC, and renal failure.
+- Diagnose with smear (rings, "Maltese cross" tetrads) and PCR; treat with atovaquone plus azithromycin (mild) or clindamycin plus quinine (severe), with exchange transfusion for high parasitemia.
+
+==================================================
+
+CASE_ID: 468
+DIFFICULTY: step1
+SYSTEM: infectious disease
+
+DIAGNOSIS:
+Mucormycosis
+
+ALIASES:
+zygomycosis
+rhinocerebral mucormycosis
+Rhizopus infection
+
+VIGNETTE_LINES:
+1. A 52-year-old woman in diabetic ketoacidosis presents with facial pain, headache, and a black eschar on her hard palate.
+2. She has poorly controlled type 1 diabetes and is on no immunosuppression.
+3. Exam reveals proptosis, ophthalmoplegia, decreased vision in the right eye, and a necrotic-appearing turbinate on rhinoscopy.
+4. CT sinuses show pansinusitis with bony erosion of the medial orbital wall, and MRI reveals cavernous sinus thrombosis.
+5. Tissue biopsy from the necrotic turbinate shows broad, pauciseptate, ribbon-like hyphae branching at right angles and invading vessels.
+6. Culture grows Rhizopus species, and she undergoes emergent surgical debridement with liposomal amphotericin B and aggressive correction of her acidosis and hyperglycemia.
+
+TEACHING_POINTS:
+- Mucormycosis is an angioinvasive fungal infection by Rhizopus, Mucor, or Rhizomucor; classic hosts are DKA patients and the iron-overloaded (deferoxamine).
+- Rhinocerebral form spreads from nose/sinuses to orbit and brain; black necrotic eschar reflects tissue infarction.
+- Histology shows broad, ribbon-like, non-septate hyphae with right-angle branching (vs Aspergillus: septate, acute angle); treat with emergent surgical debridement, amphotericin, and reversal of predisposing factors.
+
+==================================================
+
+CASE_ID: 469
+DIFFICULTY: step1
+SYSTEM: infectious disease
+
+DIAGNOSIS:
+Subacute Sclerosing Panencephalitis
+
+ALIASES:
+SSPE
+Dawson encephalitis
+late measles encephalitis
+
+VIGNETTE_LINES:
+1. A 12-year-old boy presents with several months of declining school performance, personality change, and recent onset of myoclonic jerks.
+2. He emigrated from a country with limited immunization coverage and had measles as an infant before his second birthday.
+3. Exam reveals cognitive impairment, brisk reflexes, ataxia, and periodic massive myoclonic jerks every 5 to 10 seconds.
+4. CSF shows mild lymphocytic pleocytosis with a markedly elevated CSF-to-serum measles IgG index and oligoclonal bands.
+5. EEG demonstrates periodic high-voltage Radermecker complexes synchronized with the myoclonic jerks.
+6. Brain MRI shows symmetric white matter signal abnormalities, and brain biopsy reveals intranuclear inclusions with positive measles virus antigen staining, confirming SSPE.
+
+TEACHING_POINTS:
+- SSPE is a fatal late complication of measles, typically 6 to 15 years after infection (highest risk if measles occurred before age 2).
+- Stages: behavioral/cognitive decline, myoclonic jerks with characteristic periodic EEG complexes, decerebrate rigidity, and death.
+- High CSF anti-measles IgG with oligoclonal bands is diagnostic; prevention is through measles vaccination, since no curative therapy exists.
+
+==================================================
+
+CASE_ID: 470
+DIFFICULTY: step1
+SYSTEM: neurology
+
+DIAGNOSIS:
+Anti-NMDA Receptor Encephalitis
+
+ALIASES:
+anti-NMDAR encephalitis
+NMDA receptor antibody encephalitis
+paraneoplastic encephalitis
+
+VIGNETTE_LINES:
+1. A 23-year-old woman is brought to the ED with new psychiatric symptoms including paranoid delusions, agitation, and disorganized speech over two weeks.
+2. She had a brief flu-like prodrome before the symptoms began and has no prior psychiatric history.
+3. Exam reveals orofacial dyskinesias, mutism alternating with screaming, autonomic instability with episodic hyperthermia, and abnormal limb posturing.
+4. Routine labs are unremarkable, brain MRI is normal, and EEG shows generalized slowing with an "extreme delta brush" pattern.
+5. CSF reveals mild lymphocytic pleocytosis with oligoclonal bands and IgG antibodies against the NR1 subunit of the NMDA receptor.
+6. Pelvic ultrasound identifies a left ovarian teratoma; she undergoes tumor resection, receives IV methylprednisolone, IVIG, and rituximab, with gradual neurologic recovery.
+
+TEACHING_POINTS:
+- Anti-NMDA receptor encephalitis is an autoimmune encephalitis often paraneoplastic in young women (associated with ovarian teratomas).
+- Classic stages: viral prodrome, psychiatric symptoms, then movement disorders/orofacial dyskinesias, autonomic instability, and coma; "extreme delta brush" on EEG is characteristic.
+- Diagnose with CSF anti-NMDAR antibodies; treat with tumor removal plus immunotherapy (steroids, IVIG, rituximab, cyclophosphamide).
+
+==================================================
+
+CASE_ID: 471
+DIFFICULTY: step1
+SYSTEM: neurology
+
+DIAGNOSIS:
+Posterior Reversible Encephalopathy Syndrome
+
+ALIASES:
+PRES
+reversible posterior leukoencephalopathy
+hypertensive encephalopathy syndrome
+
+VIGNETTE_LINES:
+1. A 34-year-old woman G1 at 32 weeks gestation presents with severe headache, blurry vision, and a generalized seizure.
+2. She had rising blood pressures and proteinuria at recent prenatal visits and is on no medications.
+3. Exam reveals BP 198/118, brisk reflexes with clonus, cortical blindness, and 3+ pretibial edema.
+4. Urinalysis shows 3+ protein; LDH and uric acid are elevated; platelets are 110,000.
+5. Brain MRI demonstrates symmetric T2/FLAIR hyperintensities in the bilateral parieto-occipital subcortical white matter without restricted diffusion.
+6. Magnesium sulfate is given for seizure prophylaxis, IV labetalol controls her blood pressure, and emergent cesarean delivery is performed; imaging at 6 weeks shows complete radiographic resolution.
+
+TEACHING_POINTS:
+- PRES typically presents with headache, seizures, visual disturbances, and altered mental status in the setting of hypertensive emergency, eclampsia, immunosuppressants, or cytotoxic chemotherapy.
+- Posterior (parieto-occipital) vasogenic edema on MRI is characteristic and reversible; restricted diffusion suggests evolving infarction.
+- Treatment is rapid blood pressure control, seizure management, and removal of offending agents; in eclampsia, magnesium and timely delivery are key.
+
+==================================================
+
+CASE_ID: 472
+DIFFICULTY: step1
+SYSTEM: neurology
+
+DIAGNOSIS:
+Cerebral Venous Sinus Thrombosis
+
+ALIASES:
+CVST
+cerebral venous thrombosis
+dural sinus thrombosis
+
+VIGNETTE_LINES:
+1. A 28-year-old woman on combined oral contraceptives presents with two weeks of progressive headache, now with new left-sided weakness and a focal seizure.
+2. She is a smoker and is 6 weeks postpartum; she has no history of migraines or prior strokes.
+3. Exam reveals papilledema, mild left hemiparesis, and a partial sixth nerve palsy; she is afebrile.
+4. Non-contrast CT shows a hyperdense "cord sign" along the right transverse sinus, and D-dimer is elevated.
+5. MR venography demonstrates absent flow in the superior sagittal and right transverse sinuses, and CT brain shows a small right parietal hemorrhagic venous infarct.
+6. She is anticoagulated with low-molecular-weight heparin bridging to warfarin, and thrombophilia workup reveals a heterozygous factor V Leiden mutation.
+
+TEACHING_POINTS:
+- CVST presents with progressive headache, focal neurologic deficits, seizures, and signs of elevated ICP; risk factors include pregnancy/postpartum, OCPs, hypercoagulable states, dehydration, and infection.
+- MR venography or CT venography is the imaging test of choice; CT may show a "cord sign" or "empty delta sign" in the superior sagittal sinus.
+- Anticoagulation (heparin then warfarin/DOAC) is the mainstay even in the presence of venous hemorrhagic infarction; treat for 3 to 12 months and screen for thrombophilias.
+
+==================================================
+
+CASE_ID: 473
+DIFFICULTY: step1
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Sheehan Syndrome
+
+ALIASES:
+postpartum hypopituitarism
+Sheehan's syndrome
+postpartum pituitary necrosis
+
+VIGNETTE_LINES:
+1. A 32-year-old woman presents 8 months postpartum with persistent fatigue, inability to breastfeed since delivery, and amenorrhea.
+2. Her delivery was complicated by severe postpartum hemorrhage requiring multiple units of blood, and she has progressively lost axillary and pubic hair.
+3. Exam reveals dry skin, bradycardia, mild hypotension, and loss of secondary sexual hair; she has cold intolerance and constipation.
+4. Labs show low free T4 with inappropriately normal TSH, morning cortisol 2 mcg/dL, low FSH and LH, prolactin 2 ng/mL, and low IGF-1.
+5. ACTH stimulation test demonstrates a blunted cortisol response, confirming secondary adrenal insufficiency.
+6. Pituitary MRI shows an empty sella with absent pituitary tissue; she is started on hydrocortisone first, then levothyroxine, and combined hormone replacement.
+
+TEACHING_POINTS:
+- Sheehan syndrome is postpartum hypopituitarism due to ischemic necrosis of the hyperplastic pituitary after severe postpartum hemorrhage.
+- Earliest manifestations are often failure to lactate (low prolactin) and persistent amenorrhea; later, panhypopituitarism (adrenal, thyroid, gonadal, growth axes) develops.
+- Replace cortisol BEFORE thyroid hormone to avoid precipitating adrenal crisis; MRI shows empty sella in chronic cases.
+
+==================================================
+
+CASE_ID: 474
+DIFFICULTY: step1
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Primary Hyperaldosteronism
+
+ALIASES:
+Conn syndrome
+primary aldosteronism
+aldosterone-producing adenoma
+
+VIGNETTE_LINES:
+1. A 48-year-old man presents with refractory hypertension despite three antihypertensive agents and complains of muscle cramps and frequent urination.
+2. He has had several episodes of mild leg weakness; he denies licorice ingestion or diuretic use.
+3. Exam reveals BP 168/98 on combination therapy, with no edema, abdominal bruits, or stigmata of Cushing syndrome.
+4. Labs show K+ 2.9, Na+ 145, HCO3- 30 with metabolic alkalosis, plasma renin activity suppressed at 0.2 ng/mL/hr, and plasma aldosterone 32 ng/dL.
+5. Aldosterone-to-renin ratio is greater than 30, and a confirmatory saline infusion test fails to suppress aldosterone below 10 ng/dL.
+6. CT adrenals shows a 1.4-cm left adrenal adenoma, adrenal venous sampling confirms lateralization to the left, and laparoscopic left adrenalectomy normalizes his blood pressure and potassium.
+
+TEACHING_POINTS:
+- Primary hyperaldosteronism causes hypertension, hypokalemia (variably), and metabolic alkalosis; it is an under-recognized cause of resistant hypertension.
+- Aldosterone-to-renin ratio (ARR) is the screening test; confirm with saline infusion or oral salt-loading test demonstrating non-suppressible aldosterone.
+- CT plus adrenal venous sampling distinguishes unilateral adenoma (Conn's, treat surgically) from bilateral adrenal hyperplasia (treat medically with spironolactone or eplerenone).
+
+==================================================
+
+CASE_ID: 475
+DIFFICULTY: step1
+SYSTEM: musculoskeletal
+
+DIAGNOSIS:
+Adult-Onset Still Disease
+
+ALIASES:
+AOSD
+adult Still disease
+systemic juvenile idiopathic arthritis adult form
+
+VIGNETTE_LINES:
+1. A 28-year-old woman presents with five weeks of quotidian high fevers, sore throat, and a faint salmon-colored rash on her trunk that comes and goes with the fevers.
+2. She has had progressively worsening polyarthralgia, and an extensive infectious and malignancy workup has been negative.
+3. Exam reveals temperature 39.6 C, evanescent macular rash on the trunk during fever spikes, generalized lymphadenopathy, and bilateral wrist effusions.
+4. Labs show WBC 22,000 with neutrophilic predominance, normocytic anemia, AST 240, ALT 290, ferritin 22,000, and a low glycosylated ferritin of 12%.
+5. ANA, RF, and anti-CCP are all negative; blood cultures, viral serologies, and tuberculosis testing are negative; bone marrow biopsy excludes hematologic malignancy.
+6. Yamaguchi criteria are met (major: fever, arthralgia, rash, leukocytosis; minor: lymphadenopathy, hepatic dysfunction), and high-dose corticosteroids with subsequent anakinra (IL-1 inhibitor) lead to remission.
+
+TEACHING_POINTS:
+- Adult-onset Still disease is a systemic autoinflammatory disorder with quotidian (daily) fevers, evanescent salmon-pink rash, arthritis, sore throat, and prominent leukocytosis.
+- Markedly elevated ferritin (often more than 5 times normal) with a low glycosylated ferritin fraction (under 20%) is a useful diagnostic clue.
+- Diagnosis by Yamaguchi criteria after excluding infection and malignancy; treat with NSAIDs, corticosteroids, and IL-1 (anakinra) or IL-6 (tocilizumab) inhibitors.
+
+==================================================
