@@ -1721,7 +1721,7 @@ export default function Home() {
       <div
         style={{
           width: "100vw",
-          background: lightMode ? "#012127" : "#2a2a2a",
+          background: lightMode ? "#012127" : "#012127",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
