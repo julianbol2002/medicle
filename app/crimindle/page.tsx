@@ -137,9 +137,10 @@ function generateCaseCode(): string {
 }
 
 // =============================================================
-// GAVEL ANIMATION
-// ============================================================= = [3000, 2400, 1800, 1300, 900, 500];
-const GAVEL_LABELS = [
+// COURTROOM STATUS BAR (replaces gavel)
+// =============================================================
+
+const STATUS_LABELS = [
   "Case Filed",
   "Discovery Phase",
   "Pre-Trial Motions",
@@ -147,7 +148,7 @@ const GAVEL_LABELS = [
   "Closing Arguments",
   "Verdict Imminent",
 ];
-const GAVEL_COLORS = [
+const STATUS_COLORS = [
   "#d4af37",
   "#c9a227",
   "#c0392b",
@@ -156,60 +157,43 @@ const GAVEL_COLORS = [
   "#7b241c",
 ];
 
-function GavelAnimation({ badGuesses, gameOver, won }: { badGuesses: number; gameOver: boolean; won: boolean; }) {
-  const [angle, setAngle] = useState(0);
-  const [striking, setStriking] = useState(false);
-  const animRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const idx = won ? 0 : Math.min(badGuesses, GAVEL_SPEEDS.length - 1);
-  const speed = GAVEL_SPEEDS[idx];
-  const label = won ? "Verdict: GUILTY ✓" : gameOver && !won ? "MISTRIAL — Case Dismissed" : GAVEL_LABELS[idx];
-  const color = won ? "#d4af37" : gameOver && !won ? "#4a0000" : GAVEL_COLORS[idx];
-  const broken = gameOver && !won;
-
-  useEffect(() => {
-    if (gameOver) { setAngle(won ? -45 : 15); return; }
-    const strike = () => {
-      setStriking(true); setAngle(-55);
-      setTimeout(() => { setAngle(15); setTimeout(() => { setStriking(false); setAngle(0); }, 120); }, 140);
-      animRef.current = setTimeout(strike, speed);
-    };
-    animRef.current = setTimeout(strike, speed);
-    return () => { if (animRef.current) clearTimeout(animRef.current); };
-  }, [speed, gameOver, won]);
+function CourtroomStatus({ badGuesses, gameOver, won, guessesLeft }: { badGuesses: number; gameOver: boolean; won: boolean; guessesLeft: number; }) {
+  const idx = won ? 0 : Math.min(badGuesses, STATUS_LABELS.length - 1);
+  const color = won ? "#d4af37" : gameOver && !won ? "#4a0000" : STATUS_COLORS[idx];
+  const label = won ? "Verdict: GUILTY ✓" : gameOver && !won ? "MISTRIAL — Case Dismissed" : STATUS_LABELS[idx];
+  const pct = won ? 100 : gameOver ? 0 : (guessesLeft / MAX_GUESSES) * 100;
 
   return (
     <div className="w-full rounded-2xl p-4 border" style={{ background: "#0a0500", borderColor: "#3a2a0a" }}>
       <div className="flex items-center justify-between mb-3 px-1">
         <span className="text-xs font-mono tracking-widest" style={{ color }}>⚖ {label}</span>
-        {!gameOver && <span className="text-xs font-mono" style={{ color: "#8a7340" }}>{MAX_GUESSES - badGuesses} guess{MAX_GUESSES - badGuesses !== 1 ? "es" : ""} left</span>}
+        {!gameOver && (
+          <span className="text-xs font-mono" style={{ color: "#8a7340" }}>
+            {guessesLeft} guess{guessesLeft !== 1 ? "es" : ""} left
+          </span>
+        )}
       </div>
-      <div className="flex items-center justify-center" style={{ height: "110px" }}>
-        <svg viewBox="0 0 200 110" width="320" height="110" xmlns="http://www.w3.org/2000/svg">
-          {striking && (
-            <>
-              <ellipse cx="148" cy="90" rx="10" ry="4" fill="none" stroke={color} strokeWidth="1" opacity="0.5" />
-              <ellipse cx="148" cy="90" rx="18" ry="7" fill="none" stroke={color} strokeWidth="0.8" opacity="0.3" />
-              <ellipse cx="148" cy="90" rx="26" ry="10" fill="none" stroke={color} strokeWidth="0.5" opacity="0.15" />
-            </>
-          )}
-          <rect x="120" y="88" width="56" height="10" rx="2" fill={broken ? "#2a0000" : "#5c3d1e"} />
-          <rect x="124" y="85" width="48" height="6" rx="1" fill={broken ? "#1a0000" : "#7a5230"} />
-          <g transform={`rotate(${angle}, 80, 85)`} style={{ transition: striking ? "transform 0.14s ease-in" : "transform 0.12s ease-out" }}>
-            <rect x="76" y="30" width="8" height="58" rx="3" fill={broken ? "#3a1a1a" : "#8b5e3c"} />
-            <rect x="77" y="30" width="3" height="58" rx="2" fill={broken ? "#4a2222" : "#a0714f"} opacity="0.5" />
-            <rect x="50" y="20" width="60" height="22" rx="4" fill={broken ? "#2a0000" : color} />
-            <rect x="50" y="20" width="60" height="8" rx="4" fill={broken ? "#3a0000" : "#e8c84a"} opacity="0.3" />
-            {broken && (
-              <>
-                <line x1="78" y1="20" x2="74" y2="42" stroke="#ff4444" strokeWidth="1.5" opacity="0.7" />
-                <line x1="82" y1="20" x2="86" y2="42" stroke="#ff4444" strokeWidth="1" opacity="0.5" />
-              </>
-            )}
-          </g>
-        </svg>
+      <div className="w-full rounded-full overflow-hidden" style={{ background: "#1a1000", height: "10px" }}>
+        <div
+          className="h-full rounded-full transition-all duration-500"
+          style={{ width: `${pct}%`, background: color }}
+        />
       </div>
-      <div className="mt-2 h-1 rounded-full overflow-hidden" style={{ background: "#1a1000" }}>
-        <div className="h-full rounded-full transition-all duration-500" style={{ width: won ? "100%" : broken ? "0%" : `${((MAX_GUESSES - badGuesses) / MAX_GUESSES) * 100}%`, background: color }} />
+      <div className="flex justify-between mt-2 px-0.5">
+        {STATUS_LABELS.map((s, i) => (
+          <div
+            key={i}
+            className="text-center"
+            style={{
+              fontSize: "8px",
+              fontFamily: "'Poppins', sans-serif",
+              color: i < idx || won ? color : "#3a2a0a",
+              fontWeight: i === idx && !gameOver ? 700 : 400,
+            }}
+          >
+            {i + 1}
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -915,7 +899,7 @@ export default function Home() {
         ))}
       </div>
 
-      {/* GAVEL + FILTER BUTTONS */}
+      {/* COURTROOM STATUS + FILTER BUTTONS */}
       <div className="mt-8 w-full max-w-3xl">
         <div className="flex flex-wrap items-center gap-2 mb-2">
           <button onClick={() => setShowGavel((s) => !s)} className="flex items-center gap-2 text-xs font-mono mb-2 px-3 py-1 rounded-lg transition-all" style={{ background: showGavel ? theme.bgCard : "transparent", border: `1px solid ${theme.border}`, color: showGavel ? theme.accent : theme.textFaint, fontFamily: "'Poppins', sans-serif" }}>
@@ -955,7 +939,7 @@ export default function Home() {
           </div>
         )}
 
-        {showGavel && <GavelAnimation badGuesses={badGuesses} gameOver={gameOver} won={won} />}
+        {showGavel && <CourtroomStatus badGuesses={badGuesses} gameOver={gameOver} won={won} guessesLeft={guessesLeft} />}
       </div>
 
       {/* FOOTER */}
