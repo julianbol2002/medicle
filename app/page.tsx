@@ -45,8 +45,8 @@ const LIGHT_THEME = {
   accent:         "#0891b2",
   accentHover:    "#0e7490",
   clueNum:        "#0891b2",
-  logoPanel:      "#0f172a",
-  logoBorder:     "#1e293b",
+  logoPanel:      "#012127",
+  logoBorder:     "#012127",
   selectBg:       "#ffffff",
   modalWin:       "#f0fdf4",
   modalLose:      "#fff1f2",
@@ -1334,7 +1334,7 @@ export default function Home() {
   const [showSystem, setShowSystem] = useState(false);
 
   // ✅ Light / dark mode
-  const [lightMode, setLightMode] = useState(false);
+  const [lightMode, setLightMode] = useState(true);
   const theme: Theme = lightMode ? LIGHT_THEME : DARK_THEME;
 
   // ✅ NEW: optional system filter (checkbox panel)
@@ -1693,7 +1693,7 @@ export default function Home() {
 
   return (
     <main
-      className="min-h-screen flex flex-col items-center px-4 pb-16 transition-colors duration-300"
+      className="min-h-screen flex flex-col items-center pb-16 transition-colors duration-300 overflow-x-hidden"
       style={{ background: theme.bg, fontFamily: "'Poppins', sans-serif", color: theme.text }}
     >
       {/* POPPINS FONT */}
@@ -1715,8 +1715,27 @@ export default function Home() {
         />
       )}
 
-      {/* OTHER GAMES DROPDOWN */}
-      <div style={{ position: "absolute", top: "16px", left: "16px" }}>
+      {/* OTHER GAMES DROPDOWN + LIGHT/DARK TOGGLE moved to TOOLBAR ROW below banner */}
+
+      {/* LOGO BANNER — full width, flush to top, always dark background */}
+      <div
+        style={{
+          width: "100vw",
+          background: "#012127",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "18px 0",
+        }}
+      >
+        <img src="/logo.png" alt="Medicle" style={{ height: "68px" }} />
+      </div>
+
+      {/* ALL CONTENT BELOW BANNER — padded */}
+      <div className="w-full flex flex-col items-center px-4">
+
+      {/* TOOLBAR ROW — game switcher + light/dark toggle */}
+      <div className="w-full max-w-3xl flex items-center justify-between py-3 mb-1">
         <select
           onChange={(e) => {
             if (e.target.value === "medicle") window.location.href = "/";
@@ -1726,15 +1745,7 @@ export default function Home() {
             if (e.target.value === "crimindle") window.location.href = "/crimindle";
           }}
           defaultValue="medicle"
-          style={{
-            background: theme.bgCard,
-            border: `1px solid ${theme.border}`,
-            color: theme.text,
-            borderRadius: "8px",
-            padding: "6px 10px",
-            fontSize: "12px",
-            fontFamily: "'Poppins', sans-serif",
-          }}
+          style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.text, borderRadius: "8px", padding: "6px 10px", fontSize: "12px", fontFamily: "'Poppins', sans-serif" }}
         >
           <option value="medicle">🧠 Medicle</option>
           <option value="vettle">🐾 Vettle — Veterinary cases</option>
@@ -1742,133 +1753,39 @@ export default function Home() {
           <option value="dentdle">🦷 Dentdle — Dental cases</option>
           <option value="crimindle">⚖️ Crimindle — Criminal Law</option>
         </select>
-      </div>
-
-      {/* LIGHT/DARK TOGGLE */}
-      <div style={{ position: "absolute", top: "16px", right: "16px" }}>
         <button
           onClick={() => setLightMode((v) => !v)}
-          style={{
-            background: theme.bgCard,
-            border: `1px solid ${theme.border}`,
-            color: theme.text,
-            borderRadius: "20px",
-            padding: "6px 14px",
-            fontSize: "12px",
-            fontFamily: "'Poppins', sans-serif",
-            cursor: "pointer",
-            display: "flex",
-            alignItems: "center",
-            gap: "6px",
-            fontWeight: 500,
-          }}
+          style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.text, borderRadius: "20px", padding: "6px 14px", fontSize: "12px", fontFamily: "'Poppins', sans-serif", cursor: "pointer", display: "flex", alignItems: "center", gap: "6px", fontWeight: 500 }}
         >
           {lightMode ? "🌙 Dark" : "☀️ Light"}
         </button>
       </div>
 
-      {/* HEADER */}
-      <div
-        style={{
-          marginTop: "32px",
-          marginBottom: "18px",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          textAlign: "center",
-          gap: "10px",
-          width: "100%",
-          maxWidth: "720px",
-        }}
-      >
-        {/* LOGO PANEL — only shown in light mode to prevent awkward cutoff */}
-        {lightMode ? (
-          <div
-            style={{
-              background: theme.logoPanel,
-              border: `1px solid ${theme.logoBorder}`,
-              borderRadius: "20px",
-              padding: "20px 32px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              width: "100%",
-            }}
+      {/* CASE SELECTOR ROW */}
+      <div className="w-full max-w-3xl flex items-center gap-3 mb-4">
+        <div className="flex-1">
+          <select
+            value={selectedCaseId}
+            onChange={(e) => loadCaseById(e.target.value)}
+            className="w-full rounded-xl px-3 py-2 text-sm outline-none"
+            style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text, fontFamily: "'Poppins', sans-serif" }}
+            disabled={!eligibleCases.length}
           >
-            <img src="/logo.png" alt="Medicle" style={{ height: "72px" }} />
-          </div>
-        ) : (
-          <img src="/logo.png" alt="Medicle" style={{ height: "72px" }} />
+            {caseOptions.map((opt) => (
+              <option key={opt.id} value={opt.id}>
+                {opt.label}
+              </option>
+            ))}
+          </select>
+        </div>
+        {current && Number(current.id) === dailyCaseId && (
+          <span
+            className="text-xs font-semibold whitespace-nowrap px-3 py-2 rounded-xl"
+            style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.accent }}
+          >
+            📅 {getTodayString()}
+          </span>
         )}
-
-        {/* INFO PANEL */}
-        <div
-          style={{
-            background: theme.bgCard,
-            border: `1px solid ${theme.border}`,
-            borderRadius: "16px",
-            padding: "16px 20px",
-            width: "100%",
-          }}
-        >
-          <p style={{ fontSize: "15px", color: theme.text, fontWeight: "600", marginBottom: "6px" }}>
-            Can you diagnose the patient before it&apos;s too late?
-          </p>
-          <p style={{ fontSize: "12px", color: theme.textMuted, marginBottom: "8px" }}>
-            Endless progressive clue-based vignettes. A new case every round.
-          </p>
-          <a
-            href="https://www.medicle.net"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ fontSize: "13px", fontWeight: "bold", color: theme.accent, textDecoration: "none" }}
-          >
-            🔗 www.medicle.net
-          </a>
-        </div>
-
-        {/* CASE SELECTOR */}
-        <div className="w-full grid gap-3 sm:grid-cols-[1fr_auto] items-center">
-          <div className="text-left">
-            <label className="block text-xs font-mono tracking-widest mb-1" style={{ color: theme.textMuted }}>
-              Jump to case
-            </label>
-            <select
-              value={selectedCaseId}
-              onChange={(e) => loadCaseById(e.target.value)}
-              className="w-full rounded-xl px-3 py-2 text-sm outline-none"
-              style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text, fontFamily: "'Poppins', sans-serif" }}
-              disabled={!eligibleCases.length}
-            >
-              {caseOptions.map((opt) => (
-                <option key={opt.id} value={opt.id}>
-                  {opt.label}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {current && (
-            <div className="sm:text-right text-left">
-              <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>
-                CURRENT CASE
-              </p>
-              <p className="text-lg font-bold" style={{ color: theme.text }}>
-                #{current.id}
-              </p>
-              {Number(current.id) === dailyCaseId && (
-                <p className="text-xs font-semibold" style={{ color: theme.accent }}>
-                  📅 Daily — {getTodayString()}
-                </p>
-              )}
-              {showSystem && current.system && (
-                <p className="text-xs" style={{ color: theme.accent }}>
-                  {displaySystemLabel(current.system)}
-                </p>
-              )}
-            </div>
-          )}
-        </div>
       </div>
 
       {/* PROGRESS BAR */}
@@ -2113,6 +2030,7 @@ export default function Home() {
         </p>
       </div>
 
+      </div>{/* end content wrapper */}
     </main>
   );
 }
