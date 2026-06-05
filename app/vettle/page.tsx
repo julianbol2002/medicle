@@ -29,11 +29,20 @@ type Guess = {
 
 const MAX_GUESSES = 6;
 
-// ✅ To add more cases: drop a new .txt file in /public/vettle cases/
-// and add its filename to this list, then push to deploy.
-const CASES_FILES = [
-  "/vettle cases/cases_vettle_navle.txt",
-];
+// =============================================================
+// DAILY CASE SYSTEM
+// June 4 2026 = Case 111. Each day after = next case in sequence.
+// Cases 1-80:   hidden endless pool (fallback if random file empty)
+// Cases 81-110: archive (past 30 daily cases)
+// Cases 111+:   daily cases, one per day
+// =============================================================
+
+const DAILY_ANCHOR_DATE = new Date("2026-06-04T00:00:00");
+const DAILY_ANCHOR_CASE_ID = 111;
+const ARCHIVE_START = 81;
+const RANDOM_POOL_MAX = 80;
+
+const RANDOM_CASES_FILE = "/vettle cases/vettle_random_cases.txt";
 
 // =============================================================
 // THEME TOKENS
@@ -90,8 +99,41 @@ const LIGHT_THEME = {
 type Theme = typeof DARK_THEME;
 
 // =============================================================
-// ECG DISPLAY
+// CASES FILES + DAILY HELPERS
 // =============================================================
+
+const CASES_FILES = [
+  "/vettle cases/cases_vettle_navle.txt",
+];
+
+function getDailyOffset(): number {
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const anchor = new Date(DAILY_ANCHOR_DATE.getFullYear(), DAILY_ANCHOR_DATE.getMonth(), DAILY_ANCHOR_DATE.getDate());
+  return Math.floor((today.getTime() - anchor.getTime()) / (1000 * 60 * 60 * 24));
+}
+
+function getDailyCaseId(): number {
+  return DAILY_ANCHOR_CASE_ID + getDailyOffset();
+}
+
+function getDateForCaseId(caseId: number): string {
+  const offset = caseId - DAILY_ANCHOR_CASE_ID;
+  const date = new Date(DAILY_ANCHOR_DATE);
+  date.setDate(date.getDate() + offset);
+  return date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+}
+
+function getTodayString(): string {
+  return new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+}
+
+function generateCaseCode(): string {
+  const letters = "ABCDEFGHJKLMNPQRSTUVWXYZ";
+  const L = () => letters[Math.floor(Math.random() * letters.length)];
+  const N = () => Math.floor(Math.random() * 10);
+  return `${L()}${L()}${L()}-${N()}${N()}${N()}`;
+}
 
 const ECG_POINTS: [number, number][][] = [
   [[0,50],[20,50],[22,46],[24,54],[26,10],[28,90],[30,44],[32,50],[60,50],[62,46],[64,54],[66,10],[68,90],[70,44],[72,50],[100,50],[102,46],[104,54],[106,10],[108,90],[110,44],[112,50],[140,50],[142,46],[144,54],[146,10],[148,90],[150,44],[152,50],[180,50],[182,46],[184,54],[186,10],[188,90],[190,44],[192,50],[220,50],[222,46],[224,54],[226,10],[228,90],[230,44],[232,50],[260,50],[262,46],[264,54],[266,10],[268,90],[270,44],[272,50],[300,50]],
@@ -520,7 +562,11 @@ function ShareCard({ shareText, theme }: { shareText: string; theme: Theme }) {
   );
 }
 
-function ResultModal({ won, current, guesses, solvedAtClueCount, onNext, theme }: { won: boolean; current: Case; guesses: Guess[]; solvedAtClueCount: number; onNext: () => void; theme: Theme; }) {
+function ResultModal({ won, current, guesses, solvedAtClueCount, onArchive, onRandom, onBackToDaily, caseMode, theme }: {
+  won: boolean; current: Case; guesses: Guess[]; solvedAtClueCount: number;
+  onArchive: () => void; onRandom: () => void; onBackToDaily: () => void;
+  caseMode: "daily" | "archive" | "random"; theme: Theme;
+}) {
   const [showTeaching, setShowTeaching] = useState(false);
   const shareText = useMemo(() => {
     if (!won) return "";
@@ -563,7 +609,18 @@ function ResultModal({ won, current, guesses, solvedAtClueCount, onNext, theme }
             )}
           </div>
         )}
-        <button onClick={onNext} className="px-10 py-3 rounded-xl font-bold text-lg w-full text-white" style={{ background: theme.accent }}>Next Case →</button>
+        {caseMode === "daily" ? (
+          <div className="flex gap-2 mt-2">
+            <button onClick={onArchive} className="flex-1 py-3 rounded-xl font-bold text-base text-white" style={{ background: theme.accent }}>📅 Play Archive</button>
+            <button onClick={onRandom} className="flex-1 py-3 rounded-xl font-bold text-base" style={{ background: theme.bgCard, color: theme.accent, border: `1px solid ${theme.accent}` }}>♾️ Endless Mode</button>
+          </div>
+        ) : (
+          <div className="flex gap-2 mt-2">
+            <button onClick={onArchive} className="flex-1 py-3 rounded-xl font-bold text-sm text-white" style={{ background: theme.accent }}>📅 Archive</button>
+            <button onClick={onRandom} className="flex-1 py-3 rounded-xl font-bold text-sm" style={{ background: theme.bgCard, color: theme.accent, border: `1px solid ${theme.accent}` }}>♾️ Endless</button>
+            <button onClick={onBackToDaily} className="flex-1 py-3 rounded-xl font-bold text-sm" style={{ background: theme.bgCard, color: theme.accent, border: `1px solid ${theme.accent}` }}>📆 Today</button>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -575,6 +632,7 @@ function ResultModal({ won, current, guesses, solvedAtClueCount, onNext, theme }
 
 export default function Home() {
   const [cases, setCases] = useState<Case[]>([]);
+  const [randomCases, setRandomCases] = useState<Case[]>([]);
   const [current, setCurrent] = useState<Case | null>(null);
   const [selectedCaseId, setSelectedCaseId] = useState<string>("");
   const [seenIds, setSeenIds] = useState<Set<string>>(new Set());
@@ -593,25 +651,14 @@ export default function Home() {
   const [selectedSystems, setSelectedSystems] = useState<Set<string>>(new Set());
   const [solvedAtClueCount, setSolvedAtClueCount] = useState(1);
   const [loadError, setLoadError] = useState("");
-
-  const pickNewCase = useCallback((allCases: Case[], seen: Set<string>) => {
-    const unseen = allCases.filter((c) => !seen.has(c.id));
-    const pool = unseen.length > 0 ? unseen : allCases;
-    return pool[Math.floor(Math.random() * pool.length)];
-  }, []);
+  const [dailyCaseId, setDailyCaseId] = useState<number>(0);
+  const [caseMode, setCaseMode] = useState<"daily" | "archive" | "random">("daily");
+  const [randomCaseCode, setRandomCaseCode] = useState<string>("");
 
   const resetRound = useCallback((nextCase: Case) => {
-    setCurrent(nextCase);
-    setSelectedCaseId(nextCase.id);
-    setRevealed(1);
-    setGuess("");
-    setGuesses([]);
-    setGameOver(false);
-    setWon(false);
-    setShowDropdown(false);
-    setShowConfetti(false);
-    setShowECG(true);
-    setSolvedAtClueCount(1);
+    setCurrent(nextCase); setSelectedCaseId(nextCase.id); setRevealed(1); setGuess(""); setGuesses([]);
+    setGameOver(false); setWon(false); setShowDropdown(false); setShowConfetti(false);
+    setShowECG(true); setSolvedAtClueCount(1);
   }, []);
 
   useEffect(() => {
@@ -625,22 +672,35 @@ export default function Home() {
             return r.text();
           })
         );
-        const combinedText = responses.join("\n\n");
-        const parsedRaw = parseCases(combinedText);
-        const parsed = dedupeCasesById(parsedRaw);
+        const parsed = dedupeCasesById(parseCases(responses.join("\n\n")));
         if (!active) return;
         setCases(parsed);
         if (parsed.length === 0) { setLoadError("No cases were parsed from any file."); return; }
-        const first = parsed[Math.floor(Math.random() * parsed.length)];
-        setCurrent(first);
-        setSelectedCaseId(first.id);
-        setSeenIds(new Set([first.id]));
+        const todayId = getDailyCaseId();
+        setDailyCaseId(todayId);
+        const daily = parsed.find((c) => Number(c.id) === todayId) ?? parsed[0];
+        setCurrent(daily); setSelectedCaseId(daily.id); setSeenIds(new Set([daily.id]));
       } catch (error) {
         if (!active) return;
         setLoadError(error instanceof Error ? error.message : "Failed to load cases.");
       }
     }
     loadCases();
+    return () => { active = false; };
+  }, []);
+
+  useEffect(() => {
+    let active = true;
+    async function loadRandomCases() {
+      try {
+        const res = await fetch(RANDOM_CASES_FILE);
+        if (!res.ok) return;
+        const parsed = dedupeCasesById(parseCases(await res.text()));
+        if (!active) return;
+        setRandomCases(parsed);
+      } catch { /* optional file */ }
+    }
+    loadRandomCases();
     return () => { active = false; };
   }, []);
 
@@ -682,14 +742,27 @@ export default function Home() {
     resetRound(nextCase);
   }, [eligibleCases, resetRound]);
 
-  const startNextCase = useCallback(() => {
-    if (!eligibleCases.length || !current) return;
-    const newSeen = new Set(seenIds);
-    newSeen.add(current.id);
-    const next = pickNewCase(eligibleCases, newSeen);
-    setSeenIds(new Set([...newSeen, next.id]));
-    resetRound(next);
-  }, [eligibleCases, current, pickNewCase, resetRound, seenIds]);
+  const startArchiveCase = useCallback(() => {
+    const pool = eligibleCases.filter((c) => { const id = Number(c.id); return id >= ARCHIVE_START && id < dailyCaseId; });
+    if (!pool.length) return;
+    const next = pool[Math.floor(Math.random() * pool.length)];
+    setCaseMode("archive"); setRandomCaseCode(""); setSeenIds(new Set([next.id])); resetRound(next);
+  }, [eligibleCases, dailyCaseId, resetRound]);
+
+  const startRandomCase = useCallback(() => {
+    const externalPool = randomCases;
+    const fallbackPool = eligibleCases.filter((c) => Number(c.id) <= RANDOM_POOL_MAX);
+    const pool = externalPool.length > 0 ? externalPool : fallbackPool;
+    if (!pool.length) return;
+    const next = pool[Math.floor(Math.random() * pool.length)];
+    setCaseMode("random"); setRandomCaseCode(generateCaseCode()); setSeenIds(new Set([next.id])); resetRound(next);
+  }, [eligibleCases, randomCases, resetRound]);
+
+  const startDailyCase = useCallback(() => {
+    const daily = eligibleCases.find((c) => Number(c.id) === dailyCaseId);
+    if (!daily) return;
+    setCaseMode("daily"); setRandomCaseCode(""); setSeenIds(new Set([daily.id])); resetRound(daily);
+  }, [eligibleCases, dailyCaseId, resetRound]);
 
   const allDiagnoses = useMemo(() => {
     const fromCases = eligibleCases.flatMap((c) => [c.diagnosis, ...c.aliases]);
@@ -704,13 +777,20 @@ export default function Home() {
     return Array.from(map.values()).sort((a, b) => a.localeCompare(b));
   }, [eligibleCases]);
 
-  const caseOptions = useMemo(() =>
-    eligibleCases.map((c) => ({
-      id: c.id,
-      label: showSystem ? `Case ${c.id}${c.system ? ` • ${displaySystemLabel(c.system)}` : ""}` : `Case ${c.id}`,
-    })),
-    [eligibleCases, showSystem]
-  );
+  const caseOptions = useMemo(() => {
+    const maxAllowed = dailyCaseId > 0 ? dailyCaseId : 0;
+    const options = eligibleCases
+      .filter((c) => { const id = Number(c.id); return id >= ARCHIVE_START && id <= maxAllowed; })
+      .map((c) => {
+        const id = Number(c.id);
+        const isToday = id === dailyCaseId;
+        const systemPart = showSystem && c.system ? ` • ${displaySystemLabel(c.system)}` : "";
+        const datePart = isToday ? " 🐾 Today" : ` — ${getDateForCaseId(id)}`;
+        return { id: c.id, label: `Case ${c.id}${systemPart}${datePart}` };
+      });
+    if (caseMode === "random") return [{ id: "__endless__", label: "♾️ Endless Mode" }, ...options];
+    return options;
+  }, [eligibleCases, showSystem, dailyCaseId, caseMode]);
 
   const filtered = useMemo(() => {
     const q = guess.trim().toLowerCase();
@@ -774,7 +854,7 @@ export default function Home() {
       <Analytics />
 
       {gameOver && current && (
-        <ResultModal won={won} current={current} guesses={guesses} solvedAtClueCount={solvedAtClueCount} onNext={startNextCase} theme={theme} />
+        <ResultModal won={won} current={current} guesses={guesses} solvedAtClueCount={solvedAtClueCount} onArchive={startArchiveCase} onRandom={startRandomCase} onBackToDaily={startDailyCase} caseMode={caseMode} theme={theme} />
       )}
 
       {/* OTHER GAMES DROPDOWN */}
@@ -837,15 +917,35 @@ export default function Home() {
         <div className="w-full grid gap-3 sm:grid-cols-[1fr_auto] items-center">
           <div className="text-left">
             <label className="block text-xs font-mono tracking-widest mb-1" style={{ color: theme.textMuted }}>Jump to case</label>
-            <select value={selectedCaseId} onChange={(e) => loadCaseById(e.target.value)} className="w-full rounded-xl px-3 py-2 text-sm outline-none" style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text, fontFamily: "'Poppins', sans-serif" }} disabled={!eligibleCases.length}>
+            <select
+              value={caseMode === "random" ? "__endless__" : selectedCaseId}
+              onChange={(e) => { if (e.target.value === "__endless__") return; loadCaseById(e.target.value); }}
+              className="w-full rounded-xl px-3 py-2 text-sm outline-none"
+              style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text, fontFamily: "'Poppins', sans-serif" }}
+              disabled={!eligibleCases.length}
+            >
               {caseOptions.map((opt) => <option key={opt.id} value={opt.id}>{opt.label}</option>)}
             </select>
           </div>
           {current && (
             <div className="sm:text-right text-left">
-              <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>CURRENT CASE</p>
-              <p className="text-lg font-bold" style={{ color: theme.text }}>#{current.id}</p>
-              {showSystem && current.system && <p className="text-xs" style={{ color: theme.accent }}>{displaySystemLabel(current.system)}</p>}
+              {caseMode === "random" ? (
+                <>
+                  <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>ENDLESS MODE</p>
+                  <p className="text-sm font-bold font-mono" style={{ color: theme.accent }}>♾️ {randomCaseCode}</p>
+                </>
+              ) : caseMode === "archive" ? (
+                <>
+                  <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>ARCHIVE</p>
+                  <p className="text-sm font-bold" style={{ color: theme.accent }}>📅 {getDateForCaseId(Number(current.id))}</p>
+                </>
+              ) : (
+                <>
+                  <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>TODAY&apos;S CASE</p>
+                  <p className="text-sm font-bold" style={{ color: theme.accent }}>🐾 {getTodayString()}</p>
+                </>
+              )}
+              {showSystem && current.system && <p className="text-xs mt-1" style={{ color: theme.accent }}>{displaySystemLabel(current.system)}</p>}
             </div>
           )}
         </div>
