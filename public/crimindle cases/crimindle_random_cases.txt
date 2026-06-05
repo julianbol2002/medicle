@@ -1,0 +1,2253 @@
+==================================================
+CASE_ID: 001
+DIFFICULTY: crimdle
+SYSTEM: homicide
+
+DIAGNOSIS:
+First-Degree Murder
+
+ALIASES:
+premeditated murder
+first degree murder
+murder one
+
+VIGNETTE_LINES:
+
+1. A man learns over several weeks that his business partner has been quietly siphoning money from their company.
+2. He stops confronting the partner and instead begins researching the partner's daily schedule and travel routes.
+3. He purchases a firearm two towns away, pays cash, and tells the seller he wants something "that won't trace back."
+4. On the chosen morning he waits in a parked car outside the partner's gym for nearly an hour before the partner arrives.
+5. He approaches, fires a single shot to the head, and calmly walks back to his vehicle without taking the partner's wallet or watch.
+6. At trial the jury is instructed that it must find a killing that was willful, deliberate, and premeditated to return the highest degree of the offense.
+
+TEACHING_POINTS:
+
+- First-degree murder requires a killing that is willful, deliberate, and premeditated; the planning and waiting period supply evidence of reflection.
+- Premeditation can form quickly, but courts look for evidence of actual reflection (planning activity, motive, manner of killing).
+- The absence of robbery negates a felony-murder theory and isolates the intentional, premeditated killing.
+- Contrast with second-degree murder, which is intentional but lacks premeditation and deliberation.
+- Procuring an untraceable weapon and surveilling the victim are classic "planning" and "manner" evidence of premeditation.
+
+==================================================
+CASE_ID: 002
+DIFFICULTY: crimdle
+SYSTEM: homicide
+
+DIAGNOSIS:
+Depraved Heart Murder
+
+ALIASES:
+depraved heart murder
+abandoned and malignant heart
+second-degree reckless murder
+
+VIGNETTE_LINES:
+
+1. A man grows frustrated with cars speeding through his residential neighborhood late at night.
+2. From an overpass, he begins dropping objects toward the roadway below to "scare" drivers into slowing down.
+3. One night he heaves a chunk of broken concrete over the railing onto a busy four-lane highway.
+4. He later admits he knew cars were passing constantly but says he never wanted to hit anyone.
+5. The concrete crashes through a windshield and kills the driver instantly.
+6. The prosecutor argues that the conduct showed an extreme indifference to the value of human life, supporting a murder conviction without proof of intent to kill.
+
+TEACHING_POINTS:
+
+- Depraved heart murder is an unintentional killing resulting from conduct showing extreme recklessness and indifference to human life.
+- The mens rea is recklessness "plus": a gross deviation creating a very high risk of death, with conscious disregard.
+- It is distinguished from involuntary manslaughter, which involves a lower degree of recklessness or criminal negligence.
+- No intent to kill is required; the malice is implied from the wanton disregard for life.
+- Classic examples include firing into a crowd, dropping heavy objects onto highways, and similar high-risk acts.
+
+==================================================
+CASE_ID: 003
+DIFFICULTY: crimdle
+SYSTEM: homicide
+
+DIAGNOSIS:
+Felony Murder
+
+ALIASES:
+felony murder rule
+felony-murder
+FMR
+
+VIGNETTE_LINES:
+
+1. Two men plan to break into a jewelry store after closing, believing it will be empty.
+2. One acts as lookout while the other forces the rear door and begins filling a bag with merchandise.
+3. A night security guard they did not expect emerges and a struggle ensues.
+4. During the scuffle the burglar's gun discharges, killing the guard, though both men later insist no one meant for anyone to die.
+5. The lookout, who never entered the building or touched the weapon, is charged with the guard's death alongside his partner.
+6. The court instructs that a death caused during the commission of an inherently dangerous felony supplies the malice for murder regardless of intent to kill.
+
+TEACHING_POINTS:
+
+- Felony murder imputes malice when a death occurs during the commission or attempted commission of a qualifying felony.
+- Co-felons may be liable for deaths caused in furtherance of the felony, even without intent to kill or personal participation in the killing.
+- Common predicate felonies include burglary, arson, rape, robbery, and kidnapping (often remembered as BARRK).
+- The agency theory limits liability to deaths caused by the felons; the proximate cause theory is broader.
+- The felony must be independent of the killing itself (the merger doctrine bars using assault as the predicate).
+
+==================================================
+CASE_ID: 004
+DIFFICULTY: crimdle
+SYSTEM: homicide
+
+DIAGNOSIS:
+Voluntary Manslaughter
+
+ALIASES:
+voluntary manslaughter
+heat of passion killing
+provocation manslaughter
+
+VIGNETTE_LINES:
+
+1. A man returns home early from a work trip that was unexpectedly canceled.
+2. He hears unfamiliar sounds from the bedroom and opens the door to find his spouse in bed with another person.
+3. Enraged and shaking, he grabs a heavy lamp from the nightstand within seconds.
+4. He strikes the other person repeatedly before either occupant can speak or dress.
+5. The defense concedes the killing but argues the defendant acted before any reasonable opportunity to cool off.
+6. The jury is instructed that adequate provocation that would inflame a reasonable person, with no cooling-off period, reduces what would otherwise be murder.
+
+TEACHING_POINTS:
+
+- Voluntary manslaughter is an intentional killing committed in the heat of passion upon adequate (legally sufficient) provocation.
+- The provocation must be such as would inflame a reasonable person and must actually inflame the defendant.
+- There must be no reasonable cooling-off period between the provocation and the killing.
+- Discovery of adultery is a classic common law category of adequate provocation; mere words generally are not.
+- It reduces murder to manslaughter by negating malice, not by excusing the killing entirely.
+
+==================================================
+CASE_ID: 005
+DIFFICULTY: crimdle
+SYSTEM: homicide
+
+DIAGNOSIS:
+Involuntary Manslaughter
+
+ALIASES:
+involuntary manslaughter
+criminally negligent homicide
+unintentional manslaughter
+
+VIGNETTE_LINES:
+
+1. A babysitter is caring for a toddler and several other children on a hot summer afternoon.
+2. She runs into a store to grab a few items, leaving the toddler buckled in the back seat with the windows up.
+3. She becomes distracted by a phone call and a long checkout line, losing track of time.
+4. Nearly forty minutes pass before she returns to the vehicle.
+5. The toddler has died of hyperthermia, and the babysitter is hysterical and clearly never intended any harm.
+6. The prosecution proceeds on a theory that her gross deviation from the standard of ordinary care caused the death.
+
+TEACHING_POINTS:
+
+- Involuntary manslaughter is an unintentional killing resulting from criminal negligence or during an unlawful act not amounting to a felony.
+- Criminal negligence requires a gross deviation from the standard of care a reasonable person would observe.
+- It differs from depraved heart murder in the degree of risk and culpability (negligence/lower recklessness vs extreme recklessness).
+- The misdemeanor-manslaughter rule can supply liability when death occurs during a malum in se misdemeanor.
+- Lack of intent to harm does not preclude liability where the conduct is grossly careless.
+
+==================================================
+CASE_ID: 006
+DIFFICULTY: crimdle
+SYSTEM: inchoate_crimes
+
+DIAGNOSIS:
+Attempt
+
+ALIASES:
+criminal attempt
+attempt
+attempted crime
+
+VIGNETTE_LINES:
+
+1. A man decides to rob a bank he passes every day on his commute.
+2. He buys a realistic toy pistol, writes a demand note, and studies the branch's opening hours.
+3. On the planned morning he drives to the bank, parks, and walks toward the entrance with the note and pistol in his jacket.
+4. As he reaches for the door handle, a passing patrol car slows nearby and he loses his nerve and leaves.
+5. He is later arrested after the demand note and pistol are found and he confesses his plan.
+6. The court must decide whether his conduct went beyond mere preparation and constituted a substantial step toward the offense.
+
+TEACHING_POINTS:
+
+- Attempt requires specific intent to commit the target offense plus an overt act beyond mere preparation.
+- The MPC uses the "substantial step strongly corroborative of criminal purpose" test; common law often used proximity or other tests.
+- Voluntary abandonment is a defense under the MPC if it is complete and a true renunciation, but not a defense at common law once the attempt is complete.
+- Leaving because of an external deterrent (the patrol car) is generally not a voluntary, complete abandonment.
+- Factual impossibility is no defense to attempt; legal impossibility traditionally is.
+
+==================================================
+CASE_ID: 007
+DIFFICULTY: crimdle
+SYSTEM: inchoate_crimes
+
+DIAGNOSIS:
+Solicitation
+
+ALIASES:
+criminal solicitation
+solicitation
+incitement to crime
+
+VIGNETTE_LINES:
+
+1. A woman is locked in a bitter custody dispute with her former spouse.
+2. At a bar she strikes up a conversation with a man she believes has a criminal reputation.
+3. She offers him a sum of money and explains in detail that she wants her ex-spouse "taken care of permanently."
+4. The man, who is actually an undercover officer, expresses interest but never agrees to do anything.
+5. She hands over a cash deposit and a photograph of the intended victim.
+6. The completed offense occurs the moment she requests the crime with intent that it be committed, regardless of whether anyone agrees or acts.
+
+TEACHING_POINTS:
+
+- Solicitation is asking, encouraging, or commanding another to commit a crime with the intent that the crime be committed.
+- The offense is complete upon the request with the requisite intent; no agreement or further act is required.
+- If the other person agrees, the crime may rise to conspiracy; if substantial steps follow, attempt may attach.
+- Solicitation merges into the completed or attempted target offense (no conviction for both solicitation and the completed crime).
+- It is irrelevant that the solicited party is an undercover officer who never intends to comply.
+
+==================================================
+CASE_ID: 008
+DIFFICULTY: crimdle
+SYSTEM: inchoate_crimes
+
+DIAGNOSIS:
+Conspiracy
+
+ALIASES:
+criminal conspiracy
+conspiracy
+agreement to commit a crime
+
+VIGNETTE_LINES:
+
+1. Three coworkers at a shipping warehouse are unhappy with their pay.
+2. Over several lunches they discuss how easy it would be to divert outgoing packages and resell the contents.
+3. They agree on roles: one will alter shipping logs, one will load a private van, and one will handle resale.
+4. One of them rents a storage unit and buys a set of box cutters and packing supplies for the scheme.
+5. Before any package is taken, a fourth employee overhears them and reports the plan to management.
+6. The prosecutor charges all three, arguing that the agreement plus an act in furtherance completes the offense even though no goods were ever stolen.
+
+TEACHING_POINTS:
+
+- Conspiracy is an agreement between two or more persons to commit an unlawful act, with intent to agree and intent to achieve the objective.
+- Many jurisdictions and the MPC require an overt act in furtherance; the act may be lawful and need only be a step toward the goal.
+- Conspiracy does not merge into the completed offense, so a defendant may be convicted of both.
+- Under Pinkerton, co-conspirators are liable for reasonably foreseeable crimes committed in furtherance of the conspiracy.
+- The unilateral approach (MPC) allows conspiracy even if only one party genuinely agrees; the bilateral approach requires two guilty minds.
+
+==================================================
+CASE_ID: 009
+DIFFICULTY: crimdle
+SYSTEM: accomplice_liability
+
+DIAGNOSIS:
+Accomplice Liability
+
+ALIASES:
+aiding and abetting
+accomplice liability
+accessory before the fact
+
+VIGNETTE_LINES:
+
+1. A young man knows his friend intends to break into a rival's house to steal electronics.
+2. He agrees to drive the friend to the neighborhood and wait nearby with the engine running.
+3. He also lends the friend a crowbar and points out which window has a broken latch.
+4. He never enters the house and takes none of the stolen property for himself.
+5. The friend completes the break-in and theft while he waits in the car as planned.
+6. The court holds him liable for the same offenses as the principal because he aided with the purpose of promoting the crime.
+
+TEACHING_POINTS:
+
+- An accomplice is one who, with the intent to promote or facilitate the offense, aids, encourages, or assists the principal.
+- The accomplice is generally liable for the target crime and for other reasonably foreseeable crimes committed in its course.
+- Mere presence or knowledge is insufficient; there must be intent to assist and an act of assistance.
+- Modern law abolishes the principal/accessory-before-the-fact distinction, punishing accomplices as principals.
+- Withdrawal can negate liability only if the accomplice neutralizes the assistance or gives timely notice before the crime.
+
+==================================================
+CASE_ID: 010
+DIFFICULTY: crimdle
+SYSTEM: theft
+
+DIAGNOSIS:
+Larceny
+
+ALIASES:
+common law larceny
+larceny
+theft by taking
+
+VIGNETTE_LINES:
+
+1. A man is browsing in an electronics store and admires an expensive pair of headphones.
+2. He looks around to confirm no employees are watching him near the display.
+3. He slips the boxed headphones under his coat and conceals them against his body.
+4. He walks several aisles away and toward the exit without approaching any register.
+5. A loss-prevention officer stops him just past the last point of sale with the merchandise still hidden.
+6. The prosecution emphasizes the trespassory taking and carrying away of another's property with intent to permanently deprive.
+
+TEACHING_POINTS:
+
+- Larceny is the trespassory taking and carrying away (asportation) of the personal property of another with intent to permanently deprive.
+- Even slight movement satisfies asportation; concealment and movement toward an exit are strong evidence.
+- The intent to permanently deprive must exist at the time of the taking (concurrence principle).
+- Larceny is distinguished from embezzlement (lawful possession first) and false pretenses (title obtained by fraud).
+- Taking property one believes is one's own, even mistakenly, can negate the intent to steal (claim of right).
+
+==================================================
+CASE_ID: 011
+DIFFICULTY: crimdle
+SYSTEM: theft
+
+DIAGNOSIS:
+Embezzlement
+
+ALIASES:
+embezzlement
+fraudulent conversion
+theft by a fiduciary
+
+VIGNETTE_LINES:
+
+1. A bookkeeper is entrusted with managing a small nonprofit's bank accounts and writing its checks.
+2. Facing personal debts, she begins writing checks to a shell vendor she secretly controls.
+3. She records the payments as legitimate office expenses in the organization's ledgers.
+4. Over a year she transfers tens of thousands of dollars she was lawfully authorized to handle into her own use.
+5. An outside audit reveals the vendor does not exist and the funds went to her personal account.
+6. The charge turns on the fact that she lawfully possessed the funds before fraudulently converting them to her own use.
+
+TEACHING_POINTS:
+
+- Embezzlement is the fraudulent conversion of property of another by a person already in lawful possession of it.
+- The key distinction from larceny is that the defendant lawfully obtained possession before forming the intent to convert.
+- A fiduciary or trust relationship typically gives rise to the lawful possession element.
+- The conversion must be fraudulent and inconsistent with the owner's rights; mere borrowing with intent to return may not qualify.
+- Falsifying records to conceal the conversion is strong evidence of fraudulent intent.
+
+==================================================
+CASE_ID: 012
+DIFFICULTY: crimdle
+SYSTEM: theft
+
+DIAGNOSIS:
+False Pretenses
+
+ALIASES:
+false pretenses
+theft by deception
+obtaining property by false pretenses
+
+VIGNETTE_LINES:
+
+1. A man advertises a vintage car for sale that he claims has a rebuilt engine and clean title.
+2. A buyer expresses interest, and the seller provides forged documents showing a recent engine overhaul.
+3. He also knows, but conceals, that the car's title is salvaged after a prior flood.
+4. Relying on these representations, the buyer pays full price and the seller signs over the vehicle.
+5. The buyer later discovers the engine was never rebuilt and the title is worthless.
+6. The prosecution stresses that the defendant obtained title to the money through a knowing false representation of material fact.
+
+TEACHING_POINTS:
+
+- False pretenses is obtaining title to property of another by a knowing or reckless false representation of a material past or present fact, with intent to defraud.
+- The victim must actually rely on the misrepresentation, and the reliance must cause the transfer.
+- The key distinction from larceny by trick is that false pretenses passes title, whereas larceny by trick passes only possession.
+- A false promise of future conduct traditionally does not qualify; the misrepresentation must concern a past or present fact.
+- Concealment of a material fact can constitute a misrepresentation in appropriate circumstances.
+
+==================================================
+CASE_ID: 013
+DIFFICULTY: crimdle
+SYSTEM: theft
+
+DIAGNOSIS:
+Robbery
+
+ALIASES:
+robbery
+forcible theft
+larceny by force
+
+VIGNETTE_LINES:
+
+1. A woman is walking to her car in a parking garage late in the evening.
+2. A man approaches quickly from behind a pillar and blocks her path.
+3. He displays what appears to be a knife and demands her purse and phone.
+4. Frightened, she hands over her belongings, and he flees on foot.
+5. He is apprehended minutes later with her property and a folding knife in his pocket.
+6. The charge rests on a taking of property from the person or presence of another accomplished by force or intimidation.
+
+TEACHING_POINTS:
+
+- Robbery is larceny from the person or presence of another by force or intimidation.
+- The force or threat must occur at the time of the taking and be the means of accomplishing it.
+- A threat of imminent harm (intimidation) satisfies the element even without actual physical contact.
+- Robbery contains all larceny elements plus the force/fear element from the person or presence.
+- Aggravated or armed robbery typically requires the use or display of a dangerous weapon.
+
+==================================================
+CASE_ID: 014
+DIFFICULTY: crimdle
+SYSTEM: theft
+
+DIAGNOSIS:
+Burglary
+
+ALIASES:
+common law burglary
+burglary
+breaking and entering
+
+VIGNETTE_LINES:
+
+1. Late at night a man approaches a darkened single-family home he believes is occupied by a wealthy collector.
+2. He finds a side window that is closed but unlocked and slides it open.
+3. He climbs through into the living room without permission while the residents sleep upstairs.
+4. He intends, once inside, to locate and take a rare coin collection he has heard about.
+5. He is discovered by a resident before he finds anything and flees empty-handed.
+6. The court explains that the offense was complete upon the unauthorized nighttime entry of a dwelling with intent to commit a felony inside.
+
+TEACHING_POINTS:
+
+- Common law burglary is the breaking and entering of the dwelling of another at night with intent to commit a felony therein.
+- The intent to commit the felony must exist at the time of entry; later-formed intent does not satisfy common law burglary.
+- "Breaking" can be actual (opening a closed window) or constructive (fraud, threat); opening an unlocked window counts, but a wide-open entry traditionally does not.
+- Modern statutes often eliminate the nighttime and dwelling requirements and broaden "breaking."
+- The crime is complete on entry with the requisite intent, regardless of whether the target felony is accomplished.
+
+==================================================
+CASE_ID: 015
+DIFFICULTY: crimdle
+SYSTEM: theft
+
+DIAGNOSIS:
+Arson
+
+ALIASES:
+arson
+malicious burning
+common law arson
+
+VIGNETTE_LINES:
+
+1. A struggling restaurant owner is months behind on rent and facing eviction from his leased building.
+2. He increases the fire insurance coverage on his business equipment shortly before the incident.
+3. Late one night he spreads an accelerant through the kitchen and back office of the structure.
+4. He ignites the accelerant and leaves, and the resulting fire chars the walls and ceiling of the building.
+5. Investigators find pour patterns and accelerant residue inconsistent with an accidental fire.
+6. The charge requires the malicious burning of a structure, and the charring of the building's fabric satisfies the burning element.
+
+TEACHING_POINTS:
+
+- Common law arson is the malicious burning of the dwelling of another; modern statutes extend it to any structure and to one's own property.
+- "Burning" requires some charring of the structure's fabric; mere scorching, smoke, or blackening traditionally is insufficient.
+- "Malice" means intentional or reckless burning, not necessarily ill will.
+- Burning one's own property to defraud an insurer is a common statutory form of arson.
+- Insurance motive and accelerant evidence are circumstantial proof of malicious, intentional burning.
+
+==================================================
+CASE_ID: 016
+DIFFICULTY: crimdle
+SYSTEM: defenses
+
+DIAGNOSIS:
+Self-Defense
+
+ALIASES:
+self-defense
+justifiable use of force
+perfect self-defense
+
+VIGNETTE_LINES:
+
+1. A man is confronted outside a bar by a larger, visibly intoxicated stranger who has been threatening patrons.
+2. The stranger shoves him hard and shouts that he is going to "put him in the hospital."
+3. The stranger then draws a knife and lunges toward the man's chest.
+4. The man, who is unarmed, grabs a broken bottle from a nearby table.
+5. He strikes once at the attacker, who dies from the wound, and the man immediately calls for help.
+6. The jury is told that a defendant may use proportionate force, including deadly force, against a reasonable and imminent threat of death or serious bodily harm.
+
+TEACHING_POINTS:
+
+- Self-defense justifies force when the defendant reasonably believes it is necessary to repel an imminent unlawful threat.
+- Deadly force is permitted only against a reasonable threat of death or serious bodily injury.
+- The force used must be proportional to the threat faced.
+- Many jurisdictions impose a duty to retreat before using deadly force (except in the home under the castle doctrine); stand-your-ground jurisdictions do not.
+- A perfect self-defense claim, if accepted, results in acquittal because the killing is justified.
+
+==================================================
+CASE_ID: 017
+DIFFICULTY: crimdle
+SYSTEM: defenses
+
+DIAGNOSIS:
+Imperfect Self-Defense
+
+ALIASES:
+imperfect self-defense
+unreasonable self-defense
+imperfect defense
+
+VIGNETTE_LINES:
+
+1. A man has received vague online threats from someone he has never met in person.
+2. One evening a stranger approaches him in a parking lot reaching into a jacket pocket.
+3. Genuinely terrified and convinced this is the person who threatened him, the man pulls a handgun.
+4. He fires, killing the stranger, who turns out to have been reaching for a phone to call for directions.
+5. The jury finds the man honestly believed he was in danger, but that his belief was unreasonable under the circumstances.
+6. The court explains that this honest-but-unreasonable belief does not justify the killing but reduces it from murder to manslaughter.
+
+TEACHING_POINTS:
+
+- Imperfect self-defense applies when the defendant honestly but unreasonably believes deadly force is necessary.
+- It does not justify the killing but negates malice, reducing murder to voluntary manslaughter in many jurisdictions.
+- It can also arise where the defendant was the initial aggressor or used excessive force.
+- Contrast with perfect self-defense, which requires a reasonable belief and results in acquittal.
+- Not all jurisdictions recognize imperfect self-defense; where they do, it is a partial, mitigating defense.
+
+==================================================
+CASE_ID: 018
+DIFFICULTY: crimdle
+SYSTEM: defenses
+
+DIAGNOSIS:
+Insanity Defense
+
+ALIASES:
+insanity defense
+not guilty by reason of insanity
+M'Naghten rule
+
+VIGNETTE_LINES:
+
+1. A man with a long psychiatric history stops taking his prescribed medication for several weeks.
+2. He becomes convinced that his neighbor is a demonic entity sent to harvest his soul.
+3. Acting on this belief, he attacks and kills the neighbor in broad daylight in front of witnesses.
+4. When arrested he calmly explains that he "destroyed a demon" and saved his own life.
+5. Multiple experts agree that due to his mental disease he could not understand that his act was wrong.
+6. The verdict turns on whether, because of a mental disease or defect, he lacked the capacity to know the nature of his act or that it was wrong.
+
+TEACHING_POINTS:
+
+- The M'Naghten test asks whether, due to mental disease or defect, the defendant could not know the nature and quality of the act or that it was wrong.
+- The irresistible impulse test adds a volitional prong: whether the defendant could control conduct.
+- The MPC test combines cognitive and volitional prongs (lacking substantial capacity to appreciate criminality or conform conduct).
+- The Durham (product) test asks whether the act was the product of mental illness; it is now largely abandoned.
+- Insanity is an excuse defense; a successful claim yields not guilty by reason of insanity, often with civil commitment.
+
+==================================================
+CASE_ID: 019
+DIFFICULTY: crimdle
+SYSTEM: defenses
+
+DIAGNOSIS:
+Duress
+
+ALIASES:
+duress
+coercion defense
+compulsion
+
+VIGNETTE_LINES:
+
+1. A bank teller is approached outside work by men who show him photographs of his children at school.
+2. They tell him that unless he helps them, his family will be harmed that very day.
+3. The next morning they wait outside while he disables an alarm and opens a side door for them.
+4. He participates in the resulting theft only while the men remain in contact and watching him.
+5. He reports everything to police the moment the threat to his family is over.
+6. The defense argues he should be excused because he reasonably believed he faced an imminent threat of serious harm with no safe escape.
+
+TEACHING_POINTS:
+
+- Duress excuses criminal conduct (other than intentional murder at common law) when the defendant acts under an imminent threat of death or serious bodily harm.
+- The threat must be of imminent harm to the defendant or another, with no reasonable opportunity to escape.
+- Duress is generally not a defense to intentional homicide, though it may mitigate.
+- It is an excuse defense (the actor is not blameworthy), distinct from necessity (a justification based on choosing the lesser evil).
+- The threat must come from a human source; threats from natural forces implicate necessity instead.
+
+==================================================
+CASE_ID: 020
+DIFFICULTY: crimdle
+SYSTEM: defenses
+
+DIAGNOSIS:
+Necessity
+
+ALIASES:
+necessity
+choice of evils
+lesser harm defense
+
+VIGNETTE_LINES:
+
+1. A sudden wildfire spreads rapidly toward a small mountain community with only one road out.
+2. A group of hikers becomes trapped as flames cut off their planned route.
+3. To survive, they break into a locked, unoccupied cabin to shelter from the smoke and heat.
+4. Inside, they use the owner's food, water, and radio without permission.
+5. They are later charged with breaking and entering and theft of the supplies.
+6. The defense argues their conduct should be justified because they reasonably chose a lesser harm to avoid imminent natural danger.
+
+TEACHING_POINTS:
+
+- Necessity justifies otherwise criminal conduct when it is reasonably taken to avoid a greater imminent harm, usually from natural forces.
+- The harm avoided must be greater than the harm caused (the choice-of-evils balance).
+- The defendant must not have created the emergency and must have no reasonable lawful alternative.
+- Necessity is a justification (the act is socially desirable), whereas duress is an excuse based on human coercion.
+- At common law, necessity traditionally was not a defense to murder.
+
+==================================================
+CASE_ID: 021
+DIFFICULTY: crimdle
+SYSTEM: defenses
+
+DIAGNOSIS:
+Voluntary Intoxication
+
+ALIASES:
+voluntary intoxication
+intoxication defense
+diminished capacity by intoxication
+
+VIGNETTE_LINES:
+
+1. A man spends an evening drinking heavily at a celebration with friends.
+2. Highly intoxicated, he gets into an argument and later takes a neighbor's car, insisting it was his own identical vehicle.
+3. He is charged with a theft offense that requires intent to permanently deprive the owner of the property.
+4. At trial he argues he was too drunk to have formed any genuine intent to steal.
+5. The judge instructs the jury on how intoxication may bear on the existence of a specific intent.
+6. The court explains that self-induced intoxication may negate a specific-intent element but is not a defense to general-intent crimes.
+
+TEACHING_POINTS:
+
+- Voluntary (self-induced) intoxication may negate the mens rea of specific-intent crimes by preventing formation of the required intent.
+- It is generally not a defense to general-intent or strict-liability crimes, nor to recklessness in many jurisdictions.
+- The defense addresses whether intent actually formed, not whether the defendant was merely disinhibited.
+- Many jurisdictions limit or bar the defense; some abolish it entirely.
+- Contrast involuntary intoxication, which can be a broader excuse akin to insanity.
+
+==================================================
+CASE_ID: 022
+DIFFICULTY: crimdle
+SYSTEM: defenses
+
+DIAGNOSIS:
+Infancy
+
+ALIASES:
+infancy defense
+infancy
+juvenile incapacity
+
+VIGNETTE_LINES:
+
+1. A six-year-old takes a neighbor's bicycle from an open garage and rides it home.
+2. The child keeps the bicycle and tells friends it now belongs to him.
+3. The neighbor reports the bicycle missing and it is traced to the child's home.
+4. Prosecutors consider whether the child can be held criminally responsible for a theft offense.
+5. The defense points to the child's very young age and the common law presumptions about culpability.
+6. The court explains that a child under the relevant age is conclusively presumed incapable of forming criminal intent.
+
+TEACHING_POINTS:
+
+- At common law, children under 7 were conclusively presumed incapable of criminal intent (the infancy defense).
+- Children aged 7 to 14 were rebuttably presumed incapable, and the prosecution could rebut the presumption.
+- Children 14 and older were treated as adults for capacity purposes at common law.
+- Modern statutes vary, often setting minimum ages and channeling juveniles into the juvenile justice system.
+- Infancy is an incapacity defense focused on the inability to form the requisite mens rea.
+
+==================================================
+CASE_ID: 023
+DIFFICULTY: crimdle
+SYSTEM: defenses
+
+DIAGNOSIS:
+Entrapment
+
+ALIASES:
+entrapment
+government inducement
+entrapment defense
+
+VIGNETTE_LINES:
+
+1. A man with no criminal record is befriended by an undercover agent over several months.
+2. The agent repeatedly pressures him to obtain and sell a controlled substance, which the man initially refuses.
+3. The agent appeals to sympathy, claims to be sick, and asks again and again until the man relents.
+4. The man eventually acquires the drug solely to satisfy the persistent requests and hands it to the agent.
+5. He is immediately arrested and charged with distribution.
+6. The defense argues the criminal design originated with the government and that the defendant was not predisposed to commit the offense.
+
+TEACHING_POINTS:
+
+- Entrapment occurs when the government induces a defendant to commit a crime he was not predisposed to commit.
+- The majority (subjective) test focuses on the defendant's predisposition to commit the offense.
+- The minority (objective) test focuses on whether police conduct would induce a normally law-abiding person.
+- Merely providing an opportunity to commit a crime (e.g., a sting) is not entrapment.
+- Predisposition can be shown by ready compliance, prior conduct, or expertise; persistent inducement of a reluctant, unpredisposed person supports the defense.
+
+==================================================
+CASE_ID: 024
+DIFFICULTY: crimdle
+SYSTEM: mens_rea
+
+DIAGNOSIS:
+Transferred Intent
+
+ALIASES:
+transferred intent
+doctrine of transferred intent
+bad aim doctrine
+
+VIGNETTE_LINES:
+
+1. A man harbors a long-running grudge against a rival and decides to shoot him at a crowded street festival.
+2. He spots the rival across the plaza and raises a pistol, aiming carefully.
+3. He fires just as a bystander steps unexpectedly into the line of fire.
+4. The bullet misses the intended target entirely and strikes the bystander.
+5. The bystander dies, while the intended victim walks away unaware of the attempt.
+6. The court holds the defendant liable for murder of the bystander because his intent to kill follows the bullet to the unintended victim.
+
+TEACHING_POINTS:
+
+- Transferred intent applies the defendant's intent toward an intended victim to an unintended victim who is actually harmed.
+- It typically operates within the same type of harm and the same general crime (intent to kill transfers to a killing).
+- The defendant may also be liable for attempt as to the intended victim, depending on the jurisdiction.
+- The doctrine does not transfer across different social harms (e.g., intent to break a window does not become intent to injure a person in all jurisdictions).
+- It is most commonly applied in homicide and battery contexts.
+
+==================================================
+CASE_ID: 025
+DIFFICULTY: crimdle
+SYSTEM: mens_rea
+
+DIAGNOSIS:
+Willful Blindness
+
+ALIASES:
+willful blindness
+deliberate ignorance
+ostrich doctrine
+
+VIGNETTE_LINES:
+
+1. A man is offered a generous fee to drive a sealed van across the border with "no questions asked."
+2. He notices the van rides heavily and that his employer is unusually secretive about the cargo.
+3. He is specifically told not to look in the back and is warned that "what you don't know can't hurt you."
+4. He deliberately avoids opening the cargo doors despite strong suspicions about the contents.
+5. At the border, officers discover a large quantity of narcotics concealed in the van.
+6. The court instructs that a defendant who deliberately avoids confirming an obvious fact may be treated as having knowledge of it.
+
+TEACHING_POINTS:
+
+- Willful blindness allows knowledge to be inferred when a defendant is aware of a high probability of a fact and deliberately avoids confirming it.
+- It functions as a substitute for actual knowledge in knowledge-requiring offenses.
+- The defendant must subjectively suspect the fact and take deliberate steps to avoid learning the truth.
+- It is not satisfied by mere negligence or a failure to investigate that an ordinary person might have pursued.
+- The doctrine is frequently applied in drug-courier and money-laundering prosecutions.
+
+==================================================
+==================================================
+CASE_ID: 026
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Miranda Violation
+
+ALIASES:
+Miranda warnings
+Miranda v. Arizona
+custodial interrogation rights
+
+VIGNETTE_LINES:
+
+1. Police arrest a suspect at his home and transport him to the station in handcuffs.
+2. He is placed in a locked interview room and told he is not free to leave.
+3. Without any advisement of his rights, detectives begin questioning him about a burglary.
+4. After persistent questioning he makes several incriminating admissions about his whereabouts.
+5. Only after the admissions do the detectives read him his rights and obtain a signed waiver.
+6. The defense moves to suppress the earlier statements because the suspect was subjected to custodial interrogation without the required warnings.
+
+TEACHING_POINTS:
+
+- Miranda warnings are required before custodial interrogation; both custody and interrogation must be present.
+- Custody is measured by whether a reasonable person would feel free to leave (a formal arrest or its functional equivalent).
+- Interrogation includes express questioning and its functional equivalent (words or actions likely to elicit an incriminating response).
+- Statements obtained in violation of Miranda are generally inadmissible in the prosecution's case-in-chief but may be used to impeach.
+- A valid waiver must be knowing, intelligent, and voluntary; warnings given only after a confession may not cure the violation.
+
+==================================================
+CASE_ID: 027
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Terry Stop
+
+ALIASES:
+Terry stop
+stop and frisk
+investigative detention
+
+VIGNETTE_LINES:
+
+1. An officer on patrol notices a man repeatedly pacing in front of a closed store late at night, peering in the windows.
+2. The man confers with a second individual, and the two take turns walking past the storefront several times.
+3. Based on training and experience, the officer suspects they may be casing the store for a robbery.
+4. The officer approaches, identifies himself, and briefly detains the men to ask a few questions.
+5. Fearing they may be armed, he pats down the outer clothing of one man and feels a hard, gun-shaped object.
+6. The court evaluates whether the officer had reasonable, articulable suspicion to justify the brief detention and protective frisk.
+
+TEACHING_POINTS:
+
+- A Terry stop is a brief investigative detention supported by reasonable, articulable suspicion of criminal activity, a lower standard than probable cause.
+- A protective frisk for weapons is permitted only if the officer reasonably suspects the person is armed and dangerous.
+- The frisk is limited to a pat-down of outer clothing for weapons, not a full search for evidence.
+- Under the plain-feel doctrine, contraband whose identity is immediately apparent during a lawful frisk may be seized.
+- The scope and duration must be reasonably related to the circumstances justifying the stop.
+
+==================================================
+CASE_ID: 028
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Probable Cause
+
+ALIASES:
+probable cause
+warrant requirement
+fair probability standard
+
+VIGNETTE_LINES:
+
+1. A detective receives a tip from a known, reliable informant who has given accurate information before.
+2. The informant describes a specific car, address, and pattern of short visits consistent with drug sales.
+3. Officers corroborate the details by surveilling the location and observing the described conduct firsthand.
+4. They compile the informant's track record and their own observations into a sworn affidavit.
+5. A magistrate reviews the totality of the circumstances and signs a warrant to search the residence.
+6. On appeal the court asks whether the affidavit established a fair probability that evidence would be found at the place to be searched.
+
+TEACHING_POINTS:
+
+- Probable cause exists where the totality of the circumstances shows a fair probability that contraband or evidence will be found.
+- Illinois v. Gates replaced the rigid Aguilar-Spinelli test with a totality-of-the-circumstances approach for informant tips.
+- An informant's veracity, reliability, and basis of knowledge are relevant factors, and police corroboration can bolster a tip.
+- Warrants must be supported by oath and particularly describe the place to be searched and items to be seized.
+- A magistrate must be neutral and detached; the standard is more than mere suspicion but less than certainty.
+
+==================================================
+CASE_ID: 029
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Exclusionary Rule
+
+ALIASES:
+exclusionary rule
+suppression of evidence
+Mapp v. Ohio
+
+VIGNETTE_LINES:
+
+1. Officers conduct a warrantless search of a home without consent or any recognized exception.
+2. Inside, they discover and seize a cache of stolen goods and a ledger of illegal transactions.
+3. The defendant is charged based largely on the items recovered during the search.
+4. Defense counsel files a pretrial motion challenging the manner in which the evidence was obtained.
+5. The prosecution concedes there was no warrant and no applicable exception to the warrant requirement.
+6. The court holds that evidence obtained in violation of the Fourth Amendment must be barred from the prosecution's case-in-chief.
+
+TEACHING_POINTS:
+
+- The exclusionary rule bars the use of evidence obtained in violation of the Fourth Amendment in the prosecution's case-in-chief.
+- Its primary purpose is to deter unlawful police conduct.
+- Mapp v. Ohio applied the rule to the states through the Fourteenth Amendment.
+- Exceptions include good faith, inevitable discovery, independent source, and attenuation of the taint.
+- Illegally obtained evidence may still be used to impeach the defendant's testimony.
+
+==================================================
+CASE_ID: 030
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Fruit of the Poisonous Tree
+
+ALIASES:
+fruit of the poisonous tree
+derivative evidence
+Wong Sun doctrine
+
+VIGNETTE_LINES:
+
+1. Police unlawfully arrest a man without probable cause and question him at the station.
+2. During the illegal detention he reveals the location of a storage unit.
+3. Officers go directly to the storage unit based solely on that information and find stolen property.
+4. The defense moves to suppress not only the statement but also the items found in the unit.
+5. The prosecution argues the physical evidence should come in regardless of how the lead was obtained.
+6. The court analyzes whether the physical evidence is sufficiently connected to the illegality to be tainted, absent any intervening exception.
+
+TEACHING_POINTS:
+
+- The fruit of the poisonous tree doctrine extends exclusion to evidence derived from an initial constitutional violation.
+- Evidence is suppressed if it was obtained by exploitation of the primary illegality rather than by independent means.
+- Key exceptions are independent source, inevitable discovery, and attenuation (the connection becomes sufficiently remote).
+- Wong Sun v. United States established that derivative evidence may be tainted by the original illegality.
+- Both physical evidence and statements can be fruits, though Miranda violations are treated somewhat differently for physical fruits.
+
+==================================================
+CASE_ID: 031
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Search Incident to Lawful Arrest
+
+ALIASES:
+search incident to arrest
+SILA
+arrest search exception
+
+VIGNETTE_LINES:
+
+1. Officers lawfully arrest a driver on an outstanding warrant during a routine traffic stop.
+2. They handcuff him and place him in the back of the patrol car.
+3. Without a warrant, they search his person and find a small amount of contraband in his pocket.
+4. They then search the passenger compartment of his vehicle within his immediate reach at the time of arrest.
+5. The defense challenges both the search of his body and the search of the car interior.
+6. The court applies the rule permitting a warrantless search of the arrestee and the area within his immediate control incident to a lawful arrest.
+
+TEACHING_POINTS:
+
+- A search incident to a lawful arrest permits a warrantless search of the arrestee and the area within his immediate control (the wingspan).
+- The justifications are officer safety and prevention of evidence destruction (Chimel v. California).
+- For vehicles, Arizona v. Gant limits the search to when the arrestee can access the compartment or it is reasonable to believe evidence of the arrest offense is inside.
+- The arrest must be lawful for the exception to apply; an unlawful arrest taints the search.
+- Riley v. California holds that a warrant is generally required to search digital data on a cell phone seized incident to arrest.
+
+==================================================
+CASE_ID: 032
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Plain View Doctrine
+
+ALIASES:
+plain view doctrine
+plain view seizure
+plain view exception
+
+VIGNETTE_LINES:
+
+1. Officers obtain a valid warrant to search a home for a stolen large-screen television.
+2. While lawfully looking in places where the television could be, an officer opens a closet.
+3. In the closet, in open view, sits a clear bag of what is plainly an illegal substance.
+4. The officer immediately recognizes the item as contraband without manipulating or moving anything.
+5. He seizes the bag even though it is not described in the warrant.
+6. The court upholds the seizure because the officer was lawfully present and the incriminating nature of the item was immediately apparent.
+
+TEACHING_POINTS:
+
+- The plain view doctrine permits seizure of an item without a warrant if the officer is lawfully present, the item is in plain view, and its incriminating character is immediately apparent.
+- Lawful presence may arise from a warrant, an exception, or any lawful vantage point.
+- The incriminating nature must be immediately apparent without further searching (no manipulating the object to develop probable cause).
+- The officer may not exceed the scope of the lawful intrusion (cannot look where the warranted item could not be).
+- Horton v. California held that inadvertence is not a required element of the plain view doctrine.
+
+==================================================
+CASE_ID: 033
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Consent Search
+
+ALIASES:
+consent search
+voluntary consent
+consent exception
+
+VIGNETTE_LINES:
+
+1. Officers knock on an apartment door to investigate a noise complaint without a warrant.
+2. A resident answers and, after a brief conversation, agrees to let the officers come inside and look around.
+3. The officers do not threaten the resident or claim authority to enter regardless of the answer.
+4. While inside with permission, they observe evidence of a separate crime in the rooms they were invited into.
+5. The defendant later argues the officers had no warrant and no other justification to be inside.
+6. The court upholds the entry on the ground that the resident voluntarily consented and the search stayed within the scope of that consent.
+
+TEACHING_POINTS:
+
+- A voluntary consent search is a recognized exception to the warrant and probable cause requirements.
+- Voluntariness is judged by the totality of the circumstances; the suspect need not be told of the right to refuse (Schneckloth v. Bustamonte).
+- Consent must come from someone with actual or apparent authority over the area searched.
+- A present, objecting co-occupant can override another occupant's consent (Georgia v. Randolph).
+- The search may not exceed the scope of the consent given, which is measured by objective reasonableness.
+
+==================================================
+CASE_ID: 034
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Exigent Circumstances
+
+ALIASES:
+exigent circumstances
+emergency exception
+hot pursuit
+
+VIGNETTE_LINES:
+
+1. Officers responding to a report of gunshots see a wounded man stagger into a house and shut the door.
+2. They hear shouting and what sounds like a struggle continuing inside.
+3. Without stopping to obtain a warrant, they force entry to render aid and secure the scene.
+4. Inside they find an injured occupant and, in the same rooms, evidence of a crime.
+5. The defense argues the warrantless entry violated the Fourth Amendment.
+6. The court upholds the entry because an urgent need to prevent harm or render emergency aid justified acting without a warrant.
+
+TEACHING_POINTS:
+
+- Exigent circumstances justify warrantless entry when there is an urgent need and no time to obtain a warrant.
+- Recognized exigencies include hot pursuit, imminent destruction of evidence, and the emergency-aid/risk-to-life situation.
+- The emergency-aid exception allows entry to assist someone seriously injured or threatened with injury (Brigham City v. Stuart).
+- The scope of the warrantless action must be limited to addressing the exigency.
+- Police may not create the exigency through threatened or actual Fourth Amendment violations (Kentucky v. King limits this).
+
+==================================================
+CASE_ID: 035
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Ineffective Assistance of Counsel
+
+ALIASES:
+ineffective assistance of counsel
+Strickland v. Washington
+Sixth Amendment counsel claim
+
+VIGNETTE_LINES:
+
+1. A defendant is convicted at trial and later challenges the performance of his appointed attorney.
+2. The attorney failed to investigate an alibi witness who could place the defendant elsewhere during the crime.
+3. The attorney also did not object to clearly inadmissible and highly prejudicial evidence.
+4. On appeal the defendant argues these failures changed the outcome of his trial.
+5. The reviewing court considers both the adequacy of the representation and its effect on the verdict.
+6. The court applies a two-part test asking whether counsel's performance was deficient and whether that deficiency prejudiced the defense.
+
+TEACHING_POINTS:
+
+- The Sixth Amendment guarantees effective assistance of counsel; Strickland v. Washington supplies the governing test.
+- The defendant must show (1) deficient performance falling below an objective standard of reasonableness and (2) prejudice.
+- Prejudice means a reasonable probability that, but for counsel's errors, the result would have been different.
+- Courts are highly deferential and presume counsel's conduct was sound trial strategy.
+- Some errors (e.g., complete denial of counsel) are presumptively prejudicial under United States v. Cronic.
+
+==================================================
+CASE_ID: 036
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Double Jeopardy
+
+ALIASES:
+double jeopardy
+former jeopardy
+Fifth Amendment double jeopardy
+
+VIGNETTE_LINES:
+
+1. A defendant is tried for a single offense, and the jury returns a verdict of acquittal.
+2. New evidence later surfaces that strongly suggests the defendant was in fact guilty.
+3. Prosecutors in the same jurisdiction seek to retry him for the identical offense.
+4. Defense counsel objects that the constitution bars the second prosecution.
+5. The prosecution argues the new evidence justifies another trial in the interest of justice.
+6. The court holds that once jeopardy attached and resulted in an acquittal, the same sovereign cannot retry the defendant for that offense.
+
+TEACHING_POINTS:
+
+- The Double Jeopardy Clause protects against a second prosecution for the same offense after acquittal or conviction, and against multiple punishments.
+- Jeopardy attaches when the jury is sworn (jury trial) or the first witness is sworn (bench trial).
+- The Blockburger test defines "same offense": offenses are different if each requires proof of an element the other does not.
+- The dual sovereignty doctrine permits separate prosecutions by different sovereigns (e.g., state and federal) for the same act.
+- A retrial is generally permitted after a hung jury or a defendant-sought mistrial/reversal (other than for insufficient evidence).
+
+==================================================
+CASE_ID: 037
+DIFFICULTY: crimdle
+SYSTEM: constitutional_criminal_procedure
+
+DIAGNOSIS:
+Confrontation Clause Violation
+
+ALIASES:
+Confrontation Clause
+Crawford v. Washington
+right to confront witnesses
+
+VIGNETTE_LINES:
+
+1. A domestic violence case proceeds to trial, but the alleged victim does not appear to testify.
+2. The prosecution seeks to introduce a detailed statement she gave to police during a stationhouse interview after the incident.
+3. The statement squarely identifies the defendant and describes the assault in narrative detail.
+4. The defendant has never had any opportunity to question the absent declarant.
+5. Defense counsel objects that admitting the statement denies the defendant a core trial right.
+6. The court must decide whether the statement is testimonial and therefore inadmissible absent confrontation.
+
+TEACHING_POINTS:
+
+- The Confrontation Clause bars admission of testimonial hearsay unless the declarant is unavailable and the defendant had a prior opportunity to cross-examine.
+- Crawford v. Washington established the testimonial framework, replacing reliability-based analysis.
+- A statement is testimonial when its primary purpose is to establish past facts for later prosecution (e.g., a stationhouse interrogation).
+- Statements made to address an ongoing emergency are generally nontestimonial (Davis v. Washington).
+- The clause applies to criminal prosecutions and protects the defendant's right to face adverse witnesses.
+
+==================================================
+CASE_ID: 038
+DIFFICULTY: crimdle
+SYSTEM: constitutional_criminal_procedure
+
+DIAGNOSIS:
+Involuntary Confession
+
+ALIASES:
+involuntary confession
+coerced confession
+due process voluntariness
+
+VIGNETTE_LINES:
+
+1. A suspect is held for questioning over an extended period without food, water, or sleep.
+2. Officers question him in relays for many hours, refusing his requests for a break.
+3. They falsely tell him that his refusal to talk will result in his children being taken away.
+4. Exhausted and frightened, he finally signs a written statement admitting guilt.
+5. He later claims the statement was the product of overbearing pressure rather than his free choice.
+6. The court analyzes whether, under the totality of the circumstances, his will was overborne by police coercion.
+
+TEACHING_POINTS:
+
+- A confession violates due process if it is involuntary, meaning the defendant's will was overborne by coercive police conduct.
+- Voluntariness is assessed under the totality of the circumstances (length of detention, deprivation, threats, suspect's characteristics).
+- Coercive police activity is a necessary predicate (Colorado v. Connelly); a confession driven solely by internal compulsion is not "involuntary."
+- An involuntary confession is inadmissible for all purposes, including impeachment, unlike a mere Miranda violation.
+- Deception alone does not always render a confession involuntary, but threats to family and extreme deprivation weigh heavily toward coercion.
+
+==================================================
+CASE_ID: 039
+DIFFICULTY: crimdle
+SYSTEM: mens_rea
+
+DIAGNOSIS:
+Recklessness
+
+ALIASES:
+recklessness
+reckless mens rea
+conscious disregard of risk
+
+VIGNETTE_LINES:
+
+1. A man is showing off a handgun he believes is unloaded at a small gathering.
+2. Several guests warn him to point it away from people, but he laughs them off.
+3. He is aware that he never personally checked the chamber for rounds.
+4. He waves the gun toward a friend and pulls the trigger as a joke.
+5. The gun discharges, seriously wounding the friend, and the man is charged with a reckless offense.
+6. The instruction asks whether he consciously disregarded a substantial and unjustifiable risk that a reasonable person would not have disregarded.
+
+TEACHING_POINTS:
+
+- Recklessness under the MPC is the conscious disregard of a substantial and unjustifiable risk, a gross deviation from a law-abiding person's conduct.
+- It requires subjective awareness of the risk, distinguishing it from negligence.
+- Negligence, by contrast, is a failure to perceive a substantial and unjustifiable risk (an objective standard).
+- The disregard must be a gross deviation from the standard of care.
+- Recklessness is the default mens rea under the MPC when a statute is silent as to a material element.
+
+==================================================
+CASE_ID: 040
+DIFFICULTY: crimdle
+SYSTEM: mens_rea
+
+DIAGNOSIS:
+Criminal Negligence
+
+ALIASES:
+criminal negligence
+negligent mens rea
+gross negligence
+
+VIGNETTE_LINES:
+
+1. A contractor is hired to install a gas heater in a small rental cabin.
+2. He skips reading the installation manual and does not check the venting requirements.
+3. He fails to perceive that the unit is venting exhaust back into the living space, a risk an ordinary professional would catch.
+4. A tenant later becomes seriously ill from carbon monoxide exposure traced to the faulty installation.
+5. The contractor genuinely never realized the danger he created.
+6. The prosecution proceeds on the theory that he should have been aware of a substantial and unjustifiable risk.
+
+TEACHING_POINTS:
+
+- Criminal negligence is the failure to perceive a substantial and unjustifiable risk that a reasonable person would have perceived.
+- Unlike recklessness, it does not require subjective awareness of the risk; the standard is objective.
+- The deviation from the reasonable standard of care must be gross, not the slight deviation sufficient for civil negligence.
+- It often supplies the mens rea for involuntary manslaughter and negligent homicide.
+- "Should have known" language signals an objective negligence standard rather than knowledge or recklessness.
+
+==================================================
+CASE_ID: 041
+DIFFICULTY: crimdle
+SYSTEM: mens_rea
+
+DIAGNOSIS:
+Knowledge
+
+ALIASES:
+knowing mens rea
+knowledge
+knowingly
+
+VIGNETTE_LINES:
+
+1. A warehouse manager is told by a supervisor to ship a series of unlabeled drums to a remote site.
+2. He is informed in writing that the drums contain a hazardous chemical that must not enter waterways.
+3. He nonetheless directs employees to dump the drums into a drainage ditch to save disposal costs.
+4. He does not desire to pollute the river but is fully aware that the ditch flows directly into it.
+5. The chemicals reach the river, and he is charged under a statute requiring that he act "knowingly."
+6. The instruction explains that knowledge is satisfied when the defendant is practically certain his conduct will cause the prohibited result.
+
+TEACHING_POINTS:
+
+- Under the MPC, a person acts knowingly as to a result when he is practically certain the result will occur, and as to conduct/circumstances when aware.
+- Knowledge differs from purpose: purpose requires a conscious objective, while knowledge requires awareness or practical certainty.
+- A defendant can act knowingly even without desiring the result, so long as he is aware it is practically certain.
+- Willful blindness can substitute for knowledge where the defendant deliberately avoids confirming a high-probability fact.
+- Many regulatory and environmental offenses turn on whether the defendant acted knowingly.
+
+==================================================
+CASE_ID: 042
+DIFFICULTY: crimdle
+SYSTEM: mens_rea
+
+DIAGNOSIS:
+Purpose
+
+ALIASES:
+purposeful mens rea
+specific intent
+purposely
+
+VIGNETTE_LINES:
+
+1. A man wants to ensure that a witness cannot testify against him at an upcoming trial.
+2. His conscious objective is to make sure the witness never reaches the courthouse.
+3. He carefully selects a method designed specifically to bring about that exact outcome.
+4. He takes steps aimed solely at producing the result he desires, not merely risking it.
+5. The statute under which he is charged requires that he acted with the most culpable mental state.
+6. The instruction defines that state as acting with the conscious objective to cause the prohibited result.
+
+TEACHING_POINTS:
+
+- Purpose (purposely) under the MPC means it is the defendant's conscious objective to engage in the conduct or cause the result.
+- It is the most culpable mental state and aligns with common law "specific intent."
+- Purpose is distinguished from knowledge, where the defendant is merely practically certain of the result without desiring it.
+- Some offenses require purpose specifically (e.g., attempt requires purpose to bring about the criminal result).
+- Motive is not the same as purpose; purpose concerns the conscious objective, while motive is the reason behind it.
+
+==================================================
+CASE_ID: 043
+DIFFICULTY: crimdle
+SYSTEM: homicide
+
+DIAGNOSIS:
+Second-Degree Murder
+
+ALIASES:
+second-degree murder
+intent-to-kill murder
+intentional murder without premeditation
+
+VIGNETTE_LINES:
+
+1. Two acquaintances get into a sudden, heated argument at a party over an unpaid debt.
+2. The argument escalates and one man, in a surge of anger, decides then and there to kill the other.
+3. He grabs a kitchen knife from a nearby counter and immediately stabs the other man in the chest.
+4. There is no evidence of any prior planning or that he came to the party intending harm.
+5. The victim dies, and the defense concedes the killing was intentional but disputes premeditation.
+6. The jury is instructed on a malicious, intentional killing that lacks the deliberation required for the higher degree.
+
+TEACHING_POINTS:
+
+- Second-degree murder is a killing with malice aforethought that is not premeditated, deliberate, or otherwise elevated to first degree.
+- Intent to kill formed in the moment, without reflection, supports second-degree rather than first-degree murder.
+- Malice can be express (intent to kill or cause serious bodily harm) or implied (depraved heart).
+- The absence of adequate provocation distinguishes it from voluntary manslaughter.
+- Many jurisdictions treat intentional killings as second degree by default unless the prosecution proves premeditation and deliberation.
+
+==================================================
+CASE_ID: 044
+DIFFICULTY: crimdle
+SYSTEM: theft
+
+DIAGNOSIS:
+Larceny by Trick
+
+ALIASES:
+larceny by trick
+theft by trick
+fraudulent acquisition of possession
+
+VIGNETTE_LINES:
+
+1. A man approaches a jeweler claiming to be a courier for a wealthy regular customer.
+2. He asks to take an expensive watch "on approval" to show the customer, promising to return within the hour.
+3. The jeweler hands over the watch but makes clear that ownership remains with the store until payment.
+4. The man has no intention of returning and disappears with the watch immediately.
+5. He is later caught selling the watch and claims he merely failed to bring it back as a civil matter.
+6. The court explains that he obtained only possession by deception while title stayed with the owner, supporting this particular theft theory.
+
+TEACHING_POINTS:
+
+- Larceny by trick is obtaining possession (not title) of another's property by fraud or deception, with intent to steal.
+- The crucial distinction from false pretenses is that false pretenses transfers title, while larceny by trick transfers only possession.
+- The fraudulent intent must exist at the time possession is obtained (concurrence).
+- Because only possession passes, the trespassory-taking element of larceny is satisfied by the fraud.
+- Mislabeling a fraud as a mere breach of a civil promise does not defeat criminal liability where intent to steal existed at the outset.
+
+==================================================
+CASE_ID: 045
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Right to Counsel at Lineup
+
+ALIASES:
+right to counsel at lineup
+United States v. Wade
+post-indictment identification
+
+VIGNETTE_LINES:
+
+1. A man is formally indicted for robbery and held pending trial.
+2. Police arrange a corporeal lineup at the jail to have the victim identify the perpetrator.
+3. The defendant's attorney is not notified and is not present for the procedure.
+4. The victim views the lineup and identifies the defendant as the robber.
+5. The defense moves to exclude the identification, citing the absence of counsel at a critical stage.
+6. The court analyzes whether the post-indictment lineup was a critical stage requiring the presence of counsel.
+
+TEACHING_POINTS:
+
+- A post-indictment (post-charge) corporeal lineup is a critical stage at which the Sixth Amendment right to counsel attaches (United States v. Wade).
+- The right does not apply to photographic arrays (United States v. Ash) or to pre-charge lineups.
+- The Sixth Amendment right to counsel is offense-specific and attaches at the initiation of formal proceedings.
+- An identification obtained without counsel at a critical stage may be excluded, as may a tainted in-court identification.
+- This is distinct from the Fifth Amendment Miranda right to counsel, which is triggered by custodial interrogation.
+
+==================================================
+CASE_ID: 046
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Automobile Exception
+
+ALIASES:
+automobile exception
+Carroll doctrine
+vehicle search exception
+
+VIGNETTE_LINES:
+
+1. Officers lawfully stop a vehicle for a traffic violation on a public highway.
+2. As the driver lowers the window, an officer smells the strong odor of raw marijuana coming from inside.
+3. Based on that odor and his training, the officer concludes there is likely contraband in the car.
+4. Without obtaining a warrant, the officers search the passenger compartment and the trunk.
+5. They find packaged drugs inside a closed container in the trunk.
+6. The court upholds the search because probable cause plus the inherent mobility of the vehicle dispensed with the warrant requirement.
+
+TEACHING_POINTS:
+
+- The automobile exception permits a warrantless search of a vehicle supported by probable cause, due to its ready mobility and reduced expectation of privacy.
+- The scope extends to any part of the vehicle and containers within it that may hold the object of the search (United States v. Ross).
+- Probable cause to search the vehicle, not merely to arrest an occupant, is required.
+- The exception applies even if there was time to get a warrant, so long as probable cause and mobility exist.
+- The odor of contraband, recognized by a trained officer, can establish probable cause.
+
+==================================================
+CASE_ID: 047
+DIFFICULTY: crimdle
+SYSTEM: homicide
+
+DIAGNOSIS:
+Misdemeanor Manslaughter
+
+ALIASES:
+misdemeanor manslaughter
+unlawful act manslaughter
+misdemeanor-manslaughter rule
+
+VIGNETTE_LINES:
+
+1. A man gets into a minor altercation and throws a single punch intending only to bruise the other person.
+2. The punch is an unlawful battery but is not the kind of blow expected to cause serious harm.
+3. The victim, however, falls backward and strikes his head on the curb.
+4. The victim dies from the head injury, which no one anticipated.
+5. The defendant argues he never intended or foresaw a death.
+6. The prosecution relies on the death having occurred during the commission of an unlawful act not amounting to a felony.
+
+TEACHING_POINTS:
+
+- The misdemeanor-manslaughter rule imposes involuntary manslaughter liability when a death occurs during a misdemeanor (or unlawful act not amounting to a felony).
+- It is the misdemeanor analog of the felony murder rule.
+- Many jurisdictions limit it to malum in se misdemeanors or require proximate causation and foreseeability.
+- The predicate unlawful act supplies the culpability in place of proof of recklessness or negligence.
+- A simple battery that unexpectedly causes a fatal fall is the classic textbook example.
+
+==================================================
+CASE_ID: 048
+DIFFICULTY: crimdle
+SYSTEM: inchoate_crimes
+
+DIAGNOSIS:
+Factual Impossibility
+
+ALIASES:
+factual impossibility
+impossibility defense
+attempt impossibility
+
+VIGNETTE_LINES:
+
+1. A pickpocket spots a well-dressed man and decides to steal his wallet on a crowded subway platform.
+2. He carefully positions himself and slips his hand into the man's rear pocket.
+3. Unbeknownst to him, the pocket is completely empty because the man left his wallet at home.
+4. The pickpocket withdraws his hand having taken nothing and is grabbed by a transit officer who saw the move.
+5. He argues he cannot be guilty because there was nothing there to steal.
+6. The court rejects the argument and convicts him of attempt, explaining that this type of impossibility is no defense.
+
+TEACHING_POINTS:
+
+- Factual impossibility (a fact unknown to the defendant makes completion impossible) is NOT a defense to attempt.
+- The defendant is judged on the facts as he believed them to be; intent plus a substantial step suffices.
+- An empty pocket is the classic illustration: the intent to steal and the act of reaching in complete the attempt.
+- Legal impossibility (the intended act is not actually a crime) traditionally IS a defense, though the MPC largely abolishes the distinction.
+- Courts and the MPC focus on the defendant's culpable mental state and conduct, not on fortuitous external facts.
+
+==================================================
+CASE_ID: 049
+DIFFICULTY: crimdle
+SYSTEM: defenses
+
+DIAGNOSIS:
+Defense of Others
+
+ALIASES:
+defense of others
+defense of third persons
+intervenor defense
+
+VIGNETTE_LINES:
+
+1. A bystander sees a man violently beating a woman who is screaming for help in an alley.
+2. The bystander shouts for the attacker to stop, but the assault continues and intensifies.
+3. The attacker raises a heavy pipe over the woman's head as if to deliver a fatal blow.
+4. The bystander tackles the attacker and strikes him to stop the assault, seriously injuring him.
+5. It later turns out the woman had provoked the encounter, though the bystander could not have known this.
+6. The court considers whether the intervenor reasonably believed the person aided was entitled to use force in self-defense.
+
+TEACHING_POINTS:
+
+- Defense of others permits force to protect a third person when the defender reasonably believes that person is entitled to use self-defense.
+- The modern/majority view uses a reasonable-belief standard, protecting a good-faith mistaken intervenor.
+- The older "alter ego" rule limited the defender to the rights the person aided actually had (no protection if mistaken).
+- The force used must be proportional and otherwise satisfy self-defense principles (imminence, necessity).
+- Reasonableness is judged on the appearances as they reasonably seemed to the intervenor at the time.
+
+==================================================
+CASE_ID: 050
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Invocation of Right to Counsel
+
+ALIASES:
+Edwards rule
+invocation of counsel
+Fifth Amendment right to counsel
+
+VIGNETTE_LINES:
+
+1. A suspect in custody is read his rights and clearly states, "I want a lawyer before I say anything."
+2. Questioning stops, and he is returned to a holding cell.
+3. A few hours later, different detectives re-enter and, without counsel present, begin asking about the same crime.
+4. They re-advise him of his rights, and this time he answers questions and makes admissions.
+5. The defense moves to suppress the later statements based on the earlier request for counsel.
+6. The court applies the rule barring police-initiated interrogation after a suspect unambiguously invokes the right to counsel.
+
+TEACHING_POINTS:
+
+- Under Edwards v. Arizona, once a suspect invokes the Miranda right to counsel, police may not reinitiate interrogation until counsel is present.
+- The invocation of counsel must be unambiguous (Davis v. United States); an equivocal reference is insufficient.
+- A suspect who invokes counsel may still reinitiate contact and waive the right himself.
+- This Fifth Amendment right is not offense-specific, unlike the Sixth Amendment right to counsel.
+- A break in custody of at least 14 days (Maryland v. Shatzer) can dissipate the Edwards protection.
+
+==================================================
+==================================================
+CASE_ID: 051
+DIFFICULTY: crimdle
+SYSTEM: homicide
+
+DIAGNOSIS:
+Causation in Homicide
+
+ALIASES:
+proximate cause in homicide
+intervening cause
+causation
+
+VIGNETTE_LINES:
+
+1. A man shoots a victim once in the abdomen during a robbery, seriously but not fatally wounding him.
+2. Paramedics stabilize the victim, and he is rushed to a hospital where he is expected to survive.
+3. At the hospital, a grossly negligent surgeon nicks an artery and the victim bleeds to death on the table.
+4. The defense argues that the medical error, not the gunshot, actually killed the victim.
+5. The prosecution contends the shooting set the fatal chain in motion and the victim would not have been in surgery otherwise.
+6. The court analyzes whether the medical negligence was a foreseeable consequence or a superseding cause breaking the chain.
+
+TEACHING_POINTS:
+
+- Homicide requires both cause-in-fact (but-for) and proximate (legal) causation.
+- An intervening cause does not relieve liability if it was reasonably foreseeable; ordinary medical negligence is generally foreseeable.
+- A superseding cause (e.g., grossly abnormal or intentional intervening act) may break the causal chain.
+- The defendant takes the victim as he finds him (the eggshell-skull principle) for cause-in-fact purposes.
+- Gross or reckless medical treatment is sometimes deemed superseding, but ordinary negligence typically is not.
+
+==================================================
+CASE_ID: 052
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Public Safety Exception to Miranda
+
+ALIASES:
+public safety exception
+New York v. Quarles
+Quarles exception
+
+VIGNETTE_LINES:
+
+1. Officers chase an armed robbery suspect into a crowded supermarket late at night.
+2. They apprehend and handcuff him, but notice his shoulder holster is empty.
+3. Before reading any rights, an officer urgently asks, "Where is the gun?"
+4. The suspect nods toward some empty cartons and says the gun is over there.
+5. The recovered weapon and the statement are challenged because no warnings were given first.
+6. The court upholds admission, reasoning that an immediate threat to public safety justified questioning before warnings.
+
+TEACHING_POINTS:
+
+- The public safety exception (New York v. Quarles) permits limited un-Mirandized questioning to address an immediate threat to public or officer safety.
+- The exception is narrow and tied to the exigency (e.g., locating a hidden weapon).
+- Statements and physical evidence obtained under the exception are admissible despite the absence of warnings.
+- The questioning must be prompted by objective concern for safety, not a pretext to gather evidence.
+- Once the safety concern is resolved, ordinary Miranda requirements resume.
+
+==================================================
+CASE_ID: 053
+DIFFICULTY: crimdle
+SYSTEM: inchoate_crimes
+
+DIAGNOSIS:
+Wharton's Rule
+
+ALIASES:
+Wharton's Rule
+concert-of-action rule
+conspiracy plurality limitation
+
+VIGNETTE_LINES:
+
+1. Two adults agree to engage in conduct that, by its very nature, requires exactly two participants to occur.
+2. They are charged not only with the substantive offense but also with conspiring to commit it.
+3. No third party is involved, and the agreement includes only the two necessary participants.
+4. The defense argues the conspiracy charge improperly doubles up on a crime that already requires two people.
+5. The prosecution insists the agreement itself is independently punishable as a conspiracy.
+6. The court applies a rule barring the conspiracy charge where the target crime inherently requires the participation of the same two people.
+
+TEACHING_POINTS:
+
+- Wharton's Rule bars a conspiracy charge where the target offense necessarily requires the participation of two persons (e.g., dueling, bigamy, certain bribery).
+- The rationale is that the agreement is not a distinct danger when the crime cannot be committed by fewer people.
+- The rule does not apply if more parties than necessary join the agreement (the "third-party exception").
+- It is a presumption that yields to clear legislative intent to punish the conspiracy separately.
+- It reflects the general principle that conspiracy targets the added danger of group criminality.
+
+==================================================
+CASE_ID: 054
+DIFFICULTY: crimdle
+SYSTEM: theft
+
+DIAGNOSIS:
+Receiving Stolen Property
+
+ALIASES:
+receiving stolen property
+possession of stolen goods
+receiving stolen goods
+
+VIGNETTE_LINES:
+
+1. A man runs a small electronics resale shop out of a garage.
+2. A regular supplier offers him brand-new televisions at a fraction of wholesale price with no boxes or paperwork.
+3. The supplier mentions the items "fell off a truck" and asks him to pay cash and ask nothing further.
+4. The shop owner buys the lot, believing almost certainly that the goods are stolen.
+5. Police trace the serial numbers and recover the televisions from his garage.
+6. The charge requires that he received property he knew or believed to be stolen, intending to deprive the owner.
+
+TEACHING_POINTS:
+
+- Receiving stolen property requires (1) receiving control of property, (2) that is in fact stolen, (3) knowing or believing it was stolen, and (4) intent to deprive the owner.
+- The defendant's knowledge can be inferred from circumstances (deeply discounted price, lack of documentation, suspicious source).
+- Many statutes allow conviction where the defendant "believed" the goods were stolen, even if proof of actual theft is supplied by other evidence.
+- It is a separate offense from the underlying theft and targets the market that incentivizes theft.
+- Willful blindness to an obvious likelihood that goods are stolen can satisfy the knowledge element.
+
+==================================================
+CASE_ID: 055
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Stop and Identify / Reasonable Suspicion
+
+ALIASES:
+reasonable suspicion
+investigatory stop standard
+stop and identify
+
+VIGNETTE_LINES:
+
+1. An officer receives a dispatch about a man in a red jacket reportedly brandishing a weapon near a park.
+2. Arriving within minutes, the officer sees a man matching that exact description walking away from the park.
+3. The man's hand is pressed against a bulge in his waistband as he glances repeatedly at the patrol car.
+4. The officer stops him, citing the matching description, the location, the timing, and the suspicious movements.
+5. The defense argues the officer lacked sufficient grounds for the detention.
+6. The court evaluates whether specific, articulable facts gave rise to a particularized and objective basis to suspect criminal activity.
+
+TEACHING_POINTS:
+
+- Reasonable suspicion requires specific, articulable facts, judged under the totality of the circumstances, that criminal activity is afoot.
+- It is a lower standard than probable cause but more than an inchoate hunch.
+- A matching description, proximity in time and place, and suspicious conduct can collectively supply reasonable suspicion.
+- Presence in a high-crime area plus unprovoked flight can contribute (Illinois v. Wardlow), but presence alone is insufficient.
+- An anonymous tip generally needs corroboration of predictive details to support a stop (Florida v. J.L., Alabama v. White).
+
+==================================================
+CASE_ID: 056
+DIFFICULTY: crimdle
+SYSTEM: homicide
+
+DIAGNOSIS:
+Felony Murder Merger Doctrine
+
+ALIASES:
+merger doctrine
+felony murder merger
+independent felony requirement
+
+VIGNETTE_LINES:
+
+1. A man confronts an acquaintance and, in a fit of rage, commits an aggravated assault with a deadly weapon.
+2. The single act of striking the victim is both the assault and the cause of death.
+3. The victim dies, and the prosecution seeks a murder conviction without proving intent to kill or premeditation.
+4. The state attempts to use the assault as the predicate felony for a felony-murder theory.
+5. The defense argues that the assault is not independent of the killing and cannot serve as the predicate.
+6. The court applies a doctrine barring use of the assaultive felony that is an integral part of the homicide itself.
+
+TEACHING_POINTS:
+
+- The merger doctrine bars felony murder when the predicate felony is an integral part of, and included in, the homicide (e.g., assault, manslaughter).
+- The predicate felony must be independent of the killing itself to support felony murder.
+- The doctrine prevents the felony-murder rule from swallowing all killings that involve an assault.
+- Felonies with an independent purpose (robbery, burglary, arson, rape) do not merge.
+- Without an independent felony, the prosecution must prove malice for murder by other means.
+
+==================================================
+CASE_ID: 057
+DIFFICULTY: crimdle
+SYSTEM: defenses
+
+DIAGNOSIS:
+Mistake of Fact
+
+ALIASES:
+mistake of fact
+factual mistake defense
+honest mistake
+
+VIGNETTE_LINES:
+
+1. A man at a crowded coat check is handed a black umbrella that looks identical to his own.
+2. He genuinely believes the umbrella is his and walks out with it.
+3. The umbrella in fact belongs to another patron who had a matching one.
+4. He is charged with theft requiring intent to permanently deprive another of property.
+5. He argues he had no idea the umbrella was not his own.
+6. The court considers whether his honest mistake negates the intent required for the offense.
+
+TEACHING_POINTS:
+
+- A mistake of fact is a defense when it negates the mens rea required for the offense.
+- For specific-intent crimes, an honest mistake (even if unreasonable) can negate the required intent.
+- For general-intent crimes, the mistake generally must be both honest and reasonable.
+- Mistake of fact is no defense to strict-liability offenses, where mens rea is not required.
+- The doctrine is analytically about whether the prosecution can still prove the required mental state.
+
+==================================================
+CASE_ID: 058
+DIFFICULTY: crimdle
+SYSTEM: defenses
+
+DIAGNOSIS:
+Mistake of Law
+
+ALIASES:
+mistake of law
+ignorance of the law
+reliance on official interpretation
+
+VIGNETTE_LINES:
+
+1. A business owner wants to operate a new type of recycling facility and is unsure of the permitting rules.
+2. He contacts the relevant state agency and receives a written opinion stating no permit is required.
+3. Relying on that official interpretation, he opens and operates the facility.
+4. A later enforcement action charges him with operating without a required permit.
+5. He argues he acted in good-faith reliance on the government's own official statement of the law.
+6. The court considers the narrow circumstances under which a mistake about the law may be a defense.
+
+TEACHING_POINTS:
+
+- The general rule is that ignorance or mistake of law is no defense.
+- A narrow exception exists for reasonable reliance on an official statement of the law later determined to be erroneous (entrapment by estoppel).
+- A mistake of law can also negate a specific-intent or knowledge element where the law makes knowledge of illegality an element.
+- Reliance on private counsel's advice is generally not a defense.
+- Due process may bar conviction where a law is so obscure that fair notice is lacking (Lambert v. California).
+
+==================================================
+CASE_ID: 059
+DIFFICULTY: crimdle
+SYSTEM: inchoate_crimes
+
+DIAGNOSIS:
+Withdrawal from Conspiracy
+
+ALIASES:
+withdrawal from conspiracy
+conspiracy renunciation
+abandonment of conspiracy
+
+VIGNETTE_LINES:
+
+1. Three people agree to commit a series of warehouse thefts over several months.
+2. After the first theft, one member has a change of heart and wants no further part.
+3. He tells the others he is out and refuses to participate again, but does nothing more.
+4. The remaining two continue and commit several additional thefts on their own.
+5. He is charged with the later crimes under a theory of co-conspirator liability.
+6. The court examines whether his communicated withdrawal limits his exposure for subsequent crimes and the conspiracy itself.
+
+TEACHING_POINTS:
+
+- Withdrawal generally requires an affirmative act communicating renunciation to all co-conspirators (and sometimes timely notice to authorities).
+- At common law, withdrawal does not erase liability for the conspiracy already formed, but it cuts off liability for later substantive crimes (Pinkerton liability).
+- Under the MPC, complete and voluntary renunciation that thwarts the conspiracy can be a defense to the conspiracy charge itself.
+- Mere cessation of activity without communication is usually insufficient.
+- Withdrawal also starts the statute of limitations running for the withdrawing conspirator.
+
+==================================================
+CASE_ID: 060
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Open Fields Doctrine
+
+ALIASES:
+open fields doctrine
+Oliver v. United States
+open fields
+
+VIGNETTE_LINES:
+
+1. Officers suspect that a large parcel of rural land is being used to grow an illegal crop.
+2. Without a warrant, they walk past a locked gate and "No Trespassing" signs onto a far field.
+3. They cross open pasture well away from the farmhouse and any fenced yard.
+4. In the distant field they find rows of illegal plants and document them.
+5. The landowner argues the officers trespassed onto private property in violation of his rights.
+6. The court holds that the area searched was not entitled to Fourth Amendment protection despite the trespass.
+
+TEACHING_POINTS:
+
+- The open fields doctrine holds that open fields are not "persons, houses, papers, or effects" and receive no Fourth Amendment protection (Oliver v. United States).
+- A physical trespass onto open fields does not constitute a Fourth Amendment search.
+- Protection attaches to the curtilage, the area immediately surrounding the home (analyzed under the Dunn factors).
+- Fences and "No Trespassing" signs do not transform an open field into a constitutionally protected area.
+- The doctrine reflects that there is no reasonable expectation of privacy in open fields.
+
+==================================================
+CASE_ID: 061
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Inevitable Discovery
+
+ALIASES:
+inevitable discovery
+Nix v. Williams
+inevitable discovery exception
+
+VIGNETTE_LINES:
+
+1. Police obtain a lead about the location of a victim's body through an improper interrogation.
+2. At the same time, a large, organized search team is methodically combing the area on a grid pattern.
+3. The search team is only a short distance from the location and would have reached it within hours.
+4. Officers recover the body based on the improperly obtained statement.
+5. The defense moves to suppress the body and related evidence as a fruit of the violation.
+6. The court admits the evidence, finding it would have been discovered lawfully regardless of the misconduct.
+
+TEACHING_POINTS:
+
+- The inevitable discovery exception (Nix v. Williams) admits illegally derived evidence if the prosecution shows it would have been discovered by lawful means.
+- The prosecution must prove inevitable discovery by a preponderance of the evidence.
+- It is distinct from the independent source doctrine, which applies when evidence was actually obtained lawfully and separately.
+- The exception prevents putting police in a worse position than if no misconduct had occurred.
+- The hypothetical lawful means (e.g., an ongoing systematic search) must be more than speculative.
+
+==================================================
+CASE_ID: 062
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Good Faith Exception
+
+ALIASES:
+good faith exception
+United States v. Leon
+Leon good faith
+
+VIGNETTE_LINES:
+
+1. Officers prepare a detailed affidavit and obtain a search warrant from a neutral magistrate.
+2. They execute the warrant in objective reliance on its validity and seize evidence.
+3. A reviewing court later determines the affidavit fell just short of establishing probable cause.
+4. The defendant moves to suppress the evidence based on the defective warrant.
+5. The prosecution argues the officers acted reasonably and in good faith on a facially valid warrant.
+6. The court declines to apply the exclusionary rule because suppression would not serve its deterrent purpose here.
+
+TEACHING_POINTS:
+
+- The good faith exception (United States v. Leon) admits evidence seized in objectively reasonable reliance on a later-invalidated warrant.
+- The exclusionary rule's purpose is deterrence; suppressing evidence does not deter when officers reasonably relied on a magistrate's warrant.
+- The exception does not apply if the affidavit is so lacking in probable cause as to render reliance unreasonable (a "bare bones" affidavit).
+- It also does not apply where the magistrate was misled by knowing or reckless falsehoods or abandoned the neutral role.
+- The focus is on the objective reasonableness of the executing officers' reliance.
+
+==================================================
+CASE_ID: 063
+DIFFICULTY: crimdle
+SYSTEM: homicide
+
+DIAGNOSIS:
+Voluntary Manslaughter by Imperfect Defense
+
+ALIASES:
+imperfect defense manslaughter
+excessive force manslaughter
+unreasonable belief manslaughter
+
+VIGNETTE_LINES:
+
+1. A homeowner hears someone moving in his backyard late at night and grabs a shotgun.
+2. He sees a shadowy figure approaching and believes he is about to be attacked.
+3. The figure is actually a confused, unarmed teenager who wandered onto the wrong property.
+4. The homeowner fires, killing the teenager, in the honest but mistaken belief he faced a deadly threat.
+5. The jury finds his belief in the need for deadly force was sincere but objectively unreasonable.
+6. The court explains that this honest but unreasonable belief negates malice and reduces the offense below murder.
+
+TEACHING_POINTS:
+
+- An honest but unreasonable belief in the need for self-defense (imperfect self-defense) reduces murder to voluntary manslaughter in many jurisdictions.
+- It negates the malice element rather than justifying the killing.
+- Excessive force in otherwise valid self-defense can also give rise to imperfect self-defense.
+- This contrasts with perfect self-defense (reasonable belief, full acquittal) and with heat-of-passion manslaughter (adequate provocation).
+- Jurisdictions vary on recognizing the doctrine; where unavailable, the killing may remain murder.
+
+==================================================
+CASE_ID: 064
+DIFFICULTY: crimdle
+SYSTEM: inchoate_crimes
+
+DIAGNOSIS:
+Solicitation Merging into Conspiracy
+
+ALIASES:
+merger of solicitation
+solicitation into conspiracy
+inchoate merger
+
+VIGNETTE_LINES:
+
+1. A man asks an acquaintance to help him burn down a competitor's storefront for insurance money.
+2. He explains the plan in detail and offers to split the proceeds.
+3. The acquaintance, after some thought, agrees to participate and they shake on it.
+4. They begin gathering materials and scouting the location together.
+5. Prosecutors charge solicitation, conspiracy, and attempt arising from the same course of conduct.
+6. The court addresses how the initial request relates to the agreement that followed and which inchoate offenses survive.
+
+TEACHING_POINTS:
+
+- Solicitation merges into conspiracy once the solicited party agrees, because the agreement supersedes the mere request.
+- Solicitation and attempt also merge into the completed target offense if it is achieved.
+- Conspiracy does NOT merge into the completed offense, so a defendant can be convicted of both conspiracy and the substantive crime.
+- A defendant generally cannot be convicted of multiple inchoate offenses (solicitation, attempt, conspiracy) for a single course aimed at one crime, depending on the jurisdiction.
+- These merger principles prevent multiplying punishment for the same underlying criminal objective.
+
+==================================================
+CASE_ID: 065
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Brady Violation
+
+ALIASES:
+Brady violation
+Brady v. Maryland
+exculpatory evidence disclosure
+
+VIGNETTE_LINES:
+
+1. A man is convicted of a serious assault largely on eyewitness testimony.
+2. After the verdict, defense counsel learns the prosecution had a police report in its file before trial.
+3. The report contained a different witness's statement describing a perpetrator who did not match the defendant.
+4. The prosecution never disclosed this report to the defense before or during trial.
+5. The defense argues the undisclosed material could have created reasonable doubt.
+6. The court evaluates whether suppression of favorable, material evidence by the prosecution denied the defendant due process.
+
+TEACHING_POINTS:
+
+- Brady v. Maryland requires the prosecution to disclose evidence favorable to the accused that is material to guilt or punishment.
+- A Brady violation has three elements: the evidence is favorable, it was suppressed by the state, and prejudice (materiality) resulted.
+- Evidence is material if there is a reasonable probability the result would have been different had it been disclosed.
+- The duty extends to impeachment evidence (Giglio v. United States) and to evidence known to the police even if not to the prosecutor.
+- The duty applies regardless of whether the suppression was willful or inadvertent.
+
+==================================================
+CASE_ID: 066
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Sixth Amendment Right to Speedy Trial
+
+ALIASES:
+speedy trial
+Barker v. Wingo
+right to a speedy trial
+
+VIGNETTE_LINES:
+
+1. A man is arrested and charged, then sits in jail awaiting trial as the case is repeatedly continued.
+2. Most of the delays are caused by the prosecution's lack of readiness and crowded dockets.
+3. The defendant repeatedly asserts that he wants his trial to proceed without further delay.
+4. By the time trial finally nears, key defense witnesses have moved away or died.
+5. The defense moves to dismiss, arguing the lengthy pretrial delay prejudiced the defense.
+6. The court weighs several factors to determine whether the delay violated the defendant's constitutional right.
+
+TEACHING_POINTS:
+
+- The Sixth Amendment speedy trial right is analyzed under the Barker v. Wingo balancing test.
+- The four factors are: length of delay, reason for the delay, the defendant's assertion of the right, and prejudice to the defendant.
+- Delay caused by the prosecution weighs against the state; delay caused by the defense weighs against the defendant.
+- The remedy for a violation is dismissal with prejudice, an unusually drastic remedy.
+- The right attaches at arrest or formal charge, whichever comes first.
+
+==================================================
+CASE_ID: 067
+DIFFICULTY: crimdle
+SYSTEM: defenses
+
+DIAGNOSIS:
+Voluntary Abandonment of Attempt
+
+ALIASES:
+abandonment of attempt
+renunciation defense
+voluntary renunciation
+
+VIGNETTE_LINES:
+
+1. A man breaks into a home at night intending to assault an occupant he has a grudge against.
+2. He moves through the dark house and reaches the bedroom doorway with a weapon in hand.
+3. Standing over the sleeping occupant, he suddenly feels remorse and reconsiders.
+4. No alarm sounds and no one wakes; nothing external interrupts him.
+5. He lowers the weapon, leaves the house, and later turns himself in.
+6. The court considers whether his change of heart was a complete and voluntary renunciation under the governing approach.
+
+TEACHING_POINTS:
+
+- Under the MPC, voluntary and complete abandonment (renunciation) is an affirmative defense to attempt.
+- The renunciation must be voluntary (a genuine change of heart) and not motivated by fear of detection or a decision to postpone.
+- At common law, abandonment is generally NOT a defense once the attempt is complete (a substantial step has been taken).
+- Abandonment prompted by external circumstances (police presence, alarms, resistance) is not voluntary.
+- The defense reflects a policy of encouraging would-be offenders to desist before completing the crime.
+
+==================================================
+CASE_ID: 068
+DIFFICULTY: crimdle
+SYSTEM: theft
+
+DIAGNOSIS:
+Extortion
+
+ALIASES:
+extortion
+blackmail
+theft by coercion
+
+VIGNETTE_LINES:
+
+1. A man discovers compromising photographs of a local official from years earlier.
+2. He contacts the official and describes exactly what the photographs show.
+3. He demands a large monthly payment in exchange for keeping the images private.
+4. He makes clear that nonpayment will result in the photographs being sent to the press and the official's family.
+5. The official pays for several months before going to the authorities.
+6. The charge rests on obtaining property through threats of future harm to reputation rather than immediate force.
+
+TEACHING_POINTS:
+
+- Extortion (blackmail) is obtaining property through threats, classically threats of future harm, including harm to reputation.
+- It is distinguished from robbery, which requires force or fear of imminent harm to take property from the person or presence.
+- The threat may be to expose secrets, accuse of a crime, or harm reputation, property, or relationships.
+- At common law, extortion was the corrupt collection of an unlawful fee by a public officer; modern statutes are broader.
+- The crime is typically complete upon the threat made with intent to obtain property, though some statutes require obtaining the property.
+
+==================================================
+CASE_ID: 069
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Pretextual Traffic Stop
+
+ALIASES:
+pretextual stop
+Whren v. United States
+pretext stop
+
+VIGNETTE_LINES:
+
+1. Narcotics officers suspect a driver of dealing drugs but lack probable cause to search his car.
+2. They follow him and wait until he commits a minor traffic infraction by failing to signal a turn.
+3. They stop him ostensibly for the traffic violation, though their real interest is the suspected drug activity.
+4. During the lawful stop, developments give them probable cause and they search the vehicle.
+5. The defense argues the stop was a pretext to investigate drugs and should be invalidated.
+6. The court holds that the officers' subjective motivations are irrelevant so long as there was an objective basis for the stop.
+
+TEACHING_POINTS:
+
+- Under Whren v. United States, a traffic stop is valid if there is an objective basis (e.g., an actual traffic violation), regardless of the officer's subjective motive.
+- The Fourth Amendment reasonableness inquiry is objective; pretext does not invalidate an otherwise lawful stop.
+- The stop must not be unreasonably prolonged beyond the time needed to address the traffic mission (Rodriguez v. United States).
+- Probable cause or other justification developed during the lawful stop can support further action.
+- Equal protection, not the Fourth Amendment, is the avenue for challenging selective enforcement based on race.
+
+==================================================
+CASE_ID: 070
+DIFFICULTY: crimdle
+SYSTEM: homicide
+
+DIAGNOSIS:
+Year-and-a-Day Rule
+
+ALIASES:
+year and a day rule
+year-and-a-day
+common law homicide causation rule
+
+VIGNETTE_LINES:
+
+1. A man severely beats a victim, who survives but is left in a persistent coma.
+2. The victim remains on life support and lingers in that condition for an extended time.
+3. More than fourteen months after the beating, the victim finally dies from complications.
+4. The prosecution seeks a homicide conviction against the assailant for the death.
+5. The defense invokes a common law timing rule concerning the interval between act and death.
+6. The court addresses whether, under the traditional rule, the lapse of time bars treating the death as a homicide.
+
+TEACHING_POINTS:
+
+- The common law year-and-a-day rule barred a homicide conviction if the victim died more than a year and a day after the defendant's act.
+- The rule arose from causation and proof concerns in an era of limited medical knowledge.
+- Most modern jurisdictions have abolished or extended the rule, given advances in medicine and life support.
+- Abolition of the rule generally may be applied without violating ex post facto principles (Rogers v. Tennessee).
+- Causation must still be proven; the rule was a bright-line limit layered on top of ordinary causation requirements.
+
+==================================================
+CASE_ID: 071
+DIFFICULTY: crimdle
+SYSTEM: defenses
+
+DIAGNOSIS:
+Involuntary Intoxication
+
+ALIASES:
+involuntary intoxication
+unknowing intoxication
+involuntary intoxication defense
+
+VIGNETTE_LINES:
+
+1. A woman attends a party and drinks from a punch bowl she believes contains only fruit juice.
+2. Unknown to her, someone has heavily spiked the punch with a powerful intoxicant.
+3. She rapidly becomes severely impaired in a way she did not anticipate and could not control.
+4. While grossly intoxicated, she commits an offense she would never have committed while sober.
+5. She had no reason to suspect the punch was adulterated.
+6. The court treats her intoxication differently from self-induced intoxication because it was not knowingly undertaken.
+
+TEACHING_POINTS:
+
+- Involuntary intoxication occurs when a defendant becomes intoxicated without knowing or against her will (e.g., spiked drinks, unexpected drug reactions, coercion).
+- It is treated as a complete excuse if it produces a state equivalent to legal insanity (lacking capacity to know wrongfulness or conform conduct).
+- Unlike voluntary intoxication, it can be a defense to general-intent and even strict-liability crimes.
+- It also includes unexpected reactions to properly used prescribed medication taken as directed.
+- The key distinction is the absence of culpable choice in becoming intoxicated.
+
+==================================================
+CASE_ID: 072
+DIFFICULTY: crimdle
+SYSTEM: mens_rea
+
+DIAGNOSIS:
+Strict Liability Offense
+
+ALIASES:
+strict liability
+strict liability crime
+no mens rea offense
+
+VIGNETTE_LINES:
+
+1. A vendor sells a bottle of alcohol to a customer who presents a convincing fake ID.
+2. The customer is in fact under the legal age, though he appears older and the ID looks genuine.
+3. The vendor takes reasonable steps and honestly believes the customer is of age.
+4. He is charged under a statute prohibiting the sale of alcohol to minors.
+5. He argues he had no intent to break the law and made a reasonable mistake.
+6. The court explains that the statute requires no proof of mental state as to the buyer's age.
+
+TEACHING_POINTS:
+
+- Strict liability offenses require no mens rea as to one or more material elements; the act alone establishes liability.
+- They are common in public welfare/regulatory contexts (food, drugs, alcohol, traffic, statutory rape in some jurisdictions).
+- Mistake of fact, even if reasonable, is generally not a defense to a strict-liability element.
+- Courts look for legislative intent to dispense with mens rea, often inferred from regulatory purpose and modest penalties.
+- The MPC disfavors strict liability and generally limits it to "violations" punishable only by fines.
+
+==================================================
+CASE_ID: 073
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Standing to Challenge a Search
+
+ALIASES:
+Fourth Amendment standing
+reasonable expectation of privacy
+Rakas v. Illinois
+
+VIGNETTE_LINES:
+
+1. Police unlawfully search a car and find a weapon under the front passenger seat.
+2. A passenger who claims no ownership interest in the car or the weapon is charged based on the find.
+3. He was merely riding in the vehicle and asserted no possessory interest in the area searched.
+4. He moves to suppress the weapon as the product of an illegal search.
+5. The prosecution argues he cannot benefit from any violation of someone else's rights.
+6. The court asks whether the defendant himself had a reasonable expectation of privacy in the area searched.
+
+TEACHING_POINTS:
+
+- Fourth Amendment rights are personal; a defendant must have his own reasonable expectation of privacy in the area or item searched (Rakas v. Illinois).
+- A mere passenger ordinarily lacks a privacy interest in areas of a car (like under another's seat) he does not control.
+- "Standing" in this context is really a question of whether the defendant's own rights were violated.
+- Ownership or a possessory/privacy interest in the place searched or item seized is required to seek suppression.
+- A passenger does have standing to challenge the stop of the vehicle itself (Brendlin v. California), even if not the search of areas he lacks privacy in.
+
+==================================================
+CASE_ID: 074
+DIFFICULTY: crimdle
+SYSTEM: inchoate_crimes
+
+DIAGNOSIS:
+Pinkerton Liability
+
+ALIASES:
+Pinkerton liability
+Pinkerton doctrine
+co-conspirator liability
+
+VIGNETTE_LINES:
+
+1. Several people form an agreement to run a large drug-distribution operation.
+2. One member handles only the bookkeeping and never touches the drugs or any weapon.
+3. To protect a shipment, another member commits an armed robbery of a rival dealer.
+4. The robbery is a natural means of advancing the drug enterprise, though the bookkeeper knew nothing of that specific act.
+5. The bookkeeper is charged with the robbery committed by his co-conspirator.
+6. The court holds him liable for the foreseeable crime committed by a co-conspirator in furtherance of the conspiracy.
+
+TEACHING_POINTS:
+
+- Under Pinkerton v. United States, a conspirator is liable for substantive crimes committed by co-conspirators that are (1) in furtherance of the conspiracy and (2) reasonably foreseeable.
+- Liability attaches even if the defendant did not personally participate in or know of the specific crime.
+- It is broader than accomplice liability, which requires intent to assist the particular offense.
+- The crime must fall within the scope of the conspiracy and its foreseeable consequences.
+- Some jurisdictions reject or limit Pinkerton liability as too expansive.
+
+==================================================
+CASE_ID: 075
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure
+
+DIAGNOSIS:
+Sixth Amendment Right to Confrontation via Cross-Examination
+
+ALIASES:
+right of cross-examination
+Sixth Amendment confrontation
+face-to-face confrontation
+
+VIGNETTE_LINES:
+
+1. A defendant is on trial, and the key prosecution witness is a child alleging abuse.
+2. The prosecution asks to have the child testify from another room via one-way closed-circuit video.
+3. The defendant would be able to see and hear the child but not be physically present in the same room.
+4. Defense counsel objects that the defendant is entitled to a face-to-face encounter with the accuser.
+5. The trial court makes case-specific findings that in-court testimony would severely traumatize this particular child.
+6. The court weighs the defendant's confrontation interest against the necessity of protecting the child witness.
+
+TEACHING_POINTS:
+
+- The Confrontation Clause includes the right to physically face adverse witnesses and to cross-examine them.
+- The face-to-face element is not absolute; Maryland v. Craig allows alternatives (e.g., one-way video) on case-specific findings of necessity.
+- Cross-examination is the central, irreducible component of the confrontation right.
+- Necessity must be shown for the particular witness (e.g., serious emotional trauma), not a generalized policy.
+- This protective procedure is distinct from the testimonial-hearsay analysis of Crawford, which governs out-of-court statements.
+
+==================================================

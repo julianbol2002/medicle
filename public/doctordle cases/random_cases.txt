@@ -10105,3 +10105,814 @@ TEACHING_POINTS:
 - Treatment: oral or vaginal metronidazole or clindamycin; treatment of male partners NOT recommended (does not reduce recurrence).
 ==================================================
 
+==================================================
+CASE_ID: 371
+DIFFICULTY: step1
+SYSTEM: cardiology 
+
+DIAGNOSIS:
+Aortic Dissection
+
+ALIASES:
+aortic dissection syndrome
+acute dissection 
+
+VIGNETTE_LINES:
+1. A 62-year-old man presents with abrupt severe chest pain that began while moving boxes at home.
+2. He has a history of long-standing hypertension and says the pain shifted from his chest toward his upper back within minutes.
+3. Examination reveals diaphoresis, unequal blood pressures between the arms, and a new early diastolic murmur.
+4. ECG shows no ST-elevation myocardial infarction pattern, and chest X-ray demonstrates a widened mediastinum.
+5. CT angiography reveals an intimal flap extending from the ascending aorta into the arch.
+6. IV beta-blockade is started immediately, and emergent surgical repair is performed for a Stanford type A dissection.
+
+TEACHING_POINTS:
+- Aortic dissection presents with sudden tearing chest or back pain and is strongly associated with hypertension, connective tissue disease, and bicuspid aortic valve.
+- Pulse deficits, blood pressure asymmetry, neurologic findings, and a new aortic regurgitation murmur are important clues.
+- CT angiography is the most common diagnostic test in stable patients; transesophageal echocardiography is useful when unstable.
+- Stanford type A dissections involve the ascending aorta and require urgent surgery; type B dissections are usually managed medically first.
+- Initial medical stabilization focuses on lowering shear stress with IV beta-blockade before vasodilators if needed.
+==================================================
+
+CASE_ID: 372
+DIFFICULTY: step1
+SYSTEM: nephrology 
+
+DIAGNOSIS:
+Goodpasture Syndrome
+
+ALIASES:
+anti-GBM disease
+anti-glomerular basement membrane disease 
+
+VIGNETTE_LINES:
+1. A 27-year-old man presents with several days of coughing, shortness of breath, and dark urine.
+2. He reports recent fatigue and says the cough became blood-streaked this morning.
+3. Examination reveals pallor, bibasilar crackles, and mild lower extremity edema.
+4. Urinalysis shows hematuria with red blood cell casts, and chest imaging reveals diffuse bilateral alveolar opacities.
+5. Serologic testing detects circulating anti-glomerular basement membrane antibodies.
+6. He is treated urgently with plasmapheresis, high-dose corticosteroids, and cyclophosphamide to limit pulmonary and renal injury.
+
+TEACHING_POINTS:
+- Goodpasture syndrome is a pulmonary-renal syndrome caused by autoantibodies against type IV collagen in glomerular and alveolar basement membranes.
+- Hemoptysis plus rapidly progressive glomerulonephritis is the classic presentation.
+- Urinalysis often shows a nephritic pattern with red blood cell casts, and chest imaging may show diffuse alveolar hemorrhage.
+- Anti-GBM antibodies support the diagnosis; renal biopsy characteristically shows linear IgG deposition along the basement membrane.
+- Early plasmapheresis and immunosuppression improve the chance of preserving lung and kidney function.
+==================================================
+
+CASE_ID: 373
+DIFFICULTY: step1
+SYSTEM: nephrology 
+
+DIAGNOSIS:
+Microscopic Polyangiitis
+
+ALIASES:
+MPA
+pauci-immune small-vessel vasculitis 
+
+VIGNETTE_LINES:
+1. A 54-year-old woman presents with fatigue, shortness of breath, and tea-colored urine over one week.
+2. She also reports weight loss and aching joints over the past month but denies chronic sinus symptoms.
+3. Examination reveals mild hypertension, bibasilar crackles, and purpuric lesions over the lower legs.
+4. Laboratory studies show rapidly rising creatinine, a nephritic urinalysis, and normocytic anemia; chest CT shows diffuse ground-glass opacities concerning for alveolar hemorrhage.
+5. Serology is positive for p-ANCA/MPO antibodies, and kidney biopsy shows pauci-immune necrotizing crescentic glomerulonephritis.
+6. Induction therapy with high-dose steroids plus rituximab is started, with plasmapheresis considered in severe pulmonary-renal disease.
+
+TEACHING_POINTS:
+- Microscopic polyangiitis is an ANCA-associated small-vessel vasculitis that commonly causes glomerulonephritis and pulmonary capillaritis.
+- Unlike granulomatosis with polyangiitis, chronic destructive upper airway disease is usually absent.
+- Typical findings include constitutional symptoms, palpable purpura, rapidly progressive renal failure, and diffuse alveolar hemorrhage.
+- p-ANCA/MPO positivity supports the diagnosis, but tissue biopsy confirms pauci-immune vasculitis.
+- Treatment uses glucocorticoids with rituximab or cyclophosphamide for induction, followed by maintenance immunosuppression.
+==================================================
+
+CASE_ID: 374
+DIFFICULTY: step1
+SYSTEM: musculoskeletal 
+
+DIAGNOSIS:
+Behcet Disease
+
+ALIASES:
+Behcet syndrome
+Silk Road vasculitis 
+
+VIGNETTE_LINES:
+1. A 28-year-old man presents with recurrent painful mouth sores and intermittent genital ulcers over the past year.
+2. He also reports episodes of red painful eyes and tender nodules on his shins that come and go.
+3. Examination reveals aphthous oral ulcers, healing scrotal lesions, and a papulopustular rash on the chest.
+4. Infectious testing for common sexually transmitted and viral causes is unrevealing.
+5. Slit-lamp examination demonstrates anterior uveitis, and pathergy testing is positive.
+6. He is started on colchicine and immunomodulatory therapy because of recurrent mucocutaneous and ocular disease.
+
+TEACHING_POINTS:
+- Behcet disease is a multisystem inflammatory vasculitis classically associated with recurrent oral ulcers, genital ulcers, and uveitis.
+- Cutaneous lesions, arthritis, vascular thrombosis, and neurologic involvement may also occur.
+- The diagnosis is clinical and supported by recurrent ulcers and compatible systemic findings; pathergy can be a useful clue.
+- Ocular disease can threaten vision and often requires escalation beyond symptomatic therapy.
+- Colchicine can help mucocutaneous disease, while severe ocular, neurologic, or vascular disease often requires biologic or other immunosuppressive therapy.
+==================================================
+
+CASE_ID: 375
+DIFFICULTY: step1
+SYSTEM: hematology/oncology 
+
+DIAGNOSIS:
+Amyloidosis
+
+ALIASES:
+systemic amyloidosis
+AL amyloidosis 
+
+VIGNETTE_LINES:
+1. A 63-year-old man presents with progressive fatigue, leg swelling, and lightheadedness on standing.
+2. He also notes numbness in his feet and recent enlargement of his tongue making speech feel awkward.
+3. Examination reveals periorbital purpura, macroglossia, elevated jugular venous pressure, and bilateral pitting edema.
+4. ECG shows low-voltage QRS complexes despite echocardiographic evidence of increased ventricular wall thickness.
+5. Tissue biopsy stained with Congo red demonstrates apple-green birefringence under polarized light.
+6. A plasma cell dyscrasia is identified as the underlying source, and he is referred for clone-directed therapy with supportive organ management.
+
+TEACHING_POINTS:
+- Amyloidosis results from extracellular deposition of misfolded protein fibrils; AL amyloid is associated with plasma cell disorders.
+- Cardiac involvement can cause restrictive physiology with thickened walls on echo and paradoxically low voltage on ECG.
+- Nephrotic-range proteinuria, neuropathy, hepatomegaly, macroglossia, and periorbital purpura are classic systemic clues.
+- Congo red positivity with apple-green birefringence confirms amyloid deposition in tissue.
+- Management depends on amyloid type and organ involvement, with supportive care essential for heart failure, autonomic dysfunction, and renal disease.
+==================================================
+
+CASE_ID: 376
+DIFFICULTY: step1
+SYSTEM: cardiology 
+
+DIAGNOSIS:
+Takotsubo Cardiomyopathy
+
+ALIASES:
+stress cardiomyopathy
+broken heart syndrome 
+
+VIGNETTE_LINES:
+1. A 67-year-old woman presents with acute chest pain and shortness of breath shortly after attending a funeral.
+2. She has no prior coronary history but appears extremely anxious and says the pain began soon after receiving upsetting news.
+3. ECG shows anterior T-wave changes with mild troponin elevation, and she is initially managed as possible acute coronary syndrome.
+4. Coronary angiography reveals no obstructive coronary disease.
+5. Echocardiography demonstrates apical ballooning with transient left ventricular systolic dysfunction.
+6. She improves with supportive heart failure therapy, and repeat imaging weeks later shows recovery of ventricular function.
+
+TEACHING_POINTS:
+- Takotsubo cardiomyopathy is a transient stress-related cardiomyopathy often triggered by emotional or physical stress.
+- It can mimic acute myocardial infarction with chest pain, ECG changes, and modest troponin elevation.
+- Coronary angiography typically shows no culprit obstructive lesion.
+- Echocardiography classically shows apical ballooning, though other wall-motion patterns can occur.
+- Most patients recover ventricular function, but acute complications such as arrhythmia, shock, and heart failure can still occur.
+==================================================
+
+CASE_ID: 377
+DIFFICULTY: step1
+SYSTEM: cardiology 
+
+DIAGNOSIS:
+Brugada Syndrome
+
+ALIASES:
+Brugada pattern syndrome
+channelopathy-associated sudden death 
+
+VIGNETTE_LINES:
+1. A 34-year-old man is evaluated after a nighttime syncopal episode while resting at home.
+2. His brother died suddenly in his thirties, and the patient says he sometimes has palpitations during febrile illnesses.
+3. Physical examination and echocardiography show no structural heart disease.
+4. ECG demonstrates coved ST-segment elevation with T-wave inversion in leads V1-V3.
+5. The pattern is recognized as a sodium-channelopathy associated risk marker for malignant ventricular arrhythmia.
+6. He is referred for implantable cardioverter-defibrillator evaluation and receives counseling about fever control and medication avoidance.
+
+TEACHING_POINTS:
+- Brugada syndrome is an inherited arrhythmia syndrome associated with sudden cardiac death in structurally normal hearts.
+- Syncope or nocturnal agonal respirations in a patient with a compatible ECG pattern should raise concern.
+- Fever and certain medications can unmask or worsen the ECG pattern and arrhythmia risk.
+- The classic type 1 ECG shows coved ST elevation in the right precordial leads.
+- High-risk patients are managed with ICD therapy; avoiding triggering drugs and aggressive fever treatment are important.
+==================================================
+
+CASE_ID: 378
+DIFFICULTY: step1
+SYSTEM: cardiology 
+
+DIAGNOSIS:
+Constrictive Pericarditis
+
+ALIASES:
+pericardial constriction
+chronic constrictive pericarditis 
+
+VIGNETTE_LINES:
+1. A 58-year-old man presents with progressive abdominal distention, leg swelling, and worsening exercise tolerance.
+2. He has a remote history of treated tuberculosis and recurrent episodes of pericardial inflammation years earlier.
+3. Examination reveals elevated jugular venous pressure, hepatomegaly, ascites, and an early diastolic sound shortly after S2.
+4. Echocardiography suggests impaired ventricular filling, and CT shows dense pericardial calcification.
+5. Hemodynamic evaluation demonstrates ventricular interdependence consistent with constrictive physiology.
+6. He is referred for pericardiectomy after medical management fails to control right-sided heart failure symptoms.
+
+TEACHING_POINTS:
+- Constrictive pericarditis is caused by a rigid, scarred pericardium that limits diastolic filling and mimics right heart failure.
+- Causes include prior pericarditis, tuberculosis, radiation, surgery, and connective tissue disease.
+- Elevated JVP, ascites, edema, hepatomegaly, and a pericardial knock are classic findings.
+- Imaging may show pericardial thickening or calcification, while catheterization helps confirm constrictive physiology.
+- Definitive treatment is pericardiectomy in symptomatic patients with persistent constriction.
+==================================================
+
+CASE_ID: 379
+DIFFICULTY: step1
+SYSTEM: pulmonology 
+
+DIAGNOSIS:
+Chronic Thromboembolic Pulmonary Hypertension
+
+ALIASES:
+CTEPH
+chronic thromboembolic disease 
+
+VIGNETTE_LINES:
+1. A 49-year-old woman presents with slowly progressive exertional dyspnea and fatigue months after treatment for an acute pulmonary embolism.
+2. She says she never quite returned to her prior exercise capacity and now becomes short of breath with minimal activity.
+3. Examination reveals a loud P2, mild peripheral edema, and signs of right ventricular strain.
+4. Echocardiography suggests pulmonary hypertension, and a ventilation-perfusion scan shows persistent segmental mismatched perfusion defects.
+5. Right heart catheterization confirms pulmonary hypertension, and pulmonary angiography demonstrates chronic organized thromboembolic obstruction.
+6. She is referred for pulmonary thromboendarterectomy evaluation and started on appropriate anticoagulation.
+
+TEACHING_POINTS:
+- CTEPH is a potentially curable cause of pulmonary hypertension resulting from unresolved organized pulmonary emboli.
+- Patients often present with persistent dyspnea or exercise limitation after prior venous thromboembolism.
+- A V/Q scan is highly sensitive for detecting chronic thromboembolic disease and should not be skipped in unexplained pulmonary hypertension.
+- Right heart catheterization establishes hemodynamics, while angiographic imaging defines operability.
+- Lifelong anticoagulation is standard, and surgical thromboendarterectomy or balloon angioplasty may be definitive in selected patients.
+==================================================
+
+CASE_ID: 380
+DIFFICULTY: step1
+SYSTEM: pulmonology 
+
+DIAGNOSIS:
+Bronchiolitis Obliterans
+
+ALIASES:
+obliterative bronchiolitis
+constrictive bronchiolitis 
+
+VIGNETTE_LINES:
+1. A 41-year-old woman presents with progressive exertional shortness of breath and dry cough over several months.
+2. She previously worked in a flavoring plant and says symptoms worsened despite leaving the job.
+3. Examination reveals mild wheezing without clubbing or focal crackles.
+4. Spirometry shows fixed obstructive disease with air trapping and minimal bronchodilator response.
+5. High-resolution CT demonstrates mosaic attenuation and expiratory air trapping consistent with small-airway obliteration.
+6. Exposure avoidance and supportive therapy are recommended, though the airflow limitation remains largely irreversible.
+
+TEACHING_POINTS:
+- Bronchiolitis obliterans is a small-airway fibrosing disorder associated with inhalational exposures, post-infectious injury, autoimmune disease, or transplant complications.
+- Symptoms include insidious dry cough and progressive dyspnea with fixed airflow obstruction.
+- Mosaic attenuation and air trapping on expiratory HRCT are important diagnostic clues.
+- Bronchodilator response is typically limited because the obstruction is not primarily reversible.
+- Management focuses on removing inciting exposures, treating the underlying cause when possible, and supportive pulmonary care.
+==================================================
+
+CASE_ID: 381
+DIFFICULTY: step1
+SYSTEM: gastroenterology 
+
+DIAGNOSIS:
+Autoimmune Hepatitis
+
+ALIASES:
+AIH
+autoimmune chronic hepatitis 
+
+VIGNETTE_LINES:
+1. A 24-year-old woman presents with fatigue, dark urine, and right upper quadrant discomfort over several weeks.
+2. She denies significant alcohol use and has no recent travel or high-risk exposure history.
+3. Examination reveals mild jaundice and tender hepatomegaly without features of advanced cirrhosis.
+4. Laboratory studies show markedly elevated aminotransferases, and viral hepatitis testing is negative.
+5. Autoimmune serologies are positive, and liver biopsy demonstrates interface hepatitis with plasma-cell-rich inflammation.
+6. She is started on corticosteroid-based immunosuppression with transition to steroid-sparing maintenance therapy.
+
+TEACHING_POINTS:
+- Autoimmune hepatitis is a chronic immune-mediated inflammatory liver disorder that often affects young and middle-aged women.
+- Presentation ranges from asymptomatic transaminitis to acute hepatitis with jaundice and constitutional symptoms.
+- Hypergammaglobulinemia and autoantibodies support the diagnosis but biopsy is often needed for confirmation and staging.
+- Viral, drug-induced, and metabolic liver disease should be excluded before labeling a patient with AIH.
+- Early treatment can prevent progression to cirrhosis and liver failure.
+==================================================
+
+CASE_ID: 382
+DIFFICULTY: step1
+SYSTEM: gastroenterology 
+
+DIAGNOSIS:
+Acute Intermittent Porphyria
+
+ALIASES:
+AIP
+hepatic porphyria 
+
+VIGNETTE_LINES:
+1. A 29-year-old woman presents with recurrent severe abdominal pain, constipation, and anxiety that worsen during times of stress.
+2. She says prior emergency visits found no surgical cause, and the attacks are sometimes followed by tingling in the legs.
+3. Examination reveals tachycardia and diffuse abdominal tenderness without rebound or guarding.
+4. Serum sodium is low during the episode, and abdominal imaging is unrevealing.
+5. Urine collected during symptoms shows markedly elevated porphobilinogen.
+6. She is treated with carbohydrate loading and hemin and is counseled to avoid triggering medications and fasting.
+
+TEACHING_POINTS:
+- Acute intermittent porphyria causes episodic neurovisceral attacks with abdominal pain, psychiatric symptoms, autonomic instability, and neuropathy.
+- It is precipitated by certain medications, alcohol, hormones, fasting, and illness.
+- Hyponatremia is common and may contribute to neurologic manifestations.
+- Urinary porphobilinogen is the key diagnostic marker during acute attacks.
+- Skin photosensitivity is absent in AIP, which helps differentiate it from cutaneous porphyrias.
+==================================================
+
+CASE_ID: 383
+DIFFICULTY: step1
+SYSTEM: reproductive 
+
+DIAGNOSIS:
+Vasa Previa
+
+ALIASES:
+fetal vessel previa
+velamentous cord vessel over os 
+
+VIGNETTE_LINES:
+1. A 33-year-old pregnant woman at term develops sudden vaginal bleeding shortly after spontaneous rupture of membranes.
+2. She has little pain and remains hemodynamically stable, but the fetal heart tracing deteriorates rapidly.
+3. Examination reveals a small amount of bright red bleeding without uterine tenderness or rigidity.
+4. The mismatch between limited maternal bleeding and marked fetal distress raises concern for hemorrhage from fetal rather than maternal vessels.
+5. Bedside evaluation supports exposed fetal vessels coursing over the cervical opening.
+6. Emergent cesarean delivery is performed to prevent fetal exsanguination.
+
+TEACHING_POINTS:
+- Vasa previa occurs when unprotected fetal vessels traverse the membranes over or near the cervical os.
+- It often presents after membrane rupture with painless bleeding and sudden fetal heart rate abnormalities.
+- Maternal hemodynamics may remain stable because the blood being lost can be primarily fetal.
+- Many cases can be identified antenatally with color Doppler ultrasound when risk factors are present.
+- Prenatal recognition and planned cesarean delivery greatly improve fetal survival.
+==================================================
+
+CASE_ID: 384
+DIFFICULTY: step1
+SYSTEM: reproductive 
+
+DIAGNOSIS:
+Uterine Rupture
+
+ALIASES:
+ruptured uterus
+obstetric uterine rupture 
+
+VIGNETTE_LINES:
+1. A 30-year-old woman in labor develops sudden severe abdominal pain and fetal heart rate decelerations.
+2. She has a history of a prior cesarean delivery and was attempting a trial of labor.
+3. Examination reveals loss of fetal station, uterine tenderness, and maternal tachycardia.
+4. Vaginal bleeding is limited, but the labor pattern changes abruptly and fetal monitoring remains nonreassuring.
+5. Emergent evaluation supports disruption of the uterine wall with fetal compromise.
+6. Immediate laparotomy and cesarean delivery are performed, with uterine repair or hysterectomy depending on the extent of injury and bleeding.
+
+TEACHING_POINTS:
+- Uterine rupture is an obstetric emergency most strongly associated with prior uterine surgery, especially during labor.
+- Sudden abdominal pain, abnormal fetal heart tracing, loss of station, and maternal instability are classic warning signs.
+- Vaginal bleeding may be absent or modest despite catastrophic intra-abdominal hemorrhage.
+- Rapid recognition is critical because fetal hypoxia and maternal hemorrhage can develop quickly.
+- Management is urgent operative delivery and surgical control of the defect and bleeding.
+==================================================
+
+CASE_ID: 385
+DIFFICULTY: step1
+SYSTEM: cardiology 
+
+DIAGNOSIS:
+Atrial Myxoma
+
+ALIASES:
+cardiac myxoma
+left atrial tumor 
+
+VIGNETTE_LINES:
+1. A 45-year-old woman presents with progressive shortness of breath, episodic lightheadedness, and fatigue.
+2. She also reports low-grade fevers and recent transient numbness in one arm that resolved spontaneously.
+3. Examination reveals a position-dependent diastolic murmur at the apex and an early diastolic “plop.”
+4. Echocardiography is obtained because of concern for an intracardiac obstructive lesion rather than primary valvular stenosis.
+5. A mobile pedunculated mass is seen in the left atrium prolapsing through the mitral valve during diastole.
+6. Surgical resection is performed because of the risks of embolization and intermittent valve obstruction.
+
+TEACHING_POINTS:
+- Atrial myxoma is the most common primary cardiac tumor in adults and usually arises in the left atrium.
+- It can present with obstructive symptoms mimicking mitral stenosis, embolic phenomena, or constitutional inflammatory symptoms.
+- A changing murmur or characteristic tumor plop may be heard on examination.
+- Echocardiography is the diagnostic modality of choice.
+- Surgical excision is definitive and usually urgent because embolic and obstructive complications can be sudden.
+==================================================
+
+CASE_ID: 386
+DIFFICULTY: step1
+SYSTEM: cardiology 
+
+DIAGNOSIS:
+Long QT Syndrome
+
+ALIASES:
+congenital long QT syndrome
+LQTS 
+
+VIGNETTE_LINES:
+1. A 16-year-old girl is evaluated after a brief loss of consciousness during swim practice.
+2. Her family reports a relative who died suddenly at a young age without a clear explanation.
+3. Examination and basic laboratory studies are unrevealing, with no evidence of structural heart disease on echocardiography.
+4. ECG demonstrates a prolonged corrected QT interval, and review of medications finds no obvious drug trigger.
+5. Ambulatory monitoring captures polymorphic ventricular tachycardia during symptoms.
+6. She is started on beta-blocker therapy and counseled about trigger avoidance, with defibrillator placement considered according to risk profile.
+
+TEACHING_POINTS:
+- Long QT syndrome predisposes to torsades de pointes and sudden cardiac death and may be inherited or acquired.
+- Triggers for congenital forms include exercise, emotional stress, and sudden auditory stimuli depending on genotype.
+- QT-prolonging medications and electrolyte abnormalities are important reversible acquired causes.
+- Corrected QT interval measurement and family history are central to diagnosis and risk assessment.
+- Treatment includes avoidance of QT-prolonging drugs, beta-blockers, correction of triggers, and ICD placement in high-risk patients.
+==================================================
+
+CASE_ID: 387
+DIFFICULTY: step1
+SYSTEM: ophthalmology 
+
+DIAGNOSIS:
+Keratoconus
+
+ALIASES:
+corneal ectasia
+conical cornea 
+
+VIGNETTE_LINES:
+1. A 19-year-old college student presents with gradually worsening blurry vision that no longer improves well with updated glasses.
+2. He also reports frequent eye rubbing because of longstanding allergies.
+3. Examination reveals irregular astigmatism and distortion of light in the affected eye.
+4. Refraction becomes increasingly unstable, prompting corneal imaging.
+5. Corneal topography demonstrates progressive inferior corneal thinning and cone-shaped protrusion.
+6. He is referred for rigid contact lens fitting and corneal collagen cross-linking to slow progression.
+
+TEACHING_POINTS:
+- Keratoconus is a progressive thinning disorder of the cornea that causes irregular astigmatism and visual distortion.
+- Patients often present in adolescence or young adulthood with worsening vision despite frequent spectacle changes.
+- Eye rubbing and atopic disease are common associated factors.
+- Corneal topography is key for early diagnosis and monitoring progression.
+- Treatment ranges from specialty lenses to corneal cross-linking or transplant in advanced disease.
+==================================================
+
+CASE_ID: 388
+DIFFICULTY: step1
+SYSTEM: ophthalmology 
+
+DIAGNOSIS:
+Uveitis
+
+ALIASES:
+anterior uveitis
+iritis 
+
+VIGNETTE_LINES:
+1. A 31-year-old woman presents with eye pain, redness, and sensitivity to light that began over 24 hours.
+2. She also reports a history of intermittent low back stiffness and heel pain over the past year.
+3. Examination reveals ciliary flush, a constricted pupil, and pain with light directed into either eye.
+4. Fluorescein staining is negative, making an isolated corneal abrasion less likely.
+5. Slit-lamp examination shows cells and flare in the anterior chamber.
+6. Topical corticosteroid and cycloplegic therapy are initiated in coordination with ophthalmology, and she is evaluated for associated systemic inflammatory disease.
+
+TEACHING_POINTS:
+- Anterior uveitis causes painful red eye, photophobia, and blurred vision and may be idiopathic or associated with systemic inflammatory disease.
+- HLA-B27-associated spondyloarthropathies are common systemic associations, especially with recurrent episodes.
+- Ciliary flush and consensual photophobia help distinguish uveitis from more superficial ocular conditions.
+- Slit-lamp examination showing cells and flare confirms the diagnosis.
+- Prompt treatment is important to prevent posterior synechiae, glaucoma, and permanent visual loss.
+==================================================
+
+CASE_ID: 389
+DIFFICULTY: step1
+SYSTEM: endocrinology 
+
+DIAGNOSIS:
+Pituitary Apoplexy
+
+ALIASES:
+pituitary hemorrhage
+acute pituitary infarction 
+
+VIGNETTE_LINES:
+1. A 47-year-old man presents with sudden severe headache, vomiting, and double vision.
+2. He recently noticed fatigue and decreased libido over several months but did not seek evaluation.
+3. Examination reveals bitemporal visual field loss, ophthalmoplegia, and hypotension.
+4. Laboratory testing suggests acute secondary adrenal insufficiency, and urgent neuroimaging is obtained.
+5. MRI demonstrates hemorrhage into a pituitary macroadenoma with compression of the optic chiasm.
+6. Stress-dose glucocorticoids are started immediately, and neurosurgical decompression is arranged because of worsening visual deficits.
+
+TEACHING_POINTS:
+- Pituitary apoplexy is sudden hemorrhage or infarction of the pituitary, often in a preexisting adenoma.
+- It presents with abrupt headache, visual disturbance, cranial nerve palsies, nausea, and acute endocrine failure.
+- Secondary adrenal insufficiency is a critical early complication and must be treated promptly even before definitive diagnosis is complete.
+- MRI is the preferred imaging study when pituitary apoplexy is suspected.
+- Management includes urgent glucocorticoids and neurosurgical evaluation, especially if visual or neurologic compromise is significant.
+==================================================
+
+CASE_ID: 390
+DIFFICULTY: step1
+SYSTEM: endocrinology 
+
+DIAGNOSIS:
+Central Diabetes Insipidus
+
+ALIASES:
+ADH deficiency
+neurogenic diabetes insipidus 
+
+VIGNETTE_LINES:
+1. A 28-year-old man presents with extreme thirst and frequent large-volume urination that awakens him several times nightly.
+2. He says he carries a water bottle constantly because missing even a short period of access makes him dizzy and weak.
+3. Examination is largely unremarkable except for mild dehydration when he attempts to limit fluid intake.
+4. Laboratory studies show high serum osmolality and hypernatremia with inappropriately dilute urine.
+5. During supervised testing, urine osmolality rises sharply after desmopressin administration.
+6. He is diagnosed with central diabetes insipidus, started on desmopressin, and undergoes pituitary imaging to evaluate the underlying cause.
+
+TEACHING_POINTS:
+- Central diabetes insipidus results from inadequate secretion of antidiuretic hormone from the hypothalamus or posterior pituitary.
+- Polyuria with persistent dilute urine despite hypernatremia or high serum osmolality is the essential physiologic clue.
+- Water deprivation testing with desmopressin helps distinguish central from nephrogenic diabetes insipidus when done safely.
+- Causes include pituitary surgery, trauma, infiltrative disease, and tumors, but some cases are idiopathic.
+- Desmopressin is effective therapy, but patients require monitoring for both under-treatment and water intoxication.
+==================================================
+
+CASE_ID: 391
+DIFFICULTY: step1
+SYSTEM: rheumatology 
+
+DIAGNOSIS:
+Sjjgren Syndrome
+
+ALIASES:
+Sjogren syndrome
+sicca syndrome 
+
+VIGNETTE_LINES:
+1. A 50-year-old woman presents with months of dry eyes, dry mouth, and increasing fatigue.
+2. She says she now needs water to swallow dry foods and uses eye drops repeatedly through the day.
+3. Examination reveals dry oral mucosa, reduced salivary pooling, and multiple dental caries despite excellent hygiene.
+4. Autoimmune testing is sent because of associated arthralgia and chronic glandular symptoms.
+5. Anti-SSA and anti-SSB antibodies are positive, and minor salivary gland biopsy shows focal lymphocytic sialadenitis.
+6. She begins symptomatic treatment for gland dryness and is monitored for systemic disease and lymphoma risk.
+
+TEACHING_POINTS:
+- Sjjgren syndrome is an autoimmune disease targeting salivary and lacrimal glands, causing xerostomia and keratoconjunctivitis sicca.
+- It may occur alone or with other autoimmune diseases such as rheumatoid arthritis or lupus.
+- Chronic dry mouth predisposes to dental caries, oral candidiasis, and difficulty eating dry foods.
+- Anti-SSA/SSB antibodies and salivary gland biopsy support the diagnosis.
+- Patients need monitoring for extraglandular manifestations and an increased risk of non-Hodgkin lymphoma.
+==================================================
+
+CASE_ID: 392
+DIFFICULTY: step1
+SYSTEM: rheumatology 
+
+DIAGNOSIS:
+Pseudogout
+
+ALIASES:
+CPPD
+calcium pyrophosphate deposition disease 
+
+VIGNETTE_LINES:
+1. A 74-year-old woman presents with abrupt painful swelling of the right knee that began overnight.
+2. She denies trauma but says she recently had a short hospitalization for dehydration and electrolyte abnormalities.
+3. Examination reveals a warm effused knee with markedly limited range of motion.
+4. Radiographs show linear calcification in the articular cartilage, and arthrocentesis is performed to exclude infection.
+5. Synovial fluid demonstrates rhomboid-shaped positively birefringent crystals under polarized microscopy.
+6. She improves with anti-inflammatory therapy after septic arthritis is ruled out.
+
+TEACHING_POINTS:
+- Pseudogout is caused by calcium pyrophosphate crystal deposition and commonly affects large joints such as the knee.
+- Acute flares can mimic gout or septic arthritis and may be triggered by illness, surgery, or metabolic disturbances.
+- Chondrocalcinosis on x-ray supports the diagnosis but is not sufficient by itself.
+- Synovial fluid analysis is essential to identify crystals and exclude infection.
+- Treatment includes NSAIDs, colchicine, or corticosteroids depending on patient comorbidities.
+==================================================
+
+CASE_ID: 393
+DIFFICULTY: step1
+SYSTEM: hematology/oncology 
+
+DIAGNOSIS:
+Hairy Cell Leukemia
+
+ALIASES:
+HCL
+hairy cell leukemia syndrome 
+
+VIGNETTE_LINES:
+1. A 58-year-old man presents with fatigue, frequent infections, and abdominal fullness.
+2. He denies significant lymph node enlargement but says he bruises more easily than before.
+3. Examination reveals massive splenomegaly and pallor without prominent peripheral lymphadenopathy.
+4. CBC shows pancytopenia with monocytopenia, and peripheral smear reveals atypical lymphoid cells with fine cytoplasmic projections.
+5. Bone marrow biopsy shows a fibrotic marrow infiltrated by B cells positive for markers characteristic of hairy cell leukemia.
+6. He is treated with a purine analog and achieves hematologic remission.
+
+TEACHING_POINTS:
+- Hairy cell leukemia is an indolent B-cell neoplasm that classically presents with pancytopenia and massive splenomegaly.
+- Monocytopenia is a particularly helpful clue.
+- Dry tap on marrow aspiration can occur because of marrow fibrosis.
+- Peripheral blood and marrow immunophenotyping confirm the diagnosis.
+- Purine analog therapy is highly effective and often induces durable remission.
+==================================================
+
+CASE_ID: 394
+DIFFICULTY: step1
+SYSTEM: hematology/oncology 
+
+DIAGNOSIS:
+Myelofibrosis
+
+ALIASES:
+primary myelofibrosis
+fibrotic myeloproliferative neoplasm 
+
+VIGNETTE_LINES:
+1. A 66-year-old man presents with progressive fatigue, night sweats, and early satiety.
+2. He notes unintentional weight loss and increasing abdominal fullness over several months.
+3. Examination reveals massive splenomegaly, pallor, and cachexia.
+4. CBC shows anemia with variable white blood cell and platelet abnormalities, and the peripheral smear demonstrates teardrop cells with a leukoerythroblastic picture.
+5. Bone marrow biopsy reveals reticulin and collagen fibrosis, and molecular testing identifies a driver mutation in a myeloproliferative pathway.
+6. Symptom-directed therapy is initiated with a JAK inhibitor, and stem cell transplant candidacy is discussed.
+
+TEACHING_POINTS:
+- Myelofibrosis is a myeloproliferative neoplasm characterized by marrow fibrosis, extramedullary hematopoiesis, and massive splenomegaly.
+- Constitutional symptoms, early satiety, anemia, and weight loss are common.
+- Teardrop cells and a leukoerythroblastic smear are classic peripheral blood clues.
+- JAK2, CALR, or MPL mutations often underlie the disorder.
+- Allogeneic stem cell transplant is the only potentially curative therapy, but many patients receive symptom-directed treatment.
+==================================================
+
+CASE_ID: 395
+DIFFICULTY: step1
+SYSTEM: infectious disease 
+
+DIAGNOSIS:
+Peritonsillar Abscess
+
+ALIASES:
+quinsy
+peritonsillar infection 
+
+VIGNETTE_LINES:
+1. A 21-year-old man presents with worsening sore throat, fever, and difficulty swallowing after several days of pharyngitis.
+2. He now has trouble opening his mouth fully and says his voice sounds strange.
+3. Examination reveals trismus, unilateral peritonsillar swelling, and deviation of the uvula away from the affected side.
+4. The pattern suggests a deep oropharyngeal complication rather than uncomplicated tonsillitis.
+5. Needle aspiration yields purulent material from the peritonsillar space.
+6. Drainage and antibiotic therapy lead to improvement while the airway is monitored closely.
+
+TEACHING_POINTS:
+- Peritonsillar abscess commonly complicates acute tonsillitis in adolescents and young adults.
+- Severe sore throat with muffled voice, trismus, drooling, and unilateral swelling are important clues.
+- It should be differentiated from peritonsillar cellulitis and deeper neck space infection.
+- Needle aspiration or incision and drainage is both diagnostic and therapeutic.
+- Airway compromise is the major immediate concern and must always be assessed.
+==================================================
+
+CASE_ID: 396
+DIFFICULTY: step1
+SYSTEM: infectious disease 
+
+DIAGNOSIS:
+Retropharyngeal Abscess
+
+ALIASES:
+retropharyngeal space infection
+deep neck abscess 
+
+VIGNETTE_LINES:
+1. A 4-year-old boy presents with fever, neck stiffness, drooling, and refusal to eat.
+2. His parents say he recently recovered from an upper respiratory infection and now prefers to keep his neck extended.
+3. Examination reveals muffled voice, cervical tenderness, and reluctance to move the neck.
+4. Lateral neck imaging shows widening of the prevertebral soft tissues.
+5. Contrast-enhanced CT demonstrates a fluid collection in the retropharyngeal space.
+6. He is admitted for IV antibiotics and ENT drainage because of concern for airway compromise and mediastinal spread.
+
+TEACHING_POINTS:
+- Retropharyngeal abscess is a deep neck infection most common in young children because of retropharyngeal lymph node anatomy.
+- Fever, neck stiffness, drooling, muffled voice, and torticollis are common clues.
+- Airway compromise is a major concern and should be assessed early.
+- CT with contrast helps distinguish cellulitis from a drainable abscess.
+- Complications include aspiration, jugular vein thrombosis, mediastinitis, and sepsis.
+==================================================
+
+CASE_ID: 397
+DIFFICULTY: step1
+SYSTEM: infectious disease 
+
+DIAGNOSIS:
+Orbital Cellulitis
+
+ALIASES:
+postseptal cellulitis
+orbital infection 
+
+VIGNETTE_LINES:
+1. An 11-year-old girl presents with fever, worsening eyelid swelling, and pain around one eye.
+2. Her parents report several days of sinus congestion before the eye symptoms began.
+3. Examination reveals proptosis, painful limitation of extraocular movements, and reduced visual acuity on the affected side.
+4. The presence of ophthalmoplegia and pain with eye movement distinguishes this process from a superficial preseptal infection.
+5. Contrast-enhanced CT of the orbits shows postseptal inflammation with a subperiosteal abscess adjacent to the ethmoid sinus.
+6. She is admitted for IV antibiotics and close ophthalmology and ENT monitoring, with drainage if vision or the abscess worsens.
+
+TEACHING_POINTS:
+- Orbital cellulitis most commonly arises from extension of sinus infection, especially ethmoid sinusitis.
+- Proptosis, painful or restricted eye movement, and visual changes are key clues that distinguish it from preseptal cellulitis.
+- Imaging is indicated when orbital involvement or abscess is suspected.
+- Rapid treatment is essential because complications include vision loss, cavernous sinus thrombosis, and intracranial spread.
+- Management requires IV antibiotics and multidisciplinary follow-up, with surgical drainage for some abscesses.
+==================================================
+
+CASE_ID: 398
+DIFFICULTY: step1
+SYSTEM: neurology 
+
+DIAGNOSIS:
+Moyamoya Disease
+
+ALIASES:
+moyamoya syndrome
+progressive intracranial carotid stenosis 
+
+VIGNETTE_LINES:
+1. An 8-year-old girl presents with recurrent brief episodes of left arm weakness and slurred speech that resolve within minutes.
+2. Her parents note the spells sometimes occur after crying or vigorous playing.
+3. Examination between episodes is normal, and basic cardiac workup does not identify an embolic source.
+4. Brain MRI shows small multifocal ischemic changes, prompting vascular imaging.
+5. Cerebral angiography demonstrates progressive narrowing of the distal internal carotid arteries with prominent collateral vessels creating a “puff of smoke” appearance.
+6. She is referred for surgical revascularization to reduce the risk of future ischemic stroke.
+
+TEACHING_POINTS:
+- Moyamoya disease is a chronic occlusive arteriopathy of the distal internal carotid circulation.
+- Children most often present with recurrent TIAs or ischemic strokes; adults may also present with hemorrhage.
+- Hyperventilation can precipitate symptoms by reducing cerebral blood flow.
+- The angiographic collateral pattern gives the disease its name.
+- Surgical revascularization is the main strategy to improve perfusion and reduce recurrent neurologic events.
+==================================================
+
+CASE_ID: 399
+DIFFICULTY: step1
+SYSTEM: ophthalmology 
+
+DIAGNOSIS:
+Retinoblastoma
+
+ALIASES:
+retinal blastoma
+RB1 eye tumor 
+
+VIGNETTE_LINES:
+1. A 2-year-old boy is brought in because his parents noticed a white reflex in one pupil on several flash photographs.
+2. They have also observed intermittent eye misalignment over the past month.
+3. Examination confirms leukocoria of the right eye with reduced fixation on that side.
+4. Ocular ultrasound identifies an intraocular mass, and MRI is obtained to define extent while avoiding invasive biopsy.
+5. Imaging reveals a calcified retinal tumor consistent with retinoblastoma.
+6. He is referred urgently for eye-preserving therapy versus enucleation based on disease extent, and the family receives genetic counseling.
+
+TEACHING_POINTS:
+- Retinoblastoma is the most common primary intraocular malignancy of childhood and classically presents with leukocoria.
+- Strabismus is another frequent presenting sign because vision is impaired in the affected eye.
+- Bilateral or multifocal disease raises concern for a germline RB1 mutation.
+- Ocular imaging is diagnostic; biopsy is avoided because of risk of tumor seeding.
+- Early detection is essential for survival, vision preservation, and family genetic evaluation.
+==================================================
+
+CASE_ID: 400
+DIFFICULTY: step1
+SYSTEM: endocrinology 
+
+DIAGNOSIS:
+Multiple Endocrine Neoplasia Type 2A
+
+ALIASES:
+MEN2A
+Sipple syndrome 
+
+VIGNETTE_LINES:
+1. A 35-year-old woman presents with intermittent headaches, palpitations, and a new thyroid nodule noted on routine examination.
+2. She also reports a family history of thyroid cancer and adrenal tumors in close relatives.
+3. Examination reveals a firm thyroid lesion and episodic hypertension during symptomatic spells.
+4. Laboratory testing shows elevated calcitonin, and catecholamine metabolite testing is pursued before any thyroid procedure is planned.
+5. Imaging identifies an adrenal mass consistent with pheochromocytoma, and further evaluation supports medullary thyroid carcinoma with associated parathyroid hyperplasia.
+6. Germline RET mutation testing confirms MEN2A, and management is staged so catecholamine excess is treated before definitive thyroid surgery.
+
+TEACHING_POINTS:
+- MEN2A is an autosomal dominant RET proto-oncogene syndrome characterized by medullary thyroid carcinoma, pheochromocytoma, and parathyroid hyperplasia.
+- Medullary thyroid carcinoma arises from parafollicular C cells and is associated with elevated calcitonin.
+- Pheochromocytoma must be recognized and treated before thyroid surgery to avoid severe perioperative catecholamine complications.
+- Family screening and prophylactic thyroidectomy in at-risk mutation carriers are central to management.
+- MEN2A differs from MEN2B, which features mucosal neuromas and marfanoid habitus rather than typical parathyroid disease.
+==================================================
+
