@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/next";
 // =============================================================
 
 const DARK_THEME = {
-  bg:             "#022129",
+  bg:             "#1a1a1a",
   bgCard:         "#0a2f38",
   bgInput:        "#0a2f38",
   bgMonitor:      "#011a1f",
@@ -1717,18 +1717,31 @@ export default function Home() {
 
       {/* OTHER GAMES DROPDOWN + LIGHT/DARK TOGGLE moved to TOOLBAR ROW below banner */}
 
-      {/* LOGO BANNER — full width, flush to top, always dark background */}
+      {/* LOGO BANNER — full width, flush to top */}
       <div
         style={{
           width: "100vw",
-          background: "#012127",
+          background: lightMode ? "#012127" : "#2a2a2a",
           display: "flex",
+          flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          padding: "18px 0",
+          padding: "20px 16px 18px",
+          gap: "8px",
         }}
       >
         <img src="/logo.png" alt="Medicle" style={{ height: "68px" }} />
+        <p style={{ color: "#ffffff", fontSize: "13px", fontWeight: 500, textAlign: "center", margin: 0, opacity: 0.9 }}>
+          Daily and endless clinical case diagnosis game
+        </p>
+        <a
+          href="https://www.medicle.net"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#5eead4", fontSize: "12px", fontWeight: 600, textDecoration: "none" }}
+        >
+          🔗 www.medicle.net
+        </a>
       </div>
 
       {/* ALL CONTENT BELOW BANNER — padded */}
