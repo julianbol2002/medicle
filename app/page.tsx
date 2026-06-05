@@ -87,12 +87,19 @@ const MAX_GUESSES = 6;
 
 // =============================================================
 // DAILY CASE SYSTEM
-// June 4 2026 = Case 475. Each day after = next case in sequence.
-// Cases beyond today are hidden from the jump-to selector.
+// June 4 2026 = Case 401. Each day after = next case in sequence.
+// Cases 1-370: hidden random pool
+// Cases 371-400: archive (past 30 daily cases)
+// Cases 401+: daily cases, one per day
 // =============================================================
 
 const DAILY_ANCHOR_DATE = new Date("2026-06-04T00:00:00");
-const DAILY_ANCHOR_CASE_ID = 475;
+const DAILY_ANCHOR_CASE_ID = 401;
+const ARCHIVE_START = 371;   // first archive case
+const RANDOM_POOL_MAX = 370; // cases 1-370 are random pool
+
+// Separate file for random cases (add new ones here forever)
+const RANDOM_CASES_FILE = "/doctordle cases/random_cases.txt";
 
 function getDailyOffset(): number {
   const now = new Date();
@@ -103,21 +110,32 @@ function getDailyOffset(): number {
     DAILY_ANCHOR_DATE.getDate()
   );
   const diffMs = today.getTime() - anchor.getTime();
-  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-  return diffDays; // negative = before anchor date, positive = after
+  return Math.floor(diffMs / (1000 * 60 * 60 * 24));
 }
 
-function getDailyCaseId(totalCases: number): number {
-  const offset = getDailyOffset();
-  // Anchor case is DAILY_ANCHOR_CASE_ID (1-indexed).
-  // Wrap around if we go past the total, or before case 1.
-  const raw = DAILY_ANCHOR_CASE_ID - 1 + offset; // 0-indexed
-  return (((raw % totalCases) + totalCases) % totalCases) + 1; // back to 1-indexed
+function getDailyCaseId(): number {
+  // June 4 2026 = case 401, each subsequent day = +1
+  return DAILY_ANCHOR_CASE_ID + getDailyOffset();
+}
+
+// Get the real calendar date for a given case ID (for archive labels)
+function getDateForCaseId(caseId: number): string {
+  const offset = caseId - DAILY_ANCHOR_CASE_ID;
+  const date = new Date(DAILY_ANCHOR_DATE);
+  date.setDate(date.getDate() + offset);
+  return date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 }
 
 function getTodayString(): string {
   const now = new Date();
   return now.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+}
+
+function generateCaseCode(): string {
+  const letters = "ABCDEFGHJKLMNPQRSTUVWXYZ";
+  const L = () => letters[Math.floor(Math.random() * letters.length)];
+  const N = () => Math.floor(Math.random() * 10);
+  return `${L()}${L()}${L()}-${N()}${N()}${N()}`;
 }
 
 // ✅ To add more cases: drop a new .txt file in /public/doctordle cases/
@@ -1215,6 +1233,9 @@ function ResultModal({
   solvedAtClueCount,
   onNext,
   onRandom,
+  onArchive,
+  onBackToDaily,
+  caseMode,
   theme,
 }: {
   won: boolean;
@@ -1223,6 +1244,9 @@ function ResultModal({
   solvedAtClueCount: number;
   onNext: () => void;
   onRandom: () => void;
+  onArchive: () => void;
+  onBackToDaily: () => void;
+  caseMode: "daily" | "archive" | "random";
   theme: Theme;
 }) {
   const [showTeaching, setShowTeaching] = useState(false);
@@ -1287,22 +1311,33 @@ function ResultModal({
           </div>
         )}
 
-        <div className="flex gap-3 mt-2">
-          <button
-            onClick={onNext}
-            className="flex-1 py-3 rounded-xl font-bold text-base text-white"
-            style={{ background: theme.accent }}
-          >
-            Next Case →
-          </button>
-          <button
-            onClick={onRandom}
-            className="flex-1 py-3 rounded-xl font-bold text-base"
-            style={{ background: theme.bgCard, color: theme.accent, border: `1px solid ${theme.accent}` }}
-          >
-            🎲 Random
-          </button>
-        </div>
+        {/* Buttons change based on which mode the player is in */}
+        {caseMode === "daily" ? (
+          <div className="flex flex-col gap-2 mt-2">
+            <div className="flex gap-2">
+              <button onClick={onArchive} className="flex-1 py-3 rounded-xl font-bold text-base text-white" style={{ background: theme.accent }}>
+                📅 Play Archive
+              </button>
+              <button onClick={onRandom} className="flex-1 py-3 rounded-xl font-bold text-base" style={{ background: theme.bgCard, color: theme.accent, border: `1px solid ${theme.accent}` }}>
+                🎲 Random Case
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className="flex flex-col gap-2 mt-2">
+            <div className="flex gap-2">
+              <button onClick={onArchive} className="flex-1 py-3 rounded-xl font-bold text-sm text-white" style={{ background: theme.accent }}>
+                📅 Archive
+              </button>
+              <button onClick={onRandom} className="flex-1 py-3 rounded-xl font-bold text-sm" style={{ background: theme.bgCard, color: theme.accent, border: `1px solid ${theme.accent}` }}>
+                🎲 Random
+              </button>
+              <button onClick={onBackToDaily} className="flex-1 py-3 rounded-xl font-bold text-sm" style={{ background: theme.bgCard, color: theme.accent, border: `1px solid ${theme.accent}` }}>
+                📆 Today
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -1314,6 +1349,7 @@ function ResultModal({
 
 export default function Home() {
   const [cases, setCases] = useState<Case[]>([]);
+  const [randomCases, setRandomCases] = useState<Case[]>([]);
   const [externalDiagnosisBank, setExternalDiagnosisBank] = useState<string[]>([]);
 
   const [current, setCurrent] = useState<Case | null>(null);
@@ -1346,6 +1382,8 @@ export default function Home() {
 
   // Daily case tracking
   const [dailyCaseId, setDailyCaseId] = useState<number>(0);
+  const [caseMode, setCaseMode] = useState<"daily" | "archive" | "random">("daily");
+  const [randomCaseCode, setRandomCaseCode] = useState<string>("");
 
   // =============================================================
   // LOAD CASES
@@ -1378,7 +1416,7 @@ export default function Home() {
         }
 
         // Compute today's daily case
-        const todayId = getDailyCaseId(parsed.length);
+        const todayId = getDailyCaseId();
         setDailyCaseId(todayId);
 
         // Find the daily case, fall back to first case if not found
@@ -1432,8 +1470,31 @@ export default function Home() {
   }, []);
 
   // =============================================================
-  // SYSTEM FILTER HELPERS
+  // LOAD RANDOM CASES FILE
   // =============================================================
+
+  useEffect(() => {
+    let active = true;
+
+    async function loadRandomCases() {
+      try {
+        const res = await fetch(RANDOM_CASES_FILE);
+        if (!res.ok) return; // silently skip if file doesn't exist yet
+        const txt = await res.text();
+        const parsed = dedupeCasesById(parseCases(txt));
+        if (!active) return;
+        setRandomCases(parsed);
+      } catch {
+        // ignore — random_cases.txt is optional
+      }
+    }
+
+    loadRandomCases();
+
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const allSystems = useMemo(() => {
     const set = new Set<string>();
@@ -1514,51 +1575,52 @@ export default function Home() {
   );
 
   // Sequential: go to the next case ID, wrap to 1 if at the daily case or end
-  const startNextCaseSequential = useCallback(() => {
-    if (!eligibleCases.length || !current) return;
-
-    const currentNum = Number(current.id);
-    const maxAllowed = dailyCaseId > 0 ? dailyCaseId : eligibleCases.length;
-
-    // Find the next case numerically
-    // Sort eligible cases by numeric id
-    const sorted = [...eligibleCases].sort((a, b) => Number(a.id) - Number(b.id));
-    const currentIdx = sorted.findIndex((c) => Number(c.id) === currentNum);
-
-    let next: Case | undefined;
-
-    if (currentIdx === -1) {
-      next = sorted[0];
-    } else {
-      // Look for the next case that is <= maxAllowed
-      const nextIdx = currentIdx + 1;
-      const nextCase = sorted[nextIdx];
-      if (!nextCase || Number(nextCase.id) > maxAllowed) {
-        // Wrap back to the first available case
-        next = sorted.find((c) => Number(c.id) <= maxAllowed) ?? sorted[0];
-      } else {
-        next = nextCase;
-      }
-    }
-
-    if (!next) return;
+  // Archive: pick a random case from 371 to (dailyCaseId - 1)
+  const startArchiveCase = useCallback(() => {
+    const archivePool = eligibleCases.filter((c) => {
+      const id = Number(c.id);
+      return id >= ARCHIVE_START && id < dailyCaseId;
+    });
+    if (!archivePool.length) return;
+    const next = archivePool[Math.floor(Math.random() * archivePool.length)];
+    setCaseMode("archive");
+    setRandomCaseCode("");
     setSeenIds(new Set([next.id]));
     resetRound(next);
-  }, [eligibleCases, current, dailyCaseId, resetRound]);
+  }, [eligibleCases, dailyCaseId, resetRound]);
 
-  // Random: pick any available case at random (up to today's daily)
+  // Random: pick from random_cases.txt (or fall back to 1-370 in main file)
   const startRandomCase = useCallback(() => {
-    if (!eligibleCases.length || !current) return;
-
-    const maxAllowed = dailyCaseId > 0 ? dailyCaseId : eligibleCases.length;
-    const available = eligibleCases.filter((c) => Number(c.id) <= maxAllowed && c.id !== current.id);
-    const pool = available.length > 0 ? available : eligibleCases.filter((c) => c.id !== current.id);
+    // Prefer random_cases.txt; fall back to cases 1-370 in main file
+    const externalPool = randomCases;
+    const fallbackPool = eligibleCases.filter((c) => Number(c.id) <= RANDOM_POOL_MAX);
+    const pool = externalPool.length > 0 ? externalPool : fallbackPool;
     if (!pool.length) return;
-
     const next = pool[Math.floor(Math.random() * pool.length)];
+    const code = generateCaseCode();
+    setCaseMode("random");
+    setRandomCaseCode(code);
     setSeenIds(new Set([next.id]));
     resetRound(next);
-  }, [eligibleCases, current, dailyCaseId, resetRound]);
+  }, [eligibleCases, randomCases, resetRound]);
+
+  // Back to today's daily case
+  const startDailyCase = useCallback(() => {
+    const daily = eligibleCases.find((c) => Number(c.id) === dailyCaseId);
+    if (!daily) return;
+    setCaseMode("daily");
+    setRandomCaseCode("");
+    setSeenIds(new Set([daily.id]));
+    resetRound(daily);
+  }, [eligibleCases, dailyCaseId, resetRound]);
+
+  // Sequential next (used for archive mode — go to next archive case)
+  const startNextCaseSequential = useCallback(() => {
+    if (caseMode === "random") { startRandomCase(); return; }
+    if (caseMode === "archive") { startArchiveCase(); return; }
+    // daily mode: go to archive
+    startArchiveCase();
+  }, [caseMode, startRandomCase, startArchiveCase]);
 
   // =============================================================
   // DROPDOWN ANSWER BANK (FIXES DUPES + EXPANDS POOL)
@@ -1586,14 +1648,19 @@ export default function Home() {
   }, [eligibleCases, externalDiagnosisBank]);
 
   const caseOptions = useMemo(() => {
-    const maxAllowed = dailyCaseId > 0 ? dailyCaseId : eligibleCases.length;
+    const maxAllowed = dailyCaseId > 0 ? dailyCaseId : 0;
     return eligibleCases
-      .filter((c) => Number(c.id) <= maxAllowed)
+      .filter((c) => {
+        const id = Number(c.id);
+        // Only show archive (371+) and up to today — hide random pool (1-370) and future
+        return id >= ARCHIVE_START && id <= maxAllowed;
+      })
       .map((c) => {
-        const isToday = Number(c.id) === dailyCaseId;
+        const id = Number(c.id);
+        const isToday = id === dailyCaseId;
         const systemPart = showSystem && c.system ? ` • ${displaySystemLabel(c.system)}` : "";
-        const todayPart = isToday ? " 📅 Today" : "";
-        return { id: c.id, label: `Case ${c.id}${systemPart}${todayPart}` };
+        const datePart = isToday ? ` 📅 Today` : ` — ${getDateForCaseId(id)}`;
+        return { id: c.id, label: `Case ${c.id}${systemPart}${datePart}` };
       });
   }, [eligibleCases, showSystem, dailyCaseId]);
 
@@ -1711,6 +1778,9 @@ export default function Home() {
           solvedAtClueCount={solvedAtClueCount}
           onNext={startNextCaseSequential}
           onRandom={startRandomCase}
+          onArchive={startArchiveCase}
+          onBackToDaily={startDailyCase}
+          caseMode={caseMode}
           theme={theme}
         />
       )}
@@ -1791,7 +1861,23 @@ export default function Home() {
             ))}
           </select>
         </div>
-        {current && Number(current.id) === dailyCaseId && (
+        {current && caseMode === "random" && randomCaseCode && (
+          <span
+            className="text-xs font-semibold whitespace-nowrap px-3 py-2 rounded-xl font-mono"
+            style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.textMuted }}
+          >
+            🎲 {randomCaseCode}
+          </span>
+        )}
+        {current && caseMode === "archive" && (
+          <span
+            className="text-xs font-semibold whitespace-nowrap px-3 py-2 rounded-xl"
+            style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.accent }}
+          >
+            📅 {getDateForCaseId(Number(current.id))}
+          </span>
+        )}
+        {current && caseMode === "daily" && Number(current.id) === dailyCaseId && (
           <span
             className="text-xs font-semibold whitespace-nowrap px-3 py-2 rounded-xl"
             style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.accent }}
