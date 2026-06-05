@@ -84,8 +84,8 @@ const LIGHT_THEME = {
   textFaint:      "#a87a50",
   accent:         "#d97706",
   clueNum:        "#d97706",
-  logoPanel:      "#2a1c0c",
-  logoBorder:     "#5a4430",
+  logoPanel:      "#012127",
+  logoBorder:     "#012127",
   selectBg:       "#ffffff",
   modalWin:       "#f0fdf4",
   modalLose:      "#fff1f2",
@@ -645,7 +645,7 @@ export default function Home() {
   const [showConfetti, setShowConfetti] = useState(false);
   const [showECG, setShowECG] = useState(true);
   const [showSystem, setShowSystem] = useState(false);
-  const [lightMode, setLightMode] = useState(false);
+  const [lightMode, setLightMode] = useState(true);
   const theme: Theme = lightMode ? LIGHT_THEME : DARK_THEME;
   const [showSystemFilter, setShowSystemFilter] = useState(false);
   const [selectedSystems, setSelectedSystems] = useState<Set<string>>(new Set());
@@ -848,7 +848,7 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col items-center px-4 pb-16 transition-colors duration-300" style={{ background: theme.bg, fontFamily: "'Poppins', sans-serif", color: theme.text }}>
+    <main className="min-h-screen flex flex-col items-center pb-16 transition-colors duration-300 overflow-x-hidden" style={{ background: theme.bg, fontFamily: "'Poppins', sans-serif", color: theme.text }}>
       <style>{`@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');`}</style>
       {showConfetti && <Confetti />}
       <Analytics />
@@ -857,8 +857,22 @@ export default function Home() {
         <ResultModal won={won} current={current} guesses={guesses} solvedAtClueCount={solvedAtClueCount} onArchive={startArchiveCase} onRandom={startRandomCase} onBackToDaily={startDailyCase} caseMode={caseMode} theme={theme} />
       )}
 
-      {/* OTHER GAMES DROPDOWN */}
-      <div style={{ position: "absolute", top: "16px", left: "16px" }}>
+      {/* LOGO BANNER — full width, flush to top */}
+      <div style={{ width: "100vw", background: lightMode ? "#2b1d0c" : "#2a2a2a", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "20px 16px 18px", gap: "8px" }}>
+        <img src="/vettle-logo.png" alt="Vettle" style={{ height: "68px" }} />
+        <p style={{ color: "#ffffff", fontSize: "13px", fontWeight: 500, textAlign: "center", margin: 0, opacity: 0.9 }}>
+          Daily and endless veterinary diagnosis game
+        </p>
+        <a href="https://www.medicle.net/vettle" target="_blank" rel="noopener noreferrer" style={{ color: "#d97706", fontSize: "12px", fontWeight: 600, textDecoration: "none" }}>
+          🔗 www.medicle.net/vettle
+        </a>
+      </div>
+
+      {/* ALL CONTENT BELOW BANNER */}
+      <div className="w-full flex flex-col items-center px-4">
+
+      {/* TOOLBAR ROW — game switcher + light/dark toggle */}
+      <div className="w-full max-w-3xl flex items-center justify-between py-3 mb-1">
         <select
           onChange={(e) => {
             if (e.target.value === "medicle") window.location.href = "/";
@@ -876,10 +890,6 @@ export default function Home() {
           <option value="dentdle">🦷 Dentdle — Dental cases</option>
           <option value="crimindle">⚖️ Crimindle — Criminal Law</option>
         </select>
-      </div>
-
-      {/* LIGHT/DARK TOGGLE */}
-      <div style={{ position: "absolute", top: "16px", right: "16px" }}>
         <button
           onClick={() => setLightMode((v) => !v)}
           style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.text, borderRadius: "20px", padding: "6px 14px", fontSize: "12px", fontFamily: "'Poppins', sans-serif", cursor: "pointer", display: "flex", alignItems: "center", gap: "6px", fontWeight: 500 }}
@@ -888,67 +898,40 @@ export default function Home() {
         </button>
       </div>
 
-      {/* HEADER */}
-      <div style={{ marginTop: "32px", marginBottom: "18px", display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", gap: "10px", width: "100%", maxWidth: "720px" }}>
-
-        {/* LOGO — panel only in light mode */}
-        {lightMode ? (
-          <div style={{ background: theme.logoPanel, border: `1px solid ${theme.logoBorder}`, borderRadius: "20px", padding: "20px 32px", display: "flex", alignItems: "center", justifyContent: "center", width: "100%" }}>
-            <img src="/vettle-logo.png" alt="Vettle" style={{ height: "72px" }} />
+      {/* CASE SELECTOR ROW */}
+      <div className="w-full max-w-3xl flex items-center gap-3 mb-4">
+        <div className="flex-1">
+          <select
+            value={caseMode === "random" ? "__endless__" : selectedCaseId}
+            onChange={(e) => { if (e.target.value === "__endless__") return; loadCaseById(e.target.value); }}
+            className="w-full rounded-xl px-3 py-2 text-sm outline-none"
+            style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text, fontFamily: "'Poppins', sans-serif" }}
+            disabled={!eligibleCases.length}
+          >
+            {caseOptions.map((opt) => <option key={opt.id} value={opt.id}>{opt.label}</option>)}
+          </select>
+        </div>
+        {current && (
+          <div className="text-right">
+            {caseMode === "random" ? (
+              <>
+                <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>ENDLESS MODE</p>
+                <p className="text-sm font-bold font-mono" style={{ color: theme.accent }}>♾️ {randomCaseCode}</p>
+              </>
+            ) : caseMode === "archive" ? (
+              <>
+                <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>ARCHIVE</p>
+                <p className="text-sm font-bold" style={{ color: theme.accent }}>📅 {getDateForCaseId(Number(current.id))}</p>
+              </>
+            ) : (
+              <>
+                <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>TODAY&apos;S CASE</p>
+                <p className="text-sm font-bold" style={{ color: theme.accent }}>🐾 {getTodayString()}</p>
+              </>
+            )}
+            {showSystem && current.system && <p className="text-xs mt-1" style={{ color: theme.accent }}>{displaySystemLabel(current.system)}</p>}
           </div>
-        ) : (
-          <img src="/vettle-logo.png" alt="Vettle" style={{ height: "72px" }} />
         )}
-
-        {/* INFO PANEL */}
-        <div style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, borderRadius: "16px", padding: "16px 20px", width: "100%" }}>
-          <p style={{ fontSize: "15px", color: theme.text, fontWeight: "600", marginBottom: "6px" }}>
-            Can you diagnose the animal before it&apos;s too late?
-          </p>
-          <p style={{ fontSize: "12px", color: theme.textMuted, marginBottom: "8px" }}>
-            Endless progressive clue-based vignettes. A new case every round.
-          </p>
-          <a href="https://www.medicle.net/vettle" target="_blank" rel="noopener noreferrer" style={{ fontSize: "13px", fontWeight: "bold", color: theme.accent, textDecoration: "none" }}>
-            🔗 www.medicle.net/vettle
-          </a>
-        </div>
-
-        {/* CASE SELECTOR */}
-        <div className="w-full grid gap-3 sm:grid-cols-[1fr_auto] items-center">
-          <div className="text-left">
-            <label className="block text-xs font-mono tracking-widest mb-1" style={{ color: theme.textMuted }}>Jump to case</label>
-            <select
-              value={caseMode === "random" ? "__endless__" : selectedCaseId}
-              onChange={(e) => { if (e.target.value === "__endless__") return; loadCaseById(e.target.value); }}
-              className="w-full rounded-xl px-3 py-2 text-sm outline-none"
-              style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text, fontFamily: "'Poppins', sans-serif" }}
-              disabled={!eligibleCases.length}
-            >
-              {caseOptions.map((opt) => <option key={opt.id} value={opt.id}>{opt.label}</option>)}
-            </select>
-          </div>
-          {current && (
-            <div className="sm:text-right text-left">
-              {caseMode === "random" ? (
-                <>
-                  <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>ENDLESS MODE</p>
-                  <p className="text-sm font-bold font-mono" style={{ color: theme.accent }}>♾️ {randomCaseCode}</p>
-                </>
-              ) : caseMode === "archive" ? (
-                <>
-                  <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>ARCHIVE</p>
-                  <p className="text-sm font-bold" style={{ color: theme.accent }}>📅 {getDateForCaseId(Number(current.id))}</p>
-                </>
-              ) : (
-                <>
-                  <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>TODAY&apos;S CASE</p>
-                  <p className="text-sm font-bold" style={{ color: theme.accent }}>🐾 {getTodayString()}</p>
-                </>
-              )}
-              {showSystem && current.system && <p className="text-xs mt-1" style={{ color: theme.accent }}>{displaySystemLabel(current.system)}</p>}
-            </div>
-          )}
-        </div>
       </div>
 
       {/* PROGRESS BAR */}
@@ -1064,6 +1047,8 @@ export default function Home() {
           </a>
         </p>
       </div>
+
+      </div>{/* end content wrapper */}
     </main>
   );
 }

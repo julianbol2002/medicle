@@ -2251,3 +2251,696 @@ TEACHING_POINTS:
 - This protective procedure is distinct from the testimonial-hearsay analysis of Crawford, which governs out-of-court statements.
 
 ==================================================
+
+==================================================
+CASE_ID: 076
+DIFFICULTY: crimdle
+SYSTEM: offenses 
+DIAGNOSIS:
+Battery 
+ALIASES:
+simple battery
+unlawful touching
+completed battery 
+VIGNETTE_LINES:
+- A man grows irritated during a crowded line at a concert entrance.
+- Another patron steps backward and bumps into him while checking a ticket.
+- Without warning, he shoves the patron hard in the chest with both hands.
+- The patron stumbles and falls, though he is not seriously injured.
+- Witnesses say the shove was deliberate and not part of the crowd movement.
+- The court instructs that the offense is complete when a defendant intentionally causes harmful or offensive physical contact. 
+TEACHING_POINTS:
+- Battery is the unlawful application of force to the person of another resulting in harmful or offensive contact.
+- The touching need not cause serious injury; an offensive, unconsented touching is enough.
+- Battery is commonly described as the completed form of assault in jurisdictions that preserve the distinction.
+- Only general intent is usually required: an intent to make the contact, not necessarily to cause a particular degree of harm.
+- Indirect contact, such as using an object or setting a force in motion, can satisfy the element of touching. 
+==================================================
+CASE_ID: 077
+DIFFICULTY: crimdle
+SYSTEM: offenses 
+DIAGNOSIS:
+Assault 
+ALIASES:
+simple assault
+attempted battery
+apprehension assault 
+VIGNETTE_LINES:
+- A driver gets out of his car during a road rage incident and storms toward another motorist.
+- He raises a tire iron over his shoulder and shouts that he is going to break the other driver's jaw.
+- Before any blow lands, the threatened driver backs away in panic and covers his face.
+- Bystanders intervene and separate the men before contact occurs.
+- The defendant insists that because he never actually struck anyone, no violent offense was completed.
+- The jury is instructed on an intentional act that either attempts a battery or places another in reasonable apprehension of immediate harmful contact. 
+TEACHING_POINTS:
+- Assault traditionally covers either an attempted battery or intentionally causing another to reasonably apprehend imminent harmful or offensive contact.
+- No actual touching is necessary; the offense protects against threatened violence and completed attempts.
+- Words alone are usually insufficient without some act indicating present ability to carry out the threat.
+- The victim's apprehension must be of immediate contact, not of harm at some later time.
+- Modern statutes often merge assault and battery, but common law keeps them analytically distinct. 
+==================================================
+CASE_ID: 078
+DIFFICULTY: crimdle
+SYSTEM: offenses 
+DIAGNOSIS:
+Aggravated Assault 
+ALIASES:
+felonious assault
+assault with a deadly weapon
+aggravated battery 
+VIGNETTE_LINES:
+- During an argument outside a nightclub, a man retrieves a metal baseball bat from his trunk.
+- He returns swinging the bat at the other person's head while yelling that he will end the dispute for good.
+- The victim raises an arm to block the blow and suffers a compound fracture.
+- Security cameras show a purposeful strike directed at a particularly vulnerable part of the body.
+- The defendant argues it was just a bar fight that got out of hand.
+- The court instructs that an assault or battery becomes aggravated when committed with a deadly weapon or with intent to inflict serious bodily injury. 
+TEACHING_POINTS:
+- Aggravated assault elevates simple assault or battery when there is serious bodily injury, intent to cause such injury, or use of a deadly weapon.
+- Objects not inherently deadly can become deadly weapons when used in a manner capable of causing death or serious injury.
+- Aiming blows at the head, neck, or other vital areas is strong evidence of aggravated intent.
+- Many statutes grade the offense based on injury severity, victim status, or weapon use.
+- Aggravated assault often serves as the assaultive counterpart to more serious homicide offenses when the victim survives. 
+==================================================
+CASE_ID: 079
+DIFFICULTY: crimdle
+SYSTEM: offenses 
+DIAGNOSIS:
+Kidnapping 
+ALIASES:
+kidnapping
+abduction
+aggravated restraint 
+VIGNETTE_LINES:
+- A man waits outside his former partner's workplace after learning she plans to testify against him in family court.
+- He forces her into the back seat of his car and drives for hours toward a remote cabin.
+- Along the way he binds her hands and takes away her phone so she cannot call for help.
+- He tells her she will be released only after she withdraws her statement and agrees to move away with him.
+- Police later find them at the cabin after tracking her abandoned vehicle and hearing screams from inside.
+- The charge turns on unlawful confinement or movement of another by force or threat, combined here with a purpose to terrorize and compel conduct. 
+TEACHING_POINTS:
+- Kidnapping generally requires unlawful confinement, restraint, or asportation of another person by force, threat, or deception.
+- The restraint or movement must be more than incidental to another offense in many jurisdictions.
+- Aggravating purposes include holding for ransom, facilitating another crime, terrorizing the victim, or interfering with government or family processes.
+- Taking a victim to a secret or remote location strongly supports kidnapping rather than simple restraint.
+- Modern statutes vary in how much movement or duration is required, but substantial interference with liberty is the core concept. 
+==================================================
+CASE_ID: 080
+DIFFICULTY: crimdle
+SYSTEM: offenses 
+DIAGNOSIS:
+False Imprisonment 
+ALIASES:
+false imprisonment
+unlawful restraint
+unlawful confinement 
+VIGNETTE_LINES:
+- A department store manager suspects a customer of shoplifting based on a vague description from an employee.
+- He escorts her into a back office, locks the door, and tells her she cannot leave until she signs a written confession.
+- The customer repeatedly insists she stole nothing and asks to leave to pick up her child from school.
+- The manager keeps her there for more than an hour without calling police or checking the store cameras.
+- The cameras later show she never took any merchandise.
+- The court focuses on the intentional, unlawful confinement of another within bounded limits without legal authority or consent. 
+TEACHING_POINTS:
+- False imprisonment is the unlawful confinement or restraint of a person against her will within bounded limits.
+- Physical barriers, force, threats, or asserted legal authority can all accomplish the confinement.
+- The victim must have no reasonable means of escape known to her.
+- Shopkeeper privileges may justify brief detention on reasonable grounds, but they do not permit coercive, prolonged confinement without proper basis.
+- Unlike kidnapping, false imprisonment does not generally require movement, ransom, or another aggravating purpose. 
+==================================================
+CASE_ID: 081
+DIFFICULTY: crimdle
+SYSTEM: offenses 
+DIAGNOSIS:
+Rape 
+ALIASES:
+forcible rape
+sexual assault by force
+rape by compulsion 
+VIGNETTE_LINES:
+- A woman accepts a ride home from an acquaintance after a party when the weather turns severe.
+- Instead of driving toward her apartment, he parks in an isolated lot and locks the doors.
+- He pins her wrists, ignores repeated statements to stop, and forces intercourse despite her resistance.
+- She immediately reports the assault and is examined at a hospital.
+- Investigators recover torn clothing and injuries consistent with forcible restraint.
+- The prosecution proceeds on a theory of sexual penetration accomplished by force and without consent. 
+TEACHING_POINTS:
+- Rape traditionally requires sexual penetration accomplished by force or threat and without consent; modern statutes vary in terminology and breadth.
+- Lack of consent is the central issue, and physical resistance requirements have largely been abolished in modern law.
+- Force may be actual or constructive through threats of serious harm.
+- Corroboration rules have largely been eliminated, but prompt complaint and forensic evidence commonly strengthen the case.
+- Many jurisdictions have gender-neutral sexual assault statutes that cover a wider range of conduct than the common law formulation. 
+==================================================
+CASE_ID: 082
+DIFFICULTY: crimdle
+SYSTEM: offenses 
+DIAGNOSIS:
+Statutory Rape 
+ALIASES:
+statutory rape
+unlawful sexual intercourse with a minor
+strict liability sex offense 
+VIGNETTE_LINES:
+- A 23-year-old man meets a teenager at a summer music festival and later begins a relationship with her.
+- She tells him repeatedly that she is nineteen and even shows a realistic fake identification card.
+- They engage in consensual sexual intercourse several times over the next month.
+- Her parents later report the relationship, and police discover she is only fifteen.
+- The defendant insists he genuinely believed she was an adult and would never have engaged in the relationship otherwise.
+- The court explains that, for this offense, the law focuses on the victim's age rather than consent or the defendant's mistake. 
+TEACHING_POINTS:
+- Statutory rape criminalizes sexual intercourse with a person below the age of consent, regardless of the minor's apparent willingness.
+- In many jurisdictions, it is treated as strict liability as to the victim's age, so a reasonable mistake of age is no defense.
+- The offense protects minors deemed legally incapable of consenting because of age.
+- Some statutes create age-gap or Romeo-and-Juliet exceptions to soften harsh results for close-in-age participants.
+- Statutory rape differs from forcible rape because force, threat, or actual nonconsent need not be proven. 
+==================================================
+CASE_ID: 083
+DIFFICULTY: crimdle
+SYSTEM: accomplice_liability 
+DIAGNOSIS:
+Accessory After the Fact 
+ALIASES:
+accessory after the fact
+hindering apprehension
+post-crime assistance 
+VIGNETTE_LINES:
+- A woman learns late at night that her brother has just stabbed a man during a fight outside a club.
+- When he arrives at her house covered in blood, she hides him in the basement and burns his clothes in the fireplace.
+- She also lies to police at the door and says she has not seen him for weeks.
+- The brother is later found with her help notes and cash she gave him to leave the state.
+- She was not involved in the stabbing itself and learned of it only after it happened.
+- The charge rests on her knowing assistance to help a felon avoid arrest and punishment after completion of the crime. 
+TEACHING_POINTS:
+- An accessory after the fact is someone who, knowing a felony has been committed, assists the offender to hinder arrest, prosecution, or punishment.
+- This is a separate offense from accomplice liability because the assistance occurs after the crime is complete.
+- The accessory after the fact is not liable as a principal for the underlying felony absent prior agreement or participation.
+- Typical acts include hiding the offender, destroying evidence, providing transportation, or lying to investigators.
+- Many jurisdictions grade the offense less seriously than the underlying felony. 
+==================================================
+CASE_ID: 084
+DIFFICULTY: crimdle
+SYSTEM: accomplice_liability 
+DIAGNOSIS:
+Withdrawal from Accomplice Liability 
+ALIASES:
+withdrawal by accomplice
+renunciation by aider
+abandonment of aiding and abetting 
+VIGNETTE_LINES:
+- Two friends plan a home invasion, and one agrees to supply the masks and drive the other to the neighborhood.
+- On the way there, he becomes alarmed by the increasing violence in the plan and turns the car around.
+- He takes back the masks, tells the other man the plan is over, and anonymously calls the homeowner warning that someone may try to break in.
+- The other man later steals a different car and commits the home invasion alone.
+- Prosecutors charge the first friend as an accomplice based on the earlier planning and support.
+- The court examines whether he sufficiently neutralized his assistance and gave timely notice before the offense occurred. 
+TEACHING_POINTS:
+- Withdrawal from accomplice liability generally requires more than a change of heart; the accomplice must repudiate the aid and, where possible, neutralize it or warn authorities.
+- Mere flight from the scene or silent inaction is usually insufficient if prior aid continues to facilitate the crime.
+- Effective withdrawal cuts off liability for the later offense if completed before the crime occurs.
+- The requirements are stricter than for abandoning mere thoughts because the accomplice has already contributed to the danger.
+- Jurisdictions vary, but timely communication and undoing prior assistance are the classic hallmarks of successful withdrawal. 
+==================================================
+CASE_ID: 085
+DIFFICULTY: crimdle
+SYSTEM: inchoate_crimes 
+DIAGNOSIS:
+Attempted Murder 
+ALIASES:
+attempted murder
+attempt to kill
+inchoate homicide 
+VIGNETTE_LINES:
+- A man believes a former coworker ruined his career and decides to kill him.
+- He waits outside the coworker's apartment building with a loaded handgun and watches the entrance for an hour.
+- When the coworker appears, the man steps from behind a parked truck and fires twice toward his chest.
+- Both shots miss when the coworker ducks behind a concrete pillar.
+- The shooter is arrested moments later still holding the weapon and admitting he meant to kill.
+- The charge turns on a specific intent to kill plus conduct that went beyond preparation and directly moved toward completing the homicide. 
+TEACHING_POINTS:
+- Attempted murder requires a specific intent to kill, even in jurisdictions where certain completed murders can rest on implied malice.
+- A substantial step or dangerous proximity act toward killing satisfies the act element when combined with the requisite intent.
+- Missing the victim or failing because of poor aim does not defeat liability.
+- Depraved-heart recklessness alone is generally insufficient for attempted murder because attempt requires purpose or specific intent.
+- Attempt merges into the completed offense if death ultimately occurs, but otherwise remains separately punishable. 
+==================================================
+CASE_ID: 086
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure 
+DIAGNOSIS:
+Curtilage 
+ALIASES:
+curtilage doctrine
+protected area around the home
+Dunn factors 
+VIGNETTE_LINES:
+- Officers investigating stolen farm equipment walk onto residential property without a warrant.
+- They bypass the front walk and head behind the house toward a fenced side yard used for family cookouts and children's toys.
+- Inside that enclosure, close to the back door, they peer under a tarp and find disassembled machinery.
+- The homeowner objects that the officers entered a private domestic area directly associated with the home.
+- The prosecution argues the officers were merely on open rural property.
+- The court analyzes proximity to the home, enclosure, domestic use, and steps taken to shield the area in deciding whether the space receives the home's constitutional protection. 
+TEACHING_POINTS:
+- Curtilage is the area immediately surrounding and associated with the home that receives Fourth Amendment protection like the home itself.
+- United States v. Dunn identifies four helpful factors: proximity, enclosure, nature of use, and steps taken to shield the area from observation.
+- Curtilage is distinct from open fields, which receive no Fourth Amendment protection even if privately owned.
+- Officers may approach a home by the normal access route for a knock-and-talk, but not roam through protected curtilage without a warrant or exception.
+- Domestic activities close to the house weigh strongly in favor of curtilage protection. 
+==================================================
+CASE_ID: 087
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure 
+DIAGNOSIS:
+Inventory Search 
+ALIASES:
+inventory search
+impound inventory
+caretaking search 
+VIGNETTE_LINES:
+- Police lawfully arrest a driver for driving on a suspended license in a downtown no-parking zone.
+- Because no licensed passenger is available and the vehicle cannot remain where it is, officers order the car towed to the impound lot.
+- Following department policy, they open the glove compartment and trunk to list valuables before the tow.
+- In the trunk they find a locked toolbox, open it pursuant to the written inventory protocol, and discover illegal contraband.
+- The driver argues the officers used the tow as a pretext to search for evidence without a warrant.
+- The court considers whether the search was conducted under standardized procedures for caretaking rather than investigative purposes. 
+TEACHING_POINTS:
+- An inventory search is a warrant exception allowing police to catalog property in a lawfully impounded vehicle or other property for safekeeping.
+- The search must be conducted pursuant to standardized criteria or established routine, not as a ruse for investigation.
+- The justifications are protection of the owner's property, protection of police from claims, and officer safety.
+- Closed containers may be opened if the governing policy authorizes it.
+- If the impoundment itself is unlawful or the policy is ignored, the inventory rationale fails. 
+==================================================
+CASE_ID: 088
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure 
+DIAGNOSIS:
+Independent Source Doctrine 
+ALIASES:
+independent source
+independent source doctrine
+untainted warrant 
+VIGNETTE_LINES:
+- Officers illegally enter a warehouse and glimpse several crates of contraband near the rear loading dock.
+- Realizing the problem, they leave without touching anything and seek a warrant.
+- In the affidavit they rely only on information from a confidential informant and surveillance conducted before the unlawful entry.
+- A magistrate issues the warrant, and officers re-enter lawfully and seize the contraband.
+- The defense moves to suppress, arguing the officers would never have applied for the warrant but for the earlier illegal peek.
+- The court examines whether the later search was genuinely independent of the initial illegality. 
+TEACHING_POINTS:
+- The independent source doctrine admits evidence later obtained by lawful means independent of the original illegality.
+- It differs from inevitable discovery because the lawful source actually occurred rather than merely would have occurred.
+- Courts ask whether the decision to seek the warrant and the content of the affidavit were genuinely untainted by the illegal entry.
+- The doctrine prevents police from being placed in a worse position than they would have occupied absent the misconduct.
+- If the warrant application depends on illegally obtained information, the doctrine does not apply. 
+==================================================
+CASE_ID: 089
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure 
+DIAGNOSIS:
+Plain Feel Doctrine 
+ALIASES:
+plain feel
+Minnesota v. Dickerson
+tactile plain view 
+VIGNETTE_LINES:
+- An officer lawfully stops a man based on reasonable suspicion that he may be armed during a nighttime disturbance call.
+- Conducting a protective frisk, the officer pats down the man's jacket for weapons.
+- In one pocket he immediately feels a small, rock-like lump wrapped in plastic that, from training and repeated experience, he recognizes as crack cocaine.
+- He does not squeeze, manipulate, or explore the pocket further before removing the item.
+- The defendant argues the frisk was only for weapons and the officer had no warrant to search for narcotics.
+- The court considers whether the incriminating nature of the object was immediately apparent during the lawful pat-down. 
+TEACHING_POINTS:
+- The plain feel doctrine allows seizure of contraband detected during a lawful Terry frisk if its identity is immediately apparent by touch.
+- The officer may not manipulate or further explore the object beyond what is necessary for the protective pat-down.
+- Minnesota v. Dickerson established that tactile discovery parallels the plain view doctrine when the lawful touch reveals contraband immediately.
+- If additional squeezing or probing is needed to figure out what the object is, the seizure is unlawful.
+- The initial stop and frisk themselves must be valid before plain feel can apply. 
+==================================================
+CASE_ID: 090
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure 
+DIAGNOSIS:
+Search of Cell Phone Incident to Arrest 
+ALIASES:
+Riley rule
+cell phone search incident to arrest
+digital data warrant requirement 
+VIGNETTE_LINES:
+- Officers arrest a suspect on a valid warrant during a street encounter.
+- As they handcuff him, they seize a smartphone from his pocket along with his wallet and keys.
+- On the way to the station, an officer begins scrolling through recent messages and photographs looking for evidence related to the offense.
+- No warrant has been sought, and there is no indication the phone is about to be remotely wiped or used as a weapon.
+- The device contains incriminating messages later introduced at trial.
+- The court addresses whether the traditional search-incident-to-arrest rationale extends to digital information stored on a phone. 
+TEACHING_POINTS:
+- Riley v. California holds that police generally need a warrant to search digital data on a cell phone seized incident to arrest.
+- The ordinary search-incident justifications—officer safety and preservation of evidence—carry less weight for digital contents.
+- Officers may seize and secure the phone itself to prevent destruction while seeking a warrant.
+- Exigent circumstances may still justify immediate access in rare cases, such as urgent threats or imminent destruction.
+- The rule reflects the vast quantity and sensitivity of information stored on modern smartphones. 
+==================================================
+CASE_ID: 091
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure 
+DIAGNOSIS:
+Franks Challenge 
+ALIASES:
+Franks hearing
+false affidavit challenge
+Franks v. Delaware 
+VIGNETTE_LINES:
+- Detectives obtain a warrant based on an affidavit stating that a confidential informant saw cocaine in a suspect's apartment the night before.
+- After charges are filed, defense counsel uncovers internal notes showing the informant had actually recanted and admitted he never entered the apartment.
+- The affiant detective was aware of the recantation but omitted it from the application.
+- The search turned up drugs and cash that form the core of the prosecution's case.
+- The defense seeks an evidentiary hearing to challenge the affidavit itself rather than just the execution of the warrant.
+- The court evaluates whether the warrant was issued on the basis of a knowingly or recklessly false statement or omission material to probable cause. 
+TEACHING_POINTS:
+- Under Franks v. Delaware, a defendant may challenge a warrant affidavit by showing deliberate or reckless falsehoods or material omissions.
+- The defendant must make a substantial preliminary showing to obtain a Franks hearing.
+- If the tainted material is removed (or the omitted truth added) and probable cause disappears, the warrant is invalid.
+- Mere negligence in preparing the affidavit is not enough; the misconduct must be knowing or reckless.
+- A successful Franks challenge can lead to suppression of evidence seized under the defective warrant. 
+==================================================
+CASE_ID: 092
+DIFFICULTY: crimdle
+SYSTEM: constitutional_criminal_procedure 
+DIAGNOSIS:
+Suggestive Identification Due Process Violation 
+ALIASES:
+unduly suggestive lineup
+tainted identification
+due process identification challenge 
+VIGNETTE_LINES:
+- Police ask a robbery victim to view a lineup several days after the crime.
+- The suspect is the only person in the lineup wearing clothing matching the distinctive red varsity jacket the robber was described as wearing.
+- Before the viewing, an officer tells the victim that they "finally caught the guy who did it."
+- The victim identifies the suspect with certainty, and that identification becomes the centerpiece of the case.
+- The defense argues the procedure all but steered the witness to a single choice.
+- The court examines whether the identification procedure was unnecessarily suggestive and, if so, whether the resulting identification was nonetheless reliable under the totality of the circumstances. 
+TEACHING_POINTS:
+- Identification procedures violate due process when they are unnecessarily suggestive and create a substantial likelihood of misidentification.
+- Courts first ask whether the police procedure was unduly suggestive; if so, they then assess reliability using factors such as opportunity to view, attention, description accuracy, certainty, and time elapsed.
+- Police comments, distinctive clothing, or a one-person showup can create suggestiveness.
+- Even suggestive procedures may survive if the identification is independently reliable under the totality of the circumstances.
+- The doctrine addresses reliability and fairness, separate from the Sixth Amendment right to counsel at post-indictment lineups. 
+==================================================
+CASE_ID: 093
+DIFFICULTY: crimdle
+SYSTEM: constitutional_criminal_procedure 
+DIAGNOSIS:
+Bruton Rule Violation 
+ALIASES:
+Bruton problem
+co-defendant confession
+Bruton v. United States 
+VIGNETTE_LINES:
+- Two defendants are tried together for an armed robbery in which both allegedly participated.
+- One defendant confessed to police after arrest and, in the statement, directly named the other as the gunman.
+- The confessing defendant chooses not to testify at trial.
+- The prosecution seeks to introduce the confession with a limiting instruction telling the jury to consider it only against the declarant.
+- Defense counsel for the nonconfessing defendant objects that the statement powerfully implicates his client with no opportunity for cross-examination.
+- The court must decide whether the confession can be used in a joint trial consistent with the confrontation right. 
+TEACHING_POINTS:
+- Under Bruton v. United States, a nontestifying co-defendant's confession that facially incriminates another defendant generally cannot be introduced in a joint trial, even with a limiting instruction.
+- The concern is that jurors cannot realistically ignore the confession against the nondeclarant defendant.
+- Redaction may cure the problem if it truly removes direct implication, but obvious blanks or substitutions may still violate Bruton.
+- Severance of defendants is one common remedy.
+- The doctrine is grounded in the Confrontation Clause because the nonconfessing defendant cannot cross-examine the declarant. 
+==================================================
+CASE_ID: 094
+DIFFICULTY: crimdle
+SYSTEM: constitutional_criminal_procedure 
+DIAGNOSIS:
+Batson Challenge 
+ALIASES:
+Batson v. Kentucky
+discriminatory peremptory strikes
+equal protection jury selection 
+VIGNETTE_LINES:
+- During jury selection in a felony trial, the prosecutor uses peremptory strikes to remove every Black prospective juror from the panel.
+- The defendant, who is also Black, objects before the jury is sworn.
+- Asked for a reason, the prosecutor offers vague explanations that do not match the record of voir dire answers.
+- The trial judge compares the struck jurors to similarly situated white jurors who were not removed.
+- The defense argues the strikes were motivated by race rather than case-specific concerns.
+- The court undertakes the required three-step inquiry into whether the peremptory challenges were exercised for a discriminatory purpose. 
+TEACHING_POINTS:
+- Batson v. Kentucky bars race-based use of peremptory strikes under the Equal Protection Clause.
+- The analysis proceeds in three steps: a prima facie showing, a race-neutral explanation from the striking party, and a determination of purposeful discrimination.
+- Comparative juror analysis can reveal pretext when similarly situated jurors of different races are treated differently.
+- Batson has been extended beyond race and beyond prosecutors to other protected classifications and to civil litigants in some contexts.
+- A successful Batson challenge typically results in reseating the juror or starting jury selection over. 
+==================================================
+CASE_ID: 095
+DIFFICULTY: crimdle
+SYSTEM: defenses 
+DIAGNOSIS:
+Castle Doctrine 
+ALIASES:
+castle doctrine
+no duty to retreat at home
+defense of habitation 
+VIGNETTE_LINES:
+- A homeowner wakes after midnight to the sound of glass breaking downstairs.
+- He sees a stranger climbing through the kitchen window carrying a pry bar.
+- The intruder moves toward the staircase despite shouted commands to leave.
+- Believing his family is in immediate danger, the homeowner fires and kills the intruder.
+- The prosecution argues he could have retreated upstairs and locked the bedroom door instead of using deadly force.
+- The court instructs on the special rule governing the use of force against an unlawful intruder in one's dwelling. 
+TEACHING_POINTS:
+- The castle doctrine generally eliminates the duty to retreat before using necessary defensive force in one's own home.
+- Many jurisdictions also presume a reasonable fear of death or serious injury when an unlawful intruder forcibly enters an occupied dwelling.
+- The doctrine is a specialized application of self-defense and defense of habitation.
+- It does not usually protect force used against someone lawfully present or against an intruder who no longer poses a threat.
+- Some states extend related protections to occupied vehicles or workplaces through broader stand-your-ground statutes. 
+==================================================
+CASE_ID: 096
+DIFFICULTY: crimdle
+SYSTEM: defenses 
+DIAGNOSIS:
+Initial Aggressor Limitation on Self-Defense 
+ALIASES:
+initial aggressor rule
+aggressor forfeiture of self-defense
+provoker limitation 
+VIGNETTE_LINES:
+- A man starts a bar fight by hurling a bottle and rushing at another patron with clenched fists.
+- The other patron grabs a pool cue and begins striking back to fend him off.
+- The original aggressor then pulls a knife and stabs the other patron, claiming he was defending himself from the cue.
+- Witnesses agree the fight began only because of his deliberate attack.
+- He never clearly withdrew or communicated any intent to stop before using the knife.
+- The court evaluates whether a person who provokes the conflict may rely on self-defense without first withdrawing in good faith. 
+TEACHING_POINTS:
+- An initial aggressor generally loses the right to claim self-defense.
+- The aggressor can regain that right only by withdrawing in good faith and clearly communicating the withdrawal, after which continued attack by the other party may justify defense.
+- Merely escalating from a fistfight to deadly force without withdrawal does not restore the right.
+- The rule prevents a wrongdoer from creating the confrontation and then benefiting from the resulting danger.
+- Jurisdictions vary on how serious the initial aggression must be and how clearly withdrawal must be communicated. 
+==================================================
+CASE_ID: 097
+DIFFICULTY: crimdle
+SYSTEM: homicide 
+DIAGNOSIS:
+Felony Murder Agency Theory 
+ALIASES:
+agency theory of felony murder
+felony murder by felon-caused death
+agency limitation 
+VIGNETTE_LINES:
+- Two men commit an armed robbery of a convenience store late at night.
+- As they flee, a responding police officer exchanges gunfire with one of the robbers.
+- The officer's shot accidentally strikes and kills a store clerk standing behind the counter.
+- Neither robber fired the fatal shot, though both caused the confrontation by undertaking the robbery.
+- Prosecutors seek to hold the robbers liable for murder under the felony-murder rule.
+- The court applies a theory that limits felony-murder liability to killings committed by the felons or their accomplices, not by non-felon third parties. 
+TEACHING_POINTS:
+- Under the agency theory, felony-murder liability attaches only when the killing is committed by one of the felons or an accomplice acting in furtherance of the felony.
+- Deaths caused by victims, bystanders, or police officers generally do not count under this theory.
+- This contrasts with the broader proximate-cause theory, which can impose liability for any foreseeable death resulting from the felony.
+- Jurisdictions are split on which theory they follow.
+- The choice of theory can radically change liability when gunfire from resistance or police response causes the death. 
+==================================================
+CASE_ID: 098
+DIFFICULTY: crimdle
+SYSTEM: homicide 
+DIAGNOSIS:
+Felony Murder Proximate Cause Theory 
+ALIASES:
+proximate cause felony murder
+foreseeable death during felony
+broad felony murder theory 
+VIGNETTE_LINES:
+- Two armed robbers burst into a pharmacy during business hours and begin shouting orders at customers and staff.
+- A customer with a licensed handgun draws and fires in panic as the robbers move toward the exit.
+- One of the customer's shots misses the robbers and kills another shopper.
+- The robbers flee but are quickly arrested nearby.
+- The prosecution argues the death was a foreseeable consequence of the violent felony they set in motion.
+- The court applies a theory under which a felon may be liable for any death proximately resulting from the felony, even if a third party fired the fatal shot. 
+TEACHING_POINTS:
+- Under the proximate-cause theory, felony-murder liability can attach when a death is a foreseeable result of the felony, even if caused by a non-felon.
+- Violent felonies that invite armed resistance often satisfy the foreseeability rationale.
+- This theory is broader than the agency theory and is followed in some jurisdictions.
+- The analysis still requires a sufficient causal connection and absence of a superseding event.
+- Whether a jurisdiction uses agency or proximate cause often determines the outcome in cases involving victims or police firing the fatal shot. 
+==================================================
+CASE_ID: 099
+DIFFICULTY: crimdle
+SYSTEM: mens_rea 
+DIAGNOSIS:
+Corporate Criminal Liability 
+ALIASES:
+corporate criminal liability
+respondeat superior crime
+entity liability 
+VIGNETTE_LINES:
+- A regional sales manager directs employees to falsify emissions reports so the company can secure government contracts.
+- The scheme is carried out during the manager's regular work hours using company systems and reporting channels.
+- Senior executives later claim they never personally approved the falsifications.
+- Investigators determine the manager acted, at least in part, to increase the company's profits and preserve his division's bonuses.
+- Prosecutors charge the corporation itself in addition to the individuals involved.
+- The court considers whether an employee's criminal acts can be imputed to the company when committed within the scope of employment and for the entity's benefit. 
+TEACHING_POINTS:
+- A corporation can be held criminally liable for acts of employees committed within the scope of employment and intended, at least in part, to benefit the corporation.
+- The doctrine resembles respondeat superior in the criminal context.
+- Liability can attach even if higher management did not specifically authorize or know about the misconduct.
+- Corporations commonly face criminal charges in regulatory, environmental, fraud, and public corruption contexts.
+- Individual liability for managers and employees is separate and may be pursued alongside entity liability. 
+==================================================
+CASE_ID: 100
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure 
+DIAGNOSIS:
+Mistrial for Manifest Necessity 
+ALIASES:
+manifest necessity mistrial
+hung jury retrial
+mistrial without double jeopardy bar 
+VIGNETTE_LINES:
+- A defendant is on trial for armed robbery before a duly sworn jury.
+- After several days of deliberation, the jurors inform the judge that they are hopelessly deadlocked and cannot reach a unanimous verdict.
+- The judge sends them back twice with further instructions, but the impasse remains unchanged.
+- Over defense objection, the judge declares a mistrial and schedules a new trial.
+- The defendant argues that trying him again would violate the prohibition on being twice put in jeopardy.
+- The court analyzes whether terminating the first trial was compelled by manifest necessity rather than prosecutorial advantage. 
+TEACHING_POINTS:
+- Once jeopardy has attached, a retrial after mistrial is allowed only when there is manifest necessity or when the defendant consents.
+- A genuinely hung jury is the classic example of manifest necessity permitting retrial.
+- The doctrine prevents the government from aborting a weak case simply to gain a better second chance.
+- The trial judge must exercise sound discretion and consider alternatives before declaring a mistrial.
+- If manifest necessity exists, double jeopardy does not bar a second trial on the same charge. 
+==================================================
+CASE_ID: 101
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure 
+DIAGNOSIS:
+Corpus Delicti Rule 
+ALIASES:
+corpus delicti
+corpus delicti corroboration
+confession corroboration rule 
+VIGNETTE_LINES:
+- A man walks into a police station appearing distraught and says he killed a drifter during a camping trip weeks earlier.
+- He describes leaving the body in a remote canyon but gives vague landmarks that searchers cannot match.
+- No body, blood, clothing, or missing-person report has been found despite repeated search efforts.
+- The prosecution seeks to proceed primarily on the basis of his detailed confession.
+- Defense counsel argues that a confession alone should not support conviction where no independent evidence shows that a crime actually occurred.
+- The court considers whether the state has produced evidence outside the confession tending to establish that the charged harm and a criminal act actually happened. 
+TEACHING_POINTS:
+- The corpus delicti rule requires the prosecution to present some independent evidence that a crime actually occurred before a confession alone can support conviction.
+- The purpose is to guard against false confessions based on coercion, mental illness, or notoriety-seeking.
+- The required corroboration usually need not independently prove guilt, but it must show that the injury or loss occurred through criminal agency.
+- Some jurisdictions follow a related but more flexible trustworthiness doctrine instead of the traditional corpus delicti rule.
+- The rule most often arises in homicide cases with missing bodies but can apply to many offenses. 
+==================================================
+CASE_ID: 102
+DIFFICULTY: crimdle
+SYSTEM: constitutional_criminal_procedure 
+DIAGNOSIS:
+Dying Declaration 
+ALIASES:
+dying declaration
+deathbed statement
+hearsay dying declaration 
+VIGNETTE_LINES:
+- A stabbing victim is rushed to the emergency room with a punctured lung and rapidly falling blood pressure.
+- Between gasps, she tells the attending nurse that she knows she is dying and identifies the person who stabbed her outside a nightclub.
+- She loses consciousness minutes later and dies before police can take a formal statement.
+- At the homicide trial, the nurse is called to repeat what the victim said.
+- Defense counsel objects that the statement is hearsay and that the defendant never had a chance to cross-examine the declarant.
+- The court evaluates whether the statement falls within a long-recognized exception for a declarant who believed death was imminent when describing the cause or circumstances of that impending death. 
+TEACHING_POINTS:
+- A dying declaration is a statement made by a now-unavailable declarant who believed death was imminent and who spoke about the cause or circumstances of that impending death.
+- It is a traditional hearsay exception and remains recognized in homicide prosecutions.
+- The declarant need not use specific words, but the circumstances must show a settled belief in impending death.
+- Historically, dying declarations also survive Confrontation Clause challenges despite being testimonial.
+- The exception is narrow and limited to statements about the fatal event or its immediate circumstances. 
+==================================================
+CASE_ID: 103
+DIFFICULTY: crimdle
+SYSTEM: constitutional_criminal_procedure 
+DIAGNOSIS:
+Excited Utterance 
+ALIASES:
+excited utterance
+spontaneous exclamation
+hearsay exception for excitement 
+VIGNETTE_LINES:
+- A woman runs barefoot into a convenience store moments after a shooting in the parking lot.
+- She is shaking uncontrollably, crying, and clutching her side where broken glass cut her during the chaos.
+- Before any officer begins formal questioning, she blurts out that the man in the blue pickup just shot her friend and sped away.
+- Security footage confirms she entered the store within seconds of the gunfire.
+- At trial the prosecution seeks to introduce the cashier's testimony recounting her words.
+- The court considers whether the statement was made under the stress of a startling event before reflective thought could take hold. 
+TEACHING_POINTS:
+- An excited utterance is a hearsay exception for statements relating to a startling event made while the declarant is under the stress of excitement caused by it.
+- The theory is that excitement reduces the likelihood of fabrication because there is little time for reflection.
+- The statement must relate to the startling event, and the stress of that event must still be ongoing.
+- Unlike a present sense impression, an excited utterance need not be almost perfectly contemporaneous if the excitement persists.
+- In criminal cases, a genuinely spontaneous excited utterance made for help rather than prosecution is often nontestimonial for Confrontation Clause purposes. 
+==================================================
+CASE_ID: 104
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure 
+DIAGNOSIS:
+Knock-and-Announce Rule 
+ALIASES:
+knock and announce
+announcement requirement
+Wilson v. Arkansas 
+VIGNETTE_LINES:
+- Officers obtain a valid warrant to search a home for firearms and narcotics.
+- Arriving before dawn, they immediately smash the front door and rush inside without first knocking or announcing their presence.
+- Nothing in the warrant application suggested the occupants were armed, dangerous, or likely to destroy evidence instantly.
+- The search uncovers large quantities of contraband in plain sight.
+- The defendant argues the otherwise valid search was executed in an unconstitutional manner.
+- The court addresses whether officers were required to knock, announce their authority and purpose, and wait a reasonable time absent a recognized justification to dispense with that step. 
+TEACHING_POINTS:
+- The knock-and-announce principle generally requires officers executing a warrant to announce their presence and purpose before entering a dwelling.
+- Exceptions exist where officers reasonably suspect that announcement would be dangerous, futile, or lead to immediate destruction of evidence.
+- The rule derives from common law and the Fourth Amendment's reasonableness requirement.
+- Although a violation can be unconstitutional, Hudson v. Michigan holds that the exclusionary rule does not automatically apply as a remedy.
+- The doctrine focuses on privacy, dignity, and reducing violence during home entries. 
+==================================================
+CASE_ID: 105
+DIFFICULTY: crimdle
+SYSTEM: criminal_procedure 
+DIAGNOSIS:
+Attenuation Doctrine 
+ALIASES:
+attenuation of the taint
+attenuation doctrine
+dissipation of illegality 
+VIGNETTE_LINES:
+- Police unlawfully stop a man on the street without reasonable suspicion and briefly detain him.
+- During the stop, they run his name and discover an outstanding arrest warrant that had been issued weeks earlier.
+- They arrest him on the warrant and conduct a lawful search incident to that arrest.
+- The search reveals illegal contraband in his jacket pocket.
+- The defense moves to suppress, arguing the discovery flowed directly from the illegal stop.
+- The court examines whether the preexisting warrant and lawful arrest sufficiently interrupted the connection between the initial illegality and the later evidence. 
+TEACHING_POINTS:
+- The attenuation doctrine admits evidence when the connection between police misconduct and the discovery of evidence has become sufficiently remote or interrupted.
+- Courts consider factors such as temporal proximity, intervening circumstances, and the flagrancy of the misconduct.
+- A valid, preexisting arrest warrant discovered after an unlawful stop can sometimes attenuate the taint of the stop.
+- The doctrine is one of the major exceptions to the fruit of the poisonous tree rule, alongside independent source and inevitable discovery.
+- The core question is whether the later evidence was obtained by exploitation of the illegality or by means sufficiently distinguishable to purge the taint. 
+==================================================
+
