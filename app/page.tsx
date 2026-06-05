@@ -1319,7 +1319,7 @@ function ResultModal({
                 📅 Play Archive
               </button>
               <button onClick={onRandom} className="flex-1 py-3 rounded-xl font-bold text-base" style={{ background: theme.bgCard, color: theme.accent, border: `1px solid ${theme.accent}` }}>
-                🎲 Random Case
+                ♾️ Endless Mode
               </button>
             </div>
           </div>
@@ -1330,7 +1330,7 @@ function ResultModal({
                 📅 Archive
               </button>
               <button onClick={onRandom} className="flex-1 py-3 rounded-xl font-bold text-sm" style={{ background: theme.bgCard, color: theme.accent, border: `1px solid ${theme.accent}` }}>
-                🎲 Random
+                ♾️ Endless
               </button>
               <button onClick={onBackToDaily} className="flex-1 py-3 rounded-xl font-bold text-sm" style={{ background: theme.bgCard, color: theme.accent, border: `1px solid ${theme.accent}` }}>
                 📆 Today
@@ -1649,10 +1649,9 @@ export default function Home() {
 
   const caseOptions = useMemo(() => {
     const maxAllowed = dailyCaseId > 0 ? dailyCaseId : 0;
-    return eligibleCases
+    const options = eligibleCases
       .filter((c) => {
         const id = Number(c.id);
-        // Only show archive (371+) and up to today — hide random pool (1-370) and future
         return id >= ARCHIVE_START && id <= maxAllowed;
       })
       .map((c) => {
@@ -1662,7 +1661,15 @@ export default function Home() {
         const datePart = isToday ? ` 📅 Today` : ` — ${getDateForCaseId(id)}`;
         return { id: c.id, label: `Case ${c.id}${systemPart}${datePart}` };
       });
-  }, [eligibleCases, showSystem, dailyCaseId]);
+
+    // When in endless mode, prepend a placeholder entry so the dropdown
+    // shows "♾️ Endless Mode" instead of defaulting to a real case number
+    if (caseMode === "random") {
+      return [{ id: "__endless__", label: "♾️ Endless Mode" }, ...options];
+    }
+
+    return options;
+  }, [eligibleCases, showSystem, dailyCaseId, caseMode]);
 
   const filtered = useMemo(() => {
     const q = guess.trim().toLowerCase();
@@ -1848,8 +1855,11 @@ export default function Home() {
       <div className="w-full max-w-3xl flex items-center gap-3 mb-4">
         <div className="flex-1">
           <select
-            value={selectedCaseId}
-            onChange={(e) => loadCaseById(e.target.value)}
+            value={caseMode === "random" ? "__endless__" : selectedCaseId}
+            onChange={(e) => {
+              if (e.target.value === "__endless__") return; // clicking the placeholder does nothing
+              loadCaseById(e.target.value);
+            }}
             className="w-full rounded-xl px-3 py-2 text-sm outline-none"
             style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text, fontFamily: "'Poppins', sans-serif" }}
             disabled={!eligibleCases.length}
@@ -1861,12 +1871,12 @@ export default function Home() {
             ))}
           </select>
         </div>
-        {current && caseMode === "random" && randomCaseCode && (
+        {current && caseMode === "random" && (
           <span
             className="text-xs font-semibold whitespace-nowrap px-3 py-2 rounded-xl font-mono"
-            style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.textMuted }}
+            style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.accent }}
           >
-            🎲 {randomCaseCode}
+            ♾️ Endless
           </span>
         )}
         {current && caseMode === "archive" && (
