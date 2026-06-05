@@ -85,8 +85,8 @@ const LIGHT_THEME = {
   textFaint:      "#a16207",
   accent:         "#b45309",
   clueNum:        "#b45309",
-  logoPanel:      "#1c1400",
-  logoBorder:     "#3a2a0a",
+  logoPanel:      "#012127",
+  logoBorder:     "#012127",
   selectBg:       "#ffffff",
   modalWin:       "#fffbeb",
   modalLose:      "#fff1f2",
@@ -134,69 +134,6 @@ function generateCaseCode(): string {
   const L = () => letters[Math.floor(Math.random() * letters.length)];
   const N = () => Math.floor(Math.random() * 10);
   return `${L()}${L()}${L()}-${N()}${N()}${N()}`;
-}
-
-// =============================================================
-// COURTROOM STATUS BAR (replaces gavel)
-// =============================================================
-
-const STATUS_LABELS = [
-  "Case Filed",
-  "Discovery Phase",
-  "Pre-Trial Motions",
-  "Trial Underway",
-  "Closing Arguments",
-  "Verdict Imminent",
-];
-const STATUS_COLORS = [
-  "#d4af37",
-  "#c9a227",
-  "#c0392b",
-  "#a93226",
-  "#922b21",
-  "#7b241c",
-];
-
-function CourtroomStatus({ badGuesses, gameOver, won, guessesLeft }: { badGuesses: number; gameOver: boolean; won: boolean; guessesLeft: number; }) {
-  const idx = won ? 0 : Math.min(badGuesses, STATUS_LABELS.length - 1);
-  const color = won ? "#d4af37" : gameOver && !won ? "#4a0000" : STATUS_COLORS[idx];
-  const label = won ? "Verdict: GUILTY ✓" : gameOver && !won ? "MISTRIAL — Case Dismissed" : STATUS_LABELS[idx];
-  const pct = won ? 100 : gameOver ? 0 : (guessesLeft / MAX_GUESSES) * 100;
-
-  return (
-    <div className="w-full rounded-2xl p-4 border" style={{ background: "#0a0500", borderColor: "#3a2a0a" }}>
-      <div className="flex items-center justify-between mb-3 px-1">
-        <span className="text-xs font-mono tracking-widest" style={{ color }}>⚖ {label}</span>
-        {!gameOver && (
-          <span className="text-xs font-mono" style={{ color: "#8a7340" }}>
-            {guessesLeft} guess{guessesLeft !== 1 ? "es" : ""} left
-          </span>
-        )}
-      </div>
-      <div className="w-full rounded-full overflow-hidden" style={{ background: "#1a1000", height: "10px" }}>
-        <div
-          className="h-full rounded-full transition-all duration-500"
-          style={{ width: `${pct}%`, background: color }}
-        />
-      </div>
-      <div className="flex justify-between mt-2 px-0.5">
-        {STATUS_LABELS.map((s, i) => (
-          <div
-            key={i}
-            className="text-center"
-            style={{
-              fontSize: "8px",
-              fontFamily: "'Poppins', sans-serif",
-              color: i < idx || won ? color : "#3a2a0a",
-              fontWeight: i === idx && !gameOver ? 700 : 400,
-            }}
-          >
-            {i + 1}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
 }
 
 // =============================================================
@@ -567,9 +504,8 @@ export default function Home() {
   const [won, setWon] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
-  const [showGavel, setShowGavel] = useState(true);
   const [showSystem, setShowSystem] = useState(false);
-  const [lightMode, setLightMode] = useState(false);
+  const [lightMode, setLightMode] = useState(true);
   const theme: Theme = lightMode ? LIGHT_THEME : DARK_THEME;
   const [showSystemFilter, setShowSystemFilter] = useState(false);
   const [selectedSystems, setSelectedSystems] = useState<Set<string>>(new Set());
@@ -582,7 +518,7 @@ export default function Home() {
   const resetRound = useCallback((nextCase: Case) => {
     setCurrent(nextCase); setSelectedCaseId(nextCase.id); setRevealed(1); setGuess(""); setGuesses([]);
     setGameOver(false); setWon(false); setShowDropdown(false); setShowConfetti(false);
-    setShowGavel(true); setSolvedAtClueCount(1);
+    setSolvedAtClueCount(1);
   }, []);
 
   useEffect(() => {
@@ -752,15 +688,29 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col items-center px-4 pb-16 transition-colors duration-300" style={{ background: theme.bg, fontFamily: "'Poppins', sans-serif", color: theme.text }}>
+    <main className="min-h-screen flex flex-col items-center pb-16 transition-colors duration-300 overflow-x-hidden" style={{ background: theme.bg, fontFamily: "'Poppins', sans-serif", color: theme.text }}>
       <style>{`@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');`}</style>
       {showConfetti && <Confetti />}
       <Analytics />
 
       {gameOver && current && <ResultModal won={won} current={current} guesses={guesses} solvedAtClueCount={solvedAtClueCount} onArchive={startArchiveCase} onRandom={startRandomCase} onBackToDaily={startDailyCase} caseMode={caseMode} theme={theme} />}
 
-      {/* OTHER GAMES DROPDOWN */}
-      <div style={{ position: "absolute", top: "16px", left: "16px" }}>
+      {/* LOGO BANNER — full width, flush to top, crimindle color scheme */}
+      <div style={{ width: "100vw", background: lightMode ? "#060505" : "#2a2a2a", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "20px 16px 18px", gap: "8px" }}>
+        <img src="/crimindle-logo.png" alt="Crimindle" style={{ height: "68px" }} />
+        <p style={{ color: "#ffffff", fontSize: "13px", fontWeight: 500, textAlign: "center", margin: 0, opacity: 0.9 }}>
+          Daily and endless criminal law case game
+        </p>
+        <a href="https://www.medicle.net/crimindle" target="_blank" rel="noopener noreferrer" style={{ color: "#d4af37", fontSize: "12px", fontWeight: 600, textDecoration: "none" }}>
+          🔗 www.medicle.net/crimindle
+        </a>
+      </div>
+
+      {/* ALL CONTENT BELOW BANNER */}
+      <div className="w-full flex flex-col items-center px-4">
+
+      {/* TOOLBAR ROW — game switcher + light/dark toggle */}
+      <div className="w-full max-w-3xl flex items-center justify-between py-3 mb-1">
         <select
           onChange={(e) => {
             if (e.target.value === "medicle") window.location.href = "/";
@@ -778,70 +728,45 @@ export default function Home() {
           <option value="psychodle">🧩 Psychodle — Psychiatry cases</option>
           <option value="dentdle">🦷 Dentdle — Dental cases</option>
         </select>
-      </div>
-
-      {/* LIGHT/DARK TOGGLE */}
-      <div style={{ position: "absolute", top: "16px", right: "16px" }}>
         <button onClick={() => setLightMode((v) => !v)} style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.text, borderRadius: "20px", padding: "6px 14px", fontSize: "12px", fontFamily: "'Poppins', sans-serif", cursor: "pointer", display: "flex", alignItems: "center", gap: "6px", fontWeight: 500 }}>
           {lightMode ? "🌙 Dark" : "☀️ Light"}
         </button>
       </div>
 
-      {/* HEADER */}
-      <div style={{ marginTop: "32px", marginBottom: "18px", display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", gap: "10px", width: "100%", maxWidth: "720px" }}>
-
-        {/* LOGO — panel only in light mode */}
-        {lightMode ? (
-          <div style={{ background: theme.logoPanel, border: `1px solid ${theme.logoBorder}`, borderRadius: "20px", padding: "20px 32px", display: "flex", alignItems: "center", justifyContent: "center", width: "100%" }}>
-            <img src="/crimindle-logo.png" alt="Crimindle" style={{ height: "72px" }} />
+      {/* CASE SELECTOR ROW */}
+      <div className="w-full max-w-3xl flex items-center gap-3 mb-4">
+        <div className="flex-1">
+          <select
+            value={caseMode === "random" ? "__endless__" : selectedCaseId}
+            onChange={(e) => { if (e.target.value === "__endless__") return; loadCaseById(e.target.value); }}
+            className="w-full rounded-xl px-3 py-2 text-sm outline-none"
+            style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text, fontFamily: "'Poppins', sans-serif" }}
+            disabled={!eligibleCases.length}
+          >
+            {caseOptions.map((opt) => <option key={opt.id} value={opt.id}>{opt.label}</option>)}
+          </select>
+        </div>
+        {current && (
+          <div className="text-right">
+            {caseMode === "random" ? (
+              <>
+                <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>ENDLESS MODE</p>
+                <p className="text-sm font-bold font-mono" style={{ color: theme.accent }}>♾️ {randomCaseCode}</p>
+              </>
+            ) : caseMode === "archive" ? (
+              <>
+                <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>ARCHIVE</p>
+                <p className="text-sm font-bold" style={{ color: theme.accent }}>📅 {getDateForCaseId(Number(current.id))}</p>
+              </>
+            ) : (
+              <>
+                <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>TODAY&apos;S CASE</p>
+                <p className="text-sm font-bold" style={{ color: theme.accent }}>⚖️ {getTodayString()}</p>
+              </>
+            )}
+            {showSystem && current.system && <p className="text-xs mt-1" style={{ color: theme.accent }}>{displaySystemLabel(current.system)}</p>}
           </div>
-        ) : (
-          <img src="/crimindle-logo.png" alt="Crimindle" style={{ height: "72px" }} />
         )}
-
-        {/* INFO PANEL */}
-        <div style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, borderRadius: "16px", padding: "16px 20px", width: "100%" }}>
-          <p style={{ fontSize: "15px", color: theme.text, fontWeight: "600", marginBottom: "6px" }}>Can you identify the crime before the gavel falls?</p>
-          <p style={{ fontSize: "12px", color: theme.textMuted, marginBottom: "8px" }}>Endless progressive criminal law vignettes. A new case every round.</p>
-          <a href="https://www.medicle.net/crimindle" target="_blank" rel="noopener noreferrer" style={{ fontSize: "13px", fontWeight: "bold", color: theme.accent, textDecoration: "none" }}>🔗 www.medicle.net/crimindle</a>
-        </div>
-
-        {/* CASE SELECTOR */}
-        <div className="w-full grid gap-3 sm:grid-cols-[1fr_auto] items-center">
-          <div className="text-left">
-            <label className="block text-xs font-mono tracking-widest mb-1" style={{ color: theme.textMuted }}>Jump to case</label>
-            <select
-              value={caseMode === "random" ? "__endless__" : selectedCaseId}
-              onChange={(e) => { if (e.target.value === "__endless__") return; loadCaseById(e.target.value); }}
-              className="w-full rounded-xl px-3 py-2 text-sm outline-none"
-              style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text, fontFamily: "'Poppins', sans-serif" }}
-              disabled={!eligibleCases.length}
-            >
-              {caseOptions.map((opt) => <option key={opt.id} value={opt.id}>{opt.label}</option>)}
-            </select>
-          </div>
-          {current && (
-            <div className="sm:text-right text-left">
-              {caseMode === "random" ? (
-                <>
-                  <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>ENDLESS MODE</p>
-                  <p className="text-sm font-bold font-mono" style={{ color: theme.accent }}>♾️ {randomCaseCode}</p>
-                </>
-              ) : caseMode === "archive" ? (
-                <>
-                  <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>ARCHIVE</p>
-                  <p className="text-sm font-bold" style={{ color: theme.accent }}>📅 {getDateForCaseId(Number(current.id))}</p>
-                </>
-              ) : (
-                <>
-                  <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>TODAY&apos;S CASE</p>
-                  <p className="text-sm font-bold" style={{ color: theme.accent }}>⚖️ {getTodayString()}</p>
-                </>
-              )}
-              {showSystem && current.system && <p className="text-xs mt-1" style={{ color: theme.accent }}>{displaySystemLabel(current.system)}</p>}
-            </div>
-          )}
-        </div>
       </div>
 
       {/* PROGRESS BAR — capped at MAX_GUESSES */}
@@ -899,12 +824,9 @@ export default function Home() {
         ))}
       </div>
 
-      {/* COURTROOM STATUS + FILTER BUTTONS */}
+      {/* FILTER BUTTONS */}
       <div className="mt-8 w-full max-w-3xl">
         <div className="flex flex-wrap items-center gap-2 mb-2">
-          <button onClick={() => setShowGavel((s) => !s)} className="flex items-center gap-2 text-xs font-mono mb-2 px-3 py-1 rounded-lg transition-all" style={{ background: showGavel ? theme.bgCard : "transparent", border: `1px solid ${theme.border}`, color: showGavel ? theme.accent : theme.textFaint, fontFamily: "'Poppins', sans-serif" }}>
-            <span style={{ color: showGavel ? theme.accent : theme.textFaint }}>●</span>{showGavel ? "Hide" : "Show"} Courtroom Status
-          </button>
           <button onClick={() => setShowSystem((s) => !s)} className="flex items-center gap-2 text-xs font-mono mb-2 px-3 py-1 rounded-lg transition-all" style={{ background: showSystem ? theme.bgCard : "transparent", border: `1px solid ${theme.border}`, color: showSystem ? theme.accent : theme.textFaint, fontFamily: "'Poppins', sans-serif" }}>
             <span style={{ color: showSystem ? theme.accent : theme.textFaint }}>●</span>{showSystem ? "Hide" : "Show"} Area of Law
           </button>
@@ -934,12 +856,10 @@ export default function Home() {
                 ))}
               </div>
             )}
-            {selectedSystems.size > 0 && <p className="text-xs mt-3" style={{ color: theme.textFaint }}>Active filter: {Array.from(selectedSystems).map(displaySystemLabel).join(", ")}</p>}
+        {selectedSystems.size > 0 && <p className="text-xs mt-3" style={{ color: theme.textFaint }}>Active filter: {Array.from(selectedSystems).map(displaySystemLabel).join(", ")}</p>}
             <p className="text-xs mt-2" style={{ color: theme.textFaint }}>Tip: Picking areas here limits new cases to those categories for this session.</p>
           </div>
         )}
-
-        {showGavel && <CourtroomStatus badGuesses={badGuesses} gameOver={gameOver} won={won} guessesLeft={guessesLeft} />}
       </div>
 
       {/* FOOTER */}
@@ -957,6 +877,8 @@ export default function Home() {
           </a>
         </p>
       </div>
+
+      </div>{/* end content wrapper */}
     </main>
   );
 }
