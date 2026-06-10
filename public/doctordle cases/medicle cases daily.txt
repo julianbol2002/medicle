@@ -1,0 +1,299 @@
+CASE_ID: 001
+DIFFICULTY: hard
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Cardiac amyloidosis
+
+ALIASES:
+Amyloid cardiomyopathy
+Infiltrative amyloid heart disease
+Restrictive cardiomyopathy due to amyloidosis
+
+VIGNETTE_LINES:
+
+1. A 68-year-old man presents with progressive shortness of breath.
+2. He has had several months of bilateral hand numbness and underwent carpal tunnel release 2 years ago.
+3. Examination shows elevated jugular venous pressure, bilateral lower-extremity edema, and clear lungs.
+4. ECG demonstrates low-voltage QRS complexes, and basic metabolic panel shows mild renal insufficiency.
+5. Echocardiography reveals concentric ventricular wall thickening with biatrial enlargement and a restrictive filling pattern despite a preserved ejection fraction.
+6. Endomyocardial biopsy demonstrates extracellular amorphous deposits with apple-green birefringence on Congo red staining.
+
+TEACHING_POINTS:
+
+* Heart failure symptoms with increased ventricular wall thickness and unexpectedly low ECG voltage should suggest an infiltrative cardiomyopathy.
+* Bilateral carpal tunnel syndrome and peripheral neuropathy can precede overt cardiac manifestations of amyloid disease.
+* Restrictive physiology often presents with prominent right-sided congestion and relatively clear lungs early in the course.
+* Tissue confirmation relies on identifying amyloid deposits with Congo red staining and characteristic birefringence.
+
+==================================================
+
+CASE_ID: 002
+DIFFICULTY: hard
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Allergic bronchopulmonary aspergillosis
+
+ALIASES:
+ABPA
+Allergic Aspergillus airway disease
+Aspergillus hypersensitivity lung disease
+
+VIGNETTE_LINES:
+
+1. A 29-year-old woman presents with worsening cough.
+2. She has a long history of asthma requiring frequent rescue inhaler use.
+3. Examination reveals diffuse expiratory wheezing and scattered crackles.
+4. CBC shows peripheral eosinophilia, and chest radiography demonstrates transient patchy upper-lobe opacities.
+5. CT of the chest shows central bronchiectasis with mucus plugging.
+6. Serum testing demonstrates markedly elevated Aspergillus-specific IgE levels with an immediate hypersensitivity response to Aspergillus antigen.
+
+TEACHING_POINTS:
+
+* Worsening asthma with eosinophilia and fleeting pulmonary infiltrates should prompt consideration of a hypersensitivity process rather than simple infection.
+* Central bronchiectasis is a key imaging clue that helps narrow the differential in difficult asthma cases.
+* Patients may produce thick mucus plugs and be misdiagnosed with recurrent bacterial pneumonia.
+* Confirmation relies on evidence of Aspergillus sensitization in the correct clinical setting rather than invasive fungal infection.
+
+==================================================
+
+CASE_ID: 003
+DIFFICULTY: hard
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Primary sclerosing cholangitis
+
+ALIASES:
+PSC
+Chronic fibrosing cholangitis
+Sclerosing cholangitis
+
+VIGNETTE_LINES:
+
+1. A 34-year-old man presents with progressive fatigue.
+2. He has a several-year history of intermittent bloody diarrhea treated intermittently with mesalamine.
+3. Physical examination shows mild scleral icterus and right upper quadrant tenderness.
+4. Liver studies reveal a cholestatic pattern with elevated alkaline phosphatase and bilirubin.
+5. Magnetic resonance cholangiopancreatography shows multifocal short strictures and segmental dilatations involving the intrahepatic and extrahepatic bile ducts.
+6. Brush cytology obtained during endoscopic evaluation shows no malignancy, and the cholangiographic pattern is diagnostic of chronic fibrosing inflammation of the biliary tree.
+
+TEACHING_POINTS:
+
+* Cholestatic liver enzyme elevation in a patient with inflammatory bowel disease should raise concern for a biliary tract disorder.
+* The associated colitis is classically ulcerative colitis, but hepatobiliary disease activity does not necessarily parallel bowel symptoms.
+* Multifocal stricturing and beading of the biliary tree help distinguish this condition from isolated obstruction or primary biliary disease.
+* Patients require surveillance because of increased risk for cholangiocarcinoma and colorectal neoplasia.
+
+==================================================
+
+CASE_ID: 004
+DIFFICULTY: hard
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Primary hyperaldosteronism
+
+ALIASES:
+Conn syndrome
+Aldosterone-producing adenoma syndrome
+Primary aldosteronism
+
+VIGNETTE_LINES:
+
+1. A 41-year-old woman presents with muscle weakness.
+2. She has had difficult-to-control hypertension despite taking three antihypertensive medications.
+3. Examination shows no peripheral edema and normal volume status.
+4. Basic metabolic panel demonstrates hypokalemia and mild metabolic alkalosis.
+5. Plasma studies show a suppressed renin level with an elevated aldosterone-to-renin ratio, and CT demonstrates a unilateral adrenal nodule.
+6. Adrenal venous sampling shows markedly increased aldosterone secretion from the left adrenal gland compared with the right.
+
+TEACHING_POINTS:
+
+* Resistant hypertension with unexplained hypokalemia should prompt evaluation for excess mineralocorticoid activity.
+* Lack of edema despite sodium retention is explained by aldosterone escape and pressure natriuresis.
+* An elevated aldosterone-to-renin ratio narrows the differential but does not localize the source.
+* Adrenal venous sampling is the confirmatory test used to distinguish unilateral from bilateral disease before surgery.
+
+==================================================
+
+CASE_ID: 005
+DIFFICULTY: hard
+SYSTEM: neurology
+
+DIAGNOSIS:
+Normal pressure hydrocephalus
+
+ALIASES:
+NPH
+Communicating hydrocephalus of adulthood
+Hakim-Adams syndrome
+
+VIGNETTE_LINES:
+
+1. A 76-year-old man presents with progressive difficulty walking.
+2. His family reports several months of increasing forgetfulness and urinary urgency.
+3. Examination shows a broad-based, magnetic gait with difficulty initiating steps.
+4. MRI of the brain demonstrates ventriculomegaly out of proportion to cortical atrophy.
+5. After a large-volume lumbar puncture, his gait speed improves noticeably over the next several hours.
+6. Continuous cerebrospinal fluid drainage testing reproduces marked symptomatic improvement, supporting benefit from ventriculoperitoneal shunting.
+
+TEACHING_POINTS:
+
+* Gait impairment often appears before cognitive decline and incontinence in this potentially reversible cause of dementia.
+* Ventriculomegaly alone is not sufficient, because cerebral atrophy can also enlarge the ventricles.
+* Improvement after CSF removal helps distinguish this condition from degenerative parkinsonian and Alzheimer-spectrum disorders.
+* Early recognition matters because shunting can significantly improve function, especially gait.
+
+==================================================
+
+CASE_ID: 006
+DIFFICULTY: hard
+SYSTEM: nephrology
+
+DIAGNOSIS:
+Thin basement membrane nephropathy
+
+ALIASES:
+Benign familial hematuria
+Thin basement membrane disease
+Familial thin GBM nephropathy
+
+VIGNETTE_LINES:
+
+1. A 22-year-old woman presents with recurrent dark urine.
+2. She reports that several relatives were told they had blood in the urine but never developed kidney failure.
+3. Examination is unremarkable without edema, hearing loss, or visual abnormalities.
+4. Urinalysis shows persistent microscopic hematuria with minimal proteinuria and a normal serum creatinine level.
+5. Kidney biopsy shows diffuse thinning of the glomerular basement membrane on electron microscopy without immune complex deposition.
+6. Genetic testing identifies a heterozygous collagen IV abnormality consistent with an inherited thin glomerular basement membrane disorder.
+
+TEACHING_POINTS:
+
+* Persistent isolated hematuria in a young patient with preserved kidney function and family history suggests a hereditary basement membrane abnormality.
+* The absence of significant proteinuria, deafness, and ocular findings helps distinguish this disorder from Alport spectrum disease.
+* Light microscopy may be nondiagnostic, making electron microscopy especially useful in evaluation.
+* Most patients have a benign course, although follow-up is warranted if proteinuria or hypertension develops.
+
+==================================================
+
+CASE_ID: 007
+DIFFICULTY: hard
+SYSTEM: hematology_oncology
+
+DIAGNOSIS:
+Paroxysmal nocturnal hemoglobinuria
+
+ALIASES:
+PNH
+Complement-mediated hemolytic anemia due to GPI-anchor deficiency
+Marchiafava-Micheli syndrome
+
+VIGNETTE_LINES:
+
+1. A 31-year-old man presents with fatigue.
+2. He reports episodic cola-colored urine in the morning and was treated for an unexplained abdominal vein thrombosis last year.
+3. Examination shows conjunctival pallor and mild scleral icterus.
+4. Laboratory studies reveal normocytic anemia, elevated lactate dehydrogenase, low haptoglobin, and a negative direct antiglobulin test.
+5. Bone marrow evaluation shows a hypocellular marrow without evidence of leukemia or myelodysplasia.
+6. Flow cytometry demonstrates absence of CD55 and CD59 on a population of peripheral blood cells.
+
+TEACHING_POINTS:
+
+* Coombs-negative intravascular hemolysis with unusual venous thrombosis is a classic diagnostic pattern requiring synthesis across organ systems.
+* Abdominal pain, dysphagia, and erectile dysfunction may result from nitric oxide depletion during hemolytic episodes.
+* Bone marrow failure syndromes can coexist with this disorder, complicating the presentation.
+* Flow cytometry for loss of GPI-anchored proteins confirms the diagnosis.
+
+==================================================
+
+CASE_ID: 008
+DIFFICULTY: hard
+SYSTEM: infectious_disease
+
+DIAGNOSIS:
+Whipple disease
+
+ALIASES:
+Tropheryma whipplei infection
+Intestinal lipodystrophy
+Systemic Whipple disease
+
+VIGNETTE_LINES:
+
+1. A 55-year-old man presents with chronic diarrhea.
+2. He has had months of migratory joint pains and progressive weight loss despite multiple negative stool cultures.
+3. Examination shows temporal wasting and hyperpigmented skin over sun-exposed areas.
+4. Laboratory studies demonstrate iron deficiency anemia and low serum albumin.
+5. Upper endoscopy with small-bowel biopsy shows blunted villi containing numerous foamy macrophages in the lamina propria.
+6. Polymerase chain reaction performed on the intestinal tissue detects Tropheryma whipplei.
+
+TEACHING_POINTS:
+
+* Chronic diarrhea with weight loss and migratory arthralgias should prompt consideration of a systemic infectious cause of malabsorption.
+* Routine stool studies are often unrevealing because the disease primarily involves the small intestinal mucosa.
+* Histology narrows the diagnosis, but molecular confirmation is useful because several disorders can produce macrophage-rich infiltrates.
+* Delayed treatment can lead to cardiac and neurologic involvement.
+
+==================================================
+
+CASE_ID: 009
+DIFFICULTY: hard
+SYSTEM: rheumatology
+
+DIAGNOSIS:
+Behçet disease
+
+ALIASES:
+Behçet syndrome
+Variable vessel vasculitis of Behçet disease
+Adamantiades-Behçet disease
+
+VIGNETTE_LINES:
+
+1. A 27-year-old man presents with recurrent mouth pain.
+2. He reports repeated episodes of painful genital sores over the past year and recently developed blurry vision.
+3. Examination shows multiple shallow oral aphthous ulcers and tender erythematous nodules over both shins.
+4. CBC and metabolic panel are unremarkable, while inflammatory markers are mildly elevated.
+5. Ophthalmologic examination demonstrates anterior uveitis with retinal vasculitis.
+6. Pathergy testing produces a papulopustular lesion at the needle-stick site within 48 hours.
+
+TEACHING_POINTS:
+
+* Recurrent oral and genital ulcers with ocular inflammation should trigger a focused vasculitic differential rather than isolated mucocutaneous infection.
+* The disease can involve arteries and veins of any size, leading to diverse vascular and neurologic manifestations.
+* Erythema nodosum-like lesions and arthralgias are common but not specific, so pattern recognition is essential.
+* A positive pathergy phenomenon provides supportive confirmation in the appropriate clinical context.
+
+==================================================
+
+CASE_ID: 010
+DIFFICULTY: hard
+SYSTEM: pharmacology_toxicology
+
+DIAGNOSIS:
+Salicylate toxicity
+
+ALIASES:
+Aspirin poisoning
+Salicylism
+Acute on chronic salicylate intoxication
+
+VIGNETTE_LINES:
+
+1. A 46-year-old woman presents with nausea.
+2. She reports taking increasing amounts of over-the-counter pain medication for chronic back pain during the past week.
+3. Examination reveals tachypnea, diaphoresis, and mild confusion.
+4. Arterial blood gas demonstrates a mixed respiratory alkalosis and metabolic acidosis, and basic metabolic panel shows an elevated anion gap.
+5. Chest radiography reveals mild noncardiogenic pulmonary edema, and serum glucose is low-normal despite neuroglycopenic symptoms.
+6. Serum toxicology testing shows a markedly elevated salicylate concentration consistent with clinically significant poisoning.
+
+TEACHING_POINTS:
+
+* The combination of tachypnea with a mixed acid-base disorder should strongly suggest salicylate poisoning in the right medication history.
+* Toxicity may occur with repeated supratherapeutic dosing, especially when patients do not recognize that multiple products contain aspirin.
+* Pulmonary edema, altered mental status, and acidemia indicate severe poisoning and need urgent management.
+* Treatment centers on alkalinization and, in severe cases, hemodialysis.
+
+==================================================

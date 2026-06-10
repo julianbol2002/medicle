@@ -56,11 +56,12 @@ const MAX_GUESSES = 6;
 
 // =============================================================
 // DAILY CASE SYSTEM
-// Daily cases: medicle cases daily.txt (one case per day, sequential IDs)
-// Endless mode: medicle cases endless mode.txt (random pool)
+// Daily cases: medicle cases daily.txt — case 001 on launch day, +1 per day
+// Endless mode: medicle cases endless mode.txt — separate pool, same ID format
+// Add cases to each file progressively; the app uses whatever is loaded.
 // =============================================================
 
-const DAILY_ANCHOR_DATE = new Date("2026-06-04T00:00:00");
+const DAILY_ANCHOR_DATE = new Date("2026-06-10T00:00:00"); // case 001 goes live
 const DAILY_ANCHOR_CASE_ID = 1;
 
 const DAILY_CASES_FILE = "/doctordle cases/medicle cases daily.txt";
@@ -78,12 +79,27 @@ function getDailyOffset(): number {
   return Math.floor(diffMs / (1000 * 60 * 60 * 24));
 }
 
-function getDailyCaseId(): number {
-  // Anchor date = case 1, each subsequent day = +1
+// Calendar slot for today (case 1 on launch day, case 2 the next day, etc.)
+function getSequentialDailyCaseId(): number {
   return DAILY_ANCHOR_CASE_ID + getDailyOffset();
 }
 
-// Get the real calendar date for a given case ID (for archive labels)
+function getMaxCaseId(caseList: Case[]): number {
+  if (!caseList.length) return 0;
+  return Math.max(...caseList.map((c) => Number(c.id)));
+}
+
+// If today's slot exceeds published cases, play the latest available case
+function getPlayableDailyCaseId(sequentialId: number, caseList: Case[]): number {
+  const maxId = getMaxCaseId(caseList);
+  if (!maxId) return 1;
+  return Math.min(sequentialId, maxId);
+}
+
+function findCaseByNumericId(caseList: Case[], numericId: number): Case | undefined {
+  return caseList.find((c) => Number(c.id) === numericId);
+}
+
 function getDateForCaseId(caseId: number): string {
   const offset = caseId - DAILY_ANCHOR_CASE_ID;
   const date = new Date(DAILY_ANCHOR_DATE);
@@ -375,7 +391,7 @@ function parseCases(text: string): Case[] {
     const teachingPoints = teachMatch
       ? teachMatch[1]
           .split("\n")
-          .map((line) => line.replace(/^[-\s]+/, "").trim())
+          .map((line) => line.replace(/^[*\-]\s*/, "").trim())
           .filter(Boolean)
       : [];
 
@@ -624,12 +640,11 @@ export default function Home() {
           return;
         }
 
-        // Compute today's daily case
-        const todayId = getDailyCaseId();
-        setDailyCaseId(todayId);
+        const sequentialId = getSequentialDailyCaseId();
+        const playableId = getPlayableDailyCaseId(sequentialId, parsed);
+        setDailyCaseId(sequentialId);
 
-        // Find the daily case, fall back to first case if not found
-        const daily = parsed.find((c) => Number(c.id) === todayId) ?? parsed[0];
+        const daily = findCaseByNumericId(parsed, playableId) ?? parsed[parsed.length - 1];
         setCurrent(daily);
         setSelectedCaseId(daily.id);
         setSeenIds(new Set([daily.id]));
@@ -756,9 +771,9 @@ export default function Home() {
     resetRound(next);
   }, [randomCases, resetRound]);
 
-  // Back to today's daily case
   const startDailyCase = useCallback(() => {
-    const daily = eligibleCases.find((c) => Number(c.id) === dailyCaseId);
+    const playableId = getPlayableDailyCaseId(dailyCaseId, eligibleCases);
+    const daily = findCaseByNumericId(eligibleCases, playableId);
     if (!daily) return;
     setCaseMode("daily");
     setSeenIds(new Set([daily.id]));
@@ -770,7 +785,11 @@ export default function Home() {
   // =============================================================
 
   const allDiagnoses = useMemo(() => {
-    const fromCases = eligibleCases.flatMap((c) => [c.diagnosis, ...c.aliases]);
+    const casePool =
+      caseMode === "random"
+        ? dedupeCasesById([...eligibleCases, ...randomCases])
+        : eligibleCases;
+    const fromCases = casePool.flatMap((c) => [c.diagnosis, ...c.aliases]);
     const combined = [...DEFAULT_STEP1_DIAGNOSIS_BANK, ...externalDiagnosisBank, ...fromCases];
 
     // Canonicalize + dedupe
@@ -788,10 +807,12 @@ export default function Home() {
     }
 
     return Array.from(map.values()).sort((a, b) => a.localeCompare(b));
-  }, [eligibleCases, externalDiagnosisBank]);
+  }, [eligibleCases, randomCases, caseMode, externalDiagnosisBank]);
 
   const caseOptions = useMemo(() => {
-    const maxAllowed = dailyCaseId > 0 ? dailyCaseId : 0;
+    const maxPublished = getMaxCaseId(eligibleCases);
+    const playableId = getPlayableDailyCaseId(dailyCaseId, eligibleCases);
+    const maxAllowed = Math.min(dailyCaseId > 0 ? dailyCaseId : 0, maxPublished);
     const options = eligibleCases
       .filter((c) => {
         const id = Number(c.id);
@@ -799,9 +820,9 @@ export default function Home() {
       })
       .map((c) => {
         const id = Number(c.id);
-        const isToday = id === dailyCaseId;
+        const isToday = id === playableId;
         const datePart = isToday ? " — Today" : ` — ${getDateForCaseId(id)}`;
-        return { id: c.id, label: `Case ${c.id}${datePart}` };
+        return { id: c.id, label: `Case ${Number(c.id)}${datePart}` };
       });
 
     if (caseMode === "random") {
@@ -978,7 +999,7 @@ export default function Home() {
               return;
             }
             const num = Number(e.target.value);
-            if (num === dailyCaseId) startDailyCase();
+            if (num === getPlayableDailyCaseId(dailyCaseId, eligibleCases)) startDailyCase();
             else {
               setCaseMode("archive");
               loadCaseById(e.target.value);
