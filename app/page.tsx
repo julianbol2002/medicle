@@ -668,16 +668,10 @@ function ResultModal({
 // MEDICAL DECOR (minimal line SVGs)
 // =============================================================
 
-function BoneIcon({ size = 24, color = "currentColor", opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
+function CrossIcon({ size = 24, color = "currentColor", opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden style={{ opacity }}>
-      <path
-        d="M7.5 9.5c-2.2 0-3.5 1.4-3.5 3s1.3 3 3.5 3c1.1 0 2-.4 2.7-1.1.7.7 1.6 1.1 2.8 1.1 2.2 0 3.5-1.4 3.5-3s-1.3-3-3.5-3c-1.2 0-2.1.4-2.8 1.1-.7-.7-1.6-1.1-2.7-1.1z"
-        stroke={color}
-        strokeWidth="1.5"
-        strokeLinejoin="round"
-      />
-      <path d="M10.2 11.4h3.6" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M12 4v16M4 12h16" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
     </svg>
   );
 }
@@ -685,11 +679,11 @@ function BoneIcon({ size = 24, color = "currentColor", opacity = 1 }: { size?: n
 function MedicalDecor({ theme }: { theme: Theme }) {
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-      <div className="absolute top-[38%] -right-8 rotate-[22deg]">
-        <BoneIcon size={88} color={theme.decor} opacity={0.06} />
+      <div className="absolute top-[38%] -right-8 rotate-[12deg]">
+        <CrossIcon size={88} color={theme.decor} opacity={0.06} />
       </div>
-      <div className="absolute bottom-16 -left-4 rotate-[12deg]">
-        <BoneIcon size={64} color={theme.decor} opacity={0.05} />
+      <div className="absolute bottom-16 -left-4">
+        <CrossIcon size={64} color={theme.decor} opacity={0.05} />
       </div>
     </div>
   );
@@ -1153,7 +1147,7 @@ export default function Home() {
         </select>
 
         <div className="flex items-center gap-2 mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
-          <BoneIcon size={18} color={theme.accent} opacity={0.55} />
+          <CrossIcon size={18} color={theme.accent} opacity={0.55} />
           <h2 className="text-lg font-semibold">What&apos;s the diagnosis?</h2>
         </div>
 
