@@ -226,6 +226,23 @@ function normalizeSystem(system?: string) {
     .replace(/-+/g, "_");
 }
 
+function displaySystemLabel(system?: string) {
+  const s = normalizeSystem(system);
+  if (!s) return "";
+  return s
+    .split("_")
+    .map((w) => (w.length ? w[0].toUpperCase() + w.slice(1) : w))
+    .join(" ");
+}
+
+function filterCasesBySystems(pool: Case[], selectedSystems: Set<string>) {
+  const base =
+    selectedSystems.size === 0
+      ? pool
+      : pool.filter((c) => c.system && selectedSystems.has(normalizeSystem(c.system)));
+  return dedupeCasesById(base);
+}
+
 // =============================================================
 // STEP 1 BANK (built-in fallback)
 // =============================================================
@@ -694,6 +711,9 @@ export default function Home() {
   // Daily case tracking
   const [dailyCaseId, setDailyCaseId] = useState<number>(0);
   const [caseMode, setCaseMode] = useState<"daily" | "archive" | "random">("daily");
+  const [showSystemFilter, setShowSystemFilter] = useState(false);
+  const [selectedSystems, setSelectedSystems] = useState<Set<string>>(new Set());
+
   // =============================================================
   // LOAD CASES
   // =============================================================
@@ -798,7 +818,33 @@ export default function Home() {
     };
   }, []);
 
-  const eligibleCases = useMemo(() => dedupeCasesById(cases), [cases]);
+  const allSystems = useMemo(() => {
+    const set = new Set<string>();
+    [...cases, ...randomCases].forEach((c) => {
+      if (c.system) set.add(normalizeSystem(c.system));
+    });
+    return Array.from(set).sort((a, b) => a.localeCompare(b));
+  }, [cases, randomCases]);
+
+  const eligibleCases = useMemo(
+    () => filterCasesBySystems(cases, selectedSystems),
+    [cases, selectedSystems]
+  );
+
+  const eligibleRandomCases = useMemo(
+    () => filterCasesBySystems(randomCases, selectedSystems),
+    [randomCases, selectedSystems]
+  );
+
+  const toggleSystem = useCallback((system: string) => {
+    setSelectedSystems((prev) => {
+      const next = new Set(prev);
+      const key = normalizeSystem(system);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  }, []);
 
   // =============================================================
   // GAME ROUND UTILITIES
@@ -816,6 +862,20 @@ export default function Home() {
     setShowDropdown(false);
     setSolvedAtClueCount(1);
   }, []);
+
+  useEffect(() => {
+    if (!current || selectedSystems.size === 0) return;
+
+    const curSys = normalizeSystem(current.system);
+    if (curSys && selectedSystems.has(curSys)) return;
+
+    const pool = caseMode === "random" ? eligibleRandomCases : eligibleCases;
+    if (!pool.length) return;
+
+    const next = pool[Math.floor(Math.random() * pool.length)];
+    setSeenIds(new Set([next.id]));
+    resetRound(next);
+  }, [current, eligibleCases, eligibleRandomCases, selectedSystems, caseMode, resetRound]);
 
   const loadCaseById = useCallback(
     (caseId: string) => {
@@ -843,12 +903,12 @@ export default function Home() {
 
   // Endless: pick from medicle cases endless mode.txt
   const startRandomCase = useCallback(() => {
-    if (!randomCases.length) return;
-    const next = randomCases[Math.floor(Math.random() * randomCases.length)];
+    if (!eligibleRandomCases.length) return;
+    const next = eligibleRandomCases[Math.floor(Math.random() * eligibleRandomCases.length)];
     setCaseMode("random");
     setSeenIds(new Set([next.id]));
     resetRound(next);
-  }, [randomCases, resetRound]);
+  }, [eligibleRandomCases, resetRound]);
 
   const startDailyCase = useCallback(() => {
     const playableId = getPlayableDailyCaseId(dailyCaseId, eligibleCases);
@@ -866,7 +926,7 @@ export default function Home() {
   const allDiagnoses = useMemo(() => {
     const casePool =
       caseMode === "random"
-        ? dedupeCasesById([...eligibleCases, ...randomCases])
+        ? dedupeCasesById([...eligibleCases, ...eligibleRandomCases])
         : eligibleCases;
     const fromCases = casePool.flatMap((c) => [c.diagnosis, ...c.aliases]);
     const combined = [...DEFAULT_STEP1_DIAGNOSIS_BANK, ...externalDiagnosisBank, ...fromCases];
@@ -886,7 +946,7 @@ export default function Home() {
     }
 
     return Array.from(map.values()).sort((a, b) => a.localeCompare(b));
-  }, [eligibleCases, randomCases, caseMode, externalDiagnosisBank]);
+  }, [eligibleCases, eligibleRandomCases, caseMode, externalDiagnosisBank]);
 
   const caseOptions = useMemo(() => {
     const maxPublished = getMaxCaseId(eligibleCases);
@@ -1118,8 +1178,93 @@ export default function Home() {
           ))}
         </select>
 
+        <div className="mb-6">
+          <button
+            type="button"
+            onClick={() => setShowSystemFilter((s) => !s)}
+            className="text-xs rounded-lg px-3 py-1.5 font-medium"
+            style={{
+              background: showSystemFilter ? theme.bgCard : "transparent",
+              border: `1px solid ${theme.border}`,
+              color: selectedSystems.size > 0 ? theme.accent : theme.textMuted,
+            }}
+          >
+            Filter body systems{selectedSystems.size > 0 ? ` (${selectedSystems.size})` : ""}
+          </button>
+
+          {showSystemFilter && (
+            <div
+              className="mt-2 rounded-lg p-3 border"
+              style={{ background: theme.bgCard, borderColor: theme.border }}
+            >
+              <div className="flex items-center justify-between gap-3 mb-3">
+                <p className="text-xs font-medium" style={{ color: theme.textMuted }}>
+                  Body system (optional)
+                </p>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setSelectedSystems(new Set())}
+                    className="text-xs font-medium px-2.5 py-1 rounded-lg"
+                    style={{ background: theme.border, color: theme.text }}
+                  >
+                    Clear
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedSystems(new Set(allSystems))}
+                    className="text-xs font-medium px-2.5 py-1 rounded-lg text-white"
+                    style={{ background: theme.accent }}
+                  >
+                    Select all
+                  </button>
+                </div>
+              </div>
+
+              {allSystems.length === 0 ? (
+                <p className="text-sm" style={{ color: theme.textMuted }}>
+                  No body-system tags were found in your cases files.
+                </p>
+              ) : (
+                <div className="flex flex-wrap gap-2">
+                  {allSystems.map((sys) => (
+                    <label
+                      key={sys}
+                      className="flex items-center gap-2 px-2.5 py-1 rounded-lg border text-xs cursor-pointer select-none"
+                      style={{
+                        background: selectedSystems.has(sys) ? `${theme.accent}22` : "transparent",
+                        borderColor: selectedSystems.has(sys) ? theme.accent : theme.border,
+                        color: selectedSystems.has(sys) ? theme.text : theme.textMuted,
+                      }}
+                    >
+                      <input
+                        type="checkbox"
+                        checked={selectedSystems.has(sys)}
+                        onChange={() => toggleSystem(sys)}
+                        style={{ accentColor: theme.accent }}
+                      />
+                      <span>{displaySystemLabel(sys)}</span>
+                    </label>
+                  ))}
+                </div>
+              )}
+
+              {selectedSystems.size > 0 && (
+                <p className="text-xs mt-3" style={{ color: theme.textFaint }}>
+                  Active: {Array.from(selectedSystems).map(displaySystemLabel).join(", ")}
+                </p>
+              )}
+            </div>
+          )}
+        </div>
+
         <h2 className="text-lg font-semibold mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
           What&apos;s the diagnosis?
+          {current.system && (
+            <span className="ml-2 text-sm font-normal" style={{ color: theme.accent }}>
+              · {displaySystemLabel(current.system)}
+            </span>
+          )}
         </h2>
 
         <div className="space-y-3 mb-6">
