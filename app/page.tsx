@@ -712,6 +712,7 @@ export default function Home() {
   const [dailyCaseId, setDailyCaseId] = useState<number>(0);
   const [caseMode, setCaseMode] = useState<"daily" | "archive" | "random">("daily");
   const [showSystemFilter, setShowSystemFilter] = useState(false);
+  const [showSystem, setShowSystem] = useState(false);
   const [selectedSystems, setSelectedSystems] = useState<Set<string>>(new Set());
 
   // =============================================================
@@ -961,7 +962,8 @@ export default function Home() {
         const id = Number(c.id);
         const isToday = id === playableId;
         const datePart = isToday ? " — Today" : ` — ${getDateForCaseId(id)}`;
-        return { id: c.id, label: `Case ${Number(c.id)}${datePart}` };
+        const systemPart = showSystem && c.system ? ` · ${displaySystemLabel(c.system)}` : "";
+        return { id: c.id, label: `Case ${Number(c.id)}${datePart}${systemPart}` };
       });
 
     if (caseMode === "random") {
@@ -969,7 +971,7 @@ export default function Home() {
     }
 
     return options;
-  }, [eligibleCases, dailyCaseId, caseMode]);
+  }, [eligibleCases, dailyCaseId, caseMode, showSystem]);
 
   const filtered = useMemo(() => {
     const q = guess.trim().toLowerCase();
@@ -1153,44 +1155,57 @@ export default function Home() {
           </button>
         </div>
 
-        <select
-          value={caseMode === "random" ? "__endless__" : selectedCaseId}
-          onChange={(e) => {
-            if (e.target.value === "__endless__") {
-              startRandomCase();
-              return;
-            }
-            const num = Number(e.target.value);
-            if (num === getPlayableDailyCaseId(dailyCaseId, eligibleCases)) startDailyCase();
-            else {
-              setCaseMode("archive");
-              loadCaseById(e.target.value);
-            }
-          }}
-          className="w-full rounded-lg px-3 py-2 text-sm outline-none mb-6"
-          style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text }}
-          disabled={!eligibleCases.length}
-        >
-          {caseOptions.map((opt) => (
-            <option key={opt.id} value={opt.id}>
-              {opt.label}
-            </option>
-          ))}
-        </select>
-
         <div className="mb-6">
-          <button
-            type="button"
-            onClick={() => setShowSystemFilter((s) => !s)}
-            className="text-xs rounded-lg px-3 py-1.5 font-medium"
-            style={{
-              background: showSystemFilter ? theme.bgCard : "transparent",
-              border: `1px solid ${theme.border}`,
-              color: selectedSystems.size > 0 ? theme.accent : theme.textMuted,
-            }}
-          >
-            Filter body systems{selectedSystems.size > 0 ? ` (${selectedSystems.size})` : ""}
-          </button>
+          <div className="flex flex-wrap gap-2 items-center">
+            <select
+              value={caseMode === "random" ? "__endless__" : selectedCaseId}
+              onChange={(e) => {
+                if (e.target.value === "__endless__") {
+                  startRandomCase();
+                  return;
+                }
+                const num = Number(e.target.value);
+                if (num === getPlayableDailyCaseId(dailyCaseId, eligibleCases)) startDailyCase();
+                else {
+                  setCaseMode("archive");
+                  loadCaseById(e.target.value);
+                }
+              }}
+              className="flex-1 min-w-0 rounded-lg px-3 py-2 text-sm outline-none"
+              style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text }}
+              disabled={!eligibleCases.length}
+            >
+              {caseOptions.map((opt) => (
+                <option key={opt.id} value={opt.id}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+            <button
+              type="button"
+              onClick={() => setShowSystemFilter((s) => !s)}
+              className="text-xs rounded-lg px-2.5 py-2 font-medium shrink-0"
+              style={{
+                background: showSystemFilter ? theme.bgCard : "transparent",
+                border: `1px solid ${theme.border}`,
+                color: selectedSystems.size > 0 ? theme.accent : theme.textMuted,
+              }}
+            >
+              Filter body systems{selectedSystems.size > 0 ? ` (${selectedSystems.size})` : ""}
+            </button>
+            <button
+              type="button"
+              onClick={() => setShowSystem((s) => !s)}
+              className="text-xs rounded-lg px-2.5 py-2 font-medium shrink-0"
+              style={{
+                background: showSystem ? theme.bgCard : "transparent",
+                border: `1px solid ${theme.border}`,
+                color: showSystem ? theme.accent : theme.textMuted,
+              }}
+            >
+              {showSystem ? "Hide body system" : "Show body system"}
+            </button>
+          </div>
 
           {showSystemFilter && (
             <div
@@ -1260,11 +1275,6 @@ export default function Home() {
 
         <h2 className="text-lg font-semibold mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
           What&apos;s the diagnosis?
-          {current.system && (
-            <span className="ml-2 text-sm font-normal" style={{ color: theme.accent }}>
-              · {displaySystemLabel(current.system)}
-            </span>
-          )}
         </h2>
 
         <div className="space-y-3 mb-6">

@@ -194,6 +194,23 @@ function normalizeSystem(system?: string) {
     .replace(/-+/g, "_");
 }
 
+function displaySystemLabel(system?: string) {
+  const s = normalizeSystem(system);
+  if (!s) return "";
+  return s
+    .split("_")
+    .map((w) => (w.length ? w[0].toUpperCase() + w.slice(1) : w))
+    .join(" ");
+}
+
+function filterCasesBySystems(pool: Case[], selectedSystems: Set<string>) {
+  const base =
+    selectedSystems.size === 0
+      ? pool
+      : pool.filter((c) => c.system && selectedSystems.has(normalizeSystem(c.system)));
+  return dedupeCasesById(base);
+}
+
 // =============================================================
 // NAVLE DIAGNOSIS BANK (makes dropdown harder)
 // =============================================================
@@ -536,6 +553,9 @@ export default function Home() {
   const [loadError, setLoadError] = useState("");
   const [dailyCaseId, setDailyCaseId] = useState<number>(0);
   const [caseMode, setCaseMode] = useState<"daily" | "archive" | "random">("daily");
+  const [showSystemFilter, setShowSystemFilter] = useState(false);
+  const [showSystem, setShowSystem] = useState(false);
+  const [selectedSystems, setSelectedSystems] = useState<Set<string>>(new Set());
 
   const resetRound = useCallback((nextCase: Case) => {
     setCurrent(nextCase);
@@ -591,7 +611,47 @@ export default function Home() {
     return () => { active = false; };
   }, []);
 
-  const eligibleCases = useMemo(() => dedupeCasesById(cases), [cases]);
+  const allSystems = useMemo(() => {
+    const set = new Set<string>();
+    [...cases, ...randomCases].forEach((c) => {
+      if (c.system) set.add(normalizeSystem(c.system));
+    });
+    return Array.from(set).sort((a, b) => a.localeCompare(b));
+  }, [cases, randomCases]);
+
+  const eligibleCases = useMemo(
+    () => filterCasesBySystems(cases, selectedSystems),
+    [cases, selectedSystems]
+  );
+
+  const eligibleRandomCases = useMemo(
+    () => filterCasesBySystems(randomCases, selectedSystems),
+    [randomCases, selectedSystems]
+  );
+
+  const toggleSystem = useCallback((system: string) => {
+    setSelectedSystems((prev) => {
+      const next = new Set(prev);
+      const key = normalizeSystem(system);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  }, []);
+
+  useEffect(() => {
+    if (!current || selectedSystems.size === 0) return;
+
+    const curSys = normalizeSystem(current.system);
+    if (curSys && selectedSystems.has(curSys)) return;
+
+    const pool = caseMode === "random" ? eligibleRandomCases : eligibleCases;
+    if (!pool.length) return;
+
+    const next = pool[Math.floor(Math.random() * pool.length)];
+    setSeenIds(new Set([next.id]));
+    resetRound(next);
+  }, [current, eligibleCases, eligibleRandomCases, selectedSystems, caseMode, resetRound]);
 
   const loadCaseById = useCallback((caseId: string) => {
     if (!eligibleCases.length) return;
@@ -614,12 +674,12 @@ export default function Home() {
   }, [eligibleCases, dailyCaseId, resetRound]);
 
   const startRandomCase = useCallback(() => {
-    if (!randomCases.length) return;
-    const next = randomCases[Math.floor(Math.random() * randomCases.length)];
+    if (!eligibleRandomCases.length) return;
+    const next = eligibleRandomCases[Math.floor(Math.random() * eligibleRandomCases.length)];
     setCaseMode("random");
     setSeenIds(new Set([next.id]));
     resetRound(next);
-  }, [randomCases, resetRound]);
+  }, [eligibleRandomCases, resetRound]);
 
   const startDailyCase = useCallback(() => {
     const playableId = getPlayableDailyCaseId(dailyCaseId, eligibleCases);
@@ -633,7 +693,7 @@ export default function Home() {
   const allDiagnoses = useMemo(() => {
     const casePool =
       caseMode === "random"
-        ? dedupeCasesById([...eligibleCases, ...randomCases])
+        ? dedupeCasesById([...eligibleCases, ...eligibleRandomCases])
         : eligibleCases;
     const fromCases = casePool.flatMap((c) => [c.diagnosis, ...c.aliases]);
     const combined = [...NAVLE_DIAGNOSIS_BANK, ...fromCases];
@@ -645,7 +705,7 @@ export default function Home() {
       if (!prev || canonical.length > prev.length) map.set(key, canonical);
     }
     return Array.from(map.values()).sort((a, b) => a.localeCompare(b));
-  }, [eligibleCases, randomCases, caseMode]);
+  }, [eligibleCases, eligibleRandomCases, caseMode]);
 
   const caseOptions = useMemo(() => {
     const maxPublished = getMaxCaseId(eligibleCases);
@@ -660,11 +720,12 @@ export default function Home() {
         const id = Number(c.id);
         const isToday = id === playableId;
         const datePart = isToday ? " — Today" : ` — ${getDateForCaseId(id)}`;
-        return { id: c.id, label: `Case ${id}${datePart}` };
+        const systemPart = showSystem && c.system ? ` · ${displaySystemLabel(c.system)}` : "";
+        return { id: c.id, label: `Case ${id}${datePart}${systemPart}` };
       });
     if (caseMode === "random") return [{ id: "__endless__", label: "Endless mode" }, ...options];
     return options;
-  }, [eligibleCases, dailyCaseId, caseMode]);
+  }, [eligibleCases, dailyCaseId, caseMode, showSystem]);
 
   const filtered = useMemo(() => {
     const q = guess.trim().toLowerCase();
@@ -809,30 +870,123 @@ export default function Home() {
           </button>
         </div>
 
-        <select
-          value={caseMode === "random" ? "__endless__" : selectedCaseId}
-          onChange={(e) => {
-            if (e.target.value === "__endless__") {
-              startRandomCase();
-              return;
-            }
-            const num = Number(e.target.value);
-            if (num === getPlayableDailyCaseId(dailyCaseId, eligibleCases)) startDailyCase();
-            else {
-              setCaseMode("archive");
-              loadCaseById(e.target.value);
-            }
-          }}
-          className="w-full rounded-lg px-3 py-2 text-sm outline-none mb-6"
-          style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text }}
-          disabled={!eligibleCases.length}
-        >
-          {caseOptions.map((opt) => (
-            <option key={opt.id} value={opt.id}>
-              {opt.label}
-            </option>
-          ))}
-        </select>
+        <div className="mb-6">
+          <div className="flex flex-wrap gap-2 items-center">
+            <select
+              value={caseMode === "random" ? "__endless__" : selectedCaseId}
+              onChange={(e) => {
+                if (e.target.value === "__endless__") {
+                  startRandomCase();
+                  return;
+                }
+                const num = Number(e.target.value);
+                if (num === getPlayableDailyCaseId(dailyCaseId, eligibleCases)) startDailyCase();
+                else {
+                  setCaseMode("archive");
+                  loadCaseById(e.target.value);
+                }
+              }}
+              className="flex-1 min-w-0 rounded-lg px-3 py-2 text-sm outline-none"
+              style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text }}
+              disabled={!eligibleCases.length}
+            >
+              {caseOptions.map((opt) => (
+                <option key={opt.id} value={opt.id}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+            <button
+              type="button"
+              onClick={() => setShowSystemFilter((s) => !s)}
+              className="text-xs rounded-lg px-2.5 py-2 font-medium shrink-0"
+              style={{
+                background: showSystemFilter ? theme.bgCard : "transparent",
+                border: `1px solid ${theme.border}`,
+                color: selectedSystems.size > 0 ? theme.accent : theme.textMuted,
+              }}
+            >
+              Filter body systems{selectedSystems.size > 0 ? ` (${selectedSystems.size})` : ""}
+            </button>
+            <button
+              type="button"
+              onClick={() => setShowSystem((s) => !s)}
+              className="text-xs rounded-lg px-2.5 py-2 font-medium shrink-0"
+              style={{
+                background: showSystem ? theme.bgCard : "transparent",
+                border: `1px solid ${theme.border}`,
+                color: showSystem ? theme.accent : theme.textMuted,
+              }}
+            >
+              {showSystem ? "Hide body system" : "Show body system"}
+            </button>
+          </div>
+
+          {showSystemFilter && (
+            <div
+              className="mt-2 rounded-lg p-3 border"
+              style={{ background: theme.bgCard, borderColor: theme.border }}
+            >
+              <div className="flex items-center justify-between gap-3 mb-3">
+                <p className="text-xs font-medium" style={{ color: theme.textMuted }}>
+                  Body system (optional)
+                </p>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setSelectedSystems(new Set())}
+                    className="text-xs font-medium px-2.5 py-1 rounded-lg"
+                    style={{ background: theme.border, color: theme.text }}
+                  >
+                    Clear
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedSystems(new Set(allSystems))}
+                    className="text-xs font-medium px-2.5 py-1 rounded-lg text-white"
+                    style={{ background: theme.accent }}
+                  >
+                    Select all
+                  </button>
+                </div>
+              </div>
+
+              {allSystems.length === 0 ? (
+                <p className="text-sm" style={{ color: theme.textMuted }}>
+                  No body-system tags were found in your cases files.
+                </p>
+              ) : (
+                <div className="flex flex-wrap gap-2">
+                  {allSystems.map((sys) => (
+                    <label
+                      key={sys}
+                      className="flex items-center gap-2 px-2.5 py-1 rounded-lg border text-xs cursor-pointer select-none"
+                      style={{
+                        background: selectedSystems.has(sys) ? `${theme.accent}22` : "transparent",
+                        borderColor: selectedSystems.has(sys) ? theme.accent : theme.border,
+                        color: selectedSystems.has(sys) ? theme.text : theme.textMuted,
+                      }}
+                    >
+                      <input
+                        type="checkbox"
+                        checked={selectedSystems.has(sys)}
+                        onChange={() => toggleSystem(sys)}
+                        style={{ accentColor: theme.accent }}
+                      />
+                      <span>{displaySystemLabel(sys)}</span>
+                    </label>
+                  ))}
+                </div>
+              )}
+
+              {selectedSystems.size > 0 && (
+                <p className="text-xs mt-3" style={{ color: theme.textFaint }}>
+                  Active: {Array.from(selectedSystems).map(displaySystemLabel).join(", ")}
+                </p>
+              )}
+            </div>
+          )}
+        </div>
 
         <h2 className="text-lg font-semibold mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
           What&apos;s the diagnosis?
