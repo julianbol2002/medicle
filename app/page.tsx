@@ -1335,7 +1335,10 @@ export default function Home() {
           <a href="https://doctordle.org" target="_blank" rel="noopener noreferrer" style={{ color: theme.accent }}>
             Doctordle
           </a>
-          . For educational use only.
+          . For educational use only.{" "}
+          <a href="/about" style={{ color: theme.accent }}>
+            About
+          </a>
         </p>
       </div>
     </main>
