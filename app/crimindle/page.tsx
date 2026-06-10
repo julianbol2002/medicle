@@ -34,22 +34,21 @@ const MAX_GUESSES = 6;
 // =============================================================
 
 const DARK_THEME = {
-  bg:             "#0d0800",
-  bgCard:         "#1a1000",
-  bgInput:        "#1a1000",
-  border:         "#3a2a0a",
-  text:           "#e8d5a0",
-  textMuted:      "#c9a227",
-  textFaint:      "#8a7340",
+  bg:             "#1a1a1a",
+  bgCard:         "#262626",
+  bgInput:        "#262626",
+  border:         "#404040",
+  text:           "#f5f5f5",
+  textMuted:      "#a3a3a3",
+  textFaint:      "#737373",
   accent:         "#d4af37",
-  decor:          "#d4af37",
-  selectBg:       "#1a1000",
-  modalWin:       "#100a00",
-  modalLose:      "#120000",
+  selectBg:       "#262626",
+  modalWin:       "#1f2937",
+  modalLose:      "#2d0a0a",
   modalBorderWin: "#22c55e",
   modalBorderLose:"#dc2626",
-  shareCard:      "#100800",
-  teachPanel:     "#0a0500",
+  shareCard:      "#262626",
+  teachPanel:     "#1f2937",
 };
 
 const LIGHT_THEME = {
@@ -61,7 +60,6 @@ const LIGHT_THEME = {
   textMuted:      "#92400e",
   textFaint:      "#a16207",
   accent:         "#b45309",
-  decor:          "#b45309",
   selectBg:       "#ffffff",
   modalWin:       "#fffbeb",
   modalLose:      "#fff1f2",
@@ -485,35 +483,6 @@ function ResultModal({ won, current, guesses, solvedAtClueCount, onArchive, onRa
 }
 
 // =============================================================
-// CRIME DECOR
-// =============================================================
-
-function ScalesIcon({ size = 24, color = "currentColor", opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden style={{ opacity }}>
-      <path d="M12 3v18" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M5 7h14" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M5 7l-3 6h6L5 7z" stroke={color} strokeWidth="1.5" strokeLinejoin="round" />
-      <path d="M19 7l-3 6h6L19 7z" stroke={color} strokeWidth="1.5" strokeLinejoin="round" />
-      <path d="M8 21h8" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  );
-}
-
-function CrimeDecor({ theme }: { theme: Theme }) {
-  return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-      <div className="absolute top-[38%] -right-8 rotate-[12deg]">
-        <ScalesIcon size={88} color={theme.decor} opacity={0.06} />
-      </div>
-      <div className="absolute bottom-16 -left-4">
-        <ScalesIcon size={64} color={theme.decor} opacity={0.05} />
-      </div>
-    </div>
-  );
-}
-
-// =============================================================
 // MAIN COMPONENT
 // =============================================================
 
@@ -723,7 +692,6 @@ export default function Home() {
       className="relative min-h-screen flex flex-col items-center px-4 py-8 transition-colors duration-300"
       style={{ background: theme.bg, color: theme.text }}
     >
-      <CrimeDecor theme={theme} />
       {showConfetti && <Confetti />}
       <Analytics />
 
@@ -835,10 +803,9 @@ export default function Home() {
           ))}
         </select>
 
-        <div className="flex items-center gap-2 mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
-          <ScalesIcon size={18} color={theme.accent} opacity={0.55} />
-          <h2 className="text-lg font-semibold">What&apos;s the charge?</h2>
-        </div>
+        <h2 className="text-lg font-semibold mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
+          What&apos;s the charge?
+        </h2>
 
         <div className="space-y-3 mb-6">
           {current.clues.slice(0, revealed).map((clue, i) => (

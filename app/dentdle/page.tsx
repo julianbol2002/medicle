@@ -34,22 +34,21 @@ const MAX_GUESSES = 6;
 // =============================================================
 
 const DARK_THEME = {
-  bg:             "#00172e",
-  bgCard:         "#001428",
-  bgInput:        "#001428",
-  border:         "#003a5c",
-  text:           "#e2e8f0",
-  textMuted:      "#7dd3fc",
-  textFaint:      "#0ea5e9",
+  bg:             "#1a1a1a",
+  bgCard:         "#262626",
+  bgInput:        "#262626",
+  border:         "#404040",
+  text:           "#f5f5f5",
+  textMuted:      "#a3a3a3",
+  textFaint:      "#737373",
   accent:         "#06b6d4",
-  decor:          "#06b6d4",
-  selectBg:       "#001428",
-  modalWin:       "#002a3a",
-  modalLose:      "#001a2e",
+  selectBg:       "#262626",
+  modalWin:       "#1f2937",
+  modalLose:      "#2d0a0a",
   modalBorderWin: "#22c55e",
   modalBorderLose:"#dc2626",
-  shareCard:      "#001428",
-  teachPanel:     "#00101f",
+  shareCard:      "#262626",
+  teachPanel:     "#1f2937",
 };
 
 const LIGHT_THEME = {
@@ -61,9 +60,8 @@ const LIGHT_THEME = {
   textMuted:      "#0369a1",
   textFaint:      "#94a3b8",
   accent:         "#0891b2",
-  decor:          "#0891b2",
   selectBg:       "#ffffff",
-  modalWin:       "#f0fdf4",
+  modalWin:       "#ecfeff",
   modalLose:      "#fff1f2",
   modalBorderWin: "#22c55e",
   modalBorderLose:"#dc2626",
@@ -484,37 +482,6 @@ function ResultModal({ won, current, guesses, solvedAtClueCount, onArchive, onRa
 }
 
 // =============================================================
-// DENT DECOR
-// =============================================================
-
-function ToothIcon({ size = 24, color = "currentColor", opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden style={{ opacity }}>
-      <path
-        d="M12 3c-2.5 0-4.5 1.8-4.5 4.2 0 1.4.5 2.6 1.2 3.6.6.9 1.3 1.7 1.8 2.8.5 1.1.7 2.3.7 3.6 0 .8-.1 1.5-.3 2.1-.2.6-.5 1-.9 1.3-.4.3-.9.4-1.5.4s-1.1-.1-1.5-.4c-.4-.3-.7-.7-.9-1.3-.2-.6-.3-1.3-.3-2.1 0-1.3.2-2.5.7-3.6.5-1.1 1.2-1.9 1.8-2.8.7-1 1.2-2.2 1.2-3.6C16.5 4.8 14.5 3 12 3z"
-        stroke={color}
-        strokeWidth="1.5"
-        strokeLinejoin="round"
-      />
-      <path d="M9 20h6" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  );
-}
-
-function DentDecor({ theme }: { theme: Theme }) {
-  return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-      <div className="absolute top-[38%] -right-8 rotate-[12deg]">
-        <ToothIcon size={88} color={theme.decor} opacity={0.06} />
-      </div>
-      <div className="absolute bottom-16 -left-4">
-        <ToothIcon size={64} color={theme.decor} opacity={0.05} />
-      </div>
-    </div>
-  );
-}
-
-// =============================================================
 // MAIN COMPONENT
 // =============================================================
 
@@ -724,7 +691,6 @@ export default function Home() {
       className="relative min-h-screen flex flex-col items-center px-4 py-8 transition-colors duration-300"
       style={{ background: theme.bg, color: theme.text }}
     >
-      <DentDecor theme={theme} />
       {showConfetti && <Confetti />}
       <Analytics />
 
@@ -836,10 +802,9 @@ export default function Home() {
           ))}
         </select>
 
-        <div className="flex items-center gap-2 mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
-          <ToothIcon size={18} color={theme.accent} opacity={0.55} />
-          <h2 className="text-lg font-semibold">What&apos;s the diagnosis?</h2>
-        </div>
+        <h2 className="text-lg font-semibold mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
+          What&apos;s the diagnosis?
+        </h2>
 
         <div className="space-y-3 mb-6">
           {current.clues.slice(0, revealed).map((clue, i) => (

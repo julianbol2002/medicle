@@ -42,7 +42,6 @@ const DARK_THEME = {
   textMuted:      "#c2a98d",
   textFaint:      "#8a6a4a",
   accent:         "#d97706",
-  decor:          "#d97706",
   selectBg:       "#2e2218",
   modalWin:       "#2a2018",
   modalLose:      "#2d0a0a",
@@ -61,7 +60,6 @@ const LIGHT_THEME = {
   textMuted:      "#78502a",
   textFaint:      "#a87a50",
   accent:         "#d97706",
-  decor:          "#d97706",
   selectBg:       "#ffffff",
   modalWin:       "#fffbeb",
   modalLose:      "#fff1f2",
@@ -516,35 +514,6 @@ function ResultModal({ won, current, guesses, solvedAtClueCount, onArchive, onRa
 }
 
 // =============================================================
-// VET DECOR
-// =============================================================
-
-function PawIcon({ size = 24, color = "currentColor", opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden style={{ opacity }}>
-      <circle cx="7.5" cy="7" r="2.2" stroke={color} strokeWidth="1.5" />
-      <circle cx="12" cy="5" r="2.2" stroke={color} strokeWidth="1.5" />
-      <circle cx="16.5" cy="7" r="2.2" stroke={color} strokeWidth="1.5" />
-      <circle cx="5.5" cy="11" r="2" stroke={color} strokeWidth="1.5" />
-      <path d="M12 11c-3.5 0-6 2.2-6 5.5V19h12v-2.5C18 13.2 15.5 11 12 11z" stroke={color} strokeWidth="1.5" strokeLinejoin="round" />
-    </svg>
-  );
-}
-
-function VetDecor({ theme }: { theme: Theme }) {
-  return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-      <div className="absolute top-[38%] -right-8 rotate-[12deg]">
-        <PawIcon size={88} color={theme.decor} opacity={0.06} />
-      </div>
-      <div className="absolute bottom-16 -left-4">
-        <PawIcon size={64} color={theme.decor} opacity={0.05} />
-      </div>
-    </div>
-  );
-}
-
-// =============================================================
 // MAIN COMPONENT
 // =============================================================
 
@@ -754,7 +723,6 @@ export default function Home() {
       className="relative min-h-screen flex flex-col items-center px-4 py-8 transition-colors duration-300"
       style={{ background: theme.bg, color: theme.text }}
     >
-      <VetDecor theme={theme} />
       {showConfetti && <Confetti />}
       <Analytics />
 
@@ -866,10 +834,9 @@ export default function Home() {
           ))}
         </select>
 
-        <div className="flex items-center gap-2 mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
-          <PawIcon size={18} color={theme.accent} opacity={0.55} />
-          <h2 className="text-lg font-semibold">What&apos;s the diagnosis?</h2>
-        </div>
+        <h2 className="text-lg font-semibold mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
+          What&apos;s the diagnosis?
+        </h2>
 
         <div className="space-y-3 mb-6">
           {current.clues.slice(0, revealed).map((clue, i) => (

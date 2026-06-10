@@ -34,22 +34,21 @@ const MAX_GUESSES = 6;
 // =============================================================
 
 const DARK_THEME = {
-  bg:             "#1a1028",
-  bgCard:         "#261a38",
-  bgInput:        "#261a38",
-  border:         "#4c3a6a",
-  text:           "#ede9fe",
-  textMuted:      "#c4b5fd",
-  textFaint:      "#8b7cb8",
+  bg:             "#1a1a1a",
+  bgCard:         "#262626",
+  bgInput:        "#262626",
+  border:         "#404040",
+  text:           "#f5f5f5",
+  textMuted:      "#a3a3a3",
+  textFaint:      "#737373",
   accent:         "#8b5cf6",
-  decor:          "#8b5cf6",
-  selectBg:       "#261a38",
-  modalWin:       "#1f1535",
-  modalLose:      "#2a0a3a",
+  selectBg:       "#262626",
+  modalWin:       "#1f2937",
+  modalLose:      "#2d0a0a",
   modalBorderWin: "#22c55e",
   modalBorderLose:"#dc2626",
-  shareCard:      "#261a38",
-  teachPanel:     "#1a1028",
+  shareCard:      "#262626",
+  teachPanel:     "#1f2937",
 };
 
 const LIGHT_THEME = {
@@ -61,7 +60,6 @@ const LIGHT_THEME = {
   textMuted:      "#5b21b6",
   textFaint:      "#a78bfa",
   accent:         "#7c3aed",
-  decor:          "#7c3aed",
   selectBg:       "#ffffff",
   modalWin:       "#f5f3ff",
   modalLose:      "#fff1f2",
@@ -503,43 +501,6 @@ function ResultModal({ won, current, guesses, solvedAtClueCount, onArchive, onRa
 }
 
 // =============================================================
-// PSYCH DECOR
-// =============================================================
-
-function BrainIcon({ size = 24, color = "currentColor", opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden style={{ opacity }}>
-      <path
-        d="M8 6.5C6.5 6.5 5.5 7.5 5.5 9c0 .8.3 1.5.8 2C5.5 11.8 5 12.8 5 14c0 1.5 1 2.5 2.5 2.5.5 0 1-.1 1.4-.3.3.8 1 1.3 1.9 1.3 1.1 0 2-.9 2-2v-1.5c0-2.2 1.8-4 4-4 .6 0 1.2.1 1.7.4C18.5 12.5 19 11.8 19 11c0-1.2-.8-2.2-2-2.5.3-.5.5-1.1.5-1.7 0-1.7-1.3-3-3-3-.8 0-1.5.3-2 .8C12 3.3 11 3 10 3 8.3 3 7 4.3 7 6c0 .2 0 .4.1.5C6.4 6.8 5.8 7.5 5.5 8.3"
-        stroke={color}
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M9 10c.5 1 1.5 1.5 2.5 1.5M14 9.5c.5.8 1.3 1.3 2.2 1.3"
-        stroke={color}
-        strokeWidth="1.2"
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-}
-
-function PsychDecor({ theme }: { theme: Theme }) {
-  return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-      <div className="absolute top-[38%] -right-8 rotate-[12deg]">
-        <BrainIcon size={88} color={theme.decor} opacity={0.06} />
-      </div>
-      <div className="absolute bottom-16 -left-4">
-        <BrainIcon size={64} color={theme.decor} opacity={0.05} />
-      </div>
-    </div>
-  );
-}
-
-// =============================================================
 // MAIN COMPONENT
 // =============================================================
 
@@ -749,7 +710,6 @@ export default function Home() {
       className="relative min-h-screen flex flex-col items-center px-4 py-8 transition-colors duration-300"
       style={{ background: theme.bg, color: theme.text }}
     >
-      <PsychDecor theme={theme} />
       {showConfetti && <Confetti />}
       <Analytics />
 
@@ -861,10 +821,9 @@ export default function Home() {
           ))}
         </select>
 
-        <div className="flex items-center gap-2 mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
-          <BrainIcon size={18} color={theme.accent} opacity={0.55} />
-          <h2 className="text-lg font-semibold">What&apos;s the diagnosis?</h2>
-        </div>
+        <h2 className="text-lg font-semibold mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
+          What&apos;s the diagnosis?
+        </h2>
 
         <div className="space-y-3 mb-6">
           {current.clues.slice(0, revealed).map((clue, i) => (

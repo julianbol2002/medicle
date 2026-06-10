@@ -8,39 +8,39 @@ import { Analytics } from "@vercel/analytics/next";
 // =============================================================
 
 const DARK_THEME = {
-  bg:             "#1a1a1a",
-  bgCard:         "#262626",
-  bgInput:        "#262626",
-  border:         "#404040",
+  bg:             "#1a1414",
+  bgCard:         "#262020",
+  bgInput:        "#262020",
+  border:         "#4a3535",
   text:           "#f5f5f5",
-  textMuted:      "#a3a3a3",
-  textFaint:      "#737373",
-  accent:         "#14b8a6",
-  selectBg:       "#262626",
-  modalWin:       "#1f2937",
+  textMuted:      "#c4a0a0",
+  textFaint:      "#8a6868",
+  accent:         "#e11d48",
+  selectBg:       "#262020",
+  modalWin:       "#2a1a1d",
   modalLose:      "#2d0a0a",
   modalBorderWin: "#22c55e",
   modalBorderLose:"#dc2626",
-  shareCard:      "#262626",
-  teachPanel:     "#1f2937",
+  shareCard:      "#262020",
+  teachPanel:     "#2a1a1d",
 };
 
 const LIGHT_THEME = {
-  bg:             "#f4f7f8",
+  bg:             "#faf5f5",
   bgCard:         "#ffffff",
   bgInput:        "#ffffff",
-  border:         "#d1dde3",
-  text:           "#1a2e35",
-  textMuted:      "#5c6f78",
-  textFaint:      "#8fa3ad",
-  accent:         "#0d9488",
+  border:         "#e8d4d4",
+  text:           "#2a1515",
+  textMuted:      "#7a4a4a",
+  textFaint:      "#a87878",
+  accent:         "#dc2626",
   selectBg:       "#ffffff",
-  modalWin:       "#ecfdf5",
+  modalWin:       "#fff1f2",
   modalLose:      "#fff1f2",
   modalBorderWin: "#22c55e",
   modalBorderLose:"#dc2626",
-  shareCard:      "#f8fafc",
-  teachPanel:     "#f1f5f9",
+  shareCard:      "#fff8f8",
+  teachPanel:     "#fff1f2",
 };
 
 type Theme = typeof DARK_THEME;
@@ -471,7 +471,7 @@ function Confetti() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const colors = ["#14b8a6", "#22c55e", "#86efac", "#0d9488", "#5eead4", "#ffffff"];
+    const colors = ["#e11d48", "#f43f5e", "#fca5a5", "#dc2626", "#fb7185", "#ffffff"];
 
     const pieces = Array.from({ length: 200 }, () => ({
       x: Math.random() * canvas.width,
@@ -579,7 +579,7 @@ function ResultModal({
     if (!won) return "";
     const green = Math.max(1, Math.min(solvedAtClueCount, MAX_GUESSES));
     const white = Math.max(0, MAX_GUESSES - green);
-    return `MEDICLE\nSolved in ${green} clue${green === 1 ? "" : "s"}\n${"🟩".repeat(green)}${"⬜".repeat(white)}`;
+    return `MEDICLE\nSolved in ${green} clue${green === 1 ? "" : "s"}\n${"🟥".repeat(green)}${"⬜".repeat(white)}`;
   }, [won, solvedAtClueCount]);
 
   return (
