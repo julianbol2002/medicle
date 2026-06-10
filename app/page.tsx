@@ -16,7 +16,6 @@ const DARK_THEME = {
   textMuted:      "#a3a3a3",
   textFaint:      "#737373",
   accent:         "#14b8a6",
-  decor:          "#14b8a6",
   selectBg:       "#262626",
   modalWin:       "#1f2937",
   modalLose:      "#2d0a0a",
@@ -35,7 +34,6 @@ const LIGHT_THEME = {
   textMuted:      "#5c6f78",
   textFaint:      "#8fa3ad",
   accent:         "#0d9488",
-  decor:          "#0d9488",
   selectBg:       "#ffffff",
   modalWin:       "#ecfdf5",
   modalLose:      "#fff1f2",
@@ -665,31 +663,6 @@ function ResultModal({
 }
 
 // =============================================================
-// MEDICAL DECOR (minimal line SVGs)
-// =============================================================
-
-function CrossIcon({ size = 24, color = "currentColor", opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden style={{ opacity }}>
-      <path d="M12 4v16M4 12h16" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  );
-}
-
-function MedicalDecor({ theme }: { theme: Theme }) {
-  return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-      <div className="absolute top-[38%] -right-8 rotate-[12deg]">
-        <CrossIcon size={88} color={theme.decor} opacity={0.06} />
-      </div>
-      <div className="absolute bottom-16 -left-4">
-        <CrossIcon size={64} color={theme.decor} opacity={0.05} />
-      </div>
-    </div>
-  );
-}
-
-// =============================================================
 // MAIN COMPONENT
 // =============================================================
 
@@ -1034,7 +1007,6 @@ export default function Home() {
       className="relative min-h-screen flex flex-col items-center px-4 py-8 transition-colors duration-300"
       style={{ background: theme.bg, color: theme.text }}
     >
-      <MedicalDecor theme={theme} />
       {showConfetti && <Confetti />}
       <Analytics />
 
@@ -1146,10 +1118,9 @@ export default function Home() {
           ))}
         </select>
 
-        <div className="flex items-center gap-2 mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
-          <CrossIcon size={18} color={theme.accent} opacity={0.55} />
-          <h2 className="text-lg font-semibold">What&apos;s the diagnosis?</h2>
-        </div>
+        <h2 className="text-lg font-semibold mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
+          What&apos;s the diagnosis?
+        </h2>
 
         <div className="space-y-3 mb-6">
           {current.clues.slice(0, revealed).map((clue, i) => (
