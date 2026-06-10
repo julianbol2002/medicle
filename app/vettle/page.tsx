@@ -485,7 +485,7 @@ function ResultModal({ won, current, guesses, solvedAtClueCount, onArchive, onRa
       <div className="w-full max-w-lg rounded-2xl p-7 text-center shadow-2xl max-h-[90vh] overflow-y-auto" style={{ background: won ? theme.modalWin : theme.modalLose, border: `1px solid ${won ? theme.modalBorderWin : theme.modalBorderLose}` }}>
         {won ? (
           <>
-            <p className="text-2xl font-bold mb-2" style={{ color: "#22c55e" }}>Correct!</p>
+            <p className="text-2xl font-bold mb-2" style={{ color: "#22c55e", fontFamily: "'Poppins', sans-serif" }}>Correct!</p>
             <p className="font-semibold text-xl mb-1" style={{ color: theme.text }}>{current.diagnosis}</p>
             <p className="text-sm mb-4" style={{ color: theme.textMuted }}>
               Solved in {guesses.length} guess{guesses.length !== 1 ? "es" : ""} · clue {solvedAtClueCount}
@@ -494,7 +494,7 @@ function ResultModal({ won, current, guesses, solvedAtClueCount, onArchive, onRa
           </>
         ) : (
           <>
-            <p className="text-2xl font-bold mb-2" style={{ color: "#f43f5e" }}>Out of guesses</p>
+            <p className="text-2xl font-bold mb-2" style={{ color: "#f43f5e", fontFamily: "'Poppins', sans-serif" }}>Out of guesses</p>
             <p className="text-sm mb-1" style={{ color: theme.textMuted }}>The diagnosis was:</p>
             <p className="text-xl font-bold mb-4" style={{ color: theme.text }}>{current.diagnosis}</p>
           </>
@@ -554,7 +554,6 @@ export default function Home() {
   const [dailyCaseId, setDailyCaseId] = useState<number>(0);
   const [caseMode, setCaseMode] = useState<"daily" | "archive" | "random">("daily");
   const [showSystemFilter, setShowSystemFilter] = useState(false);
-  const [showSystem, setShowSystem] = useState(false);
   const [selectedSystems, setSelectedSystems] = useState<Set<string>>(new Set());
 
   const resetRound = useCallback((nextCase: Case) => {
@@ -720,12 +719,11 @@ export default function Home() {
         const id = Number(c.id);
         const isToday = id === playableId;
         const datePart = isToday ? " — Today" : ` — ${getDateForCaseId(id)}`;
-        const systemPart = showSystem && c.system ? ` · ${displaySystemLabel(c.system)}` : "";
-        return { id: c.id, label: `Case ${id}${datePart}${systemPart}` };
+        return { id: c.id, label: `Case ${id}${datePart}` };
       });
     if (caseMode === "random") return [{ id: "__endless__", label: "Endless mode" }, ...options];
     return options;
-  }, [eligibleCases, dailyCaseId, caseMode, showSystem]);
+  }, [eligibleCases, dailyCaseId, caseMode]);
 
   const filtered = useMemo(() => {
     const q = guess.trim().toLowerCase();
@@ -784,6 +782,7 @@ export default function Home() {
       className="relative min-h-screen flex flex-col items-center px-4 py-8 transition-colors duration-300"
       style={{ background: theme.bg, color: theme.text }}
     >
+      <style>{`@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');`}</style>
       {showConfetti && <Confetti />}
       <Analytics />
 
@@ -804,7 +803,7 @@ export default function Home() {
       <div className="relative z-10 w-full max-w-xl">
         <div className="flex items-center justify-between mb-6">
           <div className="min-w-0">
-            <h1 className="text-2xl font-bold tracking-tight leading-tight">Vettle</h1>
+            <h1 className="text-2xl font-bold tracking-tight leading-tight" style={{ fontFamily: "'Poppins', sans-serif" }}>Vettle</h1>
             <a
               href="https://www.medicle.net/vettle"
               target="_blank"
@@ -908,18 +907,6 @@ export default function Home() {
             >
               Filter body systems{selectedSystems.size > 0 ? ` (${selectedSystems.size})` : ""}
             </button>
-            <button
-              type="button"
-              onClick={() => setShowSystem((s) => !s)}
-              className="text-xs rounded-lg px-2.5 py-2 font-medium shrink-0"
-              style={{
-                background: showSystem ? theme.bgCard : "transparent",
-                border: `1px solid ${theme.border}`,
-                color: showSystem ? theme.accent : theme.textMuted,
-              }}
-            >
-              {showSystem ? "Hide body system" : "Show body system"}
-            </button>
           </div>
 
           {showSystemFilter && (
@@ -988,15 +975,18 @@ export default function Home() {
           )}
         </div>
 
-        <h2 className="text-lg font-semibold mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
+        <h2 className="text-lg font-semibold mb-4 pb-3 border-b" style={{ borderColor: theme.border, fontFamily: "'Poppins', sans-serif" }}>
           What&apos;s the diagnosis?
         </h2>
 
-        <div className="space-y-3 mb-6">
+        <div className="mb-6">
           {current.clues.slice(0, revealed).map((clue, i) => (
-            <p key={i} className="text-sm leading-relaxed" style={{ color: theme.text }}>
-              {clue}
-            </p>
+            <div key={i}>
+              {i > 0 && <div className="my-3 border-t" style={{ borderColor: theme.border }} />}
+              <p className="text-sm leading-relaxed" style={{ color: theme.text }}>
+                {clue}
+              </p>
+            </div>
           ))}
         </div>
 
