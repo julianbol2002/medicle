@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Analytics } from "@vercel/analytics/next";
 
 // =============================================================
@@ -458,6 +458,65 @@ function dedupeCasesById(list: Case[]): Case[] {
 
 
 // =============================================================
+// CONFETTI
+// =============================================================
+
+function Confetti() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const colors = ["#14b8a6", "#22c55e", "#86efac", "#0d9488", "#5eead4", "#ffffff"];
+
+    const pieces = Array.from({ length: 200 }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height - canvas.height,
+      r: Math.random() * 7 + 3,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      tiltAngle: Math.random() * Math.PI * 2,
+      tiltSpeed: Math.random() * 0.07 + 0.03,
+      speed: Math.random() * 2.5 + 1.5,
+    }));
+
+    let animId: number;
+
+    const draw = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      pieces.forEach((p) => {
+        p.tiltAngle += p.tiltSpeed;
+        p.y += p.speed;
+        const tilt = Math.sin(p.tiltAngle) * 14;
+        ctx.beginPath();
+        ctx.lineWidth = p.r;
+        ctx.strokeStyle = p.color;
+        ctx.moveTo(p.x + tilt + p.r / 2, p.y);
+        ctx.lineTo(p.x + tilt, p.y + tilt + p.r / 2);
+        ctx.stroke();
+        if (p.y > canvas.height) p.y = -10;
+      });
+      animId = requestAnimationFrame(draw);
+    };
+
+    draw();
+    const stop = setTimeout(() => cancelAnimationFrame(animId), 5000);
+
+    return () => {
+      cancelAnimationFrame(animId);
+      clearTimeout(stop);
+    };
+  }, []);
+
+  return <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none z-50" />;
+}
+
+// =============================================================
 // SHARE + RESULT MODAL
 // =============================================================
 
@@ -675,6 +734,7 @@ export default function Home() {
   const [won, setWon] = useState(false);
 
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
   const [lightMode, setLightMode] = useState(false);
 
   const theme: Theme = lightMode ? LIGHT_THEME : DARK_THEME;
@@ -803,6 +863,7 @@ export default function Home() {
     setGuesses([]);
     setGameOver(false);
     setWon(false);
+    setShowConfetti(false);
     setShowDropdown(false);
     setSolvedAtClueCount(1);
   }, []);
@@ -951,6 +1012,7 @@ export default function Home() {
       if (correct) {
         setWon(true);
         setGameOver(true);
+        setShowConfetti(true);
         setSolvedAtClueCount(revealed);
         return;
       }
@@ -997,6 +1059,7 @@ export default function Home() {
       style={{ background: theme.bg, color: theme.text }}
     >
       <MedicalDecor theme={theme} />
+      {showConfetti && <Confetti />}
       <Analytics />
 
       {gameOver && current && (
@@ -1015,9 +1078,20 @@ export default function Home() {
 
       <div className="relative z-10 w-full max-w-xl">
         <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2.5 min-w-0">
             <StethoscopeIcon size={26} color={theme.accent} opacity={0.9} />
-            <h1 className="text-2xl font-bold tracking-tight">Medicle</h1>
+            <div className="min-w-0">
+              <h1 className="text-2xl font-bold tracking-tight leading-tight">Medicle</h1>
+              <a
+                href="https://www.medicle.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-medium hover:underline"
+                style={{ color: theme.accent }}
+              >
+                www.medicle.net
+              </a>
+            </div>
           </div>
           <div className="flex items-center gap-2">
             <button
