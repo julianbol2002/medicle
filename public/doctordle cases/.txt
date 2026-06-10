@@ -1854,36 +1854,6 @@ TEACHING_POINTS:
 
 CASE_ID: 063
 DIFFICULTY: hard
-SYSTEM: endocrinology
-
-DIAGNOSIS:
-Multiple endocrine neoplasia type 1
-
-ALIASES:
-MEN 1 syndrome
-Wermer syndrome
-MEN1-associated endocrine neoplasia
-
-VIGNETTE_LINES:
-
-1. A 31-year-old woman presents with recurrent kidney stones.
-2. Her father underwent surgery for a pancreatic tumor in his 40s.
-3. Examination shows no thyroid enlargement or cushingoid features.
-4. Laboratory studies demonstrate hypercalcemia with an inappropriately elevated parathyroid hormone level.
-5. MRI of the sella reveals a small pituitary lesion, and fasting gastrin remains elevated after acid suppression is withheld.
-6. Genetic testing identifies a pathogenic mutation in the MEN1 gene.
-
-TEACHING_POINTS:
-
-* Simultaneous evidence of parathyroid, pituitary, and pancreatic endocrine disease should prompt consideration of a syndromic disorder rather than isolated lesions.
-* Primary hyperparathyroidism is often the earliest manifestation and may present through nephrolithiasis or bone disease.
-* Family history across generations is a major clue for an autosomal dominant endocrine neoplasia syndrome.
-* Molecular confirmation with MEN1 testing establishes the diagnosis and supports surveillance of at-risk relatives.
-
-==================================================
-
-CASE_ID: 064
-DIFFICULTY: hard
 SYSTEM: cardiology
 
 DIAGNOSIS:
@@ -1909,6 +1879,36 @@ TEACHING_POINTS:
 * Dynamic outflow obstruction causes a murmur that changes with preload and afterload maneuvers.
 * Diastolic dysfunction and myocardial ischemia can occur even when systolic function appears hyperdynamic.
 * Sarcomere gene mutations underlie many familial cases and explain the abnormal myocardial architecture.
+
+==================================================
+
+CASE_ID: 064
+DIFFICULTY: hard
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Von Gierke disease
+
+ALIASES:
+Glycogen storage disease type I
+Glucose-6-phosphatase deficiency
+Hepatorenal glycogenosis due to GSD I
+
+VIGNETTE_LINES:
+
+1. A 14-month-old boy presents with recurrent shakiness.
+2. His parents say the episodes occur in the early morning before breakfast.
+3. Examination shows a protuberant abdomen and poor linear growth.
+4. Laboratory studies demonstrate hypoglycemia, lactic acidosis, hyperuricemia, and hypertriglyceridemia.
+5. Abdominal ultrasonography reveals marked hepatomegaly without focal lesions, and ketones are low during fasting hypoglycemia.
+6. Enzyme testing demonstrates deficiency of glucose-6-phosphatase activity in liver tissue.
+
+TEACHING_POINTS:
+
+* Fasting hypoglycemia with hepatomegaly in infancy should prompt consideration of a glycogen storage disorder rather than isolated endocrine disease.
+* Accumulated glucose-6-phosphate is shunted into glycolysis, lipid synthesis, and purine turnover, producing lactate, triglycerides, and uric acid.
+* Low ketone production during severe hypoglycemia reflects inability to mobilize free glucose effectively from stored glycogen.
+* Enzyme deficiency confirms glycogen storage disease type I after the characteristic metabolic pattern is recognized.
 
 ==================================================
 
