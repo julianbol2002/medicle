@@ -2,6 +2,10 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Analytics } from "@vercel/analytics/next";
+import {
+  filterDiagnosisSuggestions,
+  parseDiagnosisListText,
+} from "@/lib/diagnosisAutocomplete";
 
 // =============================================================
 // THEME TOKENS
@@ -124,10 +128,9 @@ function getDateForCaseId(caseId: number): string {
   return date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 }
 
-// ✅ Optional: add a much larger Step 1 answer bank in /public
-// Format: one diagnosis per line.
-// This makes the dropdown harder (more realistic).
-const DIAGNOSIS_BANK_PATH = "/step1_diagnosis_bank.txt";
+// Master autocomplete bank (independent of case database).
+// One diagnosis per line. Used for suggestions only — not answer validation.
+const DIAGNOSIS_MASTER_LIST_PATH = "/diagnosis_master_list.txt";
 
 // =============================================================
 // NORMALIZATION HELPERS
@@ -692,7 +695,7 @@ function ResultModal({
 export default function Home() {
   const [cases, setCases] = useState<Case[]>([]);
   const [randomCases, setRandomCases] = useState<Case[]>([]);
-  const [externalDiagnosisBank, setExternalDiagnosisBank] = useState<string[]>([]);
+  const [masterDiagnosisList, setMasterDiagnosisList] = useState<string[]>([]);
 
   const [current, setCurrent] = useState<Case | null>(null);
   const [selectedCaseId, setSelectedCaseId] = useState<string>("");
@@ -766,31 +769,26 @@ export default function Home() {
   }, []);
 
   // =============================================================
-  // LOAD OPTIONAL STEP 1 DIAGNOSIS BANK (makes dropdown harder)
+  // LOAD MASTER DIAGNOSIS LIST (autocomplete only)
   // =============================================================
 
   useEffect(() => {
     let active = true;
 
-    async function loadBank() {
+    async function loadMasterList() {
       try {
-        const res = await fetch(DIAGNOSIS_BANK_PATH);
+        const res = await fetch(DIAGNOSIS_MASTER_LIST_PATH);
         if (!res.ok) return;
 
-        const txt = await res.text();
-        const items = txt
-          .split("\n")
-          .map((l) => l.trim())
-          .filter(Boolean);
-
+        const items = parseDiagnosisListText(await res.text());
         if (!active) return;
-        setExternalDiagnosisBank(items);
+        setMasterDiagnosisList(items);
       } catch {
-        // ignore
+        // ignore — fallback bank used until load succeeds
       }
     }
 
-    loadBank();
+    loadMasterList();
 
     return () => {
       active = false;
@@ -926,25 +924,18 @@ export default function Home() {
   }, [eligibleCases, dailyCaseId, resetRound]);
 
   // =============================================================
-  // DROPDOWN ANSWER BANK (FIXES DUPES + EXPANDS POOL)
+  // AUTOCOMPLETE BANK (independent of case database)
   // =============================================================
 
-  const allDiagnoses = useMemo(() => {
-    const casePool =
-      caseMode === "random"
-        ? dedupeCasesById([...eligibleCases, ...eligibleRandomCases])
-        : eligibleCases;
-    const fromCases = casePool.flatMap((c) => [c.diagnosis, ...c.aliases]);
-    const combined = [...DEFAULT_STEP1_DIAGNOSIS_BANK, ...externalDiagnosisBank, ...fromCases];
+  const autocompleteDiagnoses = useMemo(() => {
+    const source =
+      masterDiagnosisList.length > 0 ? masterDiagnosisList : DEFAULT_STEP1_DIAGNOSIS_BANK;
 
-    // Canonicalize + dedupe
+    const canonicalized = source.map((item) => canonicalizeDiagnosisDisplay(item));
     const map = new Map<string, string>();
 
-    for (const item of combined) {
-      const canonical = canonicalizeDiagnosisDisplay(item);
+    for (const canonical of canonicalized) {
       const key = normalizeKeyForDedup(canonical);
-
-      // Prefer longer label if collision
       const prev = map.get(key);
       if (!prev || canonical.length > prev.length) {
         map.set(key, canonical);
@@ -952,7 +943,7 @@ export default function Home() {
     }
 
     return Array.from(map.values()).sort((a, b) => a.localeCompare(b));
-  }, [eligibleCases, eligibleRandomCases, caseMode, externalDiagnosisBank]);
+  }, [masterDiagnosisList]);
 
   const caseOptions = useMemo(() => {
     const maxPublished = getMaxCaseId(eligibleCases);
@@ -977,21 +968,10 @@ export default function Home() {
     return options;
   }, [eligibleCases, dailyCaseId, caseMode]);
 
-  const filtered = useMemo(() => {
-    const q = guess.trim().toLowerCase();
-    if (!q) return [];
-
-    const qKey = normalizeKeyForDedup(q);
-
-    return allDiagnoses
-      .filter((d) => {
-        const dLower = d.toLowerCase();
-        if (dLower.includes(q)) return true;
-        const dKey = normalizeKeyForDedup(d);
-        return dKey.includes(qKey);
-      })
-      .slice(0, 10);
-  }, [allDiagnoses, guess]);
+  const filtered = useMemo(
+    () => filterDiagnosisSuggestions(autocompleteDiagnoses, guess, 12),
+    [autocompleteDiagnoses, guess]
+  );
 
   const guessesLeft = MAX_GUESSES - guesses.length;
 
