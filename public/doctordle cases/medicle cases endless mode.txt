@@ -297,7 +297,6 @@ TEACHING_POINTS:
 * Treatment centers on alkalinization and, in severe cases, hemodialysis.
 
 ==================================================
-
 CASE_ID: 011
 DIFFICULTY: hard
 SYSTEM: cardiology
@@ -597,7 +596,6 @@ TEACHING_POINTS:
 * Nuclear scanning is most useful when ectopic gastric mucosa is present within the diverticulum.
 
 ==================================================
-
 CASE_ID: 021
 DIFFICULTY: hard
 SYSTEM: endocrinology
@@ -1194,5 +1192,902 @@ TEACHING_POINTS:
 * Sustained or paroxysmal hypertension should prompt evaluation for a medical cause when panic-like episodes are atypical or refractory.
 * Biochemical confirmation with metanephrines is necessary before attributing an adrenal mass to a catecholamine-secreting tumor.
 * Histopathology confirms the nature of the adrenal neoplasm after surgical resection.
+
+==================================================
+CASE_ID: 041
+DIFFICULTY: hard
+SYSTEM: pharmacology_toxicology
+
+DIAGNOSIS:
+Methemoglobinemia
+
+ALIASES:
+Acquired methemoglobinemia
+Oxidant-induced methemoglobinemia
+Dyshemoglobinemia due to methemoglobin formation
+
+VIGNETTE_LINES:
+
+1. A 28-year-old man presents with shortness of breath.
+2. He underwent an outpatient endoscopic procedure earlier that day for which a topical anesthetic spray was used.
+3. Examination shows diffuse slate-gray cyanosis without wheezing or signs of volume overload.
+4. Pulse oximetry remains in the mid-80s despite high-flow supplemental oxygen, while CBC and chest radiography are unremarkable.
+5. Arterial blood gas demonstrates a normal PaO2, and the blood sample appears chocolate-brown.
+6. Co-oximetry demonstrates a markedly elevated methemoglobin fraction, confirming methemoglobinemia.
+
+TEACHING_POINTS:
+
+* Central cyanosis with a normal lung examination and poor response to supplemental oxygen should raise suspicion for a dyshemoglobinemia.
+* Topical anesthetics such as benzocaine are classic triggers of acquired methemoglobinemia, especially after mucosal procedures.
+* A saturation gap between pulse oximetry and arterial oxygen tension is a major clue late in the workup.
+* Definitive diagnosis relies on co-oximetry rather than standard pulse oximetry or routine blood gas analysis alone.
+
+==================================================
+
+CASE_ID: 042
+DIFFICULTY: hard
+SYSTEM: pediatrics
+
+DIAGNOSIS:
+Primary ciliary dyskinesia
+
+ALIASES:
+PCD
+Immotile cilia syndrome
+Kartagener spectrum disorder
+
+VIGNETTE_LINES:
+
+1. An 8-year-old boy presents with chronic cough.
+2. His parents report recurrent otitis media and year-round nasal congestion since infancy.
+3. Examination shows bilateral coarse crackles and a right-sided point of maximal impulse.
+4. Chest radiography demonstrates dextrocardia, and spirometry shows mild obstructive physiology.
+5. CT of the chest reveals lower-lobe bronchiectasis, and sinus CT shows chronic pansinusitis.
+6. Electron microscopy of a nasal ciliary biopsy demonstrates absent outer dynein arms.
+
+TEACHING_POINTS:
+
+* Chronic sinopulmonary infections beginning in early childhood should prompt consideration of mucociliary clearance disorders.
+* Dextrocardia narrows the differential substantially but still requires correlation with chronic airway disease for diagnosis.
+* Bronchiectasis in children is not always due to cystic fibrosis and should trigger a broader evaluation.
+* Ultrastructural demonstration of dynein arm defects confirms primary ciliary dyskinesia in the appropriate clinical setting.
+
+==================================================
+
+CASE_ID: 043
+DIFFICULTY: hard
+SYSTEM: rheumatology
+
+DIAGNOSIS:
+Mixed cryoglobulinemic vasculitis
+
+ALIASES:
+Cryoglobulinemic vasculitis
+Hepatitis C-associated cryoglobulinemia
+Immune-complex small vessel vasculitis due to cryoglobulins
+
+VIGNETTE_LINES:
+
+1. A 58-year-old woman presents with leg rash.
+2. She has chronic hepatitis C infection that has never been treated.
+3. Examination shows palpable purpura over both lower legs and diminished pinprick sensation in the feet.
+4. Laboratory studies reveal low complement C4, a mildly elevated creatinine level, and urinalysis with hematuria and proteinuria.
+5. Kidney biopsy demonstrates a membranoproliferative glomerulonephritis pattern with immune-complex deposition.
+6. Serum testing demonstrates cryoglobulins that precipitate in the cold with rheumatoid factor activity, confirming mixed cryoglobulinemic vasculitis.
+
+TEACHING_POINTS:
+
+* Palpable purpura with neuropathy and renal abnormalities should prompt a focused vasculitic differential diagnosis.
+* Chronic hepatitis C is a major associated condition and should be considered when immune-complex disease spans multiple organ systems.
+* Low complement levels point toward immune-complex-mediated disease rather than many pauci-immune vasculitides.
+* Demonstration of circulating cryoglobulins with the appropriate clinical syndrome establishes the diagnosis.
+
+==================================================
+
+CASE_ID: 044
+DIFFICULTY: hard
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Arrhythmogenic right ventricular cardiomyopathy
+
+ALIASES:
+ARVC
+Arrhythmogenic right ventricular dysplasia
+Fibrofatty right ventricular cardiomyopathy
+
+VIGNETTE_LINES:
+
+1. A 27-year-old man presents with palpitations.
+2. His older brother died suddenly while playing basketball at age 29.
+3. Examination shows an irregular heartbeat without signs of heart failure.
+4. ECG demonstrates T-wave inversions in V1 through V3, and ambulatory monitoring captures runs of nonsustained ventricular tachycardia with a left bundle-branch block morphology.
+5. Cardiac MRI reveals right ventricular free-wall thinning with regional akinesia and reduced right ventricular ejection fraction.
+6. Endomyocardial biopsy demonstrates fibrofatty replacement of the right ventricular myocardium.
+
+TEACHING_POINTS:
+
+* Ventricular arrhythmias in a young patient with a family history of sudden death should raise concern for inherited cardiomyopathy.
+* Right ventricular dysfunction can be subtle on routine examination and may present before overt heart failure develops.
+* ECG and ambulatory rhythm findings narrow the differential but imaging is needed to characterize structural disease.
+* Histology demonstrating fibrofatty myocardial replacement provides confirmatory evidence when the clinical picture suggests ARVC.
+
+==================================================
+
+CASE_ID: 045
+DIFFICULTY: hard
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Chronic mesenteric ischemia
+
+ALIASES:
+Intestinal angina
+Atherosclerotic mesenteric ischemia
+Chronic splanchnic ischemia
+
+VIGNETTE_LINES:
+
+1. A 71-year-old woman presents with abdominal pain.
+2. She has a 50-pack-year smoking history and peripheral arterial disease.
+3. Examination reveals a soft abdomen with an epigastric bruit.
+4. CBC and metabolic panel are largely unremarkable, and lactate is normal between episodes.
+5. CT angiography demonstrates severe atherosclerotic narrowing of the celiac artery and superior mesenteric artery.
+6. Catheter angiography confirms flow-limiting multivessel mesenteric stenoses, and her postprandial pain resolves after revascularization.
+
+TEACHING_POINTS:
+
+* Recurrent postprandial abdominal pain with weight loss in a patient with systemic atherosclerosis should suggest chronic mesenteric ischemia.
+* Normal lactate does not exclude chronic intestinal ischemia because perfusion may be sufficient at rest.
+* An abdominal bruit is not diagnostic but can help direct attention toward a vascular cause of pain.
+* Definitive diagnosis relies on demonstrating significant mesenteric arterial obstruction in the appropriate clinical setting.
+
+==================================================
+
+CASE_ID: 046
+DIFFICULTY: hard
+SYSTEM: infectious_disease
+
+DIAGNOSIS:
+Disseminated nocardiosis
+
+ALIASES:
+Nocardia infection
+Invasive nocardiosis
+Pulmonary nocardiosis with central nervous system dissemination
+
+VIGNETTE_LINES:
+
+1. A 63-year-old man presents with cough.
+2. He has been taking high-dose prednisone for the past 4 months for organizing pneumonia.
+3. Examination shows low-grade fever and mild confusion.
+4. Chest CT demonstrates multiple bilateral nodules with cavitation, and CBC shows neutrophilic leukocytosis.
+5. Brain MRI reveals several ring-enhancing lesions at the gray-white junction with surrounding edema.
+6. Bronchoalveolar lavage culture grows branching filamentous organisms that are weakly acid-fast and identified as Nocardia species.
+
+TEACHING_POINTS:
+
+* In an immunocompromised patient, cavitary lung nodules with brain abscesses should prompt consideration of opportunistic infection as well as malignancy.
+* Chronic glucocorticoid therapy substantially increases the risk for disseminated nocardiosis.
+* Central nervous system dissemination is common enough that neuroimaging should be considered when symptoms suggest systemic spread.
+* Microbiologic confirmation depends on identifying branching, weakly acid-fast organisms in clinical specimens.
+
+==================================================
+
+CASE_ID: 047
+DIFFICULTY: hard
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Familial hypocalciuric hypercalcemia
+
+ALIASES:
+FHH
+Benign familial hypercalcemia
+Calcium-sensing receptor-related hypercalcemia
+
+VIGNETTE_LINES:
+
+1. A 33-year-old woman presents with constipation.
+2. She says her mother and sister were both told during routine exams that they had elevated calcium levels.
+3. Examination is unremarkable without nephrolithiasis-related tenderness or bone pain.
+4. Laboratory studies show mild hypercalcemia with a high-normal parathyroid hormone level and normal renal function.
+5. A 24-hour urine collection demonstrates markedly low urinary calcium excretion.
+6. Genetic testing identifies a heterozygous inactivating mutation in the calcium-sensing receptor gene.
+
+TEACHING_POINTS:
+
+* Mild hypercalcemia with a nonsuppressed parathyroid hormone level has a focused differential that includes primary hyperparathyroidism and FHH.
+* Family history spanning multiple first-degree relatives is an important clue that the disorder may be inherited rather than acquired.
+* Low urinary calcium excretion is the key discriminator before pursuing surgery or additional localization studies.
+* Confirmatory testing identifies a pathogenic calcium-sensing receptor abnormality in affected patients.
+
+==================================================
+
+CASE_ID: 048
+DIFFICULTY: hard
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Chronic thromboembolic pulmonary hypertension
+
+ALIASES:
+CTEPH
+Chronic thromboembolic disease with pulmonary hypertension
+Post-thromboembolic pulmonary hypertension
+
+VIGNETTE_LINES:
+
+1. A 59-year-old woman presents with progressive shortness of breath.
+2. She was treated for a pulmonary embolism 18 months ago.
+3. Examination shows a loud pulmonic component of S2 and trace ankle edema.
+4. Echocardiography demonstrates right ventricular enlargement with elevated estimated pulmonary artery systolic pressure.
+5. Ventilation-perfusion scanning reveals multiple segmental mismatched perfusion defects, and CT pulmonary angiography demonstrates eccentric wall-adherent filling defects.
+6. Right heart catheterization confirms precapillary pulmonary hypertension, and pulmonary angiography demonstrates chronic thromboembolic webs and bands.
+
+TEACHING_POINTS:
+
+* Persistent dyspnea after treatment of pulmonary embolism should not automatically be attributed to deconditioning.
+* Echocardiography identifies pulmonary hypertension but does not determine its cause.
+* A mismatched ventilation-perfusion scan is a crucial screening test for chronic thromboembolic disease.
+* Hemodynamic confirmation and angiographic definition are essential when evaluating patients for pulmonary endarterectomy or balloon angioplasty.
+
+==================================================
+
+CASE_ID: 049
+DIFFICULTY: hard
+SYSTEM: hematology_oncology
+
+DIAGNOSIS:
+Hemophagocytic lymphohistiocytosis
+
+ALIASES:
+HLH
+Hemophagocytic syndrome
+Hyperinflammatory macrophage activation syndrome
+
+VIGNETTE_LINES:
+
+1. A 22-year-old woman presents with persistent fever.
+2. She had infectious mononucleosis 3 weeks ago and has continued to worsen despite supportive care.
+3. Examination shows hepatosplenomegaly and diffuse petechiae.
+4. CBC demonstrates anemia and thrombocytopenia, triglycerides are elevated, and fibrinogen is low.
+5. Ferritin is markedly elevated, and soluble interleukin-2 receptor levels are increased.
+6. Bone marrow biopsy demonstrates activated macrophages engulfing erythrocytes and leukocytes, confirming hemophagocytic lymphohistiocytosis.
+
+TEACHING_POINTS:
+
+* Persistent fever with cytopenias and organomegaly after a viral illness should prompt evaluation for a hyperinflammatory syndrome rather than uncomplicated infection.
+* Hypertriglyceridemia and hypofibrinogenemia are important clues that can help distinguish HLH from routine sepsis.
+* Very high ferritin levels are supportive but not specific, so the diagnosis requires synthesis of multiple clinical and laboratory features.
+* Demonstration of hemophagocytosis on tissue examination provides confirmatory evidence in the correct clinical context.
+
+==================================================
+
+CASE_ID: 050
+DIFFICULTY: hard
+SYSTEM: neurology
+
+DIAGNOSIS:
+Stiff-person syndrome
+
+ALIASES:
+SPS
+Autoimmune stiff-man syndrome
+GAD65-associated stiffness syndrome
+
+VIGNETTE_LINES:
+
+1. A 46-year-old woman presents with progressive stiffness.
+2. She has type 1 diabetes mellitus treated with insulin.
+3. Examination shows marked lumbar hyperlordosis and painful spasms triggered by unexpected noise.
+4. Creatine kinase, thyroid studies, and MRI of the spine are unremarkable.
+5. Electromyography demonstrates continuous motor unit activity in paraspinal and proximal lower-extremity muscles at rest.
+6. Serum testing reveals high-titer glutamic acid decarboxylase 65 antibodies, confirming stiff-person syndrome.
+
+TEACHING_POINTS:
+
+* Progressive axial rigidity with stimulus-sensitive spasms has a focused neurologic differential that includes autoimmune, functional, and toxin-mediated disorders.
+* Coexisting autoimmune disease increases suspicion for stiff-person syndrome but is not by itself diagnostic.
+* Normal imaging and muscle enzymes help distinguish this disorder from structural spinal disease and inflammatory myopathy.
+* Continuous motor unit activity on electromyography plus disease-specific antibodies confirms the diagnosis.
+
+==================================================
+CASE_ID: 051
+DIFFICULTY: hard
+SYSTEM: nephrology
+
+DIAGNOSIS:
+Gitelman syndrome
+
+ALIASES:
+Familial hypokalemic hypomagnesemic metabolic alkalosis
+SLC12A3-related tubulopathy
+Inherited thiazide-like salt-wasting nephropathy
+
+VIGNETTE_LINES:
+
+1. A 19-year-old woman presents with muscle cramps.
+2. She reports lifelong salt craving and says several relatives are known to have low blood pressure.
+3. Examination shows normal volume status and no edema.
+4. Basic metabolic panel demonstrates hypokalemia, mild metabolic alkalosis, and low magnesium levels.
+5. Urine electrolyte testing shows inappropriate renal potassium wasting with low urinary calcium excretion and normal blood pressure.
+6. Genetic testing identifies biallelic pathogenic variants in the SLC12A3 gene.
+
+TEACHING_POINTS:
+
+* Hypokalemic metabolic alkalosis has a broad differential that includes vomiting, diuretic use, mineralocorticoid excess, and inherited tubulopathies.
+* Low urinary calcium excretion helps distinguish Gitelman syndrome from Bartter syndrome in the right clinical context.
+* Hypomagnesemia is common and contributes to neuromuscular symptoms such as cramps and weakness.
+* Molecular confirmation is useful when the phenotype suggests an inherited distal convoluted tubule transport defect.
+
+==================================================
+
+CASE_ID: 052
+DIFFICULTY: hard
+SYSTEM: infectious_disease
+
+DIAGNOSIS:
+Strongyloides hyperinfection syndrome
+
+ALIASES:
+Disseminated strongyloidiasis
+Hyperinfection due to Strongyloides stercoralis
+Invasive autoinfection syndrome due to Strongyloides
+
+VIGNETTE_LINES:
+
+1. A 67-year-old man presents with abdominal pain.
+2. He recently began high-dose glucocorticoid therapy for an exacerbation of interstitial lung disease and immigrated from rural Cambodia decades ago.
+3. Examination shows diffuse wheezing and mild abdominal distension.
+4. CBC shows leukocytosis without eosinophilia, and chest radiography demonstrates patchy bilateral interstitial opacities.
+5. CT of the abdomen shows small-bowel wall thickening, and blood cultures grow Enterobacter species without an obvious urinary source.
+6. Stool and sputum microscopy demonstrate numerous Strongyloides stercoralis larvae.
+
+TEACHING_POINTS:
+
+* Steroid exposure can precipitate overwhelming autoinfection even when chronic strongyloidiasis was previously clinically silent.
+* Gram-negative bacteremia in a patient with gastrointestinal and pulmonary findings should suggest translocation during larval migration.
+* Eosinophilia may disappear during hyperinfection, so its absence does not exclude the diagnosis.
+* Direct visualization of larvae in stool or respiratory specimens confirms disseminated strongyloidiasis.
+
+==================================================
+
+CASE_ID: 053
+DIFFICULTY: hard
+SYSTEM: dermatology
+
+DIAGNOSIS:
+Mycosis fungoides
+
+ALIASES:
+Cutaneous T-cell lymphoma
+CTCL of mycosis fungoides type
+Epidermotropic cutaneous T-cell lymphoma
+
+VIGNETTE_LINES:
+
+1. A 56-year-old man presents with a chronic rash.
+2. He has been treated intermittently with topical corticosteroids for years with only partial improvement.
+3. Examination shows several well-demarcated erythematous plaques over the trunk and buttocks without mucosal involvement.
+4. CBC and comprehensive metabolic panel are unremarkable.
+5. Repeat punch biopsies from multiple lesions show epidermotropic atypical lymphocytes with a band-like dermal infiltrate.
+6. T-cell receptor gene rearrangement studies demonstrate a clonal T-cell population consistent with mycosis fungoides.
+
+TEACHING_POINTS:
+
+* A chronic steroid-responsive but persistent patch-plaque eruption should prompt consideration of inflammatory dermatoses as well as cutaneous lymphoma.
+* Early mycosis fungoides can mimic eczema, psoriasis, or contact dermatitis, often delaying diagnosis.
+* Multiple biopsies may be needed because the histology can be subtle and patchy early in the disease course.
+* Demonstration of a clonal epidermotropic T-cell population confirms cutaneous T-cell lymphoma in the proper clinicopathologic setting.
+
+==================================================
+
+CASE_ID: 054
+DIFFICULTY: hard
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Eisenmenger syndrome
+
+ALIASES:
+Pulmonary vascular disease with shunt reversal
+Cyanotic congenital heart disease due to Eisenmenger physiology
+Right-to-left reversal of a longstanding congenital shunt
+
+VIGNETTE_LINES:
+
+1. A 34-year-old woman presents with progressive shortness of breath.
+2. She was told she had a heart murmur in childhood but never underwent surgery.
+3. Examination shows clubbing of the fingers and central cyanosis.
+4. CBC demonstrates erythrocytosis, and ECG shows right ventricular hypertrophy.
+5. Transthoracic echocardiography reveals a large secundum atrial septal defect with severe pulmonary hypertension and bidirectional shunting.
+6. Right heart catheterization demonstrates fixed markedly elevated pulmonary vascular resistance with net right-to-left shunt physiology.
+
+TEACHING_POINTS:
+
+* Longstanding unrepaired left-to-right shunts can cause progressive pulmonary vascular remodeling and eventual reversal of flow.
+* Clubbing, cyanosis, and secondary erythrocytosis suggest chronic hypoxemia rather than isolated volume-overload physiology.
+* Echocardiography identifies the congenital lesion and pulmonary hypertension, but catheterization defines operability and shunt physiology.
+* Once Eisenmenger physiology develops, closure of the defect is generally contraindicated because the pulmonary vascular disease is no longer reversible.
+
+==================================================
+
+CASE_ID: 055
+DIFFICULTY: hard
+SYSTEM: rheumatology
+
+DIAGNOSIS:
+Eosinophilic granulomatosis with polyangiitis
+
+ALIASES:
+EGPA
+Churg-Strauss syndrome
+Eosinophilic necrotizing granulomatous vasculitis
+
+VIGNETTE_LINES:
+
+1. A 46-year-old man presents with numbness in his feet.
+2. He has had adult-onset asthma requiring several courses of prednisone over the past 2 years.
+3. Examination shows a purpuric rash over the ankles and weakness of right foot dorsiflexion.
+4. CBC demonstrates marked eosinophilia, and chest radiography shows fleeting patchy infiltrates.
+5. Sinus CT reveals chronic pansinusitis, and nerve conduction studies demonstrate mononeuritis multiplex.
+6. Sural nerve biopsy demonstrates eosinophil-rich necrotizing vasculitis with extravascular granulomatous inflammation.
+
+TEACHING_POINTS:
+
+* Asthma, eosinophilia, neuropathy, and pulmonary infiltrates together should prompt consideration of a systemic eosinophilic vasculitis.
+* Adult-onset asthma is a common clue, but the diagnosis usually becomes clear only after extrapulmonary organ involvement appears.
+* Neurologic deficits often reflect mononeuritis multiplex rather than a symmetric polyneuropathy.
+* Tissue biopsy showing eosinophilic vasculitis with granulomatous inflammation confirms the diagnosis.
+
+==================================================
+
+CASE_ID: 056
+DIFFICULTY: hard
+SYSTEM: reproductive
+
+DIAGNOSIS:
+Asherman syndrome
+
+ALIASES:
+Intrauterine adhesions
+Uterine synechiae syndrome
+Post-curettage intrauterine scarring
+
+VIGNETTE_LINES:
+
+1. A 32-year-old woman presents with infertility.
+2. She underwent dilation and curettage for retained products of conception after a postpartum hemorrhage 1 year ago.
+3. Pelvic examination is unremarkable.
+4. Pregnancy testing is negative, and thyroid, prolactin, and gonadotropin levels are normal.
+5. Hysterosalpingography demonstrates an irregular uterine cavity with multiple filling defects and poor distensibility.
+6. Hysteroscopy reveals dense fibrous adhesions bridging the uterine cavity.
+
+TEACHING_POINTS:
+
+* Infertility with normal endocrine evaluation should prompt consideration of structural uterine causes.
+* Prior postpartum or postabortion curettage is a major risk factor for intrauterine adhesion formation.
+* Imaging may suggest cavity distortion, but hysteroscopy is both diagnostic and therapeutic.
+* Intrauterine scarring can present with infertility, decreased menstrual flow, recurrent pregnancy loss, or secondary amenorrhea.
+
+==================================================
+
+CASE_ID: 057
+DIFFICULTY: hard
+SYSTEM: psychiatry
+
+DIAGNOSIS:
+Anti-NMDA receptor encephalitis
+
+ALIASES:
+NMDA receptor encephalitis
+Autoimmune anti-NMDA receptor encephalitis
+Paraneoplastic anti-NR1 encephalitis
+
+VIGNETTE_LINES:
+
+1. A 21-year-old woman presents with bizarre behavior.
+2. Her family reports a flu-like prodrome 2 weeks earlier.
+3. Examination shows agitation with intermittent orofacial dyskinesias.
+4. Cerebrospinal fluid demonstrates a mild lymphocytic pleocytosis, and routine toxicology screening is negative.
+5. EEG shows diffuse slowing with intermittent extreme delta brush, and pelvic ultrasonography identifies an ovarian mass.
+6. Cerebrospinal fluid testing detects antibodies against the NMDA receptor.
+
+TEACHING_POINTS:
+
+* New-onset psychosis in a young patient should prompt consideration of autoimmune encephalitis when neurologic features emerge.
+* Movement abnormalities, seizures, dysautonomia, and language dysfunction help distinguish this disorder from primary psychiatric disease.
+* An associated ovarian teratoma may be present, but the diagnosis should still be considered even if no tumor is found.
+* CSF antibody testing confirms the diagnosis and guides immunotherapy and tumor-directed management.
+
+==================================================
+
+CASE_ID: 058
+DIFFICULTY: hard
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Pulmonary Langerhans cell histiocytosis
+
+ALIASES:
+PLCH
+Smoking-related pulmonary Langerhans cell histiocytosis
+Adult pulmonary eosinophilic granuloma
+
+VIGNETTE_LINES:
+
+1. A 32-year-old man presents with progressive shortness of breath.
+2. He has smoked two packs of cigarettes daily since high school.
+3. Examination shows scattered crackles without digital clubbing.
+4. Pulmonary function testing demonstrates a mixed obstructive-restrictive pattern with reduced diffusion capacity, and chest radiography shows upper-lung reticulonodular opacities.
+5. High-resolution CT reveals irregular nodules and bizarre-shaped cysts predominantly in the upper lobes with relative sparing of the costophrenic angles.
+6. Surgical lung biopsy demonstrates CD1a- and langerin-positive histiocytes forming eosinophil-rich granulomas.
+
+TEACHING_POINTS:
+
+* Smoking-related diffuse lung disease can present with a mixture of nodules and cysts before progressing to more advanced cystic destruction.
+* The distribution of cysts and nodules on HRCT helps distinguish PLCH from lymphangioleiomyomatosis and other cystic lung disorders.
+* Pneumothorax may be an early clue, but many patients present only with dyspnea and reduced diffusion capacity.
+* Tissue confirmation relies on identifying characteristic Langerhans cells by immunostaining.
+
+==================================================
+
+CASE_ID: 059
+DIFFICULTY: hard
+SYSTEM: hematology_oncology
+
+DIAGNOSIS:
+Pure red cell aplasia
+
+ALIASES:
+PRCA
+Selective erythroid aplasia
+Acquired erythroblastopenia
+
+VIGNETTE_LINES:
+
+1. A 58-year-old man presents with fatigue.
+2. He has unintentionally lost 10 pounds over several months but has no bleeding symptoms.
+3. Examination shows marked conjunctival pallor without lymphadenopathy or splenomegaly.
+4. CBC demonstrates severe normocytic anemia with a profoundly low reticulocyte count, while leukocyte and platelet counts are normal.
+5. CT of the chest reveals an anterior mediastinal mass.
+6. Bone marrow biopsy demonstrates near-complete absence of erythroid precursors with preserved granulopoiesis and megakaryopoiesis.
+
+TEACHING_POINTS:
+
+* Severe anemia with reticulocytopenia but preserved white blood cell and platelet counts localizes the problem to selective erythroid failure.
+* The differential includes thymoma-associated disease, autoimmune causes, medications, and parvovirus B19 infection.
+* An anterior mediastinal mass should raise suspicion for thymoma as an associated condition.
+* Bone marrow confirmation requires demonstration of selective erythroid aplasia with preservation of other cell lines.
+
+==================================================
+
+CASE_ID: 060
+DIFFICULTY: hard
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Budd-Chiari syndrome
+
+ALIASES:
+Hepatic vein thrombosis
+Hepatic venous outflow obstruction
+Primary Budd-Chiari syndrome
+
+VIGNETTE_LINES:
+
+1. A 38-year-old woman presents with abdominal swelling.
+2. She started an estrogen-containing oral contraceptive 4 months ago.
+3. Examination shows tender hepatomegaly and shifting dullness.
+4. Liver studies reveal mildly elevated aminotransferases and bilirubin, and CBC is otherwise unremarkable.
+5. Doppler ultrasonography demonstrates absent flow in the hepatic veins with enlargement of the caudate lobe.
+6. Transjugular liver biopsy demonstrates centrilobular congestion and sinusoidal dilation consistent with hepatic venous outflow obstruction.
+
+TEACHING_POINTS:
+
+* Hepatomegaly, ascites, and abdominal pain suggest hepatic outflow obstruction when infectious and cardiac causes are not explanatory.
+* Hypercoagulable states, myeloproliferative disorders, pregnancy, and exogenous estrogen are important risk factors for Budd-Chiari syndrome.
+* Doppler ultrasonography is a key imaging test that helps distinguish hepatic venous obstruction from portal vein thrombosis and cirrhosis.
+* Histology shows centrilobular congestion and ischemic injury when venous outflow is impaired.
+
+==================================================
+CASE_ID: 061
+DIFFICULTY: hard
+SYSTEM: nephrology
+
+DIAGNOSIS:
+Alport syndrome
+
+ALIASES:
+Hereditary nephritis
+X-linked Alport syndrome
+Type IV collagen nephropathy
+
+VIGNETTE_LINES:
+
+1. A 16-year-old boy presents with dark urine.
+2. His maternal uncle developed kidney failure in his 20s.
+3. Examination shows mild hypertension without edema.
+4. Urinalysis demonstrates persistent hematuria with mild proteinuria, and serum creatinine is mildly elevated.
+5. Slit-lamp examination demonstrates anterior lenticonus, and audiometry shows bilateral high-frequency sensorineural hearing loss.
+6. Genetic testing identifies a pathogenic mutation in the COL4A5 gene.
+
+TEACHING_POINTS:
+
+* Persistent glomerular hematuria in an adolescent with a family history of early kidney failure should prompt consideration of an inherited basement membrane disorder.
+* Type IV collagen defects can affect the kidney, cochlea, and lens, producing a multisystem presentation.
+* Hematuria may precede overt renal insufficiency by years, so the diagnosis can be delayed if extrarenal features are not recognized.
+* Molecular confirmation establishes the specific hereditary nephropathy and guides family counseling.
+
+==================================================
+
+CASE_ID: 062
+DIFFICULTY: hard
+SYSTEM: infectious_disease
+
+DIAGNOSIS:
+Diphtheria
+
+ALIASES:
+Respiratory diphtheria
+Corynebacterium diphtheriae infection
+Toxin-mediated pharyngeal diphtheria
+
+VIGNETTE_LINES:
+
+1. A 9-year-old boy presents with sore throat.
+2. He recently immigrated and has received few childhood vaccinations.
+3. Examination shows cervical lymphadenopathy and a muffled voice.
+4. CBC shows mild leukocytosis, and neck radiography demonstrates prevertebral soft-tissue swelling.
+5. Oropharyngeal examination reveals an adherent gray-white membrane over the tonsils and uvula that bleeds when disturbed.
+6. Throat culture grows Corynebacterium diphtheriae producing exotoxin on Elek testing.
+
+TEACHING_POINTS:
+
+* Upper airway infection with systemic toxicity in an undervaccinated child should prompt consideration of a toxin-mediated bacterial process.
+* The pseudomembrane forms from necrotic epithelium, fibrin, inflammatory cells, and organisms.
+* Myocarditis and neuropathy can occur because diphtheria toxin halts protein synthesis by ADP-ribosylating elongation factor 2.
+* Microbiologic confirmation of toxigenic C diphtheriae supports the diagnosis, but antitoxin should not wait for culture results.
+
+==================================================
+
+CASE_ID: 063
+DIFFICULTY: hard
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Hypertrophic cardiomyopathy
+
+ALIASES:
+HCM
+Hypertrophic obstructive cardiomyopathy
+Familial asymmetric septal hypertrophy
+
+VIGNETTE_LINES:
+
+1. A 19-year-old man presents with exertional syncope.
+2. His father died suddenly while jogging at age 42.
+3. Examination shows a harsh systolic murmur at the left sternal border that becomes louder with standing.
+4. ECG demonstrates left ventricular hypertrophy with deep narrow Q waves in the inferior leads.
+5. Transthoracic echocardiography reveals asymmetric septal hypertrophy with systolic anterior motion of the mitral valve and a dynamic outflow gradient.
+6. Genetic testing identifies a pathogenic MYH7 mutation.
+
+TEACHING_POINTS:
+
+* Exertional syncope in a young patient with a family history of sudden death should raise concern for an inherited cardiomyopathy.
+* Dynamic outflow obstruction causes a murmur that changes with preload and afterload maneuvers.
+* Diastolic dysfunction and myocardial ischemia can occur even when systolic function appears hyperdynamic.
+* Sarcomere gene mutations underlie many familial cases and explain the abnormal myocardial architecture.
+
+==================================================
+
+CASE_ID: 064
+DIFFICULTY: hard
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Von Gierke disease
+
+ALIASES:
+Glycogen storage disease type I
+Glucose-6-phosphatase deficiency
+Hepatorenal glycogenosis due to GSD I
+
+VIGNETTE_LINES:
+
+1. A 14-month-old boy presents with recurrent shakiness.
+2. His parents say the episodes occur in the early morning before breakfast.
+3. Examination shows a protuberant abdomen and poor linear growth.
+4. Laboratory studies demonstrate hypoglycemia, lactic acidosis, hyperuricemia, and hypertriglyceridemia.
+5. Abdominal ultrasonography reveals marked hepatomegaly without focal lesions, and ketones are low during fasting hypoglycemia.
+6. Enzyme testing demonstrates deficiency of glucose-6-phosphatase activity in liver tissue.
+
+TEACHING_POINTS:
+
+* Fasting hypoglycemia with hepatomegaly in infancy should prompt consideration of a glycogen storage disorder rather than isolated endocrine disease.
+* Accumulated glucose-6-phosphate is shunted into glycolysis, lipid synthesis, and purine turnover, producing lactate, triglycerides, and uric acid.
+* Low ketone production during severe hypoglycemia reflects inability to mobilize free glucose effectively from stored glycogen.
+* Enzyme deficiency confirms glycogen storage disease type I after the characteristic metabolic pattern is recognized.
+
+==================================================
+
+CASE_ID: 065
+DIFFICULTY: hard
+SYSTEM: hematology_oncology
+
+DIAGNOSIS:
+Acute promyelocytic leukemia
+
+ALIASES:
+APL
+Acute myeloid leukemia with t(15;17)
+Promyelocytic leukemia
+
+VIGNETTE_LINES:
+
+1. A 34-year-old woman presents with fatigue.
+2. She reports frequent nosebleeds and easy bruising over the past 2 weeks.
+3. Examination shows scattered petechiae without lymphadenopathy.
+4. CBC demonstrates anemia and thrombocytopenia, while coagulation studies show prolonged PT and low fibrinogen.
+5. Peripheral smear shows numerous abnormal promyelocytes, and bone marrow evaluation suggests a hypergranular myeloid neoplasm.
+6. Molecular testing identifies the PML-RARA fusion transcript.
+
+TEACHING_POINTS:
+
+* An acute leukemia presenting with bleeding and consumptive coagulopathy should raise concern for acute promyelocytic leukemia.
+* Disseminated intravascular coagulation is a major early complication driven by procoagulant granule contents from malignant promyelocytes.
+* Smear and marrow findings narrow the diagnosis, but molecular confirmation is needed because treatment differs from other AML subtypes.
+* Recognition matters urgently because all-trans retinoic acid targets the fusion protein and can rapidly reverse the coagulopathy.
+
+==================================================
+
+CASE_ID: 066
+DIFFICULTY: hard
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Celiac disease
+
+ALIASES:
+Gluten-sensitive enteropathy
+Celiac sprue
+Immune-mediated gluten enteropathy
+
+VIGNETTE_LINES:
+
+1. A 27-year-old woman presents with chronic diarrhea.
+2. She has a history of autoimmune thyroid disease and recurrent oral aphthae.
+3. Examination shows temporal wasting and a mildly distended abdomen.
+4. CBC reveals microcytic anemia, and metabolic panel shows low calcium and low albumin.
+5. Serum testing shows elevated IgA tissue transglutaminase antibodies, and upper endoscopy demonstrates scalloping of the duodenal folds.
+6. Duodenal biopsy demonstrates villous blunting with crypt hyperplasia and increased intraepithelial lymphocytes.
+
+TEACHING_POINTS:
+
+* Chronic diarrhea with iron deficiency and other nutrient deficits should prompt consideration of a malabsorptive small-bowel process.
+* Association with autoimmune disease raises suspicion for an immune-mediated enteropathy rather than infection alone.
+* Mucosal injury causes loss of absorptive surface area, leading to multiple vitamin and mineral deficiencies.
+* Histology confirms the diagnosis and explains the impaired nutrient absorption characteristic of celiac disease.
+
+==================================================
+
+CASE_ID: 067
+DIFFICULTY: hard
+SYSTEM: neurology
+
+DIAGNOSIS:
+Friedreich ataxia
+
+ALIASES:
+Hereditary ataxia with cardiomyopathy
+FXN-related ataxia
+Spinocerebellar degeneration due to frataxin deficiency
+
+VIGNETTE_LINES:
+
+1. A 14-year-old boy presents with gait difficulty.
+2. His older sister has gradually developed similar problems.
+3. Examination shows a wide-based gait and absent ankle reflexes.
+4. Vibration sense is decreased in the lower extremities, and ECG demonstrates left ventricular hypertrophy.
+5. Echocardiography reveals hypertrophic cardiomyopathy, and spine MRI is unrevealing.
+6. Genetic testing identifies a GAA trinucleotide repeat expansion in the FXN gene.
+
+TEACHING_POINTS:
+
+* Progressive gait impairment in adolescence with loss of proprioception and absent reflexes should suggest a hereditary neurodegenerative process.
+* Friedreich ataxia involves degeneration of spinocerebellar tracts, dorsal columns, and corticospinal tracts.
+* Hypertrophic cardiomyopathy is a major extracerebellar clue and an important cause of morbidity in this disorder.
+* Molecular testing confirms frataxin repeat expansion after the characteristic neurologic and cardiac pattern is recognized.
+
+==================================================
+
+CASE_ID: 068
+DIFFICULTY: hard
+SYSTEM: pediatrics
+
+DIAGNOSIS:
+Galactosemia
+
+ALIASES:
+Classic galactosemia
+Galactose-1-phosphate uridyltransferase deficiency
+GALT deficiency
+
+VIGNETTE_LINES:
+
+1. A 12-day-old girl presents with vomiting.
+2. Her symptoms began shortly after feeds were switched from breast milk to standard formula.
+3. Examination shows jaundice and hepatomegaly.
+4. Laboratory studies reveal direct hyperbilirubinemia, hypoglycemia, and metabolic acidosis, and urinalysis is positive for reducing substances.
+5. Blood cultures grow Escherichia coli, and ophthalmologic examination shows early lens clouding.
+6. Enzyme assay demonstrates absent galactose-1-phosphate uridyltransferase activity.
+
+TEACHING_POINTS:
+
+* Neonatal liver dysfunction with reducing substances in the urine should prompt consideration of an inborn error of carbohydrate metabolism.
+* Accumulation of galactose-1-phosphate causes hepatic toxicity, while galactitol contributes to cataract formation.
+* Severe neonatal E coli sepsis is a classic complication of untreated galactosemia.
+* Enzyme deficiency testing confirms classic galactosemia and guides urgent dietary lactose and galactose restriction.
+
+==================================================
+
+CASE_ID: 069
+DIFFICULTY: hard
+SYSTEM: rheumatology
+
+DIAGNOSIS:
+Ankylosing spondylitis
+
+ALIASES:
+Axial spondyloarthritis
+Radiographic axial spondyloarthritis
+Inflammatory ankylosing spondyloarthropathy
+
+VIGNETTE_LINES:
+
+1. A 24-year-old man presents with back pain.
+2. He says the pain is worst in the morning and improves after he plays basketball.
+3. Examination shows limited lumbar flexion and reduced chest expansion.
+4. ESR and CRP are elevated, while rheumatoid factor and anti-CCP antibodies are negative.
+5. Pelvic MRI demonstrates bilateral inflammatory sacroiliitis with erosive change.
+6. Genetic testing identifies HLA-B27 positivity in the setting of classic axial inflammatory disease.
+
+TEACHING_POINTS:
+
+* Inflammatory back pain that improves with activity should be distinguished from mechanical back pain in young adults.
+* Reduced chest expansion reflects costovertebral involvement and helps localize disease to the axial skeleton.
+* MRI can reveal active sacroiliac inflammation before radiographs show advanced structural fusion.
+* HLA-B27 supports the diagnosis but must be interpreted within the clinical and imaging pattern of axial spondyloarthritis.
+
+==================================================
+
+CASE_ID: 070
+DIFFICULTY: hard
+SYSTEM: pharmacology_toxicology
+
+DIAGNOSIS:
+Lead poisoning
+
+ALIASES:
+Plumbism
+Toxic lead exposure
+Chronic lead intoxication
+
+VIGNETTE_LINES:
+
+1. A 6-year-old boy presents with abdominal pain.
+2. His family recently moved into a 1940s apartment undergoing renovation.
+3. Examination shows decreased attention span and mild weakness of wrist extension.
+4. CBC demonstrates microcytic anemia, and abdominal radiography shows radiopaque flecks in the bowel.
+5. Peripheral smear reveals basophilic stippling, and free erythrocyte protoporphyrin is elevated.
+6. Whole-blood testing shows a markedly elevated lead concentration.
+
+TEACHING_POINTS:
+
+* Abdominal pain, cognitive changes, and anemia in a child should prompt consideration of an environmental toxin exposure.
+* Lead inhibits several enzymes in heme synthesis, producing microcytic anemia and elevated erythrocyte protoporphyrin.
+* Basophilic stippling reflects impaired ribosomal RNA degradation in erythrocytes.
+* Whole-blood lead measurement confirms poisoning and guides chelation therapy when levels are sufficiently high.
 
 ==================================================
