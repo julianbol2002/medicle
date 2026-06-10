@@ -30,92 +30,88 @@ type Guess = {
 const MAX_GUESSES = 6;
 
 // =============================================================
-// DAILY CASE SYSTEM
-// June 4 2026 = Case 61. Each day after = next case in sequence.
-// Cases 1-50:  hidden endless pool (fallback if random file empty)
-// Cases 51-60: archive (past 10 daily cases)
-// Cases 61+:   daily cases, one per day
-// =============================================================
-
-const DAILY_ANCHOR_DATE = new Date("2026-06-04T00:00:00");
-const DAILY_ANCHOR_CASE_ID = 61;
-const ARCHIVE_START = 51;
-const RANDOM_POOL_MAX = 50;
-
-// Random/endless cases live in this separate file
-const RANDOM_CASES_FILE = "/crimindle cases/crimindle_random_cases.txt";
-
-// =============================================================
 // THEME TOKENS
 // =============================================================
 
 const DARK_THEME = {
-  bg:             "#050505",
+  bg:             "#0d0800",
   bgCard:         "#1a1000",
   bgInput:        "#1a1000",
-  bgMonitor:      "#0a0500",
   border:         "#3a2a0a",
-  borderAccent:   "#d4af37",
   text:           "#e8d5a0",
   textMuted:      "#c9a227",
   textFaint:      "#8a7340",
   accent:         "#d4af37",
-  clueNum:        "#8a7340",
-  logoPanel:      "#1a1000",
-  logoBorder:     "#3a2a0a",
+  decor:          "#d4af37",
   selectBg:       "#1a1000",
   modalWin:       "#100a00",
   modalLose:      "#120000",
-  modalBorderWin: "#d4af37",
-  modalBorderLose:"#7b241c",
+  modalBorderWin: "#22c55e",
+  modalBorderLose:"#dc2626",
   shareCard:      "#100800",
   teachPanel:     "#0a0500",
-  filterPanel:    "#1a1000",
 };
 
 const LIGHT_THEME = {
   bg:             "#fffdf5",
   bgCard:         "#ffffff",
   bgInput:        "#ffffff",
-  bgMonitor:      "#fffbeb",
   border:         "#fde68a",
-  borderAccent:   "#b45309",
   text:           "#1c1400",
   textMuted:      "#92400e",
   textFaint:      "#a16207",
   accent:         "#b45309",
-  clueNum:        "#b45309",
-  logoPanel:      "#012127",
-  logoBorder:     "#012127",
+  decor:          "#b45309",
   selectBg:       "#ffffff",
   modalWin:       "#fffbeb",
   modalLose:      "#fff1f2",
-  modalBorderWin: "#d4af37",
-  modalBorderLose:"#f43f5e",
+  modalBorderWin: "#22c55e",
+  modalBorderLose:"#dc2626",
   shareCard:      "#fefce8",
   teachPanel:     "#fef9ee",
-  filterPanel:    "#ffffff",
 };
 
 type Theme = typeof DARK_THEME;
 
 // =============================================================
-// CASES FILES + DAILY HELPERS
+// DAILY CASE SYSTEM
 // =============================================================
 
-const CASES_FILES = [
-  "/crimindle cases/crimdle_cases.txt",
-];
+const DAILY_ANCHOR_DATE = new Date("2026-06-10T00:00:00");
+const DAILY_ANCHOR_CASE_ID = 1;
+const ARCHIVE_START = 1;
+
+const DAILY_CASES_FILE = "/crimindle cases/crimdle_cases.txt";
+const ENDLESS_CASES_FILE = "/crimindle cases/crimindle_random_cases.txt";
 
 function getDailyOffset(): number {
   const now = new Date();
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  const anchor = new Date(DAILY_ANCHOR_DATE.getFullYear(), DAILY_ANCHOR_DATE.getMonth(), DAILY_ANCHOR_DATE.getDate());
+  const anchor = new Date(
+    DAILY_ANCHOR_DATE.getFullYear(),
+    DAILY_ANCHOR_DATE.getMonth(),
+    DAILY_ANCHOR_DATE.getDate()
+  );
   return Math.floor((today.getTime() - anchor.getTime()) / (1000 * 60 * 60 * 24));
 }
 
-function getDailyCaseId(): number {
+function getSequentialDailyCaseId(): number {
   return DAILY_ANCHOR_CASE_ID + getDailyOffset();
+}
+
+function getMaxCaseId(caseList: Case[]): number {
+  if (!caseList.length) return 0;
+  return Math.max(...caseList.map((c) => Number(c.id)));
+}
+
+function getPlayableDailyCaseId(sequentialId: number, caseList: Case[]): number {
+  const maxId = getMaxCaseId(caseList);
+  if (!maxId) return DAILY_ANCHOR_CASE_ID;
+  return Math.min(sequentialId, maxId);
+}
+
+function findCaseByNumericId(caseList: Case[], numericId: number): Case | undefined {
+  return caseList.find((c) => Number(c.id) === numericId);
 }
 
 function getDateForCaseId(caseId: number): string {
@@ -123,17 +119,6 @@ function getDateForCaseId(caseId: number): string {
   const date = new Date(DAILY_ANCHOR_DATE);
   date.setDate(date.getDate() + offset);
   return date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
-}
-
-function getTodayString(): string {
-  return new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
-}
-
-function generateCaseCode(): string {
-  const letters = "ABCDEFGHJKLMNPQRSTUVWXYZ";
-  const L = () => letters[Math.floor(Math.random() * letters.length)];
-  const N = () => Math.floor(Math.random() * 10);
-  return `${L()}${L()}${L()}-${N()}${N()}${N()}`;
 }
 
 // =============================================================
@@ -213,13 +198,12 @@ function canonicalizeDiagnosisDisplay(raw: string) {
 
 function normalizeSystem(system?: string) {
   if (!system) return "";
-  return system.toLowerCase().trim().replace(/\//g, "_").replace(/\s+/g, "_").replace(/-+/g, "_");
-}
-
-function displaySystemLabel(system?: string) {
-  const s = normalizeSystem(system);
-  if (!s) return "";
-  return s.split("_").map((w) => (w.length ? w[0].toUpperCase() + w.slice(1) : w)).join(" ");
+  return system
+    .toLowerCase()
+    .trim()
+    .replace(/\//g, "_")
+    .replace(/\s+/g, "_")
+    .replace(/-+/g, "_");
 }
 
 // =============================================================
@@ -227,14 +211,12 @@ function displaySystemLabel(system?: string) {
 // =============================================================
 
 const CRIMINAL_LAW_BANK: string[] = [
-  // Homicide
   "First-degree murder",
   "Second-degree murder",
   "Felony murder",
   "Voluntary manslaughter",
   "Involuntary manslaughter",
   "Criminally negligent homicide",
-  // Crimes against persons
   "Assault",
   "Battery",
   "Aggravated assault",
@@ -249,7 +231,6 @@ const CRIMINAL_LAW_BANK: string[] = [
   "Domestic violence",
   "Child abuse",
   "Elder abuse",
-  // Property crimes
   "Burglary",
   "Robbery",
   "Armed robbery",
@@ -263,7 +244,6 @@ const CRIMINAL_LAW_BANK: string[] = [
   "Criminal trespass",
   "Receiving stolen property",
   "Auto theft",
-  // White collar / fraud
   "Fraud",
   "Wire fraud",
   "Mail fraud",
@@ -281,18 +261,15 @@ const CRIMINAL_LAW_BANK: string[] = [
   "Identity theft",
   "Ponzi scheme",
   "Computer fraud",
-  // Drug offenses
   "Drug possession",
   "Drug trafficking",
   "Drug manufacturing",
   "Drug distribution",
   "Possession with intent to distribute",
-  // Inchoate crimes
   "Conspiracy",
   "Criminal attempt",
   "Criminal solicitation",
   "Criminal facilitation",
-  // Obstruction / process crimes
   "Perjury",
   "Obstruction of justice",
   "Tampering with evidence",
@@ -300,30 +277,25 @@ const CRIMINAL_LAW_BANK: string[] = [
   "Bribery of a public official",
   "Contempt of court",
   "Escape from custody",
-  // Traffic
   "Driving under the influence (DUI)",
   "Vehicular homicide",
   "Reckless driving",
   "Hit and run",
-  // Public order
   "Disorderly conduct",
   "Riot",
   "Incitement to riot",
   "Public intoxication",
   "Loitering",
   "Trespassing",
-  // Weapons
   "Unlawful possession of a firearm",
   "Carrying a concealed weapon",
   "Felon in possession of a firearm",
   "Illegal weapons trafficking",
-  // Sexual offenses
   "Indecent exposure",
   "Public lewdness",
   "Child pornography",
   "Prostitution",
   "Solicitation of prostitution",
-  // Defenses and special doctrines
   "Insanity defense",
   "Self-defense",
   "Defense of others",
@@ -337,14 +309,20 @@ const CRIMINAL_LAW_BANK: string[] = [
 // =============================================================
 
 function parseCases(text: string): Case[] {
-  const blocks = text.split(/\n={10,}\n/).map((block) => block.trim()).filter(Boolean);
+  const blocks = text
+    .split(/\n={10,}\n/)
+    .map((block) => block.trim())
+    .filter(Boolean);
+
   const cases: Case[] = [];
 
   for (const block of blocks) {
     const idMatch = block.match(/CASE_ID:\s*(\d+)/);
     const diagMatch = block.match(/DIAGNOSIS:\s*\n([^\n]+)/);
     const aliasMatch = block.match(/ALIASES:\s*\n([\s\S]*?)(?=\nVIGNETTE_LINES:)/);
-    const clueMatch = block.match(/VIGNETTE_LINES:\s*\n([\s\S]*?)(?=\nTEACHING_POINTS:|\nCASE_ID:|$)/);
+    const clueMatch = block.match(
+      /VIGNETTE_LINES:\s*\n([\s\S]*?)(?=\nTEACHING_POINTS:|\nCASE_ID:|$)/
+    );
     const teachMatch = block.match(/TEACHING_POINTS:\s*\n([\s\S]*?)(?=\n={10,}|$)/);
     const difficultyMatch = block.match(/DIFFICULTY:\s*\n?([^\n]+)/);
     const systemMatch = block.match(/SYSTEM:\s*\n?([^\n]+)/);
@@ -352,12 +330,29 @@ function parseCases(text: string): Case[] {
     if (!idMatch || !diagMatch || !clueMatch) continue;
 
     const diagnosis = diagMatch[1].trim();
-    const aliases = aliasMatch ? aliasMatch[1].split("\n").map((a) => a.replace(/^[-\s]+/, "").trim()).filter(Boolean) : [];
-    const clues = clueMatch[1].split("\n").map((line) => line.replace(/^\d+\.\s*/, "").replace(/^[-\s]+/, "").trim()).filter(Boolean);
-    const teachingPoints = teachMatch ? teachMatch[1].split("\n").map((line) => line.replace(/^[-\s]+/, "").trim()).filter(Boolean) : [];
+    const aliases = aliasMatch
+      ? aliasMatch[1]
+          .split("\n")
+          .map((a) => a.replace(/^[-\s]+/, "").trim())
+          .filter(Boolean)
+      : [];
+    const clues = clueMatch[1]
+      .split("\n")
+      .map((line) => line.replace(/^\d+\.\s*/, "").replace(/^[-\s]+/, "").trim())
+      .filter(Boolean);
+    const teachingPoints = teachMatch
+      ? teachMatch[1]
+          .split("\n")
+          .map((line) => line.replace(/^[*\-]\s*/, "").trim())
+          .filter(Boolean)
+      : [];
 
     cases.push({
-      id: idMatch[1], diagnosis, aliases, clues, teachingPoints,
+      id: idMatch[1],
+      diagnosis,
+      aliases,
+      clues,
+      teachingPoints,
       difficulty: difficultyMatch?.[1].trim(),
       system: normalizeSystem(systemMatch?.[1].trim()),
     });
@@ -385,10 +380,13 @@ function dedupeCasesById(list: Case[]): Case[] {
 function Confetti() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
-    const canvas = canvasRef.current; if (!canvas) return;
-    const ctx = canvas.getContext("2d"); if (!ctx) return;
-    canvas.width = window.innerWidth; canvas.height = window.innerHeight;
-    const colors = ["#d4af37", "#c0392b", "#e8c84a", "#f5e6a3", "#ffffff", "#922b21", "#f0c040"];
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const colors = ["#d4af37", "#e8c84a", "#f5e6a3", "#f0c040", "#b8860b", "#ffffff", "#c9a227"];
     const pieces = Array.from({ length: 200 }, () => ({ x: Math.random() * canvas.width, y: Math.random() * canvas.height - canvas.height, r: Math.random() * 7 + 3, color: colors[Math.floor(Math.random() * colors.length)], tiltAngle: Math.random() * Math.PI * 2, tiltSpeed: Math.random() * 0.07 + 0.03, speed: Math.random() * 2.5 + 1.5 }));
     let animId: number;
     const draw = () => {
@@ -416,7 +414,7 @@ function ShareCard({ shareText, theme }: { shareText: string; theme: Theme }) {
     <div className="mt-4 rounded-2xl p-4 text-left" style={{ background: theme.shareCard, border: `1px solid ${theme.border}` }}>
       <div className="flex items-center justify-between gap-3 mb-3">
         <p className="text-xs font-mono uppercase tracking-[0.2em]" style={{ color: theme.textMuted }}>Share result</p>
-        <button onClick={copyShareText} className="text-xs font-bold px-3 py-1.5 rounded-lg" style={{ background: theme.accent, color: "#0d0800" }}>{copied ? "Copied" : "Copy"}</button>
+        <button onClick={copyShareText} className="text-xs font-bold px-3 py-1.5 rounded-lg text-white" style={{ background: theme.accent }}>{copied ? "Copied" : "Copy"}</button>
       </div>
       <pre className="whitespace-pre-wrap text-sm leading-6 font-mono" style={{ color: theme.text }}>{shareText}</pre>
     </div>
@@ -433,33 +431,32 @@ function ResultModal({ won, current, guesses, solvedAtClueCount, onArchive, onRa
     if (!won) return "";
     const gold = Math.max(1, Math.min(solvedAtClueCount, MAX_GUESSES));
     const white = Math.max(0, MAX_GUESSES - gold);
-    return `CRIMINDLE ⚖️\nVerdicted in ${gold} clue${gold === 1 ? "" : "s"}\n${"🟨".repeat(gold)}${"⬜".repeat(white)}`;
+    return `CRIMINDLE\nSolved in ${gold} clue${gold === 1 ? "" : "s"}\n${"🟨".repeat(gold)}${"⬜".repeat(white)}`;
   }, [won, solvedAtClueCount]);
 
   return (
-    <div className="fixed inset-0 z-40 flex items-center justify-center p-4" style={{ background: "rgba(0,0,0,0.82)" }}>
+    <div className="fixed inset-0 z-40 flex items-center justify-center p-4" style={{ background: "rgba(0,0,0,0.75)" }}>
       <div className="w-full max-w-lg rounded-2xl p-7 text-center shadow-2xl max-h-[90vh] overflow-y-auto" style={{ background: won ? theme.modalWin : theme.modalLose, border: `1px solid ${won ? theme.modalBorderWin : theme.modalBorderLose}` }}>
         {won ? (
           <>
-            <p className="text-5xl mb-3">⚖️</p>
-            <p className="text-3xl font-bold mb-1" style={{ color: theme.accent }}>Verdict: Guilty!</p>
+            <p className="text-2xl font-bold mb-2" style={{ color: "#22c55e" }}>Correct!</p>
             <p className="font-semibold text-xl mb-1" style={{ color: theme.text }}>{current.diagnosis}</p>
-            <p className="text-sm mb-1" style={{ color: theme.textMuted }}>Charged in {guesses.length} guess{guesses.length !== 1 ? "es" : ""}.</p>
-            <p className="text-sm mb-4" style={{ color: theme.textMuted }}>Solved at clue {solvedAtClueCount}.</p>
+            <p className="text-sm mb-4" style={{ color: theme.textMuted }}>
+              Solved in {guesses.length} guess{guesses.length !== 1 ? "es" : ""} · clue {solvedAtClueCount}
+            </p>
             <ShareCard shareText={shareText} theme={theme} />
           </>
         ) : (
           <>
-            <p className="text-5xl mb-3">🔨</p>
-            <p className="text-3xl font-bold mb-1" style={{ color: "#c0392b" }}>Case Dismissed</p>
+            <p className="text-2xl font-bold mb-2" style={{ color: "#f43f5e" }}>Out of guesses</p>
             <p className="text-sm mb-1" style={{ color: theme.textMuted }}>The charge was:</p>
-            <p className="text-2xl font-bold mb-4" style={{ color: theme.text }}>{current.diagnosis}</p>
+            <p className="text-xl font-bold mb-4" style={{ color: theme.text }}>{current.diagnosis}</p>
           </>
         )}
         {current.teachingPoints.length > 0 && (
           <div className="mb-4">
             <button onClick={() => setShowTeaching((s) => !s)} className="text-sm font-semibold px-4 py-2 rounded-xl" style={{ background: theme.bgCard, color: theme.accent, border: `1px solid ${theme.accent}` }}>
-              {showTeaching ? "Hide" : "⚖️ Show"} Legal Notes
+              {showTeaching ? "Hide" : "Show"} teaching points
             </button>
             {showTeaching && (
               <div className="mt-3 rounded-xl p-4 text-left space-y-2" style={{ background: theme.teachPanel }}>
@@ -472,16 +469,45 @@ function ResultModal({ won, current, guesses, solvedAtClueCount, onArchive, onRa
         )}
         {caseMode === "daily" ? (
           <div className="flex gap-2 mt-2">
-            <button onClick={onArchive} className="flex-1 py-3 rounded-xl font-bold text-base" style={{ background: theme.accent, color: "#0d0800" }}>📅 Play Archive</button>
-            <button onClick={onRandom} className="flex-1 py-3 rounded-xl font-bold text-base" style={{ background: theme.bgCard, color: theme.accent, border: `1px solid ${theme.accent}` }}>♾️ Endless Mode</button>
+            <button onClick={onArchive} className="flex-1 py-3 rounded-lg font-semibold text-sm text-white" style={{ background: theme.accent }}>Play archive</button>
+            <button onClick={onRandom} className="flex-1 py-3 rounded-lg font-semibold text-sm" style={{ background: theme.bgCard, color: theme.text, border: `1px solid ${theme.border}` }}>Endless mode</button>
           </div>
         ) : (
           <div className="flex gap-2 mt-2">
-            <button onClick={onArchive} className="flex-1 py-3 rounded-xl font-bold text-sm" style={{ background: theme.accent, color: "#0d0800" }}>📅 Archive</button>
-            <button onClick={onRandom} className="flex-1 py-3 rounded-xl font-bold text-sm" style={{ background: theme.bgCard, color: theme.accent, border: `1px solid ${theme.accent}` }}>♾️ Endless</button>
-            <button onClick={onBackToDaily} className="flex-1 py-3 rounded-xl font-bold text-sm" style={{ background: theme.bgCard, color: theme.accent, border: `1px solid ${theme.accent}` }}>📆 Today</button>
+            <button onClick={onArchive} className="flex-1 py-3 rounded-lg font-semibold text-sm text-white" style={{ background: theme.accent }}>Archive</button>
+            <button onClick={onRandom} className="flex-1 py-3 rounded-lg font-semibold text-sm" style={{ background: theme.bgCard, color: theme.text, border: `1px solid ${theme.border}` }}>Endless</button>
+            <button onClick={onBackToDaily} className="flex-1 py-3 rounded-lg font-semibold text-sm" style={{ background: theme.bgCard, color: theme.text, border: `1px solid ${theme.border}` }}>Today</button>
           </div>
         )}
+      </div>
+    </div>
+  );
+}
+
+// =============================================================
+// CRIME DECOR
+// =============================================================
+
+function ScalesIcon({ size = 24, color = "currentColor", opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden style={{ opacity }}>
+      <path d="M12 3v18" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M5 7h14" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M5 7l-3 6h6L5 7z" stroke={color} strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M19 7l-3 6h6L19 7z" stroke={color} strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M8 21h8" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function CrimeDecor({ theme }: { theme: Theme }) {
+  return (
+    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+      <div className="absolute top-[38%] -right-8 rotate-[12deg]">
+        <ScalesIcon size={88} color={theme.decor} opacity={0.06} />
+      </div>
+      <div className="absolute bottom-16 -left-4">
+        <ScalesIcon size={64} color={theme.decor} opacity={0.05} />
       </div>
     </div>
   );
@@ -504,20 +530,23 @@ export default function Home() {
   const [won, setWon] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
-  const [showSystem, setShowSystem] = useState(false);
-  const [lightMode, setLightMode] = useState(true);
+  const [lightMode, setLightMode] = useState(false);
   const theme: Theme = lightMode ? LIGHT_THEME : DARK_THEME;
-  const [showSystemFilter, setShowSystemFilter] = useState(false);
-  const [selectedSystems, setSelectedSystems] = useState<Set<string>>(new Set());
   const [solvedAtClueCount, setSolvedAtClueCount] = useState(1);
   const [loadError, setLoadError] = useState("");
   const [dailyCaseId, setDailyCaseId] = useState<number>(0);
   const [caseMode, setCaseMode] = useState<"daily" | "archive" | "random">("daily");
-  const [randomCaseCode, setRandomCaseCode] = useState<string>("");
 
   const resetRound = useCallback((nextCase: Case) => {
-    setCurrent(nextCase); setSelectedCaseId(nextCase.id); setRevealed(1); setGuess(""); setGuesses([]);
-    setGameOver(false); setWon(false); setShowDropdown(false); setShowConfetti(false);
+    setCurrent(nextCase);
+    setSelectedCaseId(nextCase.id);
+    setRevealed(1);
+    setGuess("");
+    setGuesses([]);
+    setGameOver(false);
+    setWon(false);
+    setShowDropdown(false);
+    setShowConfetti(false);
     setSolvedAtClueCount(1);
   }, []);
 
@@ -525,15 +554,19 @@ export default function Home() {
     let active = true;
     async function loadCases() {
       try {
-        const responses = await Promise.all(CASES_FILES.map(async (path) => { const r = await fetch(path); if (!r.ok) throw new Error(`Failed to load cases from ${path}`); return r.text(); }));
-        const parsed = dedupeCasesById(parseCases(responses.join("\n\n")));
+        const r = await fetch(DAILY_CASES_FILE);
+        if (!r.ok) throw new Error(`Failed to load cases from ${DAILY_CASES_FILE}`);
+        const parsed = dedupeCasesById(parseCases(await r.text()));
         if (!active) return;
         setCases(parsed);
         if (parsed.length === 0) { setLoadError("No cases were parsed from any file."); return; }
-        const todayId = getDailyCaseId();
-        setDailyCaseId(todayId);
-        const daily = parsed.find((c) => Number(c.id) === todayId) ?? parsed[0];
-        setCurrent(daily); setSelectedCaseId(daily.id); setSeenIds(new Set([daily.id]));
+        const sequentialId = getSequentialDailyCaseId();
+        const playableId = getPlayableDailyCaseId(sequentialId, parsed);
+        setDailyCaseId(sequentialId);
+        const daily = findCaseByNumericId(parsed, playableId) ?? parsed[parsed.length - 1];
+        setCurrent(daily);
+        setSelectedCaseId(daily.id);
+        setSeenIds(new Set([daily.id]));
       } catch (error) {
         if (!active) return;
         setLoadError(error instanceof Error ? error.message : "Failed to load cases.");
@@ -547,7 +580,7 @@ export default function Home() {
     let active = true;
     async function loadRandomCases() {
       try {
-        const res = await fetch(RANDOM_CASES_FILE);
+        const res = await fetch(ENDLESS_CASES_FILE);
         if (!res.ok) return;
         const parsed = dedupeCasesById(parseCases(await res.text()));
         if (!active) return;
@@ -558,61 +591,51 @@ export default function Home() {
     return () => { active = false; };
   }, []);
 
-  const allSystems = useMemo(() => {
-    const set = new Set<string>();
-    cases.forEach((c) => { if (c.system) set.add(normalizeSystem(c.system)); });
-    return Array.from(set).sort((a, b) => a.localeCompare(b));
-  }, [cases]);
-
-  const eligibleCases = useMemo(() => {
-    const base = selectedSystems.size === 0 ? cases : cases.filter((c) => c.system && selectedSystems.has(normalizeSystem(c.system)));
-    return dedupeCasesById(base);
-  }, [cases, selectedSystems]);
-
-  const toggleSystem = useCallback((system: string) => {
-    setSelectedSystems((prev) => { const next = new Set(prev); const key = normalizeSystem(system); if (next.has(key)) next.delete(key); else next.add(key); return next; });
-  }, []);
-
-  useEffect(() => {
-    if (!current || selectedSystems.size === 0) return;
-    const curSys = normalizeSystem(current.system);
-    if (curSys && selectedSystems.has(curSys)) return;
-    if (eligibleCases.length === 0) return;
-    const next = eligibleCases[Math.floor(Math.random() * eligibleCases.length)];
-    setSeenIds(new Set([next.id])); resetRound(next);
-  }, [current, eligibleCases, selectedSystems, resetRound]);
+  const eligibleCases = useMemo(() => dedupeCasesById(cases), [cases]);
 
   const loadCaseById = useCallback((caseId: string) => {
     if (!eligibleCases.length) return;
     const nextCase = eligibleCases.find((c) => c.id === caseId);
     if (!nextCase) return;
-    setSeenIds(new Set([nextCase.id])); resetRound(nextCase);
+    setSeenIds(new Set([nextCase.id]));
+    resetRound(nextCase);
   }, [eligibleCases, resetRound]);
 
   const startArchiveCase = useCallback(() => {
-    const pool = eligibleCases.filter((c) => { const id = Number(c.id); return id >= ARCHIVE_START && id < dailyCaseId; });
+    const pool = eligibleCases.filter((c) => {
+      const id = Number(c.id);
+      return id >= ARCHIVE_START && id < dailyCaseId;
+    });
     if (!pool.length) return;
     const next = pool[Math.floor(Math.random() * pool.length)];
-    setCaseMode("archive"); setRandomCaseCode(""); setSeenIds(new Set([next.id])); resetRound(next);
+    setCaseMode("archive");
+    setSeenIds(new Set([next.id]));
+    resetRound(next);
   }, [eligibleCases, dailyCaseId, resetRound]);
 
   const startRandomCase = useCallback(() => {
-    const externalPool = randomCases;
-    const fallbackPool = eligibleCases.filter((c) => Number(c.id) <= RANDOM_POOL_MAX);
-    const pool = externalPool.length > 0 ? externalPool : fallbackPool;
-    if (!pool.length) return;
-    const next = pool[Math.floor(Math.random() * pool.length)];
-    setCaseMode("random"); setRandomCaseCode(generateCaseCode()); setSeenIds(new Set([next.id])); resetRound(next);
-  }, [eligibleCases, randomCases, resetRound]);
+    if (!randomCases.length) return;
+    const next = randomCases[Math.floor(Math.random() * randomCases.length)];
+    setCaseMode("random");
+    setSeenIds(new Set([next.id]));
+    resetRound(next);
+  }, [randomCases, resetRound]);
 
   const startDailyCase = useCallback(() => {
-    const daily = eligibleCases.find((c) => Number(c.id) === dailyCaseId);
+    const playableId = getPlayableDailyCaseId(dailyCaseId, eligibleCases);
+    const daily = findCaseByNumericId(eligibleCases, playableId);
     if (!daily) return;
-    setCaseMode("daily"); setRandomCaseCode(""); setSeenIds(new Set([daily.id])); resetRound(daily);
+    setCaseMode("daily");
+    setSeenIds(new Set([daily.id]));
+    resetRound(daily);
   }, [eligibleCases, dailyCaseId, resetRound]);
 
   const allDiagnoses = useMemo(() => {
-    const fromCases = eligibleCases.flatMap((c) => [c.diagnosis, ...c.aliases]);
+    const casePool =
+      caseMode === "random"
+        ? dedupeCasesById([...eligibleCases, ...randomCases])
+        : eligibleCases;
+    const fromCases = casePool.flatMap((c) => [c.diagnosis, ...c.aliases]);
     const combined = [...CRIMINAL_LAW_BANK, ...fromCases];
     const map = new Map<string, string>();
     for (const item of combined) {
@@ -622,31 +645,37 @@ export default function Home() {
       if (!prev || canonical.length > prev.length) map.set(key, canonical);
     }
     return Array.from(map.values()).sort((a, b) => a.localeCompare(b));
-  }, [eligibleCases]);
+  }, [eligibleCases, randomCases, caseMode]);
 
   const caseOptions = useMemo(() => {
-    const maxAllowed = dailyCaseId > 0 ? dailyCaseId : 0;
+    const maxPublished = getMaxCaseId(eligibleCases);
+    const playableId = getPlayableDailyCaseId(dailyCaseId, eligibleCases);
+    const maxAllowed = Math.min(dailyCaseId > 0 ? dailyCaseId : 0, maxPublished);
     const options = eligibleCases
-      .filter((c) => { const id = Number(c.id); return id >= ARCHIVE_START && id <= maxAllowed; })
+      .filter((c) => {
+        const id = Number(c.id);
+        return id >= ARCHIVE_START && id <= maxAllowed;
+      })
       .map((c) => {
         const id = Number(c.id);
-        const isToday = id === dailyCaseId;
-        const systemPart = showSystem && c.system ? ` • ${displaySystemLabel(c.system)}` : "";
-        const datePart = isToday ? " ⚖️ Today" : ` — ${getDateForCaseId(id)}`;
-        return { id: c.id, label: `Case ${c.id}${systemPart}${datePart}` };
+        const isToday = id === playableId;
+        const datePart = isToday ? " — Today" : ` — ${getDateForCaseId(id)}`;
+        return { id: c.id, label: `Case ${id}${datePart}` };
       });
-    if (caseMode === "random") return [{ id: "__endless__", label: "♾️ Endless Mode" }, ...options];
+    if (caseMode === "random") return [{ id: "__endless__", label: "Endless mode" }, ...options];
     return options;
-  }, [eligibleCases, showSystem, dailyCaseId, caseMode]);
+  }, [eligibleCases, dailyCaseId, caseMode]);
 
   const filtered = useMemo(() => {
     const q = guess.trim().toLowerCase();
     if (!q) return [];
     const qKey = normalizeKeyForDedup(q);
-    return allDiagnoses.filter((d) => d.toLowerCase().includes(q) || normalizeKeyForDedup(d).includes(qKey)).slice(0, 10);
+    return allDiagnoses.filter((d) => {
+      if (d.toLowerCase().includes(q)) return true;
+      return normalizeKeyForDedup(d).includes(qKey);
+    }).slice(0, 10);
   }, [allDiagnoses, guess]);
 
-  const badGuesses = guesses.filter((g) => !g.correct).length;
   const guessesLeft = MAX_GUESSES - guesses.length;
 
   const submitGuess = useCallback((text: string, skipped = false) => {
@@ -659,7 +688,9 @@ export default function Home() {
       return normalizeKeyForDedup(aCanon) === normalizeKeyForDedup(gCanon) || normalizeAnswer(answer) === normalizeAnswer(g);
     });
     const newGuesses = [...guesses, { text: skipped ? "Skipped" : g, correct, skipped }];
-    setGuesses(newGuesses); setGuess(""); setShowDropdown(false);
+    setGuesses(newGuesses);
+    setGuess("");
+    setShowDropdown(false);
     if (correct) { setWon(true); setGameOver(true); setShowConfetti(true); setSolvedAtClueCount(revealed); return; }
     setRevealed((prev) => Math.min(prev + 1, current.clues.length));
     if (newGuesses.length >= MAX_GUESSES) setGameOver(true);
@@ -667,12 +698,13 @@ export default function Home() {
 
   if (loadError) {
     return (
-      <main className="min-h-screen flex items-center justify-center px-4" style={{ background: DARK_THEME.bg, fontFamily: "'Poppins', sans-serif" }}>
-        <style>{`@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');`}</style>
-        <div className="max-w-xl rounded-2xl p-6 border" style={{ background: DARK_THEME.bgCard, borderColor: DARK_THEME.border }}>
-          <p className="text-white text-lg font-semibold mb-2">Could not load the cases file.</p>
-          <p className="text-sm" style={{ color: DARK_THEME.textMuted }}>{loadError}</p>
-          <p className="text-sm mt-3" style={{ color: DARK_THEME.textMuted }}>Put your cases file in <span className="font-mono">public/crimindle cases/</span> and add it to <span className="font-mono">CASES_FILES</span>.</p>
+      <main className="min-h-screen flex items-center justify-center px-4" style={{ background: theme.bg, color: theme.text }}>
+        <div className="max-w-xl rounded-lg p-6 border" style={{ background: theme.bgCard, borderColor: theme.border }}>
+          <p className="text-lg font-semibold mb-2">Could not load the cases file.</p>
+          <p className="text-sm" style={{ color: theme.textMuted }}>{loadError}</p>
+          <p className="text-sm mt-3" style={{ color: theme.textMuted }}>
+            Put daily cases in <span className="font-mono">public/crimindle cases/crimdle_cases.txt</span> and endless cases in <span className="font-mono">crimindle_random_cases.txt</span>.
+          </p>
         </div>
       </main>
     );
@@ -680,205 +712,205 @@ export default function Home() {
 
   if (!current) {
     return (
-      <main className="min-h-screen flex items-center justify-center" style={{ background: DARK_THEME.bg, fontFamily: "'Poppins', sans-serif" }}>
-        <style>{`@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');`}</style>
-        <p className="text-white text-xl">Loading...</p>
+      <main className="min-h-screen flex items-center justify-center" style={{ background: theme.bg, color: theme.text }}>
+        <p className="text-xl">Loading...</p>
       </main>
     );
   }
 
   return (
-    <main className="min-h-screen flex flex-col items-center pb-16 transition-colors duration-300 overflow-x-hidden" style={{ background: theme.bg, fontFamily: "'Poppins', sans-serif", color: theme.text }}>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');`}</style>
+    <main
+      className="relative min-h-screen flex flex-col items-center px-4 py-8 transition-colors duration-300"
+      style={{ background: theme.bg, color: theme.text }}
+    >
+      <CrimeDecor theme={theme} />
       {showConfetti && <Confetti />}
       <Analytics />
 
-      {gameOver && current && <ResultModal won={won} current={current} guesses={guesses} solvedAtClueCount={solvedAtClueCount} onArchive={startArchiveCase} onRandom={startRandomCase} onBackToDaily={startDailyCase} caseMode={caseMode} theme={theme} />}
-
-      {/* LOGO BANNER — full width, flush to top, crimindle color scheme */}
-      <div style={{ width: "100vw", background: lightMode ? "#060505" : "#2a2a2a", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "20px 16px 18px", gap: "8px" }}>
-        <img src="/crimindle-logo.png" alt="Crimindle" style={{ height: "68px" }} />
-        <p style={{ color: "#ffffff", fontSize: "13px", fontWeight: 500, textAlign: "center", margin: 0, opacity: 0.9 }}>
-          Daily and endless criminal law case game
-        </p>
-        <a href="https://www.medicle.net/crimindle" target="_blank" rel="noopener noreferrer" style={{ color: "#d4af37", fontSize: "12px", fontWeight: 600, textDecoration: "none" }}>
-          🔗 www.medicle.net/crimindle
-        </a>
-      </div>
-
-      {/* ALL CONTENT BELOW BANNER */}
-      <div className="w-full flex flex-col items-center px-4">
-
-      {/* TOOLBAR ROW — game switcher + light/dark toggle */}
-      <div className="w-full max-w-3xl flex items-center justify-between py-3 mb-1">
-        <select
-          onChange={(e) => {
-            if (e.target.value === "medicle") window.location.href = "/";
-            if (e.target.value === "vettle") window.location.href = "/vettle";
-            if (e.target.value === "psychodle") window.location.href = "/psychodle";
-            if (e.target.value === "dentdle") window.location.href = "/dentdle";
-            if (e.target.value === "crimindle") window.location.href = "/crimindle";
-          }}
-          defaultValue="crimindle"
-          style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.text, borderRadius: "8px", padding: "6px 10px", fontSize: "12px", fontFamily: "'Poppins', sans-serif" }}
-        >
-          <option value="crimindle">⚖️ Crimindle — Criminal Law</option>
-          <option value="medicle">🧠 Medicle</option>
-          <option value="vettle">🐾 Vettle — Veterinary cases</option>
-          <option value="psychodle">🧩 Psychodle — Psychiatry cases</option>
-          <option value="dentdle">🦷 Dentdle — Dental cases</option>
-        </select>
-        <button onClick={() => setLightMode((v) => !v)} style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.text, borderRadius: "20px", padding: "6px 14px", fontSize: "12px", fontFamily: "'Poppins', sans-serif", cursor: "pointer", display: "flex", alignItems: "center", gap: "6px", fontWeight: 500 }}>
-          {lightMode ? "🌙 Dark" : "☀️ Light"}
-        </button>
-      </div>
-
-      {/* CASE SELECTOR ROW */}
-      <div className="w-full max-w-3xl flex items-center gap-3 mb-4">
-        <div className="flex-1">
-          <select
-            value={caseMode === "random" ? "__endless__" : selectedCaseId}
-            onChange={(e) => { if (e.target.value === "__endless__") return; loadCaseById(e.target.value); }}
-            className="w-full rounded-xl px-3 py-2 text-sm outline-none"
-            style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text, fontFamily: "'Poppins', sans-serif" }}
-            disabled={!eligibleCases.length}
-          >
-            {caseOptions.map((opt) => <option key={opt.id} value={opt.id}>{opt.label}</option>)}
-          </select>
-        </div>
-        {current && (
-          <div className="text-right">
-            {caseMode === "random" ? (
-              <>
-                <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>ENDLESS MODE</p>
-                <p className="text-sm font-bold font-mono" style={{ color: theme.accent }}>♾️ {randomCaseCode}</p>
-              </>
-            ) : caseMode === "archive" ? (
-              <>
-                <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>ARCHIVE</p>
-                <p className="text-sm font-bold" style={{ color: theme.accent }}>📅 {getDateForCaseId(Number(current.id))}</p>
-              </>
-            ) : (
-              <>
-                <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>TODAY&apos;S CASE</p>
-                <p className="text-sm font-bold" style={{ color: theme.accent }}>⚖️ {getTodayString()}</p>
-              </>
-            )}
-            {showSystem && current.system && <p className="text-xs mt-1" style={{ color: theme.accent }}>{displaySystemLabel(current.system)}</p>}
-          </div>
-        )}
-      </div>
-
-      {/* PROGRESS BAR — capped at MAX_GUESSES */}
-      <div className="flex items-center gap-2 mb-3 text-sm w-full max-w-3xl" style={{ color: theme.textMuted }}>
-        <span className="whitespace-nowrap">Clue {revealed}/{Math.min(current.clues.length, MAX_GUESSES)}</span>
-        <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ background: theme.border }}>
-          <div className="h-full rounded-full transition-all duration-500" style={{ width: `${(revealed / Math.min(current.clues.length, MAX_GUESSES)) * 100}%`, background: theme.accent }} />
-        </div>
-        <span className="text-xs font-mono whitespace-nowrap" style={{ color: theme.textMuted }}>{guessesLeft} guess{guessesLeft !== 1 ? "es" : ""} left</span>
-      </div>
-
-      {/* CLUES */}
-      <div className="w-full max-w-3xl space-y-2 mb-4">
-        {current.clues.slice(0, revealed).map((clue, i) => (
-          <div key={i} className="rounded-xl px-4 py-3 text-sm border-l-4 transition-all duration-300" style={{ background: theme.bgCard, borderColor: i === revealed - 1 ? theme.accent : theme.border, color: theme.text }}>
-            <span className="text-xs font-mono mr-2" style={{ color: theme.clueNum }}>#{i + 1}</span>
-            {clue}
-          </div>
-        ))}
-      </div>
-
-      {/* INPUT + DROPDOWN */}
-      {!gameOver && (
-        <div className="relative w-full max-w-3xl mb-2">
-          <div className="flex gap-2">
-            <input className="min-w-0 flex-1 rounded-xl px-3 py-2 outline-none text-sm" style={{ background: theme.bgInput, border: `1px solid ${theme.border}`, color: theme.text, fontFamily: "'Poppins', sans-serif" }} placeholder="Enter the charge or crime..." value={guess}
-              onChange={(e) => { setGuess(e.target.value); setShowDropdown(true); }}
-              onKeyDown={(e) => e.key === "Enter" && submitGuess(guess)}
-              onFocus={() => setShowDropdown(true)}
-            />
-            <button onClick={() => submitGuess(guess)} className="py-2 rounded-xl font-bold text-sm shrink-0" style={{ background: theme.accent, color: "#0d0800", minWidth: "64px", fontFamily: "'Poppins', sans-serif" }}>Charge</button>
-            <button onClick={() => submitGuess("", true)} className="py-2 rounded-xl font-bold text-sm shrink-0" style={{ background: theme.border, color: theme.text, minWidth: "52px", fontFamily: "'Poppins', sans-serif" }}>Skip</button>
-          </div>
-          {showDropdown && filtered.length > 0 && (
-            <div className="absolute z-10 w-full rounded-xl mt-1 overflow-hidden shadow-lg" style={{ background: theme.bgCard, border: `1px solid ${theme.border}` }}>
-              {filtered.map((d, i) => (
-                <div key={i} className="px-4 py-2 cursor-pointer text-sm" style={{ borderBottom: `1px solid ${theme.border}`, color: theme.text }}
-                  onMouseDown={() => submitGuess(d)}
-                  onMouseOver={(e) => { e.currentTarget.style.background = theme.accent; e.currentTarget.style.color = "#0d0800"; }}
-                  onMouseOut={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = theme.text; }}
-                >{d}</div>
-              ))}
-            </div>
-          )}
-        </div>
+      {gameOver && current && (
+        <ResultModal
+          won={won}
+          current={current}
+          guesses={guesses}
+          solvedAtClueCount={solvedAtClueCount}
+          onArchive={startArchiveCase}
+          onRandom={startRandomCase}
+          onBackToDaily={startDailyCase}
+          caseMode={caseMode}
+          theme={theme}
+        />
       )}
 
-      {/* GUESS HISTORY */}
-      <div className="mt-2 space-y-1 w-full max-w-3xl">
-        {guesses.map((g, i) => (
-          <div key={i} className="flex items-center gap-2 text-sm">
-            <span style={{ color: g.skipped ? theme.textMuted : g.correct ? theme.accent : "#c0392b" }}>{g.skipped ? "—" : g.correct ? "✓" : "✗"}</span>
-            <span style={{ color: g.skipped ? theme.textMuted : g.correct ? theme.accent : "#c0392b" }}>{g.text}</span>
+      <div className="relative z-10 w-full max-w-xl">
+        <div className="flex items-center justify-between mb-6">
+          <div className="min-w-0">
+            <h1 className="text-2xl font-bold tracking-tight leading-tight">Crimindle</h1>
+            <a
+              href="https://www.medicle.net/crimindle"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-medium hover:underline"
+              style={{ color: theme.accent }}
+            >
+              www.medicle.net/crimindle
+            </a>
           </div>
-        ))}
-      </div>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={() => setLightMode((v) => !v)}
+              className="text-xs rounded-lg px-2.5 py-1.5 font-medium"
+              style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.textMuted }}
+            >
+              {lightMode ? "Dark" : "Light"}
+            </button>
+            <select
+              onChange={(e) => {
+                if (e.target.value === "medicle") window.location.href = "/";
+                if (e.target.value === "vettle") window.location.href = "/vettle";
+                if (e.target.value === "psychodle") window.location.href = "/psychodle";
+                if (e.target.value === "dentdle") window.location.href = "/dentdle";
+                if (e.target.value === "crimindle") window.location.href = "/crimindle";
+              }}
+              defaultValue="crimindle"
+              className="text-xs rounded-lg px-2 py-1.5 outline-none"
+              style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.text }}
+            >
+              <option value="medicle">Medicle</option>
+              <option value="vettle">Vettle</option>
+              <option value="psychodle">Psychodle</option>
+              <option value="dentdle">Dentdle</option>
+              <option value="crimindle">Crimindle</option>
+            </select>
+          </div>
+        </div>
 
-      {/* FILTER BUTTONS */}
-      <div className="mt-8 w-full max-w-3xl">
-        <div className="flex flex-wrap items-center gap-2 mb-2">
-          <button onClick={() => setShowSystem((s) => !s)} className="flex items-center gap-2 text-xs font-mono mb-2 px-3 py-1 rounded-lg transition-all" style={{ background: showSystem ? theme.bgCard : "transparent", border: `1px solid ${theme.border}`, color: showSystem ? theme.accent : theme.textFaint, fontFamily: "'Poppins', sans-serif" }}>
-            <span style={{ color: showSystem ? theme.accent : theme.textFaint }}>●</span>{showSystem ? "Hide" : "Show"} Area of Law
+        <div className="flex gap-2 mb-4">
+          <button
+            onClick={startDailyCase}
+            className="flex-1 py-2 rounded-lg text-sm font-medium"
+            style={{
+              background: caseMode === "daily" ? theme.accent : theme.bgCard,
+              color: caseMode === "daily" ? "#fff" : theme.text,
+              border: `1px solid ${caseMode === "daily" ? theme.accent : theme.border}`,
+            }}
+          >
+            Today&apos;s case
           </button>
-          <button onClick={() => setShowSystemFilter((s) => !s)} className="flex items-center gap-2 text-xs font-mono mb-2 px-3 py-1 rounded-lg transition-all" style={{ background: showSystemFilter ? theme.bgCard : "transparent", border: `1px solid ${theme.border}`, color: showSystemFilter ? theme.accent : theme.textFaint, fontFamily: "'Poppins', sans-serif" }}>
-            <span style={{ color: selectedSystems.size > 0 ? theme.accent : theme.textFaint }}>●</span>Filter Area{selectedSystems.size > 0 ? ` (${selectedSystems.size})` : ""}
+          <button
+            onClick={startRandomCase}
+            className="flex-1 py-2 rounded-lg text-sm font-medium"
+            style={{
+              background: caseMode === "random" ? theme.accent : theme.bgCard,
+              color: caseMode === "random" ? "#fff" : theme.text,
+              border: `1px solid ${caseMode === "random" ? theme.accent : theme.border}`,
+            }}
+          >
+            Endless mode
           </button>
         </div>
 
-        {showSystemFilter && (
-          <div className="w-full rounded-xl p-3 border mb-2" style={{ background: theme.filterPanel, borderColor: theme.border }}>
-            <div className="flex items-center justify-between gap-3">
-              <p className="text-xs font-mono tracking-widest" style={{ color: theme.textMuted }}>FILTER BY AREA OF LAW (OPTIONAL)</p>
-              <div className="flex items-center gap-2">
-                <button onClick={() => setSelectedSystems(new Set())} className="text-xs font-bold px-3 py-1.5 rounded-lg" style={{ background: theme.border, color: theme.text }}>Clear</button>
-                <button onClick={() => setSelectedSystems(new Set(allSystems))} className="text-xs font-bold px-3 py-1.5 rounded-lg" style={{ background: theme.accent, color: "#0d0800" }}>Select all</button>
-              </div>
+        <select
+          value={caseMode === "random" ? "__endless__" : selectedCaseId}
+          onChange={(e) => {
+            if (e.target.value === "__endless__") {
+              startRandomCase();
+              return;
+            }
+            const num = Number(e.target.value);
+            if (num === getPlayableDailyCaseId(dailyCaseId, eligibleCases)) startDailyCase();
+            else {
+              setCaseMode("archive");
+              loadCaseById(e.target.value);
+            }
+          }}
+          className="w-full rounded-lg px-3 py-2 text-sm outline-none mb-6"
+          style={{ background: theme.selectBg, border: `1px solid ${theme.border}`, color: theme.text }}
+          disabled={!eligibleCases.length}
+        >
+          {caseOptions.map((opt) => (
+            <option key={opt.id} value={opt.id}>
+              {opt.label}
+            </option>
+          ))}
+        </select>
+
+        <div className="flex items-center gap-2 mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
+          <ScalesIcon size={18} color={theme.accent} opacity={0.55} />
+          <h2 className="text-lg font-semibold">What&apos;s the charge?</h2>
+        </div>
+
+        <div className="space-y-3 mb-6">
+          {current.clues.slice(0, revealed).map((clue, i) => (
+            <p key={i} className="text-sm leading-relaxed" style={{ color: theme.text }}>
+              {clue}
+            </p>
+          ))}
+        </div>
+
+        {!gameOver && (
+          <div className="relative mb-4">
+            <div className="flex gap-2">
+              <input
+                className="min-w-0 flex-1 rounded-lg px-3 py-2 outline-none text-sm"
+                style={{ background: theme.bgInput, border: `1px solid ${theme.border}`, color: theme.text }}
+                placeholder="Enter charge..."
+                value={guess}
+                onChange={(e) => { setGuess(e.target.value); setShowDropdown(true); }}
+                onKeyDown={(e) => e.key === "Enter" && submitGuess(guess)}
+                onFocus={() => setShowDropdown(true)}
+              />
+              <button
+                onClick={() => submitGuess(guess)}
+                className="px-4 py-2 rounded-lg text-sm font-semibold text-white shrink-0"
+                style={{ background: theme.accent }}
+              >
+                Submit
+              </button>
             </div>
-            {allSystems.length === 0 ? (
-              <p className="text-sm mt-2" style={{ color: theme.textMuted }}>No area tags were found in your cases file.</p>
-            ) : (
-              <div className="mt-3 flex flex-wrap gap-2">
-                {allSystems.map((sys) => (
-                  <label key={sys} className="flex items-center gap-2 px-3 py-1.5 rounded-lg border text-xs cursor-pointer select-none" style={{ background: selectedSystems.has(sys) ? `${theme.accent}22` : "transparent", borderColor: selectedSystems.has(sys) ? theme.accent : theme.border, color: selectedSystems.has(sys) ? theme.text : theme.textMuted }}>
-                    <input type="checkbox" checked={selectedSystems.has(sys)} onChange={() => toggleSystem(sys)} style={{ accentColor: theme.accent }} />
-                    <span>{displaySystemLabel(sys)}</span>
-                  </label>
+
+            {showDropdown && filtered.length > 0 && (
+              <div
+                className="absolute z-10 w-full rounded-lg mt-1 overflow-hidden border"
+                style={{ background: theme.bgCard, borderColor: theme.border }}
+              >
+                {filtered.map((d, i) => (
+                  <div
+                    key={i}
+                    className="px-3 py-2 cursor-pointer text-sm hover:opacity-80"
+                    style={{ borderBottom: i < filtered.length - 1 ? `1px solid ${theme.border}` : undefined, color: theme.text }}
+                    onMouseDown={() => submitGuess(d)}
+                  >
+                    {d}
+                  </div>
                 ))}
               </div>
             )}
-        {selectedSystems.size > 0 && <p className="text-xs mt-3" style={{ color: theme.textFaint }}>Active filter: {Array.from(selectedSystems).map(displaySystemLabel).join(", ")}</p>}
-            <p className="text-xs mt-2" style={{ color: theme.textFaint }}>Tip: Picking areas here limits new cases to those categories for this session.</p>
           </div>
         )}
-      </div>
 
-      {/* FOOTER */}
-      <div className="mt-8 w-full max-w-3xl text-center space-y-3">
-        <p className="text-xs" style={{ color: theme.textFaint }}>⚠️ Cases are AI-generated for educational purposes only and may contain inaccuracies. Not for legal advice or professional use.</p>
-        <p className="text-xs" style={{ color: theme.textFaint }}>
-          Crimindle is part of the Medicle family of educational games, inspired by{" "}
-          <a href="https://doctordle.org" target="_blank" rel="noopener noreferrer" style={{ color: theme.accent }}>Doctordle</a>
-          . Built for students to practice endlessly.
+        <p className="text-xs mb-3" style={{ color: theme.textMuted }}>
+          {guessesLeft} guess{guessesLeft !== 1 ? "es" : ""} remaining · clue {revealed} of {Math.min(current.clues.length, MAX_GUESSES)}
         </p>
-        <p className="text-xs" style={{ color: theme.textFaint }}>
-          Questions or feedback?{" "}
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6EvwFZl8bNjuiICiyTB-lekERWn_L32p_fR6Wu8qIETYBmw/viewform" target="_blank" rel="noopener noreferrer" style={{ color: theme.accent, fontWeight: 600 }}>
-            Leave us feedback →
+
+        {guesses.length > 0 && (
+          <div className="space-y-1 mb-8">
+            {guesses.map((g, i) => (
+              <p key={i} className="text-sm" style={{ color: g.correct ? "#22c55e" : g.skipped ? theme.textMuted : "#f87171" }}>
+                {g.skipped ? "Skipped" : g.text}
+              </p>
+            ))}
+          </div>
+        )}
+
+        <p className="text-xs text-center" style={{ color: theme.textFaint }}>
+          Inspired by{" "}
+          <a href="https://doctordle.org" target="_blank" rel="noopener noreferrer" style={{ color: theme.accent }}>
+            Doctordle
           </a>
+          . For educational use only.
         </p>
       </div>
-
-      </div>{/* end content wrapper */}
     </main>
   );
 }
