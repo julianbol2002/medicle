@@ -668,18 +668,6 @@ function ResultModal({
 // MEDICAL DECOR (minimal line SVGs)
 // =============================================================
 
-function StethoscopeIcon({ size = 24, color = "currentColor", opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden style={{ opacity }}>
-      <path d="M5 4v7a5 5 0 0010 0V4" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M8 4h4M12 4h4" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M15 11v2a3 3 0 01-3 3h-1" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
-      <circle cx="17.5" cy="17.5" r="2.5" stroke={color} strokeWidth="1.5" />
-      <path d="M15 13h1.5a3.5 3.5 0 013.5 3.5v.5" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  );
-}
-
 function BoneIcon({ size = 24, color = "currentColor", opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden style={{ opacity }}>
@@ -697,17 +685,11 @@ function BoneIcon({ size = 24, color = "currentColor", opacity = 1 }: { size?: n
 function MedicalDecor({ theme }: { theme: Theme }) {
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-      <div className="absolute -top-2 -left-6 rotate-[-18deg]">
-        <StethoscopeIcon size={120} color={theme.decor} opacity={0.07} />
-      </div>
       <div className="absolute top-[38%] -right-8 rotate-[22deg]">
         <BoneIcon size={88} color={theme.decor} opacity={0.06} />
       </div>
       <div className="absolute bottom-16 -left-4 rotate-[12deg]">
         <BoneIcon size={64} color={theme.decor} opacity={0.05} />
-      </div>
-      <div className="absolute bottom-8 right-4 rotate-[-8deg]">
-        <StethoscopeIcon size={72} color={theme.decor} opacity={0.05} />
       </div>
     </div>
   );
@@ -1078,9 +1060,7 @@ export default function Home() {
 
       <div className="relative z-10 w-full max-w-xl">
         <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center gap-2.5 min-w-0">
-            <StethoscopeIcon size={26} color={theme.accent} opacity={0.9} />
-            <div className="min-w-0">
+          <div className="min-w-0">
               <h1 className="text-2xl font-bold tracking-tight leading-tight">Medicle</h1>
               <a
                 href="https://www.medicle.net"
@@ -1091,7 +1071,6 @@ export default function Home() {
               >
                 www.medicle.net
               </a>
-            </div>
           </div>
           <div className="flex items-center gap-2">
             <button
