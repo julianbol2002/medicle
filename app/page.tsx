@@ -520,11 +520,9 @@ function Confetti() {
     };
 
     draw();
-    const stop = setTimeout(() => cancelAnimationFrame(animId), 5000);
 
     return () => {
       cancelAnimationFrame(animId);
-      clearTimeout(stop);
     };
   }, []);
 
@@ -649,29 +647,37 @@ function ResultModal({
 
         {/* Buttons change based on which mode the player is in */}
         {caseMode === "daily" ? (
-          <div className="flex flex-col gap-2 mt-2">
-            <div className="flex gap-2">
-              <button onClick={onArchive} className="flex-1 py-3 rounded-lg font-semibold text-sm text-white" style={{ background: theme.accent }}>
-                Play archive
-              </button>
-              <button onClick={onRandom} className="flex-1 py-3 rounded-lg font-semibold text-sm" style={{ background: theme.bgCard, color: theme.text, border: `1px solid ${theme.border}` }}>
-                Endless mode
-              </button>
-            </div>
+          <div className="flex gap-2 mt-2">
+            <button onClick={onArchive} className="flex-1 py-3 rounded-lg font-semibold text-sm text-white" style={{ background: theme.accent }}>
+              Play archive
+            </button>
+            <button onClick={onRandom} className="flex-1 py-3 rounded-lg font-semibold text-sm" style={{ background: theme.bgCard, color: theme.text, border: `1px solid ${theme.border}` }}>
+              Endless mode
+            </button>
+          </div>
+        ) : caseMode === "random" ? (
+          <div className="flex gap-2 mt-2">
+            <button onClick={onArchive} className="flex-1 py-3 rounded-lg font-semibold text-sm" style={{ background: theme.bgCard, color: theme.text, border: `1px solid ${theme.border}` }}>
+              Archive
+            </button>
+            <button onClick={onBackToDaily} className="flex-1 py-3 rounded-lg font-semibold text-sm" style={{ background: theme.bgCard, color: theme.text, border: `1px solid ${theme.border}` }}>
+              Today
+            </button>
+            <button onClick={onRandom} className="flex-1 py-3 rounded-lg font-semibold text-sm text-white" style={{ background: theme.accent }}>
+              Next case
+            </button>
           </div>
         ) : (
-          <div className="flex flex-col gap-2 mt-2">
-            <div className="flex gap-2">
-              <button onClick={onArchive} className="flex-1 py-3 rounded-lg font-semibold text-sm text-white" style={{ background: theme.accent }}>
-                Archive
-              </button>
-              <button onClick={onRandom} className="flex-1 py-3 rounded-lg font-semibold text-sm" style={{ background: theme.bgCard, color: theme.text, border: `1px solid ${theme.border}` }}>
-                Endless
-              </button>
-              <button onClick={onBackToDaily} className="flex-1 py-3 rounded-lg font-semibold text-sm" style={{ background: theme.bgCard, color: theme.text, border: `1px solid ${theme.border}` }}>
-                Today
-              </button>
-            </div>
+          <div className="flex gap-2 mt-2">
+            <button onClick={onArchive} className="flex-1 py-3 rounded-lg font-semibold text-sm text-white" style={{ background: theme.accent }}>
+              Archive
+            </button>
+            <button onClick={onRandom} className="flex-1 py-3 rounded-lg font-semibold text-sm" style={{ background: theme.bgCard, color: theme.text, border: `1px solid ${theme.border}` }}>
+              Endless mode
+            </button>
+            <button onClick={onBackToDaily} className="flex-1 py-3 rounded-lg font-semibold text-sm" style={{ background: theme.bgCard, color: theme.text, border: `1px solid ${theme.border}` }}>
+              Today
+            </button>
           </div>
         )}
       </div>
