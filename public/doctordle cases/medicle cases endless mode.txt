@@ -897,3 +897,302 @@ TEACHING_POINTS:
 * Storiform fibrosis with abundant IgG4-positive plasma cells is the characteristic confirmatory finding.
 
 ==================================================
+CASE_ID: 031
+DIFFICULTY: hard
+SYSTEM: endocrinology
+
+DIAGNOSIS:
+Cushing disease
+
+ALIASES:
+Pituitary ACTH-secreting adenoma
+ACTH-dependent hypercortisolism due to pituitary adenoma
+Pituitary hypercortisolism
+
+VIGNETTE_LINES:
+
+1. A 42-year-old woman presents with progressive weight gain.
+2. She has recently required escalating treatment for hypertension.
+3. Examination shows proximal muscle weakness when rising from a chair.
+4. Basic metabolic panel demonstrates mild hypokalemia, and fasting glucose is elevated.
+5. Late-night salivary cortisol is repeatedly elevated, ACTH is not suppressed, and pituitary MRI demonstrates a 6-mm sellar lesion.
+6. Inferior petrosal sinus sampling shows a central-to-peripheral ACTH gradient consistent with a pituitary source of hypercortisolism.
+
+TEACHING_POINTS:
+
+* Progressive metabolic complications such as hypertension, hyperglycemia, and muscle weakness should prompt evaluation for pathologic cortisol excess.
+* A small pituitary lesion on MRI does not by itself establish the diagnosis because incidental microadenomas are common.
+* Determining whether hypercortisolism is ACTH-dependent or ACTH-independent is essential before localization.
+* Inferior petrosal sinus sampling is the confirmatory localization study when biochemical testing suggests a pituitary ACTH source.
+
+==================================================
+
+CASE_ID: 032
+DIFFICULTY: hard
+SYSTEM: nephrology
+
+DIAGNOSIS:
+Atheroembolic renal disease
+
+ALIASES:
+Cholesterol crystal embolization syndrome
+Renal cholesterol emboli
+Atheroembolic kidney disease
+
+VIGNETTE_LINES:
+
+1. A 74-year-old man presents with decreased urine output.
+2. He underwent coronary angiography 10 days ago for unstable angina.
+3. Examination shows mottled violaceous discoloration over both feet with intact distal pulses.
+4. Laboratory studies reveal a rising creatinine level, peripheral eosinophilia, and a bland urinalysis.
+5. Renal ultrasonography shows normal-sized kidneys without hydronephrosis, and complement levels are decreased.
+6. Kidney biopsy demonstrates biconvex cholesterol clefts occluding small arteries with surrounding inflammatory reaction.
+
+TEACHING_POINTS:
+
+* Subacute kidney injury after a vascular procedure has a different differential diagnosis than contrast nephropathy, especially when the creatinine keeps rising days later.
+* Livedo reticularis, blue toe changes, and eosinophilia are important clues to systemic cholesterol embolization.
+* A bland urinalysis helps distinguish this disorder from many intrinsic glomerular diseases.
+* Tissue biopsy confirms the diagnosis by identifying cholesterol crystal clefts within affected vessels.
+
+==================================================
+
+CASE_ID: 033
+DIFFICULTY: hard
+SYSTEM: hematology_oncology
+
+DIAGNOSIS:
+Severe aplastic anemia
+
+ALIASES:
+Aplastic anemia
+Acquired bone marrow failure syndrome
+Hypocellular marrow pancytopenia
+
+VIGNETTE_LINES:
+
+1. A 26-year-old man presents with fatigue.
+2. He completed a prolonged course of chloramphenicol abroad 2 months ago.
+3. Examination shows petechiae over the lower extremities without lymphadenopathy or splenomegaly.
+4. CBC demonstrates pancytopenia with a very low reticulocyte count.
+5. Peripheral smear shows no blasts or schistocytes, and flow cytometry does not identify an abnormal leukocyte population.
+6. Bone marrow biopsy reveals marked hypocellularity with replacement by fat and no evidence of malignant infiltration.
+
+TEACHING_POINTS:
+
+* Pancytopenia with a low reticulocyte count localizes the problem to marrow production rather than peripheral destruction.
+* The absence of splenomegaly and lymphadenopathy makes infiltrative and lymphoproliferative causes less likely.
+* Medication exposure, viral insults, and autoimmune mechanisms are important acquired causes of aplastic marrow failure.
+* Bone marrow biopsy is essential to distinguish aplastic anemia from leukemia, myelodysplasia, and myelofibrosis.
+
+==================================================
+
+CASE_ID: 034
+DIFFICULTY: hard
+SYSTEM: infectious_disease
+
+DIAGNOSIS:
+Disseminated histoplasmosis
+
+ALIASES:
+Progressive disseminated Histoplasma infection
+Disseminated Histoplasma capsulatum disease
+Systemic histoplasmosis
+
+VIGNETTE_LINES:
+
+1. A 39-year-old man presents with persistent fever.
+2. He has advanced HIV infection and has not taken antiretroviral therapy for the past year.
+3. Examination shows hepatosplenomegaly and several shallow oral ulcers.
+4. CBC demonstrates pancytopenia, and liver studies show a markedly elevated alkaline phosphatase level.
+5. CT of the abdomen reveals diffuse lymphadenopathy and splenomegaly, and urine Histoplasma antigen is strongly positive.
+6. Bone marrow biopsy demonstrates intracellular narrow-based budding yeasts within macrophages on fungal staining.
+
+TEACHING_POINTS:
+
+* Disseminated fungal infection should be considered in patients with advanced immunosuppression, constitutional symptoms, and multiorgan involvement.
+* Pancytopenia and hepatosplenomegaly suggest reticuloendothelial system involvement rather than isolated pulmonary disease.
+* Urine antigen testing is very helpful for narrowing the diagnosis in disseminated histoplasmosis but should be interpreted in the clinical context.
+* Tissue demonstration of small intracellular yeasts provides confirmatory evidence of invasive Histoplasma infection.
+
+==================================================
+
+CASE_ID: 035
+DIFFICULTY: hard
+SYSTEM: pulmonology
+
+DIAGNOSIS:
+Lymphangioleiomyomatosis
+
+ALIASES:
+LAM
+Pulmonary lymphangioleiomyomatosis
+Cystic lung disease due to LAM
+
+VIGNETTE_LINES:
+
+1. A 35-year-old woman presents with progressive shortness of breath.
+2. She has had two prior spontaneous pneumothoraces.
+3. Examination shows diminished breath sounds at the right apex and mild exertional desaturation.
+4. Pulmonary function testing demonstrates airflow obstruction with reduced diffusion capacity.
+5. High-resolution CT of the chest reveals numerous diffuse thin-walled round cysts throughout both lungs.
+6. Surgical lung biopsy demonstrates proliferation of abnormal smooth muscle-like cells that stain positive for HMB-45.
+
+TEACHING_POINTS:
+
+* Diffuse cystic lung disease has a focused but important differential that includes LAM, pulmonary Langerhans cell histiocytosis, and several inherited syndromes.
+* Recurrent spontaneous pneumothorax in a younger woman is a major clue that should narrow the workup toward cystic lung disorders.
+* Imaging findings can strongly suggest LAM, but histologic confirmation may be required when the clinical setting is atypical.
+* HMB-45-positive smooth muscle-like cell proliferation is the characteristic pathologic finding.
+
+==================================================
+
+CASE_ID: 036
+DIFFICULTY: hard
+SYSTEM: neurology
+
+DIAGNOSIS:
+Lambert-Eaton myasthenic syndrome
+
+ALIASES:
+LEMS
+Paraneoplastic presynaptic neuromuscular junction syndrome
+Voltage-gated calcium channel antibody syndrome
+
+VIGNETTE_LINES:
+
+1. A 61-year-old man presents with progressive weakness.
+2. He has a 40-pack-year smoking history and reports several months of dry mouth.
+3. Examination shows proximal leg weakness with decreased patellar reflexes that improve briefly after repeated muscle activation.
+4. Creatine kinase, thyroid studies, and routine chemistries are unremarkable.
+5. Electrophysiologic testing shows low baseline compound muscle action potentials with a marked incremental response after high-frequency stimulation, and CT of the chest reveals a right hilar mass.
+6. Serum testing detects antibodies against P/Q-type voltage-gated calcium channels, confirming Lambert-Eaton myasthenic syndrome.
+
+TEACHING_POINTS:
+
+* Proximal weakness with autonomic symptoms and reduced reflexes suggests a neuromuscular junction disorder rather than primary myopathy.
+* Temporary reflex improvement after exercise is a useful bedside clue that distinguishes Lambert-Eaton syndrome from myasthenia gravis.
+* The association with small-cell lung carcinoma makes chest imaging an important part of the workup.
+* Antibodies to presynaptic calcium channels provide confirmatory evidence in the correct electrophysiologic context.
+
+==================================================
+
+CASE_ID: 037
+DIFFICULTY: hard
+SYSTEM: cardiology
+
+DIAGNOSIS:
+Cardiac sarcoidosis
+
+ALIASES:
+Myocardial sarcoidosis
+Sarcoid cardiomyopathy
+Granulomatous cardiac sarcoid disease
+
+VIGNETTE_LINES:
+
+1. A 48-year-old woman presents with palpitations.
+2. She has had several months of intermittent blurry vision treated empirically with steroid eye drops.
+3. Examination shows an irregular pulse and no signs of heart failure.
+4. ECG demonstrates second-degree atrioventricular block, and chest radiography shows bilateral hilar fullness.
+5. Cardiac MRI reveals patchy late gadolinium enhancement involving the basal septum and lateral wall.
+6. Endomyocardial biopsy demonstrates noncaseating granulomatous inflammation without organisms on special stains.
+
+TEACHING_POINTS:
+
+* Conduction system disease in a relatively young patient should prompt consideration of infiltrative and inflammatory cardiomyopathies.
+* Cardiac sarcoidosis often coexists with extracardiac findings such as uveitis, hilar adenopathy, or pulmonary symptoms, but these may be subtle.
+* MRI helps identify inflammatory myocardial involvement and guides biopsy or treatment decisions.
+* Tissue confirmation requires demonstration of noncaseating granulomatous inflammation after infectious causes are excluded.
+
+==================================================
+
+CASE_ID: 038
+DIFFICULTY: hard
+SYSTEM: gastroenterology
+
+DIAGNOSIS:
+Ménétrier disease
+
+ALIASES:
+Hypertrophic gastropathy
+Protein-losing hypertrophic gastropathy
+Giant hypertrophic gastritis
+
+VIGNETTE_LINES:
+
+1. A 57-year-old man presents with early satiety.
+2. He has unintentionally lost 15 pounds over the past 4 months.
+3. Examination shows bilateral ankle edema and mild epigastric fullness.
+4. Laboratory studies reveal hypoalbuminemia without nephrotic-range proteinuria or hepatic synthetic dysfunction.
+5. Upper endoscopy demonstrates markedly enlarged gastric folds in the body and fundus with relative sparing of the antrum.
+6. Gastric mucosal biopsy reveals foveolar hyperplasia with glandular cystic dilation and decreased parietal cells.
+
+TEACHING_POINTS:
+
+* Early satiety, weight loss, and edema together should raise concern for a protein-losing gastrointestinal process rather than isolated peptic disease.
+* Hypoalbuminemia with preserved liver and kidney function helps localize the problem to gastrointestinal protein loss.
+* Giant gastric folds have a differential that includes malignancy, infiltrative disease, Zollinger-Ellison syndrome, and Ménétrier disease.
+* Histology showing foveolar hyperplasia and glandular atrophy confirms the diagnosis.
+
+==================================================
+
+CASE_ID: 039
+DIFFICULTY: hard
+SYSTEM: reproductive
+
+DIAGNOSIS:
+Endometriosis
+
+ALIASES:
+Pelvic endometriosis
+Ectopic endometrial implants
+Endometriotic disease
+
+VIGNETTE_LINES:
+
+1. A 31-year-old woman presents with pelvic pain.
+2. She has been trying to conceive for 2 years without success.
+3. Bimanual examination demonstrates posterior fornix tenderness.
+4. CBC is normal, urinalysis is negative, and transvaginal ultrasonography shows a 4-cm homogeneous ovarian cyst.
+5. Pelvic MRI demonstrates punctate T1-hyperintense foci and fibrotic tethering of the posterior cul-de-sac.
+6. Laparoscopy reveals powder-burn implants and ovarian adhesions, and biopsy demonstrates endometrial glands and stroma outside the uterus.
+
+TEACHING_POINTS:
+
+* Chronic pelvic pain with infertility has a broad differential that includes endometriosis, adenomyosis, pelvic adhesions, and non-gynecologic causes.
+* A homogeneous ovarian cyst can represent an endometrioma, but imaging alone does not establish the full extent of disease.
+* Posterior compartment involvement often causes deep dyspareunia and tenderness on examination.
+* Definitive diagnosis relies on direct visualization with histologic confirmation of ectopic endometrial tissue.
+
+==================================================
+
+CASE_ID: 040
+DIFFICULTY: hard
+SYSTEM: psychiatry
+
+DIAGNOSIS:
+Pheochromocytoma
+
+ALIASES:
+Adrenal catecholamine-secreting tumor
+Chromaffin cell tumor of the adrenal medulla
+Catecholamine-producing adrenal neoplasm
+
+VIGNETTE_LINES:
+
+1. A 36-year-old woman presents with episodic anxiety.
+2. She has had repeated emergency department visits for sudden spells of pounding headaches and palpitations that were previously labeled panic attacks.
+3. Examination between episodes is normal except for mild resting hypertension.
+4. ECG demonstrates sinus tachycardia during symptoms, and basic metabolic panel shows mild hyperglycemia.
+5. Plasma free metanephrines are markedly elevated, and CT of the abdomen reveals a 3-cm right adrenal mass.
+6. Adrenalectomy specimen demonstrates a nested chromaffin-cell tumor that stains positive for chromogranin and synaptophysin.
+
+TEACHING_POINTS:
+
+* Episodic adrenergic symptoms can mimic panic disorder, especially when patients appear normal between attacks.
+* Sustained or paroxysmal hypertension should prompt evaluation for a medical cause when panic-like episodes are atypical or refractory.
+* Biochemical confirmation with metanephrines is necessary before attributing an adrenal mass to a catecholamine-secreting tumor.
+* Histopathology confirms the nature of the adrenal neoplasm after surgical resection.
+
+==================================================
