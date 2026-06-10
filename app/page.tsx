@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/next";
 // THEME TOKENS
 // =============================================================
 
-const THEME = {
+const DARK_THEME = {
   bg:             "#1a1a1a",
   bgCard:         "#262626",
   bgInput:        "#262626",
@@ -16,7 +16,7 @@ const THEME = {
   textMuted:      "#a3a3a3",
   textFaint:      "#737373",
   accent:         "#14b8a6",
-  clueNum:        "#737373",
+  decor:          "#14b8a6",
   selectBg:       "#262626",
   modalWin:       "#1f2937",
   modalLose:      "#2d0a0a",
@@ -26,7 +26,26 @@ const THEME = {
   teachPanel:     "#1f2937",
 };
 
-type Theme = typeof THEME;
+const LIGHT_THEME = {
+  bg:             "#f4f7f8",
+  bgCard:         "#ffffff",
+  bgInput:        "#ffffff",
+  border:         "#d1dde3",
+  text:           "#1a2e35",
+  textMuted:      "#5c6f78",
+  textFaint:      "#8fa3ad",
+  accent:         "#0d9488",
+  decor:          "#0d9488",
+  selectBg:       "#ffffff",
+  modalWin:       "#ecfdf5",
+  modalLose:      "#fff1f2",
+  modalBorderWin: "#22c55e",
+  modalBorderLose:"#dc2626",
+  shareCard:      "#f8fafc",
+  teachPanel:     "#f1f5f9",
+};
+
+type Theme = typeof DARK_THEME;
 
 // =============================================================
 // TYPES
@@ -587,6 +606,55 @@ function ResultModal({
 }
 
 // =============================================================
+// MEDICAL DECOR (minimal line SVGs)
+// =============================================================
+
+function StethoscopeIcon({ size = 24, color = "currentColor", opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden style={{ opacity }}>
+      <path d="M5 4v7a5 5 0 0010 0V4" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M8 4h4M12 4h4" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M15 11v2a3 3 0 01-3 3h-1" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+      <circle cx="17.5" cy="17.5" r="2.5" stroke={color} strokeWidth="1.5" />
+      <path d="M15 13h1.5a3.5 3.5 0 013.5 3.5v.5" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function BoneIcon({ size = 24, color = "currentColor", opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden style={{ opacity }}>
+      <path
+        d="M7.5 9.5c-2.2 0-3.5 1.4-3.5 3s1.3 3 3.5 3c1.1 0 2-.4 2.7-1.1.7.7 1.6 1.1 2.8 1.1 2.2 0 3.5-1.4 3.5-3s-1.3-3-3.5-3c-1.2 0-2.1.4-2.8 1.1-.7-.7-1.6-1.1-2.7-1.1z"
+        stroke={color}
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <path d="M10.2 11.4h3.6" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function MedicalDecor({ theme }: { theme: Theme }) {
+  return (
+    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+      <div className="absolute -top-2 -left-6 rotate-[-18deg]">
+        <StethoscopeIcon size={120} color={theme.decor} opacity={0.07} />
+      </div>
+      <div className="absolute top-[38%] -right-8 rotate-[22deg]">
+        <BoneIcon size={88} color={theme.decor} opacity={0.06} />
+      </div>
+      <div className="absolute bottom-16 -left-4 rotate-[12deg]">
+        <BoneIcon size={64} color={theme.decor} opacity={0.05} />
+      </div>
+      <div className="absolute bottom-8 right-4 rotate-[-8deg]">
+        <StethoscopeIcon size={72} color={theme.decor} opacity={0.05} />
+      </div>
+    </div>
+  );
+}
+
+// =============================================================
 // MAIN COMPONENT
 // =============================================================
 
@@ -607,8 +675,9 @@ export default function Home() {
   const [won, setWon] = useState(false);
 
   const [showDropdown, setShowDropdown] = useState(false);
+  const [lightMode, setLightMode] = useState(false);
 
-  const theme: Theme = THEME;
+  const theme: Theme = lightMode ? LIGHT_THEME : DARK_THEME;
 
   const [solvedAtClueCount, setSolvedAtClueCount] = useState(1);
   const [loadError, setLoadError] = useState("");
@@ -898,11 +967,11 @@ export default function Home() {
 
   if (loadError) {
     return (
-      <main className="min-h-screen flex items-center justify-center px-4" style={{ background: THEME.bg, color: THEME.text }}>
-        <div className="max-w-xl rounded-lg p-6 border" style={{ background: THEME.bgCard, borderColor: THEME.border }}>
+      <main className="min-h-screen flex items-center justify-center px-4" style={{ background: theme.bg, color: theme.text }}>
+        <div className="max-w-xl rounded-lg p-6 border" style={{ background: theme.bgCard, borderColor: theme.border }}>
           <p className="text-lg font-semibold mb-2">Could not load the cases file.</p>
-          <p className="text-sm" style={{ color: THEME.textMuted }}>{loadError}</p>
-          <p className="text-sm mt-3" style={{ color: THEME.textMuted }}>
+          <p className="text-sm" style={{ color: theme.textMuted }}>{loadError}</p>
+          <p className="text-sm mt-3" style={{ color: theme.textMuted }}>
             Put your daily cases in <span className="font-mono">public/doctordle cases/medicle cases daily.txt</span> and endless cases in <span className="font-mono">medicle cases endless mode.txt</span>.
           </p>
         </div>
@@ -912,7 +981,7 @@ export default function Home() {
 
   if (!current) {
     return (
-      <main className="min-h-screen flex items-center justify-center" style={{ background: THEME.bg, color: THEME.text }}>
+      <main className="min-h-screen flex items-center justify-center" style={{ background: theme.bg, color: theme.text }}>
         <p className="text-xl">Loading...</p>
       </main>
     );
@@ -924,9 +993,10 @@ export default function Home() {
 
   return (
     <main
-      className="min-h-screen flex flex-col items-center px-4 py-8"
+      className="relative min-h-screen flex flex-col items-center px-4 py-8 transition-colors duration-300"
       style={{ background: theme.bg, color: theme.text }}
     >
+      <MedicalDecor theme={theme} />
       <Analytics />
 
       {gameOver && current && (
@@ -943,27 +1013,40 @@ export default function Home() {
         />
       )}
 
-      <div className="w-full max-w-xl">
+      <div className="relative z-10 w-full max-w-xl">
         <div className="flex items-center justify-between mb-6">
-          <h1 className="text-2xl font-bold">Medicle</h1>
-          <select
-            onChange={(e) => {
-              if (e.target.value === "medicle") window.location.href = "/";
-              if (e.target.value === "vettle") window.location.href = "/vettle";
-              if (e.target.value === "psychodle") window.location.href = "/psychodle";
-              if (e.target.value === "dentdle") window.location.href = "/dentdle";
-              if (e.target.value === "crimindle") window.location.href = "/crimindle";
-            }}
-            defaultValue="medicle"
-            className="text-xs rounded px-2 py-1 outline-none"
-            style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.text }}
-          >
-            <option value="medicle">Medicle</option>
-            <option value="vettle">Vettle</option>
-            <option value="psychodle">Psychodle</option>
-            <option value="dentdle">Dentdle</option>
-            <option value="crimindle">Crimindle</option>
-          </select>
+          <div className="flex items-center gap-2.5">
+            <StethoscopeIcon size={26} color={theme.accent} opacity={0.9} />
+            <h1 className="text-2xl font-bold tracking-tight">Medicle</h1>
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={() => setLightMode((v) => !v)}
+              className="text-xs rounded-lg px-2.5 py-1.5 font-medium"
+              style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.textMuted }}
+            >
+              {lightMode ? "Dark" : "Light"}
+            </button>
+            <select
+              onChange={(e) => {
+                if (e.target.value === "medicle") window.location.href = "/";
+                if (e.target.value === "vettle") window.location.href = "/vettle";
+                if (e.target.value === "psychodle") window.location.href = "/psychodle";
+                if (e.target.value === "dentdle") window.location.href = "/dentdle";
+                if (e.target.value === "crimindle") window.location.href = "/crimindle";
+              }}
+              defaultValue="medicle"
+              className="text-xs rounded-lg px-2 py-1.5 outline-none"
+              style={{ background: theme.bgCard, border: `1px solid ${theme.border}`, color: theme.text }}
+            >
+              <option value="medicle">Medicle</option>
+              <option value="vettle">Vettle</option>
+              <option value="psychodle">Psychodle</option>
+              <option value="dentdle">Dentdle</option>
+              <option value="crimindle">Crimindle</option>
+            </select>
+          </div>
         </div>
 
         <div className="flex gap-2 mb-4">
@@ -1016,7 +1099,10 @@ export default function Home() {
           ))}
         </select>
 
-        <h2 className="text-lg font-semibold mb-4">What&apos;s the diagnosis?</h2>
+        <div className="flex items-center gap-2 mb-4 pb-3 border-b" style={{ borderColor: theme.border }}>
+          <BoneIcon size={18} color={theme.accent} opacity={0.55} />
+          <h2 className="text-lg font-semibold">What&apos;s the diagnosis?</h2>
+        </div>
 
         <div className="space-y-3 mb-6">
           {current.clues.slice(0, revealed).map((clue, i) => (
