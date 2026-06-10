@@ -1887,28 +1887,28 @@ DIFFICULTY: hard
 SYSTEM: cardiology
 
 DIAGNOSIS:
-Hypertrophic cardiomyopathy
+Coarctation of the aorta
 
 ALIASES:
-HCM
-Hypertrophic obstructive cardiomyopathy
-Familial asymmetric septal hypertrophy
+Adult aortic coarctation
+Juxtaductal aortic coarctation
+Congenital narrowing of the thoracic aorta
 
 VIGNETTE_LINES:
 
-1. A 19-year-old man presents with exertional syncope.
-2. His father died suddenly while jogging at age 42.
-3. Examination shows a harsh systolic murmur at the left sternal border that becomes louder with standing.
-4. ECG demonstrates left ventricular hypertrophy with deep narrow Q waves in the inferior leads.
-5. Transthoracic echocardiography reveals asymmetric septal hypertrophy with systolic anterior motion of the mitral valve and a dynamic outflow gradient.
-6. Genetic testing identifies a pathogenic MYH7 mutation.
+1. A 22-year-old man presents with headaches.
+2. He reports poor exercise tolerance since adolescence but has never had cardiac surgery.
+3. Examination shows delayed femoral pulses compared with the radial pulses.
+4. ECG demonstrates left ventricular hypertrophy, and chest radiography shows inferior rib notching.
+5. CT angiography reveals focal narrowing of the aorta just distal to the left subclavian artery with prominent collateral intercostal vessels.
+6. Cardiac catheterization demonstrates a significant systolic pressure gradient across the narrowed segment.
 
 TEACHING_POINTS:
 
-* Exertional syncope in a young patient with a family history of sudden death should raise concern for an inherited cardiomyopathy.
-* Dynamic outflow obstruction causes a murmur that changes with preload and afterload maneuvers.
-* Diastolic dysfunction and myocardial ischemia can occur even when systolic function appears hyperdynamic.
-* Sarcomere gene mutations underlie many familial cases and explain the abnormal myocardial architecture.
+* Upper-extremity hypertension with diminished lower-extremity pulses should prompt consideration of an obstructive lesion of the thoracic aorta.
+* Chronic obstruction produces collateral blood flow through the intercostal arteries, leading to rib notching on imaging.
+* Left ventricular hypertrophy results from longstanding pressure overload proximal to the coarctation.
+* Hemodynamic confirmation demonstrates the physiologic significance of the anatomic narrowing before intervention.
 
 ==================================================
 
@@ -1947,28 +1947,28 @@ DIFFICULTY: hard
 SYSTEM: gastroenterology
 
 DIAGNOSIS:
-Celiac disease
+Amebic liver abscess
 
 ALIASES:
-Gluten-sensitive enteropathy
-Celiac sprue
-Immune-mediated gluten enteropathy
+Entamoeba histolytica liver abscess
+Extraintestinal amebiasis
+Hepatic amebic abscess
 
 VIGNETTE_LINES:
 
-1. A 27-year-old woman presents with chronic diarrhea.
-2. She has a history of autoimmune thyroid disease and recurrent oral aphthae.
-3. Examination shows temporal wasting and a mildly distended abdomen.
-4. CBC reveals microcytic anemia, and metabolic panel shows low calcium and low albumin.
-5. Serum testing shows elevated IgA tissue transglutaminase antibodies, and upper endoscopy demonstrates scalloping of the duodenal folds.
-6. Duodenal biopsy demonstrates villous blunting with crypt hyperplasia and increased intraepithelial lymphocytes.
+1. A 42-year-old man presents with fever.
+2. He returned 1 month ago from rural India after several weeks of self-limited bloody diarrhea.
+3. Examination shows right upper quadrant tenderness without jaundice.
+4. Liver studies demonstrate elevated alkaline phosphatase with only mild aminotransferase elevation, and chest radiography shows elevation of the right hemidiaphragm.
+5. CT of the abdomen reveals a solitary hypodense lesion in the right hepatic lobe.
+6. Serologic testing is positive for Entamoeba histolytica, and aspirated material has the characteristic anchovy-paste appearance without bacterial growth.
 
 TEACHING_POINTS:
 
-* Chronic diarrhea with iron deficiency and other nutrient deficits should prompt consideration of a malabsorptive small-bowel process.
-* Association with autoimmune disease raises suspicion for an immune-mediated enteropathy rather than infection alone.
-* Mucosal injury causes loss of absorptive surface area, leading to multiple vitamin and mineral deficiencies.
-* Histology confirms the diagnosis and explains the impaired nutrient absorption characteristic of celiac disease.
+* Fever and right upper quadrant pain weeks after dysentery should prompt consideration of a hepatic complication of invasive intestinal amebiasis.
+* Right lobe predominance reflects portal venous drainage patterns from the colon.
+* The differential includes pyogenic liver abscess, hydatid disease, and necrotic tumor, especially when stool studies are already negative.
+* Serology and characteristic aspirate features help confirm an amebic rather than pyogenic source.
 
 ==================================================
 

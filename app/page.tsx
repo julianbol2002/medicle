@@ -77,13 +77,15 @@ const MAX_GUESSES = 6;
 
 // =============================================================
 // DAILY CASE SYSTEM
-// Daily cases: medicle cases daily.txt — case 001 on launch day, +1 per day
+// Daily cases: medicle cases daily.txt — 30 scheduled cases (case N = day N of June 2026)
+// Case 001 = Jun 1 … Case 010 = Jun 10 (today on launch) … Case 030 = Jun 30
+// Archive: past days only (cases 1..today-1). Future cases stay hidden until their date.
 // Endless mode: medicle cases endless mode.txt — separate pool, same ID format
-// Add cases to each file progressively; the app uses whatever is loaded.
 // =============================================================
 
-const DAILY_ANCHOR_DATE = new Date("2026-06-10T00:00:00"); // case 001 goes live
+const DAILY_ANCHOR_DATE = new Date("2026-06-01T00:00:00"); // case 001 = Jun 1
 const DAILY_ANCHOR_CASE_ID = 1;
+const SCHEDULED_DAILY_CASE_COUNT = 30;
 
 const DAILY_CASES_FILE = "/doctordle cases/medicle cases daily.txt";
 const ENDLESS_CASES_FILE = "/doctordle cases/medicle cases endless mode.txt";
@@ -100,9 +102,10 @@ function getDailyOffset(): number {
   return Math.floor(diffMs / (1000 * 60 * 60 * 24));
 }
 
-// Calendar slot for today (case 1 on launch day, case 2 the next day, etc.)
+// Calendar slot for today (case 1 on Jun 1, case 10 on Jun 10, etc.)
 function getSequentialDailyCaseId(): number {
-  return DAILY_ANCHOR_CASE_ID + getDailyOffset();
+  const slot = DAILY_ANCHOR_CASE_ID + getDailyOffset();
+  return Math.max(DAILY_ANCHOR_CASE_ID, Math.min(slot, SCHEDULED_DAILY_CASE_COUNT));
 }
 
 function getMaxCaseId(caseList: Case[]): number {
@@ -110,11 +113,23 @@ function getMaxCaseId(caseList: Case[]): number {
   return Math.max(...caseList.map((c) => Number(c.id)));
 }
 
-// If today's slot exceeds published cases, play the latest available case
+// Today's case: calendar slot, capped to published file content (never a future scheduled case)
 function getPlayableDailyCaseId(sequentialId: number, caseList: Case[]): number {
-  const maxId = getMaxCaseId(caseList);
-  if (!maxId) return 1;
-  return Math.min(sequentialId, maxId);
+  const maxPublished = getMaxCaseId(caseList);
+  if (!maxPublished) return 1;
+  const calendarCap = Math.min(sequentialId, SCHEDULED_DAILY_CASE_COUNT);
+  let target = Math.min(calendarCap, maxPublished);
+  while (target >= DAILY_ANCHOR_CASE_ID && !findCaseByNumericId(caseList, target)) {
+    target -= 1;
+  }
+  return Math.max(DAILY_ANCHOR_CASE_ID, target);
+}
+
+// Cases visible in the archive dropdown (published past days + today; never future days)
+function getMaxSelectableCaseId(sequentialId: number, caseList: Case[]): number {
+  const maxPublished = getMaxCaseId(caseList);
+  if (!maxPublished) return 0;
+  return Math.min(sequentialId, maxPublished, SCHEDULED_DAILY_CASE_COUNT);
 }
 
 function findCaseByNumericId(caseList: Case[], numericId: number): Case | undefined {
@@ -946,9 +961,8 @@ export default function Home() {
   }, [masterDiagnosisList]);
 
   const caseOptions = useMemo(() => {
-    const maxPublished = getMaxCaseId(eligibleCases);
     const playableId = getPlayableDailyCaseId(dailyCaseId, eligibleCases);
-    const maxAllowed = Math.min(dailyCaseId > 0 ? dailyCaseId : 0, maxPublished);
+    const maxAllowed = getMaxSelectableCaseId(dailyCaseId, eligibleCases);
     const options = eligibleCases
       .filter((c) => {
         const id = Number(c.id);
