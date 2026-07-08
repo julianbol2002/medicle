@@ -1,16 +1,16 @@
-CASE_ID: 001
-DIFFICULTY: hard
-SYSTEM: cardiology
+CASE_ID 001
+DIFFICULTY hard
+SYSTEM cardiology
 
-DIAGNOSIS:
+DIAGNOSIS
 Cardiac amyloidosis
 
-ALIASES:
+ALIASES
 Amyloid cardiomyopathy
 Infiltrative amyloid heart disease
 Restrictive cardiomyopathy due to amyloidosis
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 68-year-old man presents with progressive shortness of breath.
 2. He has had several months of bilateral hand numbness and underwent carpal tunnel release 2 years ago.
@@ -19,118 +19,118 @@ VIGNETTE_LINES:
 5. Echocardiography reveals concentric ventricular wall thickening with biatrial enlargement and a restrictive filling pattern despite a preserved ejection fraction.
 6. Endomyocardial biopsy demonstrates extracellular amorphous deposits with apple-green birefringence on Congo red staining.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Heart failure symptoms with increased ventricular wall thickness and unexpectedly low ECG voltage should suggest an infiltrative cardiomyopathy.
-* Bilateral carpal tunnel syndrome and peripheral neuropathy can precede overt cardiac manifestations of amyloid disease.
-* Restrictive physiology often presents with prominent right-sided congestion and relatively clear lungs early in the course.
-* Tissue confirmation relies on identifying amyloid deposits with Congo red staining and characteristic birefringence.
+ Heart failure symptoms with increased ventricular wall thickness and unexpectedly low ECG voltage should suggest an infiltrative cardiomyopathy.
+ Bilateral carpal tunnel syndrome and peripheral neuropathy can precede overt cardiac manifestations of amyloid disease.
+ Restrictive physiology often presents with prominent right-sided congestion and relatively clear lungs early in the course.
+ Tissue confirmation relies on identifying amyloid deposits with Congo red staining and characteristic birefringence.
 
 ==================================================
 
-CASE_ID: 002
-DIFFICULTY: hard
-SYSTEM: pulmonology
+CASE_ID 002
+DIFFICULTY hard
+SYSTEM pulmonology
 
-DIAGNOSIS:
+DIAGNOSIS
 Allergic bronchopulmonary aspergillosis
 
-ALIASES:
+ALIASES
 ABPA
 Allergic Aspergillus airway disease
 Aspergillus hypersensitivity lung disease
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 29-year-old woman presents with worsening cough.
 2. She has a long history of asthma requiring frequent rescue inhaler use.
 3. Examination reveals diffuse expiratory wheezing and scattered crackles.
 4. CBC shows peripheral eosinophilia, and chest radiography demonstrates transient patchy upper-lobe opacities.
 5. CT of the chest shows central bronchiectasis with mucus plugging.
-6. Serum testing demonstrates markedly elevated Aspergillus-specific IgE levels with an immediate hypersensitivity response to Aspergillus antigen.
+6. Serum testing shows a markedly elevated total IgE with mold-specific IgE and an immediate hypersensitivity skin response to the relevant fungal antigen.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Worsening asthma with eosinophilia and fleeting pulmonary infiltrates should prompt consideration of a hypersensitivity process rather than simple infection.
-* Central bronchiectasis is a key imaging clue that helps narrow the differential in difficult asthma cases.
-* Patients may produce thick mucus plugs and be misdiagnosed with recurrent bacterial pneumonia.
-* Confirmation relies on evidence of Aspergillus sensitization in the correct clinical setting rather than invasive fungal infection.
+ Worsening asthma with eosinophilia and fleeting pulmonary infiltrates should prompt consideration of a hypersensitivity process rather than simple infection.
+ Central bronchiectasis is a key imaging clue that helps narrow the differential in difficult asthma cases.
+ Patients may produce thick mucus plugs and be misdiagnosed with recurrent bacterial pneumonia.
+ Confirmation relies on evidence of Aspergillus sensitization in the correct clinical setting rather than invasive fungal infection.
 
 ==================================================
 
-CASE_ID: 003
-DIFFICULTY: hard
-SYSTEM: gastroenterology
+CASE_ID 003
+DIFFICULTY hard
+SYSTEM gastroenterology
 
-DIAGNOSIS:
+DIAGNOSIS
 Primary sclerosing cholangitis
 
-ALIASES:
+ALIASES
 PSC
 Chronic fibrosing cholangitis
 Sclerosing cholangitis
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 34-year-old man presents with progressive fatigue.
 2. He has a several-year history of intermittent bloody diarrhea treated intermittently with mesalamine.
 3. Physical examination shows mild scleral icterus and right upper quadrant tenderness.
 4. Liver studies reveal a cholestatic pattern with elevated alkaline phosphatase and bilirubin.
 5. Magnetic resonance cholangiopancreatography shows multifocal short strictures and segmental dilatations involving the intrahepatic and extrahepatic bile ducts.
-6. Brush cytology obtained during endoscopic evaluation shows no malignancy, and the cholangiographic pattern is diagnostic of chronic fibrosing inflammation of the biliary tree.
+6. Brush cytology obtained during endoscopic cholangiography shows no malignant cells, and the multifocal stricturing gives the biliary tree a characteristic beaded appearance.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Cholestatic liver enzyme elevation in a patient with inflammatory bowel disease should raise concern for a biliary tract disorder.
-* The associated colitis is classically ulcerative colitis, but hepatobiliary disease activity does not necessarily parallel bowel symptoms.
-* Multifocal stricturing and beading of the biliary tree help distinguish this condition from isolated obstruction or primary biliary disease.
-* Patients require surveillance because of increased risk for cholangiocarcinoma and colorectal neoplasia.
+ Cholestatic liver enzyme elevation in a patient with inflammatory bowel disease should raise concern for a biliary tract disorder.
+ The associated colitis is classically ulcerative colitis, but hepatobiliary disease activity does not necessarily parallel bowel symptoms.
+ Multifocal stricturing and beading of the biliary tree help distinguish this condition from isolated obstruction or primary biliary disease.
+ Patients require surveillance because of increased risk for cholangiocarcinoma and colorectal neoplasia.
 
 ==================================================
 
-CASE_ID: 004
-DIFFICULTY: hard
-SYSTEM: endocrinology
+CASE_ID 004
+DIFFICULTY hard
+SYSTEM endocrinology
 
-DIAGNOSIS:
+DIAGNOSIS
 Primary hyperaldosteronism
 
-ALIASES:
+ALIASES
 Conn syndrome
 Aldosterone-producing adenoma syndrome
 Primary aldosteronism
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 41-year-old woman presents with muscle weakness.
 2. She has had difficult-to-control hypertension despite taking three antihypertensive medications.
 3. Examination shows no peripheral edema and normal volume status.
 4. Basic metabolic panel demonstrates hypokalemia and mild metabolic alkalosis.
 5. Plasma studies show a suppressed renin level with an elevated aldosterone-to-renin ratio, and CT demonstrates a unilateral adrenal nodule.
-6. Adrenal venous sampling shows markedly increased aldosterone secretion from the left adrenal gland compared with the right.
+6. Adrenal venous sampling shows markedly increased hormone secretion from the left adrenal gland compared with the right.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Resistant hypertension with unexplained hypokalemia should prompt evaluation for excess mineralocorticoid activity.
-* Lack of edema despite sodium retention is explained by aldosterone escape and pressure natriuresis.
-* An elevated aldosterone-to-renin ratio narrows the differential but does not localize the source.
-* Adrenal venous sampling is the confirmatory test used to distinguish unilateral from bilateral disease before surgery.
+ Resistant hypertension with unexplained hypokalemia should prompt evaluation for excess mineralocorticoid activity.
+ Lack of edema despite sodium retention is explained by aldosterone escape and pressure natriuresis.
+ An elevated aldosterone-to-renin ratio narrows the differential but does not localize the source.
+ Adrenal venous sampling is the confirmatory test used to distinguish unilateral from bilateral disease before surgery.
 
 ==================================================
 
-CASE_ID: 005
-DIFFICULTY: hard
-SYSTEM: neurology
+CASE_ID 005
+DIFFICULTY hard
+SYSTEM neurology
 
-DIAGNOSIS:
+DIAGNOSIS
 Normal pressure hydrocephalus
 
-ALIASES:
+ALIASES
 NPH
 Communicating hydrocephalus of adulthood
 Hakim-Adams syndrome
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 76-year-old man presents with progressive difficulty walking.
 2. His family reports several months of increasing forgetfulness and urinary urgency.
@@ -139,118 +139,118 @@ VIGNETTE_LINES:
 5. After a large-volume lumbar puncture, his gait speed improves noticeably over the next several hours.
 6. Continuous cerebrospinal fluid drainage testing reproduces marked symptomatic improvement, supporting benefit from ventriculoperitoneal shunting.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Gait impairment often appears before cognitive decline and incontinence in this potentially reversible cause of dementia.
-* Ventriculomegaly alone is not sufficient, because cerebral atrophy can also enlarge the ventricles.
-* Improvement after CSF removal helps distinguish this condition from degenerative parkinsonian and Alzheimer-spectrum disorders.
-* Early recognition matters because shunting can significantly improve function, especially gait.
+ Gait impairment often appears before cognitive decline and incontinence in this potentially reversible cause of dementia.
+ Ventriculomegaly alone is not sufficient, because cerebral atrophy can also enlarge the ventricles.
+ Improvement after CSF removal helps distinguish this condition from degenerative parkinsonian and Alzheimer-spectrum disorders.
+ Early recognition matters because shunting can significantly improve function, especially gait.
 
 ==================================================
 
-CASE_ID: 006
-DIFFICULTY: hard
-SYSTEM: nephrology
+CASE_ID 006
+DIFFICULTY hard
+SYSTEM nephrology
 
-DIAGNOSIS:
+DIAGNOSIS
 Thin basement membrane nephropathy
 
-ALIASES:
+ALIASES
 Benign familial hematuria
 Thin basement membrane disease
 Familial thin GBM nephropathy
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 22-year-old woman presents with recurrent dark urine.
 2. She reports that several relatives were told they had blood in the urine but never developed kidney failure.
 3. Examination is unremarkable without edema, hearing loss, or visual abnormalities.
 4. Urinalysis shows persistent microscopic hematuria with minimal proteinuria and a normal serum creatinine level.
-5. Kidney biopsy shows diffuse thinning of the glomerular basement membrane on electron microscopy without immune complex deposition.
-6. Genetic testing identifies a heterozygous collagen IV abnormality consistent with an inherited thin glomerular basement membrane disorder.
+5. Kidney biopsy shows diffuse thinning of the glomerular basement membrane on electron microscopy without immune-complex deposition.
+6. Genetic testing identifies a heterozygous type IV collagen variant, and follow-up evaluation reveals no hearing or ocular abnormalities.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Persistent isolated hematuria in a young patient with preserved kidney function and family history suggests a hereditary basement membrane abnormality.
-* The absence of significant proteinuria, deafness, and ocular findings helps distinguish this disorder from Alport spectrum disease.
-* Light microscopy may be nondiagnostic, making electron microscopy especially useful in evaluation.
-* Most patients have a benign course, although follow-up is warranted if proteinuria or hypertension develops.
+ Persistent isolated hematuria in a young patient with preserved kidney function and family history suggests a hereditary basement membrane abnormality.
+ The absence of significant proteinuria, deafness, and ocular findings helps distinguish this disorder from Alport spectrum disease.
+ Light microscopy may be nondiagnostic, making electron microscopy especially useful in evaluation.
+ Most patients have a benign course, although follow-up is warranted if proteinuria or hypertension develops.
 
 ==================================================
 
-CASE_ID: 007
-DIFFICULTY: hard
-SYSTEM: hematology_oncology
+CASE_ID 007
+DIFFICULTY hard
+SYSTEM hematology_oncology
 
-DIAGNOSIS:
+DIAGNOSIS
 Paroxysmal nocturnal hemoglobinuria
 
-ALIASES:
+ALIASES
 PNH
 Complement-mediated hemolytic anemia due to GPI-anchor deficiency
 Marchiafava-Micheli syndrome
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 31-year-old man presents with fatigue.
 2. He reports episodic cola-colored urine in the morning and was treated for an unexplained abdominal vein thrombosis last year.
 3. Examination shows conjunctival pallor and mild scleral icterus.
 4. Laboratory studies reveal normocytic anemia, elevated lactate dehydrogenase, low haptoglobin, and a negative direct antiglobulin test.
 5. Bone marrow evaluation shows a hypocellular marrow without evidence of leukemia or myelodysplasia.
-6. Flow cytometry demonstrates absence of CD55 and CD59 on a population of peripheral blood cells.
+6. Flow cytometry demonstrates loss of two glycosylphosphatidylinositol-anchored surface proteins on a population of peripheral blood cells.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Coombs-negative intravascular hemolysis with unusual venous thrombosis is a classic diagnostic pattern requiring synthesis across organ systems.
-* Abdominal pain, dysphagia, and erectile dysfunction may result from nitric oxide depletion during hemolytic episodes.
-* Bone marrow failure syndromes can coexist with this disorder, complicating the presentation.
-* Flow cytometry for loss of GPI-anchored proteins confirms the diagnosis.
+ Coombs-negative intravascular hemolysis with unusual venous thrombosis is a classic diagnostic pattern requiring synthesis across organ systems.
+ Abdominal pain, dysphagia, and erectile dysfunction may result from nitric oxide depletion during hemolytic episodes.
+ Bone marrow failure syndromes can coexist with this disorder, complicating the presentation.
+ Flow cytometry for loss of GPI-anchored proteins confirms the diagnosis.
 
 ==================================================
 
-CASE_ID: 008
-DIFFICULTY: hard
-SYSTEM: infectious_disease
+CASE_ID 008
+DIFFICULTY hard
+SYSTEM infectious_disease
 
-DIAGNOSIS:
+DIAGNOSIS
 Whipple disease
 
-ALIASES:
+ALIASES
 Tropheryma whipplei infection
 Intestinal lipodystrophy
 Systemic Whipple disease
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 55-year-old man presents with chronic diarrhea.
 2. He has had months of migratory joint pains and progressive weight loss despite multiple negative stool cultures.
 3. Examination shows temporal wasting and hyperpigmented skin over sun-exposed areas.
 4. Laboratory studies demonstrate iron deficiency anemia and low serum albumin.
-5. Upper endoscopy with small-bowel biopsy shows blunted villi containing numerous foamy macrophages in the lamina propria.
-6. Polymerase chain reaction performed on the intestinal tissue detects Tropheryma whipplei.
+5. Upper endoscopy with small-bowel biopsy shows blunted villi containing numerous foamy PAS-positive macrophages in the lamina propria.
+6. Polymerase chain reaction performed on the intestinal tissue detects a fastidious actinomycete that is not recovered on routine culture.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Chronic diarrhea with weight loss and migratory arthralgias should prompt consideration of a systemic infectious cause of malabsorption.
-* Routine stool studies are often unrevealing because the disease primarily involves the small intestinal mucosa.
-* Histology narrows the diagnosis, but molecular confirmation is useful because several disorders can produce macrophage-rich infiltrates.
-* Delayed treatment can lead to cardiac and neurologic involvement.
+ Chronic diarrhea with weight loss and migratory arthralgias should prompt consideration of a systemic infectious cause of malabsorption.
+ Routine stool studies are often unrevealing because the disease primarily involves the small intestinal mucosa.
+ Histology narrows the diagnosis, but molecular confirmation is useful because several disorders can produce macrophage-rich infiltrates.
+ Delayed treatment can lead to cardiac and neurologic involvement.
 
 ==================================================
 
-CASE_ID: 009
-DIFFICULTY: hard
-SYSTEM: rheumatology
+CASE_ID 009
+DIFFICULTY hard
+SYSTEM rheumatology
 
-DIAGNOSIS:
+DIAGNOSIS
 Behçet disease
 
-ALIASES:
+ALIASES
 Behçet syndrome
 Variable vessel vasculitis of Behçet disease
 Adamantiades-Behçet disease
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 27-year-old man presents with recurrent mouth pain.
 2. He reports repeated episodes of painful genital sores over the past year and recently developed blurry vision.
@@ -259,207 +259,208 @@ VIGNETTE_LINES:
 5. Ophthalmologic examination demonstrates anterior uveitis with retinal vasculitis.
 6. Pathergy testing produces a papulopustular lesion at the needle-stick site within 48 hours.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Recurrent oral and genital ulcers with ocular inflammation should trigger a focused vasculitic differential rather than isolated mucocutaneous infection.
-* The disease can involve arteries and veins of any size, leading to diverse vascular and neurologic manifestations.
-* Erythema nodosum-like lesions and arthralgias are common but not specific, so pattern recognition is essential.
-* A positive pathergy phenomenon provides supportive confirmation in the appropriate clinical context.
+ Recurrent oral and genital ulcers with ocular inflammation should trigger a focused vasculitic differential rather than isolated mucocutaneous infection.
+ The disease can involve arteries and veins of any size, leading to diverse vascular and neurologic manifestations.
+ Erythema nodosum-like lesions and arthralgias are common but not specific, so pattern recognition is essential.
+ A positive pathergy phenomenon provides supportive confirmation in the appropriate clinical context.
 
 ==================================================
 
-CASE_ID: 010
-DIFFICULTY: hard
-SYSTEM: pharmacology_toxicology
+CASE_ID 010
+DIFFICULTY hard
+SYSTEM pharmacology_toxicology
 
-DIAGNOSIS:
+DIAGNOSIS
 Salicylate toxicity
 
-ALIASES:
+ALIASES
 Aspirin poisoning
 Salicylism
 Acute on chronic salicylate intoxication
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 46-year-old woman presents with nausea.
 2. She reports taking increasing amounts of over-the-counter pain medication for chronic back pain during the past week.
 3. Examination reveals tachypnea, diaphoresis, and mild confusion.
 4. Arterial blood gas demonstrates a mixed respiratory alkalosis and metabolic acidosis, and basic metabolic panel shows an elevated anion gap.
 5. Chest radiography reveals mild noncardiogenic pulmonary edema, and serum glucose is low-normal despite neuroglycopenic symptoms.
-6. Serum toxicology testing shows a markedly elevated salicylate concentration consistent with clinically significant poisoning.
+6. Serum testing for the suspected over-the-counter analgesic returns a markedly elevated level in the toxic range.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* The combination of tachypnea with a mixed acid-base disorder should strongly suggest salicylate poisoning in the right medication history.
-* Toxicity may occur with repeated supratherapeutic dosing, especially when patients do not recognize that multiple products contain aspirin.
-* Pulmonary edema, altered mental status, and acidemia indicate severe poisoning and need urgent management.
-* Treatment centers on alkalinization and, in severe cases, hemodialysis.
+ The combination of tachypnea with a mixed acid-base disorder should strongly suggest salicylate poisoning in the right medication history.
+ Toxicity may occur with repeated supratherapeutic dosing, especially when patients do not recognize that multiple products contain aspirin.
+ Pulmonary edema, altered mental status, and acidemia indicate severe poisoning and need urgent management.
+ Treatment centers on alkalinization and, in severe cases, hemodialysis.
 
 ==================================================
-CASE_ID: 011
-DIFFICULTY: hard
-SYSTEM: cardiology
 
-DIAGNOSIS:
+CASE_ID 011
+DIFFICULTY hard
+SYSTEM cardiology
+
+DIAGNOSIS
 Constrictive pericarditis
 
-ALIASES:
+ALIASES
 Chronic constrictive pericarditis
 Fibrosing constrictive pericardial disease
 Pericardial constriction
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 63-year-old man presents with progressive abdominal swelling.
 2. He received mediastinal radiation therapy for lymphoma 20 years ago.
 3. Examination shows elevated jugular venous pressure, hepatomegaly, and bilateral lower-extremity edema.
 4. Chest radiography demonstrates pericardial calcification, and liver studies show mild congestive hepatopathy.
 5. Echocardiography reveals a preserved ejection fraction with pronounced respiratory variation in ventricular filling and a septal bounce.
-6. Simultaneous right and left heart catheterization demonstrates equalization of diastolic pressures with ventricular interdependence, confirming constrictive physiology.
+6. Simultaneous right and left heart catheterization demonstrates equalization of diastolic pressures with ventricular interdependence.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Right-sided heart failure symptoms with preserved systolic function should raise suspicion for impaired ventricular filling rather than primary pump failure.
-* Prior mediastinal radiation, cardiac surgery, and tuberculosis are important risk factors for chronic pericardial scarring.
-* Pericardial calcification supports the diagnosis but does not by itself prove constrictive physiology.
-* Hemodynamic assessment showing ventricular interdependence helps distinguish constriction from restrictive cardiomyopathy.
+ Right-sided heart failure symptoms with preserved systolic function should raise suspicion for impaired ventricular filling rather than primary pump failure.
+ Prior mediastinal radiation, cardiac surgery, and tuberculosis are important risk factors for chronic pericardial scarring.
+ Pericardial calcification supports the diagnosis but does not by itself prove constrictive physiology.
+ Hemodynamic assessment showing ventricular interdependence helps distinguish constriction from restrictive cardiomyopathy.
 
 ==================================================
 
-CASE_ID: 012
-DIFFICULTY: hard
-SYSTEM: pulmonology
+CASE_ID 012
+DIFFICULTY hard
+SYSTEM pulmonology
 
-DIAGNOSIS:
+DIAGNOSIS
 Hypersensitivity pneumonitis
 
-ALIASES:
+ALIASES
 Extrinsic allergic alveolitis
 Chronic bird fancier's lung
 Subacute hypersensitivity lung disease
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 52-year-old woman presents with progressive shortness of breath.
 2. She keeps several parakeets in her home and recently began cleaning their cages herself.
 3. Examination shows fine inspiratory crackles at both lung bases.
 4. Pulmonary function testing demonstrates a restrictive pattern with reduced diffusion capacity, and chest radiography shows diffuse reticulonodular opacities.
 5. High-resolution CT reveals upper- and mid-lung centrilobular ground-glass nodules with mosaic attenuation and areas of air trapping.
-6. Surgical lung biopsy demonstrates poorly formed noncaseating granulomas with chronic interstitial lymphocytic inflammation, consistent with hypersensitivity pneumonitis.
+6. Surgical lung biopsy demonstrates poorly formed noncaseating granulomas with chronic bronchiolocentric lymphocytic interstitial inflammation.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Exposure history is essential because the presenting symptoms can mimic asthma, infection, or idiopathic interstitial lung disease.
-* Restrictive physiology with mosaic attenuation and air trapping suggests small-airway involvement in addition to interstitial inflammation.
-* Chronic disease may progress to fibrosis if the antigen exposure is not identified and removed.
-* Histopathology showing bronchiolocentric inflammation and poorly formed granulomas supports the diagnosis in the right clinical setting.
+ Exposure history is essential because the presenting symptoms can mimic asthma, infection, or idiopathic interstitial lung disease.
+ Restrictive physiology with mosaic attenuation and air trapping suggests small-airway involvement in addition to interstitial inflammation.
+ Chronic disease may progress to fibrosis if the antigen exposure is not identified and removed.
+ Histopathology showing bronchiolocentric inflammation and poorly formed granulomas supports the diagnosis in the right clinical setting.
 
 ==================================================
 
-CASE_ID: 013
-DIFFICULTY: hard
-SYSTEM: gastroenterology
+CASE_ID 013
+DIFFICULTY hard
+SYSTEM gastroenterology
 
-DIAGNOSIS:
+DIAGNOSIS
 Autoimmune hepatitis
 
-ALIASES:
+ALIASES
 Type 1 autoimmune hepatitis
 Chronic autoimmune inflammatory hepatitis
 Immune-mediated hepatitis
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 33-year-old woman presents with progressive fatigue.
 2. She has autoimmune thyroid disease treated with levothyroxine.
 3. Examination shows mild hepatomegaly without stigmata of chronic liver failure.
 4. Liver studies reveal markedly elevated AST and ALT with normal alkaline phosphatase, and viral hepatitis testing is negative.
 5. Serum studies show hypergammaglobulinemia, and abdominal ultrasound demonstrates a mildly enlarged heterogeneous liver without biliary obstruction.
-6. Liver biopsy reveals interface hepatitis with dense lymphoplasmacytic portal infiltrates, confirming autoimmune hepatitis.
+6. Liver biopsy reveals interface hepatitis with dense lymphoplasmacytic portal infiltrates.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Hepatocellular injury with negative viral studies should prompt consideration of autoimmune, metabolic, toxic, and ischemic causes.
-* Coexisting autoimmune disease increases the pretest probability but is not by itself diagnostic.
-* Hypergammaglobulinemia helps narrow the differential before disease-specific serologies are obtained.
-* Histology with interface hepatitis and plasma-cell predominant inflammation provides confirmatory evidence.
+ Hepatocellular injury with negative viral studies should prompt consideration of autoimmune, metabolic, toxic, and ischemic causes.
+ Coexisting autoimmune disease increases the pretest probability but is not by itself diagnostic.
+ Hypergammaglobulinemia helps narrow the differential before disease-specific serologies are obtained.
+ Histology with interface hepatitis and plasma-cell predominant inflammation provides confirmatory evidence.
 
 ==================================================
 
-CASE_ID: 014
-DIFFICULTY: hard
-SYSTEM: neurology
+CASE_ID 014
+DIFFICULTY hard
+SYSTEM neurology
 
-DIAGNOSIS:
+DIAGNOSIS
 Chronic inflammatory demyelinating polyradiculoneuropathy
 
-ALIASES:
+ALIASES
 CIDP
 Chronic acquired demyelinating polyneuropathy
 Chronic immune demyelinating neuropathy
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 47-year-old man presents with progressive weakness.
 2. He recalls a brief diarrheal illness about 4 months ago but has continued to worsen rather than improve.
 3. Examination shows symmetric proximal and distal weakness with diminished vibration sense and reduced reflexes in all extremities.
 4. CBC, metabolic panel, thyroid studies, and creatine kinase are unremarkable.
 5. Cerebrospinal fluid analysis demonstrates elevated protein with a normal cell count, and MRI shows smooth enhancement of the lumbar nerve roots.
-6. Nerve conduction studies reveal diffuse demyelination with conduction block and prolonged distal latencies, confirming CIDP.
+6. Nerve conduction studies reveal diffuse acquired demyelination with conduction block and prolonged distal latencies.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* The chronic time course is a major clue that helps distinguish CIDP from acute inflammatory demyelinating neuropathy.
-* Combined motor and sensory deficits with generalized areflexia localize the process to peripheral nerves or roots.
-* Albuminocytologic dissociation is supportive but not specific and can occur in several demyelinating neuropathies.
-* Electrodiagnostic evidence of acquired demyelination is the key confirmatory test.
+ The chronic time course is a major clue that helps distinguish CIDP from acute inflammatory demyelinating neuropathy.
+ Combined motor and sensory deficits with generalized areflexia localize the process to peripheral nerves or roots.
+ Albuminocytologic dissociation is supportive but not specific and can occur in several demyelinating neuropathies.
+ Electrodiagnostic evidence of acquired demyelination is the key confirmatory test.
 
 ==================================================
 
-CASE_ID: 015
-DIFFICULTY: hard
-SYSTEM: nephrology
+CASE_ID 015
+DIFFICULTY hard
+SYSTEM nephrology
 
-DIAGNOSIS:
+DIAGNOSIS
 Anti-glomerular basement membrane disease
 
-ALIASES:
+ALIASES
 Anti-GBM disease
 Goodpasture syndrome
 Pulmonary-renal syndrome due to anti-GBM disease
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 28-year-old man presents with cough.
 2. He recently started smoking again after several years of abstinence.
 3. Examination shows pale conjunctivae and bibasilar crackles.
 4. Laboratory studies reveal rising creatinine, normocytic anemia, and urinalysis with dysmorphic red blood cells and red blood cell casts.
 5. CT of the chest demonstrates diffuse bilateral ground-glass opacities, and bronchoalveolar lavage returns increasingly bloody aliquots.
-6. Kidney biopsy demonstrates crescentic glomerulonephritis with linear IgG deposition along the glomerular basement membrane.
+6. Kidney biopsy demonstrates crescentic glomerulonephritis with linear immunoglobulin deposition along the glomerular basement membrane.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Simultaneous alveolar hemorrhage and glomerulonephritis should trigger a focused pulmonary-renal differential diagnosis.
-* Smoking can precipitate pulmonary manifestations by increasing alveolar basement membrane permeability.
-* Red blood cell casts indicate a nephritic source of hematuria rather than lower urinary tract bleeding.
-* Linear immunofluorescence on renal biopsy is a defining diagnostic feature of anti-GBM disease.
+ Simultaneous alveolar hemorrhage and glomerulonephritis should trigger a focused pulmonary-renal differential diagnosis.
+ Smoking can precipitate pulmonary manifestations by increasing alveolar basement membrane permeability.
+ Red blood cell casts indicate a nephritic source of hematuria rather than lower urinary tract bleeding.
+ Linear immunofluorescence on renal biopsy is a defining diagnostic feature of anti-GBM disease.
 
 ==================================================
 
-CASE_ID: 016
-DIFFICULTY: hard
-SYSTEM: hematology_oncology
+CASE_ID 016
+DIFFICULTY hard
+SYSTEM hematology_oncology
 
-DIAGNOSIS:
+DIAGNOSIS
 Hairy cell leukemia
 
-ALIASES:
+ALIASES
 Hairy cell leukemia variant
 Classic hairy cell leukemia
 Chronic B-cell leukemia with hairy cells
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 58-year-old man presents with fatigue.
 2. He reports recurrent sinus infections over the past year.
@@ -468,58 +469,58 @@ VIGNETTE_LINES:
 5. Peripheral smear shows atypical lymphoid cells with irregular cytoplasmic projections, and bone marrow aspiration yields a dry tap.
 6. Bone marrow biopsy demonstrates diffuse infiltration by B lymphocytes with circumferential cytoplasmic projections that stain positive for annexin A1.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Pancytopenia with splenomegaly and minimal lymphadenopathy narrows the differential toward marrow-infiltrative disorders.
-* Monocytopenia is a useful clue and helps explain recurrent opportunistic and bacterial infections.
-* A dry tap suggests marrow fibrosis, which can be seen in this leukemia.
-* Immunophenotypic and histologic confirmation is needed because several chronic lymphoid neoplasms can mimic the smear appearance.
+ Pancytopenia with splenomegaly and minimal lymphadenopathy narrows the differential toward marrow-infiltrative disorders.
+ Monocytopenia is a useful clue and helps explain recurrent opportunistic and bacterial infections.
+ A dry tap suggests marrow fibrosis, which can be seen in this leukemia.
+ Immunophenotypic and histologic confirmation is needed because several chronic lymphoid neoplasms can mimic the smear appearance.
 
 ==================================================
 
-CASE_ID: 017
-DIFFICULTY: hard
-SYSTEM: infectious_disease
+CASE_ID 017
+DIFFICULTY hard
+SYSTEM infectious_disease
 
-DIAGNOSIS:
+DIAGNOSIS
 Brucellosis
 
-ALIASES:
+ALIASES
 Brucella infection
 Undulant fever
 Systemic brucellosis
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 39-year-old man presents with intermittent fevers.
 2. He recently returned from rural Mexico, where he regularly consumed unpasteurized goat cheese.
 3. Examination shows hepatosplenomegaly and lumbar paraspinal tenderness.
 4. CBC reveals mild anemia and leukopenia, while liver studies show mildly elevated transaminases.
 5. MRI of the spine demonstrates inflammatory changes at the L4-L5 endplates consistent with spondylodiscitis.
-6. Multiple blood cultures grow Brucella melitensis after prolonged incubation.
+6. Multiple blood cultures grow a small, slow-growing gram-negative coccobacillus only after prolonged incubation.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Brucellosis often presents as a subacute systemic illness with nonspecific constitutional symptoms and vague laboratory abnormalities.
-* Exposure history, especially unpasteurized dairy and livestock contact, is crucial for narrowing the differential.
-* Osteoarticular involvement such as sacroiliitis or spondylodiscitis is a common focal complication.
-* Blood cultures may require prolonged incubation, so clinical suspicion must be communicated to the laboratory.
+ Brucellosis often presents as a subacute systemic illness with nonspecific constitutional symptoms and vague laboratory abnormalities.
+ Exposure history, especially unpasteurized dairy and livestock contact, is crucial for narrowing the differential.
+ Osteoarticular involvement such as sacroiliitis or spondylodiscitis is a common focal complication.
+ Blood cultures may require prolonged incubation, so clinical suspicion must be communicated to the laboratory.
 
 ==================================================
 
-CASE_ID: 018
-DIFFICULTY: hard
-SYSTEM: rheumatology
+CASE_ID 018
+DIFFICULTY hard
+SYSTEM rheumatology
 
-DIAGNOSIS:
+DIAGNOSIS
 Relapsing polychondritis
 
-ALIASES:
+ALIASES
 RPC
 Recurrent polychondritis
 Immune-mediated cartilage inflammation
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 45-year-old woman presents with recurrent ear pain.
 2. She has had several episodes of hoarseness over the past 6 months.
@@ -528,117 +529,118 @@ VIGNETTE_LINES:
 5. CT of the chest reveals diffuse thickening of the cartilaginous tracheal wall with relative sparing of the posterior membranous wall.
 6. Auricular cartilage biopsy demonstrates loss of basophilic staining with perichondrial inflammation and cartilage destruction.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Inflammation involving auricular, nasal, and tracheobronchial cartilage should prompt consideration of a systemic chondritis syndrome.
-* Sparing of the lobule helps distinguish cartilaginous inflammation from cellulitis or simple otitis externa.
-* Airway involvement can be life-threatening and may present as cough, hoarseness, wheezing, or fixed obstruction.
-* Histology is supportive when the clinical pattern suggests relapsing polychondritis.
+ Inflammation involving auricular, nasal, and tracheobronchial cartilage should prompt consideration of a systemic chondritis syndrome.
+ Sparing of the lobule helps distinguish cartilaginous inflammation from cellulitis or simple otitis externa.
+ Airway involvement can be life-threatening and may present as cough, hoarseness, wheezing, or fixed obstruction.
+ Histology is supportive when the clinical pattern suggests relapsing polychondritis.
 
 ==================================================
 
-CASE_ID: 019
-DIFFICULTY: hard
-SYSTEM: dermatology
+CASE_ID 019
+DIFFICULTY hard
+SYSTEM dermatology
 
-DIAGNOSIS:
+DIAGNOSIS
 Porphyria cutanea tarda
 
-ALIASES:
+ALIASES
 PCT
 Uroporphyrinogen decarboxylase deficiency
 Chronic hepatic porphyria of the skin
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 51-year-old man presents with a blistering rash.
 2. He has chronic hepatitis C infection and drinks several alcoholic beverages each evening.
 3. Examination shows fragile skin with tense vesicles and erosions over the dorsal hands and forearms.
 4. Liver studies show mild transaminitis, and serum ferritin is elevated.
-5. Urine porphyrin analysis reveals markedly increased uroporphyrin excretion.
-6. Erythrocyte enzyme testing demonstrates reduced uroporphyrinogen decarboxylase activity consistent with porphyria cutanea tarda.
+5. Urine analysis under a Wood lamp shows coral-pink fluorescence with markedly increased porphyrin excretion.
+6. Erythrocyte enzyme testing demonstrates reduced activity of the relevant heme-synthesis enzyme.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Photosensitive blistering on sun-exposed skin has a broad differential that includes drug reactions, autoimmune blistering disease, and porphyria.
-* Hepatitis C, alcohol use, iron overload, and estrogen exposure are important acquired risk factors.
-* Hypertrichosis and skin fragility are helpful clue patterns when the presentation is subtle.
-* Biochemical confirmation relies on documenting excess porphyrin accumulation and, when needed, enzyme deficiency.
+ Photosensitive blistering on sun-exposed skin has a broad differential that includes drug reactions, autoimmune blistering disease, and porphyria.
+ Hepatitis C, alcohol use, iron overload, and estrogen exposure are important acquired risk factors.
+ Hypertrichosis and skin fragility are helpful clue patterns when the presentation is subtle.
+ Biochemical confirmation relies on documenting excess porphyrin accumulation and, when needed, enzyme deficiency.
 
 ==================================================
 
-CASE_ID: 020
-DIFFICULTY: hard
-SYSTEM: pediatrics
+CASE_ID 020
+DIFFICULTY hard
+SYSTEM pediatrics
 
-DIAGNOSIS:
+DIAGNOSIS
 Meckel diverticulum
 
-ALIASES:
+ALIASES
 Symptomatic Meckel diverticulum
 Persistent omphalomesenteric duct remnant
 Ileal diverticulum with ectopic gastric mucosa
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 6-year-old boy presents with blood in the stool.
 2. His parents report several months of intermittent crampy abdominal pain without weight loss.
 3. Examination shows mild conjunctival pallor and a soft abdomen without guarding.
 4. CBC demonstrates iron deficiency anemia, and inflammatory markers are normal.
 5. Colonoscopy is unrevealing, but CT angiography suggests a bleeding source in the distal ileum.
-6. Technetium-99m pertechnetate scanning demonstrates focal uptake in the right lower abdomen separate from the stomach, confirming ectopic gastric mucosa within a Meckel diverticulum.
+6. Technetium-99m pertechnetate scanning demonstrates focal uptake in the right lower abdomen separate from the stomach, indicating ectopic gastric mucosa within a distal ileal outpouching.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Painless or minimally painful lower gastrointestinal bleeding in a child should prompt consideration of a small-bowel source.
-* Iron deficiency anemia may develop gradually when bleeding is intermittent and not hemodynamically dramatic.
-* A normal colonoscopy does not exclude a distal ileal lesion.
-* Nuclear scanning is most useful when ectopic gastric mucosa is present within the diverticulum.
+ Painless or minimally painful lower gastrointestinal bleeding in a child should prompt consideration of a small-bowel source.
+ Iron deficiency anemia may develop gradually when bleeding is intermittent and not hemodynamically dramatic.
+ A normal colonoscopy does not exclude a distal ileal lesion.
+ Nuclear scanning is most useful when ectopic gastric mucosa is present within the diverticulum.
 
 ==================================================
-CASE_ID: 021
-DIFFICULTY: hard
-SYSTEM: endocrinology
 
-DIAGNOSIS:
+CASE_ID 021
+DIFFICULTY hard
+SYSTEM endocrinology
+
+DIAGNOSIS
 Insulinoma
 
-ALIASES:
+ALIASES
 Pancreatic insulin-secreting neuroendocrine tumor
 Functional pancreatic beta-cell tumor
 Endogenous hyperinsulinemic hypoglycemia due to insulinoma
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 44-year-old woman presents with episodic confusion.
 2. She says the episodes usually occur in the late morning if she skips breakfast and improve after drinking juice.
 3. Examination during one episode shows diaphoresis, tremulousness, and difficulty concentrating.
-4. Basic metabolic panel obtained during symptoms demonstrates a serum glucose level of 42 mg/dL.
+4. Basic metabolic panel obtained during symptoms demonstrates a serum glucose level of 42 mgdL.
 5. A supervised fast reproduces symptoms with inappropriately elevated insulin and C-peptide levels while sulfonylurea screening is negative.
-6. Endoscopic ultrasound identifies a small pancreatic tail lesion, and surgical pathology confirms a well-differentiated insulin-producing neuroendocrine tumor.
+6. Endoscopic ultrasound identifies a small pancreatic tail lesion, and surgical pathology confirms a well-differentiated pancreatic neuroendocrine tumor.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Episodic neuroglycopenic symptoms relieved by carbohydrate intake should prompt evaluation for hypoglycemia in the correct clinical context.
-* Endogenous hyperinsulinemia is suggested when insulin and C-peptide remain inappropriately elevated during documented hypoglycemia.
-* Sulfonylurea screening is important because factitious hypoglycemia can mimic an insulinoma biochemically.
-* Localization often requires pancreatic imaging or specialized sampling before definitive surgical treatment.
+ Episodic neuroglycopenic symptoms relieved by carbohydrate intake should prompt evaluation for hypoglycemia in the correct clinical context.
+ Endogenous hyperinsulinemia is suggested when insulin and C-peptide remain inappropriately elevated during documented hypoglycemia.
+ Sulfonylurea screening is important because factitious hypoglycemia can mimic an insulinoma biochemically.
+ Localization often requires pancreatic imaging or specialized sampling before definitive surgical treatment.
 
 ==================================================
 
-CASE_ID: 022
-DIFFICULTY: hard
-SYSTEM: reproductive
+CASE_ID 022
+DIFFICULTY hard
+SYSTEM reproductive
 
-DIAGNOSIS:
+DIAGNOSIS
 Adenomyosis
 
-ALIASES:
+ALIASES
 Uterine adenomyosis
 Endometriosis interna
 Ectopic endometrial tissue within the myometrium
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 41-year-old woman presents with heavy menstrual bleeding.
 2. She has had three prior pregnancies and reports progressively worsening dysmenorrhea over the past year.
@@ -647,58 +649,58 @@ VIGNETTE_LINES:
 5. Pelvic MRI shows a globular uterus with thickening of the junctional zone and small myometrial cystic spaces.
 6. Hysterectomy specimen demonstrates endometrial glands and stroma embedded within the hypertrophied myometrium.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Heavy bleeding with dysmenorrhea and a uniformly enlarged uterus has a differential that includes fibroids, adenomyosis, and less commonly malignancy.
-* Multiparity and prior uterine instrumentation are associated with adenomyosis, but the diagnosis still requires correlation with imaging or pathology.
-* MRI can help distinguish adenomyosis from leiomyomas when ultrasound findings are indeterminate.
-* Histopathology confirms the diagnosis by showing ectopic endometrial tissue within the myometrium.
+ Heavy bleeding with dysmenorrhea and a uniformly enlarged uterus has a differential that includes fibroids, adenomyosis, and less commonly malignancy.
+ Multiparity and prior uterine instrumentation are associated with adenomyosis, but the diagnosis still requires correlation with imaging or pathology.
+ MRI can help distinguish adenomyosis from leiomyomas when ultrasound findings are indeterminate.
+ Histopathology confirms the diagnosis by showing ectopic endometrial tissue within the myometrium.
 
 ==================================================
 
-CASE_ID: 023
-DIFFICULTY: hard
-SYSTEM: pulmonology
+CASE_ID 023
+DIFFICULTY hard
+SYSTEM pulmonology
 
-DIAGNOSIS:
+DIAGNOSIS
 Pulmonary alveolar proteinosis
 
-ALIASES:
+ALIASES
 PAP
 Autoimmune pulmonary alveolar proteinosis
 Alveolar surfactant accumulation disease
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 38-year-old man presents with progressive shortness of breath.
 2. He works in a warehouse and has smoked one pack of cigarettes daily for 15 years.
 3. Examination shows mild central cyanosis and fine inspiratory crackles.
 4. Chest radiography demonstrates bilateral symmetric perihilar air-space opacities, and oxygen saturation is reduced on room air.
 5. High-resolution CT of the chest shows diffuse ground-glass opacities with superimposed interlobular septal thickening in a crazy-paving pattern.
-6. Bronchoalveolar lavage returns opaque milky fluid containing periodic acid-Schiff-positive lipoproteinaceous material, and serum GM-CSF autoantibodies are detected.
+6. Bronchoalveolar lavage returns opaque milky fluid containing periodic acid-Schiff-positive lipoproteinaceous material, and an autoantibody to a myeloid growth factor is detected.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Progressive dyspnea with bilateral alveolar opacities has a wide differential that includes infection, edema, hemorrhage, and proteinosis.
-* Crazy paving on CT is suggestive but not specific, so tissue or lavage confirmation is usually needed.
-* Impaired surfactant clearance leads to ventilation-perfusion mismatch and exertional hypoxemia.
-* Autoimmune disease mediated by GM-CSF antibodies is the most common adult form of pulmonary alveolar proteinosis.
+ Progressive dyspnea with bilateral alveolar opacities has a wide differential that includes infection, edema, hemorrhage, and proteinosis.
+ Crazy paving on CT is suggestive but not specific, so tissue or lavage confirmation is usually needed.
+ Impaired surfactant clearance leads to ventilation-perfusion mismatch and exertional hypoxemia.
+ Autoimmune disease mediated by GM-CSF antibodies is the most common adult form of pulmonary alveolar proteinosis.
 
 ==================================================
 
-CASE_ID: 024
-DIFFICULTY: hard
-SYSTEM: gastroenterology
+CASE_ID 024
+DIFFICULTY hard
+SYSTEM gastroenterology
 
-DIAGNOSIS:
+DIAGNOSIS
 Collagenous colitis
 
-ALIASES:
+ALIASES
 Microscopic colitis due to collagenous colitis
 Collagen band microscopic colitis
 Chronic inflammatory watery diarrhea due to collagenous colitis
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 67-year-old woman presents with chronic watery diarrhea.
 2. She has longstanding reflux and depression treated with omeprazole and sertraline.
@@ -707,28 +709,28 @@ VIGNETTE_LINES:
 5. Colonoscopy demonstrates grossly normal colonic mucosa throughout.
 6. Random colonic biopsies reveal a thickened subepithelial collagen band with chronic inflammatory infiltrates in the lamina propria.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Chronic nonbloody diarrhea with normal basic testing should prompt consideration of microscopic colitis, especially in older women.
-* Several medications, including proton pump inhibitors and selective serotonin reuptake inhibitors, have been associated with this disorder.
-* A normal colonoscopy does not exclude disease because the abnormality is microscopic rather than endoscopically visible.
-* Histology distinguishes collagenous colitis from lymphocytic colitis and other inflammatory diarrheal disorders.
+ Chronic nonbloody diarrhea with normal basic testing should prompt consideration of microscopic colitis, especially in older women.
+ Several medications, including proton pump inhibitors and selective serotonin reuptake inhibitors, have been associated with this disorder.
+ A normal colonoscopy does not exclude disease because the abnormality is microscopic rather than endoscopically visible.
+ Histology distinguishes collagenous colitis from lymphocytic colitis and other inflammatory diarrheal disorders.
 
 ==================================================
 
-CASE_ID: 025
-DIFFICULTY: hard
-SYSTEM: dermatology
+CASE_ID 025
+DIFFICULTY hard
+SYSTEM dermatology
 
-DIAGNOSIS:
+DIAGNOSIS
 Dermatitis herpetiformis
 
-ALIASES:
+ALIASES
 Duhring disease
 Gluten-sensitive dermatosis
 Cutaneous manifestation of celiac disease
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 30-year-old man presents with an intensely itchy rash.
 2. He reports several months of intermittent bloating and loose stools but no recent medication changes.
@@ -737,297 +739,298 @@ VIGNETTE_LINES:
 5. Serologic testing demonstrates elevated tissue transglutaminase IgA levels.
 6. Perilesional skin biopsy shows granular IgA deposition at the dermal papillae on direct immunofluorescence.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* A pruritic papulovesicular eruption on extensor surfaces should prompt a differential that includes dermatitis herpetiformis, scabies, eczema, and other inflammatory dermatoses.
-* Associated gastrointestinal symptoms may be subtle even when there is significant gluten-sensitive enteropathy.
-* Iron deficiency can be an important clue to underlying malabsorption.
-* Direct immunofluorescence of uninvolved or perilesional skin provides the confirmatory finding.
+ A pruritic papulovesicular eruption on extensor surfaces should prompt a differential that includes dermatitis herpetiformis, scabies, eczema, and other inflammatory dermatoses.
+ Associated gastrointestinal symptoms may be subtle even when there is significant gluten-sensitive enteropathy.
+ Iron deficiency can be an important clue to underlying malabsorption.
+ Direct immunofluorescence of uninvolved or perilesional skin provides the confirmatory finding.
 
 ==================================================
 
-CASE_ID: 026
-DIFFICULTY: hard
-SYSTEM: cardiology
+CASE_ID 026
+DIFFICULTY hard
+SYSTEM cardiology
 
-DIAGNOSIS:
+DIAGNOSIS
 Left atrial myxoma
 
-ALIASES:
+ALIASES
 Atrial myxoma
 Primary cardiac myxoma
 Benign left atrial tumor
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 56-year-old woman presents with progressive shortness of breath.
 2. She reports intermittent lightheadedness that is worse when she bends forward.
 3. Cardiac examination reveals a soft early diastolic sound and mild bibasilar crackles.
 4. CBC shows normocytic anemia, and erythrocyte sedimentation rate is elevated.
 5. Transthoracic echocardiography demonstrates a mobile pedunculated mass in the left atrium that prolapses through the mitral valve during diastole.
-6. Surgical excision specimen reveals stellate cells embedded in a myxoid stroma, confirming a cardiac myxoma.
+6. Surgical excision reveals scattered stellate cells embedded in a loose myxoid stroma.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Positional dyspnea or presyncope with constitutional symptoms should raise suspicion for an intracardiac obstructive lesion.
-* Atrial myxomas can mimic valvular disease, heart failure, or endocarditis depending on their size and mobility.
-* Elevated inflammatory markers and anemia may be paraneoplastic features rather than evidence of infection.
-* Echocardiography is the key imaging study, but pathology confirms the tumor type after resection.
+ Positional dyspnea or presyncope with constitutional symptoms should raise suspicion for an intracardiac obstructive lesion.
+ Atrial myxomas can mimic valvular disease, heart failure, or endocarditis depending on their size and mobility.
+ Elevated inflammatory markers and anemia may be paraneoplastic features rather than evidence of infection.
+ Echocardiography is the key imaging study, but pathology confirms the tumor type after resection.
 
 ==================================================
 
-CASE_ID: 027
-DIFFICULTY: hard
-SYSTEM: neurology
+CASE_ID 027
+DIFFICULTY hard
+SYSTEM neurology
 
-DIAGNOSIS:
+DIAGNOSIS
 CADASIL
 
-ALIASES:
+ALIASES
 Cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy
 NOTCH3-related hereditary small vessel disease
 Hereditary subcortical ischemic leukoencephalopathy
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 43-year-old woman presents with recurrent headaches.
 2. Her father and two paternal uncles had strokes before age 50.
 3. Neurologic examination shows mild dysarthria and brisk reflexes without focal weakness.
 4. CBC, metabolic panel, inflammatory markers, and thrombophilia testing are unremarkable.
 5. Brain MRI demonstrates confluent white matter hyperintensities involving the anterior temporal poles and external capsules with several small lacunar infarcts.
-6. Genetic testing identifies a pathogenic mutation in the NOTCH3 gene.
+6. Skin biopsy shows granular osmiophilic deposits within the walls of small dermal arterioles on electron microscopy.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Recurrent migraine-like headaches with a strong family history of early strokes should prompt consideration of inherited small-vessel disease.
-* Normal routine laboratory evaluation helps distinguish this disorder from inflammatory and acquired thrombotic causes of stroke.
-* Characteristic MRI distribution in the anterior temporal lobes and external capsules is highly suggestive late in the workup.
-* Molecular confirmation establishes the diagnosis and facilitates counseling of family members.
+ Recurrent migraine-like headaches with a strong family history of early strokes should prompt consideration of inherited small-vessel disease.
+ Normal routine laboratory evaluation helps distinguish this disorder from inflammatory and acquired thrombotic causes of stroke.
+ Characteristic MRI distribution in the anterior temporal lobes and external capsules is highly suggestive late in the workup.
+ Molecular confirmation establishes the diagnosis and facilitates counseling of family members.
 
 ==================================================
 
-CASE_ID: 028
-DIFFICULTY: hard
-SYSTEM: infectious_disease
+CASE_ID 028
+DIFFICULTY hard
+SYSTEM infectious_disease
 
-DIAGNOSIS:
+DIAGNOSIS
 Q fever endocarditis
 
-ALIASES:
+ALIASES
 Coxiella burnetii endocarditis
 Chronic Q fever infective endocarditis
 Culture-negative endocarditis due to Coxiella burnetii
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 61-year-old man presents with fatigue.
 2. He works on a goat farm and underwent bioprosthetic aortic valve replacement 3 years ago.
 3. Examination shows a low-grade fever and a diastolic murmur.
 4. CBC demonstrates normocytic anemia, erythrocyte sedimentation rate is elevated, and multiple blood cultures show no growth.
 5. Transesophageal echocardiography reveals small prosthetic-valve vegetations with mild paravalvular regurgitation.
-6. Serologic testing shows markedly elevated phase I IgG antibodies to Coxiella burnetii, and valve tissue PCR is positive.
+6. Serologic testing shows markedly elevated phase I antibody titers to a zoonotic intracellular organism, and valve tissue PCR is positive.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Culture-negative endocarditis requires careful review of epidemiologic exposures and prior valve disease.
-* Livestock exposure, especially to sheep, goats, and cattle, is a classic risk factor for chronic Q fever.
-* Prosthetic valves and underlying valvular abnormalities increase susceptibility to persistent endovascular infection.
-* Serology and molecular testing are essential because routine blood cultures are often negative.
+ Culture-negative endocarditis requires careful review of epidemiologic exposures and prior valve disease.
+ Livestock exposure, especially to sheep, goats, and cattle, is a classic risk factor for chronic Q fever.
+ Prosthetic valves and underlying valvular abnormalities increase susceptibility to persistent endovascular infection.
+ Serology and molecular testing are essential because routine blood cultures are often negative.
 
 ==================================================
 
-CASE_ID: 029
-DIFFICULTY: hard
-SYSTEM: hematology_oncology
+CASE_ID 029
+DIFFICULTY hard
+SYSTEM hematology_oncology
 
-DIAGNOSIS:
+DIAGNOSIS
 Waldenström macroglobulinemia
 
-ALIASES:
+ALIASES
 Lymphoplasmacytic lymphoma with IgM paraproteinemia
 IgM monoclonal gammopathy causing hyperviscosity
 Waldenstrom syndrome
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 69-year-old man presents with blurry vision.
 2. He reports several months of fatigue and recurrent nosebleeds.
 3. Examination shows retinal venous engorgement and mild hepatosplenomegaly.
 4. CBC reveals normocytic anemia, and total serum protein is elevated.
-5. Serum protein electrophoresis shows a monoclonal IgM spike, and serum viscosity is markedly increased.
-6. Bone marrow biopsy reveals lymphoplasmacytic infiltration with monoclonal IgM-producing cells, confirming Waldenström macroglobulinemia.
+5. Serum protein electrophoresis shows a large monoclonal spike, and measured serum viscosity is markedly increased.
+6. Bone marrow biopsy reveals a lymphoplasmacytic infiltrate producing a monoclonal IgM immunoglobulin.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Hyperviscosity symptoms such as blurry vision, mucosal bleeding, and headache should trigger prompt evaluation for a paraproteinemia.
-* An IgM monoclonal spike narrows the differential but requires marrow evaluation for definitive classification.
-* Hepatosplenomegaly may be present even when bulky lymphadenopathy is absent.
-* Distinguishing Waldenström macroglobulinemia from multiple myeloma is important because lytic bone disease and severe renal failure are less typical.
+ Hyperviscosity symptoms such as blurry vision, mucosal bleeding, and headache should trigger prompt evaluation for a paraproteinemia.
+ An IgM monoclonal spike narrows the differential but requires marrow evaluation for definitive classification.
+ Hepatosplenomegaly may be present even when bulky lymphadenopathy is absent.
+ Distinguishing Waldenström macroglobulinemia from multiple myeloma is important because lytic bone disease and severe renal failure are less typical.
 
 ==================================================
 
-CASE_ID: 030
-DIFFICULTY: hard
-SYSTEM: rheumatology
+CASE_ID 030
+DIFFICULTY hard
+SYSTEM rheumatology
 
-DIAGNOSIS:
+DIAGNOSIS
 IgG4-related disease
 
-ALIASES:
+ALIASES
 IgG4-related systemic disease
 IgG4-related autoimmune pancreatitis
 Fibroinflammatory IgG4 disease
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 58-year-old man presents with jaundice.
 2. He reports several prior episodes of painless swelling under his jaw that resolved spontaneously.
 3. Examination shows bilateral firm submandibular enlargement and mild scleral icterus.
 4. Liver studies reveal a cholestatic pattern, and lipase is mildly elevated.
 5. CT of the abdomen shows a diffusely enlarged pancreas with a capsule-like rim and narrowing of the distal common bile duct.
-6. Pancreatic biopsy demonstrates storiform fibrosis with a dense infiltrate of IgG4-positive plasma cells.
+6. Pancreatic biopsy demonstrates storiform fibrosis and obliterative phlebitis with a dense infiltrate of plasma cells expressing a single immunoglobulin subclass.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Multiorgan fibroinflammatory disease should be considered when pancreatic and salivary gland findings occur together.
-* Obstructive jaundice from pancreatic enlargement can mimic malignancy, making the differential especially challenging.
-* Cross-sectional imaging may suggest autoimmune pancreatitis, but histology remains important when cancer is a competing concern.
-* Storiform fibrosis with abundant IgG4-positive plasma cells is the characteristic confirmatory finding.
+ Multiorgan fibroinflammatory disease should be considered when pancreatic and salivary gland findings occur together.
+ Obstructive jaundice from pancreatic enlargement can mimic malignancy, making the differential especially challenging.
+ Cross-sectional imaging may suggest autoimmune pancreatitis, but histology remains important when cancer is a competing concern.
+ Storiform fibrosis with abundant IgG4-positive plasma cells is the characteristic confirmatory finding.
 
 ==================================================
-CASE_ID: 031
-DIFFICULTY: hard
-SYSTEM: endocrinology
 
-DIAGNOSIS:
+CASE_ID 031
+DIFFICULTY hard
+SYSTEM endocrinology
+
+DIAGNOSIS
 Cushing disease
 
-ALIASES:
+ALIASES
 Pituitary ACTH-secreting adenoma
 ACTH-dependent hypercortisolism due to pituitary adenoma
 Pituitary hypercortisolism
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 42-year-old woman presents with progressive weight gain.
 2. She has recently required escalating treatment for hypertension.
 3. Examination shows proximal muscle weakness when rising from a chair.
 4. Basic metabolic panel demonstrates mild hypokalemia, and fasting glucose is elevated.
 5. Late-night salivary cortisol is repeatedly elevated, ACTH is not suppressed, and pituitary MRI demonstrates a 6-mm sellar lesion.
-6. Inferior petrosal sinus sampling shows a central-to-peripheral ACTH gradient consistent with a pituitary source of hypercortisolism.
+6. Inferior petrosal sinus sampling shows a central-to-peripheral hormone gradient favoring a pituitary source.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Progressive metabolic complications such as hypertension, hyperglycemia, and muscle weakness should prompt evaluation for pathologic cortisol excess.
-* A small pituitary lesion on MRI does not by itself establish the diagnosis because incidental microadenomas are common.
-* Determining whether hypercortisolism is ACTH-dependent or ACTH-independent is essential before localization.
-* Inferior petrosal sinus sampling is the confirmatory localization study when biochemical testing suggests a pituitary ACTH source.
+ Progressive metabolic complications such as hypertension, hyperglycemia, and muscle weakness should prompt evaluation for pathologic cortisol excess.
+ A small pituitary lesion on MRI does not by itself establish the diagnosis because incidental microadenomas are common.
+ Determining whether hypercortisolism is ACTH-dependent or ACTH-independent is essential before localization.
+ Inferior petrosal sinus sampling is the confirmatory localization study when biochemical testing suggests a pituitary ACTH source.
 
 ==================================================
 
-CASE_ID: 032
-DIFFICULTY: hard
-SYSTEM: nephrology
+CASE_ID 032
+DIFFICULTY hard
+SYSTEM nephrology
 
-DIAGNOSIS:
+DIAGNOSIS
 Atheroembolic renal disease
 
-ALIASES:
+ALIASES
 Cholesterol crystal embolization syndrome
 Renal cholesterol emboli
 Atheroembolic kidney disease
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 74-year-old man presents with decreased urine output.
 2. He underwent coronary angiography 10 days ago for unstable angina.
 3. Examination shows mottled violaceous discoloration over both feet with intact distal pulses.
 4. Laboratory studies reveal a rising creatinine level, peripheral eosinophilia, and a bland urinalysis.
 5. Renal ultrasonography shows normal-sized kidneys without hydronephrosis, and complement levels are decreased.
-6. Kidney biopsy demonstrates biconvex cholesterol clefts occluding small arteries with surrounding inflammatory reaction.
+6. Kidney biopsy demonstrates biconvex empty clefts occluding small arteries with a surrounding inflammatory reaction.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Subacute kidney injury after a vascular procedure has a different differential diagnosis than contrast nephropathy, especially when the creatinine keeps rising days later.
-* Livedo reticularis, blue toe changes, and eosinophilia are important clues to systemic cholesterol embolization.
-* A bland urinalysis helps distinguish this disorder from many intrinsic glomerular diseases.
-* Tissue biopsy confirms the diagnosis by identifying cholesterol crystal clefts within affected vessels.
+ Subacute kidney injury after a vascular procedure has a different differential diagnosis than contrast nephropathy, especially when the creatinine keeps rising days later.
+ Livedo reticularis, blue toe changes, and eosinophilia are important clues to systemic cholesterol embolization.
+ A bland urinalysis helps distinguish this disorder from many intrinsic glomerular diseases.
+ Tissue biopsy confirms the diagnosis by identifying cholesterol crystal clefts within affected vessels.
 
 ==================================================
 
-CASE_ID: 033
-DIFFICULTY: hard
-SYSTEM: hematology_oncology
+CASE_ID 033
+DIFFICULTY hard
+SYSTEM hematology_oncology
 
-DIAGNOSIS:
+DIAGNOSIS
 Severe aplastic anemia
 
-ALIASES:
+ALIASES
 Aplastic anemia
 Acquired bone marrow failure syndrome
 Hypocellular marrow pancytopenia
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 26-year-old man presents with fatigue.
 2. He completed a prolonged course of chloramphenicol abroad 2 months ago.
 3. Examination shows petechiae over the lower extremities without lymphadenopathy or splenomegaly.
 4. CBC demonstrates pancytopenia with a very low reticulocyte count.
 5. Peripheral smear shows no blasts or schistocytes, and flow cytometry does not identify an abnormal leukocyte population.
-6. Bone marrow biopsy reveals marked hypocellularity with replacement by fat and no evidence of malignant infiltration.
+6. Bone marrow biopsy reveals marked hypocellularity with fatty replacement and no evidence of malignant infiltration.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Pancytopenia with a low reticulocyte count localizes the problem to marrow production rather than peripheral destruction.
-* The absence of splenomegaly and lymphadenopathy makes infiltrative and lymphoproliferative causes less likely.
-* Medication exposure, viral insults, and autoimmune mechanisms are important acquired causes of aplastic marrow failure.
-* Bone marrow biopsy is essential to distinguish aplastic anemia from leukemia, myelodysplasia, and myelofibrosis.
+ Pancytopenia with a low reticulocyte count localizes the problem to marrow production rather than peripheral destruction.
+ The absence of splenomegaly and lymphadenopathy makes infiltrative and lymphoproliferative causes less likely.
+ Medication exposure, viral insults, and autoimmune mechanisms are important acquired causes of aplastic marrow failure.
+ Bone marrow biopsy is essential to distinguish aplastic anemia from leukemia, myelodysplasia, and myelofibrosis.
 
 ==================================================
 
-CASE_ID: 034
-DIFFICULTY: hard
-SYSTEM: infectious_disease
+CASE_ID 034
+DIFFICULTY hard
+SYSTEM infectious_disease
 
-DIAGNOSIS:
+DIAGNOSIS
 Disseminated histoplasmosis
 
-ALIASES:
+ALIASES
 Progressive disseminated Histoplasma infection
 Disseminated Histoplasma capsulatum disease
 Systemic histoplasmosis
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 39-year-old man presents with persistent fever.
 2. He has advanced HIV infection and has not taken antiretroviral therapy for the past year.
 3. Examination shows hepatosplenomegaly and several shallow oral ulcers.
 4. CBC demonstrates pancytopenia, and liver studies show a markedly elevated alkaline phosphatase level.
-5. CT of the abdomen reveals diffuse lymphadenopathy and splenomegaly, and urine Histoplasma antigen is strongly positive.
-6. Bone marrow biopsy demonstrates intracellular narrow-based budding yeasts within macrophages on fungal staining.
+5. CT of the abdomen reveals diffuse lymphadenopathy and splenomegaly, and a urine assay for a dimorphic fungal antigen is strongly positive.
+6. Bone marrow biopsy demonstrates numerous small, narrow-based budding intracellular yeasts within macrophages on fungal staining.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Disseminated fungal infection should be considered in patients with advanced immunosuppression, constitutional symptoms, and multiorgan involvement.
-* Pancytopenia and hepatosplenomegaly suggest reticuloendothelial system involvement rather than isolated pulmonary disease.
-* Urine antigen testing is very helpful for narrowing the diagnosis in disseminated histoplasmosis but should be interpreted in the clinical context.
-* Tissue demonstration of small intracellular yeasts provides confirmatory evidence of invasive Histoplasma infection.
+ Disseminated fungal infection should be considered in patients with advanced immunosuppression, constitutional symptoms, and multiorgan involvement.
+ Pancytopenia and hepatosplenomegaly suggest reticuloendothelial system involvement rather than isolated pulmonary disease.
+ Urine antigen testing is very helpful for narrowing the diagnosis in disseminated histoplasmosis but should be interpreted in the clinical context.
+ Tissue demonstration of small intracellular yeasts provides confirmatory evidence of invasive Histoplasma infection.
 
 ==================================================
 
-CASE_ID: 035
-DIFFICULTY: hard
-SYSTEM: pulmonology
+CASE_ID 035
+DIFFICULTY hard
+SYSTEM pulmonology
 
-DIAGNOSIS:
+DIAGNOSIS
 Lymphangioleiomyomatosis
 
-ALIASES:
+ALIASES
 LAM
 Pulmonary lymphangioleiomyomatosis
 Cystic lung disease due to LAM
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 35-year-old woman presents with progressive shortness of breath.
 2. She has had two prior spontaneous pneumothoraces.
@@ -1036,58 +1039,58 @@ VIGNETTE_LINES:
 5. High-resolution CT of the chest reveals numerous diffuse thin-walled round cysts throughout both lungs.
 6. Surgical lung biopsy demonstrates proliferation of abnormal smooth muscle-like cells that stain positive for HMB-45.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Diffuse cystic lung disease has a focused but important differential that includes LAM, pulmonary Langerhans cell histiocytosis, and several inherited syndromes.
-* Recurrent spontaneous pneumothorax in a younger woman is a major clue that should narrow the workup toward cystic lung disorders.
-* Imaging findings can strongly suggest LAM, but histologic confirmation may be required when the clinical setting is atypical.
-* HMB-45-positive smooth muscle-like cell proliferation is the characteristic pathologic finding.
+ Diffuse cystic lung disease has a focused but important differential that includes LAM, pulmonary Langerhans cell histiocytosis, and several inherited syndromes.
+ Recurrent spontaneous pneumothorax in a younger woman is a major clue that should narrow the workup toward cystic lung disorders.
+ Imaging findings can strongly suggest LAM, but histologic confirmation may be required when the clinical setting is atypical.
+ HMB-45-positive smooth muscle-like cell proliferation is the characteristic pathologic finding.
 
 ==================================================
 
-CASE_ID: 036
-DIFFICULTY: hard
-SYSTEM: neurology
+CASE_ID 036
+DIFFICULTY hard
+SYSTEM neurology
 
-DIAGNOSIS:
+DIAGNOSIS
 Lambert-Eaton myasthenic syndrome
 
-ALIASES:
+ALIASES
 LEMS
 Paraneoplastic presynaptic neuromuscular junction syndrome
 Voltage-gated calcium channel antibody syndrome
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 61-year-old man presents with progressive weakness.
 2. He has a 40-pack-year smoking history and reports several months of dry mouth.
 3. Examination shows proximal leg weakness with decreased patellar reflexes that improve briefly after repeated muscle activation.
 4. Creatine kinase, thyroid studies, and routine chemistries are unremarkable.
 5. Electrophysiologic testing shows low baseline compound muscle action potentials with a marked incremental response after high-frequency stimulation, and CT of the chest reveals a right hilar mass.
-6. Serum testing detects antibodies against P/Q-type voltage-gated calcium channels, confirming Lambert-Eaton myasthenic syndrome.
+6. Serum testing detects antibodies directed against presynaptic voltage-gated calcium channels.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Proximal weakness with autonomic symptoms and reduced reflexes suggests a neuromuscular junction disorder rather than primary myopathy.
-* Temporary reflex improvement after exercise is a useful bedside clue that distinguishes Lambert-Eaton syndrome from myasthenia gravis.
-* The association with small-cell lung carcinoma makes chest imaging an important part of the workup.
-* Antibodies to presynaptic calcium channels provide confirmatory evidence in the correct electrophysiologic context.
+ Proximal weakness with autonomic symptoms and reduced reflexes suggests a neuromuscular junction disorder rather than primary myopathy.
+ Temporary reflex improvement after exercise is a useful bedside clue that distinguishes Lambert-Eaton syndrome from myasthenia gravis.
+ The association with small-cell lung carcinoma makes chest imaging an important part of the workup.
+ Antibodies to presynaptic calcium channels provide confirmatory evidence in the correct electrophysiologic context.
 
 ==================================================
 
-CASE_ID: 037
-DIFFICULTY: hard
-SYSTEM: cardiology
+CASE_ID 037
+DIFFICULTY hard
+SYSTEM cardiology
 
-DIAGNOSIS:
+DIAGNOSIS
 Cardiac sarcoidosis
 
-ALIASES:
+ALIASES
 Myocardial sarcoidosis
 Sarcoid cardiomyopathy
 Granulomatous cardiac sarcoid disease
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 48-year-old woman presents with palpitations.
 2. She has had several months of intermittent blurry vision treated empirically with steroid eye drops.
@@ -1096,28 +1099,28 @@ VIGNETTE_LINES:
 5. Cardiac MRI reveals patchy late gadolinium enhancement involving the basal septum and lateral wall.
 6. Endomyocardial biopsy demonstrates noncaseating granulomatous inflammation without organisms on special stains.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Conduction system disease in a relatively young patient should prompt consideration of infiltrative and inflammatory cardiomyopathies.
-* Cardiac sarcoidosis often coexists with extracardiac findings such as uveitis, hilar adenopathy, or pulmonary symptoms, but these may be subtle.
-* MRI helps identify inflammatory myocardial involvement and guides biopsy or treatment decisions.
-* Tissue confirmation requires demonstration of noncaseating granulomatous inflammation after infectious causes are excluded.
+ Conduction system disease in a relatively young patient should prompt consideration of infiltrative and inflammatory cardiomyopathies.
+ Cardiac sarcoidosis often coexists with extracardiac findings such as uveitis, hilar adenopathy, or pulmonary symptoms, but these may be subtle.
+ MRI helps identify inflammatory myocardial involvement and guides biopsy or treatment decisions.
+ Tissue confirmation requires demonstration of noncaseating granulomatous inflammation after infectious causes are excluded.
 
 ==================================================
 
-CASE_ID: 038
-DIFFICULTY: hard
-SYSTEM: gastroenterology
+CASE_ID 038
+DIFFICULTY hard
+SYSTEM gastroenterology
 
-DIAGNOSIS:
+DIAGNOSIS
 Ménétrier disease
 
-ALIASES:
+ALIASES
 Hypertrophic gastropathy
 Protein-losing hypertrophic gastropathy
 Giant hypertrophic gastritis
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 57-year-old man presents with early satiety.
 2. He has unintentionally lost 15 pounds over the past 4 months.
@@ -1126,117 +1129,118 @@ VIGNETTE_LINES:
 5. Upper endoscopy demonstrates markedly enlarged gastric folds in the body and fundus with relative sparing of the antrum.
 6. Gastric mucosal biopsy reveals foveolar hyperplasia with glandular cystic dilation and decreased parietal cells.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Early satiety, weight loss, and edema together should raise concern for a protein-losing gastrointestinal process rather than isolated peptic disease.
-* Hypoalbuminemia with preserved liver and kidney function helps localize the problem to gastrointestinal protein loss.
-* Giant gastric folds have a differential that includes malignancy, infiltrative disease, Zollinger-Ellison syndrome, and Ménétrier disease.
-* Histology showing foveolar hyperplasia and glandular atrophy confirms the diagnosis.
+ Early satiety, weight loss, and edema together should raise concern for a protein-losing gastrointestinal process rather than isolated peptic disease.
+ Hypoalbuminemia with preserved liver and kidney function helps localize the problem to gastrointestinal protein loss.
+ Giant gastric folds have a differential that includes malignancy, infiltrative disease, Zollinger-Ellison syndrome, and Ménétrier disease.
+ Histology showing foveolar hyperplasia and glandular atrophy confirms the diagnosis.
 
 ==================================================
 
-CASE_ID: 039
-DIFFICULTY: hard
-SYSTEM: reproductive
+CASE_ID 039
+DIFFICULTY hard
+SYSTEM reproductive
 
-DIAGNOSIS:
+DIAGNOSIS
 Endometriosis
 
-ALIASES:
+ALIASES
 Pelvic endometriosis
 Ectopic endometrial implants
 Endometriotic disease
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 31-year-old woman presents with pelvic pain.
 2. She has been trying to conceive for 2 years without success.
 3. Bimanual examination demonstrates posterior fornix tenderness.
-4. CBC is normal, urinalysis is negative, and transvaginal ultrasonography shows a 4-cm homogeneous ovarian cyst.
+4. CBC is normal, urinalysis is negative, and transvaginal ultrasonography shows a 4-cm homogeneous ovarian cyst with low-level internal echoes.
 5. Pelvic MRI demonstrates punctate T1-hyperintense foci and fibrotic tethering of the posterior cul-de-sac.
 6. Laparoscopy reveals powder-burn implants and ovarian adhesions, and biopsy demonstrates endometrial glands and stroma outside the uterus.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Chronic pelvic pain with infertility has a broad differential that includes endometriosis, adenomyosis, pelvic adhesions, and non-gynecologic causes.
-* A homogeneous ovarian cyst can represent an endometrioma, but imaging alone does not establish the full extent of disease.
-* Posterior compartment involvement often causes deep dyspareunia and tenderness on examination.
-* Definitive diagnosis relies on direct visualization with histologic confirmation of ectopic endometrial tissue.
+ Chronic pelvic pain with infertility has a broad differential that includes endometriosis, adenomyosis, pelvic adhesions, and non-gynecologic causes.
+ A homogeneous ovarian cyst can represent an endometrioma, but imaging alone does not establish the full extent of disease.
+ Posterior compartment involvement often causes deep dyspareunia and tenderness on examination.
+ Definitive diagnosis relies on direct visualization with histologic confirmation of ectopic endometrial tissue.
 
 ==================================================
 
-CASE_ID: 040
-DIFFICULTY: hard
-SYSTEM: psychiatry
+CASE_ID 040
+DIFFICULTY hard
+SYSTEM psychiatry
 
-DIAGNOSIS:
+DIAGNOSIS
 Pheochromocytoma
 
-ALIASES:
+ALIASES
 Adrenal catecholamine-secreting tumor
 Chromaffin cell tumor of the adrenal medulla
 Catecholamine-producing adrenal neoplasm
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 36-year-old woman presents with episodic anxiety.
 2. She has had repeated emergency department visits for sudden spells of pounding headaches and palpitations that were previously labeled panic attacks.
 3. Examination between episodes is normal except for mild resting hypertension.
 4. ECG demonstrates sinus tachycardia during symptoms, and basic metabolic panel shows mild hyperglycemia.
 5. Plasma free metanephrines are markedly elevated, and CT of the abdomen reveals a 3-cm right adrenal mass.
-6. Adrenalectomy specimen demonstrates a nested chromaffin-cell tumor that stains positive for chromogranin and synaptophysin.
+6. Adrenalectomy specimen demonstrates a nested tumor of the adrenal medulla that stains positive for chromogranin and synaptophysin.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Episodic adrenergic symptoms can mimic panic disorder, especially when patients appear normal between attacks.
-* Sustained or paroxysmal hypertension should prompt evaluation for a medical cause when panic-like episodes are atypical or refractory.
-* Biochemical confirmation with metanephrines is necessary before attributing an adrenal mass to a catecholamine-secreting tumor.
-* Histopathology confirms the nature of the adrenal neoplasm after surgical resection.
+ Episodic adrenergic symptoms can mimic panic disorder, especially when patients appear normal between attacks.
+ Sustained or paroxysmal hypertension should prompt evaluation for a medical cause when panic-like episodes are atypical or refractory.
+ Biochemical confirmation with metanephrines is necessary before attributing an adrenal mass to a catecholamine-secreting tumor.
+ Histopathology confirms the nature of the adrenal neoplasm after surgical resection.
 
 ==================================================
-CASE_ID: 041
-DIFFICULTY: hard
-SYSTEM: pharmacology_toxicology
 
-DIAGNOSIS:
+CASE_ID 041
+DIFFICULTY hard
+SYSTEM pharmacology_toxicology
+
+DIAGNOSIS
 Methemoglobinemia
 
-ALIASES:
+ALIASES
 Acquired methemoglobinemia
 Oxidant-induced methemoglobinemia
 Dyshemoglobinemia due to methemoglobin formation
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 28-year-old man presents with shortness of breath.
 2. He underwent an outpatient endoscopic procedure earlier that day for which a topical anesthetic spray was used.
 3. Examination shows diffuse slate-gray cyanosis without wheezing or signs of volume overload.
 4. Pulse oximetry remains in the mid-80s despite high-flow supplemental oxygen, while CBC and chest radiography are unremarkable.
 5. Arterial blood gas demonstrates a normal PaO2, and the blood sample appears chocolate-brown.
-6. Co-oximetry demonstrates a markedly elevated methemoglobin fraction, confirming methemoglobinemia.
+6. Co-oximetry reveals a markedly elevated fraction of an oxidized, non-oxygen-carrying hemoglobin species.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Central cyanosis with a normal lung examination and poor response to supplemental oxygen should raise suspicion for a dyshemoglobinemia.
-* Topical anesthetics such as benzocaine are classic triggers of acquired methemoglobinemia, especially after mucosal procedures.
-* A saturation gap between pulse oximetry and arterial oxygen tension is a major clue late in the workup.
-* Definitive diagnosis relies on co-oximetry rather than standard pulse oximetry or routine blood gas analysis alone.
+ Central cyanosis with a normal lung examination and poor response to supplemental oxygen should raise suspicion for a dyshemoglobinemia.
+ Topical anesthetics such as benzocaine are classic triggers of acquired methemoglobinemia, especially after mucosal procedures.
+ A saturation gap between pulse oximetry and arterial oxygen tension is a major clue late in the workup.
+ Definitive diagnosis relies on co-oximetry rather than standard pulse oximetry or routine blood gas analysis alone.
 
 ==================================================
 
-CASE_ID: 042
-DIFFICULTY: hard
-SYSTEM: pediatrics
+CASE_ID 042
+DIFFICULTY hard
+SYSTEM pediatrics
 
-DIAGNOSIS:
+DIAGNOSIS
 Primary ciliary dyskinesia
 
-ALIASES:
+ALIASES
 PCD
 Immotile cilia syndrome
 Kartagener spectrum disorder
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. An 8-year-old boy presents with chronic cough.
 2. His parents report recurrent otitis media and year-round nasal congestion since infancy.
@@ -1245,58 +1249,58 @@ VIGNETTE_LINES:
 5. CT of the chest reveals lower-lobe bronchiectasis, and sinus CT shows chronic pansinusitis.
 6. Electron microscopy of a nasal ciliary biopsy demonstrates absent outer dynein arms.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Chronic sinopulmonary infections beginning in early childhood should prompt consideration of mucociliary clearance disorders.
-* Dextrocardia narrows the differential substantially but still requires correlation with chronic airway disease for diagnosis.
-* Bronchiectasis in children is not always due to cystic fibrosis and should trigger a broader evaluation.
-* Ultrastructural demonstration of dynein arm defects confirms primary ciliary dyskinesia in the appropriate clinical setting.
+ Chronic sinopulmonary infections beginning in early childhood should prompt consideration of mucociliary clearance disorders.
+ Dextrocardia narrows the differential substantially but still requires correlation with chronic airway disease for diagnosis.
+ Bronchiectasis in children is not always due to cystic fibrosis and should trigger a broader evaluation.
+ Ultrastructural demonstration of dynein arm defects confirms primary ciliary dyskinesia in the appropriate clinical setting.
 
 ==================================================
 
-CASE_ID: 043
-DIFFICULTY: hard
-SYSTEM: rheumatology
+CASE_ID 043
+DIFFICULTY hard
+SYSTEM rheumatology
 
-DIAGNOSIS:
+DIAGNOSIS
 Mixed cryoglobulinemic vasculitis
 
-ALIASES:
+ALIASES
 Cryoglobulinemic vasculitis
 Hepatitis C-associated cryoglobulinemia
 Immune-complex small vessel vasculitis due to cryoglobulins
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 58-year-old woman presents with leg rash.
 2. She has chronic hepatitis C infection that has never been treated.
 3. Examination shows palpable purpura over both lower legs and diminished pinprick sensation in the feet.
 4. Laboratory studies reveal low complement C4, a mildly elevated creatinine level, and urinalysis with hematuria and proteinuria.
 5. Kidney biopsy demonstrates a membranoproliferative glomerulonephritis pattern with immune-complex deposition.
-6. Serum testing demonstrates cryoglobulins that precipitate in the cold with rheumatoid factor activity, confirming mixed cryoglobulinemic vasculitis.
+6. Serum testing reveals immunoglobulins that reversibly precipitate at cold temperatures and carry rheumatoid factor activity.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Palpable purpura with neuropathy and renal abnormalities should prompt a focused vasculitic differential diagnosis.
-* Chronic hepatitis C is a major associated condition and should be considered when immune-complex disease spans multiple organ systems.
-* Low complement levels point toward immune-complex-mediated disease rather than many pauci-immune vasculitides.
-* Demonstration of circulating cryoglobulins with the appropriate clinical syndrome establishes the diagnosis.
+ Palpable purpura with neuropathy and renal abnormalities should prompt a focused vasculitic differential diagnosis.
+ Chronic hepatitis C is a major associated condition and should be considered when immune-complex disease spans multiple organ systems.
+ Low complement levels point toward immune-complex-mediated disease rather than many pauci-immune vasculitides.
+ Demonstration of circulating cryoglobulins with the appropriate clinical syndrome establishes the diagnosis.
 
 ==================================================
 
-CASE_ID: 044
-DIFFICULTY: hard
-SYSTEM: cardiology
+CASE_ID 044
+DIFFICULTY hard
+SYSTEM cardiology
 
-DIAGNOSIS:
+DIAGNOSIS
 Arrhythmogenic right ventricular cardiomyopathy
 
-ALIASES:
+ALIASES
 ARVC
 Arrhythmogenic right ventricular dysplasia
 Fibrofatty right ventricular cardiomyopathy
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 27-year-old man presents with palpitations.
 2. His older brother died suddenly while playing basketball at age 29.
@@ -1305,297 +1309,298 @@ VIGNETTE_LINES:
 5. Cardiac MRI reveals right ventricular free-wall thinning with regional akinesia and reduced right ventricular ejection fraction.
 6. Endomyocardial biopsy demonstrates fibrofatty replacement of the right ventricular myocardium.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Ventricular arrhythmias in a young patient with a family history of sudden death should raise concern for inherited cardiomyopathy.
-* Right ventricular dysfunction can be subtle on routine examination and may present before overt heart failure develops.
-* ECG and ambulatory rhythm findings narrow the differential but imaging is needed to characterize structural disease.
-* Histology demonstrating fibrofatty myocardial replacement provides confirmatory evidence when the clinical picture suggests ARVC.
+ Ventricular arrhythmias in a young patient with a family history of sudden death should raise concern for inherited cardiomyopathy.
+ Right ventricular dysfunction can be subtle on routine examination and may present before overt heart failure develops.
+ ECG and ambulatory rhythm findings narrow the differential but imaging is needed to characterize structural disease.
+ Histology demonstrating fibrofatty myocardial replacement provides confirmatory evidence when the clinical picture suggests ARVC.
 
 ==================================================
 
-CASE_ID: 045
-DIFFICULTY: hard
-SYSTEM: gastroenterology
+CASE_ID 045
+DIFFICULTY hard
+SYSTEM gastroenterology
 
-DIAGNOSIS:
+DIAGNOSIS
 Chronic mesenteric ischemia
 
-ALIASES:
+ALIASES
 Intestinal angina
 Atherosclerotic mesenteric ischemia
 Chronic splanchnic ischemia
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 71-year-old woman presents with abdominal pain.
-2. She has a 50-pack-year smoking history and peripheral arterial disease.
+2. She has a 50-pack-year smoking history and peripheral arterial disease, and reports that the pain reliably begins after meals along with a growing fear of eating.
 3. Examination reveals a soft abdomen with an epigastric bruit.
 4. CBC and metabolic panel are largely unremarkable, and lactate is normal between episodes.
-5. CT angiography demonstrates severe atherosclerotic narrowing of the celiac artery and superior mesenteric artery.
-6. Catheter angiography confirms flow-limiting multivessel mesenteric stenoses, and her postprandial pain resolves after revascularization.
+5. CT angiography demonstrates severe atherosclerotic narrowing of two of the three major splanchnic arteries.
+6. Catheter angiography confirms flow-limiting multivessel stenoses, and the postprandial pain resolves after revascularization.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Recurrent postprandial abdominal pain with weight loss in a patient with systemic atherosclerosis should suggest chronic mesenteric ischemia.
-* Normal lactate does not exclude chronic intestinal ischemia because perfusion may be sufficient at rest.
-* An abdominal bruit is not diagnostic but can help direct attention toward a vascular cause of pain.
-* Definitive diagnosis relies on demonstrating significant mesenteric arterial obstruction in the appropriate clinical setting.
+ Recurrent postprandial abdominal pain with weight loss in a patient with systemic atherosclerosis should suggest chronic mesenteric ischemia.
+ Normal lactate does not exclude chronic intestinal ischemia because perfusion may be sufficient at rest.
+ An abdominal bruit is not diagnostic but can help direct attention toward a vascular cause of pain.
+ Definitive diagnosis relies on demonstrating significant mesenteric arterial obstruction in the appropriate clinical setting.
 
 ==================================================
 
-CASE_ID: 046
-DIFFICULTY: hard
-SYSTEM: infectious_disease
+CASE_ID 046
+DIFFICULTY hard
+SYSTEM infectious_disease
 
-DIAGNOSIS:
+DIAGNOSIS
 Disseminated nocardiosis
 
-ALIASES:
+ALIASES
 Nocardia infection
 Invasive nocardiosis
 Pulmonary nocardiosis with central nervous system dissemination
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 63-year-old man presents with cough.
 2. He has been taking high-dose prednisone for the past 4 months for organizing pneumonia.
 3. Examination shows low-grade fever and mild confusion.
 4. Chest CT demonstrates multiple bilateral nodules with cavitation, and CBC shows neutrophilic leukocytosis.
 5. Brain MRI reveals several ring-enhancing lesions at the gray-white junction with surrounding edema.
-6. Bronchoalveolar lavage culture grows branching filamentous organisms that are weakly acid-fast and identified as Nocardia species.
+6. Bronchoalveolar lavage culture grows branching, beaded, weakly acid-fast filamentous organisms.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* In an immunocompromised patient, cavitary lung nodules with brain abscesses should prompt consideration of opportunistic infection as well as malignancy.
-* Chronic glucocorticoid therapy substantially increases the risk for disseminated nocardiosis.
-* Central nervous system dissemination is common enough that neuroimaging should be considered when symptoms suggest systemic spread.
-* Microbiologic confirmation depends on identifying branching, weakly acid-fast organisms in clinical specimens.
+ In an immunocompromised patient, cavitary lung nodules with brain abscesses should prompt consideration of opportunistic infection as well as malignancy.
+ Chronic glucocorticoid therapy substantially increases the risk for disseminated nocardiosis.
+ Central nervous system dissemination is common enough that neuroimaging should be considered when symptoms suggest systemic spread.
+ Microbiologic confirmation depends on identifying branching, weakly acid-fast organisms in clinical specimens.
 
 ==================================================
 
-CASE_ID: 047
-DIFFICULTY: hard
-SYSTEM: endocrinology
+CASE_ID 047
+DIFFICULTY hard
+SYSTEM endocrinology
 
-DIAGNOSIS:
+DIAGNOSIS
 Familial hypocalciuric hypercalcemia
 
-ALIASES:
+ALIASES
 FHH
 Benign familial hypercalcemia
 Calcium-sensing receptor-related hypercalcemia
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 33-year-old woman presents with constipation.
 2. She says her mother and sister were both told during routine exams that they had elevated calcium levels.
 3. Examination is unremarkable without nephrolithiasis-related tenderness or bone pain.
 4. Laboratory studies show mild hypercalcemia with a high-normal parathyroid hormone level and normal renal function.
-5. A 24-hour urine collection demonstrates markedly low urinary calcium excretion.
-6. Genetic testing identifies a heterozygous inactivating mutation in the calcium-sensing receptor gene.
+5. A 24-hour urine collection demonstrates markedly low urinary calcium excretion despite the hypercalcemia.
+6. Genetic testing identifies a heterozygous inactivating variant in the gene for a receptor that senses extracellular calcium.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Mild hypercalcemia with a nonsuppressed parathyroid hormone level has a focused differential that includes primary hyperparathyroidism and FHH.
-* Family history spanning multiple first-degree relatives is an important clue that the disorder may be inherited rather than acquired.
-* Low urinary calcium excretion is the key discriminator before pursuing surgery or additional localization studies.
-* Confirmatory testing identifies a pathogenic calcium-sensing receptor abnormality in affected patients.
+ Mild hypercalcemia with a nonsuppressed parathyroid hormone level has a focused differential that includes primary hyperparathyroidism and FHH.
+ Family history spanning multiple first-degree relatives is an important clue that the disorder may be inherited rather than acquired.
+ Low urinary calcium excretion is the key discriminator before pursuing surgery or additional localization studies.
+ Confirmatory testing identifies a pathogenic calcium-sensing receptor abnormality in affected patients.
 
 ==================================================
 
-CASE_ID: 048
-DIFFICULTY: hard
-SYSTEM: pulmonology
+CASE_ID 048
+DIFFICULTY hard
+SYSTEM pulmonology
 
-DIAGNOSIS:
+DIAGNOSIS
 Chronic thromboembolic pulmonary hypertension
 
-ALIASES:
+ALIASES
 CTEPH
 Chronic thromboembolic disease with pulmonary hypertension
 Post-thromboembolic pulmonary hypertension
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 59-year-old woman presents with progressive shortness of breath.
 2. She was treated for a pulmonary embolism 18 months ago.
 3. Examination shows a loud pulmonic component of S2 and trace ankle edema.
 4. Echocardiography demonstrates right ventricular enlargement with elevated estimated pulmonary artery systolic pressure.
 5. Ventilation-perfusion scanning reveals multiple segmental mismatched perfusion defects, and CT pulmonary angiography demonstrates eccentric wall-adherent filling defects.
-6. Right heart catheterization confirms precapillary pulmonary hypertension, and pulmonary angiography demonstrates chronic thromboembolic webs and bands.
+6. Right heart catheterization confirms precapillary pulmonary hypertension, and pulmonary angiography demonstrates chronic organized intraluminal webs and bands.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Persistent dyspnea after treatment of pulmonary embolism should not automatically be attributed to deconditioning.
-* Echocardiography identifies pulmonary hypertension but does not determine its cause.
-* A mismatched ventilation-perfusion scan is a crucial screening test for chronic thromboembolic disease.
-* Hemodynamic confirmation and angiographic definition are essential when evaluating patients for pulmonary endarterectomy or balloon angioplasty.
+ Persistent dyspnea after treatment of pulmonary embolism should not automatically be attributed to deconditioning.
+ Echocardiography identifies pulmonary hypertension but does not determine its cause.
+ A mismatched ventilation-perfusion scan is a crucial screening test for chronic thromboembolic disease.
+ Hemodynamic confirmation and angiographic definition are essential when evaluating patients for pulmonary endarterectomy or balloon angioplasty.
 
 ==================================================
 
-CASE_ID: 049
-DIFFICULTY: hard
-SYSTEM: hematology_oncology
+CASE_ID 049
+DIFFICULTY hard
+SYSTEM hematology_oncology
 
-DIAGNOSIS:
+DIAGNOSIS
 Hemophagocytic lymphohistiocytosis
 
-ALIASES:
+ALIASES
 HLH
 Hemophagocytic syndrome
 Hyperinflammatory macrophage activation syndrome
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 22-year-old woman presents with persistent fever.
 2. She had infectious mononucleosis 3 weeks ago and has continued to worsen despite supportive care.
 3. Examination shows hepatosplenomegaly and diffuse petechiae.
 4. CBC demonstrates anemia and thrombocytopenia, triglycerides are elevated, and fibrinogen is low.
 5. Ferritin is markedly elevated, and soluble interleukin-2 receptor levels are increased.
-6. Bone marrow biopsy demonstrates activated macrophages engulfing erythrocytes and leukocytes, confirming hemophagocytic lymphohistiocytosis.
+6. Bone marrow biopsy demonstrates activated macrophages engulfing erythrocytes and other blood cells.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Persistent fever with cytopenias and organomegaly after a viral illness should prompt evaluation for a hyperinflammatory syndrome rather than uncomplicated infection.
-* Hypertriglyceridemia and hypofibrinogenemia are important clues that can help distinguish HLH from routine sepsis.
-* Very high ferritin levels are supportive but not specific, so the diagnosis requires synthesis of multiple clinical and laboratory features.
-* Demonstration of hemophagocytosis on tissue examination provides confirmatory evidence in the correct clinical context.
+ Persistent fever with cytopenias and organomegaly after a viral illness should prompt evaluation for a hyperinflammatory syndrome rather than uncomplicated infection.
+ Hypertriglyceridemia and hypofibrinogenemia are important clues that can help distinguish HLH from routine sepsis.
+ Very high ferritin levels are supportive but not specific, so the diagnosis requires synthesis of multiple clinical and laboratory features.
+ Demonstration of hemophagocytosis on tissue examination provides confirmatory evidence in the correct clinical context.
 
 ==================================================
 
-CASE_ID: 050
-DIFFICULTY: hard
-SYSTEM: neurology
+CASE_ID 050
+DIFFICULTY hard
+SYSTEM neurology
 
-DIAGNOSIS:
+DIAGNOSIS
 Stiff-person syndrome
 
-ALIASES:
+ALIASES
 SPS
 Autoimmune stiff-man syndrome
 GAD65-associated stiffness syndrome
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 46-year-old woman presents with progressive stiffness.
 2. She has type 1 diabetes mellitus treated with insulin.
 3. Examination shows marked lumbar hyperlordosis and painful spasms triggered by unexpected noise.
 4. Creatine kinase, thyroid studies, and MRI of the spine are unremarkable.
 5. Electromyography demonstrates continuous motor unit activity in paraspinal and proximal lower-extremity muscles at rest.
-6. Serum testing reveals high-titer glutamic acid decarboxylase 65 antibodies, confirming stiff-person syndrome.
+6. Serum testing reveals high-titer antibodies against the enzyme that synthesizes the principal inhibitory neurotransmitter.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Progressive axial rigidity with stimulus-sensitive spasms has a focused neurologic differential that includes autoimmune, functional, and toxin-mediated disorders.
-* Coexisting autoimmune disease increases suspicion for stiff-person syndrome but is not by itself diagnostic.
-* Normal imaging and muscle enzymes help distinguish this disorder from structural spinal disease and inflammatory myopathy.
-* Continuous motor unit activity on electromyography plus disease-specific antibodies confirms the diagnosis.
+ Progressive axial rigidity with stimulus-sensitive spasms has a focused neurologic differential that includes autoimmune, functional, and toxin-mediated disorders.
+ Coexisting autoimmune disease increases suspicion for stiff-person syndrome but is not by itself diagnostic.
+ Normal imaging and muscle enzymes help distinguish this disorder from structural spinal disease and inflammatory myopathy.
+ Continuous motor unit activity on electromyography plus disease-specific antibodies confirms the diagnosis.
 
 ==================================================
-CASE_ID: 051
-DIFFICULTY: hard
-SYSTEM: nephrology
 
-DIAGNOSIS:
+CASE_ID 051
+DIFFICULTY hard
+SYSTEM nephrology
+
+DIAGNOSIS
 Gitelman syndrome
 
-ALIASES:
+ALIASES
 Familial hypokalemic hypomagnesemic metabolic alkalosis
 SLC12A3-related tubulopathy
 Inherited thiazide-like salt-wasting nephropathy
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 19-year-old woman presents with muscle cramps.
 2. She reports lifelong salt craving and says several relatives are known to have low blood pressure.
 3. Examination shows normal volume status and no edema.
 4. Basic metabolic panel demonstrates hypokalemia, mild metabolic alkalosis, and low magnesium levels.
 5. Urine electrolyte testing shows inappropriate renal potassium wasting with low urinary calcium excretion and normal blood pressure.
-6. Genetic testing identifies biallelic pathogenic variants in the SLC12A3 gene.
+6. Genetic testing identifies biallelic variants in the gene encoding the thiazide-sensitive sodium-chloride cotransporter of the distal tubule.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Hypokalemic metabolic alkalosis has a broad differential that includes vomiting, diuretic use, mineralocorticoid excess, and inherited tubulopathies.
-* Low urinary calcium excretion helps distinguish Gitelman syndrome from Bartter syndrome in the right clinical context.
-* Hypomagnesemia is common and contributes to neuromuscular symptoms such as cramps and weakness.
-* Molecular confirmation is useful when the phenotype suggests an inherited distal convoluted tubule transport defect.
+ Hypokalemic metabolic alkalosis has a broad differential that includes vomiting, diuretic use, mineralocorticoid excess, and inherited tubulopathies.
+ Low urinary calcium excretion helps distinguish Gitelman syndrome from Bartter syndrome in the right clinical context.
+ Hypomagnesemia is common and contributes to neuromuscular symptoms such as cramps and weakness.
+ Molecular confirmation is useful when the phenotype suggests an inherited distal convoluted tubule transport defect.
 
 ==================================================
 
-CASE_ID: 052
-DIFFICULTY: hard
-SYSTEM: infectious_disease
+CASE_ID 052
+DIFFICULTY hard
+SYSTEM infectious_disease
 
-DIAGNOSIS:
+DIAGNOSIS
 Strongyloides hyperinfection syndrome
 
-ALIASES:
+ALIASES
 Disseminated strongyloidiasis
 Hyperinfection due to Strongyloides stercoralis
 Invasive autoinfection syndrome due to Strongyloides
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 67-year-old man presents with abdominal pain.
 2. He recently began high-dose glucocorticoid therapy for an exacerbation of interstitial lung disease and immigrated from rural Cambodia decades ago.
 3. Examination shows diffuse wheezing and mild abdominal distension.
 4. CBC shows leukocytosis without eosinophilia, and chest radiography demonstrates patchy bilateral interstitial opacities.
-5. CT of the abdomen shows small-bowel wall thickening, and blood cultures grow Enterobacter species without an obvious urinary source.
-6. Stool and sputum microscopy demonstrate numerous Strongyloides stercoralis larvae.
+5. CT of the abdomen shows small-bowel wall thickening, and blood cultures grow an enteric gram-negative organism without an obvious urinary source.
+6. Stool and sputum microscopy demonstrate numerous motile larvae of a soil-transmitted intestinal helminth.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Steroid exposure can precipitate overwhelming autoinfection even when chronic strongyloidiasis was previously clinically silent.
-* Gram-negative bacteremia in a patient with gastrointestinal and pulmonary findings should suggest translocation during larval migration.
-* Eosinophilia may disappear during hyperinfection, so its absence does not exclude the diagnosis.
-* Direct visualization of larvae in stool or respiratory specimens confirms disseminated strongyloidiasis.
+ Steroid exposure can precipitate overwhelming autoinfection even when chronic strongyloidiasis was previously clinically silent.
+ Gram-negative bacteremia in a patient with gastrointestinal and pulmonary findings should suggest translocation during larval migration.
+ Eosinophilia may disappear during hyperinfection, so its absence does not exclude the diagnosis.
+ Direct visualization of larvae in stool or respiratory specimens confirms disseminated strongyloidiasis.
 
 ==================================================
 
-CASE_ID: 053
-DIFFICULTY: hard
-SYSTEM: dermatology
+CASE_ID 053
+DIFFICULTY hard
+SYSTEM dermatology
 
-DIAGNOSIS:
+DIAGNOSIS
 Mycosis fungoides
 
-ALIASES:
+ALIASES
 Cutaneous T-cell lymphoma
 CTCL of mycosis fungoides type
 Epidermotropic cutaneous T-cell lymphoma
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 56-year-old man presents with a chronic rash.
 2. He has been treated intermittently with topical corticosteroids for years with only partial improvement.
 3. Examination shows several well-demarcated erythematous plaques over the trunk and buttocks without mucosal involvement.
 4. CBC and comprehensive metabolic panel are unremarkable.
-5. Repeat punch biopsies from multiple lesions show epidermotropic atypical lymphocytes with a band-like dermal infiltrate.
-6. T-cell receptor gene rearrangement studies demonstrate a clonal T-cell population consistent with mycosis fungoides.
+5. Repeat punch biopsies from multiple lesions show epidermotropic atypical lymphocytes forming small intraepidermal collections with a band-like dermal infiltrate.
+6. T-cell receptor gene rearrangement studies demonstrate a dominant clonal T-cell population.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* A chronic steroid-responsive but persistent patch-plaque eruption should prompt consideration of inflammatory dermatoses as well as cutaneous lymphoma.
-* Early mycosis fungoides can mimic eczema, psoriasis, or contact dermatitis, often delaying diagnosis.
-* Multiple biopsies may be needed because the histology can be subtle and patchy early in the disease course.
-* Demonstration of a clonal epidermotropic T-cell population confirms cutaneous T-cell lymphoma in the proper clinicopathologic setting.
+ A chronic steroid-responsive but persistent patch-plaque eruption should prompt consideration of inflammatory dermatoses as well as cutaneous lymphoma.
+ Early mycosis fungoides can mimic eczema, psoriasis, or contact dermatitis, often delaying diagnosis.
+ Multiple biopsies may be needed because the histology can be subtle and patchy early in the disease course.
+ Demonstration of a clonal epidermotropic T-cell population confirms cutaneous T-cell lymphoma in the proper clinicopathologic setting.
 
 ==================================================
 
-CASE_ID: 054
-DIFFICULTY: hard
-SYSTEM: cardiology
+CASE_ID 054
+DIFFICULTY hard
+SYSTEM cardiology
 
-DIAGNOSIS:
+DIAGNOSIS
 Eisenmenger syndrome
 
-ALIASES:
+ALIASES
 Pulmonary vascular disease with shunt reversal
 Cyanotic congenital heart disease due to Eisenmenger physiology
 Right-to-left reversal of a longstanding congenital shunt
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 34-year-old woman presents with progressive shortness of breath.
 2. She was told she had a heart murmur in childhood but never underwent surgery.
@@ -1604,148 +1609,148 @@ VIGNETTE_LINES:
 5. Transthoracic echocardiography reveals a large secundum atrial septal defect with severe pulmonary hypertension and bidirectional shunting.
 6. Right heart catheterization demonstrates fixed markedly elevated pulmonary vascular resistance with net right-to-left shunt physiology.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Longstanding unrepaired left-to-right shunts can cause progressive pulmonary vascular remodeling and eventual reversal of flow.
-* Clubbing, cyanosis, and secondary erythrocytosis suggest chronic hypoxemia rather than isolated volume-overload physiology.
-* Echocardiography identifies the congenital lesion and pulmonary hypertension, but catheterization defines operability and shunt physiology.
-* Once Eisenmenger physiology develops, closure of the defect is generally contraindicated because the pulmonary vascular disease is no longer reversible.
+ Longstanding unrepaired left-to-right shunts can cause progressive pulmonary vascular remodeling and eventual reversal of flow.
+ Clubbing, cyanosis, and secondary erythrocytosis suggest chronic hypoxemia rather than isolated volume-overload physiology.
+ Echocardiography identifies the congenital lesion and pulmonary hypertension, but catheterization defines operability and shunt physiology.
+ Once Eisenmenger physiology develops, closure of the defect is generally contraindicated because the pulmonary vascular disease is no longer reversible.
 
 ==================================================
 
-CASE_ID: 055
-DIFFICULTY: hard
-SYSTEM: rheumatology
+CASE_ID 055
+DIFFICULTY hard
+SYSTEM rheumatology
 
-DIAGNOSIS:
+DIAGNOSIS
 Eosinophilic granulomatosis with polyangiitis
 
-ALIASES:
+ALIASES
 EGPA
 Churg-Strauss syndrome
 Eosinophilic necrotizing granulomatous vasculitis
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 46-year-old man presents with numbness in his feet.
 2. He has had adult-onset asthma requiring several courses of prednisone over the past 2 years.
 3. Examination shows a purpuric rash over the ankles and weakness of right foot dorsiflexion.
 4. CBC demonstrates marked eosinophilia, and chest radiography shows fleeting patchy infiltrates.
-5. Sinus CT reveals chronic pansinusitis, and nerve conduction studies demonstrate mononeuritis multiplex.
+5. Sinus CT reveals chronic pansinusitis, and nerve conduction studies demonstrate a pattern of several individually affected named nerves.
 6. Sural nerve biopsy demonstrates eosinophil-rich necrotizing vasculitis with extravascular granulomatous inflammation.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Asthma, eosinophilia, neuropathy, and pulmonary infiltrates together should prompt consideration of a systemic eosinophilic vasculitis.
-* Adult-onset asthma is a common clue, but the diagnosis usually becomes clear only after extrapulmonary organ involvement appears.
-* Neurologic deficits often reflect mononeuritis multiplex rather than a symmetric polyneuropathy.
-* Tissue biopsy showing eosinophilic vasculitis with granulomatous inflammation confirms the diagnosis.
+ Asthma, eosinophilia, neuropathy, and pulmonary infiltrates together should prompt consideration of a systemic eosinophilic vasculitis.
+ Adult-onset asthma is a common clue, but the diagnosis usually becomes clear only after extrapulmonary organ involvement appears.
+ Neurologic deficits often reflect mononeuritis multiplex rather than a symmetric polyneuropathy.
+ Tissue biopsy showing eosinophilic vasculitis with granulomatous inflammation confirms the diagnosis.
 
 ==================================================
 
-CASE_ID: 056
-DIFFICULTY: hard
-SYSTEM: reproductive
+CASE_ID 056
+DIFFICULTY hard
+SYSTEM reproductive
 
-DIAGNOSIS:
+DIAGNOSIS
 Asherman syndrome
 
-ALIASES:
+ALIASES
 Intrauterine adhesions
 Uterine synechiae syndrome
 Post-curettage intrauterine scarring
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 32-year-old woman presents with infertility.
-2. She underwent dilation and curettage for retained products of conception after a postpartum hemorrhage 1 year ago.
+2. She underwent dilation and curettage for retained products of conception after a postpartum hemorrhage 1 year ago and has noticed much lighter periods since.
 3. Pelvic examination is unremarkable.
 4. Pregnancy testing is negative, and thyroid, prolactin, and gonadotropin levels are normal.
 5. Hysterosalpingography demonstrates an irregular uterine cavity with multiple filling defects and poor distensibility.
 6. Hysteroscopy reveals dense fibrous adhesions bridging the uterine cavity.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Infertility with normal endocrine evaluation should prompt consideration of structural uterine causes.
-* Prior postpartum or postabortion curettage is a major risk factor for intrauterine adhesion formation.
-* Imaging may suggest cavity distortion, but hysteroscopy is both diagnostic and therapeutic.
-* Intrauterine scarring can present with infertility, decreased menstrual flow, recurrent pregnancy loss, or secondary amenorrhea.
+ Infertility with normal endocrine evaluation should prompt consideration of structural uterine causes.
+ Prior postpartum or postabortion curettage is a major risk factor for intrauterine adhesion formation.
+ Imaging may suggest cavity distortion, but hysteroscopy is both diagnostic and therapeutic.
+ Intrauterine scarring can present with infertility, decreased menstrual flow, recurrent pregnancy loss, or secondary amenorrhea.
 
 ==================================================
 
-CASE_ID: 057
-DIFFICULTY: hard
-SYSTEM: psychiatry
+CASE_ID 057
+DIFFICULTY hard
+SYSTEM psychiatry
 
-DIAGNOSIS:
+DIAGNOSIS
 Anti-NMDA receptor encephalitis
 
-ALIASES:
+ALIASES
 NMDA receptor encephalitis
 Autoimmune anti-NMDA receptor encephalitis
 Paraneoplastic anti-NR1 encephalitis
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 21-year-old woman presents with bizarre behavior.
 2. Her family reports a flu-like prodrome 2 weeks earlier.
 3. Examination shows agitation with intermittent orofacial dyskinesias.
 4. Cerebrospinal fluid demonstrates a mild lymphocytic pleocytosis, and routine toxicology screening is negative.
-5. EEG shows diffuse slowing with intermittent extreme delta brush, and pelvic ultrasonography identifies an ovarian mass.
-6. Cerebrospinal fluid testing detects antibodies against the NMDA receptor.
+5. EEG shows diffuse slowing with an intermittent rhythmic delta pattern, and pelvic ultrasonography identifies an ovarian mass.
+6. Cerebrospinal fluid testing detects antibodies directed against a neuronal cell-surface glutamate receptor.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* New-onset psychosis in a young patient should prompt consideration of autoimmune encephalitis when neurologic features emerge.
-* Movement abnormalities, seizures, dysautonomia, and language dysfunction help distinguish this disorder from primary psychiatric disease.
-* An associated ovarian teratoma may be present, but the diagnosis should still be considered even if no tumor is found.
-* CSF antibody testing confirms the diagnosis and guides immunotherapy and tumor-directed management.
+ New-onset psychosis in a young patient should prompt consideration of autoimmune encephalitis when neurologic features emerge.
+ Movement abnormalities, seizures, dysautonomia, and language dysfunction help distinguish this disorder from primary psychiatric disease.
+ An associated ovarian teratoma may be present, but the diagnosis should still be considered even if no tumor is found.
+ CSF antibody testing confirms the diagnosis and guides immunotherapy and tumor-directed management.
 
 ==================================================
 
-CASE_ID: 058
-DIFFICULTY: hard
-SYSTEM: pulmonology
+CASE_ID 058
+DIFFICULTY hard
+SYSTEM pulmonology
 
-DIAGNOSIS:
+DIAGNOSIS
 Pulmonary Langerhans cell histiocytosis
 
-ALIASES:
+ALIASES
 PLCH
 Smoking-related pulmonary Langerhans cell histiocytosis
 Adult pulmonary eosinophilic granuloma
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 32-year-old man presents with progressive shortness of breath.
 2. He has smoked two packs of cigarettes daily since high school.
 3. Examination shows scattered crackles without digital clubbing.
 4. Pulmonary function testing demonstrates a mixed obstructive-restrictive pattern with reduced diffusion capacity, and chest radiography shows upper-lung reticulonodular opacities.
 5. High-resolution CT reveals irregular nodules and bizarre-shaped cysts predominantly in the upper lobes with relative sparing of the costophrenic angles.
-6. Surgical lung biopsy demonstrates CD1a- and langerin-positive histiocytes forming eosinophil-rich granulomas.
+6. Surgical lung biopsy demonstrates CD1a- and langerin-positive histiocytes forming eosinophil-rich nodular lesions.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Smoking-related diffuse lung disease can present with a mixture of nodules and cysts before progressing to more advanced cystic destruction.
-* The distribution of cysts and nodules on HRCT helps distinguish PLCH from lymphangioleiomyomatosis and other cystic lung disorders.
-* Pneumothorax may be an early clue, but many patients present only with dyspnea and reduced diffusion capacity.
-* Tissue confirmation relies on identifying characteristic Langerhans cells by immunostaining.
+ Smoking-related diffuse lung disease can present with a mixture of nodules and cysts before progressing to more advanced cystic destruction.
+ The distribution of cysts and nodules on HRCT helps distinguish PLCH from lymphangioleiomyomatosis and other cystic lung disorders.
+ Pneumothorax may be an early clue, but many patients present only with dyspnea and reduced diffusion capacity.
+ Tissue confirmation relies on identifying characteristic Langerhans cells by immunostaining.
 
 ==================================================
 
-CASE_ID: 059
-DIFFICULTY: hard
-SYSTEM: hematology_oncology
+CASE_ID 059
+DIFFICULTY hard
+SYSTEM hematology_oncology
 
-DIAGNOSIS:
+DIAGNOSIS
 Pure red cell aplasia
 
-ALIASES:
+ALIASES
 PRCA
 Selective erythroid aplasia
 Acquired erythroblastopenia
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 58-year-old man presents with fatigue.
 2. He has unintentionally lost 10 pounds over several months but has no bleeding symptoms.
@@ -1754,147 +1759,148 @@ VIGNETTE_LINES:
 5. CT of the chest reveals an anterior mediastinal mass.
 6. Bone marrow biopsy demonstrates near-complete absence of erythroid precursors with preserved granulopoiesis and megakaryopoiesis.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Severe anemia with reticulocytopenia but preserved white blood cell and platelet counts localizes the problem to selective erythroid failure.
-* The differential includes thymoma-associated disease, autoimmune causes, medications, and parvovirus B19 infection.
-* An anterior mediastinal mass should raise suspicion for thymoma as an associated condition.
-* Bone marrow confirmation requires demonstration of selective erythroid aplasia with preservation of other cell lines.
+ Severe anemia with reticulocytopenia but preserved white blood cell and platelet counts localizes the problem to selective erythroid failure.
+ The differential includes thymoma-associated disease, autoimmune causes, medications, and parvovirus B19 infection.
+ An anterior mediastinal mass should raise suspicion for thymoma as an associated condition.
+ Bone marrow confirmation requires demonstration of selective erythroid aplasia with preservation of other cell lines.
 
 ==================================================
 
-CASE_ID: 060
-DIFFICULTY: hard
-SYSTEM: gastroenterology
+CASE_ID 060
+DIFFICULTY hard
+SYSTEM gastroenterology
 
-DIAGNOSIS:
+DIAGNOSIS
 Budd-Chiari syndrome
 
-ALIASES:
+ALIASES
 Hepatic vein thrombosis
 Hepatic venous outflow obstruction
 Primary Budd-Chiari syndrome
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 38-year-old woman presents with abdominal swelling.
 2. She started an estrogen-containing oral contraceptive 4 months ago.
 3. Examination shows tender hepatomegaly and shifting dullness.
 4. Liver studies reveal mildly elevated aminotransferases and bilirubin, and CBC is otherwise unremarkable.
-5. Doppler ultrasonography demonstrates absent flow in the hepatic veins with enlargement of the caudate lobe.
-6. Transjugular liver biopsy demonstrates centrilobular congestion and sinusoidal dilation consistent with hepatic venous outflow obstruction.
+5. Doppler ultrasonography demonstrates absent flow in the hepatic veins with compensatory enlargement of the caudate lobe.
+6. Transjugular liver biopsy demonstrates centrilobular congestion and sinusoidal dilation with preserved arterial inflow.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Hepatomegaly, ascites, and abdominal pain suggest hepatic outflow obstruction when infectious and cardiac causes are not explanatory.
-* Hypercoagulable states, myeloproliferative disorders, pregnancy, and exogenous estrogen are important risk factors for Budd-Chiari syndrome.
-* Doppler ultrasonography is a key imaging test that helps distinguish hepatic venous obstruction from portal vein thrombosis and cirrhosis.
-* Histology shows centrilobular congestion and ischemic injury when venous outflow is impaired.
+ Hepatomegaly, ascites, and abdominal pain suggest hepatic outflow obstruction when infectious and cardiac causes are not explanatory.
+ Hypercoagulable states, myeloproliferative disorders, pregnancy, and exogenous estrogen are important risk factors for Budd-Chiari syndrome.
+ Doppler ultrasonography is a key imaging test that helps distinguish hepatic venous obstruction from portal vein thrombosis and cirrhosis.
+ Histology shows centrilobular congestion and ischemic injury when venous outflow is impaired.
 
 ==================================================
-CASE_ID: 061
-DIFFICULTY: hard
-SYSTEM: nephrology
 
-DIAGNOSIS:
+CASE_ID 061
+DIFFICULTY hard
+SYSTEM nephrology
+
+DIAGNOSIS
 Alport syndrome
 
-ALIASES:
+ALIASES
 Hereditary nephritis
 X-linked Alport syndrome
 Type IV collagen nephropathy
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 16-year-old boy presents with dark urine.
 2. His maternal uncle developed kidney failure in his 20s.
 3. Examination shows mild hypertension without edema.
 4. Urinalysis demonstrates persistent hematuria with mild proteinuria, and serum creatinine is mildly elevated.
 5. Slit-lamp examination demonstrates anterior lenticonus, and audiometry shows bilateral high-frequency sensorineural hearing loss.
-6. Genetic testing identifies a pathogenic mutation in the COL4A5 gene.
+6. Genetic testing identifies a pathogenic variant in a type IV collagen gene.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Persistent glomerular hematuria in an adolescent with a family history of early kidney failure should prompt consideration of an inherited basement membrane disorder.
-* Type IV collagen defects can affect the kidney, cochlea, and lens, producing a multisystem presentation.
-* Hematuria may precede overt renal insufficiency by years, so the diagnosis can be delayed if extrarenal features are not recognized.
-* Molecular confirmation establishes the specific hereditary nephropathy and guides family counseling.
+ Persistent glomerular hematuria in an adolescent with a family history of early kidney failure should prompt consideration of an inherited basement membrane disorder.
+ Type IV collagen defects can affect the kidney, cochlea, and lens, producing a multisystem presentation.
+ Hematuria may precede overt renal insufficiency by years, so the diagnosis can be delayed if extrarenal features are not recognized.
+ Molecular confirmation establishes the specific hereditary nephropathy and guides family counseling.
 
 ==================================================
 
-CASE_ID: 062
-DIFFICULTY: hard
-SYSTEM: infectious_disease
+CASE_ID 062
+DIFFICULTY hard
+SYSTEM infectious_disease
 
-DIAGNOSIS:
+DIAGNOSIS
 Diphtheria
 
-ALIASES:
+ALIASES
 Respiratory diphtheria
 Corynebacterium diphtheriae infection
 Toxin-mediated pharyngeal diphtheria
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 9-year-old boy presents with sore throat.
 2. He recently immigrated and has received few childhood vaccinations.
 3. Examination shows cervical lymphadenopathy and a muffled voice.
 4. CBC shows mild leukocytosis, and neck radiography demonstrates prevertebral soft-tissue swelling.
 5. Oropharyngeal examination reveals an adherent gray-white membrane over the tonsils and uvula that bleeds when disturbed.
-6. Throat culture grows Corynebacterium diphtheriae producing exotoxin on Elek testing.
+6. Throat culture grows a toxin-producing gram-positive bacillus, and a toxin-detection assay is positive.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Upper airway infection with systemic toxicity in an undervaccinated child should prompt consideration of a toxin-mediated bacterial process.
-* The pseudomembrane forms from necrotic epithelium, fibrin, inflammatory cells, and organisms.
-* Myocarditis and neuropathy can occur because diphtheria toxin halts protein synthesis by ADP-ribosylating elongation factor 2.
-* Microbiologic confirmation of toxigenic C diphtheriae supports the diagnosis, but antitoxin should not wait for culture results.
+ Upper airway infection with systemic toxicity in an undervaccinated child should prompt consideration of a toxin-mediated bacterial process.
+ The pseudomembrane forms from necrotic epithelium, fibrin, inflammatory cells, and organisms.
+ Myocarditis and neuropathy can occur because diphtheria toxin halts protein synthesis by ADP-ribosylating elongation factor 2.
+ Microbiologic confirmation of toxigenic C diphtheriae supports the diagnosis, but antitoxin should not wait for culture results.
 
 ==================================================
 
-CASE_ID: 063
-DIFFICULTY: hard
-SYSTEM: endocrinology
+CASE_ID 063
+DIFFICULTY hard
+SYSTEM endocrinology
 
-DIAGNOSIS:
+DIAGNOSIS
 Multiple endocrine neoplasia type 1
 
-ALIASES:
+ALIASES
 MEN 1 syndrome
 Wermer syndrome
 MEN1-associated endocrine neoplasia
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 31-year-old woman presents with recurrent kidney stones.
 2. Her father underwent surgery for a pancreatic tumor in his 40s.
 3. Examination shows no thyroid enlargement or cushingoid features.
 4. Laboratory studies demonstrate hypercalcemia with an inappropriately elevated parathyroid hormone level.
 5. MRI of the sella reveals a small pituitary lesion, and fasting gastrin remains elevated after acid suppression is withheld.
-6. Genetic testing identifies a pathogenic mutation in the MEN1 gene.
+6. Genetic testing identifies a germline variant in a tumor-suppressor gene that segregates with the affected relatives.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Simultaneous evidence of parathyroid, pituitary, and pancreatic endocrine disease should prompt consideration of a syndromic disorder rather than isolated lesions.
-* Primary hyperparathyroidism is often the earliest manifestation and may present through nephrolithiasis or bone disease.
-* Family history across generations is a major clue for an autosomal dominant endocrine neoplasia syndrome.
-* Molecular confirmation with MEN1 testing establishes the diagnosis and supports surveillance of at-risk relatives.
+ Simultaneous evidence of parathyroid, pituitary, and pancreatic endocrine disease should prompt consideration of a syndromic disorder rather than isolated lesions.
+ Primary hyperparathyroidism is often the earliest manifestation and may present through nephrolithiasis or bone disease.
+ Family history across generations is a major clue for an autosomal dominant endocrine neoplasia syndrome.
+ Molecular confirmation with MEN1 testing establishes the diagnosis and supports surveillance of at-risk relatives.
 
 ==================================================
 
-CASE_ID: 064
-DIFFICULTY: hard
-SYSTEM: cardiology
+CASE_ID 064
+DIFFICULTY hard
+SYSTEM cardiology
 
-DIAGNOSIS:
+DIAGNOSIS
 Coarctation of the aorta
 
-ALIASES:
+ALIASES
 Adult aortic coarctation
 Juxtaductal aortic coarctation
 Congenital narrowing of the thoracic aorta
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 22-year-old man presents with headaches.
 2. He reports poor exercise tolerance since adolescence but has never had cardiac surgery.
@@ -1903,191 +1909,1391 @@ VIGNETTE_LINES:
 5. CT angiography reveals focal narrowing of the aorta just distal to the left subclavian artery with prominent collateral intercostal vessels.
 6. Cardiac catheterization demonstrates a significant systolic pressure gradient across the narrowed segment.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Upper-extremity hypertension with diminished lower-extremity pulses should prompt consideration of an obstructive lesion of the thoracic aorta.
-* Chronic obstruction produces collateral blood flow through the intercostal arteries, leading to rib notching on imaging.
-* Left ventricular hypertrophy results from longstanding pressure overload proximal to the coarctation.
-* Hemodynamic confirmation demonstrates the physiologic significance of the anatomic narrowing before intervention.
+ Upper-extremity hypertension with diminished lower-extremity pulses should prompt consideration of an obstructive lesion of the thoracic aorta.
+ Chronic obstruction produces collateral blood flow through the intercostal arteries, leading to rib notching on imaging.
+ Left ventricular hypertrophy results from longstanding pressure overload proximal to the coarctation.
+ Hemodynamic confirmation demonstrates the physiologic significance of the anatomic narrowing before intervention.
 
 ==================================================
 
-CASE_ID: 065
-DIFFICULTY: hard
-SYSTEM: hematology_oncology
+CASE_ID 065
+DIFFICULTY hard
+SYSTEM hematology_oncology
 
-DIAGNOSIS:
+DIAGNOSIS
 Acute promyelocytic leukemia
 
-ALIASES:
+ALIASES
 APL
 Acute myeloid leukemia with t(15;17)
 Promyelocytic leukemia
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 34-year-old woman presents with fatigue.
 2. She reports frequent nosebleeds and easy bruising over the past 2 weeks.
 3. Examination shows scattered petechiae without lymphadenopathy.
 4. CBC demonstrates anemia and thrombocytopenia, while coagulation studies show prolonged PT and low fibrinogen.
-5. Peripheral smear shows numerous abnormal promyelocytes, and bone marrow evaluation suggests a hypergranular myeloid neoplasm.
-6. Molecular testing identifies the PML-RARA fusion transcript.
+5. Peripheral smear shows numerous abnormal myeloid precursors packed with cytoplasmic granules, some containing bundles of needle-like inclusions.
+6. Molecular testing identifies the characteristic balanced translocation, and the coagulopathy improves rapidly once all-trans retinoic acid is started.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* An acute leukemia presenting with bleeding and consumptive coagulopathy should raise concern for acute promyelocytic leukemia.
-* Disseminated intravascular coagulation is a major early complication driven by procoagulant granule contents from malignant promyelocytes.
-* Smear and marrow findings narrow the diagnosis, but molecular confirmation is needed because treatment differs from other AML subtypes.
-* Recognition matters urgently because all-trans retinoic acid targets the fusion protein and can rapidly reverse the coagulopathy.
+ An acute leukemia presenting with bleeding and consumptive coagulopathy should raise concern for acute promyelocytic leukemia.
+ Disseminated intravascular coagulation is a major early complication driven by procoagulant granule contents from malignant promyelocytes.
+ Smear and marrow findings narrow the diagnosis, but molecular confirmation is needed because treatment differs from other AML subtypes.
+ Recognition matters urgently because all-trans retinoic acid targets the fusion protein and can rapidly reverse the coagulopathy.
 
 ==================================================
 
-CASE_ID: 066
-DIFFICULTY: hard
-SYSTEM: gastroenterology
+CASE_ID 066
+DIFFICULTY hard
+SYSTEM gastroenterology
 
-DIAGNOSIS:
+DIAGNOSIS
 Amebic liver abscess
 
-ALIASES:
+ALIASES
 Entamoeba histolytica liver abscess
 Extraintestinal amebiasis
 Hepatic amebic abscess
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 42-year-old man presents with fever.
 2. He returned 1 month ago from rural India after several weeks of self-limited bloody diarrhea.
 3. Examination shows right upper quadrant tenderness without jaundice.
 4. Liver studies demonstrate elevated alkaline phosphatase with only mild aminotransferase elevation, and chest radiography shows elevation of the right hemidiaphragm.
 5. CT of the abdomen reveals a solitary hypodense lesion in the right hepatic lobe.
-6. Serologic testing is positive for Entamoeba histolytica, and aspirated material has the characteristic anchovy-paste appearance without bacterial growth.
+6. Serologic testing for an invasive protozoan is positive, and aspiration yields sterile reddish-brown anchovy paste material with no bacterial growth.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Fever and right upper quadrant pain weeks after dysentery should prompt consideration of a hepatic complication of invasive intestinal amebiasis.
-* Right lobe predominance reflects portal venous drainage patterns from the colon.
-* The differential includes pyogenic liver abscess, hydatid disease, and necrotic tumor, especially when stool studies are already negative.
-* Serology and characteristic aspirate features help confirm an amebic rather than pyogenic source.
+ Fever and right upper quadrant pain weeks after dysentery should prompt consideration of a hepatic complication of invasive intestinal amebiasis.
+ Right lobe predominance reflects portal venous drainage patterns from the colon.
+ The differential includes pyogenic liver abscess, hydatid disease, and necrotic tumor, especially when stool studies are already negative.
+ Serology and characteristic aspirate features help confirm an amebic rather than pyogenic source.
 
 ==================================================
 
-CASE_ID: 067
-DIFFICULTY: hard
-SYSTEM: neurology
+CASE_ID 067
+DIFFICULTY hard
+SYSTEM neurology
 
-DIAGNOSIS:
+DIAGNOSIS
 Friedreich ataxia
 
-ALIASES:
+ALIASES
 Hereditary ataxia with cardiomyopathy
 FXN-related ataxia
 Spinocerebellar degeneration due to frataxin deficiency
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 14-year-old boy presents with gait difficulty.
 2. His older sister has gradually developed similar problems.
 3. Examination shows a wide-based gait and absent ankle reflexes.
 4. Vibration sense is decreased in the lower extremities, and ECG demonstrates left ventricular hypertrophy.
 5. Echocardiography reveals hypertrophic cardiomyopathy, and spine MRI is unrevealing.
-6. Genetic testing identifies a GAA trinucleotide repeat expansion in the FXN gene.
+6. Genetic testing identifies a homozygous intronic trinucleotide repeat expansion in the causative gene.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Progressive gait impairment in adolescence with loss of proprioception and absent reflexes should suggest a hereditary neurodegenerative process.
-* Friedreich ataxia involves degeneration of spinocerebellar tracts, dorsal columns, and corticospinal tracts.
-* Hypertrophic cardiomyopathy is a major extracerebellar clue and an important cause of morbidity in this disorder.
-* Molecular testing confirms frataxin repeat expansion after the characteristic neurologic and cardiac pattern is recognized.
+ Progressive gait impairment in adolescence with loss of proprioception and absent reflexes should suggest a hereditary neurodegenerative process.
+ Friedreich ataxia involves degeneration of spinocerebellar tracts, dorsal columns, and corticospinal tracts.
+ Hypertrophic cardiomyopathy is a major extracerebellar clue and an important cause of morbidity in this disorder.
+ Molecular testing confirms frataxin repeat expansion after the characteristic neurologic and cardiac pattern is recognized.
 
 ==================================================
 
-CASE_ID: 068
-DIFFICULTY: hard
-SYSTEM: pediatrics
+CASE_ID 068
+DIFFICULTY hard
+SYSTEM pediatrics
 
-DIAGNOSIS:
+DIAGNOSIS
 Galactosemia
 
-ALIASES:
+ALIASES
 Classic galactosemia
 Galactose-1-phosphate uridyltransferase deficiency
 GALT deficiency
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 12-day-old girl presents with vomiting.
 2. Her symptoms began shortly after feeds were switched from breast milk to standard formula.
 3. Examination shows jaundice and hepatomegaly.
-4. Laboratory studies reveal direct hyperbilirubinemia, hypoglycemia, and metabolic acidosis, and urinalysis is positive for reducing substances.
+4. Laboratory studies reveal direct hyperbilirubinemia, hypoglycemia, and metabolic acidosis, and urinalysis is positive for reducing substances but negative on the glucose-specific dipstick.
 5. Blood cultures grow Escherichia coli, and ophthalmologic examination shows early lens clouding.
-6. Enzyme assay demonstrates absent galactose-1-phosphate uridyltransferase activity.
+6. Enzyme assay demonstrates near-absent activity of the enzyme responsible for metabolizing a milk-derived sugar.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Neonatal liver dysfunction with reducing substances in the urine should prompt consideration of an inborn error of carbohydrate metabolism.
-* Accumulation of galactose-1-phosphate causes hepatic toxicity, while galactitol contributes to cataract formation.
-* Severe neonatal E coli sepsis is a classic complication of untreated galactosemia.
-* Enzyme deficiency testing confirms classic galactosemia and guides urgent dietary lactose and galactose restriction.
+ Neonatal liver dysfunction with reducing substances in the urine should prompt consideration of an inborn error of carbohydrate metabolism.
+ Accumulation of galactose-1-phosphate causes hepatic toxicity, while galactitol contributes to cataract formation.
+ Severe neonatal E coli sepsis is a classic complication of untreated galactosemia.
+ Enzyme deficiency testing confirms classic galactosemia and guides urgent dietary lactose and galactose restriction.
 
 ==================================================
 
-CASE_ID: 069
-DIFFICULTY: hard
-SYSTEM: rheumatology
+CASE_ID 069
+DIFFICULTY hard
+SYSTEM rheumatology
 
-DIAGNOSIS:
+DIAGNOSIS
 Ankylosing spondylitis
 
-ALIASES:
+ALIASES
 Axial spondyloarthritis
 Radiographic axial spondyloarthritis
 Inflammatory ankylosing spondyloarthropathy
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 24-year-old man presents with back pain.
-2. He says the pain is worst in the morning and improves after he plays basketball.
+2. He says the pain is worst in the morning with prolonged stiffness and improves after he plays basketball.
 3. Examination shows limited lumbar flexion and reduced chest expansion.
 4. ESR and CRP are elevated, while rheumatoid factor and anti-CCP antibodies are negative.
 5. Pelvic MRI demonstrates bilateral inflammatory sacroiliitis with erosive change.
-6. Genetic testing identifies HLA-B27 positivity in the setting of classic axial inflammatory disease.
+6. Genetic testing is positive for the class I HLA allele strongly associated with axial spondyloarthritis.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Inflammatory back pain that improves with activity should be distinguished from mechanical back pain in young adults.
-* Reduced chest expansion reflects costovertebral involvement and helps localize disease to the axial skeleton.
-* MRI can reveal active sacroiliac inflammation before radiographs show advanced structural fusion.
-* HLA-B27 supports the diagnosis but must be interpreted within the clinical and imaging pattern of axial spondyloarthritis.
+ Inflammatory back pain that improves with activity should be distinguished from mechanical back pain in young adults.
+ Reduced chest expansion reflects costovertebral involvement and helps localize disease to the axial skeleton.
+ MRI can reveal active sacroiliac inflammation before radiographs show advanced structural fusion.
+ HLA-B27 supports the diagnosis but must be interpreted within the clinical and imaging pattern of axial spondyloarthritis.
 
 ==================================================
 
-CASE_ID: 070
-DIFFICULTY: hard
-SYSTEM: pharmacology_toxicology
+CASE_ID 070
+DIFFICULTY hard
+SYSTEM pharmacology_toxicology
 
-DIAGNOSIS:
+DIAGNOSIS
 Lead poisoning
 
-ALIASES:
+ALIASES
 Plumbism
 Toxic lead exposure
 Chronic lead intoxication
 
-VIGNETTE_LINES:
+VIGNETTE_LINES
 
 1. A 6-year-old boy presents with abdominal pain.
 2. His family recently moved into a 1940s apartment undergoing renovation.
 3. Examination shows decreased attention span and mild weakness of wrist extension.
 4. CBC demonstrates microcytic anemia, and abdominal radiography shows radiopaque flecks in the bowel.
 5. Peripheral smear reveals basophilic stippling, and free erythrocyte protoporphyrin is elevated.
-6. Whole-blood testing shows a markedly elevated lead concentration.
+6. Whole-blood testing reveals a markedly elevated concentration of a heavy metal.
 
-TEACHING_POINTS:
+TEACHING_POINTS
 
-* Abdominal pain, cognitive changes, and anemia in a child should prompt consideration of an environmental toxin exposure.
-* Lead inhibits several enzymes in heme synthesis, producing microcytic anemia and elevated erythrocyte protoporphyrin.
-* Basophilic stippling reflects impaired ribosomal RNA degradation in erythrocytes.
-* Whole-blood lead measurement confirms poisoning and guides chelation therapy when levels are sufficiently high.
+ Abdominal pain, cognitive changes, and anemia in a child should prompt consideration of an environmental toxin exposure.
+ Lead inhibits several enzymes in heme synthesis, producing microcytic anemia and elevated erythrocyte protoporphyrin.
+ Basophilic stippling reflects impaired ribosomal RNA degradation in erythrocytes.
+ Whole-blood lead measurement confirms poisoning and guides chelation therapy when levels are sufficiently high.
+
+==================================================
+
+CASE_ID 071
+DIFFICULTY medium
+SYSTEM cardiology
+
+DIAGNOSIS
+Acute myocardial infarction
+
+ALIASES
+STEMI
+ST-elevation myocardial infarction
+Acute coronary occlusion
+
+VIGNETTE_LINES
+
+1. A 62-year-old man presents with sudden crushing chest pain.
+2. The pain began 40 minutes ago, radiates to the left arm and jaw, and is accompanied by diaphoresis and nausea.
+3. He has hypertension, type 2 diabetes, and a 30-pack-year smoking history.
+4. Examination shows a diaphoretic, anxious man with an S4 gallop and no murmurs.
+5. ECG demonstrates ST-segment elevation in leads II, III, and aVF with reciprocal changes in the lateral leads.
+6. Serial troponin levels rise, and coronary angiography reveals acute total occlusion of the right coronary artery.
+
+TEACHING_POINTS
+
+ Crushing substernal chest pain radiating to the arm or jaw with diaphoresis is the classic presentation of acute coronary occlusion.
+ ST-elevation in the inferior leads (II, III, aVF) localizes injury to the territory usually supplied by the right coronary artery.
+ Troponin is the most sensitive and specific biomarker and rises within a few hours of infarction.
+ Time to reperfusion is critical, so rapid ECG and revascularization are the priorities.
+
+==================================================
+
+CASE_ID 072
+DIFFICULTY medium
+SYSTEM cardiology
+
+DIAGNOSIS
+Infective endocarditis
+
+ALIASES
+Bacterial endocarditis
+Subacute infective endocarditis
+Endocardial vegetative infection
+
+VIGNETTE_LINES
+
+1. A 41-year-old man presents with several weeks of low-grade fever and fatigue.
+2. He underwent a dental extraction about a month ago and was told years earlier that he had a heart murmur.
+3. Examination reveals a new regurgitant murmur, splinter hemorrhages under the nails, and tender nodules on the fingertips.
+4. Funduscopy shows retinal hemorrhages with pale centers, and urinalysis reveals microscopic hematuria.
+5. Multiple blood cultures grow gram-positive cocci in chains.
+6. Transesophageal echocardiography demonstrates oscillating vegetations on the mitral valve.
+
+TEACHING_POINTS
+
+ Fever with a new regurgitant murmur should raise concern for infective endocarditis.
+ Peripheral stigmata include splinter hemorrhages, Osler nodes, Janeway lesions, and Roth spots.
+ Recent dental or invasive procedures can seed previously abnormal valves with oral flora.
+ Diagnosis rests on blood cultures plus echocardiographic evidence of valvular vegetations.
+
+==================================================
+
+CASE_ID 073
+DIFFICULTY medium
+SYSTEM cardiology
+
+DIAGNOSIS
+Acute rheumatic fever
+
+ALIASES
+Rheumatic fever
+Post-streptococcal rheumatic fever
+ARF
+
+VIGNETTE_LINES
+
+1. A 9-year-old boy presents with painful, swollen joints.
+2. The knees and ankles were affected first, and now the wrists hurt while the knees have improved.
+3. He had a sore throat about 3 weeks ago that was never treated.
+4. Examination reveals a new heart murmur, firm nodules over the elbows, and a pink ring-shaped rash on the trunk.
+5. Over the following days he develops involuntary, irregular jerking movements of the hands and face.
+6. Antistreptolysin O titers are markedly elevated, and inflammatory markers are high.
+
+TEACHING_POINTS
+
+ A migratory polyarthritis after an untreated streptococcal pharyngitis suggests a post-infectious immune process.
+ Major diagnostic criteria include carditis, polyarthritis, chorea, subcutaneous nodules, and erythema marginatum.
+ Carditis is the most serious manifestation and can cause chronic valvular disease years later.
+ Evidence of preceding streptococcal infection, such as an elevated ASO titer, supports the diagnosis.
+
+==================================================
+
+CASE_ID 074
+DIFFICULTY medium
+SYSTEM pulmonology
+
+DIAGNOSIS
+Pneumococcal pneumonia
+
+ALIASES
+Community-acquired lobar pneumonia
+Bacterial lobar pneumonia
+Typical pneumonia
+
+VIGNETTE_LINES
+
+1. A 58-year-old man presents with fever, productive cough, and pleuritic chest pain.
+2. His symptoms began abruptly yesterday with a single shaking chill.
+3. He coughs up thick rust-colored sputum.
+4. Examination reveals bronchial breath sounds, dullness to percussion, and increased tactile fremitus over the right lower lobe.
+5. Chest radiography shows dense consolidation confined to the right lower lobe with air bronchograms.
+6. Sputum Gram stain reveals lancet-shaped gram-positive diplococci, and culture grows alpha-hemolytic colonies.
+
+TEACHING_POINTS
+
+ Abrupt fever, productive cough, and pleuritic pain with lobar consolidation suggest typical bacterial pneumonia.
+ Rust-colored sputum and lobar consolidation are classic for the most common community-acquired pathogen.
+ Signs of consolidation include bronchial breath sounds, dullness, and increased fremitus.
+ Sputum Gram stain and culture help guide targeted antibiotic therapy.
+
+==================================================
+
+CASE_ID 075
+DIFFICULTY medium
+SYSTEM pulmonology
+
+DIAGNOSIS
+Pulmonary embolism
+
+ALIASES
+Acute PE
+Venous thromboembolism
+Pulmonary thromboembolism
+
+VIGNETTE_LINES
+
+1. A 55-year-old woman presents with sudden shortness of breath and pleuritic chest pain.
+2. She returned yesterday from a 12-hour flight and notes that her right calf is swollen and tender.
+3. She recently started an estrogen-containing contraceptive.
+4. Examination shows tachycardia, tachypnea, and clear lungs, with oxygen saturation of 89% on room air.
+5. ECG shows sinus tachycardia, and arterial blood gas reveals hypoxemia with respiratory alkalosis.
+6. CT pulmonary angiography demonstrates a filling defect in the right main pulmonary artery.
+
+TEACHING_POINTS
+
+ Sudden dyspnea and pleuritic chest pain with hypoxemia should prompt evaluation for pulmonary embolism.
+ Risk factors include immobilization, recent travel, estrogen use, malignancy, and inherited thrombophilias.
+ Sinus tachycardia is the most common ECG finding; the classic S1Q3T3 pattern is uncommon.
+ CT pulmonary angiography is the test of choice to demonstrate intraluminal filling defects.
+
+==================================================
+
+CASE_ID 076
+DIFFICULTY medium
+SYSTEM pulmonology
+
+DIAGNOSIS
+Chronic obstructive pulmonary disease
+
+ALIASES
+COPD
+Emphysema
+Chronic bronchitis
+
+VIGNETTE_LINES
+
+1. A 66-year-old man presents with progressive shortness of breath and a chronic productive cough.
+2. He has smoked one pack of cigarettes daily for 45 years.
+3. Examination reveals a barrel-shaped chest, prolonged expiration, and pursed-lip breathing.
+4. Chest radiography shows hyperinflated lungs with flattened diaphragms and an increased retrosternal air space.
+5. Spirometry demonstrates a reduced FEV1FVC ratio that does not fully reverse after bronchodilator.
+6. Diffusion capacity is reduced, and CT shows upper-lobe predominant destruction of alveolar walls.
+
+TEACHING_POINTS
+
+ Chronic dyspnea and productive cough in a longtime smoker suggest chronic obstructive lung disease.
+ Spirometry showing a reduced, poorly reversible FEV1FVC ratio confirms airflow obstruction.
+ Hyperinflation with flattened diaphragms reflects air trapping and loss of elastic recoil.
+ Smoking cessation is the single most important intervention to slow progression.
+
+==================================================
+
+CASE_ID 077
+DIFFICULTY medium
+SYSTEM gastroenterology
+
+DIAGNOSIS
+Acute appendicitis
+
+ALIASES
+Appendicitis
+Acute appendiceal inflammation
+Suppurative appendicitis
+
+VIGNETTE_LINES
+
+1. An 18-year-old man presents with abdominal pain that began around the navel and later shifted to the right lower quadrant.
+2. He has anorexia, nausea, and a low-grade fever.
+3. Examination reveals tenderness two-thirds of the way from the navel to the right hip bone, with guarding.
+4. Pressing the left lower quadrant elicits pain in the right lower quadrant, and pain worsens with passive extension of the right hip.
+5. CBC shows a neutrophil-predominant leukocytosis.
+6. CT of the abdomen reveals a dilated, thick-walled tubular structure in the right lower quadrant with surrounding fat stranding.
+
+TEACHING_POINTS
+
+ Periumbilical pain that migrates to the right lower quadrant with anorexia is the classic sequence.
+ McBurney point tenderness, Rovsing sign, and a positive psoas sign support the diagnosis.
+ Leukocytosis and imaging showing a dilated, non-compressible appendix aid confirmation.
+ Prompt surgical evaluation is important because of the risk of perforation.
+
+==================================================
+
+CASE_ID 078
+DIFFICULTY medium
+SYSTEM gastroenterology
+
+DIAGNOSIS
+Acute pancreatitis
+
+ALIASES
+Acute pancreatitis
+Gallstone pancreatitis
+Alcohol-induced pancreatitis
+
+VIGNETTE_LINES
+
+1. A 48-year-old man presents with severe epigastric pain radiating to the back.
+2. The pain improves when he leans forward and worsens when he lies flat.
+3. He reports heavy alcohol use over the weekend and has vomited repeatedly.
+4. Examination shows marked epigastric tenderness, and in severe cases bluish discoloration appears around the umbilicus or flanks.
+5. Serum lipase is elevated to more than three times the upper limit of normal.
+6. Contrast-enhanced CT reveals an edematous, inflamed pancreas with surrounding fluid.
+
+TEACHING_POINTS
+
+ Severe epigastric pain radiating to the back that eases when leaning forward suggests pancreatic inflammation.
+ Gallstones and alcohol are the two most common causes.
+ Lipase elevated more than threefold is the key laboratory finding.
+ Cullen and Grey Turner signs indicate hemorrhagic, severe disease.
+
+==================================================
+
+CASE_ID 079
+DIFFICULTY medium
+SYSTEM gastroenterology
+
+DIAGNOSIS
+Wilson disease
+
+ALIASES
+Hepatolenticular degeneration
+Copper overload disease
+ATP7B-related copper toxicosis
+
+VIGNETTE_LINES
+
+1. A 20-year-old man presents with a worsening tremor and difficulty speaking.
+2. His family reports personality changes and declining school performance over the past year.
+3. He has also had episodes of jaundice and fatigue.
+4. Slit-lamp examination reveals golden-brown rings at the periphery of the corneas.
+5. Laboratory studies show a low serum ceruloplasmin with elevated urinary copper excretion.
+6. Liver biopsy demonstrates markedly increased hepatic copper content.
+
+TEACHING_POINTS
+
+ A young patient with combined liver disease and new neuropsychiatric symptoms should prompt evaluation for a copper-handling disorder.
+ Kayser-Fleischer rings reflect copper deposition in the cornea.
+ Low ceruloplasmin with high urinary copper supports the diagnosis.
+ Early recognition matters because chelation can prevent irreversible damage.
+
+==================================================
+
+CASE_ID 080
+DIFFICULTY medium
+SYSTEM endocrinology
+
+DIAGNOSIS
+Diabetic ketoacidosis
+
+ALIASES
+DKA
+Hyperglycemic ketoacidosis
+Type 1 diabetes with ketoacidosis
+
+VIGNETTE_LINES
+
+1. A 16-year-old girl presents with nausea, vomiting, and abdominal pain.
+2. Over the past few weeks she has had excessive thirst, frequent urination, and unintentional weight loss.
+3. Examination reveals deep, rapid breathing and a fruity odor on the breath.
+4. She is drowsy with dry mucous membranes and poor skin turgor.
+5. Laboratory studies show hyperglycemia, a high anion-gap metabolic acidosis, and ketones in the serum and urine.
+6. Further testing reveals low insulin, elevated glucagon, and autoantibodies against pancreatic islet antigens.
+
+TEACHING_POINTS
+
+ Hyperglycemia with a high anion-gap acidosis and ketosis defines diabetic ketoacidosis.
+ Deep rapid (Kussmaul) breathing and a fruity breath odor reflect ketoacidosis and respiratory compensation.
+ It is often the first presentation of autoimmune type 1 diabetes in young patients.
+ Management centers on fluids, insulin, and careful potassium repletion.
+
+==================================================
+
+CASE_ID 081
+DIFFICULTY medium
+SYSTEM endocrinology
+
+DIAGNOSIS
+Graves disease
+
+ALIASES
+Toxic diffuse goiter
+Autoimmune hyperthyroidism
+Graves hyperthyroidism
+
+VIGNETTE_LINES
+
+1. A 34-year-old woman presents with palpitations, heat intolerance, and unintentional weight loss.
+2. She reports anxiety, tremor, and more frequent bowel movements.
+3. Examination reveals a diffusely enlarged, non-tender thyroid with an overlying bruit, warm moist skin, and a fine tremor.
+4. She has bilateral eye protrusion with lid retraction and raised, thickened skin over the shins.
+5. Laboratory studies show a suppressed TSH with an elevated free T4.
+6. Radioactive iodine uptake is diffusely increased, and a stimulating autoantibody directed against the TSH receptor is detected.
+
+TEACHING_POINTS
+
+ Hyperthyroidism with a diffuse goiter, eye findings, and pretibial changes points to an autoimmune cause.
+ A suppressed TSH with elevated free T4 confirms thyrotoxicosis.
+ Diffusely increased radioiodine uptake distinguishes it from thyroiditis.
+ A stimulating antibody to the TSH receptor drives the gland overactivity.
+
+==================================================
+
+CASE_ID 082
+DIFFICULTY medium
+SYSTEM endocrinology
+
+DIAGNOSIS
+Primary adrenal insufficiency
+
+ALIASES
+Addison disease
+Autoimmune adrenalitis
+Chronic primary hypoadrenalism
+
+VIGNETTE_LINES
+
+1. A 39-year-old woman presents with months of fatigue, weight loss, and dizziness on standing.
+2. She craves salty foods and has noticed darkening of the skin, especially over the knuckles and inside the mouth.
+3. Examination reveals orthostatic hypotension and diffuse hyperpigmentation.
+4. Laboratory studies show hyponatremia, hyperkalemia, and mild metabolic acidosis.
+5. Morning cortisol is low and fails to rise appropriately after synthetic ACTH administration.
+6. Plasma ACTH is markedly elevated, and adrenal autoantibodies are present.
+
+TEACHING_POINTS
+
+ Fatigue, weight loss, salt craving, and hyperpigmentation suggest primary adrenal insufficiency.
+ Hyponatremia and hyperkalemia reflect loss of both cortisol and aldosterone.
+ Failure of cortisol to rise after ACTH stimulation confirms adrenal-level failure.
+ Hyperpigmentation results from elevated ACTH-precursor peptides stimulating melanocytes.
+
+==================================================
+
+CASE_ID 083
+DIFFICULTY medium
+SYSTEM neurology
+
+DIAGNOSIS
+Multiple sclerosis
+
+ALIASES
+MS
+Relapsing-remitting demyelinating disease
+Multiple sclerosis
+
+VIGNETTE_LINES
+
+1. A 28-year-old woman presents with blurred vision and pain in one eye on movement.
+2. Two months ago she had transient numbness and tingling in both legs that resolved on its own.
+3. She reports that a hot shower briefly worsens her symptoms.
+4. Examination reveals an afferent pupillary defect and impaired limb coordination.
+5. MRI of the brain shows multiple ovoid white-matter lesions oriented perpendicular to the ventricles.
+6. Cerebrospinal fluid analysis reveals oligoclonal bands that are not present in the serum.
+
+TEACHING_POINTS
+
+ Neurologic deficits separated in time and space in a young woman suggest a demyelinating disorder.
+ Optic neuritis and transient worsening with heat (Uhthoff phenomenon) are common early clues.
+ MRI shows periventricular white-matter lesions (Dawson fingers).
+ CSF oligoclonal bands support intrathecal immunoglobulin production.
+
+==================================================
+
+CASE_ID 084
+DIFFICULTY medium
+SYSTEM neurology
+
+DIAGNOSIS
+Guillain-Barré syndrome
+
+ALIASES
+GBS
+Acute inflammatory demyelinating polyradiculoneuropathy
+Acute ascending paralysis
+
+VIGNETTE_LINES
+
+1. A 32-year-old man presents with progressive weakness in both legs that is now spreading to his arms.
+2. He had a diarrheal illness about 2 weeks ago.
+3. Examination reveals symmetric ascending weakness with absent deep tendon reflexes.
+4. Sensation is relatively preserved, though he reports tingling in the feet.
+5. Cerebrospinal fluid shows an elevated protein with a normal cell count.
+6. Nerve conduction studies reveal an acute demyelinating pattern, and vital capacity is monitored for respiratory decline.
+
+TEACHING_POINTS
+
+ Ascending symmetric weakness with areflexia after a recent infection suggests an acute demyelinating polyneuropathy.
+ A preceding diarrheal or respiratory illness is a common trigger.
+ CSF shows elevated protein with a normal cell count (albuminocytologic dissociation).
+ Respiratory function must be monitored because of the risk of diaphragmatic weakness.
+
+==================================================
+
+CASE_ID 085
+DIFFICULTY medium
+SYSTEM neurology
+
+DIAGNOSIS
+Bacterial meningitis
+
+ALIASES
+Meningococcal meningitis
+Acute pyogenic meningitis
+Acute bacterial meningitis
+
+VIGNETTE_LINES
+
+1. A 19-year-old college student presents with fever, severe headache, and neck stiffness.
+2. Symptoms began abruptly this morning, and she now avoids bright light.
+3. She lives in a crowded dormitory.
+4. Examination reveals nuchal rigidity, and flexing the neck causes involuntary hip and knee flexion.
+5. A non-blanching petechial rash spreads rapidly across the trunk and limbs.
+6. Lumbar puncture reveals cloudy fluid with high neutrophils, high protein, and low glucose, and Gram stain shows gram-negative diplococci.
+
+TEACHING_POINTS
+
+ Fever, headache, neck stiffness, and photophobia suggest meningitis.
+ A rapidly spreading petechial or purpuric rash suggests an encapsulated organism and possible sepsis.
+ CSF with high neutrophils, high protein, and low glucose indicates bacterial infection.
+ Empiric antibiotics should not be delayed for imaging or lumbar puncture when meningitis is suspected.
+
+==================================================
+
+CASE_ID 086
+DIFFICULTY medium
+SYSTEM nephrology
+
+DIAGNOSIS
+Minimal change disease
+
+ALIASES
+Minimal change nephrotic syndrome
+Lipoid nephrosis
+Nil disease
+
+VIGNETTE_LINES
+
+1. A 4-year-old boy presents with puffy eyes and swollen legs.
+2. His parents note that his urine has been foamy.
+3. Examination reveals periorbital and lower-extremity edema without hypertension.
+4. Urinalysis shows heavy proteinuria without hematuria, and serum albumin is low.
+5. Serum cholesterol is elevated, and renal function is normal.
+6. Electron microscopy of a kidney biopsy shows diffuse effacement of podocyte foot processes with normal findings on light microscopy.
+
+TEACHING_POINTS
+
+ Nephrotic syndrome in a young child is most often due to minimal change disease.
+ Selective proteinuria with a bland sediment and normal complement is characteristic.
+ Light microscopy is normal, while electron microscopy shows foot-process effacement.
+ It is typically highly responsive to corticosteroids.
+
+==================================================
+
+CASE_ID 087
+DIFFICULTY medium
+SYSTEM nephrology
+
+DIAGNOSIS
+Poststreptococcal glomerulonephritis
+
+ALIASES
+PSGN
+Acute post-infectious glomerulonephritis
+Post-streptococcal GN
+
+VIGNETTE_LINES
+
+1. A 7-year-old boy presents with dark, cola-colored urine and puffy eyes.
+2. He had a skin infection about 2 weeks ago.
+3. Examination reveals periorbital edema and elevated blood pressure.
+4. Urinalysis shows hematuria with red blood cell casts and mild proteinuria.
+5. Serum complement C3 is low, and antistreptolysin O titers are elevated.
+6. Kidney biopsy shows a hypercellular glomerulus, and electron microscopy reveals subepithelial hump-shaped deposits.
+
+TEACHING_POINTS
+
+ Cola-colored urine and edema about two weeks after a streptococcal infection suggest a post-infectious nephritis.
+ A nephritic sediment with red-cell casts distinguishes it from nephrotic syndromes.
+ Low C3 with elevated antistreptococcal titers supports the diagnosis.
+ Subepithelial humps are the classic electron microscopy finding.
+
+==================================================
+
+CASE_ID 088
+DIFFICULTY medium
+SYSTEM nephrology
+
+DIAGNOSIS
+IgA nephropathy
+
+ALIASES
+Berger disease
+Mesangial IgA glomerulonephritis
+IgA nephropathy
+
+VIGNETTE_LINES
+
+1. A 24-year-old man presents with an episode of visible blood in the urine.
+2. The dark urine appeared within a day or two of the onset of a sore throat.
+3. He has had similar episodes in the past that resolved on their own.
+4. Examination is unremarkable, and blood pressure is normal.
+5. Urinalysis shows hematuria with dysmorphic red cells, and serum complement levels are normal.
+6. Kidney biopsy shows mesangial deposits of a single immunoglobulin class on immunofluorescence.
+
+TEACHING_POINTS
+
+ Hematuria occurring within a day or two of a mucosal infection suggests IgA nephropathy.
+ Unlike post-streptococcal disease, there is little to no latent period and complement is normal.
+ Mesangial IgA deposition on immunofluorescence is diagnostic.
+ The course ranges from benign recurrent hematuria to progressive kidney disease.
+
+==================================================
+
+CASE_ID 089
+DIFFICULTY medium
+SYSTEM hematology_oncology
+
+DIAGNOSIS
+Iron deficiency anemia
+
+ALIASES
+Iron-deficiency anemia
+Microcytic hypochromic anemia
+Sideropenic anemia
+
+VIGNETTE_LINES
+
+1. A 42-year-old woman presents with fatigue and shortness of breath on exertion.
+2. She reports heavy menstrual periods and a craving to chew ice.
+3. Examination reveals pale conjunctivae, spoon-shaped nails, and cracking at the corners of the mouth.
+4. CBC shows a microcytic, hypochromic anemia with an elevated red-cell distribution width.
+5. Iron studies reveal low ferritin, low serum iron, and elevated total iron-binding capacity.
+6. Peripheral smear shows small, pale red cells with increased central pallor.
+
+TEACHING_POINTS
+
+ Microcytic, hypochromic anemia with low ferritin indicates iron deficiency.
+ Pica (including ice craving), koilonychia, and angular cheilitis are supportive clues.
+ In adults, occult gastrointestinal blood loss must be excluded.
+ Ferritin is the most useful single test but can be falsely elevated by inflammation.
+
+==================================================
+
+CASE_ID 090
+DIFFICULTY medium
+SYSTEM hematology_oncology
+
+DIAGNOSIS
+Sickle cell disease
+
+ALIASES
+Sickle cell anemia
+Hemoglobin SS disease
+Sickle cell disease
+
+VIGNETTE_LINES
+
+1. A 6-year-old boy presents with severe pain in the arms and legs.
+2. He has had recurrent painful episodes since infancy, including painful swelling of the hands and feet as a toddler.
+3. Examination reveals scleral icterus, and the spleen is not palpable despite his young age.
+4. CBC shows anemia with an elevated reticulocyte count.
+5. Peripheral smear reveals crescent-shaped red cells and Howell-Jolly bodies.
+6. Hemoglobin electrophoresis shows a predominant abnormal hemoglobin band that polymerizes under low-oxygen conditions.
+
+TEACHING_POINTS
+
+ Recurrent vaso-occlusive pain crises beginning in early childhood suggest a hemoglobinopathy.
+ Dactylitis, autosplenectomy, and Howell-Jolly bodies reflect functional asplenia.
+ Patients are at risk for encapsulated-organism infection and aplastic crisis with parvovirus B19.
+ Hemoglobin electrophoresis identifies the abnormal hemoglobin.
+
+==================================================
+
+CASE_ID 091
+DIFFICULTY medium
+SYSTEM hematology_oncology
+
+DIAGNOSIS
+Hodgkin lymphoma
+
+ALIASES
+Hodgkin disease
+Classical Hodgkin lymphoma
+Hodgkin lymphoma
+
+VIGNETTE_LINES
+
+1. A 24-year-old man presents with a painless, rubbery neck mass.
+2. He reports drenching night sweats, fever, and unintentional weight loss.
+3. He notes that the enlarged node becomes painful after drinking alcohol.
+4. Examination reveals firm, non-tender cervical lymphadenopathy.
+5. Chest radiography shows a mediastinal mass.
+6. Excisional lymph node biopsy reveals large binucleate cells with prominent inclusion-like nucleoli set in an inflammatory background.
+
+TEACHING_POINTS
+
+ Painless lymphadenopathy with B symptoms in a young adult suggests lymphoma.
+ Alcohol-induced nodal pain and a mediastinal mass are classic clues.
+ Reed-Sternberg cells in an inflammatory background are the hallmark.
+ It tends to spread in a contiguous fashion and is often curable.
+
+==================================================
+
+CASE_ID 092
+DIFFICULTY medium
+SYSTEM hematology_oncology
+
+DIAGNOSIS
+Chronic myeloid leukemia
+
+ALIASES
+CML
+Chronic myelogenous leukemia
+Chronic myeloid leukemia
+
+VIGNETTE_LINES
+
+1. A 52-year-old man presents with fatigue, early satiety, and left upper quadrant fullness.
+2. He has had drenching night sweats and low-grade fevers.
+3. Examination reveals massive splenomegaly.
+4. CBC shows a markedly elevated white cell count with the full spectrum of maturing granulocytes and increased basophils.
+5. The leukocyte alkaline phosphatase score is low.
+6. Cytogenetic testing reveals a reciprocal translocation between chromosomes 9 and 22 producing a constitutively active tyrosine kinase.
+
+TEACHING_POINTS
+
+ Marked leukocytosis with a full spectrum of granulocyte maturation and basophilia suggests a myeloproliferative neoplasm.
+ Massive splenomegaly and a low leukocyte alkaline phosphatase are supportive.
+ The t(9;22) translocation produces a constitutively active tyrosine kinase.
+ Targeted tyrosine kinase inhibitors dramatically improve outcomes.
+
+==================================================
+
+CASE_ID 093
+DIFFICULTY medium
+SYSTEM infectious_disease
+
+DIAGNOSIS
+Infectious mononucleosis
+
+ALIASES
+Mono
+EBV infectious mononucleosis
+Glandular fever
+
+VIGNETTE_LINES
+
+1. A 19-year-old college student presents with a severe sore throat, fever, and profound fatigue.
+2. He reports that the fatigue has lasted more than a week.
+3. Examination reveals enlarged tonsils with exudate, tender posterior cervical lymphadenopathy, and splenomegaly.
+4. He develops a diffuse maculopapular rash after being given amoxicillin for presumed strep throat.
+5. CBC shows a lymphocytosis with atypical (reactive) lymphocytes.
+6. A heterophile antibody test is positive.
+
+TEACHING_POINTS
+
+ Sore throat, fatigue, posterior cervical lymphadenopathy, and splenomegaly in a young adult suggest infectious mononucleosis.
+ A rash after amoxicillin is a classic clue.
+ Atypical (reactive) lymphocytes and a positive heterophile antibody support the diagnosis.
+ Contact sports are avoided because of the risk of splenic rupture.
+
+==================================================
+
+CASE_ID 094
+DIFFICULTY medium
+SYSTEM infectious_disease
+
+DIAGNOSIS
+Lyme disease
+
+ALIASES
+Lyme borreliosis
+Early localized Lyme disease
+Tick-borne borreliosis
+
+VIGNETTE_LINES
+
+1. A 34-year-old hiker presents with an expanding red rash on the thigh.
+2. He returned from camping in the northeastern woods about 10 days ago.
+3. The rash is an expanding erythematous patch with central clearing, giving a target-like appearance.
+4. He reports fever, headache, fatigue, and muscle aches.
+5. Left untreated over weeks, some patients develop facial nerve palsy or migratory joint pains.
+6. Serologic testing followed by a confirmatory immunoblot detects antibodies against a spirochete transmitted by an Ixodes tick.
+
+TEACHING_POINTS
+
+ An expanding target-shaped rash after outdoor exposure in an endemic area suggests early Lyme disease.
+ Later stages can involve the facial nerve, heart block, and migratory arthritis.
+ Diagnosis is clinical for the early rash; serology with confirmatory immunoblot is used later.
+ The infection is transmitted by Ixodes ticks.
+
+==================================================
+
+CASE_ID 095
+DIFFICULTY medium
+SYSTEM infectious_disease
+
+DIAGNOSIS
+Secondary syphilis
+
+ALIASES
+Secondary syphilis
+Systemic spirochetal infection
+Secondary-stage syphilis
+
+VIGNETTE_LINES
+
+1. A 27-year-old man presents with a diffuse rash involving the palms and soles.
+2. Several weeks earlier he had a single painless genital ulcer that healed on its own.
+3. Examination reveals a symmetric, non-itchy maculopapular rash and moist wart-like plaques in the groin.
+4. He has generalized lymphadenopathy and patchy hair loss.
+5. Nontreponemal screening is reactive at a high titer.
+6. Dark-field microscopy of a lesion reveals motile spiral-shaped organisms, confirmed by a treponeme-specific test.
+
+TEACHING_POINTS
+
+ A diffuse rash involving the palms and soles after a painless genital ulcer suggests the secondary stage of a spirochetal infection.
+ Condyloma lata and generalized lymphadenopathy are supportive findings.
+ Nontreponemal tests screen, and treponemal-specific tests confirm.
+ It is called the great imitator because of its varied presentations.
+
+==================================================
+
+CASE_ID 096
+DIFFICULTY medium
+SYSTEM rheumatology
+
+DIAGNOSIS
+Systemic lupus erythematosus
+
+ALIASES
+SLE
+Lupus
+Systemic lupus erythematosus
+
+VIGNETTE_LINES
+
+1. A 26-year-old woman presents with fatigue, joint pain, and a facial rash.
+2. The rash spreads across the cheeks and bridge of the nose, spares the folds beside the nose, and worsens with sun exposure.
+3. She reports painful mouth ulcers and hair thinning.
+4. Examination reveals symmetric small-joint arthritis without deformity, and urinalysis shows proteinuria.
+5. Laboratory studies show cytopenias, low complement, and a positive antinuclear antibody at high titer.
+6. More specific testing reveals antibodies against double-stranded DNA and the Smith antigen.
+
+TEACHING_POINTS
+
+ A young woman with a photosensitive malar rash, arthritis, and multisystem involvement suggests a systemic autoimmune disease.
+ Cytopenias, low complement, and a high-titer ANA are supportive.
+ Anti-double-stranded DNA and anti-Smith antibodies are highly specific.
+ Renal involvement is a major driver of morbidity.
+
+==================================================
+
+CASE_ID 097
+DIFFICULTY medium
+SYSTEM rheumatology
+
+DIAGNOSIS
+Gout
+
+ALIASES
+Gouty arthritis
+Acute gout
+Monosodium urate crystal arthropathy
+
+VIGNETTE_LINES
+
+1. A 55-year-old man presents with sudden, severe pain in the big toe that woke him at night.
+2. The joint is red, hot, swollen, and exquisitely tender to even light touch.
+3. He attended a party with red meat and beer the night before.
+4. He has hypertension and takes a thiazide diuretic.
+5. Serum uric acid is elevated.
+6. Aspiration of the joint reveals needle-shaped crystals that are negatively birefringent under polarized light.
+
+TEACHING_POINTS
+
+ Acute monoarticular arthritis of the first toe (podagra) suggests crystal-induced disease.
+ Triggers include purine-rich meals, alcohol, and diuretics.
+ Negatively birefringent, needle-shaped crystals in joint fluid are diagnostic.
+ Serum uric acid can be normal during an acute attack.
+
+==================================================
+
+CASE_ID 098
+DIFFICULTY medium
+SYSTEM rheumatology
+
+DIAGNOSIS
+Giant cell arteritis
+
+ALIASES
+Temporal arteritis
+GCA
+Cranial arteritis
+
+VIGNETTE_LINES
+
+1. A 72-year-old woman presents with a new, persistent temporal headache.
+2. She reports jaw pain when chewing and scalp tenderness when combing her hair.
+3. She has had aching and morning stiffness in the shoulders and hips.
+4. She notes transient episodes of blurred vision in one eye.
+5. Erythrocyte sedimentation rate and C-reactive protein are markedly elevated.
+6. Temporal artery biopsy reveals granulomatous inflammation of the vessel wall with multinucleated giant cells and fragmentation of the internal elastic lamina.
+
+TEACHING_POINTS
+
+ New headache, jaw claudication, and scalp tenderness in an older adult suggest a large-vessel vasculitis.
+ It frequently overlaps with polymyalgia rheumatica.
+ A markedly elevated ESR is characteristic.
+ Prompt steroids are needed to prevent irreversible vision loss, and biopsy confirms.
+
+==================================================
+
+CASE_ID 099
+DIFFICULTY medium
+SYSTEM dermatology
+
+DIAGNOSIS
+Psoriasis
+
+ALIASES
+Plaque psoriasis
+Psoriasis vulgaris
+Chronic plaque psoriasis
+
+VIGNETTE_LINES
+
+1. A 30-year-old man presents with itchy, scaly patches on his elbows and knees.
+2. The lesions have been present for months and improve with sun exposure.
+3. Examination reveals well-demarcated erythematous plaques covered by silvery-white scale over the extensor surfaces and scalp.
+4. Gently scraping the scale produces pinpoint bleeding points.
+5. His fingernails show pitting and separation of the nail from the nail bed.
+6. Skin biopsy shows epidermal hyperplasia with retained nuclei in the stratum corneum and small collections of neutrophils within it.
+
+TEACHING_POINTS
+
+ Well-demarcated plaques with silvery scale over extensor surfaces suggest psoriasis.
+ The Auspitz sign (pinpoint bleeding) and nail pitting are supportive.
+ Histology shows epidermal hyperplasia with parakeratosis and neutrophilic microabscesses.
+ It is associated with an inflammatory arthritis in a subset of patients.
+
+==================================================
+
+CASE_ID 100
+DIFFICULTY medium
+SYSTEM dermatology
+
+DIAGNOSIS
+Melanoma
+
+ALIASES
+Malignant melanoma
+Cutaneous melanoma
+Melanoma
+
+VIGNETTE_LINES
+
+1. A 50-year-old fair-skinned man presents with a changing mole on his back.
+2. His wife noticed that it has grown and darkened over several months.
+3. He has a history of multiple blistering sunburns and heavy tanning-bed use.
+4. Examination reveals an asymmetric pigmented lesion with irregular, notched borders, several colors, and a diameter greater than 6 mm.
+5. Dermoscopy shows an atypical pigment network with irregular streaks.
+6. Excisional biopsy reveals atypical melanocytes invading the dermis, and the depth of invasion is measured to guide prognosis.
+
+TEACHING_POINTS
+
+ A changing pigmented lesion with asymmetry, irregular borders, color variation, and a large diameter is concerning for melanoma.
+ Major risk factors include UV exposure, fair skin, and numerous atypical nevi.
+ Depth of invasion (Breslow thickness) is the most important prognostic factor.
+ Early excision is essential because of the potential for metastasis.
+
+==================================================
+
+CASE_ID 101
+DIFFICULTY medium
+SYSTEM pediatrics
+
+DIAGNOSIS
+Kawasaki disease
+
+ALIASES
+Mucocutaneous lymph node syndrome
+Kawasaki disease
+Infantile polyarteritis
+
+VIGNETTE_LINES
+
+1. A 3-year-old boy presents with a high fever that has lasted 6 days and is not responding to antipyretics.
+2. He has been very irritable.
+3. Examination reveals bilateral non-purulent conjunctival redness, cracked red lips, and a strawberry-appearing tongue.
+4. He has swelling and redness of the hands and feet and a single enlarged cervical lymph node.
+5. As the fever resolves, the skin of the fingertips begins to peel.
+6. Echocardiography is performed to screen for dilation of the coronary arteries.
+
+TEACHING_POINTS
+
+ Prolonged fever in a young child with conjunctivitis, mucosal changes, extremity changes, rash, and lymphadenopathy suggests a medium-vessel vasculitis.
+ Strawberry tongue and later periungual desquamation are characteristic.
+ The major complication is coronary artery aneurysm.
+ Treatment with IVIG and aspirin reduces the cardiac risk.
+
+==================================================
+
+CASE_ID 102
+DIFFICULTY medium
+SYSTEM pediatrics
+
+DIAGNOSIS
+Hypertrophic pyloric stenosis
+
+ALIASES
+Infantile pyloric stenosis
+Congenital pyloric stenosis
+Pyloric stenosis
+
+VIGNETTE_LINES
+
+1. A 4-week-old firstborn boy presents with vomiting after feeds that has become forceful and projectile.
+2. The vomit is milky and never contains bile, and he is hungry to feed again immediately afterward.
+3. He has had fewer wet diapers and mild weight loss.
+4. Examination reveals a small, firm, olive-shaped mass in the right upper abdomen and visible waves of stomach movement.
+5. Laboratory studies show a hypochloremic, hypokalemic metabolic alkalosis.
+6. Abdominal ultrasound reveals a thickened, elongated pyloric muscle.
+
+TEACHING_POINTS
+
+ Non-bilious projectile vomiting in a hungry firstborn infant around 3–6 weeks of age suggests gastric outlet obstruction.
+ A palpable olive-shaped mass and visible peristalsis are classic.
+ A hypochloremic, hypokalemic metabolic alkalosis develops from persistent vomiting.
+ Ultrasound confirms a thickened, elongated pylorus.
+
+==================================================
+
+CASE_ID 103
+DIFFICULTY medium
+SYSTEM pediatrics
+
+DIAGNOSIS
+Intussusception
+
+ALIASES
+Ileocolic intussusception
+Bowel telescoping
+Intestinal invagination
+
+VIGNETTE_LINES
+
+1. A 9-month-old boy presents with sudden episodes of inconsolable crying during which he draws his knees to his chest.
+2. Between episodes he initially appears comfortable, then becomes progressively lethargic.
+3. He had a viral upper respiratory illness the week before.
+4. His parents report a stool that looked like red currant jelly.
+5. Examination reveals a sausage-shaped mass in the right abdomen.
+6. Abdominal ultrasound shows a target-like ring of bowel within bowel.
+
+TEACHING_POINTS
+
+ Intermittent colicky pain with leg-drawing in an infant, alternating with lethargy, suggests bowel telescoping.
+ Currant-jelly stool and a sausage-shaped mass are classic.
+ It often follows a viral illness, with lymphoid hyperplasia acting as a lead point.
+ Ultrasound shows a target sign, and an air or contrast enema can be both diagnostic and therapeutic.
+
+==================================================
+
+CASE_ID 104
+DIFFICULTY medium
+SYSTEM reproductive
+
+DIAGNOSIS
+Ectopic pregnancy
+
+ALIASES
+Tubal pregnancy
+Ectopic gestation
+Extrauterine pregnancy
+
+VIGNETTE_LINES
+
+1. A 28-year-old woman presents with lower abdominal pain and light vaginal bleeding.
+2. Her last menstrual period was about 7 weeks ago.
+3. She has a history of pelvic inflammatory disease and a prior chlamydial infection.
+4. Examination reveals adnexal tenderness and a palpable adnexal fullness.
+5. Serum beta-hCG is positive but lower than expected for dates and rises abnormally slowly.
+6. Transvaginal ultrasonography shows an empty uterus with a mass in the fallopian tube.
+
+TEACHING_POINTS
+
+ Abdominal pain and bleeding with amenorrhea in a woman of reproductive age require ruling out an ectopic pregnancy.
+ Prior pelvic infection, tubal surgery, and intrauterine devices are risk factors.
+ A beta-hCG that rises abnormally slowly with an empty uterus is suggestive.
+ Rupture is a surgical emergency because of the risk of hemorrhage.
+
+==================================================
+
+CASE_ID 105
+DIFFICULTY medium
+SYSTEM reproductive
+
+DIAGNOSIS
+Polycystic ovary syndrome
+
+ALIASES
+PCOS
+Hyperandrogenic anovulation
+Polycystic ovarian syndrome
+
+VIGNETTE_LINES
+
+1. A 24-year-old woman presents with irregular, infrequent menstrual periods and difficulty conceiving.
+2. She reports excess hair growth on the face and chest and worsening acne.
+3. Her body-mass index is elevated, and she has darkened, velvety skin in the neck folds.
+4. Examination reveals a male-pattern hair distribution.
+5. Laboratory studies show an elevated ratio of luteinizing hormone to follicle-stimulating hormone and mildly elevated androgens.
+6. Pelvic ultrasound reveals numerous small peripheral follicles giving a string-of-pearls appearance in both ovaries.
+
+TEACHING_POINTS
+
+ Oligomenorrhea, hyperandrogenism, and polycystic ovaries define this common endocrine disorder.
+ Insulin resistance, obesity, and acanthosis nigricans are frequently associated.
+ An elevated LHFSH ratio and mild androgen excess are supportive.
+ It is a leading cause of anovulatory infertility and raises long-term metabolic risk.
+
+==================================================
+
+CASE_ID 106
+DIFFICULTY medium
+SYSTEM psychiatry
+
+DIAGNOSIS
+Schizophrenia
+
+ALIASES
+Schizophrenia
+Chronic psychotic disorder
+Schizophrenic disorder
+
+VIGNETTE_LINES
+
+1. A 22-year-old man is brought in by his family for strange behavior over the past 8 months.
+2. He believes his neighbors are broadcasting his thoughts and controlling his actions.
+3. He hears voices commenting on his behavior when no one is present.
+4. His speech is disorganized and difficult to follow, jumping between unrelated topics.
+5. His family notes that he has withdrawn socially, stopped bathing, and shows little emotional expression.
+6. Symptoms have persisted more than 6 months, and medical, substance, and mood causes have been excluded.
+
+TEACHING_POINTS
+
+ Delusions, hallucinations, disorganized speech, and negative symptoms lasting at least 6 months suggest a primary psychotic disorder.
+ Onset is typically in late adolescence or early adulthood.
+ Medical, substance, and mood causes must be excluded before the diagnosis is made.
+ Antipsychotics acting on dopamine pathways are the mainstay of treatment.
+
+==================================================
+
+CASE_ID 107
+DIFFICULTY medium
+SYSTEM psychiatry
+
+DIAGNOSIS
+Anorexia nervosa
+
+ALIASES
+Restrictive eating disorder
+Anorexia nervosa
+AN
+
+VIGNETTE_LINES
+
+1. A 17-year-old girl is brought in by her parents for marked weight loss and fatigue.
+2. Despite being underweight, she expresses an intense fear of gaining weight and perceives herself as overweight.
+3. She has stopped having menstrual periods.
+4. Examination reveals a low body-mass index, low blood pressure, a slow heart rate, and fine downy hair over the body.
+5. Laboratory studies show electrolyte disturbances and a low white-cell count.
+6. The overall picture reflects a restrictive pattern driven by a distorted body image rather than a primary medical illness.
+
+TEACHING_POINTS
+
+ Significantly low body weight with intense fear of weight gain and a distorted body image suggests a restrictive eating disorder.
+ Amenorrhea, bradycardia, hypotension, and lanugo reflect the physiologic effects of malnutrition.
+ Electrolyte disturbances can be life-threatening and require monitoring.
+ Multidisciplinary care addressing medical, nutritional, and psychological needs is essential.
+
+==================================================
+
+CASE_ID 108
+DIFFICULTY medium
+SYSTEM pharmacology_toxicology
+
+DIAGNOSIS
+Acetaminophen toxicity
+
+ALIASES
+Acetaminophen overdose
+Paracetamol toxicity
+Acetaminophen hepatotoxicity
+
+VIGNETTE_LINES
+
+1. A 20-year-old woman is brought in after taking a large amount of an over-the-counter pain reliever.
+2. Initially she has only mild nausea and vomiting and otherwise feels well.
+3. Over the next 1–2 days she develops right upper quadrant pain.
+4. Laboratory studies show markedly elevated aminotransferases and a rising prothrombin time.
+5. A nomogram plotting the drug level against time since ingestion predicts a high risk of liver injury.
+6. Treatment with a glutathione-replenishing antidote is started.
+
+TEACHING_POINTS
+
+ A biphasic course with early mild symptoms followed by delayed liver injury suggests this common analgesic overdose.
+ A toxic metabolite depletes hepatic glutathione and causes centrilobular necrosis.
+ The Rumack-Matthew nomogram guides treatment based on level and timing.
+ N-acetylcysteine replenishes glutathione and is most effective when given early.
+
+==================================================
+
+CASE_ID 109
+DIFFICULTY medium
+SYSTEM pharmacology_toxicology
+
+DIAGNOSIS
+Carbon monoxide poisoning
+
+ALIASES
+CO poisoning
+Carbon monoxide toxicity
+Carboxyhemoglobinemia
+
+VIGNETTE_LINES
+
+1. A family presents in winter with headache, dizziness, nausea, and confusion that improve when they leave the house.
+2. They have been using a gas furnace and a charcoal heater indoors during a cold snap.
+3. Several household members, including pets, are affected at the same time.
+4. Examination reveals a normal oxygen saturation on standard pulse oximetry despite significant symptoms.
+5. Arterial testing shows a normal PaO2 but an elevated abnormal-hemoglobin fraction on co-oximetry.
+6. Treatment with 100% oxygen, and hyperbaric oxygen in severe cases, is initiated.
+
+TEACHING_POINTS
+
+ Headache, dizziness, and confusion affecting multiple household members in winter suggest an inhaled toxin.
+ Standard pulse oximetry reads falsely normal because it cannot distinguish the abnormal hemoglobin.
+ Co-oximetry measures the elevated carboxyhemoglobin fraction.
+ Treatment is high-flow oxygen, with hyperbaric oxygen for severe cases.
+
+==================================================
+
+CASE_ID 110
+DIFFICULTY medium
+SYSTEM pharmacology_toxicology
+
+DIAGNOSIS
+Organophosphate poisoning
+
+ALIASES
+Cholinesterase inhibitor toxicity
+Anticholinesterase poisoning
+Organophosphate toxicity
+
+VIGNETTE_LINES
+
+1. A 45-year-old farm worker presents with excessive salivation, tearing, and sweating after spraying crops.
+2. He has blurred vision, abdominal cramps, diarrhea, and involuntary urination.
+3. Examination reveals pinpoint pupils, wheezing with copious secretions, and muscle twitching.
+4. He is bradycardic and diaphoretic, with a faint garlic-like odor.
+5. Red-cell and plasma cholinesterase activity is markedly reduced.
+6. Symptoms improve with atropine and a cholinesterase-reactivating agent.
+
+TEACHING_POINTS
+
+ Excessive secretions, miosis, bradycardia, and muscle fasciculations after pesticide exposure indicate cholinergic excess.
+ The mnemonic SLUDGE (or DUMBELS) captures the muscarinic effects.
+ Reduced cholinesterase activity confirms the diagnosis.
+ Atropine blocks the muscarinic effects, while pralidoxime reactivates the enzyme if given early.
 
 ==================================================
