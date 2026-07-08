@@ -12,39 +12,39 @@ import {
 // =============================================================
 
 const DARK_THEME = {
-  bg:             "#1a1a1a",
-  bgCard:         "#262626",
-  bgInput:        "#262626",
-  border:         "#404040",
-  text:           "#f5f5f5",
-  textMuted:      "#a3a3a3",
-  textFaint:      "#737373",
-  accent:         "#e11d48",
-  selectBg:       "#262626",
-  modalWin:       "#1f2937",
-  modalLose:      "#2d0a0a",
-  modalBorderWin: "#22c55e",
-  modalBorderLose:"#dc2626",
-  shareCard:      "#262626",
-  teachPanel:     "#1f2937",
+  bg:             "#F7F5F0",
+  bgCard:         "#E8F1F6",
+  bgInput:        "#E8F1F6",
+  border:         "#1F6F64",
+  text:           "#1E3A52",
+  textMuted:      "#9A9A9A",
+  textFaint:      "#9A9A9A",
+  accent:         "#1F6F64",
+  selectBg:       "#E8F1F6",
+  modalWin:       "#E8F1F6",
+  modalLose:      "#E8F1F6",
+  modalBorderWin: "#1F6F64",
+  modalBorderLose:"#9A9A9A",
+  shareCard:      "#E8F1F6",
+  teachPanel:     "#EDEDED",
 };
 
 const LIGHT_THEME = {
-  bg:             "#f5f5f5",
-  bgCard:         "#ffffff",
-  bgInput:        "#ffffff",
-  border:         "#e5e5e5",
-  text:           "#1a1a1a",
-  textMuted:      "#737373",
-  textFaint:      "#a3a3a3",
-  accent:         "#dc2626",
-  selectBg:       "#ffffff",
-  modalWin:       "#fff1f2",
-  modalLose:      "#fff1f2",
-  modalBorderWin: "#22c55e",
-  modalBorderLose:"#dc2626",
-  shareCard:      "#f8fafc",
-  teachPanel:     "#f1f5f9",
+  bg:             "#F7F5F0",
+  bgCard:         "#E8F1F6",
+  bgInput:        "#E8F1F6",
+  border:         "#1F6F64",
+  text:           "#1E3A52",
+  textMuted:      "#9A9A9A",
+  textFaint:      "#9A9A9A",
+  accent:         "#1F6F64",
+  selectBg:       "#E8F1F6",
+  modalWin:       "#E8F1F6",
+  modalLose:      "#E8F1F6",
+  modalBorderWin: "#1F6F64",
+  modalBorderLose:"#9A9A9A",
+  shareCard:      "#E8F1F6",
+  teachPanel:     "#EDEDED",
 };
 
 type Theme = typeof DARK_THEME;
@@ -506,7 +506,7 @@ function Confetti() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const colors = ["#e11d48", "#f43f5e", "#fca5a5", "#dc2626", "#fb7185", "#ffffff"];
+    const colors = ["#1F6F64", "#1E3A52", "#E8F1F6", "#F7F5F0", "#1F6F64", "#1E3A52"];
 
     const pieces = Array.from({ length: 200 }, () => ({
       x: Math.random() * canvas.width,
@@ -565,7 +565,7 @@ function ShareCard({ shareText, theme }: { shareText: string; theme: Theme }) {
   };
 
   return (
-    <div className="mt-4 rounded-2xl p-4 text-left" style={{ background: theme.shareCard, border: `1px solid ${theme.border}` }}>
+    <div className="mt-4 rounded-2xl p-4 text-left shadow-[0_8px_30px_rgba(30,58,82,0.10)]" style={{ background: theme.shareCard, border: `1px solid ${theme.border}` }}>
       <div className="flex items-center justify-between gap-3 mb-3">
         <p className="text-xs font-mono uppercase tracking-[0.2em]" style={{ color: theme.textMuted }}>
           Share result
@@ -618,12 +618,12 @@ function ResultModal({
   return (
     <div className="fixed inset-0 z-40 flex items-center justify-center p-4" style={{ background: "rgba(0,0,0,0.75)" }}>
       <div
-        className="w-full max-w-lg rounded-2xl p-7 text-center shadow-2xl max-h-[90vh] overflow-y-auto"
+        className="w-full max-w-lg rounded-2xl p-7 text-center shadow-[0_10px_40px_rgba(30,58,82,0.15)] max-h-[90vh] overflow-y-auto"
         style={{ background: won ? theme.modalWin : theme.modalLose, border: `1px solid ${won ? theme.modalBorderWin : theme.modalBorderLose}` }}
       >
         {won ? (
           <>
-            <p className="text-2xl font-bold mb-2" style={{ color: "#22c55e", fontFamily: "'Poppins', sans-serif" }}>
+            <p className="text-2xl font-bold mb-2" style={{ color: "#1F6F64", fontFamily: "'Playfair Display', Georgia, serif" }}>
               Correct!
             </p>
             <p className="font-semibold text-xl mb-1" style={{ color: theme.text }}>{current.diagnosis}</p>
@@ -634,7 +634,7 @@ function ResultModal({
           </>
         ) : (
           <>
-            <p className="text-2xl font-bold mb-2" style={{ color: "#f43f5e", fontFamily: "'Poppins', sans-serif" }}>
+            <p className="text-2xl font-bold mb-2" style={{ color: "#1E3A52", fontFamily: "'Playfair Display', Georgia, serif" }}>
               Out of guesses
             </p>
             <p className="text-sm mb-1" style={{ color: theme.textMuted }}>The diagnosis was:</p>
@@ -652,7 +652,7 @@ function ResultModal({
               {showTeaching ? "Hide" : "Show"} teaching points
             </button>
             {showTeaching && (
-              <div className="mt-3 rounded-xl p-4 text-left space-y-2" style={{ background: theme.teachPanel }}>
+              <div className="mt-3 rounded-2xl p-4 text-left space-y-2" style={{ background: theme.teachPanel }}>
                 {current.teachingPoints.map((pt, i) => (
                   <p key={i} className="text-sm" style={{ color: theme.textMuted }}>
                     <span style={{ color: theme.accent }}>•</span> {pt}
@@ -1067,7 +1067,7 @@ export default function Home() {
       className="relative min-h-screen flex flex-col items-center px-4 py-8 transition-colors duration-300"
       style={{ background: theme.bg, color: theme.text }}
     >
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');`}</style>
+      <style>{`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');`}</style>
       {showConfetti && <Confetti />}
       <Analytics />
 
@@ -1088,7 +1088,7 @@ export default function Home() {
       <div className="relative z-10 w-full max-w-xl">
         <div className="flex items-center justify-between mb-6">
           <div className="min-w-0">
-              <h1 className="text-2xl font-bold tracking-tight leading-tight" style={{ fontFamily: "'Poppins', sans-serif" }}>Medicle</h1>
+              <h1 className="text-2xl font-bold tracking-tight leading-tight" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Medicle</h1>
               <a
                 href="https://www.medicle.net"
                 target="_blank"
@@ -1196,7 +1196,7 @@ export default function Home() {
 
           {showSystemFilter && (
             <div
-              className="mt-2 rounded-lg p-3 border"
+              className="mt-2 rounded-2xl p-3 border shadow-[0_8px_30px_rgba(30,58,82,0.08)]"
               style={{ background: theme.bgCard, borderColor: theme.border }}
             >
               <div className="flex items-center justify-between gap-3 mb-3">
@@ -1260,7 +1260,7 @@ export default function Home() {
           )}
         </div>
 
-        <h2 className="text-lg font-semibold mb-4 pb-3 border-b" style={{ borderColor: theme.border, fontFamily: "'Poppins', sans-serif" }}>
+        <h2 className="text-lg font-semibold mb-4 pb-3 border-b" style={{ borderColor: theme.border, fontFamily: "'Playfair Display', Georgia, serif" }}>
           What&apos;s the diagnosis?
         </h2>
 
@@ -1298,7 +1298,7 @@ export default function Home() {
 
             {showDropdown && filtered.length > 0 && (
               <div
-                className="absolute z-10 w-full rounded-lg mt-1 overflow-hidden border"
+                className="absolute z-10 w-full rounded-2xl mt-1 overflow-hidden border shadow-[0_8px_30px_rgba(30,58,82,0.10)]"
                 style={{ background: theme.bgCard, borderColor: theme.border }}
               >
                 {filtered.map((d, i) => (
@@ -1323,7 +1323,7 @@ export default function Home() {
         {guesses.length > 0 && (
           <div className="space-y-1 mb-8">
             {guesses.map((g, i) => (
-              <p key={i} className="text-sm" style={{ color: g.correct ? "#22c55e" : g.skipped ? theme.textMuted : "#f87171" }}>
+              <p key={i} className="text-sm" style={{ color: g.correct ? "#1F6F64" : g.skipped ? theme.textMuted : "#9A9A9A" }}>
                 {g.skipped ? "Skipped" : g.text}
               </p>
             ))}

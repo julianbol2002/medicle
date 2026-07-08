@@ -13,13 +13,13 @@ const FEEDBACK_URL =
 export default function AboutPage() {
   return (
     <>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');`}</style>
+      <style>{`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');`}</style>
       <main
         className="min-h-screen"
         style={{
-          background: "#f5f5f5",
-          color: "#1a1a1a",
-          fontFamily: "'Poppins', sans-serif",
+          background: "#F7F5F0",
+          color: "#1E3A52",
+          fontFamily: "var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
         }}
       >
         <article className="mx-auto max-w-2xl px-4 py-10 sm:py-14">
@@ -27,7 +27,7 @@ export default function AboutPage() {
             <Link
               href="/"
               className="text-sm font-medium hover:underline"
-              style={{ color: "#dc2626" }}
+              style={{ color: "#1F6F64" }}
             >
               ← Back to Medicle
             </Link>
@@ -36,19 +36,19 @@ export default function AboutPage() {
           <header className="mb-10">
             <h1
               className="text-3xl font-bold tracking-tight sm:text-4xl"
-              style={{ fontFamily: "'Poppins', sans-serif" }}
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               About Medicle
             </h1>
-            <p className="mt-3 text-base leading-relaxed text-neutral-600">
+            <p className="mt-3 text-base leading-relaxed text-[#1E3A52]">
               Medicle is a free, browser-based suite of daily and endless diagnosis games built for
               learners who want to practice clinical reasoning in a familiar, low-pressure format.
             </p>
           </header>
 
-          <div className="space-y-10 text-base leading-relaxed text-neutral-800">
+          <div className="space-y-10 text-base leading-relaxed text-[#1E3A52]">
             <section>
-              <h2 className="mb-3 text-xl font-semibold text-neutral-900">What is Medicle?</h2>
+              <h2 className="mb-3 text-xl font-semibold text-[#1E3A52]">What is Medicle?</h2>
               <p>
                 Medicle is a free, browser-based daily and endless clinical case diagnosis game
                 inspired by Wordle and{" "}
@@ -56,7 +56,7 @@ export default function AboutPage() {
                   href="https://doctordle.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-700"
+                  className="font-medium underline decoration-[#1F6F64] underline-offset-2 hover:decoration-[#1F6F64]"
                 >
                   Doctordle
                 </a>
@@ -83,7 +83,7 @@ export default function AboutPage() {
             </section>
 
             <section>
-              <h2 className="mb-3 text-xl font-semibold text-neutral-900">How to Play</h2>
+              <h2 className="mb-3 text-xl font-semibold text-[#1E3A52]">How to Play</h2>
               <p>
                 The core gameplay loop is simple. When you start a case, you see the first clinical
                 clue—a short piece of the vignette, such as the patient&apos;s age and chief
@@ -111,7 +111,7 @@ export default function AboutPage() {
             </section>
 
             <section>
-              <h2 className="mb-3 text-xl font-semibold text-neutral-900">The Games</h2>
+              <h2 className="mb-3 text-xl font-semibold text-[#1E3A52]">The Games</h2>
               <p className="mb-4">
                 Medicle is the flagship game, but the same daily-and-endless format extends across
                 five specialty sites under the medicle.net umbrella. Each game uses its own case
@@ -119,7 +119,7 @@ export default function AboutPage() {
                 rules.
               </p>
 
-              <h3 className="mb-2 text-lg font-semibold text-neutral-900">
+              <h3 className="mb-2 text-lg font-semibold text-[#1E3A52]">
                 <a href="https://medicle.net" className="hover:underline">
                   Medicle
                 </a>
@@ -137,7 +137,7 @@ export default function AboutPage() {
                 memorizing isolated facts.
               </p>
 
-              <h3 className="mb-2 text-lg font-semibold text-neutral-900">
+              <h3 className="mb-2 text-lg font-semibold text-[#1E3A52]">
                 <a href="https://medicle.net/vettle" className="hover:underline">
                   Vettle
                 </a>
@@ -154,7 +154,7 @@ export default function AboutPage() {
                 board-relevant patterns without needing a full multi-hour practice exam.
               </p>
 
-              <h3 className="mb-2 text-lg font-semibold text-neutral-900">
+              <h3 className="mb-2 text-lg font-semibold text-[#1E3A52]">
                 <a href="https://medicle.net/psychodle" className="hover:underline">
                   Psychodle
                 </a>
@@ -171,7 +171,7 @@ export default function AboutPage() {
                 that point toward a primary psychiatric diagnosis.
               </p>
 
-              <h3 className="mb-2 text-lg font-semibold text-neutral-900">
+              <h3 className="mb-2 text-lg font-semibold text-[#1E3A52]">
                 <a href="https://medicle.net/dentdle" className="hover:underline">
                   Dentdle
                 </a>
@@ -188,7 +188,7 @@ export default function AboutPage() {
                 clinical rotations.
               </p>
 
-              <h3 className="mb-2 text-lg font-semibold text-neutral-900">
+              <h3 className="mb-2 text-lg font-semibold text-[#1E3A52]">
                 <a href="https://medicle.net/crimindle" className="hover:underline">
                   Crimindle
                 </a>
@@ -207,7 +207,7 @@ export default function AboutPage() {
             </section>
 
             <section>
-              <h2 className="mb-3 text-xl font-semibold text-neutral-900">Who Is This For?</h2>
+              <h2 className="mb-3 text-xl font-semibold text-[#1E3A52]">Who Is This For?</h2>
               <p>
                 Medicle and its sister games are built for anyone who learns best through repeated,
                 low-stakes practice. Medical students preparing for USMLE Step 1 and Step 2 will find
@@ -228,7 +228,7 @@ export default function AboutPage() {
             </section>
 
             <section>
-              <h2 className="mb-3 text-xl font-semibold text-neutral-900">
+              <h2 className="mb-3 text-xl font-semibold text-[#1E3A52]">
                 Case Quality and Disclaimer
               </h2>
               <p>
@@ -249,7 +249,7 @@ export default function AboutPage() {
             </section>
 
             <section>
-              <h2 className="mb-3 text-xl font-semibold text-neutral-900">Feedback</h2>
+              <h2 className="mb-3 text-xl font-semibold text-[#1E3A52]">Feedback</h2>
               <p>
                 We welcome corrections, suggestions for new case topics, and reports of confusing or
                 misleading clues. Your feedback helps us improve diagnosis banks, fix tagging, and
@@ -259,7 +259,7 @@ export default function AboutPage() {
                   href={FEEDBACK_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-700"
+                  className="font-medium underline decoration-[#1F6F64] underline-offset-2 hover:decoration-[#1F6F64]"
                 >
                   feedback form
                 </a>
@@ -269,9 +269,9 @@ export default function AboutPage() {
             </section>
           </div>
 
-          <footer className="mt-12 border-t border-neutral-200 pt-8 text-sm text-neutral-500">
+          <footer className="mt-12 border-t border-[#1F6F64] pt-8 text-sm text-[#9A9A9A]">
             <p>
-              <Link href="/" className="font-medium hover:underline" style={{ color: "#dc2626" }}>
+              <Link href="/" className="font-medium hover:underline" style={{ color: "#1F6F64" }}>
                 Play Medicle
               </Link>
               {" · "}

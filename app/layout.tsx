@@ -22,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           strategy="afterInteractive"
         />
       </head>
-      <body style={{ background: "#022129", minHeight: "100vh" }}>{children}</body>
+      <body style={{ background: "#F7F5F0", minHeight: "100vh" }}>{children}</body>
     </html>
   );
 }
