@@ -414,15 +414,17 @@ function parseCases(text: string): Case[] {
   const cases: Case[] = [];
 
   for (const block of blocks) {
-    const idMatch = block.match(/CASE_ID:\s*(\d+)/);
-    const diagMatch = block.match(/DIAGNOSIS:\s*\n([^\n]+)/);
-    const aliasMatch = block.match(/ALIASES:\s*\n([\s\S]*?)(?=\nVIGNETTE_LINES:)/);
+    // Field labels may or may not be followed by a colon (the daily file uses
+    // "CASE_ID:" while the endless file uses "CASE_ID"), so the colon is optional.
+    const idMatch = block.match(/CASE_ID:?\s*(\d+)/);
+    const diagMatch = block.match(/DIAGNOSIS:?\s*\n([^\n]+)/);
+    const aliasMatch = block.match(/ALIASES:?\s*\n([\s\S]*?)(?=\nVIGNETTE_LINES:?)/);
     const clueMatch = block.match(
-      /VIGNETTE_LINES:\s*\n([\s\S]*?)(?=\nTEACHING_POINTS:\nCASE_ID:|\n={10,}|$)/
+      /VIGNETTE_LINES:?\s*\n([\s\S]*?)(?=\nTEACHING_POINTS:?\nCASE_ID:?|\n={10,}|$)/
     );
-    const teachMatch = block.match(/TEACHING_POINTS:\s*\n([\s\S]*?)(?=\n={10,}|$)/);
-    const difficultyMatch = block.match(/DIFFICULTY:\s*\n?([^\n]+)/);
-    const systemMatch = block.match(/SYSTEM:\s*\n?([^\n]+)/);
+    const teachMatch = block.match(/TEACHING_POINTS:?\s*\n([\s\S]*?)(?=\n={10,}|$)/);
+    const difficultyMatch = block.match(/DIFFICULTY:?\s*\n?([^\n]+)/);
+    const systemMatch = block.match(/SYSTEM:?\s*\n?([^\n]+)/);
 
     if (!idMatch || !diagMatch || !clueMatch) continue;
 
